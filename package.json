@@ -1,8 +1,8 @@
 {
-    "name": "chia-blockchain",
-    "author": "Chia Network <hello@chia.net> (https://chia.net/)",
-    "description": "GUI for Chia Blockchain",
-    "productName": "Chia Blockchain",
+    "name": "chinilla-blockchain",
+    "author": "Chinilla Network <hello@chinilla.net> (https://chinilla.net/)",
+    "description": "GUI for Chinilla Blockchain",
+    "productName": "Chinilla Blockchain",
     "private": true,
     "homepage": "./",
     "main": "build/electron/main.js",
@@ -81,7 +81,7 @@
         "tail": "^2.2.3",
         "unique-names-generator": "^4.6.0",
         "use-dark-mode": "^2.3.1",
-        "validator": "^13.6.0",
+        "validator": "^13.7.0",
         "ws": "^8.2.2",
         "yarn": "^1.22.11"
     },
@@ -153,7 +153,7 @@
         "url-loader": "^4.1.1",
         "webpack": "^5.52.1",
         "webpack-cli": "^4.8.0",
-        "webpack-dev-server": "^4.2.1",
+        "webpack-dev-server": "^4.7.3",
         "xmldom": "github:xmldom/xmldom#0.7.0"
     },
     "browserslist": {
@@ -168,5 +168,5 @@
             "last 1 safari version"
         ]
     },
-    "version": "1.2.6-dev67"
+    "version": "0.0.0"
 }

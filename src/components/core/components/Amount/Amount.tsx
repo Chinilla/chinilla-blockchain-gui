@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import { useWatch, useFormContext } from 'react-hook-form';
 import TextField, { TextFieldProps } from '../TextField';
-import { chia_to_mojo } from '../../../../util/chia';
+import { chinilla_to_chin } from '../../../../util/chinilla';
 import useCurrencyCode from '../../../../hooks/useCurrencyCode';
 import FormatLargeNumber from '../FormatLargeNumber';
 import Flex from '../Flex';
@@ -40,7 +40,7 @@ function NumberFormatCustom(props: NumberFormatCustomProps) {
 }
 
 export type AmountProps = TextFieldProps & {
-  children?: (props: { mojo: number; value: string | undefined }) => ReactNode;
+  children?: (props: { chin: number; value: string | undefined }) => ReactNode;
   name?: string;
 };
 
@@ -54,7 +54,7 @@ export default function Amount(props: AmountProps) {
     name,
   });
 
-  const mojo = chia_to_mojo(value);
+  const chin = chinilla_to_chin(value);
 
   return (
     <FormControl variant={variant} fullWidth={fullWidth}>
@@ -75,18 +75,18 @@ export default function Amount(props: AmountProps) {
         <FormHelperText component='div' >
           <Flex alignItems="center" gap={2}>
             <Flex flexGrow={1} gap={1}>
-              {!!mojo && (
+              {!!chin && (
                 <>
-                  <FormatLargeNumber value={mojo} />
+                  <FormatLargeNumber value={chin} />
                   <Box>
-                    <Plural value={mojo} one="mojo" other="mojos" />
+                    <Plural value={chin} one="chin" other="chins" />
                   </Box>
                 </>
               )}
             </Flex>
             {children &&
               children({
-                mojo,
+                chin,
                 value,
               })}
           </Flex>

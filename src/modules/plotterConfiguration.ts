@@ -4,9 +4,9 @@ import Plotter, { PlotterMap } from '../types/Plotter';
 
 export const defaultPlotter = (): Plotter => {
   return {
-    displayName: "Chia Proof of Space",
-    options: optionsForPlotter(PlotterName.CHIAPOS),
-    defaults: defaultsForPlotter(PlotterName.CHIAPOS),
+    displayName: "Chinilla Proof of Space",
+    options: optionsForPlotter(PlotterName.chinillapos),
+    defaults: defaultsForPlotter(PlotterName.chinillapos),
     installInfo: { installed: true },
   }
 }
@@ -18,7 +18,7 @@ type PlotterConfigurationState = {
 
 const initialState: PlotterConfigurationState = {
   availablePlotters: {
-    [PlotterName.CHIAPOS]: defaultPlotter(),
+    [PlotterName.chinillapos]: defaultPlotter(),
   },
   fetchedPlotters: false,
 }

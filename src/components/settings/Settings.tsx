@@ -7,7 +7,7 @@ import {
   AlertDialog,
   Flex,
   Card,
-} from '@chia/core';
+} from '@chinilla/core';
 import {
   Grid,
   Typography,
