@@ -148,7 +148,7 @@ export function refreshAllState() {
     dispatch(getFarmerConnections());
     dispatch(getHarvesters());
     dispatch(getPlotDirectories());
-    dispatch(get_all_trades());
+    //dispatch(get_all_trades());
   };
 }
 
