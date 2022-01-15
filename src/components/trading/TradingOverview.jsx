@@ -429,7 +429,7 @@ export const TradingOverview = () => {
   const showingTrade = useSelector((state) => state.trade_state.showing_trade);
   const dispatch = useDispatch();
 
-  dispatch(get_all_trades());
+  //dispatch(get_all_trades());
 
   if (showingTrade === true) {
     return <TradeDetail />;
