@@ -2435,8 +2435,8 @@ msgstr "Full node som bonden din er koblet til, er nedenfor. <0>Lær mer </0>"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/plot/add/PlotAddChooseSize.tsx:105
-msgid "The minimum required size for mainnet is k=32"
-msgstr "Minimum nødvendig størrelse for mainnet er k=32"
+msgid "The minimum required size for vanillanet is k=32"
+msgstr "Minimum nødvendig størrelse for vanillanet er k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
 msgid "The node is not synced"

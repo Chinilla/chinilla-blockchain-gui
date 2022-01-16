@@ -2435,7 +2435,7 @@ msgstr "Uzel ke kterému je váš farmer (farmář) připojen. <0>Zjistit více<
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/plot/add/PlotAddChooseSize.tsx:105
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for vanillanet is k=32"
 msgstr "Minimální požadovaná velikost sítě je k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
