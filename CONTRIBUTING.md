@@ -14,7 +14,7 @@ If you want to learn more about this project, read the [wiki](https://github.com
 ## Contributions
 
 We would be pleased to accept code contributions to this project.
-As we are in the alpha stage, the main priority is getting a robust blockchain up and running, with as many of the vanillanet features as possible.
+As we are in the alpha stage, the main priority is getting a robust blockchain up and running, with as many of the mainnet features as possible.
 You can visit our [Trello project board](https://trello.com/b/ZuNx7sET) to get a sense of what is in the backlog.
 Generally things to the left are in progress or done. Some things go through "Coming up soon" but some will come directly out of other columns.
 Usually the things closer to the top of each column are the ones that will be worked on soonest.

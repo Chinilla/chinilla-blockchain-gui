@@ -2168,8 +2168,8 @@ msgstr "ה-Full node אליו ה-Farmer מחובר הוא מתחת. <0>למד ע
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:34
 #: src/components/plot/add/PlotAddChooseSize.tsx:91
-msgid "The minimum required size for vanillanet is k=32"
-msgstr "הגודל המינימלי הדרוש עבור vanillanet הוא k=32"
+msgid "The minimum required size for mainnet is k=32"
+msgstr "הגודל המינימלי הדרוש עבור mainnet הוא k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
 msgid "The node is not synced"

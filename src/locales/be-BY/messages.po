@@ -71,9 +71,9 @@ msgstr "Прыняць"
 msgid "Accepted at time:"
 msgstr "Прынята а:"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 #: src/components/plot/PlotsFailed.tsx:19
 #: src/components/plot/PlotsNotFound.tsx:19
+#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 msgid "Action"
 msgstr "Дзеянне"
 
@@ -106,9 +106,9 @@ msgstr "Дадаць дзялянку ў чаргу"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:46
+#: src/components/plot/PlotHeader.tsx:63
 #: src/components/plot/add/PlotAdd.tsx:191
 #: src/components/plot/overview/PlotOverviewHero.tsx:54
-#: src/components/plot/PlotHeader.tsx:63
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:230
 #: src/components/plotNFT/PlotNFTCard.tsx:272
 msgid "Add a Plot"
@@ -152,10 +152,10 @@ msgstr ""
 #: src/components/core/components/Amount/Amount.tsx:99
 #: src/components/trading/CreateOffer.jsx:196
 #: src/components/trading/TradesTable.tsx:20
+#: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:119
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:720
 #: src/components/wallet/standard/WalletStandard.tsx:506
-#: src/components/wallet/WalletHistory.tsx:62
 msgid "Amount"
 msgstr "Сума"
 
@@ -832,10 +832,10 @@ msgstr "Каб аднавіць свой кашалёк Chinilla, увядзіц
 msgid "Enter your passphrase:"
 msgstr ""
 
-#: src/components/farm/card/FarmCardStatus.tsx:35
-#: src/components/farm/card/FarmCardStatus.tsx:49
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:35
+#: src/components/farm/card/FarmCardStatus.tsx:49
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -936,9 +936,9 @@ msgstr ""
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Фермеры зарабляюць ўзнагароду за блокі і камісійныя за трансакцыі аддаючы сваю вольную прастору на патрэбы сеткі і забяспечваючы тым самым бяспечныя трансакцыі. Тут з'явіцца ваша ферма, калі вы дадасце дзялянку.<0> Даведацца больш</0>"
 
-#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/farm/Farm.tsx:23
 #: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Ідзе фермерства"
@@ -955,13 +955,13 @@ msgstr "Стан фермерства"
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:154
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:146
 #: src/components/pool/PoolInfo.tsx:17
+#: src/components/wallet/WalletHistory.tsx:66
 #: src/components/wallet/create/createExistingColouredCoin.jsx:123
 #: src/components/wallet/create/createNewColouredCoin.jsx:132
 #: src/components/wallet/create/createRLAdmin.jsx:244
 #: src/components/wallet/create/createRLAdmin.jsx:272
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:733
 #: src/components/wallet/standard/WalletStandard.tsx:517
-#: src/components/wallet/WalletHistory.tsx:66
 msgid "Fee"
 msgstr "Камісійныя"
 
@@ -994,9 +994,9 @@ msgstr "Сума камісійных"
 msgid "File"
 msgstr "Файл"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
+#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 #: src/components/wallet/did/WalletDID.tsx:978
 msgid "Filename"
 msgstr "Назва файла"
@@ -1433,9 +1433,9 @@ msgstr ""
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Ніводная з вашых дзялянак яшчэ не прайшла праз фільтр."
 
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:23
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:365
 msgid "Not Available"
@@ -2045,8 +2045,8 @@ msgstr ""
 msgid "Recover Wallet"
 msgstr ""
 
-#: src/components/plot/overview/PlotOverviewHero.tsx:62
 #: src/components/plot/PlotHeader.tsx:78
+#: src/components/plot/overview/PlotOverviewHero.tsx:62
 msgid "Refresh Plots"
 msgstr "Абнавіць дзялянкі"
 
@@ -2326,8 +2326,8 @@ msgstr "Стан"
 #: src/components/pool/PoolOverview.tsx:44
 #: src/components/trading/TradingOverview.jsx:128
 #: src/components/wallet/WalletHistory.tsx:55
-#: src/components/wallet/Wallets.tsx:50
 #: src/components/wallet/WalletStatusCard.tsx:22
+#: src/components/wallet/Wallets.tsx:50
 msgid "Status"
 msgstr "Стан"
 
@@ -2378,8 +2378,8 @@ msgstr "Адправіць"
 msgid "Synced"
 msgstr "Сінхранізаваны"
 
-#: src/components/farm/card/FarmCardStatus.tsx:18
 #: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/wallet/WalletStatus.tsx:38
 msgid "Syncing"
@@ -2435,8 +2435,8 @@ msgstr "Поўны вузел, да якога ваш фермер падлуч�
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/plot/add/PlotAddChooseSize.tsx:105
-msgid "The minimum required size for vanillanet is k=32"
-msgstr "Мінімальны дапушчальны памер дзялянкі для асноўнай сетцы (vanillanet) — k=32"
+msgid "The minimum required size for mainnet is k=32"
+msgstr "Мінімальны дапушчальны памер дзялянкі для асноўнай сетцы (mainnet) — k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
 msgid "The node is not synced"
@@ -3021,13 +3021,13 @@ msgstr "Памылка 13] У дазволе адмоўлена. Вы спраб
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[Памылка 22] Файл не знойдзены. Хутчэй за ўсё, праблема з адной з папак з дзялянкамі, указаных у файле config.yaml."
 
-#: src/components/wallet/Wallets.tsx:75
 #: src/components/wallet/WalletStatusCard.tsx:41
+#: src/components/wallet/Wallets.tsx:75
 msgid "connections:"
 msgstr "падлучэнні:"
 
-#: src/components/wallet/Wallets.tsx:67
 #: src/components/wallet/WalletStatusCard.tsx:33
+#: src/components/wallet/Wallets.tsx:67
 msgid "height:"
 msgstr "вышыня:"
 
@@ -3039,18 +3039,18 @@ msgstr "не сінхр."
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
-#: src/components/wallet/Wallets.tsx:55
 #: src/components/wallet/WalletStatusCard.tsx:27
+#: src/components/wallet/Wallets.tsx:55
 msgid "status:"
 msgstr "стан:"
 
-#: src/components/wallet/Wallets.tsx:60
 #: src/components/wallet/WalletStatusCard.tsx:29
+#: src/components/wallet/Wallets.tsx:60
 msgid "synced"
 msgstr "сінхр."
 
-#: src/components/wallet/Wallets.tsx:59
 #: src/components/wallet/WalletStatusCard.tsx:29
+#: src/components/wallet/Wallets.tsx:59
 msgid "syncing"
 msgstr "ідзе сінхр."
 
