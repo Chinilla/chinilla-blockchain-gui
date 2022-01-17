@@ -1,5 +1,5 @@
 # chinilla-blockchain
-![Alt text](https://www.chinilla.net/img/chinilla_logo.svg)
+![Alt text](https://www.chinilla.com/img/chinilla_logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Chinilla/chinilla-blockchain?logo=GitHub)
 

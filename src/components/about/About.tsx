@@ -70,7 +70,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://chinilla.net';
+const url = 'https://chinilla.com';
 
 type Props = {
   version: string;
