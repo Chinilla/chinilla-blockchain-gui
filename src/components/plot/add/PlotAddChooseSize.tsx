@@ -15,7 +15,7 @@ import { plotSizeOptions } from '../../../constants/plotSizes';
 import useOpenDialog from '../../../hooks/useOpenDialog';
 import Plotter from '../../../types/Plotter';
 
-const MIN_MAINNET_K_SIZE = 32;
+const MIN_VANILLANET_K_SIZE = 32;
 
 const StyledFormHelperText = styled(FormHelperText)`
   color: ${StateColor.WARNING};
@@ -34,7 +34,7 @@ export default function PlotAddChooseSize(props: Props) {
   const plotterName = watch('plotterName');
   const plotSize = watch('plotSize');
   const overrideK = watch('overrideK');
-  const isKLow = plotSize < MIN_MAINNET_K_SIZE;
+  const isKLow = plotSize < MIN_VANILLANET_K_SIZE;
 
   const [allowedPlotSizes, setAllowedPlotSizes] = useState(plotSizeOptions.filter((option) => plotter.options.kSizes.includes(option.value)));
 
@@ -45,7 +45,7 @@ export default function PlotAddChooseSize(props: Props) {
   async function getConfirmation() {
     const canUse = await openDialog(
       <ConfirmDialog
-        title={<Trans>The minimum required size for mainnet is k=32</Trans>}
+        title={<Trans>The minimum required size for vanillanet is k=32</Trans>}
         confirmTitle={<Trans>Yes</Trans>}
         confirmColor="danger"
       >
@@ -102,7 +102,7 @@ export default function PlotAddChooseSize(props: Props) {
             </Select>
             {isKLow && (
               <StyledFormHelperText>
-                <Trans>The minimum required size for mainnet is k=32</Trans>
+                <Trans>The minimum required size for vanillanet is k=32</Trans>
               </StyledFormHelperText>
             )}
           </FormControl>

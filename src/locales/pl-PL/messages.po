@@ -2435,7 +2435,7 @@ msgstr "Poniżej pełen węzeł do którego jest podłączony twój rolnik. <0>D
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/plot/add/PlotAddChooseSize.tsx:105
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for vanillanet is k=32"
 msgstr "Najmniejszy dopuszczalny rozmiar w mainnecie to k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39

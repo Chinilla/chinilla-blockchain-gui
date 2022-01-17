@@ -21,8 +21,12 @@ function loadConfig(net) {
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
 
+    console.log('Config debug - Step 1');
+
     self_hostname = lodash.get(config, 'ui.daemon_host', 'localhost'); // jshint ignore:line
     const daemon_port = lodash.get(config, 'ui.daemon_port', 42400); // jshint ignore:line
+
+    console.log('Config debug - Step 2');
 
     // store these in the global object so they can be used by both main and renderer processes
     global.daemon_rpc_ws = `wss://${self_hostname}:${daemon_port}`;
@@ -34,6 +38,9 @@ function loadConfig(net) {
         'config/ssl/daemon/private_daemon.crt',
       ),
     ); // jshint ignore:line
+
+    console.log('Config debug - Step 3');
+
     global.key_path = path.join(
       config_root_dir,
       lodash.get(
@@ -42,8 +49,10 @@ function loadConfig(net) {
         'config/ssl/daemon/private_daemon.key',
       ),
     ); // jshint ignore:line
+
+    console.log('Config debug - Step 4');
   } catch (e) {
-    console.log('Error loading config - using defaults');
+    console.log('Error loading config - using defaults ' + e);
   }
 }
 

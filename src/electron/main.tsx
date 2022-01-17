@@ -110,10 +110,10 @@ if (!handleSquirrelEvent()) {
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
     // this needs to happen early in startup so all processes share the same global config
-    chinillaConfig.loadConfig('mainnet');
+    chinillaConfig.loadConfig('vanillanet');
     global.sharedObj = { local_test };
 
-    const exitPyProc = (e) => {};
+    const exitPyProc = (e) => { };
 
     app.on('will-quit', exitPyProc);
 
@@ -140,7 +140,7 @@ if (!handleSquirrelEvent()) {
         },
       });
 
-      if(process.platform === 'linux') {
+      if (process.platform === 'linux') {
         mainWindow.setIcon(appIcon);
       }
 
@@ -195,10 +195,10 @@ if (!handleSquirrelEvent()) {
           const choice = dialog.showMessageBoxSync({
             type: 'question',
             buttons: [
-              i18n._(/* i18n */ {id: 'No'}),
-              i18n._(/* i18n */ {id: 'Yes'}),
+              i18n._(/* i18n */ { id: 'No' }),
+              i18n._(/* i18n */ { id: 'Yes' }),
             ],
-            title: i18n._(/* i18n */ {id: 'Confirm'}),
+            title: i18n._(/* i18n */ { id: 'Confirm' }),
             message: i18n._(
               /* i18n */ {
                 id: 'Are you sure you want to quit? GUI Plotting and farming will stop.',
@@ -212,7 +212,7 @@ if (!handleSquirrelEvent()) {
           isClosing = false;
           decidedToClose = true;
           mainWindow.webContents.send('exit-daemon');
-          mainWindow.setBounds({height: 500, width: 500});
+          mainWindow.setBounds({ height: 500, width: 500 });
           ipcMain.on('daemon-exited', (event, args) => {
             mainWindow.close();
 
@@ -220,11 +220,11 @@ if (!handleSquirrelEvent()) {
           });
         }
       });
-      mainWindow.on('showMessageBox' , async (e, a) => {
-        e.reply(await dialog.showMessageBox(mainWindow,a))
+      mainWindow.on('showMessageBox', async (e, a) => {
+        e.reply(await dialog.showMessageBox(mainWindow, a))
       })
 
-      mainWindow.on('showSaveDialog' , async (e, a) => {
+      mainWindow.on('showSaveDialog', async (e, a) => {
         e.reply(await dialog.showSaveDialog(a))
       })
 
