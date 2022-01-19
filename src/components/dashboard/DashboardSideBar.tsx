@@ -19,6 +19,8 @@ import { RootState } from '../../modules/rootReducer';
 const StyledRoot = styled(Flex)`
   height: 100%;
   overflow-y: auto;
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
 `;
 
 const StyledList = styled(List)`
@@ -69,7 +71,7 @@ export default function DashboardSideBar() {
           title={<Trans>Keys</Trans>}
           exact
         />
-        { passphraseSupportEnabled &&
+        {passphraseSupportEnabled &&
           <SideBarItem
             to="/dashboard/settings"
             icon={<SettingsIcon fontSize="large" />}

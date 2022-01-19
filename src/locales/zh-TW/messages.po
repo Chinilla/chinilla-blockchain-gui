@@ -888,7 +888,7 @@ msgstr ""
 msgid "Failed to update passphrase: {error}"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:58
+#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/wallet/coloured/WalletColoured.tsx:610
 #: src/components/wallet/standard/WalletStandard.tsx:525
 msgid "Farm"
@@ -1018,7 +1018,7 @@ msgstr "Twitter 上追隨"
 msgid "Frequently Asked Questions"
 msgstr "常見問題"
 
-#: src/components/dashboard/DashboardSideBar.tsx:42
+#: src/components/dashboard/DashboardSideBar.tsx:44
 #: src/components/fullNode/FullNode.jsx:323
 msgid "Full Node"
 msgstr "完整節點"
@@ -1199,7 +1199,7 @@ msgstr "K-大小"
 msgid "Keyring migration failed: {error}"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:69
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "金鑰"
 
@@ -1493,6 +1493,10 @@ msgstr "好"
 msgid "Offer"
 msgstr "提案"
 
+#: src/components/dashboard/DashboardSideBar.tsx:73
+#~ msgid "Offers"
+#~ msgstr ""
+
 #: src/components/trading/TradingOverview.jsx:413
 msgid "Offers Created"
 msgstr "已建立提案"
@@ -1784,7 +1788,7 @@ msgstr "耕地與 {0} 重複"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "農場正在切換到 (target state). 這可能會需要一段時間. 在完成之前, 請不要關閉應用程式."
 
-#: src/components/dashboard/DashboardSideBar.tsx:53
+#: src/components/dashboard/DashboardSideBar.tsx:55
 msgid "Plots"
 msgstr "耕地"
 
@@ -1831,7 +1835,7 @@ msgstr "最近 24 小時內所發現的積分"
 msgid "Points Successful in Last 24 Hours"
 msgstr "過去24小時有效的積分"
 
-#: src/components/dashboard/DashboardSideBar.tsx:63
+#: src/components/dashboard/DashboardSideBar.tsx:65
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr "農會"
@@ -2226,7 +2230,7 @@ msgstr ""
 msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:76
+#: src/components/dashboard/DashboardSideBar.tsx:78
 #: src/components/settings/Settings.tsx:239
 msgid "Settings"
 msgstr ""
@@ -2642,7 +2646,7 @@ msgstr "總 VDF 疊代次數"
 msgid "Total iterations since the start of the blockchain"
 msgstr "從區塊鏈開始後的總疊代次數"
 
-#: src/components/dashboard/DashboardSideBar.tsx:27
+#: src/components/dashboard/DashboardSideBar.tsx:70
 #~ msgid "Trade"
 #~ msgstr "Trade"
 
@@ -2822,7 +2826,7 @@ msgstr "錢包不存在"
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:48
+#: src/components/dashboard/DashboardSideBar.tsx:50
 #: src/components/wallet/Wallets.tsx:118
 msgid "Wallets"
 msgstr "錢包"

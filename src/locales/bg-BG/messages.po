@@ -888,7 +888,7 @@ msgstr ""
 msgid "Failed to update passphrase: {error}"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:58
+#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/wallet/coloured/WalletColoured.tsx:610
 #: src/components/wallet/standard/WalletStandard.tsx:525
 msgid "Farm"
@@ -1018,7 +1018,7 @@ msgstr "Последвай в Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Често задавани въпроси"
 
-#: src/components/dashboard/DashboardSideBar.tsx:42
+#: src/components/dashboard/DashboardSideBar.tsx:44
 #: src/components/fullNode/FullNode.jsx:323
 msgid "Full Node"
 msgstr "Цялостен възен"
@@ -1199,7 +1199,7 @@ msgstr "К-размер"
 msgid "Keyring migration failed: {error}"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:69
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Ключове"
 
@@ -1492,6 +1492,10 @@ msgstr "Ок"
 #: src/components/trading/ViewOffer.jsx:67
 msgid "Offer"
 msgstr "Предложи"
+
+#: src/components/dashboard/DashboardSideBar.tsx:73
+#~ msgid "Offers"
+#~ msgstr ""
 
 #: src/components/trading/TradingOverview.jsx:413
 msgid "Offers Created"
@@ -1786,7 +1790,7 @@ msgstr "Плота е дубликат на {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:53
+#: src/components/dashboard/DashboardSideBar.tsx:55
 msgid "Plots"
 msgstr "Полета"
 
@@ -1833,7 +1837,7 @@ msgstr ""
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:63
+#: src/components/dashboard/DashboardSideBar.tsx:65
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr ""
@@ -2228,7 +2232,7 @@ msgstr ""
 msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:76
+#: src/components/dashboard/DashboardSideBar.tsx:78
 #: src/components/settings/Settings.tsx:239
 msgid "Settings"
 msgstr ""
@@ -2644,7 +2648,7 @@ msgstr "Общи брой VDF итерации"
 msgid "Total iterations since the start of the blockchain"
 msgstr "Общо итерации от началото на блокчейна"
 
-#: src/components/dashboard/DashboardSideBar.tsx:27
+#: src/components/dashboard/DashboardSideBar.tsx:70
 #~ msgid "Trade"
 #~ msgstr "Trade"
 
@@ -2824,7 +2828,7 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:48
+#: src/components/dashboard/DashboardSideBar.tsx:50
 #: src/components/wallet/Wallets.tsx:118
 msgid "Wallets"
 msgstr "Портфейли"

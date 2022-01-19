@@ -15,11 +15,12 @@ const StyledCardTitle = styled(Box)`
 `;
 
 const StyledCardMaterial = styled(({ cursor, opacity, clickable, ...rest }) => (
-  <CardMaterial {...rest}/>
+  <CardMaterial {...rest} />
 ))`
   cursor: ${({ clickable }) => clickable ? 'pointer' : 'default'};
-  opacity: ${({ disabled }) => disabled ? '0.5': '1'};
-
+  opacity: ${({ disabled }) => disabled ? '0.5' : '1'};
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 type Props = {

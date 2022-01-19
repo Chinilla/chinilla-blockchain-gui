@@ -894,7 +894,7 @@ msgstr ""
 msgid "Failed to update passphrase: {error}"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:58
+#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/wallet/coloured/WalletColoured.tsx:610
 #: src/components/wallet/standard/WalletStandard.tsx:525
 msgid "Farm"
@@ -1024,7 +1024,7 @@ msgstr "Folge auf Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Häufig gestellte Fragen"
 
-#: src/components/dashboard/DashboardSideBar.tsx:42
+#: src/components/dashboard/DashboardSideBar.tsx:44
 #: src/components/fullNode/FullNode.jsx:323
 msgid "Full Node"
 msgstr "Full Node"
@@ -1205,7 +1205,7 @@ msgstr "K-Größe"
 msgid "Keyring migration failed: {error}"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:69
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Schlüssel"
 
@@ -1499,6 +1499,10 @@ msgstr "OK"
 msgid "Offer"
 msgstr "Angebot"
 
+#: src/components/dashboard/DashboardSideBar.tsx:73
+#~ msgid "Offers"
+#~ msgstr ""
+
 #: src/components/trading/TradingOverview.jsx:413
 msgid "Offers Created"
 msgstr "Angebote erstellt"
@@ -1790,7 +1794,7 @@ msgstr "Plot ist ein Duplikat von {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT verändert sich zum (target state). Das kann eine Weile dauern. Bitte schließe die Anwendung nicht bis dies abgeschlossen ist."
 
-#: src/components/dashboard/DashboardSideBar.tsx:53
+#: src/components/dashboard/DashboardSideBar.tsx:55
 msgid "Plots"
 msgstr "Plots"
 
@@ -1839,7 +1843,7 @@ msgstr "Punkte in den letzten 24 Stunden gefunden"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Punkte Erfolgreich in den letzten 24 Stunden"
 
-#: src/components/dashboard/DashboardSideBar.tsx:63
+#: src/components/dashboard/DashboardSideBar.tsx:65
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr "Pool"
@@ -2234,7 +2238,7 @@ msgstr ""
 msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:76
+#: src/components/dashboard/DashboardSideBar.tsx:78
 #: src/components/settings/Settings.tsx:239
 msgid "Settings"
 msgstr ""
@@ -2650,7 +2654,7 @@ msgstr "Totale VDF Iterationen"
 msgid "Total iterations since the start of the blockchain"
 msgstr "Gesamte Iterationen seit Start der Blockchain"
 
-#: src/components/dashboard/DashboardSideBar.tsx:27
+#: src/components/dashboard/DashboardSideBar.tsx:70
 #~ msgid "Trade"
 #~ msgstr "Trade"
 
@@ -2830,7 +2834,7 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:48
+#: src/components/dashboard/DashboardSideBar.tsx:50
 #: src/components/wallet/Wallets.tsx:118
 msgid "Wallets"
 msgstr "Wallets"

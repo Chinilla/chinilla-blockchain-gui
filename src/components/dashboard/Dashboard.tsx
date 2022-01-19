@@ -23,13 +23,15 @@ import TradeManager from '../trading/TradeManager';
 import BackupCreate from '../backup/BackupCreate';
 
 const StyledRoot = styled(Flex)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   height: 100%;
   // overflow: hidden;
 `;
 
 const StyledAppBar = styled(AppBar)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : 'white'};
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   width: ${({ theme }) => `calc(100% - ${theme.drawer.width})`};
   margin-left: ${({ theme }) => theme.drawer.width};
@@ -47,10 +49,14 @@ const StyledDrawer = styled(Drawer)`
 `;
 
 const StyledBody = styled(Flex)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   min-width: 0;
 `;
 
 const StyledBrandWrapper = styled(Flex)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   height: 64px;
   align-items: center;
   justify-content: center;
