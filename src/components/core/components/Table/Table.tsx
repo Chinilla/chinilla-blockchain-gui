@@ -15,7 +15,13 @@ import {
 
 const StyledTableHead = styled(TableHead)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#202020' : '#F3E5AB'};
+    theme.palette.type === 'dark' ? '#202020' : '#D6B75A'};
+  font-weight: 500;
+`;
+
+const StyledTablePagination = styled(TablePagination)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#202020' : '#D6B75A'};
   font-weight: 500;
 `;
 
@@ -216,7 +222,7 @@ export default function Table(props: Props) {
         </TableBody>
       </TableBase>
       {pages && (
-        <TablePagination
+        <StyledTablePagination
           rowsPerPageOptions={rowsPerPageOptions}
           component="div"
           count={rows.length ?? 0}
