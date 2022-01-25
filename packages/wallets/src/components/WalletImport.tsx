@@ -17,10 +17,23 @@ const shuffledEnglish = shuffle(english);
 const test = new Array(24).fill('').map((item, index) => shuffledEnglish[index].word);
 */
 
+<<<<<<< HEAD
 const options = english.map((item) => item.word);
 
 type FormData = {
   mnemonic: string[];
+=======
+const emptyMnemonic = Array.from(Array(24).keys()).map((i) => ({
+  word: '',
+}))
+
+const options = english.map((item) => item.word);
+
+type FormData = {
+  mnemonic: {
+    word: string;
+  }[];
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 };
 
 export default function WalletImport() {
@@ -28,13 +41,20 @@ export default function WalletImport() {
   const [addKey, { isLoading: isAddKeyLoading }] = useAddKeyMutation();
   const [logIn, { isLoading: isLogInLoading }] = useLogInMutation();
   const trans = useTrans();
+<<<<<<< HEAD
   const showError = useShowError();
+=======
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
   const isProcessing = isAddKeyLoading || isLogInLoading;
 
   const methods = useForm<FormData>({
     defaultValues: {
+<<<<<<< HEAD
       mnemonic: new Array(24).fill(''),
+=======
+      mnemonic: emptyMnemonic,
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
     },
   });
 
@@ -43,23 +63,35 @@ export default function WalletImport() {
     name: 'mnemonic',
   });
 
+<<<<<<< HEAD
   function handleBack() {
     navigate('/');
   }
 
+=======
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
   async function handleSubmit(values: FormData) {
     if (isProcessing) {
       return;
     }
 
     const { mnemonic } = values;
+<<<<<<< HEAD
     const hasEmptyWord = !!mnemonic.find((word) => !word);
+=======
+    const mnemonicWords = mnemonic.map((item) => item.word);
+    const hasEmptyWord = !!mnemonicWords.filter((word) => !word).length;
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
     if (hasEmptyWord) {
       throw new Error(trans('Please fill all words'));
     }
 
     const fingerprint = await addKey({
+<<<<<<< HEAD
       mnemonic,
+=======
+      mnemonic: mnemonicWords,
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
       type: 'new_wallet',
     }).unwrap();
 
@@ -89,7 +121,11 @@ export default function WalletImport() {
               <Grid key={field.id} xs={2} item>
                 <Autocomplete
                   options={options}
+<<<<<<< HEAD
                   name={`mnemonic.${index}`}
+=======
+                  name={`mnemonic.${index}.word`}
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
                   label={index + 1}
                   autoFocus={index === 0}
                   variant="filled"

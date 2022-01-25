@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { ReactNode, useEffect, useState, Suspense } from 'react';
 import { Provider } from 'react-redux';
 import useDarkMode from 'use-dark-mode';
@@ -71,5 +72,16 @@ export default function App(props: AppProps) {
         </LocaleProvider>
       </Provider>
     </ModalDialogsProvider>
+=======
+import React from 'react';
+import { ModeProvider } from '@chia/core';
+import AppRouter from './AppRouter';
+
+export default function App() {
+  return (
+    <ModeProvider persist>
+      <AppRouter />
+    </ModeProvider>
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
   );
 }

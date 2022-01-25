@@ -1,10 +1,10 @@
-import { Wallet, CAT, Pool, Farmer, WalletType } from '@chia/api';
+import { Wallet, CAT, Pool, Farmer, WalletType, OfferTradeRecord } from '@chia/api';
 import type { Transaction, WalletConnections } from '@chia/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import normalizePoolState from '../utils/normalizePoolState';
 import api, { baseQuery } from '../api';
 
-const apiWithTag = api.enhanceEndpoints({addTagTypes: ['Keys', 'Wallets', 'WalletBalance', 'Address', 'Transactions', 'WalletConnections', 'LoggedInFingerprint', 'PoolWalletStatus', 'NFTs']})
+const apiWithTag = api.enhanceEndpoints({addTagTypes: ['Keys', 'Wallets', 'WalletBalance', 'Address', 'Transactions', 'WalletConnections', 'LoggedInFingerprint', 'PoolWalletStatus', 'NFTs', 'OfferTradeRecord']})
 
 export const walletApi = apiWithTag.injectEndpoints({
   endpoints: (build) => ({
@@ -772,6 +772,120 @@ export const walletApi = apiWithTag.injectEndpoints({
       }),
     }),
 
+    // Offers
+    getAllOffers: build.query<OfferTradeRecord[], undefined>({
+      query: () => ({
+        command: 'getAllOffers',
+        service: Wallet,
+      }),
+      transformResponse: (response: any) => {
+        if (!response?.offers) {
+          return response?.tradeRecords;
+        }
+        return response?.tradeRecords.map((tradeRecord: OfferTradeRecord, index: number) => ({
+          ...tradeRecord, _offerData: response?.offers?.[index]
+        }));
+      },
+      providesTags(result) {
+        return result ? [
+          ...result.map(({ tradeId }) => ({ type: 'OfferTradeRecord', id: tradeId } as const)),
+          { type: 'OfferTradeRecord', id: 'LIST' },
+        ] : [{ type: 'OfferTradeRecord', id: 'LIST' }];
+      },
+      onCacheEntryAdded: onCacheEntryAddedInvalidate(baseQuery, [{
+        command: 'onCoinAdded',
+        service: Wallet,
+        endpoint: () => walletApi.endpoints.getAllOffers,
+      }, {
+        command: 'onCoinRemoved',
+        service: Wallet,
+        endpoint: () => walletApi.endpoints.getAllOffers,
+      }, {
+        command: 'onPendingTransaction',
+        service: Wallet,
+        endpoint: () => walletApi.endpoints.getAllOffers,
+      }]),
+    }),
+
+    createOfferForIds: build.mutation<any, {
+      walletIdsAndAmounts: { [key: string]: number };
+      validateOnly?: boolean;
+    }>({
+      query: ({
+        walletIdsAndAmounts,
+        validateOnly,
+      }) => ({
+        command: 'createOfferForIds',
+        service: Wallet,
+        args: [walletIdsAndAmounts, validateOnly],
+      }),
+      invalidatesTags: [{ type: 'OfferTradeRecord', id: 'LIST' }],
+    }),
+
+    cancelOffer: build.mutation<any, {
+      tradeId: string;
+      secure: boolean;
+      fee: number | string;
+    }>({
+      query: ({
+        tradeId,
+        secure,
+        fee,
+      }) => ({
+        command: 'cancelOffer',
+        service: Wallet,
+        args: [tradeId, secure, fee],
+      }),
+      invalidatesTags: (result, error, { tradeId }) => [{ type: 'OfferTradeRecord', id: tradeId }],
+    }),
+
+    checkOfferValidity: build.mutation<any, string>({
+      query: (offerData: string) => ({
+        command: 'checkOfferValidity',
+        service: Wallet,
+        args: [offerData],
+      }),
+    }),
+
+    takeOffer: build.mutation<any, {
+      offer: string;
+      fee: number | string;
+    }>({
+      query: ({
+        offer,
+        fee,
+      }) => ({
+        command: 'takeOffer',
+        service: Wallet,
+        args: [offer, fee],
+      }),
+      invalidatesTags: [{ type: 'OfferTradeRecord', id: 'LIST' }],
+    }),
+
+    getOfferSummary: build.mutation<any, string>({
+      query: (offerData: string) => ({
+        command: 'getOfferSummary',
+        service: Wallet,
+        args: [offerData],
+      }),
+    }),
+
+    getOfferData: build.mutation<any, string>({
+      query: (offerId: string) => ({
+        command: 'getOfferData',
+        service: Wallet,
+        args: [offerId],
+      }),
+    }),
+
+    getOfferRecord: build.mutation<any, OfferTradeRecord>({
+      query: (offerId: string) => ({
+        command: 'getOfferRecord',
+        service: Wallet,
+        args: [offerId],
+      }),
+    }),
+
     // Pool
     createNewPoolWallet: build.mutation<{
       transaction: Transaction;
@@ -1309,6 +1423,17 @@ export const {
   useOpenWalletConnectionMutation,
   useCloseWalletConnectionMutation,
   useCreateBackupMutation,
+  useGetAllOffersQuery,
+  useCreateOfferForIdsMutation,
+  useCancelOfferMutation,
+  useCheckOfferValidityMutation,
+  useTakeOfferMutation,
+  useGetOfferSummaryMutation,
+  useGetOfferDataMutation,
+  useGetOfferRecordMutation,
+
+  // Pool
+  useCreateNewPoolWalletMutation,
 
   // Pool
   useCreateNewPoolWalletMutation,

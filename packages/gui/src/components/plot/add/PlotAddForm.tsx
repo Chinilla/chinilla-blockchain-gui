@@ -87,8 +87,13 @@ export default function PlotAddForm(props: Props) {
     }
   }, [plotSize, setValue]);
 
+<<<<<<< HEAD
   let plotter = plotters[plotterName] ?? defaultPlotter;
   let step: number = 1;
+=======
+  const plotter = plotters[plotterName] ?? defaultPlotter;
+  let step = 1;
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
   const allowTempDirectorySelection: boolean = plotter.options.haveBladebitOutputDir === false;
 
 

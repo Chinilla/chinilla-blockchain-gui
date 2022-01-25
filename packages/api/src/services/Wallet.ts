@@ -245,11 +245,70 @@ export default class Wallet extends Service {
     });
   }
 
-  onSyncChanged(
-    callback: (data: any, message: Message) => void,
-    processData?: (data: any) => any,
-  ) {
-    return this.onStateChanged('sync_changed', callback, processData);
+  async getAllOffers() {
+    return this.command('get_all_offers', {
+      file_contents: true,
+    });
+  }
+
+  async createOfferForIds(walletIdsAndAmounts: { [key: string]: number }, validateOnly?: boolean) {
+    return this.command('create_offer_for_ids', {
+      offer: walletIdsAndAmounts,
+      validate_only: validateOnly || false,
+    });
+  }
+
+  async cancelOffer(tradeId: string, secure: boolean, fee: number | string) {
+    return this.command('cancel_offer', {
+      trade_id: tradeId,
+      secure,
+      fee,
+    });
+  }
+
+  async checkOfferValidity(offer: string) {
+    return this.command('check_offer_validity', {
+      offer,
+    });
+  }
+
+  async takeOffer(offer: string, fee: number | string) {
+    return this.command('take_offer', {
+      offer,
+      fee,
+    });
+  }
+
+  async getOfferSummary(offerData: string) {
+    return this.command('get_offer_summary', {
+      offer: offerData,
+    });
+  }
+
+  async getOfferData(offerId: string) {
+    return this.command('get_offer', {
+      trade_id: offerId,
+      file_contents: true,
+    });
+  }
+
+  async getOfferRecord(offerId: string) {
+    return this.command('get_offer', {
+      trade_id: offerId,
+      file_contents: false,
+    });
+  }
+
+  onSyncChanged(callback: (data: any, message: Message) => void) {
+    return this.onStateChanged('sync_changed', callback);
+  }
+
+  onNewBlock(callback: (data: any, message: Message) => void) {
+    return this.onStateChanged('new_block', callback);
+  }
+
+  onNewPeak(callback: (data: any, message: Message) => void) {
+    return this.onStateChanged('new_peak', callback);
   }
 
   onNewBlock(

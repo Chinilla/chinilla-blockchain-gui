@@ -4,6 +4,10 @@ import { useGetWalletsQuery } from '@chia/api-react';
 import StandardWallet from './standard/WalletStandard';
 import WalletCreate from './create/WalletCreate';
 import WalletCAT from './cat/WalletCAT';
+<<<<<<< HEAD
+=======
+import { CreateOffer } from './offers/OfferManager';
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 // import RateLimitedWallet from './rateLimited/WalletRateLimited';
 // import DistributedWallet from './did/WalletDID';
 import { WalletType } from '@chia/api';
@@ -29,6 +33,10 @@ export default function Wallets() {
         <Route element={<WalletsList />} index />
         */}
         <Route path="create/*" element={<WalletCreate />} />
+<<<<<<< HEAD
+=======
+        <Route path="offers/*" element={<CreateOffer />} />
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
         {!!wallets && (
           <Route path="*" element={<Navigate to="1" />} />
         )}

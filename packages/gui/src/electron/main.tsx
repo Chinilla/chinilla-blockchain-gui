@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { app, dialog, shell, ipcMain, BrowserWindow, Menu, session } from 'electron';
+=======
+import { app, dialog, net, shell, ipcMain, BrowserWindow, IncomingMessage, Menu, session } from 'electron';
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 require('@electron/remote/main').initialize()
 import path from 'path';
 import React from 'react';
@@ -16,6 +20,8 @@ import chiaConfig from '../util/config';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
+
+let isSimulator = process.env.LOCAL_TEST === 'true';
 
 function renderAbout(): string {
   const sheet = new ServerStyleSheet();
@@ -104,6 +110,20 @@ if (!handleSquirrelEvent()) {
 
   let mainWindow = null;
 
+  const createMenu = () => Menu.buildFromTemplate(getMenuTemplate());
+
+  function toggleSimulatorMode() {
+    isSimulator = !isSimulator;
+
+    if (mainWindow) {
+      mainWindow.webContents.send('simulator-mode', isSimulator);
+    }
+
+    if (app) {
+      app.applicationMenu = createMenu();
+    }
+  }
+
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
     // this needs to happen early in startup so all processes share the same global config
@@ -126,6 +146,70 @@ if (!handleSquirrelEvent()) {
 
       ipcMain.handle('getConfig', () => chiaConfig.loadConfig('mainnet'));
 
+<<<<<<< HEAD
+=======
+      ipcMain.handle('getTempDir', () => app.getPath('temp'));
+
+      ipcMain.handle('getVersion', () => app.getVersion());
+
+      ipcMain.handle('fetchTextResponse', async (_event, requestOptions, requestHeaders, requestData) => {
+        const request = net.request(requestOptions as any);
+
+        Object.entries(requestHeaders || {}).forEach(([header, value]) => {
+          request.setHeader(header, value as any);
+        });
+
+        let err: any | undefined = undefined;
+        let statusCode: number | undefined = undefined;
+        let statusMessage: string | undefined = undefined;
+        let responseBody: string | undefined = undefined;
+
+        try {
+          responseBody = await new Promise((resolve, reject) => {
+            request.on('response', (response: IncomingMessage) => {
+              statusCode = response.statusCode;
+              statusMessage = response.statusMessage;
+
+              response.on('data', (chunk) => {
+                const body = chunk.toString('utf8');
+
+                resolve(body);
+              });
+
+              response.on('error', (e: string) => {
+                reject(new Error(e));
+              });
+            });
+
+            request.on('error', (error: any) => {
+              reject(error);
+            })
+
+            request.write(requestData);
+            request.end();
+          });
+        }
+        catch (e) {
+          console.error(e);
+          err = e;
+        }
+
+        return { err, statusCode, statusMessage, responseBody };
+      });
+
+      ipcMain.handle('showMessageBox', async (_event, options) => {
+        return await dialog.showMessageBox(mainWindow, options);
+      });
+
+      ipcMain.handle('showOpenDialog', async (_event, options) => {
+        return await dialog.showOpenDialog(options);
+      });
+
+      ipcMain.handle('showSaveDialog', async (_event, options) => {
+        return await dialog.showSaveDialog(options);
+      });
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
       decidedToClose = false;
       mainWindow = new BrowserWindow({
         width: 1200,
@@ -154,6 +238,7 @@ if (!handleSquirrelEvent()) {
         await session.defaultSession.loadExtension(reactDevToolsPath)
       }
 
+<<<<<<< HEAD
       const startUrl =
         process.env.NODE_ENV === 'development'
           ? 'http://localhost:3000'
@@ -168,6 +253,8 @@ if (!handleSquirrelEvent()) {
       mainWindow.loadURL(startUrl);
       require("@electron/remote/main").enable(mainWindow.webContents)
 
+=======
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
       mainWindow.once('ready-to-show', () => {
         mainWindow.show();
       });
@@ -219,6 +306,7 @@ if (!handleSquirrelEvent()) {
           });
         }
       });
+<<<<<<< HEAD
       mainWindow.on('showMessageBox' , async (e, a) => {
         e.reply(await dialog.showMessageBox(mainWindow,a))
       })
@@ -232,6 +320,24 @@ if (!handleSquirrelEvent()) {
 
 
     const createMenu = () => Menu.buildFromTemplate(getMenuTemplate());
+=======
+
+
+
+      const startUrl =
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:3000'
+        : url.format({
+          pathname: path.join(__dirname, '/../renderer/index.html'),
+          protocol: 'file:',
+          slashes: true,
+        });
+
+      mainWindow.loadURL(startUrl);
+      require("@electron/remote/main").enable(mainWindow.webContents)
+
+    };
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
     const appReady = async () => {
       createWindow();
@@ -257,6 +363,11 @@ if (!handleSquirrelEvent()) {
     ipcMain.handle('setLocale', (_event, locale: string) => {
       i18n.activate(locale);
       app.applicationMenu = createMenu();
+    });
+
+    ipcMain.on('isSimulator', (event) => {
+      console.log('isSimulator', isSimulator);
+      event.returnValue = isSimulator;
     });
   }
 
@@ -321,6 +432,12 @@ if (!handleSquirrelEvent()) {
                     ? 'Alt+Command+I'
                     : 'Ctrl+Shift+I',
                 click: () => mainWindow.toggleDevTools(),
+              },
+              {
+                label: isSimulator 
+                  ? i18n._(/* i18n */ { id: 'Disable Simulator' })
+                  : i18n._(/* i18n */ { id: 'Enable Simulator' }),
+                click: () => toggleSimulatorMode(),
               },
             ],
           },

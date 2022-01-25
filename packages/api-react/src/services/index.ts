@@ -108,6 +108,14 @@ export const {
   useOpenWalletConnectionMutation,
   useCloseWalletConnectionMutation,
   useCreateBackupMutation,
+  useGetAllOffersQuery,
+  useCreateOfferForIdsMutation,
+  useCancelOfferMutation,
+  useCheckOfferValidityMutation,
+  useTakeOfferMutation,
+  useGetOfferSummaryMutation,
+  useGetOfferDataMutation,
+  useGetOfferRecordMutation,
 
   // Pool
   useCreateNewPoolWalletMutation,

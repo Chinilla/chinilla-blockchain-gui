@@ -34,6 +34,13 @@ msgstr "(Opcional)"
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
 msgstr "*¿Quieres explorar más los bloques de Chia? Échale un vistazo a <0>Chia Explorer</0> construido en código abierto."
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:120
+msgid "+"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddNFT.tsx:128
 msgid "+ Add New Plot NFT"
 msgstr "+ Añadir nueva parcela NFT"
@@ -58,8 +65,13 @@ msgstr "Un cosechador es un servicio que se ejecuta en una máquina, donde se al
 msgid "A value of {0} is recommended"
 msgstr ""
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:433
 #: src/electron/main.tsx:520
+=======
+#: src/electron/main.tsx:435
+#: src/electron/main.tsx:522
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "About Chia Blockchain"
 msgstr "Acerca de la Blockchain de Chía"
 
@@ -184,7 +196,11 @@ msgstr "¿Estás seguro de querer eliminar estas transacciones no confirmadas?"
 msgid "Are you sure you want to disconnect?"
 msgstr "¿Estás seguro de que te quieres desconectar?"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:201
+=======
+#: src/electron/main.tsx:203
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "¿Está seguro que quiere salir? El Sembrado y Cultivado de las parcelas se detendrán."
 
@@ -196,7 +212,11 @@ msgstr "¿Está seguro que quiere salir? El Sembrado y Cultivado de las parcelas
 msgid "Are you sure you want to use k={plotSize}?"
 msgstr "¿Está seguro de querer usar k={plotSize}?"
 
+<<<<<<< HEAD
 #: src/components/app/AppState.tsx:148
+=======
+#: src/components/app/AppState.tsx:140
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Attempt {attempt}"
 msgstr ""
 
@@ -347,6 +367,10 @@ msgstr "Cambiar"
 
 #: src/components/settings/ChangePassphrasePrompt.tsx:232
 #: src/components/settings/Settings.tsx:160
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:166
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Change Passphrase"
 msgstr ""
 
@@ -356,6 +380,7 @@ msgstr ""
 msgid "Change Pool"
 msgstr "Cambiar Fondo"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:412
 msgid "Chat on KeyBase"
 msgstr "Chat en Keybase"
@@ -365,6 +390,17 @@ msgid "Chia"
 msgstr "Chia"
 
 #: src/electron/main.tsx:369
+=======
+#: src/electron/main.tsx:414
+msgid "Chat on KeyBase"
+msgstr "Chat en Keybase"
+
+#: src/electron/main.tsx:432
+msgid "Chia"
+msgstr "Chia"
+
+#: src/electron/main.tsx:371
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Chia Blockchain Wiki"
 msgstr "Wiki de la Blockchain de Chia"
 
@@ -372,6 +408,13 @@ msgstr "Wiki de la Blockchain de Chia"
 msgid "Chia Wallet"
 msgstr "Cartera Chia"
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:137
+msgid "Choose Farming Mode"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 msgid "Choose Number of Plots"
 msgstr "Elegir la cantidad de Parcelas"
@@ -384,17 +427,32 @@ msgstr "Elegir el Tamaño de la Parcela"
 msgid "Choose Plotter"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:93
+msgid "Choose Wallet Mode"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plotNFT/PlotNFTCard.tsx:381
 #: src/components/pool/PoolOverview.tsx:89
 msgid "Claim Rewards"
 msgstr "Reclamar recompensas"
 
 #: src/components/plot/PlotAddDirectoryDialog.tsx:131
+<<<<<<< HEAD
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:80
 msgid "Close"
 msgstr "Cerrar"
 
 #: src/components/app/AppState.tsx:106
+=======
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:82
+msgid "Close"
+msgstr "Cerrar"
+
+#: src/components/app/AppState.tsx:98
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Closing down node and server"
 msgstr "Cerrando nodo y servidor"
 
@@ -432,7 +490,11 @@ msgid "Coloured Coin Options"
 msgstr "Opciones de Moneda de Color"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
+<<<<<<< HEAD
 #: src/electron/main.tsx:199
+=======
+#: src/electron/main.tsx:201
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Confirmar"
@@ -481,6 +543,7 @@ msgstr "Conectar al fondo"
 msgid "Connected"
 msgstr "Conectado"
 
+<<<<<<< HEAD
 #: src/components/app/AppState.tsx:141
 #: src/components/app/AppState.tsx:145
 msgid "Connecting to daemon"
@@ -490,6 +553,17 @@ msgstr ""
 #~ msgid "Connecting to wallet"
 #~ msgstr "Conectar a cartera"
 
+=======
+#: src/components/app/AppState.tsx:133
+#: src/components/app/AppState.tsx:137
+msgid "Connecting to daemon"
+msgstr ""
+
+#: src/components/app/AppRouter.tsx:61
+#~ msgid "Connecting to wallet"
+#~ msgstr "Conectar a cartera"
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:18
 msgid "Connection Status"
 msgstr "Estado de Conexión"
@@ -507,7 +581,11 @@ msgstr "Tipo de Conexión"
 msgid "Connections"
 msgstr "Conexiones"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:393
+=======
+#: src/electron/main.tsx:395
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Contribute on GitHub"
 msgstr "Contribuir en GitHub"
 
@@ -537,6 +615,13 @@ msgstr "Copiar"
 msgid "Create"
 msgstr "Crear"
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:125
+msgid "Create & Manage plots"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/did/WalletDID.tsx:970
 msgid "Create An Attestation Packet"
 msgstr ""
@@ -724,6 +809,7 @@ msgstr "Eliminar llave {fingerprint}"
 #: src/components/selectKey/SelectKey.tsx:126
 #~ msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
 #~ msgstr "Borrar todas las llaves eliminará permanentemente las llaves de su ordenador, asegúrese de tener una copia de seguridad. ¿Esta seguro de que quiere continuar?"
+<<<<<<< HEAD
 
 #: src/components/app/AppPassPrompt.tsx:89
 msgid "Deleting key"
@@ -742,6 +828,26 @@ msgid "Developer"
 msgstr "Desarrollador"
 
 #: src/electron/main.tsx:318
+=======
+
+#: src/components/app/AppPassPrompt.tsx:89
+msgid "Deleting key"
+msgstr ""
+
+#: src/components/selectKey/SelectKey.tsx:101
+#~ msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
+#~ msgstr "Borrar la llave eliminará permanentemente la llave de su ordenador, asegurase de tener una copia de seguridad. ¿Está seguro de que quiere continuar?"
+
+#: src/components/plot/add/PlotAddChoosePlotter.tsx:92
+msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chia Proof of Space plotter. If unsure, use the default Chia Proof of Space plotter."
+msgstr ""
+
+#: src/electron/main.tsx:317
+msgid "Developer"
+msgstr "Desarrollador"
+
+#: src/electron/main.tsx:320
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Developer Tools"
 msgstr "Herramientas de Desarrollador"
 
@@ -812,7 +918,11 @@ msgstr "Arrastra y suelta tu archivo de respaldo"
 msgid "Drag and drop your recovery backup file"
 msgstr ""
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:274
+=======
+#: src/electron/main.tsx:276
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Edit"
 msgstr "Editar"
 
@@ -908,7 +1018,11 @@ msgstr ""
 
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:610
 #: src/components/_wallet_old/standard/WalletStandard.tsx:525
+<<<<<<< HEAD
 #: src/components/dashboard/DashboardSideBar.tsx:67
+=======
+#: src/components/dashboard/DashboardSideBar.tsx:70
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Farm"
 msgstr "Granja"
 
@@ -947,8 +1061,13 @@ msgid "Farmer is not running"
 msgstr "El Agricultor no está funcionando"
 
 #: src/_middleware_old/middleware_api.jsx:247
+<<<<<<< HEAD
 msgid "Farmer public key:"
 msgstr "Llave Pública de Granjero:"
+=======
+#~ msgid "Farmer public key:"
+#~ msgstr "Llave Pública de Granjero:"
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:32
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
@@ -960,6 +1079,10 @@ msgstr "Los agricultores obtienen recompensas en bloque y tarifas de transacció
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Cultivando"
+
+#: src/components/app/AppSelectMode.tsx:107
+msgid "Farming Mode"
+msgstr ""
 
 #: src/components/farm/card/FarmCardStatus.tsx:15
 #: src/components/farm/card/FarmCardStatus.tsx:26
@@ -1006,8 +1129,13 @@ msgstr "Monto de tarifas"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:266
 #: src/electron/main.tsx:467
+=======
+#: src/electron/main.tsx:268
+#: src/electron/main.tsx:469
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "File"
 msgstr "Archivo"
 
@@ -1027,6 +1155,7 @@ msgstr "Ubicación de la Carpeta Final"
 msgid "Finished"
 msgstr "Finalizado"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:418
 msgid "Follow on Twitter"
 msgstr "Seguir en Twitter"
@@ -1036,6 +1165,17 @@ msgid "Frequently Asked Questions"
 msgstr "Preguntas Frecuentes"
 
 #: src/components/dashboard/DashboardSideBar.tsx:51
+=======
+#: src/electron/main.tsx:420
+msgid "Follow on Twitter"
+msgstr "Seguir en Twitter"
+
+#: src/electron/main.tsx:379
+msgid "Frequently Asked Questions"
+msgstr "Preguntas Frecuentes"
+
+#: src/components/dashboard/DashboardSideBar.tsx:54
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "Nodo Completo"
@@ -1048,7 +1188,11 @@ msgstr "Resumen del nodo completo"
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:343
+=======
+#: src/electron/main.tsx:345
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Full Screen"
 msgstr "Pantalla Completa"
 
@@ -1090,7 +1234,11 @@ msgstr "Encabezado de hash"
 msgid "Height"
 msgstr "Altura"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:365
+=======
+#: src/electron/main.tsx:367
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Help"
 msgstr "Ayuda"
 
@@ -1208,6 +1356,10 @@ msgstr "Únete a una piscina y obtén recompensas de agricultura XCH. El rendimi
 msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
 msgstr "Únete a un fondo y consigue recompensas de cultivo XCH más consistentes. Crea una parcela NFT y asigna tus nuevas parcelas a un grupo."
 
+#: src/components/app/AppSelectMode.tsx:131
+msgid "Join farming pools"
+msgstr ""
+
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 msgid "K-Size"
 msgstr "Tamaño-K"
@@ -1220,9 +1372,15 @@ msgstr ""
 #~ msgid "Keyring migration failed: {error}"
 #~ msgstr ""
 
+<<<<<<< HEAD
 #: src/components/dashboard/DashboardSideBar.tsx:78
 msgid "Keys"
 msgstr "Llaves"
+=======
+#: src/components/dashboard/DashboardSideBar.tsx:85
+#~ msgid "Keys"
+#~ msgstr "Llaves"
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/FarmFullNodeConnections.tsx:65
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:64
@@ -1263,6 +1421,7 @@ msgstr "Vista de la lista"
 #~ msgid "Loading Plot NFTs"
 #~ msgstr "Cargando NFTs de parcela"
 
+<<<<<<< HEAD
 #: src/components/app/App.tsx:66
 msgid "Loading configuration"
 msgstr ""
@@ -1271,11 +1430,25 @@ msgstr ""
 msgid "Loading keyring status"
 msgstr ""
 
+=======
+#: src/components/app/AppProviders.tsx:66
+msgid "Loading configuration"
+msgstr ""
+
+#: src/components/app/AppState.tsx:106
+msgid "Loading keyring status"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/Wallets.tsx:117
 msgid "Loading list of wallets"
 msgstr "Cargando lista de carteras"
 
+<<<<<<< HEAD
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:33
+=======
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:35
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Loading..."
 msgstr "Cargando..."
 
@@ -1327,6 +1500,13 @@ msgstr "Cargando..."
 #~ msgid "MainWalletList.title"
 #~ msgstr ""
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:81
+msgid "Manage CAT tokens"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/farm/overview/FarmOverview.tsx:49
 msgid "Manage Farming Rewards"
 msgstr "Administrar Recompensas de Cultuivo"
@@ -1348,6 +1528,10 @@ msgid "Migrate"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:182
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:187
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Migrate Keyring"
 msgstr ""
 
@@ -1361,6 +1545,10 @@ msgid "Migration required"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:123
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:131
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Migration required to support passphrase protection"
 msgstr ""
 
@@ -1424,13 +1612,22 @@ msgid "Nickname"
 msgstr "Apodo"
 
 #: src/components/trading/TradingOverview.jsx:208
+<<<<<<< HEAD
 #: src/electron/main.tsx:196
+=======
+#: src/electron/main.tsx:198
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "No"
 msgstr "No"
 
 #: src/_middleware_old/middleware_api.jsx:273
+<<<<<<< HEAD
 msgid "No 24 word seed, since this key is imported."
 msgstr "No hay semilla de 24 palabras, ya que esta llave es importada."
+=======
+#~ msgid "No 24 word seed, since this key is imported."
+#~ msgstr "No hay semilla de 24 palabras, ya que esta llave es importada."
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/card/FarmCardLastHeightFarmed.tsx:16
 msgid "No blocks farmed yet"
@@ -1545,6 +1742,10 @@ msgstr "Enviado"
 #: src/components/app/AppPassPrompt.tsx:120
 #: src/components/settings/RemovePassphrasePrompt.tsx:112
 #: src/components/settings/SetPassphrasePrompt.tsx:151
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:218
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase"
 msgstr ""
 
@@ -1570,18 +1771,34 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/settings/Settings.tsx:96
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:102
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection has been disabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:133
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:143
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection is disabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:130
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:139
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection is enabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:124
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:132
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase support requires migrating your keys to a new keyring"
 msgstr ""
 
@@ -1811,7 +2028,11 @@ msgstr "Parcela es duplicado de {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "ParcelaNFT está transicionando hacia (estado de destino). Esto puede tardar un tiempo. Por favor, no cierre la aplicación hasta que esto esté finalizado."
 
+<<<<<<< HEAD
 #: src/components/dashboard/DashboardSideBar.tsx:62
+=======
+#: src/components/dashboard/DashboardSideBar.tsx:65
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/Plot.tsx:14
 msgid "Plots"
 msgstr "Parcelas"
@@ -1859,7 +2080,11 @@ msgstr "Puntos encontrados en las últimas 24 horas"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Puntos exitosos en las últimas 24 horas"
 
+<<<<<<< HEAD
 #: src/components/dashboard/DashboardSideBar.tsx:72
+=======
+#: src/components/dashboard/DashboardSideBar.tsx:75
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/pool/Pool.tsx:17
 msgid "Pool"
 msgstr "Fondo"
@@ -1926,8 +2151,13 @@ msgstr ""
 #~ msgstr "Fondo no proporciona target_puzzle_hash."
 
 #: src/_middleware_old/middleware_api.jsx:255
+<<<<<<< HEAD
 msgid "Pool public key:"
 msgstr "Llave Pública de Fondo:"
+=======
+#~ msgid "Pool public key:"
+#~ msgstr "Llave Pública de Fondo:"
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:271
 #: src/components/plotNFT/PlotNFTCard.tsx:324
@@ -1977,12 +2207,21 @@ msgid "Private key with public fingerprint {fingerprint}"
 msgstr "Llave privada con huella digital pública {fingerprint}"
 
 #: src/_middleware_old/middleware_api.jsx:221
+<<<<<<< HEAD
 msgid "Private key {0}"
 msgstr "Llave privada {0}"
 
 #: src/_middleware_old/middleware_api.jsx:231
 msgid "Private key:"
 msgstr "Llave privada:"
+=======
+#~ msgid "Private key {0}"
+#~ msgstr "Llave privada {0}"
+
+#: src/_middleware_old/middleware_api.jsx:231
+#~ msgid "Private key:"
+#~ msgstr "Llave privada:"
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/block/Block.jsx:240
 msgid "Proof of Space Size"
@@ -2002,8 +2241,13 @@ msgid "Pubkey"
 msgstr "Llave Pública"
 
 #: src/_middleware_old/middleware_api.jsx:239
+<<<<<<< HEAD
 msgid "Public key:"
 msgstr "Llave pública:"
+=======
+#~ msgid "Public key:"
+#~ msgstr "Llave pública:"
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/_wallet_old/did/WalletDID.tsx:1005
 msgid "Puzzlehash"
@@ -2090,13 +2334,21 @@ msgstr "Actualizar Parcelas"
 msgid "Relative Lock Height"
 msgstr "Altura relativa de bloqueo"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:385
+=======
+#: src/electron/main.tsx:387
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Release Notes"
 msgstr "Notas de lanzamiento"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:100
 #: src/components/settings/RemovePassphrasePrompt.tsx:147
 #: src/components/settings/Settings.tsx:194
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:197
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Remove Passphrase"
 msgstr ""
 
@@ -2112,7 +2364,11 @@ msgstr "Removiendo"
 msgid "Rename"
 msgstr "Renombrar"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:404
+=======
+#: src/electron/main.tsx:406
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Report an Issue..."
 msgstr "Reportar un problema..."
 
@@ -2158,6 +2414,10 @@ msgid "Second temporary folder location"
 msgstr "Ubicación de carpeta temporal secundaria"
 
 #: src/components/settings/Settings.tsx:126
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:134
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Secure your keychain using a strong passphrase"
 msgstr ""
 
@@ -2166,8 +2426,13 @@ msgid "See private key"
 msgstr "Ver llave privada"
 
 #: src/_middleware_old/middleware_api.jsx:265
+<<<<<<< HEAD
 msgid "Seed:"
 msgstr "Semilla:"
+=======
+#~ msgid "Seed:"
+#~ msgstr "Semilla:"
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:100
 msgid "Select 2nd Temporary Directory"
@@ -2193,6 +2458,13 @@ msgstr "Seleccione Directorio Temporal"
 msgid "Select Wallet Type"
 msgstr "Seleccione Tipo de Cartera"
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:55
+msgid "Select Your Client Mode"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:36
 msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
 msgstr "Seleccione el destino final de la carpeta donde desea que se almacene la parcela. Le recomendamos que utilice un disco duro grande y lento (como un disco duro)."
@@ -2255,6 +2527,10 @@ msgstr "Enviar su llave pública a su administrador de Cartera de Tarifa Limitad
 #: src/components/settings/SetPassphrasePrompt.tsx:137
 #: src/components/settings/SetPassphrasePrompt.tsx:216
 #: src/components/settings/Settings.tsx:205
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:206
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Set Passphrase"
 msgstr ""
 
@@ -2262,11 +2538,21 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr ""
 
+<<<<<<< HEAD
 #: src/components/dashboard/DashboardSideBar.tsx:85
+=======
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/settings/Settings.tsx:241
 msgid "Settings"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:145
+msgid "Settings are located at the upper right corner"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
 #~ msgstr "Mostrar Opciones Avanzadas"
@@ -2312,12 +2598,21 @@ msgstr "Suaviza tus recompensas de cultivo XCH uniéndote a un Fondo."
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 #~ msgid "Something went wrong"
 #~ msgstr "Algo ha salido mal"
+<<<<<<< HEAD
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:138
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
 #: src/electron/main.tsx:481
+=======
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:138
+msgid "Specify a value of 0 to use all available threads"
+msgstr ""
+
+#: src/electron/main.tsx:483
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Speech"
 msgstr "Habla"
 
@@ -2389,6 +2684,10 @@ msgstr "Estado:"
 #: src/components/wallet/Wallets.tsx:93
 #~ msgid "StatusCard.title"
 #~ msgstr ""
+
+#: src/components/app/AppSelectMode.tsx:75
+msgid "Store and Send XCH"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:103
 #~ msgid "Stripe Size"
@@ -2626,11 +2925,19 @@ msgstr "Esta operación fue incluida en la cadena de bloques a esta altura de bl
 #: src/components/app/AppTimeBombAlert.tsx:19
 #~ msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
 #~ msgstr "Esta versión de Chia ya no es compatible con la cadena de bloques y no puede cultivar de manera segura."
+<<<<<<< HEAD
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
 msgid "Thread Multiplier for Phase 2"
 msgstr ""
 
+=======
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
+msgid "Thread Multiplier for Phase 2"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/fullNode/FullNode.jsx:90
 msgid "Time Created"
 msgstr "Hora de Creación"
@@ -2701,6 +3008,13 @@ msgstr "ID de operación:"
 msgid "Trade Overview"
 msgstr "Resumen comercial"
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:87
+msgid "Trade tokens"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/trading/TradingOverview.jsx:152
 msgid "Trades will show up here"
 msgstr "Las operaciones se mostrarán aquí"
@@ -2779,12 +3093,20 @@ msgstr "Iteraciones VDF Sub Slot"
 msgid "Verify Pool Details"
 msgstr "Verificar Detalles de Fondo"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:306
+=======
+#: src/electron/main.tsx:308
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "View"
 msgstr "Vista"
 
 #: src/components/plot/queue/PlotQueueActions.tsx:75
+<<<<<<< HEAD
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:54
+=======
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:56
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "View Log"
 msgstr "Ver Registro"
 
@@ -2828,6 +3150,14 @@ msgstr "Esperar sincronización"
 msgid "Waiting for the transaction to be confirmed"
 msgstr "Esperando que la transacción sea confirmada"
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:67
+#: src/components/app/AppSelectMode.tsx:115
+msgid "Wallet Mode"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/standard/WalletStandard.tsx:649
 #: src/components/pool/PoolOverview.tsx:182
 msgid "Wallet Status:"
@@ -2870,7 +3200,11 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/_wallet_old/Wallets.tsx:118
+<<<<<<< HEAD
 #: src/components/dashboard/DashboardSideBar.tsx:57
+=======
+#: src/components/dashboard/DashboardSideBar.tsx:60
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Wallets"
 msgstr "Carteras"
 
@@ -2927,7 +3261,11 @@ msgstr "¡Bienvenido! Las siguientes palabras se utilizan para la copia de segur
 msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 msgstr "Cuando reciba el paquete de información de configuración de su administrador, ingréselo a continuación para completar la configuración de su Cartera con Tarifa Limitada:"
 
+<<<<<<< HEAD
 #: src/electron/main.tsx:351
+=======
+#: src/electron/main.tsx:353
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Window"
 msgstr "Ventana"
 
@@ -2937,7 +3275,11 @@ msgstr "Sin tarifas"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
+<<<<<<< HEAD
 #: src/electron/main.tsx:197
+=======
+#: src/electron/main.tsx:199
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Yes"
 msgstr "Sí"
 
@@ -2950,6 +3292,13 @@ msgstr "Estás en estado pendiente. Por favor, espera la confirmación"
 msgid "You are not self pooling"
 msgstr "No estás en auto-fondo"
 
+<<<<<<< HEAD
+=======
+#: src/components/app/AppSelectMode.tsx:147
+msgid "You can always change your mode later in the settings"
+msgstr ""
+
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plotNFT/PlotNFTCard.tsx:421
 msgid "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
 msgstr "Todavía puede crear parcelas para esta parcela NFT, pero no puede hacer cambios hasta que se complete la sincronización."
@@ -3053,10 +3402,18 @@ msgid "Your passphrase can be stored in your system's secure credential store. C
 msgstr ""
 
 #: src/components/settings/Settings.tsx:85
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:91
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Your passphrase has been set"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:74
+<<<<<<< HEAD
+=======
+#: src/components/settings/SettingsPanel.tsx:80
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Your passphrase has been updated"
 msgstr ""
 
