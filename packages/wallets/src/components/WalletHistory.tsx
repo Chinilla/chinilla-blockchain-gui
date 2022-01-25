@@ -4,12 +4,8 @@ import { Trans } from '@lingui/macro';
 import moment from 'moment';
 import { Box, IconButton, Table as TableBase, TableBody, TableCell, TableRow, Tooltip, Typography, Chip } from '@material-ui/core';
 import { CallReceived as CallReceivedIcon, CallMade as CallMadeIcon, ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
-<<<<<<< HEAD:packages/wallets/src/components/WalletHistory.tsx
-import { Card, CardKeyValue, CopyToClipboard, Flex, Loading, TableControlled, toBech32m, useCurrencyCode, mojoToChiaLocaleString, mojoToCATLocaleString } from '@chia/core';
-=======
 import { Card, CardKeyValue, CopyToClipboard, Flex, Loading, StateColor, TableControlled, toBech32m, useCurrencyCode, mojoToChiaLocaleString, mojoToCATLocaleString } from '@chia/core';
 import { useGetOfferRecordMutation, useGetSyncStatusQuery } from '@chia/api-react';
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1:packages/wallet/src/components/wallet/WalletHistory.tsx
 import styled from 'styled-components';
 import type { Row } from '@chia/core';
 import { WalletType, TransactionType } from '@chia/api';
@@ -156,13 +152,8 @@ const getCols = (type: WalletType, isSyncing, getOfferRecord, navigate) => [
           &nbsp;
           <strong>
             {type === WalletType.CAT
-<<<<<<< HEAD:packages/wallets/src/components/WalletHistory.tsx
-            ? mojoToCATLocaleString(row.amount)
-            : mojoToChiaLocaleString(row.amount)}
-=======
               ? mojoToCATLocaleString(row.amount)
               : mojoToChiaLocaleString(row.amount)}
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1:packages/wallet/src/components/wallet/WalletHistory.tsx
           </strong>
           &nbsp;
           {metadata.unit}

@@ -34,13 +34,10 @@ msgstr "(Optional)"
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
 msgstr "آیا می خواهید که بلوک های چیـا را فراتر از این کاوش کنید؟ <0>Chia Explorer</0> را که توسط یک توسعه دهنده متن باز ساخته شده است را چک کنید."
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:120
 msgid "+"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddNFT.tsx:128
 msgid "+ Add New Plot NFT"
 msgstr "+ افزودن پلات NFT جدید"
@@ -67,13 +64,8 @@ msgstr ""
 msgid "A value of {0} is recommended"
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:433
-#: src/electron/main.tsx:520
-=======
 #: src/electron/main.tsx:435
 #: src/electron/main.tsx:522
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "About Chia Blockchain"
 msgstr "درباره بلاکچین چیـا"
 
@@ -198,11 +190,7 @@ msgstr "Are you sure you want to delete unconfirmed transactions?"
 msgid "Are you sure you want to disconnect?"
 msgstr "آیا از قطع ارتباط اطمینان دارید؟"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:201
-=======
 #: src/electron/main.tsx:203
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "مطمئنید که می‌خواهید خارج شوید؟ فرایند های پلات سازی و واسط گرافیکی مزرعه داری متوقف خواهند شد."
 
@@ -214,11 +202,7 @@ msgstr "مطمئنید که می‌خواهید خارج شوید؟ فرایند
 msgid "Are you sure you want to use k={plotSize}?"
 msgstr "آیا مطمئنید که میخواهید از مقدار k= {plotSize} استفاده کنید؟"
 
-<<<<<<< HEAD
-#: src/components/app/AppState.tsx:148
-=======
 #: src/components/app/AppState.tsx:140
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Attempt {attempt}"
 msgstr ""
 
@@ -371,10 +355,7 @@ msgstr "Change"
 
 #: src/components/settings/ChangePassphrasePrompt.tsx:232
 #: src/components/settings/Settings.tsx:160
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:166
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Change Passphrase"
 msgstr ""
 
@@ -384,17 +365,6 @@ msgstr ""
 msgid "Change Pool"
 msgstr "Change Pool"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:412
-msgid "Chat on KeyBase"
-msgstr "در اپلیکیشن KeyBase صبحت کنید"
-
-#: src/electron/main.tsx:430
-msgid "Chia"
-msgstr "چیـا"
-
-#: src/electron/main.tsx:369
-=======
 #: src/electron/main.tsx:414
 msgid "Chat on KeyBase"
 msgstr "در اپلیکیشن KeyBase صبحت کنید"
@@ -404,7 +374,6 @@ msgid "Chia"
 msgstr "چیـا"
 
 #: src/electron/main.tsx:371
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Chia Blockchain Wiki"
 msgstr "ویکی زنجیره بلوکی چیـا"
 
@@ -412,13 +381,10 @@ msgstr "ویکی زنجیره بلوکی چیـا"
 msgid "Chia Wallet"
 msgstr "کیف پول چیـا"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:137
 msgid "Choose Farming Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 msgid "Choose Number of Plots"
 msgstr "تعداد پلات ها را انتخاب کنید"
@@ -431,32 +397,21 @@ msgstr "مقدار فضای پلات را انتخاب کنید"
 msgid "Choose Plotter"
 msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:93
 msgid "Choose Wallet Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plotNFT/PlotNFTCard.tsx:381
 #: src/components/pool/PoolOverview.tsx:89
 msgid "Claim Rewards"
 msgstr "Claim Rewards"
 
 #: src/components/plot/PlotAddDirectoryDialog.tsx:131
-<<<<<<< HEAD
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:80
-msgid "Close"
-msgstr "بستن"
-
-#: src/components/app/AppState.tsx:106
-=======
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:82
 msgid "Close"
 msgstr "بستن"
 
 #: src/components/app/AppState.tsx:98
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Closing down node and server"
 msgstr "بستن گره و سرور"
 
@@ -494,11 +449,7 @@ msgid "Coloured Coin Options"
 msgstr "Coloured Coin Options"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-<<<<<<< HEAD
-#: src/electron/main.tsx:199
-=======
 #: src/electron/main.tsx:201
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Confirm"
@@ -547,17 +498,6 @@ msgstr "Connect to pool"
 msgid "Connected"
 msgstr "متصل شد"
 
-<<<<<<< HEAD
-#: src/components/app/AppState.tsx:141
-#: src/components/app/AppState.tsx:145
-msgid "Connecting to daemon"
-msgstr ""
-
-#: src/components/app/AppRouter.tsx:61
-#~ msgid "Connecting to wallet"
-#~ msgstr "اتصال به کیف پول"
-
-=======
 #: src/components/app/AppState.tsx:133
 #: src/components/app/AppState.tsx:137
 msgid "Connecting to daemon"
@@ -567,7 +507,6 @@ msgstr ""
 #~ msgid "Connecting to wallet"
 #~ msgstr "اتصال به کیف پول"
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:18
 msgid "Connection Status"
 msgstr "وضعیت اتصال"
@@ -585,11 +524,7 @@ msgstr "نوع اتصال"
 msgid "Connections"
 msgstr "اتصال ها"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:393
-=======
 #: src/electron/main.tsx:395
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Contribute on GitHub"
 msgstr "مشارکت در GitHub"
 
@@ -619,13 +554,10 @@ msgstr "رونوشت"
 msgid "Create"
 msgstr "ایجاد"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:125
 msgid "Create & Manage plots"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/did/WalletDID.tsx:970
 msgid "Create An Attestation Packet"
 msgstr ""
@@ -823,18 +755,6 @@ msgstr ""
 #: src/components/selectKey/SelectKey.tsx:101
 #~ msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
 #~ msgstr "حذف کلید، آن را برای همیشه از روی کامپیوتر شما حذف می‌کند، مطمئن شوید که نسخه پشتیبان دارید. آیا مطمئنید که می‌خواهید ادامه دهید؟"
-<<<<<<< HEAD
-
-#: src/components/plot/add/PlotAddChoosePlotter.tsx:92
-msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chia Proof of Space plotter. If unsure, use the default Chia Proof of Space plotter."
-msgstr ""
-
-#: src/electron/main.tsx:315
-msgid "Developer"
-msgstr "Developer"
-
-#: src/electron/main.tsx:318
-=======
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:92
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chia Proof of Space plotter. If unsure, use the default Chia Proof of Space plotter."
@@ -845,7 +765,6 @@ msgid "Developer"
 msgstr "Developer"
 
 #: src/electron/main.tsx:320
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Developer Tools"
 msgstr "ابزارهای توسعه دهنده"
 
@@ -916,11 +835,7 @@ msgstr "Drag and drop your backup file"
 msgid "Drag and drop your recovery backup file"
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:274
-=======
 #: src/electron/main.tsx:276
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Edit"
 msgstr "Edit"
 
@@ -1016,11 +931,7 @@ msgstr ""
 
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:610
 #: src/components/_wallet_old/standard/WalletStandard.tsx:525
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:67
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:70
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Farm"
 msgstr "مزرعه"
 
@@ -1059,13 +970,8 @@ msgid "Farmer is not running"
 msgstr "مزرعه دار درحال اجرا نیست"
 
 #: src/_middleware_old/middleware_api.jsx:247
-<<<<<<< HEAD
-msgid "Farmer public key:"
-msgstr "Farmer public key:"
-=======
 #~ msgid "Farmer public key:"
 #~ msgstr "Farmer public key:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:32
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
@@ -1127,13 +1033,8 @@ msgstr "مبلغ کارمزد ها"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:266
-#: src/electron/main.tsx:467
-=======
 #: src/electron/main.tsx:268
 #: src/electron/main.tsx:469
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "File"
 msgstr "File"
 
@@ -1153,17 +1054,6 @@ msgstr "Final folder location"
 msgid "Finished"
 msgstr "Finished"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:418
-msgid "Follow on Twitter"
-msgstr "Follow on Twitter"
-
-#: src/electron/main.tsx:377
-msgid "Frequently Asked Questions"
-msgstr "سوالات متداول"
-
-#: src/components/dashboard/DashboardSideBar.tsx:51
-=======
 #: src/electron/main.tsx:420
 msgid "Follow on Twitter"
 msgstr "Follow on Twitter"
@@ -1173,7 +1063,6 @@ msgid "Frequently Asked Questions"
 msgstr "سوالات متداول"
 
 #: src/components/dashboard/DashboardSideBar.tsx:54
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "گره کامل"
@@ -1186,11 +1075,7 @@ msgstr "Full Node Overview"
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:343
-=======
 #: src/electron/main.tsx:345
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Full Screen"
 msgstr "Full Screen"
 
@@ -1232,11 +1117,7 @@ msgstr "عنوان هش"
 msgid "Height"
 msgstr "Height"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:365
-=======
 #: src/electron/main.tsx:367
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Help"
 msgstr "Help"
 
@@ -1370,15 +1251,9 @@ msgstr ""
 #~ msgid "Keyring migration failed: {error}"
 #~ msgstr ""
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:78
-msgid "Keys"
-msgstr "Keys"
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:85
 #~ msgid "Keys"
 #~ msgstr "Keys"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/FarmFullNodeConnections.tsx:65
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:64
@@ -1419,16 +1294,6 @@ msgstr "List view"
 #~ msgid "Loading Plot NFTs"
 #~ msgstr "Loading Plot NFTs"
 
-<<<<<<< HEAD
-#: src/components/app/App.tsx:66
-msgid "Loading configuration"
-msgstr ""
-
-#: src/components/app/AppState.tsx:114
-msgid "Loading keyring status"
-msgstr ""
-
-=======
 #: src/components/app/AppProviders.tsx:66
 msgid "Loading configuration"
 msgstr ""
@@ -1437,16 +1302,11 @@ msgstr ""
 msgid "Loading keyring status"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/Wallets.tsx:117
 msgid "Loading list of wallets"
 msgstr "Loading list of wallets"
 
-<<<<<<< HEAD
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:33
-=======
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:35
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Loading..."
 msgstr "Loading..."
 
@@ -1498,13 +1358,10 @@ msgstr "Loading..."
 #~ msgid "MainWalletList.title"
 #~ msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:81
 msgid "Manage CAT tokens"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/farm/overview/FarmOverview.tsx:49
 msgid "Manage Farming Rewards"
 msgstr "مدیریت پاداش های مزرعه داری"
@@ -1526,10 +1383,7 @@ msgid "Migrate"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:182
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:187
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Migrate Keyring"
 msgstr ""
 
@@ -1543,10 +1397,7 @@ msgid "Migration required"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:123
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:131
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Migration required to support passphrase protection"
 msgstr ""
 
@@ -1610,22 +1461,13 @@ msgid "Nickname"
 msgstr "Nickname"
 
 #: src/components/trading/TradingOverview.jsx:208
-<<<<<<< HEAD
-#: src/electron/main.tsx:196
-=======
 #: src/electron/main.tsx:198
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "No"
 msgstr "No"
 
 #: src/_middleware_old/middleware_api.jsx:273
-<<<<<<< HEAD
-msgid "No 24 word seed, since this key is imported."
-msgstr "هیچ بذر ۲۴ کلمه‌ای نیست، از هنگامی که این کلید را وارد کرده اید."
-=======
 #~ msgid "No 24 word seed, since this key is imported."
 #~ msgstr "هیچ بذر ۲۴ کلمه‌ای نیست، از هنگامی که این کلید را وارد کرده اید."
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/card/FarmCardLastHeightFarmed.tsx:16
 msgid "No blocks farmed yet"
@@ -1740,10 +1582,7 @@ msgstr "در حال خروج"
 #: src/components/app/AppPassPrompt.tsx:120
 #: src/components/settings/RemovePassphrasePrompt.tsx:112
 #: src/components/settings/SetPassphrasePrompt.tsx:151
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:218
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase"
 msgstr ""
 
@@ -1769,34 +1608,22 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/settings/Settings.tsx:96
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:102
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection has been disabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:133
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:143
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection is disabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:130
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:139
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection is enabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:124
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:132
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase support requires migrating your keys to a new keyring"
 msgstr ""
 
@@ -2026,11 +1853,7 @@ msgstr "پلات کپی این {0} پلات است"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:62
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:65
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/Plot.tsx:14
 msgid "Plots"
 msgstr "Plots"
@@ -2078,11 +1901,7 @@ msgstr "Points Found in Last 24 Hours"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Points Successful in Last 24 Hours"
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:72
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:75
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/pool/Pool.tsx:17
 msgid "Pool"
 msgstr "استخر"
@@ -2149,13 +1968,8 @@ msgstr ""
 #~ msgstr "Pool does not provide target_puzzle_hash."
 
 #: src/_middleware_old/middleware_api.jsx:255
-<<<<<<< HEAD
-msgid "Pool public key:"
-msgstr "کلید عمومی استخر:"
-=======
 #~ msgid "Pool public key:"
 #~ msgstr "کلید عمومی استخر:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:271
 #: src/components/plotNFT/PlotNFTCard.tsx:324
@@ -2205,21 +2019,12 @@ msgid "Private key with public fingerprint {fingerprint}"
 msgstr "کلید خصوصی به همراه اثر انگشت عمومی {fingerprint}"
 
 #: src/_middleware_old/middleware_api.jsx:221
-<<<<<<< HEAD
-msgid "Private key {0}"
-msgstr "Private key {0}"
-
-#: src/_middleware_old/middleware_api.jsx:231
-msgid "Private key:"
-msgstr "Private key:"
-=======
 #~ msgid "Private key {0}"
 #~ msgstr "Private key {0}"
 
 #: src/_middleware_old/middleware_api.jsx:231
 #~ msgid "Private key:"
 #~ msgstr "Private key:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/block/Block.jsx:240
 msgid "Proof of Space Size"
@@ -2239,13 +2044,8 @@ msgid "Pubkey"
 msgstr "Pubkey"
 
 #: src/_middleware_old/middleware_api.jsx:239
-<<<<<<< HEAD
-msgid "Public key:"
-msgstr "Public key:"
-=======
 #~ msgid "Public key:"
 #~ msgstr "Public key:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/_wallet_old/did/WalletDID.tsx:1005
 msgid "Puzzlehash"
@@ -2332,21 +2132,14 @@ msgstr "تازه سازی پلات ها"
 msgid "Relative Lock Height"
 msgstr "Relative Lock Height"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:385
-=======
 #: src/electron/main.tsx:387
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Release Notes"
 msgstr "یادداشت‌های انتشار"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:100
 #: src/components/settings/RemovePassphrasePrompt.tsx:147
 #: src/components/settings/Settings.tsx:194
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:197
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Remove Passphrase"
 msgstr ""
 
@@ -2362,11 +2155,7 @@ msgstr "Removing"
 msgid "Rename"
 msgstr "تغییر نام"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:404
-=======
 #: src/electron/main.tsx:406
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Report an Issue..."
 msgstr "گزارش یک مشکل یا خطا..."
 
@@ -2412,10 +2201,7 @@ msgid "Second temporary folder location"
 msgstr "Second temporary folder location"
 
 #: src/components/settings/Settings.tsx:126
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:134
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Secure your keychain using a strong passphrase"
 msgstr ""
 
@@ -2424,13 +2210,8 @@ msgid "See private key"
 msgstr "See private key"
 
 #: src/_middleware_old/middleware_api.jsx:265
-<<<<<<< HEAD
-msgid "Seed:"
-msgstr "بذر:"
-=======
 #~ msgid "Seed:"
 #~ msgstr "بذر:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:100
 msgid "Select 2nd Temporary Directory"
@@ -2456,13 +2237,10 @@ msgstr "انتخاب پوشه موقت"
 msgid "Select Wallet Type"
 msgstr "Select Wallet Type"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:55
 msgid "Select Your Client Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:36
 msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
 msgstr "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
@@ -2525,10 +2303,7 @@ msgstr "Send your pubkey to your Rate Limited Wallet admin:"
 #: src/components/settings/SetPassphrasePrompt.tsx:137
 #: src/components/settings/SetPassphrasePrompt.tsx:216
 #: src/components/settings/Settings.tsx:205
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:206
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Set Passphrase"
 msgstr ""
 
@@ -2536,21 +2311,14 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr ""
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:85
-=======
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/settings/Settings.tsx:241
 msgid "Settings"
 msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:145
 msgid "Settings are located at the upper right corner"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
 #~ msgstr "Show Advanced Options"
@@ -2596,21 +2364,12 @@ msgstr "Smooth out your XCH farming rewards by joining a pool."
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 #~ msgid "Something went wrong"
 #~ msgstr "Something went wrong"
-<<<<<<< HEAD
-
-#: src/components/plot/add/PlotAddNumberOfPlots.tsx:138
-msgid "Specify a value of 0 to use all available threads"
-msgstr ""
-
-#: src/electron/main.tsx:481
-=======
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:138
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
 #: src/electron/main.tsx:483
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Speech"
 msgstr "Speech"
 
@@ -2925,19 +2684,11 @@ msgstr "این معامله در این ارتفاع بلوکی شامل زنج�
 #: src/components/app/AppTimeBombAlert.tsx:19
 #~ msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
 #~ msgstr "این ورژن از چیـا دیگر با با شبکه بلوکی سازگاری ندارد و نمی‌تواند با امنیت به مزرعه داری بپردازد."
-<<<<<<< HEAD
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
 msgid "Thread Multiplier for Phase 2"
 msgstr ""
 
-=======
-
-#: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
-msgid "Thread Multiplier for Phase 2"
-msgstr ""
-
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/fullNode/FullNode.jsx:90
 msgid "Time Created"
 msgstr "Time Created"
@@ -3008,13 +2759,10 @@ msgstr "Trade ID:"
 msgid "Trade Overview"
 msgstr "Trade Overview"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:87
 msgid "Trade tokens"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/trading/TradingOverview.jsx:152
 msgid "Trades will show up here"
 msgstr "Trades will show up here"
@@ -3093,20 +2841,12 @@ msgstr "تکرارهای زیر شکافی VDF"
 msgid "Verify Pool Details"
 msgstr "Verify Pool Details"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:306
-=======
 #: src/electron/main.tsx:308
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "View"
 msgstr "View"
 
 #: src/components/plot/queue/PlotQueueActions.tsx:75
-<<<<<<< HEAD
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:54
-=======
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:56
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "View Log"
 msgstr "مشاهده سوابق(لاگ)"
 
@@ -3150,14 +2890,11 @@ msgstr "در انتظار همگام سازی"
 msgid "Waiting for the transaction to be confirmed"
 msgstr "Waiting for the transaction to be confirmed"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:67
 #: src/components/app/AppSelectMode.tsx:115
 msgid "Wallet Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/standard/WalletStandard.tsx:649
 #: src/components/pool/PoolOverview.tsx:182
 msgid "Wallet Status:"
@@ -3200,11 +2937,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/_wallet_old/Wallets.tsx:118
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:57
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:60
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Wallets"
 msgstr "کیف پول ها"
 
@@ -3263,11 +2996,7 @@ msgstr ""
 msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 msgstr "هنگامی که بسته اطلاعات راه‌اندازی را از ادمین خود دریافت می‌کنید، آن را در زیر وارد کنید تا تنظیمات «کیف پول با نرخ محدود» خود را تکمیل کنید:"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:351
-=======
 #: src/electron/main.tsx:353
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Window"
 msgstr "پنجره"
 
@@ -3277,11 +3006,7 @@ msgstr "بدونه کارمزد"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-<<<<<<< HEAD
-#: src/electron/main.tsx:197
-=======
 #: src/electron/main.tsx:199
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Yes"
 msgstr "بله"
 
@@ -3294,13 +3019,10 @@ msgstr "You are in pending state. Please wait for confirmation"
 msgid "You are not self pooling"
 msgstr "You are not self pooling"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:147
 msgid "You can always change your mode later in the settings"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plotNFT/PlotNFTCard.tsx:421
 msgid "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
 msgstr "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
@@ -3406,18 +3128,12 @@ msgid "Your passphrase can be stored in your system's secure credential store. C
 msgstr ""
 
 #: src/components/settings/Settings.tsx:85
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:91
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Your passphrase has been set"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:74
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:80
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Your passphrase has been updated"
 msgstr ""
 

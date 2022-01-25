@@ -34,13 +34,10 @@ msgstr ""
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
 msgstr "*Wants t' explore taken booty further? See <0>Chia Explorer</0> by a mighty free pirate."
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:120
 msgid "+"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddNFT.tsx:128
 msgid "+ Add New Plot NFT"
 msgstr "Give yer Crewdog a no-so-loyal NFT tag"
@@ -65,13 +62,8 @@ msgstr "A tender be a vessel where crewdogs are actually at. A plunderer 'n tend
 msgid "A value of {0} is recommended"
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:433
-#: src/electron/main.tsx:520
-=======
 #: src/electron/main.tsx:435
 #: src/electron/main.tsx:522
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "About Chia Blockchain"
 msgstr "About Chia Blockchain"
 
@@ -196,11 +188,7 @@ msgstr ""
 msgid "Are you sure you want to disconnect?"
 msgstr "Be ye sure ye want t' give it up?"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:201
-=======
 #: src/electron/main.tsx:203
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "Be ye sure ye want t' give up? GUI crew 'n boardin' will stop."
 
@@ -212,11 +200,7 @@ msgstr "Be ye sure ye want t' give up? GUI crew 'n boardin' will stop."
 msgid "Are you sure you want to use k={plotSize}?"
 msgstr "Be ye sure ye wants t' use k={plotSize}?"
 
-<<<<<<< HEAD
-#: src/components/app/AppState.tsx:148
-=======
 #: src/components/app/AppState.tsx:140
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Attempt {attempt}"
 msgstr ""
 
@@ -367,10 +351,7 @@ msgstr ""
 
 #: src/components/settings/ChangePassphrasePrompt.tsx:232
 #: src/components/settings/Settings.tsx:160
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:166
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Change Passphrase"
 msgstr ""
 
@@ -380,17 +361,6 @@ msgstr ""
 msgid "Change Pool"
 msgstr "Time to find new fleet"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:412
-msgid "Chat on KeyBase"
-msgstr "Natter on KeyBase"
-
-#: src/electron/main.tsx:430
-msgid "Chia"
-msgstr "Chia"
-
-#: src/electron/main.tsx:369
-=======
 #: src/electron/main.tsx:414
 msgid "Chat on KeyBase"
 msgstr "Natter on KeyBase"
@@ -400,7 +370,6 @@ msgid "Chia"
 msgstr "Chia"
 
 #: src/electron/main.tsx:371
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Chia Blockchain Wiki"
 msgstr "Chia Blockchain Wiki"
 
@@ -408,13 +377,10 @@ msgstr "Chia Blockchain Wiki"
 msgid "Chia Wallet"
 msgstr "Chia Treasure Chest"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:137
 msgid "Choose Farming Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 msgid "Choose Number of Plots"
 msgstr "Choose Number o' Crewdogs"
@@ -427,32 +393,21 @@ msgstr "Choose Strength o' Crewdog"
 msgid "Choose Plotter"
 msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:93
 msgid "Choose Wallet Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plotNFT/PlotNFTCard.tsx:381
 #: src/components/pool/PoolOverview.tsx:89
 msgid "Claim Rewards"
 msgstr "Claim yar booty"
 
 #: src/components/plot/PlotAddDirectoryDialog.tsx:131
-<<<<<<< HEAD
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:80
-msgid "Close"
-msgstr "Close"
-
-#: src/components/app/AppState.tsx:106
-=======
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:82
 msgid "Close"
 msgstr "Close"
 
 #: src/components/app/AppState.tsx:98
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Closing down node and server"
 msgstr "Capt'n 'n server gettin' mighty drunk right now"
 
@@ -490,11 +445,7 @@ msgid "Coloured Coin Options"
 msgstr "Jinxed Dubloon Voodoo"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-<<<<<<< HEAD
-#: src/electron/main.tsx:199
-=======
 #: src/electron/main.tsx:201
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Yarr"
@@ -543,13 +494,8 @@ msgstr "Signal da fleet"
 msgid "Connected"
 msgstr "Natter'd wit' me hearties jus' now"
 
-<<<<<<< HEAD
-#: src/components/app/AppState.tsx:141
-#: src/components/app/AppState.tsx:145
-=======
 #: src/components/app/AppState.tsx:133
 #: src/components/app/AppState.tsx:137
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Connecting to daemon"
 msgstr ""
 
@@ -574,11 +520,7 @@ msgstr "Contact type"
 msgid "Connections"
 msgstr "Contacts"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:393
-=======
 #: src/electron/main.tsx:395
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Contribute on GitHub"
 msgstr "Get yerself busy on GitHub"
 
@@ -608,13 +550,10 @@ msgstr "Duplicate"
 msgid "Create"
 msgstr "Make"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:125
 msgid "Create & Manage plots"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/did/WalletDID.tsx:970
 msgid "Create An Attestation Packet"
 msgstr ""
@@ -815,19 +754,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chia Proof of Space plotter. If unsure, use the default Chia Proof of Space plotter."
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:315
-msgid "Developer"
-msgstr "Builder"
-
-#: src/electron/main.tsx:318
-=======
 #: src/electron/main.tsx:317
 msgid "Developer"
 msgstr "Builder"
 
 #: src/electron/main.tsx:320
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Developer Tools"
 msgstr "Builder Tools"
 
@@ -898,11 +829,7 @@ msgstr "Drag 'n drop yer scribble (backup) file"
 msgid "Drag and drop your recovery backup file"
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:274
-=======
 #: src/electron/main.tsx:276
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Edit"
 msgstr "Edit"
 
@@ -998,11 +925,7 @@ msgstr ""
 
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:610
 #: src/components/_wallet_old/standard/WalletStandard.tsx:525
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:67
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:70
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Farm"
 msgstr "Lootin'"
 
@@ -1041,13 +964,8 @@ msgid "Farmer is not running"
 msgstr "Plunderer nah plunderin'"
 
 #: src/_middleware_old/middleware_api.jsx:247
-<<<<<<< HEAD
-msgid "Farmer public key:"
-msgstr ""
-=======
 #~ msgid "Farmer public key:"
 #~ msgstr ""
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:32
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
@@ -1109,13 +1027,8 @@ msgstr "Fees Amount"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:266
-#: src/electron/main.tsx:467
-=======
 #: src/electron/main.tsx:268
 #: src/electron/main.tsx:469
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "File"
 msgstr "File"
 
@@ -1135,17 +1048,6 @@ msgstr "Final folder"
 msgid "Finished"
 msgstr "Done"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:418
-msgid "Follow on Twitter"
-msgstr "Follow on Twitter"
-
-#: src/electron/main.tsx:377
-msgid "Frequently Asked Questions"
-msgstr "Oftentimes Asked Questions"
-
-#: src/components/dashboard/DashboardSideBar.tsx:51
-=======
 #: src/electron/main.tsx:420
 msgid "Follow on Twitter"
 msgstr "Follow on Twitter"
@@ -1155,7 +1057,6 @@ msgid "Frequently Asked Questions"
 msgstr "Oftentimes Asked Questions"
 
 #: src/components/dashboard/DashboardSideBar.tsx:54
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "Capt'n"
@@ -1168,11 +1069,7 @@ msgstr ""
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:343
-=======
 #: src/electron/main.tsx:345
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Full Screen"
 msgstr "Full Screen"
 
@@ -1214,11 +1111,7 @@ msgstr "Header hash"
 msgid "Height"
 msgstr "Booty Number"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:365
-=======
 #: src/electron/main.tsx:367
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Help"
 msgstr "Help"
 
@@ -1352,15 +1245,9 @@ msgstr ""
 #~ msgid "Keyring migration failed: {error}"
 #~ msgstr ""
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:78
-msgid "Keys"
-msgstr "Treasure maps"
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:85
 #~ msgid "Keys"
 #~ msgstr "Treasure maps"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/FarmFullNodeConnections.tsx:65
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:64
@@ -1400,21 +1287,12 @@ msgstr ""
 #: src/components/pool/Pool.tsx:21
 #~ msgid "Loading Plot NFTs"
 #~ msgstr "Reading thee NFT voodoos"
-<<<<<<< HEAD
-
-#: src/components/app/App.tsx:66
-msgid "Loading configuration"
-msgstr ""
-
-#: src/components/app/AppState.tsx:114
-=======
 
 #: src/components/app/AppProviders.tsx:66
 msgid "Loading configuration"
 msgstr ""
 
 #: src/components/app/AppState.tsx:106
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Loading keyring status"
 msgstr ""
 
@@ -1422,11 +1300,7 @@ msgstr ""
 msgid "Loading list of wallets"
 msgstr "Show others treasure boxes"
 
-<<<<<<< HEAD
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:33
-=======
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:35
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Loading..."
 msgstr "Unrolling Treasure Maps..."
 
@@ -1478,13 +1352,10 @@ msgstr "Unrolling Treasure Maps..."
 #~ msgid "MainWalletList.title"
 #~ msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:81
 msgid "Manage CAT tokens"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/farm/overview/FarmOverview.tsx:49
 msgid "Manage Farming Rewards"
 msgstr "Manage Treasure Chests"
@@ -1506,10 +1377,7 @@ msgid "Migrate"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:182
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:187
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Migrate Keyring"
 msgstr ""
 
@@ -1523,10 +1391,7 @@ msgid "Migration required"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:123
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:131
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Migration required to support passphrase protection"
 msgstr ""
 
@@ -1590,22 +1455,13 @@ msgid "Nickname"
 msgstr "Nickname"
 
 #: src/components/trading/TradingOverview.jsx:208
-<<<<<<< HEAD
-#: src/electron/main.tsx:196
-=======
 #: src/electron/main.tsx:198
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "No"
 msgstr "Nay"
 
 #: src/_middleware_old/middleware_api.jsx:273
-<<<<<<< HEAD
-msgid "No 24 word seed, since this key is imported."
-msgstr "No 24 word seed 'cause this treasure map be imported."
-=======
 #~ msgid "No 24 word seed, since this key is imported."
 #~ msgstr "No 24 word seed 'cause this treasure map be imported."
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/farm/card/FarmCardLastHeightFarmed.tsx:16
 msgid "No blocks farmed yet"
@@ -1720,10 +1576,7 @@ msgstr "Goin' Out"
 #: src/components/app/AppPassPrompt.tsx:120
 #: src/components/settings/RemovePassphrasePrompt.tsx:112
 #: src/components/settings/SetPassphrasePrompt.tsx:151
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:218
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase"
 msgstr ""
 
@@ -1749,34 +1602,22 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/settings/Settings.tsx:96
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:102
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection has been disabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:133
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:143
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection is disabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:130
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:139
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase protection is enabled"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:124
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:132
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Passphrase support requires migrating your keys to a new keyring"
 msgstr ""
 
@@ -2006,11 +1847,7 @@ msgstr "Crewdog is clone o' {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:62
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:65
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/Plot.tsx:14
 msgid "Plots"
 msgstr "Crew"
@@ -2058,11 +1895,7 @@ msgstr "Booty looted from last 24 bottle o rum"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Booty at yar feet from last 24 bottle o rum"
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:72
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:75
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/pool/Pool.tsx:17
 msgid "Pool"
 msgstr "Fleets"
@@ -2129,13 +1962,8 @@ msgstr ""
 #~ msgstr ""
 
 #: src/_middleware_old/middleware_api.jsx:255
-<<<<<<< HEAD
-msgid "Pool public key:"
-msgstr ""
-=======
 #~ msgid "Pool public key:"
 #~ msgstr ""
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:271
 #: src/components/plotNFT/PlotNFTCard.tsx:324
@@ -2185,21 +2013,12 @@ msgid "Private key with public fingerprint {fingerprint}"
 msgstr "Private treasure map wit' public fingerprint {fingerprint}"
 
 #: src/_middleware_old/middleware_api.jsx:221
-<<<<<<< HEAD
-msgid "Private key {0}"
-msgstr "Private treasure map {0}"
-
-#: src/_middleware_old/middleware_api.jsx:231
-msgid "Private key:"
-msgstr "Private treasure map:"
-=======
 #~ msgid "Private key {0}"
 #~ msgstr "Private treasure map {0}"
 
 #: src/_middleware_old/middleware_api.jsx:231
 #~ msgid "Private key:"
 #~ msgstr "Private treasure map:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/block/Block.jsx:240
 msgid "Proof of Space Size"
@@ -2219,13 +2038,8 @@ msgid "Pubkey"
 msgstr "Pubkey"
 
 #: src/_middleware_old/middleware_api.jsx:239
-<<<<<<< HEAD
-msgid "Public key:"
-msgstr "Public treasure map:"
-=======
 #~ msgid "Public key:"
 #~ msgstr "Public treasure map:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/_wallet_old/did/WalletDID.tsx:1005
 msgid "Puzzlehash"
@@ -2312,21 +2126,14 @@ msgstr "Roll Call o' Crew"
 msgid "Relative Lock Height"
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:385
-=======
 #: src/electron/main.tsx:387
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Release Notes"
 msgstr "Builder's Notes"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:100
 #: src/components/settings/RemovePassphrasePrompt.tsx:147
 #: src/components/settings/Settings.tsx:194
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:197
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Remove Passphrase"
 msgstr ""
 
@@ -2342,11 +2149,7 @@ msgstr "Scuttling"
 msgid "Rename"
 msgstr "Change Name"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:404
-=======
 #: src/electron/main.tsx:406
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Report an Issue..."
 msgstr "Speak up fer somethin'..."
 
@@ -2392,10 +2195,7 @@ msgid "Second temporary folder location"
 msgstr "Sec'nd temporary folder"
 
 #: src/components/settings/Settings.tsx:126
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:134
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Secure your keychain using a strong passphrase"
 msgstr ""
 
@@ -2404,13 +2204,8 @@ msgid "See private key"
 msgstr "Look at private treasure map"
 
 #: src/_middleware_old/middleware_api.jsx:265
-<<<<<<< HEAD
-msgid "Seed:"
-msgstr "Seed:"
-=======
 #~ msgid "Seed:"
 #~ msgstr "Seed:"
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:100
 msgid "Select 2nd Temporary Directory"
@@ -2436,13 +2231,10 @@ msgstr "Give Temporary Folder"
 msgid "Select Wallet Type"
 msgstr "Choose type o' treasure chest"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:55
 msgid "Select Your Client Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:36
 msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
 msgstr "Give the final destination where ye wants t' post the crewdog after recruitin'. A large slow hold (like external HDD) will be good enough."
@@ -2505,10 +2297,7 @@ msgstr "Send yer pubkey t' yer Rate Limited Treasure Chest pirate lord:"
 #: src/components/settings/SetPassphrasePrompt.tsx:137
 #: src/components/settings/SetPassphrasePrompt.tsx:216
 #: src/components/settings/Settings.tsx:205
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:206
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Set Passphrase"
 msgstr ""
 
@@ -2516,21 +2305,14 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr ""
 
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:85
-=======
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/settings/Settings.tsx:241
 msgid "Settings"
 msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:145
 msgid "Settings are located at the upper right corner"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
 #~ msgstr "Reveal Voodoo"
@@ -2581,11 +2363,7 @@ msgstr ""
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:481
-=======
 #: src/electron/main.tsx:483
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Speech"
 msgstr "Parler"
 
@@ -2973,13 +2751,10 @@ msgstr "Trade ID:"
 msgid "Trade Overview"
 msgstr "Trade Overview"
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:87
 msgid "Trade tokens"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/trading/TradingOverview.jsx:152
 msgid "Trades will show up here"
 msgstr "'ere be trades"
@@ -3058,20 +2833,12 @@ msgstr "Shots fired"
 msgid "Verify Pool Details"
 msgstr ""
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:306
-=======
 #: src/electron/main.tsx:308
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "View"
 msgstr "View"
 
 #: src/components/plot/queue/PlotQueueActions.tsx:75
-<<<<<<< HEAD
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:54
-=======
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:56
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "View Log"
 msgstr "Look at Report"
 
@@ -3115,14 +2882,11 @@ msgstr "Waitin' fer better times"
 msgid "Waiting for the transaction to be confirmed"
 msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:67
 #: src/components/app/AppSelectMode.tsx:115
 msgid "Wallet Mode"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/_wallet_old/standard/WalletStandard.tsx:649
 #: src/components/pool/PoolOverview.tsx:182
 msgid "Wallet Status:"
@@ -3165,11 +2929,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/_wallet_old/Wallets.tsx:118
-<<<<<<< HEAD
-#: src/components/dashboard/DashboardSideBar.tsx:57
-=======
 #: src/components/dashboard/DashboardSideBar.tsx:60
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Wallets"
 msgstr "Treasure Chests"
 
@@ -3226,11 +2986,7 @@ msgstr "Ahoy! Make sure t' scribble down the followin' secret code. Then ye can 
 msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 msgstr "When ye 'ave the setup info packet from yer pirate lord, enter it below t' complete yer Rate Limited Treasure Chest:"
 
-<<<<<<< HEAD
-#: src/electron/main.tsx:351
-=======
 #: src/electron/main.tsx:353
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Window"
 msgstr "Porthole"
 
@@ -3240,11 +2996,7 @@ msgstr "Wit' no fees"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-<<<<<<< HEAD
-#: src/electron/main.tsx:197
-=======
 #: src/electron/main.tsx:199
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Yes"
 msgstr "Aye"
 
@@ -3257,13 +3009,10 @@ msgstr ""
 msgid "You are not self pooling"
 msgstr ""
 
-<<<<<<< HEAD
-=======
 #: src/components/app/AppSelectMode.tsx:147
 msgid "You can always change your mode later in the settings"
 msgstr ""
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 #: src/components/plotNFT/PlotNFTCard.tsx:421
 msgid "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
 msgstr ""
@@ -3367,18 +3116,12 @@ msgid "Your passphrase can be stored in your system's secure credential store. C
 msgstr ""
 
 #: src/components/settings/Settings.tsx:85
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:91
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Your passphrase has been set"
 msgstr ""
 
 #: src/components/settings/Settings.tsx:74
-<<<<<<< HEAD
-=======
 #: src/components/settings/SettingsPanel.tsx:80
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 msgid "Your passphrase has been updated"
 msgstr ""
 

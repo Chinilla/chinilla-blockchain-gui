@@ -43,10 +43,7 @@ export default function CreateOffer() {
   const wallets = useSelector((state) => state.wallet_state.wallets);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-<<<<<<< HEAD
-=======
   const showSaveDialog = useShowSaveDialog();
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
   let amount_input = null;
   let buy_or_sell = null;
   let wallet_id = null;
@@ -109,11 +106,7 @@ export default function CreateOffer() {
     }
     if (isElectron()) {
       const dialogOptions = {};
-<<<<<<< HEAD
-      const result = await window.ipcRenderer?.send('showSaveDialog', dialogOptions);
-=======
       const result = await showSaveDialog(dialogOptions);
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
       const { filePath } = result;
       const offer = {};
       for (const trade of trades) {

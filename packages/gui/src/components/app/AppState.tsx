@@ -2,54 +2,25 @@ import React, { useState, useEffect, ReactNode, useMemo } from 'react';
 import isElectron from 'is-electron';
 import { Trans } from '@lingui/macro';
 import { ConnectionState, ServiceHumanName, ServiceName, PassphrasePromptReason } from '@chia/api';
-<<<<<<< HEAD
-import { useCloseMutation, useGetStateQuery, useGetKeyringStatusQuery, useClientStartServiceMutation } from '@chia/api-react';
-import { Flex, useSkipMigration, LayoutHero, LayoutLoading, sleep } from '@chia/core';
-=======
 import { useCloseMutation, useGetStateQuery, useGetKeyringStatusQuery, useServices } from '@chia/api-react';
 import { Flex, useSkipMigration, LayoutHero, LayoutLoading, useMode } from '@chia/core';
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 import { Typography, Collapse } from '@material-ui/core';
 import AppKeyringMigrator from './AppKeyringMigrator';
 import AppPassPrompt from './AppPassPrompt';
 import config from '../../config/config';
-<<<<<<< HEAD
-
-const services = config.local_test ? [
-  ServiceName.WALLET,
-  ServiceName.SIMULATOR,
-] : [
-=======
 import AppSelectMode from './AppSelectMode';
 import ModeServices, { SimulatorServices } from '../../constants/ModeServices';
 
 const isSimulator = config.local_test === true;
 
 const ALL_SERVICES = [
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
   ServiceName.WALLET, 
   ServiceName.FULL_NODE,
   ServiceName.FARMER,
   ServiceName.HARVESTER,
-<<<<<<< HEAD
-];
-
-async function waitForConfig() {
-  while(true) {
-    const config = window.ipcRenderer.invoke('getConfig');
-    if (config) {
-      return config;
-    }
-
-    await sleep(50);
-  }
-}
-
-=======
   ServiceName.SIMULATOR,
 ];
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 type Props = {
   children: ReactNode;
 };
@@ -58,44 +29,6 @@ export default function AppState(props: Props) {
   const { children } = props;
   const [close] = useCloseMutation();
   const [closing, setClosing] = useState<boolean>(false);
-<<<<<<< HEAD
-  const [startService] = useClientStartServiceMutation();
-  const { data: clienState = {}, isLoading: isClientStateLoading } = useGetStateQuery();
-  const { data: keyringStatus, isLoading: isLoadingKeyringStatus, error } = useGetKeyringStatusQuery();
-  const [isMigrationSkipped] = useSkipMigration();
-
-  const isConnected = !isClientStateLoading && clienState?.state === ConnectionState.CONNECTED;
-
-  const [runningServices, setRunningServices] = useState<Object>({});
-
-  const runningServicesCount = useMemo(() => {
-    return Object
-      .values(runningServices)
-      .filter(isRunning => !!isRunning)
-      .length;
-  }, [runningServices]);
-
-  const allServicesRunning = services.length === runningServicesCount;
-
-  async function loadAllServices() {
-    await Promise.all(services.map(async (service) => {
-      await startService({
-        service,
-      }).unwrap();
-
-      setRunningServices((oldValue) => ({
-        ...oldValue,
-        [service]: true,
-      }));
-    }));
-  }
-  
-  useEffect(() => {
-    if (!!keyringStatus && !keyringStatus.isKeyringLocked && !allServicesRunning) {
-      loadAllServices();
-    }
-  }, [keyringStatus?.isKeyringLocked, allServicesRunning]);
-=======
   const { data: clienState = {}, isLoading: isClientStateLoading } = useGetStateQuery();
   const { data: keyringStatus, isLoading: isLoadingKeyringStatus } = useGetKeyringStatusQuery();
   const [isMigrationSkipped] = useSkipMigration();
@@ -133,7 +66,6 @@ export default function AppState(props: Props) {
   }, [servicesState, runServices]);
 
   const isConnected = !isClientStateLoading && clienState?.state === ConnectionState.CONNECTED;
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
   async function handleClose(event) {
     if (closing) {
@@ -147,11 +79,7 @@ export default function AppState(props: Props) {
     }).unwrap();
 
     event.sender.send('daemon-exited');
-<<<<<<< HEAD
-  } 
-=======
   }
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
   useEffect(() => {
     if (isElectron()) {
@@ -217,8 +145,6 @@ export default function AppState(props: Props) {
     );
   }
 
-<<<<<<< HEAD
-=======
   if (!mode) {
     return (
       <LayoutHero maxWidth="md">
@@ -227,7 +153,6 @@ export default function AppState(props: Props) {
     );
   }
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
   if (!allServicesRunning) {
     return (
       <LayoutLoading>
@@ -236,13 +161,8 @@ export default function AppState(props: Props) {
             <Trans>Starting services</Trans>
           </Typography>
           <Flex flexDirection="column" gap={0.5}>
-<<<<<<< HEAD
-            {services.map((service) => (
-              <Collapse key={service} in={!runningServices[service]} timeout={{ enter: 0, exit: 1000 }}>
-=======
             {!!runServices && runServices.map((service) => (
               <Collapse key={service} in={!servicesState.running.find(state => state.service === service)} timeout={{ enter: 0, exit: 1000 }}>
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
                 <Typography variant="body1" color="textSecondary"  align="center">
                   {ServiceHumanName[service]}
                 </Typography>

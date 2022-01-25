@@ -1435,9 +1435,6 @@ export const {
   // Pool
   useCreateNewPoolWalletMutation,
 
-  // Pool
-  useCreateNewPoolWalletMutation,
-
   // CAT
   useCreateNewCATWalletMutation,
   useCreateCATWalletForExistingMutation,

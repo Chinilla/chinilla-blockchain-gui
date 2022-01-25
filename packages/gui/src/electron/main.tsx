@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { app, dialog, shell, ipcMain, BrowserWindow, Menu, session } from 'electron';
-=======
 import { app, dialog, net, shell, ipcMain, BrowserWindow, IncomingMessage, Menu, session } from 'electron';
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 require('@electron/remote/main').initialize()
 import path from 'path';
 import React from 'react';
@@ -146,8 +142,6 @@ if (!handleSquirrelEvent()) {
 
       ipcMain.handle('getConfig', () => chiaConfig.loadConfig('mainnet'));
 
-<<<<<<< HEAD
-=======
       ipcMain.handle('getTempDir', () => app.getPath('temp'));
 
       ipcMain.handle('getVersion', () => app.getVersion());
@@ -209,7 +203,6 @@ if (!handleSquirrelEvent()) {
         return await dialog.showSaveDialog(options);
       });
 
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
       decidedToClose = false;
       mainWindow = new BrowserWindow({
         width: 1200,
@@ -238,23 +231,6 @@ if (!handleSquirrelEvent()) {
         await session.defaultSession.loadExtension(reactDevToolsPath)
       }
 
-<<<<<<< HEAD
-      const startUrl =
-        process.env.NODE_ENV === 'development'
-          ? 'http://localhost:3000'
-          : url.format({
-            pathname: path.join(__dirname, '/../renderer/index.html'),
-            protocol: 'file:',
-            slashes: true,
-          });
-
-      console.log('startUrl', startUrl);
-
-      mainWindow.loadURL(startUrl);
-      require("@electron/remote/main").enable(mainWindow.webContents)
-
-=======
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
       mainWindow.once('ready-to-show', () => {
         mainWindow.show();
       });
@@ -306,21 +282,6 @@ if (!handleSquirrelEvent()) {
           });
         }
       });
-<<<<<<< HEAD
-      mainWindow.on('showMessageBox' , async (e, a) => {
-        e.reply(await dialog.showMessageBox(mainWindow,a))
-      })
-
-      mainWindow.on('showSaveDialog' , async (e, a) => {
-        e.reply(await dialog.showSaveDialog(a))
-      })
-
-    };
-
-
-
-    const createMenu = () => Menu.buildFromTemplate(getMenuTemplate());
-=======
 
 
 
@@ -337,7 +298,6 @@ if (!handleSquirrelEvent()) {
       require("@electron/remote/main").enable(mainWindow.webContents)
 
     };
->>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
     const appReady = async () => {
       createWindow();

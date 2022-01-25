@@ -311,48 +311,28 @@ export default class Wallet extends Service {
     return this.onStateChanged('new_peak', callback);
   }
 
-  onNewBlock(
-    callback: (data: any, message: Message) => void,
-    processData?: (data: any) => any,
-  ) {
-    return this.onStateChanged('new_block', callback, processData);
+  onCoinAdded(callback: (
+    data: {
+      additionalData: Object;
+      state: 'coin_added';
+      success: boolean;
+      walletId: number;
+    }, 
+    message: Message,
+  ) => void) {
+    return this.onStateChanged('coin_added', callback);
   }
 
-  onNewPeak(
-    callback: (data: any, message: Message) => void,
-    processData?: (data: any) => any,
-  ) {
-    return this.onStateChanged('new_peak', callback, processData);
-  }
-
-  onCoinAdded(
-    callback: (
-      data: {
-        additionalData: Object;
-        state: 'coin_added';
-        success: boolean;
-        walletId: number;
-      }, 
-      message: Message,
-    ) => void,
-    processData?: (data: any) => any,
-  ) {
-    return this.onStateChanged('coin_added', callback, processData);
-  }
-
-  onCoinRemoved(
-    callback: (
-      data: {
-        additionalData: Object;
-        state: "coin_removed"
-        success: boolean;
-        walletId: number;
-      }, 
-      message: Message,
-    ) => void,
-    processData?: (data: any) => any,
-  ) {
-    return this.onStateChanged('coin_removed', callback, processData);
+  onCoinRemoved(callback: (
+    data: {
+      additionalData: Object;
+      state: "coin_removed"
+      success: boolean;
+      walletId: number;
+    }, 
+    message: Message,
+  ) => void) {
+    return this.onStateChanged('coin_removed', callback);
   }
 
   onWalletCreated(

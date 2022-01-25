@@ -238,7 +238,6 @@ msgstr ""
 #~ msgid "Are you sure you want to use k={plotSize}?"
 #~ msgstr "Да ли сигурно желиш да користиш k={plotSize}?"
 
-#: src/components/wallet/cat/WalletCATCreateExistingSimple.tsx:81
 #: src/components/wallet/cat/WalletCATTAILDialog.tsx:44
 #: src/components/wallet/cat/WalletCATTAILDialog.tsx:57
 #~ msgid "Asset Id"
