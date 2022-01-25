@@ -2,8 +2,9 @@ import React, { ReactNode } from 'react';
 import { AppBar, Toolbar, Box } from '@material-ui/core';
 import styled from 'styled-components';
 import { Outlet, Link } from 'react-router-dom';
-import { Flex, DarkModeToggle, LocaleToggle } from '@chia/core';
+import { Flex } from '@chia/core';
 import { ArrowBackIos as ArrowBackIosIcon } from '@material-ui/icons';
+import Settings from '../Settings';
 
 const StyledWrapper = styled(Box)`
   padding-top: ${({ theme }) => `${theme.spacing(3)}px`};
@@ -29,10 +30,11 @@ type Props = {
   header?: ReactNode;
   back?: boolean;
   outlet?: boolean;
+  settings?: ReactNode;
 };
 
 export default function LayoutHero(props: Props) {
-  const { children, header, back, outlet } = props;
+  const { children, header, back, outlet, settings } = props;
 
   return (
     <StyledWrapper>
@@ -45,12 +47,13 @@ export default function LayoutHero(props: Props) {
             </Link>
           )}
           <Flex flexGrow={1} />
-          <LocaleToggle />
-          <DarkModeToggle />
+          <Settings>
+            {settings}
+          </Settings>
         </Toolbar>
       </AppBar>
       <StyledBody>
-        <Flex flexDirection="column" gap={2} alignItems="center">
+        <Flex flexDirection="column" gap={2} alignItems="center" alignSelf="stretch">
           {outlet ? <Outlet /> : children}
         </Flex>
       </StyledBody>

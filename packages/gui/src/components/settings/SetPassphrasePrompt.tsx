@@ -45,7 +45,11 @@ export default function SetPassphrasePrompt(props: Props) {
   });
 
   async function validateDialog(passphrase: string, confirmation: string): Promise<boolean> {
+<<<<<<< HEAD
     let isValid: boolean = false;
+=======
+    let isValid = false;
+>>>>>>> 207cb1a67d4bce2ecd46a9125678de02d66d71b1
 
     if (passphrase === "" && confirmation === "") {
       await openDialog(
