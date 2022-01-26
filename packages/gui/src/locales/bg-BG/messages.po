@@ -910,7 +910,7 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:70
+#: src/components/dashboard/DashboardSideBar.tsx:72
 msgid "Farm"
 msgstr "Ферма"
 
@@ -1033,7 +1033,7 @@ msgstr "Последвай в Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Често задавани въпроси"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "Цялостен възен"
@@ -1820,7 +1820,7 @@ msgstr "Плота е дубликат на {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/dashboard/DashboardSideBar.tsx:67
 #: src/components/plot/Plot.tsx:14
 msgid "Plots"
 msgstr "Полета"
@@ -1868,7 +1868,7 @@ msgstr ""
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:77
 #: src/components/pool/Pool.tsx:17
 msgid "Pool"
 msgstr ""
@@ -2892,7 +2892,7 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Wallets"
 msgstr "Портфейли"
 

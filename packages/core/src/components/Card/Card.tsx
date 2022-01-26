@@ -20,6 +20,8 @@ const StyledCardMaterial = styled(({ cursor, opacity, clickable, fullHeight, ...
   cursor: ${({ clickable }) => clickable ? 'pointer' : 'default'};
   opacity: ${({ disabled }) => disabled ? '0.5': '1'};
   height: ${({ fullHeight }) => fullHeight ? '100%': 'auto'};
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 const StyledCardContent = styled(({ fullHeight, ...rest }) => (

@@ -19,13 +19,19 @@ import LoadingOverlay from '../LoadingOverlay';
 
 const StyledTableHead = styled(TableHead)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#202020' : '#eeeeee'};
+    theme.palette.type === 'dark' ? '#202020' : '#D6B75A'};
+  font-weight: 500;
+`;
+
+const StyledTablePagination = styled(TablePagination)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#202020' : '#D6B75A'};
   font-weight: 500;
 `;
 
 export const StyledTableRow = styled(({ odd, ...rest }) => <TableRow {...rest} />)`
   ${({ odd, theme }) => odd 
-    ? `background-color: ${theme.palette.type === 'dark' ? '#515151' : '#FAFAFA'};` 
+    ? `background-color: ${theme.palette.type === 'dark' ? '#515151' : '#f2ecd5'};` 
     : undefined
   }
 `;
@@ -279,7 +285,7 @@ export default function TableControlled(props: TableControlledProps) {
           </TableBody>
         </TableBase>
         {pages && (
-          <TablePagination
+          <StyledTablePagination
             rowsPerPageOptions={rowsPerPageOptions}
             component="div"
             count={count ?? rows.length ?? 0}

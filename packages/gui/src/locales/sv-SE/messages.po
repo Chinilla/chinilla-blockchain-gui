@@ -910,7 +910,7 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:70
+#: src/components/dashboard/DashboardSideBar.tsx:72
 msgid "Farm"
 msgstr "Odling"
 
@@ -1033,7 +1033,7 @@ msgstr "Följ på Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Vanliga frågor"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "Fullständig nod"
@@ -1818,7 +1818,7 @@ msgstr "Plotten är en dubblett av {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT håller på att byta status till (target state). Detta kan ta ett tag. Stäng inte programmet förrän detta är slutfört."
 
-#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/dashboard/DashboardSideBar.tsx:67
 #: src/components/plot/Plot.tsx:14
 msgid "Plots"
 msgstr "Plottar"
@@ -1866,7 +1866,7 @@ msgstr "Poäng som hittats de senaste 24 timmarna"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Poäng lyckade under de senaste 24 timmarna"
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:77
 #: src/components/pool/Pool.tsx:17
 msgid "Pool"
 msgstr "Pool"
@@ -2890,7 +2890,7 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Wallets"
 msgstr "Plånböcker"
 

@@ -910,7 +910,7 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:70
+#: src/components/dashboard/DashboardSideBar.tsx:72
 msgid "Farm"
 msgstr "农场"
 
@@ -1033,7 +1033,7 @@ msgstr "关注我们的Twitter"
 msgid "Frequently Asked Questions"
 msgstr "常见问题解答"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "全节点"
@@ -1818,7 +1818,7 @@ msgstr "农田与 {0} 重复"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "农田NFT正在过渡到（目标状态）。这可能需要一段时间。请在完成之前不要关闭应用程序。"
 
-#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/dashboard/DashboardSideBar.tsx:67
 #: src/components/plot/Plot.tsx:14
 msgid "Plots"
 msgstr "农田"
@@ -1866,7 +1866,7 @@ msgstr "最近24小时获取的积点"
 msgid "Points Successful in Last 24 Hours"
 msgstr "最近24小时成功获取的积点"
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:77
 #: src/components/pool/Pool.tsx:17
 msgid "Pool"
 msgstr "农业合作社"
@@ -2890,7 +2890,7 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Wallets"
 msgstr "钱包"
 

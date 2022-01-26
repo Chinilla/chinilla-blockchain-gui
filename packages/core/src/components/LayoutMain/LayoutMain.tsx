@@ -11,11 +11,15 @@ const StyledContainer = styled(Container)`
   padding-bottom: ${({ theme }) => `${theme.spacing(3)}px`};
   flex-grow: 1;
   display: flex;
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
 `;
 
 const StyledInnerContainer = styled(Flex)`
   box-shadow: inset 6px 0 8px -8px rgba(0, 0, 0, 0.2);
   flex-grow: 1;
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 const StyledBody = styled(Flex)`

@@ -6,6 +6,8 @@ import Flex from '../Flex';
 const StyledContent = styled(CardContent)`
   padding: ${({ theme }) =>
     `${theme.spacing(5)}px ${theme.spacing(4)}px !important`};
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 type Props = {

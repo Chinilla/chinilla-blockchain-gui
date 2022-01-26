@@ -916,7 +916,7 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:70
+#: src/components/dashboard/DashboardSideBar.tsx:72
 msgid "Farm"
 msgstr "مزرعه"
 
@@ -1039,7 +1039,7 @@ msgstr "Follow on Twitter"
 msgid "Frequently Asked Questions"
 msgstr "سوالات متداول"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "گره کامل"
@@ -1824,7 +1824,7 @@ msgstr "پلات کپی این {0} پلات است"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 
-#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/dashboard/DashboardSideBar.tsx:67
 #: src/components/plot/Plot.tsx:14
 msgid "Plots"
 msgstr "Plots"
@@ -1872,7 +1872,7 @@ msgstr "Points Found in Last 24 Hours"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Points Successful in Last 24 Hours"
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:77
 #: src/components/pool/Pool.tsx:17
 msgid "Pool"
 msgstr "استخر"
@@ -2898,7 +2898,7 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Wallets"
 msgstr "کیف پول ها"
 

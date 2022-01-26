@@ -1437,8 +1437,8 @@ msgstr ""
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:96
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:123
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:102
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
 msgid "Log Out"
 msgstr ""
 
@@ -1446,8 +1446,8 @@ msgstr ""
 #~ msgid "Logging in"
 #~ msgstr "Вход в систему"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:95
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:122
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:101
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:128
 msgid "Logout"
 msgstr ""
 
