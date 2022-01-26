@@ -829,7 +829,7 @@ msgstr "لغو"
 #~ msgid "Enter your passphrase:"
 #~ msgstr ""
 
-#: src/components/CardSimple/CardSimple.tsx:58
+#: src/components/CardSimple/CardSimple.tsx:60
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Error"
@@ -1271,8 +1271,8 @@ msgstr ""
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:102
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:133
 msgid "Log Out"
 msgstr ""
 
@@ -1280,8 +1280,8 @@ msgstr ""
 #~ msgid "Logging in"
 #~ msgstr "Logging in"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:101
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:128
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:105
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:132
 msgid "Logout"
 msgstr ""
 

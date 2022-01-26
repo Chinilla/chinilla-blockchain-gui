@@ -20,12 +20,14 @@ const StyledRoot = styled(Flex)`
   background-color: ${({ theme }) =>
     theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   height: 100%;
-  // overflow: hidden;
+  //overflow: hidden;
 `;
 
 const StyledContainer = styled(Container)`
   padding-top: ${({ theme }) => `${theme.spacing(2)}px`};
   padding-bottom: ${({ theme }) => `${theme.spacing(2)}px`};
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
 `;
 
 const StyledAppBar = styled(AppBar)`
@@ -66,6 +68,8 @@ const StyledBrandWrapper = styled(Flex)`
 const StyledToolbar = styled(Toolbar)`
   padding-left: 0;
   padding-right: 0;
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
 `;
 
 export type LayoutDashboardProps = {

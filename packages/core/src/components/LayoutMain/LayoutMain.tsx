@@ -23,6 +23,8 @@ const StyledInnerContainer = styled(Flex)`
 `;
 
 const StyledBody = styled(Flex)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   min-width: 0;
 `;
 
