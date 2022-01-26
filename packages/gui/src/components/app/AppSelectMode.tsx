@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
-import { Button, Flex, Logo, Card, useMode, Mode, Tooltip } from '@chia/core';
+import { Button, Flex, Logo, Card, useMode, Mode, Tooltip } from '@chinilla/core';
 import { 
   AccountBalanceWallet as AccountBalanceWalletIcon, 
   Eco as EcoIcon,
@@ -72,7 +72,7 @@ export default function AppSelectMode() {
                     <Flex gap={1}>
                       <CheckIcon color="primary" />
                       <Typography variant="body2">
-                        <Trans>Store and Send XCH</Trans>
+                        <Trans>Store and Send XCHI</Trans>
                       </Typography>
                     </Flex>
                     <Flex gap={1}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { CardSimple } from '@chia/core';
-import { useGetLatestPeakTimestampQuery } from '@chia/api-react';
+import { CardSimple } from '@chinilla/core';
+import { useGetLatestPeakTimestampQuery } from '@chinilla/api-react';
 import { unix_to_short_date } from '../../../util/utils';
 
 export default function FullNodeCardPeakTime() {

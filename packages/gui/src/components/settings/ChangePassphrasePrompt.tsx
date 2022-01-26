@@ -16,8 +16,8 @@ import {
   Help as HelpIcon,
 } from '@material-ui/icons';
 import { t, Trans } from '@lingui/macro';
-import { AlertDialog, Flex, useOpenDialog, Suspender, useValidateChangePassphraseParams } from '@chia/core';
-import { useGetKeyringStatusQuery, useRemoveKeyringPassphraseMutation, useSetKeyringPassphraseMutation } from '@chia/api-react';
+import { AlertDialog, Flex, useOpenDialog, Suspender, useValidateChangePassphraseParams } from '@chinilla/core';
+import { useGetKeyringStatusQuery, useRemoveKeyringPassphraseMutation, useSetKeyringPassphraseMutation } from '@chinilla/api-react';
 
 type Props = {
   onSuccess: () => void;
@@ -208,7 +208,7 @@ export default function ChangePassphrasePrompt(props: Props) {
               label={t`Save passphrase`}
               style={{ marginRight: '8px' }}
             />
-            <Tooltip title={t`Your passphrase can be stored in your system's secure credential store. Chia will be able to access your keys without prompting for your passphrase.`}>
+            <Tooltip title={t`Your passphrase can be stored in your system's secure credential store. Chinilla will be able to access your keys without prompting for your passphrase.`}>
               <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
             </Tooltip>
           </Box>

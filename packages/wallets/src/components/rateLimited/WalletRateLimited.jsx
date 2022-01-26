@@ -13,7 +13,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Tooltip } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
-import { AlertDialog, Card, Flex, chiaToMojo, mojoToChiaLocaleString } from '@chia/core';
+import { AlertDialog, Card, Flex, chinillaToChin, chinToChinillaLocaleString } from '@chinilla/core';
 import {
   send_transaction,
   rl_set_user_info_action,
@@ -250,17 +250,17 @@ const IncompleteCard = (props) => {
     const ip_debuf = ip_unhex.toString('utf8');
     const ip_parsed = JSON.parse(ip_debuf);
     const interval_input = ip_parsed.interval;
-    const chiaper_input = ip_parsed.limit;
+    const chinillaper_input = ip_parsed.limit;
     const origin_input = ip_parsed.origin_string;
     const admin_pubkey_input = ip_parsed.admin_pubkey;
     const interval_value = Number.parseInt(Number(interval_input));
-    const chiaper_value = Number.parseInt(Number(chiaper_input));
+    const chinillaper_value = Number.parseInt(Number(chinillaper_input));
     const origin_parsed = JSON.parse(origin_input);
     dispatch(
       rl_set_user_info_action(
         id,
         interval_value,
-        chiaper_value,
+        chinillaper_value,
         origin_parsed,
         admin_pubkey_input,
       ),
@@ -398,8 +398,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (chia per interval):{' '}
-                  {mojoToChiaLocaleString(limit)}
+                  Spending Limit (chinilla per interval):{' '}
+                  {chinToChinillaLocaleString(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -445,8 +445,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (chia per interval):{' '}
-                  {mojoToChiaLocaleString(limit)}
+                  Spending Limit (chinilla per interval):{' '}
+                  {chinToChinillaLocaleString(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -511,7 +511,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojoToChiaLocaleString(props.balance)} {currencyCode}
+            {chinToChinillaLocaleString(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -651,8 +651,8 @@ const SendCard = (props) => {
       );
       return;
     }
-    const amount = chiaToMojo(amount_input.value);
-    const fee = chiaToMojo(fee_input.value);
+    const amount = chinillaToChin(amount_input.value);
+    const fee = chinillaToChin(fee_input.value);
 
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);

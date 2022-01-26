@@ -6,16 +6,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: zh_TW\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-09-17 17:39\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: chinilla-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: zh-TW\n"
-"X-Crowdin-File: /[Chia-Network.chia-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Chinilla.chinilla-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:74
@@ -31,8 +31,8 @@ msgstr ""
 #~ msgstr "(選用)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:58
-#~ msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-#~ msgstr "＊想更進一步探索 Chia 區塊鍵？看看開源開發者打造的 <0>Chia Explorer</0>"
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "＊想更進一步探索 Chinilla 區塊鍵？看看開源開發者打造的 <0>Chinilla Explorer</0>"
 
 #: src/components/plot/add/PlotAddNFT.tsx:128
 #~ msgid "+ Add New Plot NFT"
@@ -60,8 +60,8 @@ msgstr ""
 
 #: src/electron/main.tsx:433
 #: src/electron/main.tsx:520
-#~ msgid "About Chia Blockchain"
-#~ msgstr "關於 Chia 區塊鏈"
+#~ msgid "About Chinilla Blockchain"
+#~ msgstr "關於 Chinilla 區塊鏈"
 
 #: src/components/trading/ViewOffer.jsx:74
 #~ msgid "Accept"
@@ -149,7 +149,7 @@ msgstr ""
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr ""
 
-#: src/components/Amount/Amount.tsx:99
+#: src/components/Amount/Amount.tsx:109
 msgid "Amount"
 msgstr "數量"
 
@@ -257,8 +257,8 @@ msgstr "返回"
 #~ msgstr "區塊 VDF 疊代次數"
 
 #: src/components/block/Block.jsx:326
-#~ msgid "Block at height {0} in the Chia blockchain"
-#~ msgstr "Chia 區塊鏈區塊高度 {0}"
+#~ msgid "Block at height {0} in the Chinilla blockchain"
+#~ msgstr "Chinilla 區塊鏈區塊高度 {0}"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -348,16 +348,16 @@ msgstr "取消"
 #~ msgstr "在 KeyBase 上閒聊"
 
 #: src/electron/main.tsx:430
-#~ msgid "Chia"
-#~ msgstr "Chia"
+#~ msgid "Chinilla"
+#~ msgstr "Chinilla"
 
 #: src/electron/main.tsx:369
-#~ msgid "Chia Blockchain Wiki"
-#~ msgstr "Chia 區塊鏈維基"
+#~ msgid "Chinilla Blockchain Wiki"
+#~ msgstr "Chinilla 區塊鏈維基"
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:642
-#~ msgid "Chia Wallet"
-#~ msgstr "Chia 錢包"
+#~ msgid "Chinilla Wallet"
+#~ msgstr "Chinilla 錢包"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 #~ msgid "Choose Number of Plots"
@@ -715,7 +715,7 @@ msgid "Deleting the key will permanently remove the key from your computer, make
 msgstr "刪除此金鑰將會永久從你的電腦中移除，請確保你有備份。你確定要繼續？"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:92
-#~ msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chia Proof of Space plotter. If unsure, use the default Chia Proof of Space plotter."
+#~ msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 #~ msgstr ""
 
 #: src/electron/main.tsx:315
@@ -816,8 +816,8 @@ msgstr "放棄"
 #~ msgstr ""
 
 #: src/components/_wallet_old/WalletImport.tsx:146
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-#~ msgstr "輸入你已存的 24 字助記符號以復原您的 Chia 錢包。"
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
+#~ msgstr "輸入你已存的 24 字助記符號以復原您的 Chinilla 錢包。"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:104
 #~ msgid "Enter your passphrase:"
@@ -829,8 +829,8 @@ msgid "Error"
 msgstr "錯誤"
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:450
-#~ msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-#~ msgstr "錯誤：不能發送 Chia 到有色地址。請輸入 Chia 地址。"
+#~ msgid "Error: Cannot send chinilla to coloured address. Please enter a chinilla address."
+#~ msgstr "錯誤：不能發送 Chinilla 到有色地址。請輸入 Chinilla 地址。"
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:14
 #~ msgid "Estimated Network Space"
@@ -953,7 +953,7 @@ msgid "Fee"
 msgstr "費用"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXCHI)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1167,16 +1167,16 @@ msgstr "數值不正確"
 #~ msgstr "加入一個農場"
 
 #: src/components/plot/add/PlotAddNFT.tsx:49
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
-#~ msgstr "加入農會並獲得持續的 XCH 耕種獎勵。雖然平均報酬一樣但波動較小相對穩定。"
+#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgstr "加入農會並獲得持續的 XCHI 耕種獎勵。雖然平均報酬一樣但波動較小相對穩定。"
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 #~ msgstr "加入農會並獲得持續的XCH 耕種獎勵。雖然平均報酬一樣但波動較小相對穩定。分配耕地到農場。你可以更輕鬆的轉換農會而不用重新進行耕地。"
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
-#~ msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
-#~ msgstr "加入農會以獲得更多持續性的 XCH 耕種獎勵。建立農場並分配您的新耕地到群組。"
+#~ msgid "Join a pool and get more consistent XCHI farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgstr "加入農會以獲得更多持續性的 XCHI 耕種獎勵。建立農場並分配您的新耕地到群組。"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 #~ msgid "K-Size"
@@ -1818,8 +1818,8 @@ msgstr "好"
 #~ msgstr "已通過篩選耕地"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:33
-#~ msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-#~ msgstr "耕地是在你硬碟上劃出的空間，用於耕種來賺取 Chia 。 <0>了解更多</0>"
+#~ msgid "Plots are allocated space on your hard drive used to farm and earn Chinilla. <0>Learn more</0>"
+#~ msgstr "耕地是在你硬碟上劃出的空間，用於耕種來賺取 Chinilla 。 <0>了解更多</0>"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:103
 #~ msgid "Plotter"
@@ -2241,8 +2241,8 @@ msgstr ""
 #~ msgstr "正在為自己的農會耕種中"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
-#~ msgid "Self pool. When you win a block you will earn XCH rewards."
-#~ msgstr "自己的農會。當你贏取一個區塊時你將獲得 XCH 獎勵。"
+#~ msgid "Self pool. When you win a block you will earn XCHI rewards."
+#~ msgstr "自己的農會。當你贏取一個區塊時你將獲得 XCHI 獎勵。"
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:46
@@ -2322,7 +2322,7 @@ msgstr ""
 #~ msgstr "跳過新增最終資料夾到收割機進行耕種"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCH farming rewards by joining a pool."
+#~ msgid "Smooth out your XCHI farming rewards by joining a pool."
 #~ msgstr "加入農會來獲得穩定的XCH獎勵。"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
@@ -2362,8 +2362,8 @@ msgstr ""
 
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:401
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:448
-#~ msgid "Spending Limit (chia per interval): {0}"
-#~ msgstr "花用限制（每間隔可用 Chia）：{0}"
+#~ msgid "Spending Limit (chinilla per interval): {0}"
+#~ msgstr "花用限制（每間隔可用 Chinilla）：{0}"
 
 #: src/components/app/AppState.tsx:161
 #~ msgid "Starting services"
@@ -2415,8 +2415,8 @@ msgstr ""
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the Chia blockchain"
-#~ msgstr "Sub Block at height {0} in the Chia blockchain"
+#~ msgid "Sub Block at height {0} in the Chinilla blockchain"
+#~ msgstr "Sub Block at height {0} in the Chinilla blockchain"
 
 #: src/components/_wallet_old/did/WalletDID.tsx:889
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:347
@@ -2449,23 +2449,23 @@ msgstr ""
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXCHI Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXCHI Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXCHI Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXCHI User Fees"
+#~ msgstr "TXCHI User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXCHI User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2490,7 +2490,7 @@ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-#~ msgid "The minimum required size for mainnet is k=32"
+#~ msgid "The minimum required size for vanillanet is k=32"
 #~ msgstr "主網最小要求的大小是 k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
@@ -2551,8 +2551,8 @@ msgstr ""
 #~ msgstr "在這個區塊的總交易費用。是獎勵給塊農的。"
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:107
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-#~ msgstr "這些是關於農夫如何獲得報酬的說明. 正常的狀況下, 這將是一個 XCH 地址, 但它可以設置為小於 1024 個字符的任何字符串，因此它可以代表另一個區塊鏈或支付系統識別碼."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCHI address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgstr "這些是關於農夫如何獲得報酬的說明. 正常的狀況下, 這將是一個 XCHI 地址, 但它可以設置為小於 1024 個字符的任何字符串，因此它可以代表另一個區塊鏈或支付系統識別碼."
 
 #: src/components/plot/PlotsFailed.tsx:36
 #~ msgid "These plots are invalid, you might want to delete them."
@@ -2574,8 +2574,8 @@ msgstr ""
 #~ msgstr "這個功能只能在 GUI 中提供。"
 
 #: src/components/_wallet_old/card/WalletCardSpendableBalance.tsx:26
-#~ msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-#~ msgstr "這是你目前可用來交易的 Chia 數量。他不包括未結的耕種獎勵，未結的匯入交易和你剛花用，但還沒在區塊鏈內的 Chia 。"
+#~ msgid "This is the amount of Chinilla that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chinilla that you have just spent but is not yet in the blockchain."
+#~ msgstr "這是你目前可用來交易的 Chinilla 數量。他不包括未結的耕種獎勵，未結的匯入交易和你剛花用，但還沒在區塊鏈內的 Chinilla 。"
 
 #: src/components/_wallet_old/card/WalletCardPendingChange.tsx:26
 #~ msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2594,8 +2594,8 @@ msgstr ""
 #~ msgstr "這是塊農建立區塊的時間，這是在用時間證明最終確定之前的時間"
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:34
-#~ msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-#~ msgstr "這是由你的私鑰控制的目前峰值子區塊中區塊鏈中 Chia 的總量。他包括凍結耕種獎勵，但不包括未結的匯入和匯出交易。"
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "這是由你的私鑰控制的目前峰值子區塊中區塊鏈中 Chinilla 的總量。他包括凍結耕種獎勵，但不包括未結的匯入和匯出交易。"
 
 #: src/components/_wallet_old/card/WalletCardPendingTotalBalance.tsx:29
 #~ msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2640,8 +2640,8 @@ msgstr ""
 #~ msgstr "此貿易已包含在區塊鏈中的這個區塊高度"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-#~ msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-#~ msgstr "此版本的 Chia 不再與區塊鏈相容，因此無法安全地進行耕種。"
+#~ msgid "This version of Chinilla is no longer compatible with the blockchain and can not safely farm."
+#~ msgstr "此版本的 Chinilla 不再與區塊鏈相容，因此無法安全地進行耕種。"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
 #~ msgid "Thread Multiplier for Phase 2"
@@ -2669,8 +2669,8 @@ msgstr ""
 #~ msgid "Total Balance"
 #~ msgstr "總餘額"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:27
-#~ msgid "Total Chia Farmed"
+#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:27
+#~ msgid "Total Chinilla Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:14
@@ -2886,7 +2886,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.chiaWallet"
+#~ msgid "WalletItem.chinillaWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -2923,8 +2923,8 @@ msgstr ""
 #~ msgstr "想加入農會？建立一個農場"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-#~ msgid "Want to earn more Chia? Add more plots to your farm."
-#~ msgstr "想要獲得更多 Chia？增加更多耕地到你的農場。"
+#~ msgid "Want to earn more Chinilla? Add more plots to your farm."
+#~ msgstr "想要獲得更多 Chinilla？增加更多耕地到你的農場。"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:87
 #~ msgid "Want to have a delay before the next plot starts?"
@@ -2955,8 +2955,8 @@ msgstr "警告：這個金鑰用於你的農會獎勵地址。刪除金鑰後可
 #~ msgstr "權重是所有包括這個的子區塊的總增加難度"
 
 #: src/screens/SelectKey/SelectKey.tsx:105
-msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "歡迎來到 Chia。請用已有的金鑰登入，或建立新的金鑰。"
+msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."
+msgstr "歡迎來到 Chinilla。請用已有的金鑰登入，或建立新的金鑰。"
 
 #: src/components/_wallet_old/WalletAdd.tsx:66
 #~ msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -3030,8 +3030,8 @@ msgstr "您有做過變更。請問您想要放棄它們嗎？"
 #~ msgstr "您需要先領取你的獎勵"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Chia application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Chia application as this version will stop working soon!"
+#~ msgid "You need to upgrade the Chinilla application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the Chinilla application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:36
 #~ msgid "You need {currencyCode} to join a pool."
@@ -3088,7 +3088,7 @@ msgstr "您有做過變更。請問您想要放棄它們嗎？"
 #: src/components/app/AppKeyringMigrator.tsx:181
 #: src/components/settings/ChangePassphrasePrompt.tsx:211
 #: src/components/settings/SetPassphrasePrompt.tsx:193
-#~ msgid "Your passphrase can be stored in your system's secure credential store. Chia will be able to access your keys without prompting for your passphrase."
+#~ msgid "Your passphrase can be stored in your system's secure credential store. Chinilla will be able to access your keys without prompting for your passphrase."
 #~ msgstr ""
 
 #: src/components/settings/Settings.tsx:85
@@ -3169,13 +3169,17 @@ msgstr "您有做過變更。請問您想要放棄它們嗎？"
 #~ msgid "{0} points {1} - {2} hours ago"
 #~ msgstr "{0} 積分 {1} - {2} 小時前"
 
+#: src/components/Amount/Amount.tsx:91
+msgid "{chin, plural, one {chin} other {chins}}"
+msgstr "{chin, plural, other {chins}}"
+
 #: src/components/farm/card/FarmCardBlockRewards.tsx:35
 #~ msgid "{currencyCode} Block Rewards"
 #~ msgstr "{currencyCode} 區塊獎勵"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
-#~ msgid "{currencyCode} Total Chia Farmed"
-#~ msgstr "{currencyCode} 已收耕 Chia"
+#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:29
+#~ msgid "{currencyCode} Total Chinilla Farmed"
+#~ msgstr "{currencyCode} 已收耕 Chinilla"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 #~ msgid "{currencyCode} User Transaction Fees"
@@ -3184,10 +3188,6 @@ msgstr "您有做過變更。請問您想要放棄它們嗎？"
 #: src/hooks/useValidateChangePassphraseParams.tsx:33
 msgid "{minPassphraseLength, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 msgstr ""
-
-#: src/components/Amount/Amount.tsx:82
-msgid "{mojo, plural, one {mojo} other {mojos}}"
-msgstr "{mojo, plural, other {mojos}}"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

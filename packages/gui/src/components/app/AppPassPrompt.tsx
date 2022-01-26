@@ -9,9 +9,9 @@ import {
   Button,
 } from '@material-ui/core';
 import { Trans, t } from '@lingui/macro';
-import { PassphrasePromptReason } from '@chia/api';
-import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@chia/api-react';
-import { Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@chia/core';
+import { PassphrasePromptReason } from '@chinilla/api';
+import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@chinilla/api-react';
+import { Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@chinilla/core';
 
 type Props = {
   reason: PassphrasePromptReason;

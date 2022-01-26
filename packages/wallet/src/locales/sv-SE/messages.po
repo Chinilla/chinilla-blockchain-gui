@@ -6,16 +6,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: sv_SE\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-09-17 17:39\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: chinilla-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: sv-SE\n"
-"X-Crowdin-File: /[Chia-Network.chia-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Chinilla.chinilla-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -23,8 +23,8 @@ msgstr ""
 #~ msgstr "(Valfritt)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-#~ msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-#~ msgstr "*Vill du utforska Chias block lite mer? Ta en titt på <0>Chia Explorer</0> som har skapats som öppen källkod av en utvecklare."
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "*Vill du utforska Chinillas block lite mer? Ta en titt på <0>Chinilla Explorer</0> som har skapats som öppen källkod av en utvecklare."
 
 #: src/components/wallet/WalletHistory.tsx:111
 #~ msgid "+"
@@ -60,12 +60,12 @@ msgstr ""
 
 #: src/electron/main.tsx:423
 #: src/electron/main.tsx:510
-#~ msgid "About Chia Blockchain"
-#~ msgstr "Om Chia Blockchain"
+#~ msgid "About Chinilla Blockchain"
+#~ msgstr "Om Chinilla Blockchain"
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About Chia Wallet"
+msgid "About Chinilla Wallet"
 msgstr ""
 
 #: src/components/trading/ViewOffer.jsx:74
@@ -313,8 +313,8 @@ msgstr ""
 #~ msgstr "VDF-iterationer för block"
 
 #: src/components/block/Block.jsx:337
-#~ msgid "Block at height {0} in the Chia blockchain"
-#~ msgstr "Block vid höjd {0} i Chia-blockkedjan"
+#~ msgid "Block at height {0} in the Chinilla blockchain"
+#~ msgstr "Block vid höjd {0} i Chinilla-blockkedjan"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -394,7 +394,7 @@ msgstr ""
 
 #: src/components/wallet/WalletSend.tsx:99
 #: src/components/wallet/cat/WalletCATSend.tsx:117
-#~ msgid "Cannot send chia to coloured address. Please enter a chia address."
+#~ msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 #~ msgstr ""
 
 #: src/components/plot/PlotsNotFound.tsx:39
@@ -424,21 +424,21 @@ msgid "Chat on KeyBase"
 msgstr "Chatta på KeyBase"
 
 #: src/electron/main.tsx:419
-msgid "Chia"
-msgstr "Chia"
+msgid "Chinilla"
+msgstr "Chinilla"
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:25
 #: src/components/wallet/create/WalletCreateList.tsx:32
-#~ msgid "Chia Asset Token"
+#~ msgid "Chinilla Asset Token"
 #~ msgstr ""
 
 #: src/electron/main.tsx:358
-msgid "Chia Blockchain Wiki"
-msgstr "Chia Blockchains wiki"
+msgid "Chinilla Blockchain Wiki"
+msgstr "Chinilla Blockchains wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:23
-#~ msgid "Chia Wallet"
-#~ msgstr "Chia-plånbok"
+#~ msgid "Chinilla Wallet"
+#~ msgstr "Chinilla-plånbok"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 #~ msgid "Choose Number of Plots"
@@ -611,11 +611,11 @@ msgstr "Skapa"
 #~ msgstr "Skapa ett attestpaket"
 
 #: src/components/wallet/cat/WalletCATCreateExisting.tsx:65
-#~ msgid "Create Chia Asset Token Wallet"
+#~ msgid "Create Chinilla Asset Token Wallet"
 #~ msgstr ""
 
 #: src/components/wallet/cat/WalletCATCreateExisting.tsx:77
-#~ msgid "Create Chia Asset Token Wallet from Existing TAIL"
+#~ msgid "Create Chinilla Asset Token Wallet from Existing TAIL"
 #~ msgstr ""
 
 #: src/components/wallet/create/WalletCreate.jsx:290
@@ -627,7 +627,7 @@ msgstr "Skapa"
 #~ msgstr "Skapa distribuerad identitetsplånbok"
 
 #: src/components/wallet/cat/WalletCATCreateNew.tsx:77
-#~ msgid "Create New Chia Asset Token Wallet"
+#~ msgid "Create New Chinilla Asset Token Wallet"
 #~ msgstr ""
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:32
@@ -691,7 +691,7 @@ msgid "Create an Offer"
 msgstr ""
 
 #: src/components/wallet/offers/OfferManager.tsx:466
-msgid "Create an offer to exchange XCH or other tokens. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to exchange XCHI or other tokens. View an offer to inspect and accept an offer made by another party."
 msgstr ""
 
 #: src/components/wallet/cat/WalletCATCreateExisting.tsx:76
@@ -935,8 +935,8 @@ msgid "Enter a strong passphrase and click Migrate Keys to secure your keys"
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:94
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-#~ msgstr "Skriv in din sparade minnesfras på 24 ord för att återställa din Chia-plånbok."
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
+#~ msgstr "Skriv in din sparade minnesfras på 24 ord för att återställa din Chinilla-plånbok."
 
 #: src/components/farm/card/FarmCard.tsx:57
 #~ msgid "Error"
@@ -947,8 +947,8 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/WalletSend.tsx:289
-#~ msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-#~ msgstr "Fel: det går inte att skicka chia till färgad adress. Ange en chia-adress."
+#~ msgid "Error: Cannot send chinilla to coloured address. Please enter a chinilla address."
+#~ msgstr "Fel: det går inte att skicka chinilla till färgad adress. Ange en chinilla-adress."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 #~ msgid "Estimated Network Space"
@@ -1057,7 +1057,7 @@ msgid "Fee"
 msgstr "Avgift"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXCHI)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1310,16 +1310,16 @@ msgstr ""
 #~ msgstr "Gå med i en pool"
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
-#~ msgstr "Gå med i en pool och få konsekventa XCH-odlingsbelöningar. Genomsnittlig avkastning är densamma, men den är mycket mindre variabel."
+#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgstr "Gå med i en pool och få konsekventa XCHI-odlingsbelöningar. Genomsnittlig avkastning är densamma, men den är mycket mindre variabel."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-#~ msgstr "Gå med i en pool och få konsekventa XCH-odlingsbelöningar. Genomsnittlig avkastning är densamma, men den är mycket mindre variabel. Tilldela plottar till en plott-NFT. Du kan enkelt byta pool utan att behöva plotta om."
+#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgstr "Gå med i en pool och få konsekventa XCHI-odlingsbelöningar. Genomsnittlig avkastning är densamma, men den är mycket mindre variabel. Tilldela plottar till en plott-NFT. Du kan enkelt byta pool utan att behöva plotta om."
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-#~ msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
-#~ msgstr "Gå med i en pool och få mer konsekventa XCH-odlingsbelöningar. Skapa en plott-NFT och tilldela dina nya plottar till en grupp."
+#~ msgid "Join a pool and get more consistent XCHI farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgstr "Gå med i en pool och få mer konsekventa XCHI-odlingsbelöningar. Skapa en plott-NFT och tilldela dina nya plottar till en grupp."
 
 #: src/components/wallet/offers/OfferShareDialog.tsx:819
 msgid "Join {KeybaseTeamName}"
@@ -1998,8 +1998,8 @@ msgstr "Vänta på synkronisering av plånboken"
 #~ msgstr "Plottar som passerat filtret"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-#~ msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-#~ msgstr "Plottar är reserverat utrymme på din hårddisk som används för att odla och tjäna Chia. <0>Läs mer</0>"
+#~ msgid "Plots are allocated space on your hard drive used to farm and earn Chinilla. <0>Learn more</0>"
+#~ msgstr "Plottar är reserverat utrymme på din hårddisk som används för att odla och tjäna Chinilla. <0>Läs mer</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 #~ msgid "Plotting"
@@ -2442,8 +2442,8 @@ msgstr ""
 #~ msgstr "Självpoolning"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-#~ msgid "Self pool. When you win a block you will earn XCH rewards."
-#~ msgstr "Självpoolning. När du vinner ett block tjänar du XCH-belöningar."
+#~ msgid "Self pool. When you win a block you will earn XCHI rewards."
+#~ msgstr "Självpoolning. När du vinner ett block tjänar du XCHI-belöningar."
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:47
@@ -2538,8 +2538,8 @@ msgstr ""
 #~ msgstr "Hoppar över steget att lägga till en slutlig mapp till skördaren för odling"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCH farming rewards by joining a pool."
-#~ msgstr "Jämna ut dina XCH-odlarbelöningar genom att gå med i en pool."
+#~ msgid "Smooth out your XCHI farming rewards by joining a pool."
+#~ msgstr "Jämna ut dina XCHI-odlarbelöningar genom att gå med i en pool."
 
 #: src/modules/message.js:568
 #: src/modules/message.js:583
@@ -2575,8 +2575,8 @@ msgstr "Tal"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
-#~ msgid "Spending Limit (chia per interval): {0}"
-#~ msgstr "Spenderbegränsning (chia per intervall): {0}"
+#~ msgid "Spending Limit (chinilla per interval): {0}"
+#~ msgstr "Spenderbegränsning (chinilla per intervall): {0}"
 
 #: src/constants/WalletName.ts:5
 msgid "Standard Wallet"
@@ -2628,8 +2628,8 @@ msgstr "Status"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the Chia blockchain"
-#~ msgstr "Sub Block at height {0} in the Chia blockchain"
+#~ msgid "Sub Block at height {0} in the Chinilla blockchain"
+#~ msgstr "Sub Block at height {0} in the Chinilla blockchain"
 
 #: src/components/app/AppPassPrompt.tsx:97
 msgid "Submit"
@@ -2660,23 +2660,23 @@ msgstr ""
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXCHI Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXCHI Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXCHI Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXCHI User Fees"
+#~ msgstr "TXCHI User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXCHI User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2701,8 +2701,8 @@ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:34
 #: src/components/plot/add/PlotAddChooseSize.tsx:91
-#~ msgid "The minimum required size for mainnet is k=32"
-#~ msgstr "Den minsta storlek som krävs för mainnet är k=32"
+#~ msgid "The minimum required size for vanillanet is k=32"
+#~ msgstr "Den minsta storlek som krävs för vanillanet är k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
 #~ msgid "The node is not synced"
@@ -2758,8 +2758,8 @@ msgstr "Pool-URL måste använda protokollet https. {normalizedUrl}"
 #~ msgstr "Summan av transaktionsavgifterna i detta block. Utbetalda till odlaren."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-#~ msgstr "Det här är instruktionerna för hur odlaren vill få betalt. Som standard är det en XCH-adress, men det kan ställas in till vilken sträng som helst med en storlek på färrre än 1024 tecken, så det kan representera en identifierare för en annan blockkedja eller betalningssystem."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCHI address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgstr "Det här är instruktionerna för hur odlaren vill få betalt. Som standard är det en XCHI-adress, men det kan ställas in till vilken sträng som helst med en storlek på färrre än 1024 tecken, så det kan representera en identifierare för en annan blockkedja eller betalningssystem."
 
 #: src/components/plot/PlotsFailed.tsx:40
 #~ msgid "These plots are invalid, you might want to delete them."
@@ -2788,8 +2788,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Denna funktion kan bara användas från GUI."
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:23
-#~ msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-#~ msgstr "Detta är den mängd Chia du för tillfället kan använda för transaktioner. Det innefattar inte väntande odlingsbelöningar, väntande inkommande transaktioner eller Chia som du just spenderat men som ännu inte finns i blockkedjan."
+#~ msgid "This is the amount of Chinilla that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chinilla that you have just spent but is not yet in the blockchain."
+#~ msgstr "Detta är den mängd Chinilla du för tillfället kan använda för transaktioner. Det innefattar inte väntande odlingsbelöningar, väntande inkommande transaktioner eller Chinilla som du just spenderat men som ännu inte finns i blockkedjan."
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:44
 #~ msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2808,8 +2808,8 @@ msgstr "Denna funktion kan bara användas från GUI."
 #~ msgstr "Detta är den tidpunkt då blocket skapades av odlaren, vilket är innan det färdigställs med ett bevis-på-tid"
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:16
-#~ msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-#~ msgstr "Detta är den sammanlagda mängden chia i blockkedjan vid det aktuella topp-underblocket som kontrolleras av dina privata nycklar. Det innefattar frusna odlingsbelöningar, men inte väntande inkommande och utgående transaktioner."
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "Detta är den sammanlagda mängden chinilla i blockkedjan vid det aktuella topp-underblocket som kontrolleras av dina privata nycklar. Det innefattar frusna odlingsbelöningar, men inte väntande inkommande och utgående transaktioner."
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:31
 #~ msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2866,8 +2866,8 @@ msgstr ""
 #~ msgstr "Denna affärstransaktion lades till i blockkedjan vid denna blockhöjd"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-#~ msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-#~ msgstr "Denna version av Chia är inte längre kompatibel med blockkedjan och kan därför inte användas för odling."
+#~ msgid "This version of Chinilla is no longer compatible with the blockchain and can not safely farm."
+#~ msgstr "Denna version av Chinilla är inte längre kompatibel med blockkedjan och kan därför inte användas för odling."
 
 #: src/components/fullNode/FullNode.jsx:92
 #~ msgid "Time Created"
@@ -2903,8 +2903,8 @@ msgstr ""
 #~ msgid "Total Balance"
 #~ msgstr "Totalt saldo"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:15
-#~ msgid "Total Chia Farmed"
+#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:15
+#~ msgid "Total Chinilla Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -3152,7 +3152,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.chiaWallet"
+#~ msgid "WalletItem.chinillaWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -3188,8 +3188,8 @@ msgstr ""
 #~ msgstr "Vill du gå med i en pool? Skapa en plot-NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-#~ msgid "Want to earn more Chia? Add more plots to your farm."
-#~ msgstr "Vill du tjäna mer Chia? Lägg till fler plottar till din odling."
+#~ msgid "Want to earn more Chinilla? Add more plots to your farm."
+#~ msgstr "Vill du tjäna mer Chinilla? Lägg till fler plottar till din odling."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 #~ msgid "Want to have a delay before the next plot starts?"
@@ -3224,8 +3224,8 @@ msgstr ""
 #~ msgstr "Vikt är den sammanlagda svårighetsgraden för alla underblock upp till och inklusive detta"
 
 #: src/components/selectKey/SelectKey.tsx:81
-#~ msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-#~ msgstr "Välkommen till Chia. Logga in med en existerande nyckel, eller skapa en ny nyckel."
+#~ msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."
+#~ msgstr "Välkommen till Chinilla. Logga in med en existerande nyckel, eller skapa en ny nyckel."
 
 #: src/components/wallet/WalletAdd.tsx:85
 #~ msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -3303,8 +3303,8 @@ msgstr ""
 #~ msgstr "Du måste först begära in dina belöningar"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Chia application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Chia application as this version will stop working soon!"
+#~ msgid "You need to upgrade the Chinilla application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the Chinilla application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 #~ msgid "You need {currencyCode} to join a pool."
@@ -3376,7 +3376,7 @@ msgid "Your offer:"
 msgstr ""
 
 #: src/components/app/AppKeyringMigrator.tsx:181
-msgid "Your passphrase can be stored in your system's secure credential store. Chia will be able to access your keys without prompting for your passphrase."
+msgid "Your passphrase can be stored in your system's secure credential store. Chinilla will be able to access your keys without prompting for your passphrase."
 msgstr ""
 
 #: src/util/getDescriptiveError.ts:5
@@ -3431,23 +3431,23 @@ msgstr ""
 #~ msgid "{0} points {1} - {2} hours ago"
 #~ msgstr "{0} poäng {1} - {2} timmar sedan"
 
+#: src/components/core/components/Amount/Amount.tsx:82
+#~ msgid "{chin, plural, one {chin} other {chins}}"
+#~ msgstr "{chin, plural, one {chin} other {chin}}"
+
+#: src/components/wallet/offers/OfferSummaryRow.tsx:40
+#: src/components/wallet/offers/OfferViewer.tsx:95
+msgid "{chins, plural, one {chin} other {chins}}"
+msgstr ""
+
 #: src/components/farm/card/FarmCardBlockRewards.tsx:35
 #~ msgid "{currencyCode} Block Rewards"
 #~ msgstr "{currencyCode} blockbelöningar"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
-#~ msgid "{currencyCode} Total Chia Farmed"
-#~ msgstr "{currencyCode} Totalt antal Chia som odlats"
+#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:29
+#~ msgid "{currencyCode} Total Chinilla Farmed"
+#~ msgstr "{currencyCode} Totalt antal Chinilla som odlats"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 #~ msgid "{currencyCode} User Transaction Fees"
 #~ msgstr "{currencyCode} Transaktionsavgifter för användare"
-
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{mojo, plural, one {mojo} other {mojos}}"
-#~ msgstr "{mojo, plural, one {mojo} other {mojo}}"
-
-#: src/components/wallet/offers/OfferSummaryRow.tsx:40
-#: src/components/wallet/offers/OfferViewer.tsx:95
-msgid "{mojos, plural, one {mojo} other {mojos}}"
-msgstr ""

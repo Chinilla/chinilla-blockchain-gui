@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, Link } from '@chia/core';
+import { Flex, Link } from '@chinilla/core';
 import { Box, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import { Shell } from 'electron';
@@ -16,7 +16,7 @@ const StyledRoot = styled(Flex)`
 async function openFAQURL(): Promise<void> {
   try {
     const shell: Shell = (window as any).shell;
-    await shell.openExternal('https://github.com/Chia-Network/chia-blockchain/wiki/FAQ');
+    await shell.openExternal('https://github.com/Chinilla/chinilla-blockchain/wiki/FAQ');
   }
   catch (e) {
     console.error(e);
@@ -26,7 +26,7 @@ async function openFAQURL(): Promise<void> {
 async function openSendFeedbackURL(): Promise<void> {
   try {
     const shell: Shell = (window as any).shell;
-    await shell.openExternal('https://feedback.chia.net/lightwallet');
+    await shell.openExternal('https://feedback.chinilla.com/lightwallet');
   }
   catch (e) {
     console.error(e);

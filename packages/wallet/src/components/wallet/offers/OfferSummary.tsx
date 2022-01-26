@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { OfferSummaryRecord } from '@chia/core';
+import { OfferSummaryRecord } from '@chinilla/core';
 import {
   Flex,
   StateColor,
-} from '@chia/core';
+} from '@chinilla/core';
 import {
   Box,
   Divider,
@@ -15,7 +15,7 @@ import styled from 'styled-components';
 import useAssetIdName from '../../../hooks/useAssetIdName';
 import OfferExchangeRate from './OfferExchangeRate';
 import OfferSummaryRow from './OfferSummaryRow';
-import { mojo_to_chia, mojo_to_colouredcoin } from '../../../util/chia';
+import { chin_to_chinilla, chin_to_colouredcoin } from '../../../util/chinilla';
 
 const StyledWarningText = styled(Typography)`
   color: ${StateColor.WARNING};
@@ -39,8 +39,8 @@ export default function OfferSummary(props: Props) {
   const takerEntries: [string, number][] = Object.entries(summary.requested);
   const makerAssetInfo = makerEntries.length === 1 ? lookupByAssetId(makerEntries[0][0]) : undefined;
   const takerAssetInfo = takerEntries.length === 1 ? lookupByAssetId(takerEntries[0][0]) : undefined;
-  const makerAmount = makerEntries[0][0].toLowerCase() === 'xch' ? Number(mojo_to_chia(makerEntries[0][1])) : Number(mojo_to_colouredcoin(makerEntries[0][1]));
-  const takerAmount = takerEntries[0][0].toLowerCase() === 'xch' ? Number(mojo_to_chia(takerEntries[0][1])) : Number(mojo_to_colouredcoin(takerEntries[0][1]));
+  const makerAmount = makerEntries[0][0].toLowerCase() === 'xchi' ? Number(chin_to_chinilla(makerEntries[0][1])) : Number(chin_to_colouredcoin(makerEntries[0][1]));
+  const takerAmount = takerEntries[0][0].toLowerCase() === 'xchi' ? Number(chin_to_chinilla(takerEntries[0][1])) : Number(chin_to_colouredcoin(takerEntries[0][1]));
   const makerExchangeRate = makerAssetInfo && takerAssetInfo ? takerAmount / makerAmount : undefined;
   const takerExchangeRate = makerAssetInfo && takerAssetInfo ? makerAmount / takerAmount : undefined;
 

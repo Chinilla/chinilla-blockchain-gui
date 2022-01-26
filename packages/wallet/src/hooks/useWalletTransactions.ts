@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@chia/api-react';
+import { useGetTransactionsQuery, useGetTransactionsCountQuery } from '@chinilla/api-react';
 import Transaction from '../types/Transaction';
 
 export default function useWalletTransactions(

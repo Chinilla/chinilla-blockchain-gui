@@ -18,8 +18,8 @@ import {
   TableControlled,
   TooltipIcon,
   useOpenDialog,
-} from '@chia/core';
-import { OfferTradeRecord } from '@chia/api';
+} from '@chinilla/core';
+import { OfferTradeRecord } from '@chinilla/api';
 import {
   Box,
   Button,
@@ -33,11 +33,11 @@ import {
   Typography
 } from '@material-ui/core';
 import { Cancel, GetApp as Download, Info, Reply as Share, Visibility } from '@material-ui/icons';
-import { Trade as TradeIcon } from '@chia/icons';
-import { useCancelOfferMutation, useGetAllOffersQuery, useGetOfferDataMutation, useGetWalletsQuery } from '@chia/api-react';
+import { Trade as TradeIcon } from '@chinilla/icons';
+import { useCancelOfferMutation, useGetAllOffersQuery, useGetOfferDataMutation, useGetWalletsQuery } from '@chinilla/api-react';
 import { colorForOfferState, displayStringForOfferState, formatAmountForWalletType, suggestedFilenameForOffer } from './utils';
 import useAssetIdName from '../../../hooks/useAssetIdName';
-import { chia_to_mojo, mojo_to_colouredcoin_string } from '../../../util/chia';
+import { chinilla_to_chin, chin_to_colouredcoin_string } from '../../../util/chinilla';
 import { CreateOfferEditor } from './OfferEditor';
 import { OfferImport } from './OfferImport';
 import { OfferViewer } from './OfferViewer';
@@ -74,8 +74,8 @@ function ConfirmOfferCancellation(props: ConfirmOfferCancellationProps) {
 
   // Communicate value updates to the parent component
   useEffect(() => {
-    const feeInMojos = fee ? Number.parseFloat(chia_to_mojo(fee)) : 0;
-    onUpdateValues({ cancelWithTransaction, cancellationFee: feeInMojos });
+    const feeInChins = fee ? Number.parseFloat(chinilla_to_chin(fee)) : 0;
+    onUpdateValues({ cancelWithTransaction, cancellationFee: feeInChins });
   }, [cancelWithTransaction, fee]);
 
   return (
@@ -236,7 +236,7 @@ function OfferList(props: OfferListProps) {
         field: (row: OfferTradeRecord) => {
           const resolvedOfferInfo = Object.entries(row.summary.offered).map(([assetId, amount]) => {
             const assetIdInfo = lookupByAssetId(assetId);
-            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojo_to_colouredcoin_string(amount);
+            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chin_to_colouredcoin_string(amount);
             const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
             return {
               displayAmount,
@@ -259,7 +259,7 @@ function OfferList(props: OfferListProps) {
         field: (row: OfferTradeRecord) => {
           const resolvedOfferInfo = Object.entries(row.summary.requested).map(([assetId, amount]) => {
             const assetIdInfo = lookupByAssetId(assetId);
-            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojo_to_colouredcoin_string(amount);
+            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chin_to_colouredcoin_string(amount);
             const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
             return {
               displayAmount,
@@ -464,7 +464,7 @@ export function OfferManager() {
             <StyledTradeIcon color="primary" />
             <Typography variant="body1">
               <Trans>
-                Create an offer to exchange XCH or other tokens. View an offer to inspect and accept an offer made by another party.
+                Create an offer to exchange XCHI or other tokens. View an offer to inspect and accept an offer made by another party.
               </Trans>
             </Typography>
             <Button onClick={handleCreateOffer} variant="contained" color="primary">

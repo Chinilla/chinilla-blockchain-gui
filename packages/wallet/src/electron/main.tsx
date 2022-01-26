@@ -10,8 +10,8 @@ import '../config/env';
 import handleSquirrelEvent from './handleSquirrelEvent';
 import config from '../config/config';
 import dev_config from '../dev_config';
-import chiaEnvironment from '../util/chiaEnvironment';
-import chiaConfig from '../util/config';
+import chinillaEnvironment from '../util/chinillaEnvironment';
+import chinillaConfig from '../util/config';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
@@ -97,7 +97,7 @@ async function startMain() {
   
     const ensureCorrectEnvironment = () => {
       // check that the app is either packaged or running in the python venv
-      if (!chiaEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
+      if (!chinillaEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
         console.log('App must be installed or in venv');
         app.quit();
         return false;
@@ -124,11 +124,11 @@ async function startMain() {
       let isClosing = false;
   
       const createWindow = async () => {
-        if (chiaConfig.manageDaemonLifetime()) {
-          chiaEnvironment.startChiaDaemon();
+        if (chinillaConfig.manageDaemonLifetime()) {
+          chinillaEnvironment.startChinillaDaemon();
         }
 
-        ipcMain.handle('getConfig', () => chiaConfig.loadConfig('standalone_wallet'));
+        ipcMain.handle('getConfig', () => chinillaConfig.loadConfig('standalone_wallet'));
 
         decidedToClose = false;
         mainWindow = new BrowserWindow({
@@ -173,7 +173,7 @@ async function startMain() {
         });
   
         // don't show remote daeomn detials in the title bar
-        if (!chiaConfig.manageDaemonLifetime()) {
+        if (!chinillaConfig.manageDaemonLifetime()) {
           mainWindow.webContents.on('did-finish-load', () => {
             mainWindow.setTitle(`${app.getName()} [${global.daemon_rpc_ws}]`);
           });
@@ -184,7 +184,7 @@ async function startMain() {
         // }
         mainWindow.on('close', (e) => {
           // if the daemon isn't local we aren't going to try to start/stop it
-          if (decidedToClose || !chiaConfig.manageDaemonLifetime()) {
+          if (decidedToClose || !chinillaConfig.manageDaemonLifetime()) {
             return;
           }
           e.preventDefault();
@@ -355,10 +355,10 @@ async function startMain() {
           role: 'help',
           submenu: [
             {
-              label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
+              label: i18n._(/* i18n */ { id: 'Chinilla Blockchain Wiki' }),
               click: () => {
                 openExternal(
-                  'https://github.com/Chia-Network/chia-blockchain/wiki',
+                  'https://github.com/Chinilla/chinilla-blockchain/wiki',
                 );
               },
             },
@@ -366,7 +366,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
               click: () => {
                 openExternal(
-                  'https://github.com/Chia-Network/chia-blockchain/wiki/FAQ',
+                  'https://github.com/Chinilla/chinilla-blockchain/wiki/FAQ',
                 );
               },
             },
@@ -374,7 +374,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Release Notes' }),
               click: () => {
                 openExternal(
-                  'https://github.com/Chia-Network/chia-blockchain/releases',
+                  'https://github.com/Chinilla/chinilla-blockchain/releases',
                 );
               },
             },
@@ -382,7 +382,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
               click: () => {
                 openExternal(
-                  'https://github.com/Chia-Network/chia-blockchain/blob/master/CONTRIBUTING.md',
+                  'https://github.com/Chinilla/chinilla-blockchain/blob/master/CONTRIBUTING.md',
                 );
               },
             },
@@ -393,20 +393,20 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
               click: () => {
                 openExternal(
-                  'https://github.com/Chia-Network/chia-blockchain/issues',
+                  'https://github.com/Chinilla/chinilla-blockchain/issues',
                 );
               },
             },
             {
               label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
               click: () => {
-                openExternal('https://keybase.io/team/chia_network.public');
+                openExternal('https://keybase.io/team/chinilla_network.public');
               },
             },
             {
               label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
               click: () => {
-                openExternal('https://twitter.com/chia_project');
+                openExternal('https://twitter.com/chinilla_project');
               },
             },
           ],
@@ -414,12 +414,12 @@ async function startMain() {
       ];
   
       if (process.platform === 'darwin') {
-        // Chia Blockchain menu (Mac)
+        // Chinilla Blockchain menu (Mac)
         template.unshift({
-          label: i18n._(/* i18n */ { id: 'Chia' }),
+          label: i18n._(/* i18n */ { id: 'Chinilla' }),
           submenu: [
             {
-              label: i18n._(/* i18n */ { id: 'About Chia Wallet' }),
+              label: i18n._(/* i18n */ { id: 'About Chinilla Wallet' }),
               click: () => {
                 openAbout();
               },
@@ -506,7 +506,7 @@ async function startMain() {
             type: 'separator',
           },
           {
-            label: i18n._(/* i18n */ { id: 'About Chia Wallet' }),
+            label: i18n._(/* i18n */ { id: 'About Chinilla Wallet' }),
             click() {
               openAbout();
             },

@@ -1,5 +1,5 @@
 import type Peak from '../types/Peak';
-import { useGetBlockchainStateQuery } from '@chia/api-react';
+import { useGetBlockchainStateQuery } from '@chinilla/api-react';
 
 export default function usePeak(): {
   peak?: Peak;

@@ -1,17 +1,17 @@
 import React, { useMemo } from 'react';
 import { useFormContext, useFieldArray } from 'react-hook-form';
 import { Trans } from '@lingui/macro';
-import { Amount, Flex } from '@chia/core';
+import { Amount, Flex } from '@chinilla/core';
 import { Divider, IconButton, Typography } from '@material-ui/core';
 import { Add, Remove } from '@material-ui/icons';
-import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@chia/api-react';
-import { Wallet } from '@chia/api';
+import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@chinilla/api-react';
+import { Wallet } from '@chinilla/api';
 import type OfferEditorRowData from './OfferEditorRowData';
 import WalletType from '../../../constants/WalletType';
 import OfferAssetSelector from './OfferAssetSelector';
 import OfferExchangeRate from './OfferExchangeRate';
 import useAssetIdName, { AssetIdMapEntry } from '../../../hooks/useAssetIdName';
-import { mojo_to_chia, mojo_to_chia_string, mojo_to_colouredcoin, mojo_to_colouredcoin_string } from '../../../util/chia';
+import { chin_to_chinilla, chin_to_chinilla_string, chin_to_colouredcoin, chin_to_colouredcoin_string } from '../../../util/chinilla';
 
 type OfferEditorConditionsRowProps = {
   namePrefix: string;
@@ -42,12 +42,12 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
     if (!isLoading && tradeSide === 'sell' && walletBalance && walletBalance.walletId == walletId) {
       switch (item.walletType) {
         case WalletType.STANDARD_WALLET:
-          balanceString = mojo_to_chia_string(walletBalance.spendableBalance);
-          balance = mojo_to_chia(walletBalance.spendableBalance);
+          balanceString = chin_to_chinilla_string(walletBalance.spendableBalance);
+          balance = chin_to_chinilla(walletBalance.spendableBalance);
           break;
         case WalletType.CAT:
-          balanceString = mojo_to_colouredcoin_string(walletBalance.spendableBalance);
-          balance = mojo_to_colouredcoin(walletBalance.spendableBalance);
+          balanceString = chin_to_colouredcoin_string(walletBalance.spendableBalance);
+          balance = chin_to_colouredcoin(walletBalance.spendableBalance);
           break;
         default:
           break;
@@ -88,7 +88,7 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
               name={`${namePrefix}.amount`}
               disabled={disabled}
               symbol={item.walletType === WalletType.STANDARD_WALLET ? undefined : ""}
-              showAmountInMojos={item.walletType === WalletType.STANDARD_WALLET}
+              showAmountInChins={item.walletType === WalletType.STANDARD_WALLET}
               required
               fullWidth
             />

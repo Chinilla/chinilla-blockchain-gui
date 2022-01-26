@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
-import { useRefreshPlotsMutation } from '@chia/api-react';
+import { useRefreshPlotsMutation } from '@chinilla/api-react';
 import { Button, Grid, Typography, Divider } from '@material-ui/core';
-import { CardHero, Flex, Link, useOpenDialog } from '@chia/core';
-import { PlotHero as PlotHeroIcon } from '@chia/icons';
+import { CardHero, Flex, Link, useOpenDialog } from '@chinilla/core';
+import { PlotHero as PlotHeroIcon } from '@chinilla/icons';
 import PlotAddDirectoryDialog from '../PlotAddDirectoryDialog';
 
 export default function PlotOverviewHero() {
@@ -32,11 +32,11 @@ export default function PlotOverviewHero() {
           <Typography variant="body1">
             <Trans>
               {
-                'Plots are allocated space on your hard drive used to farm and earn Chia. '
+                'Plots are allocated space on your hard drive used to farm and earn Chinilla. '
               }
               <Link
                 target="_blank"
-                href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
+                href="https://github.com/Chinilla/chinilla-blockchain/wiki/Network-Architecture"
               >
                 Learn more
               </Link>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ServiceName } from '@chia/api';
+import { ServiceName } from '@chinilla/api';
 import { useClientStartServiceMutation } from '../services/client';
 import { useIsServiceRunningQuery, useStopServiceMutation } from '../services/daemon';
 

@@ -12,11 +12,11 @@ type Display = {
 const display: {
   [key in Unit]: Display;
 } = {
-  chia: {
-    format: '{amount} XCH',
+  chinilla: {
+    format: '{amount} XCHI',
     fractionDigits: 12,
   },
-  mojo: {
+  chin: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },

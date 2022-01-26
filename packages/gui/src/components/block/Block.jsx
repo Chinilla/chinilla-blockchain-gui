@@ -10,7 +10,7 @@ import {
 } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
 import { Trans } from '@lingui/macro';
-import { useGetBlockQuery, useGetBlockRecordQuery  } from '@chia/api-react'
+import { useGetBlockQuery, useGetBlockRecordQuery  } from '@chinilla/api-react'
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Back,
@@ -23,10 +23,10 @@ import {
   calculatePoolReward,
   calculateBaseFarmerReward,
   useCurrencyCode,
-  mojoToChia,
+  chinToChinilla,
   DashboardTitle,
   Suspender,
-} from '@chia/core';
+} from '@chinilla/core';
 import {
   unix_to_short_date,
   hex_to_array,
@@ -160,13 +160,13 @@ export default function Block() {
       ? blockRecord.weight - prevBlockRecord.weight
       : blockRecord?.weight ?? 0;
 
-  const poolReward = mojoToChia(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = mojoToChia(
+  const poolReward = chinToChinilla(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = chinToChinilla(
     calculateBaseFarmerReward(blockRecord.height),
   );
 
-  const chiaFees = blockRecord.fees !== undefined
-    ? mojoToChia(blockRecord.fees)
+  const chinillaFees = blockRecord.fees !== undefined
+    ? chinToChinilla(blockRecord.fees)
     : '';
 
   const rows = [
@@ -257,7 +257,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.chiaexplorer.com/blockchain/puzzlehash/${blockRecord.farmerPuzzleHash}`}
+          href={`https://www.chinillaexplorer.com/blockchain/puzzlehash/${blockRecord.farmerPuzzleHash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -273,7 +273,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.chiaexplorer.com/blockchain/puzzlehash/${blockRecord.poolPuzzleHash}`}
+          href={`https://www.chinillaexplorer.com/blockchain/puzzlehash/${blockRecord.poolPuzzleHash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -308,7 +308,7 @@ export default function Block() {
     },
     {
       name: <Trans>Fees Amount</Trans>,
-      value: chiaFees ? `${chiaFees} ${currencyCode}` : '',
+      value: chinillaFees ? `${chinillaFees} ${currencyCode}` : '',
       tooltip: (
         <Trans>
           The total transactions fees in this block. Rewarded to the farmer.
@@ -324,7 +324,7 @@ export default function Block() {
         title={
           <Back variant="h5">
             <Trans>
-              Block at height {blockRecord.height} in the Chia blockchain
+              Block at height {blockRecord.height} in the Chinilla blockchain
             </Trans>
           </Back>
         }

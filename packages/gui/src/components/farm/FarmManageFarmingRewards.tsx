@@ -3,8 +3,8 @@ import { Trans } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
 import { Alert } from '@material-ui/lab';
 import styled from 'styled-components';
-import { Flex, Form, TextField, Loading } from '@chia/core';
-import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@chia/api-react';
+import { Flex, Form, TextField, Loading } from '@chinilla/core';
+import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@chinilla/api-react';
 import {
   Button,
   Dialog,

@@ -10,10 +10,10 @@ import {
   FormatBytes,
   FormatConnectionStatus,
   Loading,
-} from '@chia/core';
-import { useGetFarmerFullNodeConnectionsQuery, useIsServiceRunningQuery } from '@chia/api-react';
-import type { Connection } from '@chia/api';
-import { ServiceName } from '@chia/api';
+} from '@chinilla/core';
+import { useGetFarmerFullNodeConnectionsQuery, useIsServiceRunningQuery } from '@chinilla/api-react';
+import type { Connection } from '@chinilla/api';
+import { ServiceName } from '@chinilla/api';
 import FarmCloseConnection from './FarmCloseConnection';
 
 const StyledIconButton = styled(IconButton)`
@@ -96,7 +96,7 @@ export default function FarmFullNodeConnections() {
           {'The full node that your farmer is connected to is below. '}
           <Link
             target="_blank"
-            href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
+            href="https://github.com/Chinilla/chinilla-blockchain/wiki/Network-Architecture"
           >
             Learn more
           </Link>

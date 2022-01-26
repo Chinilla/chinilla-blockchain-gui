@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
-import { Button, ConfirmDialog, Flex, Logo, Loading, useOpenDialog, TooltipIcon, useShowError } from '@chia/core';
+import { Button, ConfirmDialog, Flex, Logo, Loading, useOpenDialog, TooltipIcon, useShowError } from '@chinilla/core';
 import {
   Card,
   Typography,
@@ -14,7 +14,7 @@ import {
   useGetPublicKeysQuery,
   useDeleteAllKeysMutation,
   useLogInAndSkipImportMutation,
-} from '@chia/api-react';
+} from '@chinilla/api-react';
 import SelectKeyItem from './SelectKeyItem';
 
 const StyledContainer = styled(Container)`
@@ -103,7 +103,7 @@ export default function SelectKey() {
             </Typography>
             <Typography variant="subtitle1" align="center">
               <Trans>
-                Welcome to Chia. Please log in with an existing key, or create
+                Welcome to Chinilla. Please log in with an existing key, or create
                 a new key.
               </Trans>
             </Typography>

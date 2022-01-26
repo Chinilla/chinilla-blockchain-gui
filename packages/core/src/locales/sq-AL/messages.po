@@ -6,16 +6,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: sq_AL\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-09-17 17:40\n"
 "Last-Translator: \n"
 "Language-Team: Albanian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: chinilla-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: sq\n"
-"X-Crowdin-File: /[Chia-Network.chia-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Chinilla.chinilla-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:74
@@ -31,8 +31,8 @@ msgstr ""
 #~ msgstr "(Opsionale)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:58
-#~ msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-#~ msgstr "Dëshiron të mësosh më shumë rreth Chia's? Kliko në <0> Chia Explorer</0> e ndërtuar nga një programues open source."
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "Dëshiron të mësosh më shumë rreth Chinilla's? Kliko në <0> Chinilla Explorer</0> e ndërtuar nga një programues open source."
 
 #: src/components/plot/add/PlotAddNFT.tsx:128
 #~ msgid "+ Add New Plot NFT"
@@ -60,8 +60,8 @@ msgstr ""
 
 #: src/electron/main.tsx:433
 #: src/electron/main.tsx:520
-#~ msgid "About Chia Blockchain"
-#~ msgstr "Rreth zinxhirit Chia"
+#~ msgid "About Chinilla Blockchain"
+#~ msgstr "Rreth zinxhirit Chinilla"
 
 #: src/components/trading/ViewOffer.jsx:74
 #~ msgid "Accept"
@@ -149,7 +149,7 @@ msgstr ""
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr ""
 
-#: src/components/Amount/Amount.tsx:99
+#: src/components/Amount/Amount.tsx:109
 msgid "Amount"
 msgstr "Sasia"
 
@@ -257,8 +257,8 @@ msgstr "Kthe"
 #~ msgstr "Përsëritjet e Bllokut VDF"
 
 #: src/components/block/Block.jsx:326
-#~ msgid "Block at height {0} in the Chia blockchain"
-#~ msgstr "Blloku ne lartësin {0} ne Zinxhirin Chia"
+#~ msgid "Block at height {0} in the Chinilla blockchain"
+#~ msgstr "Blloku ne lartësin {0} ne Zinxhirin Chinilla"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -348,16 +348,16 @@ msgstr "Anuloje"
 #~ msgstr "Shkruaj në KeyBase"
 
 #: src/electron/main.tsx:430
-#~ msgid "Chia"
-#~ msgstr "Chia"
+#~ msgid "Chinilla"
+#~ msgstr "Chinilla"
 
 #: src/electron/main.tsx:369
-#~ msgid "Chia Blockchain Wiki"
-#~ msgstr "Zinxhiri Chia Wiki"
+#~ msgid "Chinilla Blockchain Wiki"
+#~ msgstr "Zinxhiri Chinilla Wiki"
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:642
-#~ msgid "Chia Wallet"
-#~ msgstr "Kuleta Chia"
+#~ msgid "Chinilla Wallet"
+#~ msgstr "Kuleta Chinilla"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 #~ msgid "Choose Number of Plots"
@@ -715,7 +715,7 @@ msgid "Deleting the key will permanently remove the key from your computer, make
 msgstr "Fshirja e të gjithë celsave do të fshij përgjithëmon Celsat nga kompjuteri jotë, sigurohuni që keni një kopje të ruajtur. Jeni i sigurt që doni të vashdoni?"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:92
-#~ msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chia Proof of Space plotter. If unsure, use the default Chia Proof of Space plotter."
+#~ msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 #~ msgstr ""
 
 #: src/electron/main.tsx:315
@@ -816,8 +816,8 @@ msgstr "Mos e ruaj"
 #~ msgstr ""
 
 #: src/components/_wallet_old/WalletImport.tsx:146
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-#~ msgstr "Shkruaj 24 fjalët mnemonic që ke ruajtur pëer të rikthyer Kuletën tende Chia."
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
+#~ msgstr "Shkruaj 24 fjalët mnemonic që ke ruajtur pëer të rikthyer Kuletën tende Chinilla."
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:104
 #~ msgid "Enter your passphrase:"
@@ -829,8 +829,8 @@ msgid "Error"
 msgstr "Gabim"
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:450
-#~ msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-#~ msgstr "Gabim: Nuk mund te dergojmë Chia në Adresën e dhënë. Ju lutemi vendosni një adresë Chia."
+#~ msgid "Error: Cannot send chinilla to coloured address. Please enter a chinilla address."
+#~ msgstr "Gabim: Nuk mund te dergojmë Chinilla në Adresën e dhënë. Ju lutemi vendosni një adresë Chinilla."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:14
 #~ msgid "Estimated Network Space"
@@ -953,7 +953,7 @@ msgid "Fee"
 msgstr "Tarifa"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXCHI)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1167,16 +1167,16 @@ msgstr "Vlera e pasaktë"
 #~ msgstr "Bashkohu me një poll"
 
 #: src/components/plot/add/PlotAddNFT.tsx:49
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
-#~ msgstr "Anëtarësohuni në një pishinë dhe merrni shpërblime të qëndrueshme XCH. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm."
+#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgstr "Anëtarësohuni në një pishinë dhe merrni shpërblime të qëndrueshme XCHI. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-#~ msgstr "Anëtarësohuni në një poll dhe merrni shpërblime të qëndrueshme në XCH. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm. Caktoni një komplot NFT. Ju lehtë mund të ndërroni pollet pa pasur nevojë të ri-plotoni."
+#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgstr "Anëtarësohuni në një poll dhe merrni shpërblime të qëndrueshme në XCHI. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm. Caktoni një komplot NFT. Ju lehtë mund të ndërroni pollet pa pasur nevojë të ri-plotoni."
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
-#~ msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
-#~ msgstr "Bashkohuni me një poll dhe merrni shpërblime më të qëndrueshme XCH. Krijoni një plot NFT dhe caktoni plotet tuaja të reja në një grup."
+#~ msgid "Join a pool and get more consistent XCHI farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgstr "Bashkohuni me një poll dhe merrni shpërblime më të qëndrueshme XCHI. Krijoni një plot NFT dhe caktoni plotet tuaja të reja në një grup."
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 #~ msgid "K-Size"
@@ -1818,8 +1818,8 @@ msgstr "Ok"
 #~ msgstr "Plotet e kaluan filtërin"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:33
-#~ msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-#~ msgstr "Ploteve u është dhënë hapësirë në hard diskun tuaj që përdoret për të fermuar dhe fituar Chia. <0> Mësoni më shumë </0>"
+#~ msgid "Plots are allocated space on your hard drive used to farm and earn Chinilla. <0>Learn more</0>"
+#~ msgstr "Ploteve u është dhënë hapësirë në hard diskun tuaj që përdoret për të fermuar dhe fituar Chinilla. <0> Mësoni më shumë </0>"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:103
 #~ msgid "Plotter"
@@ -2241,8 +2241,8 @@ msgstr ""
 #~ msgstr "Vetë grumbullimi"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
-#~ msgid "Self pool. When you win a block you will earn XCH rewards."
-#~ msgstr "Vetë grumbullimi. Kur të fitoni një bllok, do të fitoni shpërblime XCH."
+#~ msgid "Self pool. When you win a block you will earn XCHI rewards."
+#~ msgstr "Vetë grumbullimi. Kur të fitoni një bllok, do të fitoni shpërblime XCHI."
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:46
@@ -2322,8 +2322,8 @@ msgstr ""
 #~ msgstr "Kalon duke shtuar një direktori përfundimtare"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCH farming rewards by joining a pool."
-#~ msgstr "Z'busni shpërblimet tuaja XCH duke u bashkuar me një poll."
+#~ msgid "Smooth out your XCHI farming rewards by joining a pool."
+#~ msgstr "Z'busni shpërblimet tuaja XCHI duke u bashkuar me një poll."
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 #~ msgid "Something went wrong"
@@ -2362,8 +2362,8 @@ msgstr ""
 
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:401
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:448
-#~ msgid "Spending Limit (chia per interval): {0}"
-#~ msgstr "Kufiri i shpenzimeve (chia për interval): {0}"
+#~ msgid "Spending Limit (chinilla per interval): {0}"
+#~ msgstr "Kufiri i shpenzimeve (chinilla për interval): {0}"
 
 #: src/components/app/AppState.tsx:161
 #~ msgid "Starting services"
@@ -2415,8 +2415,8 @@ msgstr ""
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the Chia blockchain"
-#~ msgstr "Sub Block at height {0} in the Chia blockchain"
+#~ msgid "Sub Block at height {0} in the Chinilla blockchain"
+#~ msgstr "Sub Block at height {0} in the Chinilla blockchain"
 
 #: src/components/_wallet_old/did/WalletDID.tsx:889
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:347
@@ -2449,23 +2449,23 @@ msgstr ""
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXCHI Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXCHI Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXCHI Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXCHI User Fees"
+#~ msgstr "TXCHI User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXCHI User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2490,7 +2490,7 @@ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-#~ msgid "The minimum required size for mainnet is k=32"
+#~ msgid "The minimum required size for vanillanet is k=32"
 #~ msgstr "Madhësia minimale e kërkuar për rrjetin kryesor është k=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
@@ -2551,8 +2551,8 @@ msgstr ""
 #~ msgstr "Tarifat totale të transaksioneve në këtë bllok. Shpërblyer për fermerin."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:107
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-#~ msgstr "Këto janë udhëzimet se si fermeri dëshiron të paguhet. Si parazgjedhje kjo do të jetë një adresë XCH, por mund të vendoset në çdo varg me madhësi më të vogël se 1024 karaktere, kështu që mund të përfaqësojë një tjetër identifikues të bllokut ose sistemit të pagesave."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCHI address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgstr "Këto janë udhëzimet se si fermeri dëshiron të paguhet. Si parazgjedhje kjo do të jetë një adresë XCHI, por mund të vendoset në çdo varg me madhësi më të vogël se 1024 karaktere, kështu që mund të përfaqësojë një tjetër identifikues të bllokut ose sistemit të pagesave."
 
 #: src/components/plot/PlotsFailed.tsx:36
 #~ msgid "These plots are invalid, you might want to delete them."
@@ -2574,8 +2574,8 @@ msgstr ""
 #~ msgstr "Kjo veçori është në dispozicion vetëm nga GUI."
 
 #: src/components/_wallet_old/card/WalletCardSpendableBalance.tsx:26
-#~ msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-#~ msgstr "Kjo është shuma e Chia që mund të përdorni aktualisht për të bërë transaksione. Nuk përfshin shpërblime në pritje të, transaksione në hyrje dhe Chia që sapo keni shpenzuar, por që nuk është ende në blockchain."
+#~ msgid "This is the amount of Chinilla that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chinilla that you have just spent but is not yet in the blockchain."
+#~ msgstr "Kjo është shuma e Chinilla që mund të përdorni aktualisht për të bërë transaksione. Nuk përfshin shpërblime në pritje të, transaksione në hyrje dhe Chinilla që sapo keni shpenzuar, por që nuk është ende në blockchain."
 
 #: src/components/_wallet_old/card/WalletCardPendingChange.tsx:26
 #~ msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2594,8 +2594,8 @@ msgstr ""
 #~ msgstr "Kjo është koha kur blloku është krijuar nga fermeri, e cila është para se të finalizohet me një provë të kohës"
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:34
-#~ msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-#~ msgstr "Kjo është sasia totale e chia në blockchain në nën bllok bllokun aktual që kontrollohet nga çelësat tuaj privatë. Ai përfshin shpërblime të ngrira, por jo në pritje të transaksioneve hyrëse dhe dalëse."
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "Kjo është sasia totale e chinilla në blockchain në nën bllok bllokun aktual që kontrollohet nga çelësat tuaj privatë. Ai përfshin shpërblime të ngrira, por jo në pritje të transaksioneve hyrëse dhe dalëse."
 
 #: src/components/_wallet_old/card/WalletCardPendingTotalBalance.tsx:29
 #~ msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2640,8 +2640,8 @@ msgstr ""
 #~ msgstr "Kjo tregti u përfshi në bllokimin në këtë lartësi të bllokut"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-#~ msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-#~ msgstr "Ky version i Chia nuk është më i pajtueshëm me blockchain dhe nuk mund të fermojë në mënyrë të sigurt."
+#~ msgid "This version of Chinilla is no longer compatible with the blockchain and can not safely farm."
+#~ msgstr "Ky version i Chinilla nuk është më i pajtueshëm me blockchain dhe nuk mund të fermojë në mënyrë të sigurt."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
 #~ msgid "Thread Multiplier for Phase 2"
@@ -2669,8 +2669,8 @@ msgstr ""
 #~ msgid "Total Balance"
 #~ msgstr "Totali i balances"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:27
-#~ msgid "Total Chia Farmed"
+#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:27
+#~ msgid "Total Chinilla Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:14
@@ -2886,7 +2886,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.chiaWallet"
+#~ msgid "WalletItem.chinillaWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -2923,8 +2923,8 @@ msgstr ""
 #~ msgstr "Dëshironi të bashkoheni në një poll? Krijoni një plot NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-#~ msgid "Want to earn more Chia? Add more plots to your farm."
-#~ msgstr "Dëshironi të fitoni më shumë Chia? Shtoni më shumë plote në fermën tuaj."
+#~ msgid "Want to earn more Chinilla? Add more plots to your farm."
+#~ msgstr "Dëshironi të fitoni më shumë Chinilla? Shtoni më shumë plote në fermën tuaj."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:87
 #~ msgid "Want to have a delay before the next plot starts?"
@@ -2955,8 +2955,8 @@ msgstr "Paralajmërim: Ky çelës përdoret për adresën tuaj të shpërblimeve
 #~ msgstr "Pesha është vështirësia totale e shtuar e të gjitha nën blloqeve deri dhe duke përfshirë këtë"
 
 #: src/screens/SelectKey/SelectKey.tsx:105
-msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Mirësevini në Chia. Ju lutemi identifikohuni me një çelës ekzistues, ose krijoni një çelës të ri."
+msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."
+msgstr "Mirësevini në Chinilla. Ju lutemi identifikohuni me një çelës ekzistues, ose krijoni një çelës të ri."
 
 #: src/components/_wallet_old/WalletAdd.tsx:66
 #~ msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -3030,8 +3030,8 @@ msgstr "Ju keni bërë ndryshime. A doni t'i hidhni ato?"
 #~ msgstr "Së pari duhet të kërkoni shpërblimet tuaja"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Chia application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Chia application as this version will stop working soon!"
+#~ msgid "You need to upgrade the Chinilla application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the Chinilla application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:36
 #~ msgid "You need {currencyCode} to join a pool."
@@ -3088,7 +3088,7 @@ msgstr "Ju keni bërë ndryshime. A doni t'i hidhni ato?"
 #: src/components/app/AppKeyringMigrator.tsx:181
 #: src/components/settings/ChangePassphrasePrompt.tsx:211
 #: src/components/settings/SetPassphrasePrompt.tsx:193
-#~ msgid "Your passphrase can be stored in your system's secure credential store. Chia will be able to access your keys without prompting for your passphrase."
+#~ msgid "Your passphrase can be stored in your system's secure credential store. Chinilla will be able to access your keys without prompting for your passphrase."
 #~ msgstr ""
 
 #: src/components/settings/Settings.tsx:85
@@ -3169,13 +3169,17 @@ msgstr "Ju keni bërë ndryshime. A doni t'i hidhni ato?"
 #~ msgid "{0} points {1} - {2} hours ago"
 #~ msgstr "{0} pikë {1} - {2} orë më parë"
 
+#: src/components/Amount/Amount.tsx:91
+msgid "{chin, plural, one {chin} other {chins}}"
+msgstr "{chin, plural, one {chin} other {chins}}"
+
 #: src/components/farm/card/FarmCardBlockRewards.tsx:35
 #~ msgid "{currencyCode} Block Rewards"
 #~ msgstr "{currencyCode} Shpërblimet e bllokut"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
-#~ msgid "{currencyCode} Total Chia Farmed"
-#~ msgstr "{currencyCode} Totali i Chia"
+#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:29
+#~ msgid "{currencyCode} Total Chinilla Farmed"
+#~ msgstr "{currencyCode} Totali i Chinilla"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 #~ msgid "{currencyCode} User Transaction Fees"
@@ -3184,10 +3188,6 @@ msgstr "Ju keni bërë ndryshime. A doni t'i hidhni ato?"
 #: src/hooks/useValidateChangePassphraseParams.tsx:33
 msgid "{minPassphraseLength, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 msgstr ""
-
-#: src/components/Amount/Amount.tsx:82
-msgid "{mojo, plural, one {mojo} other {mojos}}"
-msgstr "{mojo, plural, one {mojo} other {mojos}}"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

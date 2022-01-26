@@ -1,14 +1,14 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetWalletsQuery } from '@chia/api-react';
+import { useGetWalletsQuery } from '@chinilla/api-react';
 import StandardWallet from './standard/WalletStandard';
 import WalletCreate from './create/WalletCreate';
 import WalletCAT from './cat/WalletCAT';
 import { CreateOffer } from './offers/OfferManager';
 // import RateLimitedWallet from './rateLimited/WalletRateLimited';
 // import DistributedWallet from './did/WalletDID';
-import { WalletType } from '@chia/api';
-import { DashboardTitle, Suspender } from '@chia/core';
+import { WalletType } from '@chinilla/api';
+import { DashboardTitle, Suspender } from '@chinilla/core';
 import { Routes, Route, Navigate } from 'react-router-dom';
 // import WalletsList from './WalletsList';
 

@@ -12,17 +12,17 @@ let self_hostname = 'localhost';
 
 async function loadConfig(net) {
   try {
-    // check if CHIA_ROOT is set. it overrides 'net'
+    // check if CHINILLA_ROOT is set. it overrides 'net'
     const config_root_dir =
-      'CHIA_ROOT' in process.env
-        ? process.env.CHIA_ROOT
-        : path.join(os.homedir(), '.chia', net);
+      'CHINILLA_ROOT' in process.env
+        ? process.env.CHINILLA_ROOT
+        : path.join(os.homedir(), '.chinilla', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
 
     self_hostname = lodash.get(config, 'ui.daemon_host', 'localhost'); // jshint ignore:line
-    const daemon_port = lodash.get(config, 'ui.daemon_port', 55400); // jshint ignore:line
+    const daemon_port = lodash.get(config, 'ui.daemon_port', 42400); // jshint ignore:line
 
     // store these in the global object so they can be used by both main and renderer processes
     global.daemon_rpc_ws = `wss://${self_hostname}:${daemon_port}`;

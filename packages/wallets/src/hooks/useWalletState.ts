@@ -1,5 +1,5 @@
-import { useGetSyncStatusQuery } from '@chia/api-react';
-import { SyncingStatus } from '@chia/api';
+import { useGetSyncStatusQuery } from '@chinilla/api-react';
+import { SyncingStatus } from '@chinilla/api';
 import getWalletSyncingStatus from '../utils/getWalletSyncingStatus';
 
 export default function useWalletState(): {

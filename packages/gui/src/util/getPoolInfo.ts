@@ -1,5 +1,5 @@
-import type { PoolInfo } from '@chia/api';
-import { toCamelCase } from '@chia/api';
+import type { PoolInfo } from '@chinilla/api';
+import { toCamelCase } from '@chinilla/api';
 
 export default async function getPoolInfo(poolUrl: string): PoolInfo {
   const url = `${poolUrl}/pool_info`;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatBytes } from '@chia/core';
-import { useGetBlockchainStateQuery } from '@chia/api-react';
+import { FormatBytes } from '@chinilla/core';
+import { useGetBlockchainStateQuery } from '@chinilla/api-react';
 import FarmCard from './FarmCard';
 
 export default function FarmCardTotalNetworkSpace() {

@@ -1,5 +1,5 @@
-import { Harvester } from '@chia/api';
-import type { Plot } from '@chia/api';
+import { Harvester } from '@chinilla/api';
+import type { Plot } from '@chinilla/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 import { apiWithTag } from './farmer';

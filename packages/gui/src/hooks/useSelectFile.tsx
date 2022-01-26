@@ -1,4 +1,4 @@
-import { useShowSaveDialog, useShowError } from '@chia/core';
+import { useShowSaveDialog, useShowError } from '@chinilla/core';
 
 export default function useSelectFile(): () => Promise<string | undefined> {
   const showSaveDialog = useShowSaveDialog();

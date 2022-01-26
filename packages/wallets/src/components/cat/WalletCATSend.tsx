@@ -11,19 +11,19 @@ import {
   TextFieldNumber,
   TextField,
   useOpenDialog,
-  chiaToMojo,
-  catToMojo,
+  chinillaToChin,
+  catToChin,
   useIsSimulator,
   useCurrencyCode,
   toBech32m,
   getTransactionResult,
-} from '@chia/core';
+} from '@chinilla/core';
 import { 
   useSpendCATMutation,
   useGetSyncStatusQuery,
   useFarmBlockMutation,
-} from '@chia/api-react';
-import { SyncingStatus } from '@chia/api';
+} from '@chinilla/api-react';
+import { SyncingStatus } from '@chinilla/api';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import { Button, Grid } from '@material-ui/core';
@@ -116,10 +116,10 @@ export default function WalletCATSend(props: Props) {
     }
 
     if (address.includes('colour')) {
-      throw new Error(t`Cannot send chia to coloured address. Please enter a chia address.`);
+      throw new Error(t`Cannot send chinilla to coloured address. Please enter a chinilla address.`);
     }
 
-    if (address.includes('chia_addr') || address.includes('colour_desc')) {
+    if (address.includes('chinilla_addr') || address.includes('colour_desc')) {
       throw new Error(t`Recipient address is not a coloured wallet address. Please enter a coloured wallet address`);
     }
     if (address.slice(0, 14) === 'colour_addr://') {
@@ -130,15 +130,15 @@ export default function WalletCATSend(props: Props) {
       }
     }
 
-    if (address.slice(0, 12) === 'chia_addr://') {
+    if (address.slice(0, 12) === 'chinilla_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);
     }
 
-    const amountValue = catToMojo(amount);
-    const feeValue = chiaToMojo(fee);
+    const amountValue = catToChin(amount);
+    const feeValue = chinillaToChin(fee);
 
     const memo = data.memo.trim();
     const memos = memo ? [memo] : undefined;

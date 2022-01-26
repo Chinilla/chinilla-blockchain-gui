@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
-import { ConfirmDialog, useOpenDialog, LoadingOverlay } from '@chia/core';
+import { ConfirmDialog, useOpenDialog, LoadingOverlay } from '@chinilla/core';
 import { Alert } from '@material-ui/lab';
 import {
   Tooltip,
@@ -17,7 +17,7 @@ import {
 import {
   useCheckDeleteKeyMutation,
   useDeleteKeyMutation,
-} from '@chia/api-react';
+} from '@chinilla/api-react';
 import SelectKeyDetailDialog from './SelectKeyDetailDialog';
 
 const StyledFingerprintListItem = styled(ListItem)`

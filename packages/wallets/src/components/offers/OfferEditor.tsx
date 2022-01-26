@@ -11,8 +11,8 @@ import {
   useOpenDialog,
   useShowError,
   useShowSaveDialog,
-} from '@chia/core';
-import { useCreateOfferForIdsMutation } from '@chia/api-react';
+} from '@chinilla/core';
+import { useCreateOfferForIdsMutation } from '@chinilla/api-react';
 import {
   Button,
   Divider,
@@ -21,12 +21,12 @@ import {
 import type OfferEditorRowData from './OfferEditorRowData';
 import { suggestedFilenameForOffer } from './utils';
 import useAssetIdName from '../../hooks/useAssetIdName';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@chinilla/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferShareDialog from './OfferShareDialog';
 import OfferLocalStorageKeys from './OfferLocalStorage';
 import styled from 'styled-components';
-import { chiaToMojo, catToMojo } from '@chia/core';
+import { chinillaToChin, catToChin } from '@chinilla/core';
 import fs from 'fs';
 import { Remote } from 'electron';
 
@@ -62,14 +62,14 @@ function OfferEditor() {
   function updateOffer(offer: { [key: string]: number | string }, row: OfferEditorRowData, debit: boolean) {
     const { amount, assetWalletId, walletType } = row;
     if (assetWalletId) {
-      let mojoAmount = 0;
+      let chinAmount = 0;
       if (walletType === WalletType.STANDARD_WALLET) {
-        mojoAmount = Number.parseFloat(chiaToMojo(amount));
+        chinAmount = Number.parseFloat(chinillaToChin(amount));
       }
       else if (walletType === WalletType.CAT) {
-        mojoAmount = Number.parseFloat(catToMojo(amount));
+        chinAmount = Number.parseFloat(catToChin(amount));
       }
-      offer[assetWalletId] = debit ? -mojoAmount : mojoAmount;
+      offer[assetWalletId] = debit ? -chinAmount : chinAmount;
     }
     else {
       console.log('missing asset wallet id');

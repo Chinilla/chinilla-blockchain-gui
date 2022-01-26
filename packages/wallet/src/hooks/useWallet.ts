@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useGetWalletsQuery, useGetCatListQuery } from '@chia/api-react';
+import { useGetWalletsQuery, useGetCatListQuery } from '@chinilla/api-react';
 import Wallet from '../types/Wallet';
 import WalletType from '../constants/WalletType';
 import useCurrencyCode from './useCurrencyCode';

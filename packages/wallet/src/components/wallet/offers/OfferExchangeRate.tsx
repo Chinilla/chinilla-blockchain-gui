@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import {
   Flex
-} from '@chia/core';
+} from '@chinilla/core';
 import {
   TextField,
   Typography,

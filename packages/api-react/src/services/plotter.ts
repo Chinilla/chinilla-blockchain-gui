@@ -1,5 +1,5 @@
-import { Plotter } from '@chia/api';
-import type { Plot } from '@chia/api';
+import { Plotter } from '@chinilla/api';
+import type { Plot } from '@chinilla/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import api, { baseQuery } from '../api';
 

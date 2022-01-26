@@ -10,7 +10,7 @@ import {
   InputAdornment,
   TextField,
 } from '@material-ui/core';
-import { CopyToClipboard, DialogActions } from '@chia/core';
+import { CopyToClipboard, DialogActions } from '@chinilla/core';
 
 type Props = {
   offerData: string;

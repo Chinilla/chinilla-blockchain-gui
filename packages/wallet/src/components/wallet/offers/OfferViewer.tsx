@@ -20,7 +20,7 @@ import {
   useOpenDialog,
   useOpenExternal,
   useShowError
-} from '@chia/core';
+} from '@chinilla/core';
 import {
   Box,
   Button,
@@ -35,8 +35,8 @@ import {
   Tooltip,
   Typography
 } from '@material-ui/core';
-import { OfferSummaryRecord, OfferTradeRecord } from '@chia/api';
-import { useCheckOfferValidityMutation, useTakeOfferMutation } from '@chia/api-react';
+import { OfferSummaryRecord, OfferTradeRecord } from '@chinilla/api';
+import { useCheckOfferValidityMutation, useTakeOfferMutation } from '@chinilla/api-react';
 import {
   colorForOfferState,
   displayStringForOfferState,
@@ -44,7 +44,7 @@ import {
 } from './utils';
 import useAssetIdName from '../../../hooks/useAssetIdName';
 import WalletType from '../../../constants/WalletType';
-import { chia_to_mojo, mojo_to_chia_string, mojo_to_colouredcoin_string } from '../../../util/chia';
+import { chinilla_to_chin, chin_to_chinilla_string, chin_to_colouredcoin_string } from '../../../util/chinilla';
 import OfferCoinOfInterest from 'types/OfferCoinOfInterest';
 import OfferState from './OfferState';
 import OfferSummary from './OfferSummary';
@@ -77,22 +77,22 @@ const StyledValue = styled(Box)`
   word-break: break-all;
 `;
 
-type OfferMojoAmountProps = {
-  mojos: number;
-  mojoThreshold?: number
+type OfferChinAmountProps = {
+  chins: number;
+  chinThreshold?: number
 };
 
-function OfferMojoAmount(props: OfferMojoAmountProps): React.ReactElement{
-  const { mojos, mojoThreshold } = props;
+function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement{
+  const { chins, chinThreshold } = props;
 
   return (
     <>
-      { mojoThreshold && mojos < mojoThreshold && (
+      { chinThreshold && chins < chinThreshold && (
         <Flex flexDirection="row" flexGrow={1} gap={1}>
           (
-          <FormatLargeNumber value={mojos} />
+          <FormatLargeNumber value={chins} />
           <Box>
-            <Plural value={mojos} one="mojo" other="mojos" />
+            <Plural value={chins} one="chin" other="chins" />
           </Box>
           )
         </Flex>
@@ -101,9 +101,9 @@ function OfferMojoAmount(props: OfferMojoAmountProps): React.ReactElement{
   );
 }
 
-OfferMojoAmount.defaultProps = {
-  mojos: 0,
-  mojoThreshold: 1000000000,  // 1 billion
+OfferChinAmount.defaultProps = {
+  chins: 0,
+  chinThreshold: 1000000000,  // 1 billion
 };
 
 type OfferDetailsProps = {
@@ -218,7 +218,7 @@ function OfferDetails(props: OfferDetailsProps) {
         return (
           <Typography variant="body2">
             <Flex flexDirection="row" flexGrow={1} gap={1}>
-              {mojo_to_chia_string(coin.amount)}
+              {chin_to_chinilla_string(coin.amount)}
             </Flex>
           </Typography>
         )
@@ -238,7 +238,7 @@ function OfferDetails(props: OfferDetailsProps) {
             interactive
           >
             <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chiaexplorer.com/blockchain/coin/${coin.parentCoinInfo}`)}
+              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chinillaexplorer.com/blockchain/coin/${coin.parentCoinInfo}`)}
             >
               {coin.parentCoinInfo}
             </Link>
@@ -261,7 +261,7 @@ function OfferDetails(props: OfferDetailsProps) {
             interactive
           >
             <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chiaexplorer.com/blockchain/puzzlehash/${coin.puzzleHash}`)}
+              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chinillaexplorer.com/blockchain/puzzlehash/${coin.puzzleHash}`)}
             >
               {coin.puzzleHash}
             </Link>
@@ -281,7 +281,7 @@ function OfferDetails(props: OfferDetailsProps) {
 
   async function handleAcceptOffer(formData: any) {
     const { fee } = formData;
-    const feeInMojos = fee ? Number.parseFloat(chia_to_mojo(fee)) : 0;
+    const feeInChins = fee ? Number.parseFloat(chinilla_to_chin(fee)) : 0;
     const offeredUnknownCATs: string[] = Object.entries(summary.offered).filter(([assetId]) => lookupByAssetId(assetId) === undefined).map(([assetId]) => assetId);
 
     const confirmedAccept = await openDialog(
@@ -336,7 +336,7 @@ function OfferDetails(props: OfferDetailsProps) {
     try {
       setIsAccepting(true);
 
-      const response = await takeOffer({ offer: offerData, fee: feeInMojos });
+      const response = await takeOffer({ offer: offerData, fee: feeInChins });
 
       if (response.data?.success === true) {
         await openDialog(
@@ -408,7 +408,7 @@ function OfferDetails(props: OfferDetailsProps) {
 
   function OfferSummaryEntry({ assetId, amount, ...rest}: { assetId: string, amount: number }) {
     const assetIdInfo = lookupByAssetId(assetId);
-    const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojo_to_colouredcoin_string(amount);
+    const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chin_to_colouredcoin_string(amount);
     const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
 
     return (
@@ -432,7 +432,7 @@ function OfferDetails(props: OfferDetailsProps) {
         </Typography>
         {assetIdInfo?.walletType === WalletType.STANDARD_WALLET && (
           <Typography variant="body1" color="textSecondary">
-            <OfferMojoAmount mojos={amount} />
+            <OfferChinAmount chins={amount} />
           </Typography>
         )}
       </Flex>

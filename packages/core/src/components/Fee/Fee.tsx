@@ -19,10 +19,10 @@ type FeeProps = AmountProps;
 export default function Fee(props: FeeProps) {
   return (
     <Amount {...props}>
-      {({ value, mojo }) => {
-        const bigMojo = new Big(mojo.toString());
-        const isHigh = bigMojo.gte('1000');
-        const isLow = bigMojo.gt('0') && bigMojo.lt('1');
+      {({ value, chin }) => {
+        const bigChin = new Big(chin.toString());
+        const isHigh = bigChin.gte('1000');
+        const isLow = bigChin.gt('0') && bigChin.lt('1');
 
         if (!value) {
           return;

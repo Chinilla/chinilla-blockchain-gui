@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { chiaToMojo, AlertDialog, Amount, Fee, Back, ButtonLoading, Card, Flex, Form } from '@chia/core';
+import { chinillaToChin, AlertDialog, Amount, Fee, Back, ButtonLoading, Card, Flex, Form } from '@chinilla/core';
 import { Box, Grid } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
@@ -54,12 +54,12 @@ export default function WalletCATCreateNew() {
       }
       */
 
-      const amountMojos = chiaToMojo(amount || '0');
-      const feeMojos = chiaToMojo(fee || '0');
+      const amountChins = chinillaToChin(amount || '0');
+      const feeChins = chinillaToChin(fee || '0');
 
 
       /*
-      const response = await dispatch(create_cc_action(amountMojos, feeMojos));
+      const response = await dispatch(create_cc_action(amountChins, feeChins));
       if (response && response.data && response.data.success === true) {
         history.push(`/dashboard/wallets/${response.data.wallet_id}`);
       }
@@ -73,7 +73,7 @@ export default function WalletCATCreateNew() {
     <Form methods={methods} onSubmit={handleSubmit}>
       <Flex flexDirection="column" gap={3}>
         <Back variant="h5">
-          <Trans>Create New Chia Asset Token Wallet</Trans>
+          <Trans>Create New Chinilla Asset Token Wallet</Trans>
         </Back>
         <Card>
           <Grid spacing={2} container>

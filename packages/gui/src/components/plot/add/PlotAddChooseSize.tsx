@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { useFormContext } from 'react-hook-form';
-import { CardStep, ConfirmDialog, Link, Select, StateColor, useOpenDialog } from '@chia/core';
+import { CardStep, ConfirmDialog, Link, Select, StateColor, useOpenDialog } from '@chinilla/core';
 import {
   Grid,
   FormControl,
@@ -14,7 +14,7 @@ import {
 import { plotSizeOptions } from '../../../constants/plotSizes';
 import Plotter from '../../../types/Plotter';
 
-const MIN_MAINNET_K_SIZE = 32;
+const MIN_VANILLANET_K_SIZE = 32;
 
 const StyledFormHelperText = styled(FormHelperText)`
   color: ${StateColor.WARNING};
@@ -33,7 +33,7 @@ export default function PlotAddChooseSize(props: Props) {
   const plotterName = watch('plotterName');
   const plotSize = watch('plotSize');
   const overrideK = watch('overrideK');
-  const isKLow = plotSize < MIN_MAINNET_K_SIZE;
+  const isKLow = plotSize < MIN_VANILLANET_K_SIZE;
 
   const [allowedPlotSizes, setAllowedPlotSizes] = useState(plotSizeOptions.filter((option) => plotter.options.kSizes.includes(option.value)));
 
@@ -44,7 +44,7 @@ export default function PlotAddChooseSize(props: Props) {
   async function getConfirmation() {
     const canUse = await openDialog(
       <ConfirmDialog
-        title={<Trans>The minimum required size for mainnet is k=32</Trans>}
+        title={<Trans>The minimum required size for vanillanet is k=32</Trans>}
         confirmTitle={<Trans>Yes</Trans>}
         confirmColor="danger"
       >
@@ -79,7 +79,7 @@ export default function PlotAddChooseSize(props: Props) {
           }
           <Link
             target="_blank"
-            href="https://github.com/Chia-Network/chia-blockchain/wiki/k-sizes"
+            href="https://github.com/Chinilla/chinilla-blockchain/wiki/k-sizes"
           >
             Learn more
           </Link>
@@ -101,7 +101,7 @@ export default function PlotAddChooseSize(props: Props) {
             </Select>
             {isKLow && (
               <StyledFormHelperText>
-                <Trans>The minimum required size for mainnet is k=32</Trans>
+                <Trans>The minimum required size for vanillanet is k=32</Trans>
               </StyledFormHelperText>
             )}
           </FormControl>

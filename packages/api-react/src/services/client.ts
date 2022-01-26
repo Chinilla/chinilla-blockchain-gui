@@ -1,4 +1,4 @@
-import { ConnectionState, ServiceName } from '@chia/api';
+import { ConnectionState, ServiceName } from '@chinilla/api';
 import api, { baseQuery } from '../api';
 
 const apiWithTag = api.enhanceEndpoints({addTagTypes: []});

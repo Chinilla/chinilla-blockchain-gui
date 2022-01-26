@@ -1,4 +1,4 @@
-import { ServiceName } from '@chia/api';
+import { ServiceName } from '@chinilla/api';
 
 const ServiceHumanName = {
   [ServiceName.WALLET]: 'Wallet',

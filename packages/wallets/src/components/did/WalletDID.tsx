@@ -12,7 +12,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Backdrop from '@material-ui/core/Backdrop';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { AlertDialog, Card, Flex, Loading, Dropzone, mojoToChiaLocaleString } from '@chia/core';
+import { AlertDialog, Card, Flex, Loading, Dropzone, chinToChinillaLocaleString } from '@chinilla/core';
 import {
   did_generate_backup_file,
   did_spend,
@@ -612,7 +612,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojoToChiaLocaleString(props.balance)} TXCH
+            {chinToChinillaLocaleString(props.balance)} TXCHI
           </Typography>
         </Box>
       </Box>
@@ -947,7 +947,7 @@ const CreateAttest = (props) => {
       return;
     }
     let address = puzhash_input.value.trim();
-    if (address.substring(0, 12) === 'chia_addr://') {
+    if (address.substring(0, 12) === 'chinilla_addr://') {
       address = address.substring(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {
@@ -1023,7 +1023,7 @@ const CashoutCard = (props) => {
   function cashout() {
     let puzzlehash = address_input.value.trim();
 
-    if (puzzlehash.slice(0, 12) === 'chia_addr://') {
+    if (puzzlehash.slice(0, 12) === 'chinilla_addr://') {
       puzzlehash = puzzlehash.slice(12);
     }
     if (puzzlehash.startsWith('0x') || puzzlehash.startsWith('0X')) {

@@ -1,13 +1,13 @@
 enum ServiceName {
-  WALLET = 'chia_wallet',
-  FULL_NODE = 'chia_full_node',
-  FARMER = 'chia_farmer',
-  HARVESTER = 'chia_harvester',
-  SIMULATOR = 'chia_full_node_simulator',
+  WALLET = 'chinilla_wallet',
+  FULL_NODE = 'chinilla_full_node',
+  FARMER = 'chinilla_farmer',
+  HARVESTER = 'chinilla_harvester',
+  SIMULATOR = 'chinilla_full_node_simulator',
   DAEMON = 'daemon',
-  PLOTTER = 'chia_plotter',
-  TIMELORD = 'chia_timelord',
-  INTRODUCER = 'chia_introducer',
+  PLOTTER = 'chinilla_plotter',
+  TIMELORD = 'chinilla_timelord',
+  INTRODUCER = 'chinilla_introducer',
   EVENTS = 'wallet_ui',
 };
 

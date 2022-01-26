@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, chiaToMojo } from '@chia/core';
+import { AlertDialog, chinillaToChin } from '@chinilla/core';
 import {
   Typography,
   Button,
@@ -75,7 +75,7 @@ export const CreateRLAdminWallet = () => {
   const custom = customStyles();
   const dispatch = useDispatch();
   let interval_input = null;
-  let chiaper_input = null;
+  let chinillaper_input = null;
   let userpubkey_input = null;
   let amount_input = null;
   let fee_input = null;
@@ -103,10 +103,10 @@ export const CreateRLAdminWallet = () => {
       return;
     }
     if (
-      chiaper_input.value === '' ||
-      Number(chiaper_input.value) === 0 ||
-      !Number(chiaper_input.value) ||
-      isNaN(Number(chiaper_input.value))
+      chinillaper_input.value === '' ||
+      Number(chinillaper_input.value) === 0 ||
+      !Number(chinillaper_input.value) ||
+      isNaN(Number(chinillaper_input.value))
     ) {
       dispatch(
         openDialog(
@@ -155,18 +155,18 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const chiaper = chiaToMojo(chiaper_input.value);
-    const chiaper_value = Number.parseInt(Number(chiaper));
+    const chinillaper = chinillaToChin(chinillaper_input.value);
+    const chinillaper_value = Number.parseInt(Number(chinillaper));
     const userpubkey = userpubkey_input.value;
-    const amount = chiaToMojo(amount_input.value);
+    const amount = chinillaToChin(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = chiaToMojo(fee_input.value);
+    // var fee = chinillaToChin(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(
       create_rl_admin_action(
         interval_value,
-        chiaper_value,
+        chinillaper_value,
         userpubkey,
         amount_value,
       ),
@@ -224,7 +224,7 @@ export const CreateRLAdminWallet = () => {
               color="secondary"
               fullWidth
               inputRef={(input) => {
-                chiaper_input = input;
+                chinillaper_input = input;
               }}
               label={<Trans>Spendable Amount</Trans>}
             />

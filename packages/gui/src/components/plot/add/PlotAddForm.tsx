@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router';
 import { t, Trans } from '@lingui/macro';
-import { defaultPlotter } from '@chia/api';
-import { useStartPlottingMutation, useCreateNewPoolWalletMutation } from '@chia/api-react';
+import { defaultPlotter } from '@chinilla/api';
+import { useStartPlottingMutation, useCreateNewPoolWalletMutation } from '@chinilla/api-react';
 import { ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { useShowError, ButtonLoading, Flex, Form, FormBackButton } from '@chia/core';
+import { useShowError, ButtonLoading, Flex, Form, FormBackButton } from '@chinilla/core';
 import { PlotHeaderSource } from '../PlotHeader';
 import PlotAddChoosePlotter from './PlotAddChoosePlotter';
 import PlotAddChooseSize from './PlotAddChooseSize';

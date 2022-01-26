@@ -5,7 +5,7 @@ import {
   Flex,
   FormatLargeNumber,
   TooltipIcon,
-} from '@chia/core';
+} from '@chinilla/core';
 import {
   Box,
   Typography,
@@ -13,7 +13,7 @@ import {
 import useAssetIdName from '../../../hooks/useAssetIdName';
 import WalletType from '../../../constants/WalletType';
 import { formatAmountForWalletType } from './utils';
-import { mojo_to_colouredcoin_string } from '../../../util/chia';
+import { chin_to_colouredcoin_string } from '../../../util/chinilla';
 import styled from 'styled-components';
 
 const StyledTitle = styled(Box)`
@@ -25,31 +25,31 @@ const StyledValue = styled(Box)`
   word-break: break-all;
 `;
 
-type OfferMojoAmountProps = {
-  mojos: number;
+type OfferChinAmountProps = {
+  chins: number;
 };
 
-function OfferMojoAmount(props: OfferMojoAmountProps): React.ReactElement | null {
-  const { mojos } = props;
+function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement | null {
+  const { chins } = props;
 
   return (
     <Flex flexDirection="row" flexGrow={1} gap={1}>
       (
-      <FormatLargeNumber value={mojos} />
+      <FormatLargeNumber value={chins} />
       <Box>
-        <Plural value={mojos} one="mojo" other="mojos" />
+        <Plural value={chins} one="chin" other="chins" />
       </Box>
       )
     </Flex>
   );
 }
 
-OfferMojoAmount.defaultProps = {
-  mojos: 0,
+OfferChinAmount.defaultProps = {
+  chins: 0,
 };
 
-function shouldShowMojoAmount(mojos: number, mojoThreshold: number = 1000000000 /* 1 billion */): boolean {
-  return mojoThreshold > 0 && (mojos < mojoThreshold);
+function shouldShowChinAmount(chins: number, chinThreshold: number = 1000000000 /* 1 billion */): boolean {
+  return chinThreshold > 0 && (chins < chinThreshold);
 }
 
 type Props = {
@@ -62,9 +62,9 @@ export default function OfferSummaryRow(props: Props) {
   const { assetId, amount, rowNumber } = props;
   const { lookupByAssetId } = useAssetIdName();
   const assetIdInfo = lookupByAssetId(assetId);
-  const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : mojo_to_colouredcoin_string(amount);
+  const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chin_to_colouredcoin_string(amount);
   const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
-  const showMojoAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowMojoAmount(amount);
+  const showChinAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowChinAmount(amount);
 
   return (
     <Flex flexDirections="row" alignItems="center" gap={1}>
@@ -76,9 +76,9 @@ export default function OfferSummaryRow(props: Props) {
           <Typography>{displayAmount} {displayName}</Typography>
         </Flex>
       </Typography>
-      {showMojoAmount && (
+      {showChinAmount && (
         <Typography variant="body1" color="textSecondary">
-          <OfferMojoAmount mojos={amount} />
+          <OfferChinAmount chins={amount} />
         </Typography>
       )}
       <TooltipIcon interactive>

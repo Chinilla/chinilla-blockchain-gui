@@ -1,5 +1,5 @@
-import { ServiceName } from '@chia/api';
-import { Mode } from '@chia/core';
+import { ServiceName } from '@chinilla/api';
+import { Mode } from '@chinilla/core';
 
 export default {
   [Mode.WALLET]: [

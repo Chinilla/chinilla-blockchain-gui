@@ -1,9 +1,9 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Trans } from '@lingui/macro';
-import { Back, Card, Dropzone, Flex, useOpenDialog, useShowError } from '@chia/core';
+import { Back, Card, Dropzone, Flex, useOpenDialog, useShowError } from '@chinilla/core';
 import { Button, Grid, Typography } from '@material-ui/core';
-import { useGetOfferSummaryMutation } from '@chia/api-react';
+import { useGetOfferSummaryMutation } from '@chinilla/api-react';
 import OfferDataEntryDialog from './OfferDataEntryDialog';
 import OfferSummaryRecord from '../../../types/OfferSummaryRecord';
 import fs, { Stats } from 'fs';

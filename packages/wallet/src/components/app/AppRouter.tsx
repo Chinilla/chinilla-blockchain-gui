@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { SelectKey, LayoutHero, LayoutMain } from '@chia/core';
-import { WalletAdd, WalletImport, Wallets  } from '@chia/wallets';
+import { SelectKey, LayoutHero, LayoutMain } from '@chinilla/core';
+import { WalletAdd, WalletImport, Wallets  } from '@chinilla/wallets';
 import App from './App';
 
 export default function AppRouter() {

@@ -1,8 +1,8 @@
 import React, { useMemo, ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router';
-import { useGetPlotNFTsQuery, usePwSelfPoolMutation, usePwJoinPoolMutation } from '@chia/api-react';
-import { Flex, State, Loading, StateTypography } from '@chia/core';
+import { useGetPlotNFTsQuery, usePwSelfPoolMutation, usePwJoinPoolMutation } from '@chinilla/api-react';
+import { Flex, State, Loading, StateTypography } from '@chinilla/core';
 import { ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 import { useParams } from 'react-router';
 import PlotNFTSelectPool, { SubmitData } from './select/PlotNFTSelectPool';

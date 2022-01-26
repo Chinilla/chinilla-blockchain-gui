@@ -1,10 +1,10 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
-import chiaLazyBaseQuery from './chiaLazyBaseQuery';
+import chinillaLazyBaseQuery from './chinillaLazyBaseQuery';
 
-export const baseQuery = chiaLazyBaseQuery({});
+export const baseQuery = chinillaLazyBaseQuery({});
 
 export default createApi({
-  reducerPath: 'chiaApi',
+  reducerPath: 'chinillaApi',
   baseQuery,
   endpoints: () => ({}),
 });

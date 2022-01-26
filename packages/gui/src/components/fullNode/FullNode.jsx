@@ -9,9 +9,9 @@ import {
   StateColor,
   Table,
   DashboardTitle,
-} from '@chia/core';
-import { Status } from '@chia/icons';
-import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@chia/api-react';
+} from '@chinilla/core';
+import { Status } from '@chinilla/icons';
+import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@chinilla/api-react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Tooltip, Typography } from '@material-ui/core';
 // import HelpIcon from '@material-ui/icons/Help';

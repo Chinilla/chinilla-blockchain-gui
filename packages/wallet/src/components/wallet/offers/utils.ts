@@ -1,8 +1,8 @@
 import WalletType from '../../../constants/WalletType';
 import {
-  mojo_to_chia_string,
-  mojo_to_colouredcoin_string,
-} from '../../../util/chia';
+  chin_to_chinilla_string,
+  chin_to_colouredcoin_string,
+} from '../../../util/chinilla';
 import OfferState from './OfferState';
 import OfferSummaryRecord from '../../../types/OfferSummaryRecord';
 import { AssetIdMapEntry } from '../../../hooks/useAssetIdName';
@@ -124,10 +124,10 @@ export function colorForOfferState(state: OfferState): OfferStateColor {
 export function formatAmountForWalletType(amount: string | number, walletType: WalletType): string {
   let amountString = '';
   if (walletType === WalletType.STANDARD_WALLET) {
-    amountString = mojo_to_chia_string(amount);
+    amountString = chin_to_chinilla_string(amount);
   }
   else if (walletType === WalletType.CAT) {
-    amountString = mojo_to_colouredcoin_string(amount);
+    amountString = chin_to_colouredcoin_string(amount);
   }
   else {
     amountString = `${amount}`;

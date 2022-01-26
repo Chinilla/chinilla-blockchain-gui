@@ -8,8 +8,8 @@ import {
   Suspender,
   useOpenDialog,
   useSkipMigration,
-} from '@chia/core';
-import { useGetKeyringStatusQuery } from '@chia/api-react';
+} from '@chinilla/core';
+import { useGetKeyringStatusQuery } from '@chinilla/api-react';
 import {
   Grid,
   Typography,

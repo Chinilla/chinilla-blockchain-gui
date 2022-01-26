@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString } from '@chia/core';
-import { useGetFarmedAmountQuery } from '@chia/api-react';
+import { useCurrencyCode, chinToChinillaLocaleString } from '@chinilla/core';
+import { useGetFarmedAmountQuery } from '@chinilla/api-react';
 import FarmCard from './FarmCard';
 
 export default function FarmCardUserFees() {
@@ -14,7 +14,7 @@ export default function FarmCardUserFees() {
     if (feeAmount !== undefined) {
       return (
         <>
-          {mojoToChiaLocaleString(feeAmount)}
+          {chinToChinillaLocaleString(feeAmount)}
           &nbsp;
           {currencyCode}
         </>

@@ -10,9 +10,9 @@ import {
   Plot as PlotIcon,
   Pool as PoolIcon,
   Settings as SettingsIcon,
-} from '@chia/icons';
-import { Flex, SideBarItem, Suspender } from '@chia/core';
-import { useGetKeyringStatusQuery, useLogout } from '@chia/api-react';
+} from '@chinilla/icons';
+import { Flex, SideBarItem, Suspender } from '@chinilla/core';
+import { useGetKeyringStatusQuery, useLogout } from '@chinilla/api-react';
 import { useNavigate } from 'react-router';
 
 const StyledRoot = styled(Flex)`

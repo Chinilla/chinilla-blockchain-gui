@@ -1,8 +1,8 @@
 import Unit from './Unit';
 
 const UnitValue = {
-  [Unit.CHIA]: 1,
-  [Unit.MOJO]: 1 / 1e12,
+  [Unit.CHINILLA]: 1,
+  [Unit.CHIN]: 1 / 1e12,
   [Unit.CAT]: 1 / 1e9,
 };
 
