@@ -219,7 +219,7 @@ msgstr ""
 msgid "Amount must be an even amount."
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:88
+#: src/components/offers/OfferManager.tsx:89
 msgid "Are you sure you want to cancel your offer?"
 msgstr ""
 
@@ -393,9 +393,9 @@ msgstr ""
 msgid "Cancel"
 msgstr "Відміна"
 
-#: src/components/offers/OfferManager.tsx:386
-#: src/components/offers/OfferManager.tsx:194
-#: src/components/offers/OfferManager.tsx:195
+#: src/components/offers/OfferManager.tsx:388
+#: src/components/offers/OfferManager.tsx:196
+#: src/components/offers/OfferManager.tsx:197
 msgid "Cancel Offer"
 msgstr ""
 
@@ -403,7 +403,7 @@ msgstr ""
 #~ msgid "Cancel and Spend"
 #~ msgstr "Відмінити і відправити"
 
-#: src/components/offers/OfferManager.tsx:107
+#: src/components/offers/OfferManager.tsx:108
 msgid "Cancel on blockchain"
 msgstr ""
 
@@ -477,7 +477,7 @@ msgstr "Гаманець Chinilla"
 #~ msgid "Claim Rewards"
 #~ msgstr ""
 
-#: src/components/offers/OfferManager.tsx:197
+#: src/components/offers/OfferManager.tsx:199
 #: src/components/offers/OfferShareDialog.tsx:349
 #: src/components/offers/OfferShareDialog.tsx:492
 #: src/components/offers/OfferShareDialog.tsx:696
@@ -707,11 +707,15 @@ msgstr "Створити транзакцію"
 #~ msgstr "Створити адміністративний гаманець"
 
 #: src/components/offers/OfferEditor.tsx:227
-#: src/components/offers/OfferManager.tsx:481
+#: src/components/offers/OfferManager.tsx:484
 msgid "Create an Offer"
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:476
+#~ msgid "Create an offer to exchange XCH or other tokens. View an offer to inspect and accept an offer made by another party."
+#~ msgstr ""
+
+#: src/components/offers/OfferManager.tsx:479
 msgid "Create an offer to exchange XCHI or other tokens. View an offer to inspect and accept an offer made by another party."
 msgstr ""
 
@@ -747,7 +751,7 @@ msgstr ""
 #~ msgid "Created by us:"
 #~ msgstr "Створено нами:"
 
-#: src/components/offers/OfferManager.tsx:109
+#: src/components/offers/OfferManager.tsx:110
 msgid "Creates and submits a transaction on the blockchain that cancels the offer"
 msgstr ""
 
@@ -759,7 +763,7 @@ msgstr ""
 #~ msgid "Creating Plot NFT for Self Pooling"
 #~ msgstr ""
 
-#: src/components/offers/OfferManager.tsx:303
+#: src/components/offers/OfferManager.tsx:305
 #: src/components/offers/OfferViewer.tsx:204
 msgid "Creation Date"
 msgstr ""
@@ -909,7 +913,7 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Від'єднати"
 
-#: src/components/offers/OfferManager.tsx:356
+#: src/components/offers/OfferManager.tsx:358
 msgid "Display Offer Data"
 msgstr ""
 
@@ -1123,7 +1127,7 @@ msgstr "Ферма"
 #: src/components/cat/WalletCATSend.tsx:218
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
-#: src/components/offers/OfferManager.tsx:124
+#: src/components/offers/OfferManager.tsx:125
 #: src/components/offers/OfferViewer.tsx:469
 #: src/components/rateLimited/WalletRateLimited.jsx:732
 #: src/components/WalletHistory.tsx:173
@@ -1287,7 +1291,7 @@ msgstr "ІР-адреса"
 msgid "If selected, your offer will be not be shared publicly."
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:93
+#: src/components/offers/OfferManager.tsx:94
 msgid "If you have already shared your offer file, you may need to submit a transaction to cancel the pending offer. Click \"Cancel on blockchain\" to submit a cancellation transaction."
 msgstr ""
 
@@ -1540,7 +1544,7 @@ msgstr ""
 #~ msgid "Manage Farming Rewards"
 #~ msgstr "Управління винагородами за фермерство"
 
-#: src/components/offers/OfferManager.tsx:468
+#: src/components/offers/OfferManager.tsx:471
 #: src/components/WalletHeader.tsx:85
 msgid "Manage Offers"
 msgstr ""
@@ -1665,7 +1669,7 @@ msgstr "Прізвисько"
 #~ msgid "No blocks farmed yet"
 #~ msgstr "У вас ще немає оброблених блоків"
 
-#: src/components/offers/OfferManager.tsx:421
+#: src/components/offers/OfferManager.tsx:424
 msgid "No current offers"
 msgstr ""
 
@@ -1787,7 +1791,7 @@ msgstr ""
 msgid "OfferBin URL"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:264
+#: src/components/offers/OfferManager.tsx:266
 msgid "Offered"
 msgstr ""
 
@@ -1795,11 +1799,11 @@ msgstr ""
 #~ msgid "Offers Created"
 #~ msgstr "Заявки створено"
 
-#: src/components/offers/OfferManager.tsx:490
+#: src/components/offers/OfferManager.tsx:498
 msgid "Offers you accepted"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:489
+#: src/components/offers/OfferManager.tsx:493
 msgid "Offers you created"
 msgstr ""
 
@@ -2463,7 +2467,7 @@ msgstr ""
 #~ msgid "Report an Issue..."
 #~ msgstr "Повідомити про проблему..."
 
-#: src/components/offers/OfferManager.tsx:287
+#: src/components/offers/OfferManager.tsx:289
 msgid "Requested"
 msgstr ""
 
@@ -2500,7 +2504,7 @@ msgstr "Зберегти"
 msgid "Save Offer"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:371
+#: src/components/offers/OfferManager.tsx:373
 msgid "Save Offer File"
 msgstr ""
 
@@ -2641,7 +2645,7 @@ msgstr "Надішліть свій публічний ключ адмініст
 #~ msgid "Settings"
 #~ msgstr ""
 
-#: src/components/offers/OfferManager.tsx:317
+#: src/components/offers/OfferManager.tsx:319
 #: src/components/offers/OfferShareDialog.tsx:406
 #: src/components/offers/OfferShareDialog.tsx:535
 #: src/components/offers/OfferShareDialog.tsx:775
@@ -2676,7 +2680,7 @@ msgstr ""
 msgid "Show Asset Id"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:342
+#: src/components/offers/OfferManager.tsx:344
 msgid "Show Details"
 msgstr ""
 
@@ -2769,7 +2773,7 @@ msgstr ""
 #~ msgid "State"
 #~ msgstr "Стан"
 
-#: src/components/offers/OfferManager.tsx:241
+#: src/components/offers/OfferManager.tsx:243
 #: src/components/offers/OfferViewer.tsx:177
 #: src/components/WalletStatusCard.tsx:22
 msgid "Status"
@@ -3200,8 +3204,8 @@ msgstr ""
 #~ msgid "Unknown"
 #~ msgstr "Невідомо"
 
-#: src/components/offers/OfferManager.tsx:248
-#: src/components/offers/OfferManager.tsx:271
+#: src/components/offers/OfferManager.tsx:250
+#: src/components/offers/OfferManager.tsx:273
 #: src/components/offers/OfferSummaryRow.tsx:66
 #: src/components/offers/OfferViewer.tsx:412
 msgid "Unknown CAT"
@@ -3267,7 +3271,7 @@ msgstr "Публічний ключ користувача"
 #~ msgstr ""
 
 #: src/components/offers/OfferImport.tsx:153
-#: src/components/offers/OfferManager.tsx:484
+#: src/components/offers/OfferManager.tsx:487
 msgid "View an Offer"
 msgstr ""
 
@@ -3628,8 +3632,8 @@ msgstr "синхронізація"
 #~ msgstr ""
 
 #: src/components/offers/OfferAssetSelector.tsx:137
-msgid "{0}"
-msgstr ""
+#~ msgid "{0}"
+#~ msgstr ""
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"
