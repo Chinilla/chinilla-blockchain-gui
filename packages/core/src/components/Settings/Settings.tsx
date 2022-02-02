@@ -9,14 +9,23 @@ import SettingsApp from './SettingsApp';
 import SettingsFooter from './SettingsFooter';
 
 const StyledHeader = styled(Box)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
   padding: 0.5rem 1rem;
   width: 360px;
 `;
 
 const StyledBody = styled(Box)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
   padding: 1rem 1rem;
   flex-grow: 1;
   overflow: auto;
+`;
+
+const StyledDrawer = styled(Drawer)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 export type SettingsProps = {
@@ -50,7 +59,7 @@ export default function Settings(props: SettingsProps) {
         <SettingsIcon />
       </IconButton>
       </Tooltip>
-      <Drawer anchor="right" open={open} onClose={handleClose}>
+      <StyledDrawer anchor="right" open={open} onClose={handleClose}>
         <Flex flexDirection="column" height="100%">
           <StyledHeader>
             <Flex gap={1} justifyContent="space-between" alignItems="center">
@@ -70,7 +79,7 @@ export default function Settings(props: SettingsProps) {
           </StyledBody>
           <SettingsFooter />
         </Flex>
-      </Drawer>
+      </StyledDrawer>
     </>
   );
 }

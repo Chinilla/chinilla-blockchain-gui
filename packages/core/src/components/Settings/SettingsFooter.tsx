@@ -10,6 +10,8 @@ import useAppVersion from '../../hooks/useAppVersion';
 const { productName } = walletPackageJson;
 
 const StyledRoot = styled(Flex)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
   padding: 1rem;
 `;
 

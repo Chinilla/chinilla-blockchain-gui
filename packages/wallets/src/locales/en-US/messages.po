@@ -211,7 +211,7 @@ msgstr "Amount"
 msgid "Amount For Initial Coin"
 msgstr "Amount for Initial Coin"
 
-#: src/components/offers/OfferEditor.tsx:112
+#: src/components/offers/OfferEditor.tsx:113
 msgid "Amount exceeds spendable balance"
 msgstr "Amount exceeds spendable balance"
 
@@ -706,7 +706,7 @@ msgstr "Create Transaction"
 #~ msgid "Create admin wallet"
 #~ msgstr "Create admin wallet"
 
-#: src/components/offers/OfferEditor.tsx:222
+#: src/components/offers/OfferEditor.tsx:227
 #: src/components/offers/OfferManager.tsx:481
 msgid "Create an Offer"
 msgstr "Create an Offer"
@@ -1362,7 +1362,7 @@ msgstr ""
 "Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
 
-#: src/components/offers/OfferEditor.tsx:169
+#: src/components/offers/OfferEditor.tsx:164
 msgid ""
 "Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
@@ -2006,7 +2006,7 @@ msgstr "Please enter a valid pubkey"
 msgid "Please enter a valid token name"
 msgstr "Please enter a valid token name"
 
-#: src/components/offers/OfferEditor.tsx:109
+#: src/components/offers/OfferEditor.tsx:110
 msgid "Please enter an amount for each row"
 msgstr "Please enter an amount for each row"
 
@@ -2042,7 +2042,7 @@ msgstr "Please finish syncing before managing offers"
 #~ msgid "Please select amount"
 #~ msgstr "Please select amount"
 
-#: src/components/offers/OfferEditor.tsx:106
+#: src/components/offers/OfferEditor.tsx:107
 msgid "Please select an asset for each row"
 msgstr "Please select an asset for each row"
 
@@ -2471,7 +2471,7 @@ msgstr "Rename Wallet"
 msgid "Requested"
 msgstr "Requested"
 
-#: src/components/offers/OfferEditor.tsx:199
+#: src/components/offers/OfferEditor.tsx:194
 msgid "Reset"
 msgstr "Reset"
 
@@ -2500,7 +2500,7 @@ msgstr "Retire"
 msgid "Save"
 msgstr "Save"
 
-#: src/components/offers/OfferEditor.tsx:207
+#: src/components/offers/OfferEditor.tsx:202
 msgid "Save Offer"
 msgstr "Save Offer"
 

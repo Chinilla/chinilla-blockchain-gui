@@ -40,6 +40,8 @@ const StyledAppBar = styled(AppBar)`
 `;
 
 const StyledDrawer = styled(Drawer)`
+  background-color: ${({ theme }) =>
+    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   z-index: ${({ theme }) => theme.zIndex.drawer + 2};
   width: ${({ theme }) => theme.drawer.width};
   flex-shrink: 0;

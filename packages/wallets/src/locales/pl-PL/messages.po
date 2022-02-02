@@ -211,7 +211,7 @@ msgstr "Ilość"
 msgid "Amount For Initial Coin"
 msgstr "Kwota Na Monetę Początkową"
 
-#: src/components/offers/OfferEditor.tsx:112
+#: src/components/offers/OfferEditor.tsx:113
 msgid "Amount exceeds spendable balance"
 msgstr ""
 
@@ -706,7 +706,7 @@ msgstr "Stwórz transakcję"
 #~ msgid "Create admin wallet"
 #~ msgstr "Utwórz portfel administratora"
 
-#: src/components/offers/OfferEditor.tsx:222
+#: src/components/offers/OfferEditor.tsx:227
 #: src/components/offers/OfferManager.tsx:481
 msgid "Create an Offer"
 msgstr ""
@@ -1360,7 +1360,7 @@ msgid ""
 "spendable balance is sufficient to cover the offer amount."
 msgstr ""
 
-#: src/components/offers/OfferEditor.tsx:169
+#: src/components/offers/OfferEditor.tsx:164
 msgid ""
 "Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
@@ -2002,7 +2002,7 @@ msgstr "Wprowadź prawidłowy klucz publiczny"
 msgid "Please enter a valid token name"
 msgstr ""
 
-#: src/components/offers/OfferEditor.tsx:109
+#: src/components/offers/OfferEditor.tsx:110
 msgid "Please enter an amount for each row"
 msgstr ""
 
@@ -2038,7 +2038,7 @@ msgstr ""
 #~ msgid "Please select amount"
 #~ msgstr "Wybierz kwotę"
 
-#: src/components/offers/OfferEditor.tsx:106
+#: src/components/offers/OfferEditor.tsx:107
 msgid "Please select an asset for each row"
 msgstr ""
 
@@ -2467,7 +2467,7 @@ msgstr ""
 msgid "Requested"
 msgstr ""
 
-#: src/components/offers/OfferEditor.tsx:199
+#: src/components/offers/OfferEditor.tsx:194
 msgid "Reset"
 msgstr ""
 
@@ -2496,7 +2496,7 @@ msgstr ""
 msgid "Save"
 msgstr "Zapisz"
 
-#: src/components/offers/OfferEditor.tsx:207
+#: src/components/offers/OfferEditor.tsx:202
 msgid "Save Offer"
 msgstr ""
 
