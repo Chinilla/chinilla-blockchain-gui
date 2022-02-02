@@ -58,9 +58,13 @@ export default function Amount(props: AmountProps) {
     name,
   });
 
+  const correctedValue = value[0] === '.' ? `0${value}` : value;
+
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
   const isChinillaCurrency = ['XCHI', 'TXCHI'].includes(currencyCode);
-  const chin = isChinillaCurrency ? chinillaToChin(value) : catToChin(value);
+  const chin = isChinillaCurrency 
+    ? chinillaToChin(correctedValue) 
+    : catToChin(correctedValue);
 
   return (
     <FormControl variant={variant} fullWidth={fullWidth}>
