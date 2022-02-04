@@ -62,8 +62,8 @@ msgstr "Kombajn je služba bežiaca na stroji, kde sú uložené polia. Farmár 
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:507
-#: src/electron/main.tsx:594
+#: src/electron/main.tsx:515
+#: src/electron/main.tsx:602
 msgid "About Chinilla Blockchain"
 msgstr "O Chinilla blockchaine"
 
@@ -183,7 +183,7 @@ msgstr "Naozaj chcete odstrániť nepotvrdené transakcie?"
 msgid "Are you sure you want to disconnect?"
 msgstr "Naozaj sa chcete odpojiť?"
 
-#: src/electron/main.tsx:262
+#: src/electron/main.tsx:270
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "Naozaj chcete skončiť? GUI pre vykresľovanie polí a farmárčenie budú ukončené."
 
@@ -355,15 +355,15 @@ msgstr ""
 msgid "Change Pool"
 msgstr "Zmeniť združenie"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Chat on KeyBase"
 msgstr "Chatovať na KeyBase"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:512
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:443
+#: src/electron/main.tsx:451
 msgid "Chinilla Blockchain Wiki"
 msgstr "Chinilla Blockchain Wiki"
 
@@ -447,7 +447,7 @@ msgstr "Farba"
 #~ msgstr "Možnosti farebných mincí"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-#: src/electron/main.tsx:260
+#: src/electron/main.tsx:268
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Potvrdiť"
@@ -521,7 +521,7 @@ msgstr "Typ pripojenia"
 msgid "Connections"
 msgstr "Pripojenia"
 
-#: src/electron/main.tsx:467
+#: src/electron/main.tsx:475
 msgid "Contribute on GitHub"
 msgstr "Prispejte na GitHube"
 
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr ""
 
-#: src/electron/main.tsx:383
+#: src/electron/main.tsx:391
 msgid "Developer"
 msgstr "Vývojár"
 
-#: src/electron/main.tsx:386
+#: src/electron/main.tsx:394
 msgid "Developer Tools"
 msgstr "Nástroje pre vývojárov"
 
@@ -766,7 +766,7 @@ msgstr ""
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr ""
 
-#: src/electron/main.tsx:395
+#: src/electron/main.tsx:403
 msgid "Disable Simulator"
 msgstr ""
 
@@ -820,7 +820,7 @@ msgstr "Pretiahnite súbor zálohy"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr "Pretiahnite myšou obnovovací záložný súbor"
 
-#: src/electron/main.tsx:342
+#: src/electron/main.tsx:350
 msgid "Edit"
 msgstr "Upraviť"
 
@@ -830,7 +830,7 @@ msgstr "Upraviť"
 msgid "Edit Payout Instructions"
 msgstr "Upraviť platobné pokyny"
 
-#: src/electron/main.tsx:396
+#: src/electron/main.tsx:404
 msgid "Enable Simulator"
 msgstr ""
 
@@ -1013,8 +1013,8 @@ msgstr "Výška poplatkov"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:334
-#: src/electron/main.tsx:541
+#: src/electron/main.tsx:342
+#: src/electron/main.tsx:549
 msgid "File"
 msgstr "Súbor"
 
@@ -1033,11 +1033,11 @@ msgstr "Cieľový adresár"
 msgid "Finished"
 msgstr "Dokončené"
 
-#: src/electron/main.tsx:492
+#: src/electron/main.tsx:500
 msgid "Follow on Twitter"
 msgstr "Sledovať na Twitteri"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:459
 msgid "Frequently Asked Questions"
 msgstr "Často kladené otázky (FAQ)"
 
@@ -1054,7 +1054,7 @@ msgstr "Prehľad celého uzla"
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Full Screen"
 msgstr "Celá obrazovka"
 
@@ -1096,7 +1096,7 @@ msgstr "Hash hlavičky"
 msgid "Height"
 msgstr "Poradie"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:447
 msgid "Help"
 msgstr "Pomoc"
 
@@ -1437,7 +1437,7 @@ msgstr "Ďalej"
 #~ msgstr "Prezývka"
 
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:257
+#: src/electron/main.tsx:265
 msgid "No"
 msgstr "Nie"
 
@@ -2109,7 +2109,7 @@ msgstr "Obnoviť polia"
 msgid "Relative Lock Height"
 msgstr "Relatívna výška zámku"
 
-#: src/electron/main.tsx:459
+#: src/electron/main.tsx:467
 msgid "Release Notes"
 msgstr "Poznámky k vydaniu"
 
@@ -2132,7 +2132,7 @@ msgstr "Odstraňujem"
 #~ msgid "Rename"
 #~ msgstr "Premenovať"
 
-#: src/electron/main.tsx:478
+#: src/electron/main.tsx:486
 msgid "Report an Issue..."
 msgstr "Nahlásiť Problém..."
 
@@ -2350,7 +2350,7 @@ msgstr "Zjemnite si svoje farmárske XCHI odmeny pripojením sa k združeniu."
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:555
+#: src/electron/main.tsx:563
 msgid "Speech"
 msgstr "Reč"
 
@@ -2812,7 +2812,7 @@ msgstr "VDF dielčie iterácie slotu"
 msgid "Verify Pool Details"
 msgstr "Overte detaily združenia"
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:382
 msgid "View"
 msgstr "Zobrazenie"
 
@@ -2963,7 +2963,7 @@ msgstr "Váha je celková pridaná obtiažnosť všetkých blokov až po tento b
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "Keď obdržíte informačný paket od svojho administrátora, vložte ho nižšie na dokončenie nastavenia vašej peňaženky s obmedzenou sadzbou:"
 
-#: src/electron/main.tsx:425
+#: src/electron/main.tsx:433
 msgid "Window"
 msgstr "Okno"
 
@@ -2973,7 +2973,7 @@ msgstr "Bez poplatkov"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:258
+#: src/electron/main.tsx:266
 msgid "Yes"
 msgstr "Áno"
 

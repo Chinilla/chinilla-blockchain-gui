@@ -3,12 +3,10 @@ import styled from 'styled-components';
 import { useNavigate, Outlet } from 'react-router-dom';
 import { t, Trans } from '@lingui/macro';
 import { AppBar, Toolbar, Drawer, Divider, Container, IconButton } from '@material-ui/core';
-import {
-  Flex,
-  Logo,
-  ToolbarSpacing,
-  Loading,
-} from '@chinilla/core';
+import Flex from '../Flex';
+import Logo from '../Logo';
+import ToolbarSpacing from '../ToolbarSpacing';
+import Loading from '../Loading';
 import { DashboardTitleTarget } from '../DashboardTitle';
 import { useLogout } from '@chinilla/api-react';
 import { ExitToApp as ExitToAppIcon } from '@material-ui/icons';

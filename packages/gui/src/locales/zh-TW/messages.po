@@ -62,8 +62,8 @@ msgstr "收割機是在實際存放耕地的機器上運作的服務。塊農和
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:507
-#: src/electron/main.tsx:594
+#: src/electron/main.tsx:515
+#: src/electron/main.tsx:602
 msgid "About Chinilla Blockchain"
 msgstr "關於 Chinilla 區塊鏈"
 
@@ -183,7 +183,7 @@ msgstr "你確認要刪除未確認的交易?"
 msgid "Are you sure you want to disconnect?"
 msgstr "您確定要斷線嗎？"
 
-#: src/electron/main.tsx:262
+#: src/electron/main.tsx:270
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "你確定要退出？耕地規劃和耕種將會停止。"
 
@@ -355,15 +355,15 @@ msgstr ""
 msgid "Change Pool"
 msgstr "變更農會"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Chat on KeyBase"
 msgstr "在 KeyBase 上閒聊"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:512
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:443
+#: src/electron/main.tsx:451
 msgid "Chinilla Blockchain Wiki"
 msgstr "Chinilla 區塊鏈維基"
 
@@ -447,7 +447,7 @@ msgstr "顏色"
 #~ msgstr "有色代幣選項"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-#: src/electron/main.tsx:260
+#: src/electron/main.tsx:268
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "確認"
@@ -521,7 +521,7 @@ msgstr "連線類型"
 msgid "Connections"
 msgstr "連線"
 
-#: src/electron/main.tsx:467
+#: src/electron/main.tsx:475
 msgid "Contribute on GitHub"
 msgstr "在 GitHub 上貢獻"
 
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr ""
 
-#: src/electron/main.tsx:383
+#: src/electron/main.tsx:391
 msgid "Developer"
 msgstr "開發者"
 
-#: src/electron/main.tsx:386
+#: src/electron/main.tsx:394
 msgid "Developer Tools"
 msgstr "開發者工具"
 
@@ -766,7 +766,7 @@ msgstr ""
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr ""
 
-#: src/electron/main.tsx:395
+#: src/electron/main.tsx:403
 msgid "Disable Simulator"
 msgstr ""
 
@@ -820,7 +820,7 @@ msgstr "拖放你的備份檔案"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr "拖放您的備份檔案"
 
-#: src/electron/main.tsx:342
+#: src/electron/main.tsx:350
 msgid "Edit"
 msgstr "編輯"
 
@@ -830,7 +830,7 @@ msgstr "編輯"
 msgid "Edit Payout Instructions"
 msgstr "編輯支付說明"
 
-#: src/electron/main.tsx:396
+#: src/electron/main.tsx:404
 msgid "Enable Simulator"
 msgstr ""
 
@@ -1013,8 +1013,8 @@ msgstr "費用數量"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:334
-#: src/electron/main.tsx:541
+#: src/electron/main.tsx:342
+#: src/electron/main.tsx:549
 msgid "File"
 msgstr "檔案"
 
@@ -1033,11 +1033,11 @@ msgstr "最終資料夾位置"
 msgid "Finished"
 msgstr "已完成"
 
-#: src/electron/main.tsx:492
+#: src/electron/main.tsx:500
 msgid "Follow on Twitter"
 msgstr "Twitter 上追隨"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:459
 msgid "Frequently Asked Questions"
 msgstr "常見問題"
 
@@ -1054,7 +1054,7 @@ msgstr "完整節點概觀"
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Full Screen"
 msgstr "全畫面"
 
@@ -1096,7 +1096,7 @@ msgstr "表頭雜湊值"
 msgid "Height"
 msgstr "高度"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:447
 msgid "Help"
 msgstr "幫助"
 
@@ -1437,7 +1437,7 @@ msgstr "下一步"
 #~ msgstr "暱稱"
 
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:257
+#: src/electron/main.tsx:265
 msgid "No"
 msgstr "否"
 
@@ -2109,7 +2109,7 @@ msgstr "刷新耕地"
 msgid "Relative Lock Height"
 msgstr "相對鎖定高度"
 
-#: src/electron/main.tsx:459
+#: src/electron/main.tsx:467
 msgid "Release Notes"
 msgstr "發行說明"
 
@@ -2132,7 +2132,7 @@ msgstr "移除中"
 #~ msgid "Rename"
 #~ msgstr "更改名稱"
 
-#: src/electron/main.tsx:478
+#: src/electron/main.tsx:486
 msgid "Report an Issue..."
 msgstr "回報問題..."
 
@@ -2350,7 +2350,7 @@ msgstr "加入農會來獲得穩定的XCH獎勵。"
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:555
+#: src/electron/main.tsx:563
 msgid "Speech"
 msgstr "語音"
 
@@ -2812,7 +2812,7 @@ msgstr "VDF 子欄位疊代次數"
 msgid "Verify Pool Details"
 msgstr "驗證農會細節"
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:382
 msgid "View"
 msgstr "檢視"
 
@@ -2963,7 +2963,7 @@ msgstr "權重是所有包括這個的子區塊的總增加難度"
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "當你從你的管理員收到設定資訊封包時，在下面輸入以完成你的速率限制錢包設定："
 
-#: src/electron/main.tsx:425
+#: src/electron/main.tsx:433
 msgid "Window"
 msgstr "視窗"
 
@@ -2973,7 +2973,7 @@ msgstr "未計雜費"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:258
+#: src/electron/main.tsx:266
 msgid "Yes"
 msgstr "是"
 

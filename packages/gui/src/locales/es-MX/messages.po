@@ -62,8 +62,8 @@ msgstr "Un cosechador es un servicio que se ejecuta en una máquina en donde act
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:507
-#: src/electron/main.tsx:594
+#: src/electron/main.tsx:515
+#: src/electron/main.tsx:602
 msgid "About Chinilla Blockchain"
 msgstr "Acerca de Chinilla Blockchain"
 
@@ -183,7 +183,7 @@ msgstr "¿Estás seguro de querer eliminar estas transacciones no confirmadas?"
 msgid "Are you sure you want to disconnect?"
 msgstr "¿Estás seguro de que te quieres desconectar?"
 
-#: src/electron/main.tsx:262
+#: src/electron/main.tsx:270
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "¿Está seguro que quiere salir? Sembrar y Cultivar en el GUI se detendrán."
 
@@ -355,15 +355,15 @@ msgstr ""
 msgid "Change Pool"
 msgstr "Cambiar Conjunto"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Chat on KeyBase"
 msgstr "Chatear en Keybase"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:512
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:443
+#: src/electron/main.tsx:451
 msgid "Chinilla Blockchain Wiki"
 msgstr "Chinilla Blockchain Wiki"
 
@@ -447,7 +447,7 @@ msgstr "Color"
 #~ msgstr "Opciones de Moneda de Color"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-#: src/electron/main.tsx:260
+#: src/electron/main.tsx:268
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Confirmar"
@@ -521,7 +521,7 @@ msgstr "Tipo de Conexión"
 msgid "Connections"
 msgstr "Conexiones"
 
-#: src/electron/main.tsx:467
+#: src/electron/main.tsx:475
 msgid "Contribute on GitHub"
 msgstr "Contribuir en GitHub"
 
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr ""
 
-#: src/electron/main.tsx:383
+#: src/electron/main.tsx:391
 msgid "Developer"
 msgstr "Desarrollador"
 
-#: src/electron/main.tsx:386
+#: src/electron/main.tsx:394
 msgid "Developer Tools"
 msgstr "Herramientas de Desarrollador"
 
@@ -766,7 +766,7 @@ msgstr ""
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr ""
 
-#: src/electron/main.tsx:395
+#: src/electron/main.tsx:403
 msgid "Disable Simulator"
 msgstr ""
 
@@ -820,7 +820,7 @@ msgstr "Arrastra y suelta tu archivo de respaldo"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr "Arrastra y suelta tu archivo de respaldo"
 
-#: src/electron/main.tsx:342
+#: src/electron/main.tsx:350
 msgid "Edit"
 msgstr "Editar"
 
@@ -830,7 +830,7 @@ msgstr "Editar"
 msgid "Edit Payout Instructions"
 msgstr ""
 
-#: src/electron/main.tsx:396
+#: src/electron/main.tsx:404
 msgid "Enable Simulator"
 msgstr ""
 
@@ -1013,8 +1013,8 @@ msgstr "Monto de tarifas"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:334
-#: src/electron/main.tsx:541
+#: src/electron/main.tsx:342
+#: src/electron/main.tsx:549
 msgid "File"
 msgstr "Archivo"
 
@@ -1033,11 +1033,11 @@ msgstr "Ubicación de la Carpeta Final"
 msgid "Finished"
 msgstr "Finalizado"
 
-#: src/electron/main.tsx:492
+#: src/electron/main.tsx:500
 msgid "Follow on Twitter"
 msgstr "Seguir en Twitter"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:459
 msgid "Frequently Asked Questions"
 msgstr "Preguntas Frecuentes"
 
@@ -1054,7 +1054,7 @@ msgstr "Resumen de Nodo Completo"
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Full Screen"
 msgstr "Pantalla Completa"
 
@@ -1096,7 +1096,7 @@ msgstr "Encabezado de hash"
 msgid "Height"
 msgstr "Altura"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:447
 msgid "Help"
 msgstr "Ayuda"
 
@@ -1437,7 +1437,7 @@ msgstr "Siguiente"
 #~ msgstr "Nickname"
 
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:257
+#: src/electron/main.tsx:265
 msgid "No"
 msgstr "No"
 
@@ -2109,7 +2109,7 @@ msgstr "Actualizar Parcelas"
 msgid "Relative Lock Height"
 msgstr "Altura Relativa de Bloqueo"
 
-#: src/electron/main.tsx:459
+#: src/electron/main.tsx:467
 msgid "Release Notes"
 msgstr "Notas de Versión"
 
@@ -2132,7 +2132,7 @@ msgstr "Removiendo"
 #~ msgid "Rename"
 #~ msgstr "Renombrar"
 
-#: src/electron/main.tsx:478
+#: src/electron/main.tsx:486
 msgid "Report an Issue..."
 msgstr "Reportar un problema..."
 
@@ -2350,7 +2350,7 @@ msgstr "Suaviza tus recompensas de cría XCHI uniéndote a un conjunto."
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:555
+#: src/electron/main.tsx:563
 msgid "Speech"
 msgstr "Habla"
 
@@ -2812,7 +2812,7 @@ msgstr "Iteraciones de subranura VDF"
 msgid "Verify Pool Details"
 msgstr "Verificar detalles del Conjunto"
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:382
 msgid "View"
 msgstr "Vista"
 
@@ -2963,7 +2963,7 @@ msgstr "El peso es la dificultad agregada total de todos los sub-bloques hasta e
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "Cuando reciba el paquete de información de configuración de su administrador, ingréselo a continuación para completar la configuración de su Cartera con Tarifa Limitada:"
 
-#: src/electron/main.tsx:425
+#: src/electron/main.tsx:433
 msgid "Window"
 msgstr "Ventana"
 
@@ -2973,7 +2973,7 @@ msgstr "Sin tarifas"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:258
+#: src/electron/main.tsx:266
 msgid "Yes"
 msgstr "Sí"
 

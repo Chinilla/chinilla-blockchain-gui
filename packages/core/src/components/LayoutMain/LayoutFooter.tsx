@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex } from '@chinilla/core';
+import Flex from '../Flex';
 import { Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import { Shell } from 'electron';

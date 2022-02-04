@@ -62,8 +62,8 @@ msgstr "Камбайн — сэрвіс, які выконваецца на к�
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:507
-#: src/electron/main.tsx:594
+#: src/electron/main.tsx:515
+#: src/electron/main.tsx:602
 msgid "About Chinilla Blockchain"
 msgstr "Аб праграме Chinilla Blockchain"
 
@@ -183,7 +183,7 @@ msgstr ""
 msgid "Are you sure you want to disconnect?"
 msgstr "Сапраўды адлучыцца?"
 
-#: src/electron/main.tsx:262
+#: src/electron/main.tsx:270
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "Сапраўды хочаце выйсці? Засяванне і фермерства, запушчаныя праз графічны інтэрфейс, будуць спынены."
 
@@ -355,15 +355,15 @@ msgstr ""
 msgid "Change Pool"
 msgstr ""
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Chat on KeyBase"
 msgstr "Чат у KeyBase"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:512
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:443
+#: src/electron/main.tsx:451
 msgid "Chinilla Blockchain Wiki"
 msgstr "Вікі блокчэйна Chinilla"
 
@@ -447,7 +447,7 @@ msgstr "Колер"
 #~ msgstr "Параметры каляровай манеты"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-#: src/electron/main.tsx:260
+#: src/electron/main.tsx:268
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Пацвердзіць"
@@ -521,7 +521,7 @@ msgstr "Тып падлучэння"
 msgid "Connections"
 msgstr "Падлучэнні"
 
-#: src/electron/main.tsx:467
+#: src/electron/main.tsx:475
 msgid "Contribute on GitHub"
 msgstr "Дапамагчы ў распрацоўцы на GitHub"
 
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr ""
 
-#: src/electron/main.tsx:383
+#: src/electron/main.tsx:391
 msgid "Developer"
 msgstr "Распрацоўшчык"
 
-#: src/electron/main.tsx:386
+#: src/electron/main.tsx:394
 msgid "Developer Tools"
 msgstr "Інструменты для распрацоўшчыкаў"
 
@@ -766,7 +766,7 @@ msgstr ""
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr ""
 
-#: src/electron/main.tsx:395
+#: src/electron/main.tsx:403
 msgid "Disable Simulator"
 msgstr ""
 
@@ -820,7 +820,7 @@ msgstr "Перацягніце сюды файл рэзервовай копіі
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr ""
 
-#: src/electron/main.tsx:342
+#: src/electron/main.tsx:350
 msgid "Edit"
 msgstr "Рэдагаваць"
 
@@ -830,7 +830,7 @@ msgstr "Рэдагаваць"
 msgid "Edit Payout Instructions"
 msgstr ""
 
-#: src/electron/main.tsx:396
+#: src/electron/main.tsx:404
 msgid "Enable Simulator"
 msgstr ""
 
@@ -1013,8 +1013,8 @@ msgstr "Сума камісійных"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:334
-#: src/electron/main.tsx:541
+#: src/electron/main.tsx:342
+#: src/electron/main.tsx:549
 msgid "File"
 msgstr "Файл"
 
@@ -1033,11 +1033,11 @@ msgstr "Размяшчэнне канцавой папкі"
 msgid "Finished"
 msgstr "Завершана"
 
-#: src/electron/main.tsx:492
+#: src/electron/main.tsx:500
 msgid "Follow on Twitter"
 msgstr "Падпісацца ў Twitter"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:459
 msgid "Frequently Asked Questions"
 msgstr "Частыя пытанні"
 
@@ -1054,7 +1054,7 @@ msgstr ""
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Full Screen"
 msgstr "На ўвесь экран"
 
@@ -1096,7 +1096,7 @@ msgstr "Хэш загалоўка"
 msgid "Height"
 msgstr "Вышыня"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:447
 msgid "Help"
 msgstr "Даведка"
 
@@ -1437,7 +1437,7 @@ msgstr "Наступны"
 #~ msgstr "Псеўданім"
 
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:257
+#: src/electron/main.tsx:265
 msgid "No"
 msgstr "Не"
 
@@ -2109,7 +2109,7 @@ msgstr "Абнавіць дзялянкі"
 msgid "Relative Lock Height"
 msgstr ""
 
-#: src/electron/main.tsx:459
+#: src/electron/main.tsx:467
 msgid "Release Notes"
 msgstr "Заўвагі да выпуску"
 
@@ -2132,7 +2132,7 @@ msgstr "Ідзе выдаленне"
 #~ msgid "Rename"
 #~ msgstr "Перайменаваць"
 
-#: src/electron/main.tsx:478
+#: src/electron/main.tsx:486
 msgid "Report an Issue..."
 msgstr "Паведаміць аб праблеме..."
 
@@ -2350,7 +2350,7 @@ msgstr ""
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:555
+#: src/electron/main.tsx:563
 msgid "Speech"
 msgstr "Маўленне"
 
@@ -2812,7 +2812,7 @@ msgstr "Ітэрацый VDF падслота"
 msgid "Verify Pool Details"
 msgstr ""
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:382
 msgid "View"
 msgstr "Выгляд"
 
@@ -2963,7 +2963,7 @@ msgstr "Вага — гэта агульная дабаўленая склад�
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "Атрымаўшы ад свайго адміністратара інфармацыйны пакет, увядзіце яго ніжэй, каб завяршыць наладжванне кашалька з абмежаваннямі вываду:"
 
-#: src/electron/main.tsx:425
+#: src/electron/main.tsx:433
 msgid "Window"
 msgstr "Акно"
 
@@ -2973,7 +2973,7 @@ msgstr "Без камісійных"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:258
+#: src/electron/main.tsx:266
 msgid "Yes"
 msgstr "Так"
 
