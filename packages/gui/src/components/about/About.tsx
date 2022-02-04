@@ -90,6 +90,8 @@ export default function About(props: Props) {
     versions,
   } = props;
 
+  const currentYear = (new Date).getFullYear();
+
   return (
     <html>
       <head>
@@ -114,7 +116,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 Chinilla</div>
+        <div className="copyright">Copyright (c) {currentYear} Chinilla Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (

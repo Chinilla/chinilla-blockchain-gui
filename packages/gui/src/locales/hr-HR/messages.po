@@ -62,8 +62,8 @@ msgstr "Sakupljač je servis pokrenut na računalu gdje su spremljena zemljišta
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:507
-#: src/electron/main.tsx:594
+#: src/electron/main.tsx:515
+#: src/electron/main.tsx:602
 msgid "About Chinilla Blockchain"
 msgstr "O Chinilla Blockchainu"
 
@@ -183,7 +183,7 @@ msgstr ""
 msgid "Are you sure you want to disconnect?"
 msgstr "Sigurno želiš prekinuti vezu?"
 
-#: src/electron/main.tsx:262
+#: src/electron/main.tsx:270
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "Sigurno želiš izaći? Obrada zemljišta i uzgoj će prestati sa radom."
 
@@ -355,15 +355,15 @@ msgstr ""
 msgid "Change Pool"
 msgstr ""
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Chat on KeyBase"
 msgstr "Razgovaraj na KeyBase"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:512
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:443
+#: src/electron/main.tsx:451
 msgid "Chinilla Blockchain Wiki"
 msgstr "Chinilla Blockchain Wiki"
 
@@ -447,7 +447,7 @@ msgstr "Boja"
 #~ msgstr "Opcije obojanog novčića"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-#: src/electron/main.tsx:260
+#: src/electron/main.tsx:268
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Potvrdi"
@@ -521,7 +521,7 @@ msgstr "Vrsta veze"
 msgid "Connections"
 msgstr "Veze"
 
-#: src/electron/main.tsx:467
+#: src/electron/main.tsx:475
 msgid "Contribute on GitHub"
 msgstr "Doprinos na GitHub"
 
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr ""
 
-#: src/electron/main.tsx:383
+#: src/electron/main.tsx:391
 msgid "Developer"
 msgstr "Razvojni programer"
 
-#: src/electron/main.tsx:386
+#: src/electron/main.tsx:394
 msgid "Developer Tools"
 msgstr "Alati za razvojne programere"
 
@@ -766,7 +766,7 @@ msgstr ""
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr ""
 
-#: src/electron/main.tsx:395
+#: src/electron/main.tsx:403
 msgid "Disable Simulator"
 msgstr ""
 
@@ -820,7 +820,7 @@ msgstr "Povuci i ispusti datoteku sigurnosne kopije"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr ""
 
-#: src/electron/main.tsx:342
+#: src/electron/main.tsx:350
 msgid "Edit"
 msgstr "Uredi"
 
@@ -830,7 +830,7 @@ msgstr "Uredi"
 msgid "Edit Payout Instructions"
 msgstr ""
 
-#: src/electron/main.tsx:396
+#: src/electron/main.tsx:404
 msgid "Enable Simulator"
 msgstr ""
 
@@ -1013,8 +1013,8 @@ msgstr "Iznos naknada"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:334
-#: src/electron/main.tsx:541
+#: src/electron/main.tsx:342
+#: src/electron/main.tsx:549
 msgid "File"
 msgstr "Datoteka"
 
@@ -1033,11 +1033,11 @@ msgstr "Lokacija krajnjeg direktorija"
 msgid "Finished"
 msgstr "Završeno"
 
-#: src/electron/main.tsx:492
+#: src/electron/main.tsx:500
 msgid "Follow on Twitter"
 msgstr "Prati na Twitteru"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:459
 msgid "Frequently Asked Questions"
 msgstr "Često Postavljana Pitanja"
 
@@ -1054,7 +1054,7 @@ msgstr ""
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Full Screen"
 msgstr "Puni zaslon"
 
@@ -1096,7 +1096,7 @@ msgstr "Hash zaglavlja"
 msgid "Height"
 msgstr "Visina"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:447
 msgid "Help"
 msgstr "Pomoć"
 
@@ -1437,7 +1437,7 @@ msgstr "Dalje"
 #~ msgstr "Nadimak"
 
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:257
+#: src/electron/main.tsx:265
 msgid "No"
 msgstr "Ne"
 
@@ -2109,7 +2109,7 @@ msgstr "Osvježi zemljišta"
 msgid "Relative Lock Height"
 msgstr ""
 
-#: src/electron/main.tsx:459
+#: src/electron/main.tsx:467
 msgid "Release Notes"
 msgstr "Bilješke o izdanju"
 
@@ -2132,7 +2132,7 @@ msgstr "Uklanjam"
 #~ msgid "Rename"
 #~ msgstr "Preimenuj"
 
-#: src/electron/main.tsx:478
+#: src/electron/main.tsx:486
 msgid "Report an Issue..."
 msgstr "Prijavi problem..."
 
@@ -2350,7 +2350,7 @@ msgstr ""
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:555
+#: src/electron/main.tsx:563
 msgid "Speech"
 msgstr "Govor"
 
@@ -2812,7 +2812,7 @@ msgstr "VDF Pod Slot Ponavljanja"
 msgid "Verify Pool Details"
 msgstr ""
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:382
 msgid "View"
 msgstr "Pregled"
 
@@ -2963,7 +2963,7 @@ msgstr "Težina je ukupno dodanih kompleksnosti svih pod blokova uključujući i
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "Kada zaprimiš informacijski paket od administratora, unesi ga ispod za završetak postavljanja svoj ograničenog novčanika:"
 
-#: src/electron/main.tsx:425
+#: src/electron/main.tsx:433
 msgid "Window"
 msgstr "Prozor"
 
@@ -2973,7 +2973,7 @@ msgstr "Bez naknada"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:258
+#: src/electron/main.tsx:266
 msgid "Yes"
 msgstr "Da"
 

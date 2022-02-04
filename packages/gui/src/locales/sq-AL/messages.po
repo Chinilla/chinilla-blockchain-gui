@@ -62,8 +62,8 @@ msgstr "Korrësi eshte nje shërbim i cili është i integruar në pajisjen ku P
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:507
-#: src/electron/main.tsx:594
+#: src/electron/main.tsx:515
+#: src/electron/main.tsx:602
 msgid "About Chinilla Blockchain"
 msgstr "Rreth zinxhirit Chinilla"
 
@@ -183,7 +183,7 @@ msgstr "Je i sigurt që dëshiron të fshish transaksione të pakonfirmuara?"
 msgid "Are you sure you want to disconnect?"
 msgstr "Je i sigurt që deshiron të shkëputesh?"
 
-#: src/electron/main.tsx:262
+#: src/electron/main.tsx:270
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "Je i sigurt që dëshiron të dalësh? Ndërfaqja për Plotting dhe Fermerin do të ndërpritet."
 
@@ -355,15 +355,15 @@ msgstr ""
 msgid "Change Pool"
 msgstr "Ndrysho Pollin"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Chat on KeyBase"
 msgstr "Shkruaj në KeyBase"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:512
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:443
+#: src/electron/main.tsx:451
 msgid "Chinilla Blockchain Wiki"
 msgstr "Zinxhiri Chinilla Wiki"
 
@@ -447,7 +447,7 @@ msgstr "Ngjyra"
 #~ msgstr "Opsioni i ngjyrave te monedhes"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-#: src/electron/main.tsx:260
+#: src/electron/main.tsx:268
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Konfirmo"
@@ -521,7 +521,7 @@ msgstr "Tipi i Lidhjes"
 msgid "Connections"
 msgstr "Lidhjet"
 
-#: src/electron/main.tsx:467
+#: src/electron/main.tsx:475
 msgid "Contribute on GitHub"
 msgstr "Kontribo në GitHub"
 
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr ""
 
-#: src/electron/main.tsx:383
+#: src/electron/main.tsx:391
 msgid "Developer"
 msgstr "Programuesi"
 
-#: src/electron/main.tsx:386
+#: src/electron/main.tsx:394
 msgid "Developer Tools"
 msgstr "Veglat e Programuesit"
 
@@ -766,7 +766,7 @@ msgstr ""
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr ""
 
-#: src/electron/main.tsx:395
+#: src/electron/main.tsx:403
 msgid "Disable Simulator"
 msgstr ""
 
@@ -820,7 +820,7 @@ msgstr "Terhiq dhe zgjidh skedarin e ruajtur"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr ""
 
-#: src/electron/main.tsx:342
+#: src/electron/main.tsx:350
 msgid "Edit"
 msgstr "Modifiko"
 
@@ -830,7 +830,7 @@ msgstr "Modifiko"
 msgid "Edit Payout Instructions"
 msgstr "Ndryshoni udhëzimet e pagesës"
 
-#: src/electron/main.tsx:396
+#: src/electron/main.tsx:404
 msgid "Enable Simulator"
 msgstr ""
 
@@ -1013,8 +1013,8 @@ msgstr "Shuma e tarifës"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:334
-#: src/electron/main.tsx:541
+#: src/electron/main.tsx:342
+#: src/electron/main.tsx:549
 msgid "File"
 msgstr "Skedari"
 
@@ -1033,11 +1033,11 @@ msgstr "Vëndi i vendosjes së Skedarit"
 msgid "Finished"
 msgstr "Përfundoi"
 
-#: src/electron/main.tsx:492
+#: src/electron/main.tsx:500
 msgid "Follow on Twitter"
 msgstr "Na ndiqni në Twitter"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:459
 msgid "Frequently Asked Questions"
 msgstr "Pyetjet më të shpeshta"
 
@@ -1054,7 +1054,7 @@ msgstr "Pasqyrë e plotë e nyjes"
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Full Screen"
 msgstr "Ekran i plotë"
 
@@ -1096,7 +1096,7 @@ msgstr "Koka e kodit"
 msgid "Height"
 msgstr "Lartësia"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:447
 msgid "Help"
 msgstr "Ndihmë"
 
@@ -1437,7 +1437,7 @@ msgstr "Tjetër"
 #~ msgstr "Pseudonimi"
 
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:257
+#: src/electron/main.tsx:265
 msgid "No"
 msgstr "Jo"
 
@@ -2109,7 +2109,7 @@ msgstr "Rifresko plotet"
 msgid "Relative Lock Height"
 msgstr "Lartësia relative e bllokimit"
 
-#: src/electron/main.tsx:459
+#: src/electron/main.tsx:467
 msgid "Release Notes"
 msgstr "Shënimet e Lirimit"
 
@@ -2132,7 +2132,7 @@ msgstr "Po hiqet"
 #~ msgid "Rename"
 #~ msgstr "Riemërto"
 
-#: src/electron/main.tsx:478
+#: src/electron/main.tsx:486
 msgid "Report an Issue..."
 msgstr "Raportoni një çështje..."
 
@@ -2350,7 +2350,7 @@ msgstr "Z'busni shpërblimet tuaja XCHI duke u bashkuar me një poll."
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:555
+#: src/electron/main.tsx:563
 msgid "Speech"
 msgstr "Të folurit"
 
@@ -2812,7 +2812,7 @@ msgstr "Përsëritjet e VDF Nën Slot"
 msgid "Verify Pool Details"
 msgstr "Verifikoni detajet e pollit"
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:382
 msgid "View"
 msgstr "Shiko"
 
@@ -2963,7 +2963,7 @@ msgstr "Pesha është vështirësia totale e shtuar e të gjitha nën blloqeve d
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "Kur të merrni paketën e informacionit të konfigurimit nga administratori juaj, futeni atë më poshtë për të përfunduar konfigurimin e Portofolit të Kufizuar të Vlerësimit:"
 
-#: src/electron/main.tsx:425
+#: src/electron/main.tsx:433
 msgid "Window"
 msgstr "Dritare"
 
@@ -2973,7 +2973,7 @@ msgstr "Pa tarifa"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:258
+#: src/electron/main.tsx:266
 msgid "Yes"
 msgstr "Po"
 

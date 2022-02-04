@@ -62,8 +62,8 @@ msgstr "الحصاد هو خدمة تعمل على الحاسوب حيث يتم 
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:507
-#: src/electron/main.tsx:594
+#: src/electron/main.tsx:515
+#: src/electron/main.tsx:602
 msgid "About Chinilla Blockchain"
 msgstr "معلومات عن Chinilla Blockchain"
 
@@ -183,7 +183,7 @@ msgstr ""
 msgid "Are you sure you want to disconnect?"
 msgstr "هل أنت متأكد بأنك تريد قطع الإتصال مع السيرفر؟"
 
-#: src/electron/main.tsx:262
+#: src/electron/main.tsx:270
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "هل أنت متأكد من رغبتك في إغلاق التطبيق؟ ستتوقف عمليات إنشاء المساحات في القرص الصلب والمزرعة."
 
@@ -355,15 +355,15 @@ msgstr ""
 msgid "Change Pool"
 msgstr "تغيير المجمع"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Chat on KeyBase"
 msgstr "الدردشة على KeyBase"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:512
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:443
+#: src/electron/main.tsx:451
 msgid "Chinilla Blockchain Wiki"
 msgstr "Chinilla Blockchain Wiki"
 
@@ -447,7 +447,7 @@ msgstr "اللون"
 #~ msgstr "خيارات العملة الملونة"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
-#: src/electron/main.tsx:260
+#: src/electron/main.tsx:268
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "تأكيد"
@@ -521,7 +521,7 @@ msgstr "نوع الاتصال"
 msgid "Connections"
 msgstr "الإتصالات"
 
-#: src/electron/main.tsx:467
+#: src/electron/main.tsx:475
 msgid "Contribute on GitHub"
 msgstr "المساهمة في GitHub"
 
@@ -741,11 +741,11 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr ""
 
-#: src/electron/main.tsx:383
+#: src/electron/main.tsx:391
 msgid "Developer"
 msgstr "المطور"
 
-#: src/electron/main.tsx:386
+#: src/electron/main.tsx:394
 msgid "Developer Tools"
 msgstr "أدوات المطورين"
 
@@ -766,7 +766,7 @@ msgstr ""
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr ""
 
-#: src/electron/main.tsx:395
+#: src/electron/main.tsx:403
 msgid "Disable Simulator"
 msgstr ""
 
@@ -820,7 +820,7 @@ msgstr "قم بسحب ملف النسخة الاحتياطية من جهاز ا�
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr ""
 
-#: src/electron/main.tsx:342
+#: src/electron/main.tsx:350
 msgid "Edit"
 msgstr "تعديل"
 
@@ -830,7 +830,7 @@ msgstr "تعديل"
 msgid "Edit Payout Instructions"
 msgstr ""
 
-#: src/electron/main.tsx:396
+#: src/electron/main.tsx:404
 msgid "Enable Simulator"
 msgstr ""
 
@@ -1013,8 +1013,8 @@ msgstr "قيمة الرسوم"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:334
-#: src/electron/main.tsx:541
+#: src/electron/main.tsx:342
+#: src/electron/main.tsx:549
 msgid "File"
 msgstr "الملف"
 
@@ -1033,11 +1033,11 @@ msgstr "موقع الملف النهائي"
 msgid "Finished"
 msgstr "انتهت"
 
-#: src/electron/main.tsx:492
+#: src/electron/main.tsx:500
 msgid "Follow on Twitter"
 msgstr "تابع على تويتر"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:459
 msgid "Frequently Asked Questions"
 msgstr "الأسئلة المتكررة"
 
@@ -1054,7 +1054,7 @@ msgstr ""
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Full Screen"
 msgstr "ملء الشاشة"
 
@@ -1096,7 +1096,7 @@ msgstr "تجزئة رأس الصفحة"
 msgid "Height"
 msgstr "ارتفاع"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:447
 msgid "Help"
 msgstr "المساعدة"
 
@@ -1437,7 +1437,7 @@ msgstr "التالي"
 #~ msgstr "الإسم المستعار"
 
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:257
+#: src/electron/main.tsx:265
 msgid "No"
 msgstr "لايوجد"
 
@@ -2109,7 +2109,7 @@ msgstr "تحديث القطع"
 msgid "Relative Lock Height"
 msgstr ""
 
-#: src/electron/main.tsx:459
+#: src/electron/main.tsx:467
 msgid "Release Notes"
 msgstr "كتابة ملاحظات"
 
@@ -2132,7 +2132,7 @@ msgstr "ال"
 #~ msgid "Rename"
 #~ msgstr "إعادة التسمية"
 
-#: src/electron/main.tsx:478
+#: src/electron/main.tsx:486
 msgid "Report an Issue..."
 msgstr "بلغ عن خطأ..."
 
@@ -2350,7 +2350,7 @@ msgstr ""
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:555
+#: src/electron/main.tsx:563
 msgid "Speech"
 msgstr "خطاب"
 
@@ -2812,7 +2812,7 @@ msgstr "تعديلات فتحة VDF الفرعية"
 msgid "Verify Pool Details"
 msgstr ""
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:382
 msgid "View"
 msgstr "عرض"
 
@@ -2963,7 +2963,7 @@ msgstr "الوزن هو الصعوبة المضافة الكلية لجميع ا
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "عندما تتلقى حزمة معلومات الإعداد من المشرف الخاص بك، قم بإدخالها أدناه لإكمال إعداد المحفظة المحدودة المعدل:"
 
-#: src/electron/main.tsx:425
+#: src/electron/main.tsx:433
 msgid "Window"
 msgstr "نافذة"
 
@@ -2973,7 +2973,7 @@ msgstr "بدون رسوم"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/components/trading/TradingOverview.jsx:208
-#: src/electron/main.tsx:258
+#: src/electron/main.tsx:266
 msgid "Yes"
 msgstr "نعم"
 
