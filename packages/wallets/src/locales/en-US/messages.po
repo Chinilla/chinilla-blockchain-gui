@@ -712,8 +712,8 @@ msgid "Create an Offer"
 msgstr "Create an Offer"
 
 #: src/components/offers/OfferManager.tsx:476
-#~ msgid "Create an offer to exchange XCH or other tokens. View an offer to inspect and accept an offer made by another party."
-#~ msgstr "Create an offer to exchange XCH or other tokens. View an offer to inspect and accept an offer made by another party."
+#~ msgid "Create an offer to exchange xchi or other tokens. View an offer to inspect and accept an offer made by another party."
+#~ msgstr "Create an offer to exchange xchi or other tokens. View an offer to inspect and accept an offer made by another party."
 
 #: src/components/offers/OfferManager.tsx:479
 msgid "Create an offer to exchange XCHI or other tokens. View an offer to inspect and accept an offer made by another party."
