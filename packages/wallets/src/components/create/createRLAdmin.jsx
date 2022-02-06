@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, chinillaToChin } from '@chinilla/core';
+import { AlertDialog, chinillaToVojo} from '@chinilla/core';
 import {
   Typography,
   Button,
@@ -155,12 +155,12 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const chinillaper = chinillaToChin(chinillaper_input.value);
+    const chinillaper = chinillaToVojo(chinillaper_input.value);
     const chinillaper_value = Number.parseInt(Number(chinillaper));
     const userpubkey = userpubkey_input.value;
-    const amount = chinillaToChin(amount_input.value);
+    const amount = chinillaToVojo(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = chinillaToChin(fee_input.value);
+    // var fee = chinillaToVojo(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(

@@ -1,5 +1,5 @@
 import React, { useMemo, ReactNode } from 'react';
-import { Table, chinToChinillaLocaleString } from '@chinilla/core';
+import { Table, vojoToChinillaLocaleString } from '@chinilla/core';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { Box } from '@material-ui/core';
@@ -45,7 +45,7 @@ export default function TradesTable(props: Props) {
         return {
           side: amount < 0 ? <Trans>Sell</Trans> : <Trans>Buy</Trans>,
           name: <Amount>{name}</Amount>,
-          amount: <Amount>{chinToChinillaLocaleString(humanAmount)}</Amount>,
+          amount: <Amount>{vojoToChinillaLocaleString(humanAmount)}</Amount>,
         };
       }),
     [rows],

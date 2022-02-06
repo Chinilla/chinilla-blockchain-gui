@@ -711,13 +711,13 @@ msgstr "Crear transacció"
 msgid "Create an Offer"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:476
-#~ msgid "Create an offer to exchange xchi or other tokens. View an offer to inspect and accept an offer made by another party."
-#~ msgstr ""
-
 #: src/components/offers/OfferManager.tsx:479
-msgid "Create an offer to exchange XCHI or other tokens. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to exchange HCX or other tokens. View an offer to inspect and accept an offer made by another party."
 msgstr ""
+
+#: src/components/offers/OfferManager.tsx:476
+#~ msgid "Create an offer to exchange hcx or other tokens. View an offer to inspect and accept an offer made by another party."
+#~ msgstr ""
 
 #: src/components/cat/WalletCATCreateExisting.tsx:76
 msgid "Create custom CAT Wallet"
@@ -1136,7 +1136,7 @@ msgid "Fee"
 msgstr "Taxa"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCHI)"
+#~ msgid "Fee (THCX)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1394,15 +1394,15 @@ msgstr "Interval"
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:49
-#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile."
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
-#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
-#~ msgid "Join a pool and get more consistent XCHI farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgid "Join a pool and get more consistent HCX farming rewards. Create a plot NFT and assign your new plots to a group."
 #~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:747
@@ -1735,7 +1735,7 @@ msgstr ""
 #~ msgstr "No s'han trobat parcel·les"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:164
-#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCHIreward for pooling plots."
+#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
@@ -2607,7 +2607,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
-#~ msgid "Self pool. When you win a block you will earn XCHI rewards."
+#~ msgid "Self pool. When you win a block you will earn HCX rewards."
 #~ msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:164
@@ -2719,7 +2719,7 @@ msgstr ""
 #~ msgstr "Saltar el pas d'afegir el directori final al pagès per poder cultivar"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCHI farming rewards by joining a pool."
+#~ msgid "Smooth out your HCX farming rewards by joining a pool."
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
@@ -2847,23 +2847,23 @@ msgstr "Sincronitzant"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCHI Block Rewards"
+#~ msgid "THCX Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCHI Farming Rewards"
+#~ msgid "THCX Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCHI Fees Collected"
+#~ msgid "THCX Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCHI User Fees"
-#~ msgstr "TXCHI User Fees"
+#~ msgid "THCX User Fees"
+#~ msgstr "THCX User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCHI User Transaction Fees"
+#~ msgid "THCX User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2949,7 +2949,7 @@ msgstr ""
 #~ msgstr "Comissions per transacció totals en aquest bloc. Recompensades al pagès."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:107
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCHI address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HCX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 #~ msgstr ""
 
 #: src/components/plot/PlotsFailed.tsx:36
@@ -3652,15 +3652,6 @@ msgstr "sincronitzant"
 #~ msgid "{0} points {1} - {2} hours ago"
 #~ msgstr ""
 
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{chin, plural, one {chin} other {chins}}"
-#~ msgstr ""
-
-#: src/components/offers/OfferSummaryRow.tsx:40
-#: src/components/offers/OfferViewer.tsx:95
-msgid "{chins, plural, one {chin} other {chins}}"
-msgstr ""
-
 #: src/components/farm/card/FarmCardBlockRewards.tsx:35
 #~ msgid "{currencyCode} Block Rewards"
 #~ msgstr "{currencyCode} Recompenses de bloc"
@@ -3672,6 +3663,15 @@ msgstr ""
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 #~ msgid "{currencyCode} User Transaction Fees"
 #~ msgstr "{currencyCode} Comissions de transacció de l'usuari"
+
+#: src/components/core/components/Amount/Amount.tsx:82
+#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgstr ""
+
+#: src/components/offers/OfferSummaryRow.tsx:40
+#: src/components/offers/OfferViewer.tsx:95
+msgid "{vojos, plural, one {vojo} other {vojos}}"
+msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

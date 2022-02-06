@@ -8,5 +8,5 @@ export default function useIsVanillanet(): boolean | undefined {
     return undefined;
   }
 
-  return networkPrefix.toLowerCase() === 'xchi';
+  return networkPrefix.toLowerCase() === 'hcx';
 }

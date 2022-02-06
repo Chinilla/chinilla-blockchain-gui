@@ -1,6 +1,6 @@
 enum Unit {
   CHINILLA = 'chinilla',
-  CHIN = 'chin',
+  VOJO= 'vojo',
   CAT = 'cat',
 }
 

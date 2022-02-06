@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
 import { create_cc_for_colour_action } from '../../../modules/message';
-import { chinillaToChin } from '@chinilla/core';
+import { chinillaToVojo} from '@chinilla/core';
 import { openDialog } from '../../../modules/dialog';
 import config from '../../../config/config';
 
@@ -57,9 +57,9 @@ export default function WalletCATCreateExisting() {
         return;
       }*/
 
-      const feeChins = chinillaToChin(fee || '0');
+      const feeVojos = chinillaToVojo(fee || '0');
 
-      const response = await dispatch(create_cc_for_colour_action(name, feeChins));
+      const response = await dispatch(create_cc_for_colour_action(name, feeVojos));
       if (response && response.data && response.data.success === true) {
         navigate(`/dashboard/wallets/${response.data.wallet_id}`);
       }

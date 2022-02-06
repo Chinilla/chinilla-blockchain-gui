@@ -15,7 +15,7 @@ import {
   Link,
   ConfirmDialog,
   useOpenDialog,
-  chinToChinillaLocaleString,
+  vojoToChinillaLocaleString,
 } from '@chinilla/core';
 import {
   Box,
@@ -147,7 +147,7 @@ export default function PlotNFTCard(props: Props) {
       label: <Trans>Unclaimed Rewards</Trans>,
       value: (
         <UnitFormat
-          value={chinToChinillaLocaleString(balance)}
+          value={vojoToChinillaLocaleString(balance)}
           state={State.SUCCESS}
         />
       ),

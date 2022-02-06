@@ -688,7 +688,7 @@ msgid "Fee"
 msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCHI)"
+#~ msgid "Fee (THCX)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1606,23 +1606,23 @@ msgid "Syncing {progress}/{tip}"
 msgstr ""
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCHI Block Rewards"
+#~ msgid "THCX Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCHI Farming Rewards"
+#~ msgid "THCX Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCHI Fees Collected"
+#~ msgid "THCX Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCHI User Fees"
-#~ msgstr "TXCHI User Fees"
+#~ msgid "THCX User Fees"
+#~ msgstr "THCX User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCHI User Transaction Fees"
+#~ msgid "THCX User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:18

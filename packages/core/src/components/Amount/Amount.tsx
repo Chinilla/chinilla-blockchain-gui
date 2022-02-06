@@ -9,8 +9,8 @@ import {
 } from '@material-ui/core';
 import { useWatch, useFormContext } from 'react-hook-form';
 import TextField, { TextFieldProps } from '../TextField';
-import chinillaToChin from '../../utils/chinillaToChin';
-import catToChin from '../../utils/catToChin';
+import chinillaToVojo from '../../utils/chinillaToVojo';
+import catToVojo from '../../utils/catToVojo';
 import useCurrencyCode from '../../hooks/useCurrencyCode';
 import FormatLargeNumber from '../FormatLargeNumber';
 import Flex from '../Flex';
@@ -41,15 +41,15 @@ function NumberFormatCustom(props: NumberFormatCustomProps) {
 }
 
 export type AmountProps = TextFieldProps & {
-  children?: (props: { chin: number; value: string | undefined }) => ReactNode;
+  children?: (props: { vojo: number; value: string | undefined }) => ReactNode;
   name?: string;
   symbol?: string; // if set, overrides the currencyCode. empty string is allowed
-  showAmountInChins?: boolean; // if true, shows the chin amount below the input field
-  feeMode?: boolean // if true, amounts are expressed in chins used to set a transaction fee
+  showAmountInVojos?: boolean; // if true, shows the vojoamount below the input field
+  feeMode?: boolean // if true, amounts are expressed in vojos used to set a transaction fee
 };
 
 export default function Amount(props: AmountProps) {
-  const { children, name, symbol, showAmountInChins, variant, fullWidth, ...rest } = props;
+  const { children, name, symbol, showAmountInVojos, variant, fullWidth, ...rest } = props;
   const { control } = useFormContext();
   const defaultCurrencyCode = useCurrencyCode();
 
@@ -61,10 +61,10 @@ export default function Amount(props: AmountProps) {
   const correctedValue = value[0] === '.' ? `0${value}` : value;
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
-  const isChinillaCurrency = ['XCHI', 'TXCHI'].includes(currencyCode);
-  const chin = isChinillaCurrency 
-    ? chinillaToChin(correctedValue) 
-    : catToChin(correctedValue);
+  const isChinillaCurrency = ['HCX', 'THCX'].includes(currencyCode);
+  const vojo= isChinillaCurrency 
+    ? chinillaToVojo(correctedValue) 
+    : catToVojo(correctedValue);
 
   return (
     <FormControl variant={variant} fullWidth={fullWidth}>
@@ -86,13 +86,13 @@ export default function Amount(props: AmountProps) {
       />
         <FormHelperText component='div' >
           <Flex alignItems="center" gap={2}>
-            {showAmountInChins && (
+            {showAmountInVojos && (
               <Flex flexGrow={1} gap={1}>
-                {!!chin && (
+                {!!vojo&& (
                   <>
-                    <FormatLargeNumber value={chin} />
+                    <FormatLargeNumber value={vojo} />
                     <Box>
-                      <Plural value={chin} one="chin" other="chins" />
+                      <Plural value={vojo} one="vojo" other="vojos" />
                     </Box>
                   </>
                 )}
@@ -100,7 +100,7 @@ export default function Amount(props: AmountProps) {
             )}
             {children &&
               children({
-                chin,
+                vojo,
                 value,
               })}
           </Flex>
@@ -113,6 +113,6 @@ Amount.defaultProps = {
   label: <Trans>Amount</Trans>,
   name: 'amount',
   children: undefined,
-  showAmountInChins: true,
+  showAmountInVojos: true,
   feeMode: false,
 };

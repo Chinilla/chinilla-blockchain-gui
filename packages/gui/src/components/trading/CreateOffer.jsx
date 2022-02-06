@@ -15,7 +15,7 @@ import {
 import { AlertDialog, Card, Flex, useShowSaveDialog } from '@chinilla/core';
 import isElectron from 'is-electron';
 import { newBuy, newSell, addTrade, resetTrades } from '../../modules/trade';
-import { colouredcoin_to_chin } from '../../util/chinilla';
+import { colouredcoin_to_vojo} from '../../util/chinilla';
 import { openDialog } from '../../modules/dialog';
 import { create_trade_action } from '../../modules/trade_messages';
 import { COLOURED_COIN } from '../../util/wallet_types';
@@ -80,15 +80,15 @@ export default function CreateOffer() {
       );
       return;
     }
-    const chin =
+    const vojo=
       wallets[wallet_id.value].type === COLOURED_COIN
-        ? colouredcoin_to_chin(amount_input.value)
-        : chinillaToChin(amount_input.value);
+        ? colouredcoin_to_vojo(amount_input.value)
+        : chinillaToVojo(amount_input.value);
 
     const trade =
       buy_or_sell.value === 1
-        ? newBuy(chin, wallet_id.value)
-        : newSell(chin, wallet_id.value);
+        ? newBuy(vojo, wallet_id.value)
+        : newSell(vojo, wallet_id.value);
 
     dispatch(addTrade(trade));
   }

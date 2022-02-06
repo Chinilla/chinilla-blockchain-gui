@@ -7,8 +7,8 @@ describe('units', () => {
 
       expect(result).toBe(1);
     });
-    it('gets unit of chin', () => {
-      const result = units.getUnit('chin');
+    it('gets unit of vojo', () => {
+      const result = units.getUnit('vojo');
 
       expect(result).toBe(1e-12);
     });
@@ -27,7 +27,7 @@ describe('units', () => {
 
       expect(result).toBe(1);
     });
-    it('gets unit of chin using alias', () => {
+    it('gets unit of vojousing alias', () => {
       const result = units.getUnit('mj');
 
       expect(result).toBe(1e-12);
@@ -54,8 +54,8 @@ describe('units', () => {
         fractionDigits: 12,
       });
     });
-    it('gets display of chin', () => {
-      const result = units.getDisplay('chin');
+    it('gets display of vojo', () => {
+      const result = units.getDisplay('vojo');
 
       expect(result).toEqual({
         format: '{amount} MJ',
@@ -112,14 +112,14 @@ describe('units', () => {
     });
     it('updates an existing display', () => {
       units.setDisplay('chinilla', {
-        format: '{amount} TXCHI',
+        format: '{amount} THCX',
         fractionDigits: 0,
       });
 
       const result = units.getDisplay('chinilla');
 
       expect(result).toEqual({
-        format: '{amount} TXCHI',
+        format: '{amount} THCX',
         fractionDigits: 0,
       });
     });

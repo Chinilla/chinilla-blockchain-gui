@@ -102,7 +102,7 @@ export default function PlotNFTSelectBase(props: Props) {
                     control={<Radio />}
                     label={
                       <Trans>
-                        Self pool. When you win a block you will earn XCHI
+                        Self pool. When you win a block you will earn HCX
                         rewards.
                       </Trans>
                     }

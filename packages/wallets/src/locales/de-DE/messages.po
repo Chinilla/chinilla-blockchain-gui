@@ -711,13 +711,13 @@ msgstr "Erstelle Transaktion"
 msgid "Create an Offer"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:476
-#~ msgid "Create an offer to exchange xchi or other tokens. View an offer to inspect and accept an offer made by another party."
-#~ msgstr ""
-
 #: src/components/offers/OfferManager.tsx:479
-msgid "Create an offer to exchange XCHI or other tokens. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to exchange HCX or other tokens. View an offer to inspect and accept an offer made by another party."
 msgstr ""
+
+#: src/components/offers/OfferManager.tsx:476
+#~ msgid "Create an offer to exchange hcx or other tokens. View an offer to inspect and accept an offer made by another party."
+#~ msgstr ""
 
 #: src/components/cat/WalletCATCreateExisting.tsx:76
 msgid "Create custom CAT Wallet"
@@ -1142,7 +1142,7 @@ msgid "Fee"
 msgstr "Gebühr"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCHI)"
+#~ msgid "Fee (THCX)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1400,16 +1400,16 @@ msgstr "Intervall"
 #~ msgstr "Einem Pool beitreten"
 
 #: src/components/plot/add/PlotAddNFT.tsx:49
-#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile."
-#~ msgstr "Trete einem Pool bei und erhalte konsistente XCHI Farming-Belohnungen. Der durchschnittliche Ertrag ist derselbe, aber er ist viel weniger volatil."
+#~ msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgstr "Trete einem Pool bei und erhalte konsistente HCX Farming-Belohnungen. Der durchschnittliche Ertrag ist derselbe, aber er ist viel weniger volatil."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
-#~ msgid "Join a pool and get consistent XCHI farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-#~ msgstr "Trete einem Pool bei und erhalte konsistente XCHI Farming-Belohnungen. Der durchschnittliche Ertrag ist derselbe, aber er ist viel weniger volatil. Weise Plots einem Plot-NFT zu. Du kannst einfach zwischen Pools wechseln, ohne neu plotten zu müssen."
+#~ msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgstr "Trete einem Pool bei und erhalte konsistente HCX Farming-Belohnungen. Der durchschnittliche Ertrag ist derselbe, aber er ist viel weniger volatil. Weise Plots einem Plot-NFT zu. Du kannst einfach zwischen Pools wechseln, ohne neu plotten zu müssen."
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
-#~ msgid "Join a pool and get more consistent XCHI farming rewards. Create a plot NFT and assign your new plots to a group."
-#~ msgstr "Trete einem Pool bei und erhalte konsistente XCHI Farming-Belohnungen. Erstelle ein Plot-NFT und weise deine neuen Plots einer Gruppe zu."
+#~ msgid "Join a pool and get more consistent HCX farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgstr "Trete einem Pool bei und erhalte konsistente HCX Farming-Belohnungen. Erstelle ein Plot-NFT und weise deine neuen Plots einer Gruppe zu."
 
 #: src/components/offers/OfferShareDialog.tsx:747
 msgid "Join {KeybaseTeamName}"
@@ -1741,8 +1741,8 @@ msgstr ""
 #~ msgstr "Nicht gefundene Plots"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:164
-#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCHIreward for pooling plots."
-#~ msgstr "Beachten Sie, dass dies Ihre Pooling-Auszahlungsadressen nicht ändert. Dies betrifft nur die alten Plots und die 0.25XCHIBelohnung für Pooling-Plots."
+#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+#~ msgstr "Beachten Sie, dass dies Ihre Pooling-Auszahlungsadressen nicht ändert. Dies betrifft nur die alten Plots und die 0.25HCXBelohnung für Pooling-Plots."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:157
@@ -2615,8 +2615,8 @@ msgstr ""
 #~ msgstr "Selbst-Pooling"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
-#~ msgid "Self pool. When you win a block you will earn XCHI rewards."
-#~ msgstr "Selbst-Pooling. Wenn du einen Block gewinnst, erhältst du XCHI Belohnungen."
+#~ msgid "Self pool. When you win a block you will earn HCX rewards."
+#~ msgstr "Selbst-Pooling. Wenn du einen Block gewinnst, erhältst du HCX Belohnungen."
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:46
@@ -2727,8 +2727,8 @@ msgstr ""
 #~ msgstr "Überspringt das Hinzufügen eines endgültigen Verzeichnisses zum Harvester für das Farmen"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCHI farming rewards by joining a pool."
-#~ msgstr "Glätte deine XCHI Farming-Belohnungen indem du einem Pool beitrittst."
+#~ msgid "Smooth out your HCX farming rewards by joining a pool."
+#~ msgstr "Glätte deine HCX Farming-Belohnungen indem du einem Pool beitrittst."
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 #~ msgid "Something went wrong"
@@ -2855,23 +2855,23 @@ msgstr "Synchronisieren"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCHI Block Rewards"
+#~ msgid "THCX Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCHI Farming Rewards"
+#~ msgid "THCX Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCHI Fees Collected"
+#~ msgid "THCX Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCHI User Fees"
-#~ msgstr "TXCHI User Fees"
+#~ msgid "THCX User Fees"
+#~ msgstr "THCX User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCHI User Transaction Fees"
+#~ msgid "THCX User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2957,8 +2957,8 @@ msgstr ""
 #~ msgstr "Die gesamten Transaktionsgebühren in diesem Block. Die Belohnung bekommt der Farmer."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:107
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCHI address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-#~ msgstr "Hier sind die Anweisungen wie der Farmer bezahlt werden möchte. Standardmäßig ist dies eine XCHI - Adresse, aber es kann ein beliebiger String kleiner als 1024 Zeichen sein, welcher auch eine andere Blockchain oder ein anderes Bezahlungssystem repräsentieren kann."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HCX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgstr "Hier sind die Anweisungen wie der Farmer bezahlt werden möchte. Standardmäßig ist dies eine HCX - Adresse, aber es kann ein beliebiger String kleiner als 1024 Zeichen sein, welcher auch eine andere Blockchain oder ein anderes Bezahlungssystem repräsentieren kann."
 
 #: src/components/plot/PlotsFailed.tsx:36
 #~ msgid "These plots are invalid, you might want to delete them."
@@ -3660,15 +3660,6 @@ msgstr "synchronisieren"
 #~ msgid "{0} points {1} - {2} hours ago"
 #~ msgstr "{0} Punkte {1} - vor {2} Stunden"
 
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{chin, plural, one {chin} other {chins}}"
-#~ msgstr "{chin, plural, one {chin} other {chins}}"
-
-#: src/components/offers/OfferSummaryRow.tsx:40
-#: src/components/offers/OfferViewer.tsx:95
-msgid "{chins, plural, one {chin} other {chins}}"
-msgstr ""
-
 #: src/components/farm/card/FarmCardBlockRewards.tsx:35
 #~ msgid "{currencyCode} Block Rewards"
 #~ msgstr "{currencyCode} Block Belohnungen"
@@ -3680,6 +3671,15 @@ msgstr ""
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 #~ msgid "{currencyCode} User Transaction Fees"
 #~ msgstr "{currencyCode} Benutzer Transaktionsgebühren"
+
+#: src/components/core/components/Amount/Amount.tsx:82
+#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
+
+#: src/components/offers/OfferSummaryRow.tsx:40
+#: src/components/offers/OfferViewer.tsx:95
+msgid "{vojos, plural, one {vojo} other {vojos}}"
+msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

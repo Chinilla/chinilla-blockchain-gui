@@ -23,7 +23,7 @@ import {
   calculatePoolReward,
   calculateBaseFarmerReward,
   useCurrencyCode,
-  chinToChinilla,
+  vojoToChinilla,
   DashboardTitle,
   Suspender,
 } from '@chinilla/core';
@@ -160,13 +160,13 @@ export default function Block() {
       ? blockRecord.weight - prevBlockRecord.weight
       : blockRecord?.weight ?? 0;
 
-  const poolReward = chinToChinilla(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = chinToChinilla(
+  const poolReward = vojoToChinilla(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = vojoToChinilla(
     calculateBaseFarmerReward(blockRecord.height),
   );
 
   const chinillaFees = blockRecord.fees !== undefined
-    ? chinToChinilla(blockRecord.fees)
+    ? vojoToChinilla(blockRecord.fees)
     : '';
 
   const rows = [

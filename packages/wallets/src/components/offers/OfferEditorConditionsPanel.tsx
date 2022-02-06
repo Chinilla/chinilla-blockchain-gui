@@ -4,10 +4,10 @@ import { Trans } from '@lingui/macro';
 import { 
   Amount, 
   Flex,
-  chinToChinilla,
-  chinToChinillaLocaleString,
-  chinToCAT,
-  chinToCATLocaleString,
+  vojoToChinilla,
+  vojoToChinillaLocaleString,
+  vojoToCAT,
+  vojoToCATLocaleString,
 } from '@chinilla/core';
 import { 
   Divider, 
@@ -46,12 +46,12 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
     if (!isLoading && tradeSide === 'sell' && walletBalance && walletBalance.walletId == row.assetWalletId) {
       switch (item.walletType) {
         case WalletType.STANDARD_WALLET:
-          balanceString = chinToChinillaLocaleString(walletBalance.spendableBalance);
-          balance = chinToChinilla(walletBalance.spendableBalance);
+          balanceString = vojoToChinillaLocaleString(walletBalance.spendableBalance);
+          balance = vojoToChinilla(walletBalance.spendableBalance);
           break;
         case WalletType.CAT:
-          balanceString = chinToCATLocaleString(walletBalance.spendableBalance);
-          balance = chinToCAT(walletBalance.spendableBalance);
+          balanceString = vojoToCATLocaleString(walletBalance.spendableBalance);
+          balance = vojoToCAT(walletBalance.spendableBalance);
           break;
         default:
           break;
@@ -107,7 +107,7 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
               name={`${namePrefix}.amount`}
               disabled={disabled}
               symbol={item.walletType === WalletType.STANDARD_WALLET ? undefined : ""}
-              showAmountInChins={item.walletType === WalletType.STANDARD_WALLET}
+              showAmountInVojos={item.walletType === WalletType.STANDARD_WALLET}
               required
               fullWidth
             />

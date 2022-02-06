@@ -20,9 +20,9 @@ import {
   useOpenDialog,
   useShowError,
   useOpenExternal,
-  chinillaToChin,
-  chinToChinillaLocaleString,
-  chinToCATLocaleString,
+  chinillaToVojo,
+  vojoToChinillaLocaleString,
+  vojoToCATLocaleString,
 } from '@chinilla/core';
 import {
   Box,
@@ -78,21 +78,21 @@ const StyledValue = styled(Box)`
 `;
 
 type OfferChinAmountProps = {
-  chins: number;
-  chinThreshold?: number
+  vojos: number;
+  vojoThreshold?: number
 };
 
 function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement{
-  const { chins, chinThreshold } = props;
+  const { vojos, vojoThreshold } = props;
 
   return (
     <>
-      { chinThreshold && chins < chinThreshold && (
+      { vojoThreshold && vojos < vojoThreshold && (
         <Flex flexDirection="row" flexGrow={1} gap={1}>
           (
-          <FormatLargeNumber value={chins} />
+          <FormatLargeNumber value={vojos} />
           <Box>
-            <Plural value={chins} one="chin" other="chins" />
+            <Plural value={vojos} one="vojo" other="vojos" />
           </Box>
           )
         </Flex>
@@ -102,8 +102,8 @@ function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement{
 }
 
 OfferChinAmount.defaultProps = {
-  chins: 0,
-  chinThreshold: 1000000000,  // 1 billion
+  vojos: 0,
+  vojoThreshold: 1000000000,  // 1 billion
 };
 
 type OfferDetailsProps = {
@@ -218,7 +218,7 @@ function OfferDetails(props: OfferDetailsProps) {
         return (
           <Typography variant="body2">
             <Flex flexDirection="row" flexGrow={1} gap={1}>
-              {chinToChinillaLocaleString(coin.amount)}
+              {vojoToChinillaLocaleString(coin.amount)}
             </Flex>
           </Typography>
         )
@@ -281,7 +281,7 @@ function OfferDetails(props: OfferDetailsProps) {
 
   async function handleAcceptOffer(formData: any) {
     const { fee } = formData;
-    const feeInChins = fee ? Number.parseFloat(chinillaToChin(fee)) : 0;
+    const feeInVojos = fee ? Number.parseFloat(chinillaToVojo(fee)) : 0;
     const offeredUnknownCATs: string[] = Object.entries(summary.offered).filter(([assetId]) => lookupByAssetId(assetId) === undefined).map(([assetId]) => assetId);
 
     const confirmedAccept = await openDialog(
@@ -336,7 +336,7 @@ function OfferDetails(props: OfferDetailsProps) {
     try {
       setIsAccepting(true);
 
-      const response = await takeOffer({ offer: offerData, fee: feeInChins });
+      const response = await takeOffer({ offer: offerData, fee: feeInVojos });
 
       if (response.data?.success === true) {
         await openDialog(
@@ -408,7 +408,7 @@ function OfferDetails(props: OfferDetailsProps) {
 
   function OfferSummaryEntry({ assetId, amount, ...rest}: { assetId: string, amount: number }) {
     const assetIdInfo = lookupByAssetId(assetId);
-    const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chinToCATLocaleString(amount);
+    const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : vojoToCATLocaleString(amount);
     const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
 
     return (
@@ -432,7 +432,7 @@ function OfferDetails(props: OfferDetailsProps) {
         </Typography>
         {assetIdInfo?.walletType === WalletType.STANDARD_WALLET && (
           <Typography variant="body1" color="textSecondary">
-            <OfferChinAmount chins={amount} />
+            <OfferChinAmount vojos={amount} />
           </Typography>
         )}
       </Flex>

@@ -33,9 +33,9 @@ export default function useAssetIdName() {
       let isVerified = false;
 
       if (walletType === WalletType.STANDARD_WALLET) {
-        assetId = 'xchi';
+        assetId = 'hcx';
         name = 'Chinilla';
-        symbol = 'XCHI';
+        symbol = 'HCX';
         isVerified = true;
       }
       else if (walletType === WalletType.CAT) {

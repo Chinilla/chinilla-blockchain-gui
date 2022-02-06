@@ -11,8 +11,8 @@ import {
   Form,
   FormBackButton,
   State,
-  chinToChinillaLocaleString,
-  chinillaToChin,
+  vojoToChinillaLocaleString,
+  chinillaToVojo,
 } from '@chinilla/core';
 import { useForm } from 'react-hook-form';
 import { usePwAbsorbRewardsMutation, useGetPlotNFTsQuery } from '@chinilla/api-react'
@@ -63,7 +63,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
       const walletId = nft?.poolWalletStatus.walletId;
 
       const { fee } = data;
-      const feeChins = chinillaToChin(fee);
+      const feeVojos = chinillaToVojo(fee);
 
 
       if (walletId === undefined) { 
@@ -72,7 +72,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
 
       await pwAbsorbRewards({
         walletId, 
-        fee: feeChins,
+        fee: feeVojos,
       }).unwrap();
 
       navigate(-1);
@@ -143,7 +143,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
               <Trans>
                 You will recieve{' '}
                 <UnitFormat
-                  value={chinToChinillaLocaleString(balance)}
+                  value={vojoToChinillaLocaleString(balance)}
                   display="inline"
                   state={State.SUCCESS}
                 />{' '}

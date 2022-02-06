@@ -18,8 +18,8 @@ import {
   TableControlled,
   TooltipIcon,
   useOpenDialog,
-  chinillaToChin, 
-  chinToCATLocaleString,
+  chinillaToVojo, 
+  vojoToCATLocaleString,
   useShowSaveDialog,
   Tooltip,
 } from '@chinilla/core';
@@ -78,8 +78,8 @@ function ConfirmOfferCancellation(props: ConfirmOfferCancellationProps) {
 
   // Communicate value updates to the parent component
   useEffect(() => {
-    const feeInChins = fee ? Number.parseFloat(chinillaToChin(fee)) : 0;
-    onUpdateValues({ cancelWithTransaction, cancellationFee: feeInChins });
+    const feeInVojos = fee ? Number.parseFloat(chinillaToVojo(fee)) : 0;
+    onUpdateValues({ cancelWithTransaction, cancellationFee: feeInVojos });
   }, [cancelWithTransaction, fee]);
 
   return (
@@ -246,7 +246,7 @@ function OfferList(props: OfferListProps) {
         field: (row: OfferTradeRecord) => {
           const resolvedOfferInfo = Object.entries(row.summary.offered).map(([assetId, amount]) => {
             const assetIdInfo = lookupByAssetId(assetId);
-            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chinToCATLocaleString(amount);
+            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : vojoToCATLocaleString(amount);
             const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
             return {
               displayAmount,
@@ -269,7 +269,7 @@ function OfferList(props: OfferListProps) {
         field: (row: OfferTradeRecord) => {
           const resolvedOfferInfo = Object.entries(row.summary.requested).map(([assetId, amount]) => {
             const assetIdInfo = lookupByAssetId(assetId);
-            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chinToCATLocaleString(amount);
+            const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : vojoToCATLocaleString(amount);
             const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
             return {
               displayAmount,
@@ -477,7 +477,7 @@ export function OfferManager() {
             <StyledTradeIcon color="primary" />
             <Typography variant="body1">
               <Trans>
-                Create an offer to exchange XCHI or other tokens. View an offer to inspect and accept an offer made by another party.
+                Create an offer to exchange HCX or other tokens. View an offer to inspect and accept an offer made by another party.
               </Trans>
             </Typography>
             <Button onClick={handleCreateOffer} variant="contained" color="primary">

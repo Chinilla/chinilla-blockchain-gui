@@ -15,7 +15,7 @@ import {
   Flex,
   Card,
   useOpenDialog,
-  chinillaToChin,
+  chinillaToVojo,
   getTransactionResult,
   useIsSimulator,
 } from '@chinilla/core';
@@ -110,8 +110,8 @@ export default function WalletSend(props: SendCardProps) {
     const response = await sendTransaction({
       walletId,
       address,
-      amount: chinillaToChin(amount),
-      fee: chinillaToChin(fee),
+      amount: chinillaToVojo(amount),
+      fee: chinillaToVojo(fee),
       waitForConfirmation: true,
     }).unwrap();
 

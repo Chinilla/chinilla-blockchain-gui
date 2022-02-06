@@ -83,32 +83,32 @@ chinilla_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const chin_to_chinilla = (chin) => {
-  return chinilla_formatter(Number.parseInt(chin), 'chin').to('chinilla').value();
+export const vojo_to_chinilla = (vojo) => {
+  return chinilla_formatter(Number.parseInt(vojo), 'vojo').to('chinilla').value();
 };
 
-export const chinilla_to_chin = (chinilla) => {
+export const chinilla_to_vojo= (chinilla) => {
   return chinilla_formatter(Number.parseFloat(Number(chinilla)), 'chinilla')
-    .to('chin')
+    .to('vojo')
     .value();
 };
 
-export const chin_to_chinilla_string = (chin) => {
-  return chinilla_formatter(Number(chin), 'chin').to('chinilla').toString();
+export const vojo_to_chinilla_string = (vojo) => {
+  return chinilla_formatter(Number(vojo), 'vojo').to('chinilla').toString();
 };
 
-export const chin_to_colouredcoin = (chin) => {
-  return chinilla_formatter(Number.parseInt(chin), 'chin')
+export const vojo_to_colouredcoin = (vojo) => {
+  return chinilla_formatter(Number.parseInt(vojo), 'vojo')
     .to('colouredcoin')
     .value();
 };
 
-export const colouredcoin_to_chin = (colouredcoin) => {
+export const colouredcoin_to_vojo= (colouredcoin) => {
   return chinilla_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
-    .to('chin')
+    .to('vojo')
     .value();
 };
 
-export const chin_to_colouredcoin_string = (chin) => {
-  return chinilla_formatter(Number(chin), 'chin').to('colouredcoin').toString();
+export const vojo_to_colouredcoin_string = (vojo) => {
+  return chinilla_formatter(Number(vojo), 'vojo').to('colouredcoin').toString();
 };

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { useGetWalletBalanceQuery } from '@chinilla/api-react';
 import { TransactionType } from '@chinilla/api';
 import type { Transaction } from '@chinilla/api';
-import { chinToChinilla, blockHeightToTimestamp } from '@chinilla/core';
+import { vojoToChinilla, blockHeightToTimestamp } from '@chinilla/core';
 import useWalletTransactions from '../hooks/useWalletTransactions';
 
 /*
@@ -196,8 +196,8 @@ function prepareGraphPoints(
   const points = [
     {
       x: peakTransaction.confirmedAtHeight,
-      y: Math.max(0, Number(chinToChinilla(start))),
-      tooltip: chinToChinilla(balance),
+      y: Math.max(0, Number(vojoToChinilla(start))),
+      tooltip: vojoToChinilla(balance),
     },
   ];
 
@@ -208,8 +208,8 @@ function prepareGraphPoints(
 
     points.push({
       x: timestamp,
-      y: Math.max(0, Number(chinToChinilla(start))),
-      tooltip: chinToChinilla(start),
+      y: Math.max(0, Number(vojoToChinilla(start))),
+      tooltip: vojoToChinilla(start),
     });
   });
 

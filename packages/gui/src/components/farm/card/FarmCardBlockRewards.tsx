@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, chinToChinillaLocaleString } from '@chinilla/core';
+import { useCurrencyCode, vojoToChinillaLocaleString } from '@chinilla/core';
 import { useGetFarmedAmountQuery } from '@chinilla/api-react';
 import FarmCard from './FarmCard';
 
@@ -18,7 +18,7 @@ export default function FarmCardBlockRewards() {
         BigInt(poolRewardAmount.toString());
       return (
         <>
-          {chinToChinillaLocaleString(val)}
+          {vojoToChinillaLocaleString(val)}
           &nbsp;
           {currencyCode}
         </>

@@ -13,10 +13,10 @@ const display: {
   [key in Unit]: Display;
 } = {
   chinilla: {
-    format: '{amount} XCHI',
+    format: '{amount} HCX',
     fractionDigits: 12,
   },
-  chin: {
+  vojo: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },

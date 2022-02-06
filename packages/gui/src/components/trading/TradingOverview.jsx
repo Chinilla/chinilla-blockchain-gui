@@ -11,7 +11,7 @@ import {
   Box,
   Typography,
 } from '@material-ui/core';
-import { Card, Flex, chinToChinillaLocaleString } from '@chinilla/core';
+import { Card, Flex, vojoToChinillaLocaleString } from '@chinilla/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Grid from '@material-ui/core/Grid';
 import HelpIcon from '@material-ui/icons/Help';
@@ -300,7 +300,7 @@ const OfferRow = (props) => {
       </Box>
       <Box flexGrow={1}>{side}</Box>
       <Box flexGrow={1} style={{ textAlign: 'right' }}>
-        {chinToChinillaLocaleString(amount)}
+        {vojoToChinillaLocaleString(amount)}
       </Box>
     </Box>
   );

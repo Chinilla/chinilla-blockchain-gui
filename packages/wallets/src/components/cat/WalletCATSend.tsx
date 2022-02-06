@@ -11,8 +11,8 @@ import {
   TextFieldNumber,
   TextField,
   useOpenDialog,
-  chinillaToChin,
-  catToChin,
+  chinillaToVojo,
+  catToVojo,
   useIsSimulator,
   useCurrencyCode,
   toBech32m,
@@ -137,8 +137,8 @@ export default function WalletCATSend(props: Props) {
       address = address.slice(2);
     }
 
-    const amountValue = catToChin(amount);
-    const feeValue = chinillaToChin(fee);
+    const amountValue = catToVojo(amount);
+    const feeValue = chinillaToVojo(fee);
 
     const memo = data.memo.trim();
     const memos = memo ? [memo] : undefined;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useToggle } from 'react-use';
-import { Flex, UnitFormat, More, Table, chinToChinillaLocaleString, Suspender } from '@chinilla/core';
+import { Flex, UnitFormat, More, Table, vojoToChinillaLocaleString, Suspender } from '@chinilla/core';
 import { useNavigate } from 'react-router';
 import {
   ViewList as ViewListIcon,
@@ -53,7 +53,7 @@ const groupsCols = [
       if (state === PlotNFTStateEnum.SELF_POOLING) {
         return (
           <UnitFormat
-            value={chinToChinillaLocaleString(nft.walletBalance.confirmedWalletBalance ?? 0)}
+            value={vojoToChinillaLocaleString(nft.walletBalance.confirmedWalletBalance ?? 0)}
           />
         );
       }

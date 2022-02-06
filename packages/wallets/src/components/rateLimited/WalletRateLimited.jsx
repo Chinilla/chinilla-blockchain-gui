@@ -13,7 +13,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Tooltip } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
-import { AlertDialog, Card, Flex, chinillaToChin, chinToChinillaLocaleString } from '@chinilla/core';
+import { AlertDialog, Card, Flex, chinillaToVojo, vojoToChinillaLocaleString } from '@chinilla/core';
 import {
   send_transaction,
   rl_set_user_info_action,
@@ -239,9 +239,9 @@ const IncompleteCard = (props) => {
 
   function submit() {
     const ip_val = ip_input.value;
-    const hexcheck = /[\da-f]+$/gi;
+    const hehcxeck = /[\da-f]+$/gi;
 
-    if (!hexcheck.test(ip_val) || ip_val.value === '') {
+    if (!hehcxeck.test(ip_val) || ip_val.value === '') {
       dispatch(openDialog('Please enter a valid info packet'));
       return;
     }
@@ -399,7 +399,7 @@ const RLDetailsCard = (props) => {
               <Typography variant="subtitle1">
                 <Trans>
                   Spending Limit (chinilla per interval):{' '}
-                  {chinToChinillaLocaleString(limit)}
+                  {vojoToChinillaLocaleString(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -446,7 +446,7 @@ const RLDetailsCard = (props) => {
               <Typography variant="subtitle1">
                 <Trans>
                   Spending Limit (chinilla per interval):{' '}
-                  {chinToChinillaLocaleString(limit)}
+                  {vojoToChinillaLocaleString(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -511,7 +511,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {chinToChinillaLocaleString(props.balance)} {currencyCode}
+            {vojoToChinillaLocaleString(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -651,8 +651,8 @@ const SendCard = (props) => {
       );
       return;
     }
-    const amount = chinillaToChin(amount_input.value);
-    const fee = chinillaToChin(fee_input.value);
+    const amount = chinillaToVojo(amount_input.value);
+    const fee = chinillaToVojo(fee_input.value);
 
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);

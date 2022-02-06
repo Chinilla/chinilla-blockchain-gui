@@ -24,7 +24,7 @@ import { WalletType } from '@chinilla/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferLocalStorageKeys from './OfferLocalStorage';
 import styled from 'styled-components';
-import { chinillaToChin, catToChin } from '@chinilla/core';
+import { chinillaToVojo, catToVojo} from '@chinilla/core';
 import fs from 'fs';
 
 const StyledEditorBox = styled.div`
@@ -63,14 +63,14 @@ function OfferEditor(props: OfferEditorProps) {
   function updateOffer(offer: { [key: string]: number | string }, row: OfferEditorRowData, debit: boolean) {
     const { amount, assetWalletId, walletType } = row;
     if (assetWalletId) {
-      let chinAmount = 0;
+      let vojoAmount = 0;
       if (walletType === WalletType.STANDARD_WALLET) {
-        chinAmount = Number.parseFloat(chinillaToChin(amount));
+        vojoAmount = Number.parseFloat(chinillaToVojo(amount));
       }
       else if (walletType === WalletType.CAT) {
-        chinAmount = Number.parseFloat(catToChin(amount));
+        vojoAmount = Number.parseFloat(catToVojo(amount));
       }
-      offer[assetWalletId] = debit ? -chinAmount : chinAmount;
+      offer[assetWalletId] = debit ? -chinAmount : vojoAmount;
     }
     else {
       console.log('missing asset wallet id');

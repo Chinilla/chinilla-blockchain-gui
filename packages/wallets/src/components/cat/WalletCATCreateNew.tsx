@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { chinillaToChin, AlertDialog, Amount, Fee, Back, ButtonLoading, Card, Flex, Form } from '@chinilla/core';
+import { chinillaToVojo, AlertDialog, Amount, Fee, Back, ButtonLoading, Card, Flex, Form } from '@chinilla/core';
 import { Box, Grid } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
@@ -54,12 +54,12 @@ export default function WalletCATCreateNew() {
       }
       */
 
-      const amountChins = chinillaToChin(amount || '0');
-      const feeChins = chinillaToChin(fee || '0');
+      const amountVojos = chinillaToVojo(amount || '0');
+      const feeVojos = chinillaToVojo(fee || '0');
 
 
       /*
-      const response = await dispatch(create_cc_action(amountChins, feeChins));
+      const response = await dispatch(create_cc_action(amountVojos, feeVojos));
       if (response && response.data && response.data.success === true) {
         history.push(`/dashboard/wallets/${response.data.wallet_id}`);
       }

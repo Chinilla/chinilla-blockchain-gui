@@ -59,7 +59,7 @@ function buildAssetSelectorList(
 
     if (wallet.type === WalletType.STANDARD_WALLET) {
       name = 'Chinilla';
-      symbol = 'XCHI';
+      symbol = 'HCX';
     }
     else if (wallet.type === WalletType.CAT) {
       name = wallet.name;

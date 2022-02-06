@@ -1,7 +1,7 @@
 import { WalletType, type OfferSummaryRecord } from '@chinilla/api';
 import {
-  chinToChinillaLocaleString,
-  chinToCATLocaleString,
+  vojoToChinillaLocaleString,
+  vojoToCATLocaleString,
 } from '@chinilla/core';
 import OfferState from './OfferState';
 import { AssetIdMapEntry } from '../../hooks/useAssetIdName';
@@ -123,10 +123,10 @@ export function colorForOfferState(state: OfferState): OfferStateColor {
 export function formatAmountForWalletType(amount: string | number, walletType: WalletType): string {
   let amountString = '';
   if (walletType === WalletType.STANDARD_WALLET) {
-    amountString = chinToChinillaLocaleString(amount);
+    amountString = vojoToChinillaLocaleString(amount);
   }
   else if (walletType === WalletType.CAT) {
-    amountString = chinToCATLocaleString(amount);
+    amountString = vojoToCATLocaleString(amount);
   }
   else {
     amountString = `${amount}`;

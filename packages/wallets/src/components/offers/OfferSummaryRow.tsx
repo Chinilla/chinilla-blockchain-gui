@@ -5,7 +5,7 @@ import {
   Flex,
   FormatLargeNumber,
   TooltipIcon,
-  chinToCATLocaleString,
+  vojoToCATLocaleString,
 } from '@chinilla/core';
 import {
   Box,
@@ -26,18 +26,18 @@ const StyledValue = styled(Box)`
 `;
 
 type OfferChinAmountProps = {
-  chins: number;
+  vojos: number;
 };
 
 function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement | null {
-  const { chins } = props;
+  const { vojos } = props;
 
   return (
     <Flex flexDirection="row" flexGrow={1} gap={1}>
       (
-      <FormatLargeNumber value={chins} />
+      <FormatLargeNumber value={vojos} />
       <Box>
-        <Plural value={chins} one="chin" other="chins" />
+        <Plural value={vojos} one="vojo" other="vojos" />
       </Box>
       )
     </Flex>
@@ -45,11 +45,11 @@ function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement | null
 }
 
 OfferChinAmount.defaultProps = {
-  chins: 0,
+  vojos: 0,
 };
 
-function shouldShowChinAmount(chins: number, chinThreshold = 1000000000 /* 1 billion */): boolean {
-  return chinThreshold > 0 && (chins < chinThreshold);
+function shouldShowChinAmount(vojos: number, vojoThreshold = 1000000000 /* 1 billion */): boolean {
+  return vojoThreshold > 0 && (vojos < vojoThreshold);
 }
 
 type Props = {
@@ -62,7 +62,7 @@ export default function OfferSummaryRow(props: Props) {
   const { assetId, amount, rowNumber } = props;
   const { lookupByAssetId } = useAssetIdName();
   const assetIdInfo = lookupByAssetId(assetId);
-  const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : chinToCATLocaleString(amount);
+  const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : vojoToCATLocaleString(amount);
   const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
   const showChinAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowChinAmount(amount);
 
@@ -78,7 +78,7 @@ export default function OfferSummaryRow(props: Props) {
       </Typography>
       {showChinAmount && (
         <Typography variant="body1" color="textSecondary">
-          <OfferChinAmount chins={amount} />
+          <OfferChinAmount vojos={amount} />
         </Typography>
       )}
       <TooltipIcon interactive>

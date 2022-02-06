@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { Amount, Form, AlertDialog, Back, Card, Flex, ButtonLoading, chinillaToChin } from '@chinilla/core';
+import { Amount, Form, AlertDialog, Back, Card, Flex, ButtonLoading, chinillaToVojo} from '@chinilla/core';
 import {
   Typography,
   Button,
@@ -36,7 +36,7 @@ export default function WalletDIDCreate() {
       const didArray = data.backup_dids?.map((item) => item.backupid) ?? [];
       let uniqDidArray = Array.from(new Set(didArray));
       uniqDidArray = uniqDidArray.filter(item => item !== "")
-      const amount_val = chinillaToChin(data.amount);
+      const amount_val = chinillaToVojo(data.amount);
       if (
         amount_val === '' ||
         Number(amount_val) === 0 ||
@@ -115,7 +115,7 @@ export default function WalletDIDCreate() {
                 <Typography variant="subtitle1">
                   Enter amount
                 </Typography>
-                <Tooltip title="The amount of Chinilla you enter must correspond to an even amount of chins. One additional chin will be added to the total amount for security purposes.">
+                <Tooltip title="The amount of Chinilla you enter must correspond to an even amount of vojos. One additional vojowill be added to the total amount for security purposes.">
                   <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
                 </Tooltip>
               </Flex>
@@ -130,9 +130,9 @@ export default function WalletDIDCreate() {
                     {() => (
                       <Flex display="flex" gap={1} alignItems="center">
                         <div>
-                          + 1 chin
+                          + 1 vojo
                         </div>
-                        <Tooltip title="This additional chin will be added to the total amount for security purposes.">
+                        <Tooltip title="This additional vojowill be added to the total amount for security purposes.">
                           <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
                         </Tooltip>
                       </Flex>
