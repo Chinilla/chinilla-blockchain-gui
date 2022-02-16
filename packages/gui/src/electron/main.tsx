@@ -1,27 +1,32 @@
 import { app, dialog, net, shell, ipcMain, BrowserWindow, IncomingMessage, Menu, session, nativeImage } from 'electron';
-import { default as remoteMain, initialize } from '@electron/remote/main';
+import { initialize } from '@electron/remote/main';
 import path from 'path';
 import React from 'react';
 import url from 'url';
-import os from 'os';
+// import os from 'os';
+// import installExtension, { REDUX_DEVTOOLS, REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
 import ReactDOMServer from 'react-dom/server';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 // handle setupevents as quickly as possible
 import '../config/env';
 import handleSquirrelEvent from './handleSquirrelEvent';
-import config from '../config/config';
-import dev_config from '../dev_config';
+import loadConfig from '../util/loadConfig';
+import manageDaemonLifetime from '../util/manageDaemonLifetime';
 import chinillaEnvironment from '../util/chinillaEnvironment';
-import chinillaConfig from '../util/config';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
 import AppIcon from '../assets/img/chinilla64x64.png';
 
+const NET = 'vanillanet';
+
+app.disableHardwareAcceleration();
+
 initialize();
 
 const appIcon = nativeImage.createFromPath(path.join(__dirname, AppIcon));
 let isSimulator = process.env.LOCAL_TEST === 'true';
+const isDev = process.env.NODE_ENV === 'development';
 
 function renderAbout(): string {
   const sheet = new ServerStyleSheet();
@@ -71,8 +76,6 @@ function openAbout() {
 
   // aboutWindow.webContents.openDevTools({ mode: 'detach' });
 }
-
-const { local_test } = config;
 
 if (!handleSquirrelEvent()) {
   // squirrel event handled and app will exit in 1000ms, so don't do anything else
@@ -124,10 +127,7 @@ if (!handleSquirrelEvent()) {
 
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
-    // this needs to happen early in startup so all processes share the same global config
-    global.sharedObj = { local_test };
-
-    const exitPyProc = (e) => {};
+    const exitPyProc = (e) => { };
 
     app.on('will-quit', exitPyProc);
 
@@ -138,11 +138,11 @@ if (!handleSquirrelEvent()) {
     let isClosing = false;
 
     const createWindow = async () => {
-      if (chinillaConfig.manageDaemonLifetime()) {
+      if (manageDaemonLifetime(NET)) {
         chinillaEnvironment.startChinillaDaemon();
       }
 
-      ipcMain.handle('getConfig', () => chinillaConfig.loadConfig('vanillanet'));
+      ipcMain.handle('getConfig', () => loadConfig(NET));
 
       ipcMain.handle('getTempDir', () => app.getPath('temp'));
 
@@ -221,30 +221,28 @@ if (!handleSquirrelEvent()) {
         },
       });
 
-      if(process.platform === 'linux') {
+      if (process.platform === 'linux') {
         mainWindow.setIcon(appIcon);
       }
 
-      if (dev_config.redux_tool) {
-        const reduxDevToolsPath = path.join(os.homedir(), dev_config.react_tool)
+      /*
+      if (isSimulator || isDev) {
         await app.whenReady();
-        await session.defaultSession.loadExtension(reduxDevToolsPath)
-      }
-
-      if (dev_config.react_tool) {
-        const reactDevToolsPath = path.join(os.homedir(), dev_config.redux_tool);
-        await app.whenReady();
-        await session.defaultSession.loadExtension(reactDevToolsPath)
-      }
+        installExtension(REDUX_DEVTOOLS);
+        installExtension(REACT_DEVELOPER_TOOLS);
+      }*/
 
       mainWindow.once('ready-to-show', () => {
         mainWindow.show();
       });
 
       // don't show remote daeomn detials in the title bar
-      if (!chinillaConfig.manageDaemonLifetime()) {
-        mainWindow.webContents.on('did-finish-load', () => {
-          mainWindow.setTitle(`${app.getName()} [${global.daemon_rpc_ws}]`);
+      if (!manageDaemonLifetime(NET)) {
+        mainWindow.webContents.on('did-finish-load', async () => {
+          const { url } = await loadConfig(NET);
+          if (mainWindow) {
+            mainWindow.setTitle(`${app.getName()} [${url}]`);
+          }
         });
       }
       // Uncomment this to open devtools by default
@@ -253,7 +251,7 @@ if (!handleSquirrelEvent()) {
       // }
       mainWindow.on('close', (e) => {
         // if the daemon isn't local we aren't going to try to start/stop it
-        if (decidedToClose || !chinillaConfig.manageDaemonLifetime()) {
+        if (decidedToClose || !manageDaemonLifetime(NET)) {
           return;
         }
         e.preventDefault();
@@ -262,10 +260,10 @@ if (!handleSquirrelEvent()) {
           const choice = dialog.showMessageBoxSync({
             type: 'question',
             buttons: [
-              i18n._(/* i18n */ {id: 'No'}),
-              i18n._(/* i18n */ {id: 'Yes'}),
+              i18n._(/* i18n */ { id: 'No' }),
+              i18n._(/* i18n */ { id: 'Yes' }),
             ],
-            title: i18n._(/* i18n */ {id: 'Confirm'}),
+            title: i18n._(/* i18n */ { id: 'Confirm' }),
             message: i18n._(
               /* i18n */ {
                 id: 'Are you sure you want to quit? GUI Plotting and farming will stop.',
@@ -279,7 +277,7 @@ if (!handleSquirrelEvent()) {
           isClosing = false;
           decidedToClose = true;
           mainWindow.webContents.send('exit-daemon');
-          mainWindow.setBounds({height: 500, width: 500});
+          mainWindow.setBounds({ height: 500, width: 500 });
           mainWindow.center();
           ipcMain.on('daemon-exited', (event, args) => {
             mainWindow.close();
@@ -292,13 +290,13 @@ if (!handleSquirrelEvent()) {
 
 
       const startUrl =
-      process.env.NODE_ENV === 'development'
-        ? 'http://localhost:3000'
-        : url.format({
-          pathname: path.join(__dirname, '/../renderer/index.html'),
-          protocol: 'file:',
-          slashes: true,
-        });
+        process.env.NODE_ENV === 'development'
+          ? 'http://localhost:3000'
+          : url.format({
+            pathname: path.join(__dirname, '/../renderer/index.html'),
+            protocol: 'file:',
+            slashes: true,
+          });
 
       mainWindow.loadURL(startUrl);
       require("@electron/remote/main").enable(mainWindow.webContents)
@@ -399,7 +397,7 @@ if (!handleSquirrelEvent()) {
                 click: () => mainWindow.toggleDevTools(),
               },
               {
-                label: isSimulator 
+                label: isSimulator
                   ? i18n._(/* i18n */ { id: 'Disable Simulator' })
                   : i18n._(/* i18n */ { id: 'Enable Simulator' }),
                 click: () => toggleSimulatorMode(),

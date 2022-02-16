@@ -1,12 +1,11 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, vojoToChinillaLocaleString } from '@chinilla/core';
+import { useCurrencyCode, vojoToChinillaLocaleString, CardSimple } from '@chinilla/core';
 import { useGetFarmedAmountQuery } from '@chinilla/api-react';
-import FarmCard from './FarmCard';
 
 export default function FarmCardUserFees() {
   const currencyCode = useCurrencyCode();
-  const { data, isLoading } = useGetFarmedAmountQuery();
+  const { data, isLoading, error } = useGetFarmedAmountQuery();
 
   const feeAmount = data?.feeAmount;
 
@@ -23,10 +22,11 @@ export default function FarmCardUserFees() {
   }, [feeAmount]);
 
   return (
-    <FarmCard
+    <CardSimple
       title={<Trans>User Transaction Fees</Trans>}
       value={userTransactionFees}
       loading={isLoading}
+      error={error}
     />
   );
 }

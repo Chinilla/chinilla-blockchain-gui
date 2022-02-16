@@ -1,14 +1,13 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber } from '@chinilla/core';
-import FarmCard from './FarmCard';
+import { FormatLargeNumber, CardSimple } from '@chinilla/core';
 import usePlots from '../../../hooks/usePlots';
 
 export default function FarmCardPlotCount() {
   const { uniquePlots } = usePlots();
 
   return (
-    <FarmCard
+    <CardSimple
       title={<Trans>Plot Count</Trans>}
       value={<FormatLargeNumber value={uniquePlots?.length} />}
       loading={!uniquePlots}

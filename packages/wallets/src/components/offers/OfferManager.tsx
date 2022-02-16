@@ -18,7 +18,7 @@ import {
   TableControlled,
   TooltipIcon,
   useOpenDialog,
-  chinillaToVojo, 
+  chinillaToVojo,
   vojoToCATLocaleString,
   useShowSaveDialog,
   Tooltip,
@@ -210,15 +210,15 @@ function OfferList(props: OfferListProps) {
   }
 
   function handleRowClick(event: any, row: OfferTradeRecord) {
-    navigate('/dashboard/wallets/offers/view', { 
+    navigate('/dashboard/wallets/offers/view', {
       state: {
-        tradeRecord: row 
+        tradeRecord: row
       },
     });
   }
 
   async function handleShare(event: any, row: OfferTradeRecord) {
-    openDialog((
+    await openDialog((
       <OfferShareDialog
         offerRecord={row}
         offerData={row._offerData}
@@ -314,7 +314,7 @@ function OfferList(props: OfferListProps) {
 
           return (
             <Flex flexDirection="row" justifyContent="center" gap={0}>
-              <Flex style={{width: '32px'}}>
+              <Flex style={{ width: '32px' }}>
                 {canShare && (
                   <Tooltip title={<Trans>Share</Trans>}>
                     <IconButton
@@ -322,12 +322,12 @@ function OfferList(props: OfferListProps) {
                       disabled={!canShare}
                       onClick={() => handleShare(undefined, row)}
                     >
-                      <Share style={{transform: 'scaleX(-1)'}} />
+                      <Share style={{ transform: 'scaleX(-1)' }} />
                     </IconButton>
                   </Tooltip>
                 )}
               </Flex>
-              <Flex style={{width: '32px'}}>
+              <Flex style={{ width: '32px' }}>
                 <More>
                   {({ onClose }: { onClose: () => void }) => (
                     <Box>
@@ -506,42 +506,24 @@ export function OfferManager() {
 export function CreateOffer() {
   const location: any = useLocation();
   const openDialog = useOpenDialog();
-  const [offerCreated, setOfferCreated] = React.useState<boolean>(false);
-  const [offerRecord, setOfferRecord] = React.useState<Object>({});
-  const [offerData, setOfferData] = React.useState<Object>({});
 
-  useEffect(() => {
-    async function showOfferShareDialog() {
-      await openDialog(
-        <OfferShareDialog
-          offerRecord={offerRecord}
-          offerData={offerData as string}
-          showSuppressionCheckbox={true}
-        />
-      );
-      setOfferCreated(false);
-      setOfferRecord({});
-      setOfferData({});
-    }
+  async function handleOfferCreated(obj: { offerRecord: any, offerData: any }) {
+    const { offerRecord, offerData } = obj;
 
-    if (offerCreated) {
-      showOfferShareDialog();
-    }
-  }, [offerCreated]);
+    await openDialog(
+      <OfferShareDialog
+        offerRecord={offerRecord}
+        offerData={offerData as string}
+        showSuppressionCheckbox={true}
+      />
+    );
+  }
 
   return (
     <Routes>
       <Route
         path="create"
-        element={
-          <CreateOfferEditor
-            onOfferCreated={(obj: { offerRecord: any, offerData: any }) => {
-              setOfferRecord(obj.offerRecord);
-              setOfferData(obj.offerData);
-              setOfferCreated(true);
-            }}
-          />
-        }
+        element={<CreateOfferEditor onOfferCreated={handleOfferCreated} />}
       />
       <Route path="import" element={<OfferImport />} />
 

@@ -128,8 +128,6 @@ export const walletApi = apiWithTag.injectEndpoints({
         onUpdate: (draft, data, { transactionId }) => {
           const { additionalData: { transaction } } = data;
 
-          console.log('on tx update', transaction.name, transactionId, transaction.name === transactionId, transaction);
-
           if (transaction.name === transactionId) {
             Object.assign(draft, transaction);
           }
@@ -281,6 +279,14 @@ export const walletApi = apiWithTag.injectEndpoints({
         endpoint: () => walletApi.endpoints.getWalletBalance,
       }, {
         command: 'onPendingTransaction',
+        service: Wallet,
+        endpoint: () => walletApi.endpoints.getWalletBalance,
+      }, {
+        command: 'onOfferAdded',
+        service: Wallet,
+        endpoint: () => walletApi.endpoints.getWalletBalance,
+      }, {
+        command: 'onOfferUpdated',
         service: Wallet,
         endpoint: () => walletApi.endpoints.getWalletBalance,
       }]),
@@ -716,6 +722,10 @@ export const walletApi = apiWithTag.injectEndpoints({
       }),
       onCacheEntryAdded: onCacheEntryAddedInvalidate(baseQuery, [{
         command: 'onSyncChanged',
+        service: Wallet,
+        endpoint: () => walletApi.endpoints.getSyncStatus,
+      }, {
+        command: 'onNewBlock',
         service: Wallet,
         endpoint: () => walletApi.endpoints.getSyncStatus,
       }]),

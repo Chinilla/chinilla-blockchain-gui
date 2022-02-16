@@ -1,14 +1,13 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatBytes } from '@chinilla/core';
+import { FormatBytes, CardSimple } from '@chinilla/core';
 import usePlots from '../../../hooks/usePlots';
-import FarmCard from './FarmCard';
 
 export default function FarmCardTotalSizeOfPlots() {
   const { size } = usePlots();
 
   return (
-    <FarmCard
+    <CardSimple
       title={<Trans>Total Size of Plots</Trans>}
       value={<FormatBytes value={size} precision={3} />}
     />
