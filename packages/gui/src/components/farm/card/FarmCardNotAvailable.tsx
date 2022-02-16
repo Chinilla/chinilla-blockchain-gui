@@ -1,7 +1,6 @@
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
-import { State, StateIndicator } from '@chinilla/core';
-import FarmCard from './FarmCard';
+import { State, StateIndicator, CardSimple } from '@chinilla/core';
 
 type Props = {
   title: ReactNode;
@@ -12,7 +11,7 @@ export default function FarmCardNotAvailable(props: Props) {
   const { title, state } = props;
 
   return (
-    <FarmCard
+    <CardSimple
       title={title}
       value={
         state ? (
