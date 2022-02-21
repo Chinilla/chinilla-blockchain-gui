@@ -24,7 +24,7 @@ import { WalletType } from '@chinilla/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferLocalStorageKeys from './OfferLocalStorage';
 import styled from 'styled-components';
-import { chinillaToVojo, catToVojo} from '@chinilla/core';
+import { chinillaToVojo, catToVojo } from '@chinilla/core';
 import fs from 'fs';
 
 const StyledEditorBox = styled.div`
@@ -47,8 +47,8 @@ function OfferEditor(props: OfferEditorProps) {
   const navigate = useNavigate();
   const defaultValues: FormData = {
     selectedTab: 0,
-    makerRows: [{ amount: '', assetWalletId: undefined, walletType: WalletType.STANDARD_WALLET }],
-    takerRows: [{ amount: '', assetWalletId: undefined, walletType: WalletType.STANDARD_WALLET }],
+    makerRows: [{ amount: '', assetWalletId: 0, walletType: WalletType.STANDARD_WALLET, spendableBalance: 0 }],
+    takerRows: [{ amount: '', assetWalletId: 0, walletType: WalletType.STANDARD_WALLET, spendableBalance: 0 }],
   };
   const methods = useForm<FormData>({
     shouldUnregister: false,
@@ -62,7 +62,7 @@ function OfferEditor(props: OfferEditorProps) {
 
   function updateOffer(offer: { [key: string]: number | string }, row: OfferEditorRowData, debit: boolean) {
     const { amount, assetWalletId, walletType } = row;
-    if (assetWalletId) {
+    if (assetWalletId > 0) {
       let vojoAmount = 0;
       if (walletType === WalletType.STANDARD_WALLET) {
         vojoAmount = Number.parseFloat(chinillaToVojo(amount));
@@ -85,7 +85,7 @@ function OfferEditor(props: OfferEditorProps) {
 
     formData.makerRows.forEach((row: OfferEditorRowData) => {
       updateOffer(offer, row, true);
-      if (!row.assetWalletId) {
+      if (row.assetWalletId === 0) {
         missingAssetSelection = true;
       }
       else if (!row.amount) {
@@ -97,7 +97,7 @@ function OfferEditor(props: OfferEditorProps) {
     });
     formData.takerRows.forEach((row: OfferEditorRowData) => {
       updateOffer(offer, row, false);
-      if (!row.assetWalletId) {
+      if (row.assetWalletId === 0) {
         missingAssetSelection = true;
       }
     });
@@ -209,7 +209,7 @@ function OfferEditor(props: OfferEditorProps) {
 }
 
 OfferEditor.defaultProps = {
-  onOfferCreated: () => {},
+  onOfferCreated: () => { },
 };
 
 type CreateOfferEditorProps = {
@@ -227,12 +227,12 @@ export function CreateOfferEditor(props: CreateOfferEditorProps) {
             <Trans>Create an Offer</Trans>
           </Back>
         </Flex>
-        <OfferEditor onOfferCreated={onOfferCreated}/>
+        <OfferEditor onOfferCreated={onOfferCreated} />
       </Flex>
     </Grid>
   );
 }
 
 CreateOfferEditor.defaultProps = {
-  onOfferCreated: () => {},
+  onOfferCreated: () => { },
 };
