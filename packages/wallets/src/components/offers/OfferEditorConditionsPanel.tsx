@@ -1,17 +1,17 @@
 import React, { useMemo } from 'react';
 import { useFormContext, useFieldArray } from 'react-hook-form';
 import { Trans } from '@lingui/macro';
-import { 
-  Amount, 
+import {
+  Amount,
   Flex,
   vojoToChinilla,
   vojoToChinillaLocaleString,
   vojoToCAT,
   vojoToCATLocaleString,
 } from '@chinilla/core';
-import { 
-  Divider, 
-  IconButton, 
+import {
+  Divider,
+  IconButton,
   Typography,
 } from '@material-ui/core';
 import { Add, Remove } from '@material-ui/icons';
@@ -79,10 +79,18 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
     updateRow(row);
   }
 
+  function handleAmountChange(namePrefix: string, amount: number) {
+    const row: OfferEditorRowData = getValues(namePrefix);
+
+    row.amount = amount;
+
+    updateRow(row);
+  }
+
   return (
     <Flex flexDirection="row" gap={0} {...rest}>
-      <Flex flexDirection="row" gap={0} style={{width: '90%'}}>
-        <Flex flexDirection="column" flexGrow={1} style={{width: '45%'}}>
+      <Flex flexDirection="row" gap={0} style={{ width: '90%' }}>
+        <Flex flexDirection="column" flexGrow={1} style={{ width: '45%' }}>
           <OfferAssetSelector
             name={`${namePrefix}.assetWalletId`}
             id={`${namePrefix}.assetWalletId`}
@@ -93,10 +101,10 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
             disabled={disabled}
           />
         </Flex>
-        <Flex style={{width: '2em'}}>
+        <Flex style={{ width: '2em' }}>
           {/* Spacing to accommodate center alignment of the OfferExchangeRate component rendered externally */}
         </Flex>
-        <Flex flexDirection="column" flexGrow={1} style={{width: '45%'}}>
+        <Flex flexDirection="column" flexGrow={1} style={{ width: '45%' }}>
           <Flex flexDirection="column" gap={1}>
             <Amount
               variant="filled"
@@ -107,11 +115,12 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
               name={`${namePrefix}.amount`}
               disabled={disabled}
               symbol={item.walletType === WalletType.STANDARD_WALLET ? undefined : ""}
-              showAmountInVojos={item.walletType === WalletType.STANDARD_WALLET}
+              showAmountInMojos={item.walletType === WalletType.STANDARD_WALLET}
+              onChange={(value: number) => handleAmountChange(namePrefix, value)}
               required
               fullWidth
             />
-            {tradeSide === 'sell' && row.assetWalletId && (
+            {tradeSide === 'sell' && (row.assetWalletId > 0) && (
               <Flex flexDirection="row" alignItems="center" gap={1}>
                 <Typography variant="body2">Spendable balance: </Typography>
                 {(spendableBalanceString === undefined) ? (
@@ -124,8 +133,8 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
           </Flex>
         </Flex>
       </Flex>
-      <Flex flexDirection="column" flexGrow={1} style={{width: '10%'}}>
-        <Flex flexDirection="row" justifyContent="top" alignItems="flex-start" gap={0.5} style={{paddingTop: '0.25em'}}>
+      <Flex flexDirection="column" flexGrow={1} style={{ width: '10%' }}>
+        <Flex flexDirection="row" justifyContent="top" alignItems="flex-start" gap={0.5} style={{ paddingTop: '0.25em' }}>
           <IconButton aria-label="remove" onClick={removeRow} disabled={disabled || !removeRow}>
             <Remove />
           </IconButton>
@@ -159,7 +168,7 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
     control,
     name: 'takerRows',
   });
-  const { data: wallets, isLoading }: { data: Wallet[], isLoading: boolean} = useGetWalletsQuery();
+  const { data: wallets, isLoading }: { data: Wallet[], isLoading: boolean } = useGetWalletsQuery();
   const { watch } = useFormContext();
   const { lookupByWalletId } = useAssetIdName();
   const makerRows: OfferEditorRowData[] = watch('makerRows');
@@ -173,12 +182,12 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
       const makerWalletIds: Set<number> = new Set();
       const takerWalletIds: Set<number> = new Set();
       makerRows.forEach((makerRow) => {
-        if (makerRow.assetWalletId) {
+        if (makerRow.assetWalletId > 0) {
           makerWalletIds.add(makerRow.assetWalletId);
         }
       });
       takerRows.forEach((takerRow) => {
-        if (takerRow.assetWalletId) {
+        if (takerRow.assetWalletId > 0) {
           takerWalletIds.add(takerRow.assetWalletId);
         }
       });
@@ -196,8 +205,8 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
     let takerExchangeRate: number | undefined = undefined;
 
     if (!isLoading && makerRows.length === 1 && takerRows.length === 1) {
-      const makerWalletId: string | undefined = makerRows[0].assetWalletId?.toString();
-      const takerWalletId: string | undefined = takerRows[0].assetWalletId?.toString();
+      const makerWalletId: string | undefined = makerRows[0].assetWalletId > 0 ? makerRows[0].assetWalletId.toString() : undefined;
+      const takerWalletId: string | undefined = takerRows[0].assetWalletId > 0 ? takerRows[0].assetWalletId.toString() : undefined;
 
       if (makerWalletId && takerWalletId) {
         makerAssetInfo = lookupByWalletId(makerWalletId);
@@ -222,6 +231,7 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
     { side: 'sell', fields: makerFields, namePrefix: 'makerRows', canAddRow: canAddMakerRow },
   ];
   const showAddCATsMessage = !canAddTakerRow && wallets.length === 1;
+  const showExchangeRate = !!makerAssetInfo && !!makerExchangeRate && !!takerAssetInfo && !!takerExchangeRate;
 
   if (makerSide === 'sell') {
     sections.reverse();
@@ -238,11 +248,11 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
           <Typography variant="subtitle1">{section.headerTitle}</Typography>
           {section.fields.map((field, fieldIndex) => (
             <OfferEditorConditionRow
-              key={field.id}
+              key={fieldIndex}
               namePrefix={`${section.namePrefix}[${fieldIndex}]`}
               item={field}
               tradeSide={section.side}
-              addRow={section.canAddRow ? (() => { section.side === 'buy' ? takerAppend({ amount: '', assetWalletId: '', walletType: WalletType.STANDARD_WALLET }) : makerAppend({ amount: '', assetWalletId: '', walletType: WalletType.STANDARD_WALLET }) }) : undefined }
+              addRow={section.canAddRow ? (() => { section.side === 'buy' ? takerAppend({ amount: '', assetWalletId: '', walletType: WalletType.STANDARD_WALLET }) : makerAppend({ amount: '', assetWalletId: '', walletType: WalletType.STANDARD_WALLET }) }) : undefined}
               removeRow={
                 section.fields.length > 1 ?
                   () => { section.side === 'buy' ? takerRemove(fieldIndex) : makerRemove(fieldIndex) } :
@@ -268,11 +278,11 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
         <>
           <Divider />
           <Flex flexDirection="row" gap={0}>
-            <Flex flexDirection="column" style={{width: '90%'}}>
+            <Flex flexDirection="column" style={{ width: '90%' }}>
               <OfferExchangeRate makerAssetInfo={makerAssetInfo} makerExchangeRate={makerExchangeRate} takerAssetInfo={takerAssetInfo} takerExchangeRate={takerExchangeRate} />
             </Flex>
             {/* 10% reserved for the end to align with the - + buttons in OfferEditorConditionRow */}
-            <Flex flexDirection="column" alignItems="center" style={{width: '10%'}}>
+            <Flex flexDirection="column" alignItems="center" style={{ width: '10%' }}>
             </Flex>
           </Flex>
           <Divider />
