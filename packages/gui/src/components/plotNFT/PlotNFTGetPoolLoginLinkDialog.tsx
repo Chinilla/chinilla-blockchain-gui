@@ -47,10 +47,6 @@ export default function PlotNFTGetPoolLoginLinkDialog(props: Props) {
       onClose();
     }
   }
-  function handleDialogClose(event: any, reason: any) {
-    if (reason !== 'backdropClick' || reason !== 'EscapeKeyDown') {
-      onClose();
-    }}
 
   return (
     <Dialog onClose={handleDialogClose} maxWidth="md" open={open}>

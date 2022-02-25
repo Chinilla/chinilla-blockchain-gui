@@ -157,27 +157,27 @@ export default function PlotOverviewPlots() {
         >
           {queuePlots
             ? queuePlots.map((item) => {
-              const { id } = item;
-              return (
-                <StyledTableRowQueue key={id}>
-                  <TableCell>
-                    <PlotQueueSize queueItem={item} />
-                  </TableCell>
-                  <TableCell>{item.queue}</TableCell>
-                  <TableCell />
-                  <TableCell />
-                  <TableCell />
-                  <TableCell />
-                  <TableCell />
-                  <TableCell>
-                    <PlotQueueIndicator queueItem={item} />
-                  </TableCell>
-                  <TableCell>
-                    <PlotQueueActions queueItem={item} />
-                  </TableCell>
-                </StyledTableRowQueue>
-              );
-            })
+                const { id } = item;
+                return (
+                  <StyledTableRowQueue key={id}>
+                    <TableCell>
+                      <PlotQueueSize queueItem={item} />
+                    </TableCell>
+                    <TableCell>{item.queue}</TableCell>
+                    <TableCell />
+                    <TableCell />
+                    <TableCell />
+                    <TableCell />
+                    <TableCell />
+                    <TableCell>
+                      <PlotQueueIndicator queueItem={item} />
+                    </TableCell>
+                    <TableCell>
+                      <PlotQueueActions queueItem={item} />
+                    </TableCell>
+                  </StyledTableRowQueue>
+                );
+              })
             : null}
         </Table>
       </Card>

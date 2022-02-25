@@ -2467,21 +2467,6 @@ msgstr ""
 msgid "Settings are located at the upper right corner"
 msgstr ""
 
-#: src/components/settings/SetPassphrasePrompt.tsx:141
-#: src/components/settings/SetPassphrasePrompt.tsx:220
-#: src/components/settings/Settings.tsx:205
-msgid "Set Passphrase"
-msgstr ""
-
-#: src/components/app/AppPassPrompt.tsx:75
-msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
-msgstr ""
-
-#: src/components/dashboard/DashboardSideBar.tsx:78
-#: src/components/settings/Settings.tsx:239
-msgid "Settings"
-msgstr ""
-
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
 #~ msgstr "Показать дополнительные опции"
@@ -2891,7 +2876,7 @@ msgstr "Общее количество итерации VDF"
 msgid "Total iterations since the start of the blockchain"
 msgstr "Общее количество итераций с момента запуска блокчейна"
 
-#: src/components/dashboard/DashboardSideBar.tsx:70
+#: src/components/dashboard/DashboardSideBar.tsx:27
 #~ msgid "Trade"
 #~ msgstr "Trade"
 
@@ -2957,10 +2942,6 @@ msgstr "Незаконченный"
 #~ msgstr "Неизвестный"
 
 #: src/components/app/AppPassPrompt.tsx:83
-msgid "Unlock Keyring"
-msgstr ""
-
-#: src/components/app/AppPassPrompt.tsx:188
 msgid "Unlock Keyring"
 msgstr ""
 
@@ -3339,14 +3320,6 @@ msgstr ""
 #~ msgid "{0, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 #~ msgstr ""
 
-#: src/components/plot/add/PlotAddChoosePlotter.tsx:89
-#~ msgid "thirdparty.plotter.disclaimer"
-#~ msgstr ""
-
-#: src/components/app/AppPassPrompt.tsx:48
-msgid "{0, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
-msgstr ""
-
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"
 #~ msgstr "{0} Block Rewards"
@@ -3363,10 +3336,6 @@ msgstr ""
 #: src/components/plotNFT/PlotNFTGraph.tsx:111
 msgid "{0} points {1} - {2} hours ago"
 msgstr "{0} очков {1} - {2} часов назад"
-
-#: src/components/core/components/Amount/Amount.tsx:82
-msgid "{chin, plural, one {chin} other {chins}}"
-msgstr ""
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:35
 #~ msgid "{currencyCode} Block Rewards"

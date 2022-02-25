@@ -34,10 +34,6 @@ export default function PlotNFTChangePool(props: Props) {
   const state = nft?.poolWalletStatus?.current?.state;
   const isDoubleFee = state === PlotNFTStateEnum.FARMING_TO_POOL;
 
-
-  const state = nft?.pool_wallet_status?.current?.state;
-  const isDoubleFee = state === PlotNFTStateEnum.FARMING_TO_POOL;
-
   async function handleSubmit(data: SubmitData) {
     const walletId = nft?.poolWalletStatus.walletId;
 
