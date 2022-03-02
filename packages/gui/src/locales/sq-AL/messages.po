@@ -184,8 +184,12 @@ msgid "Are you sure you want to disconnect?"
 msgstr "Je i sigurt që deshiron të shkëputesh?"
 
 #: src/electron/main.tsx:268
-msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
-msgstr "Je i sigurt që dëshiron të dalësh? Ndërfaqja për Plotting dhe Fermerin do të ndërpritet."
+msgid "Are you sure you want to quit?"
+msgstr ""
+
+#: src/electron/main.tsx:268
+#~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
+#~ msgstr "Je i sigurt që dëshiron të dalësh? Ndërfaqja për Plotting dhe Fermerin do të ndërpritet."
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:31
 #~ msgid "Are you sure you want to use k={plotSize}"

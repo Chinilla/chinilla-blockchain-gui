@@ -1,4 +1,5 @@
-import { WalletType, type OfferSummaryRecord } from '@chinilla/api';
+import { WalletType } from '@chinilla/api';
+import type { OfferSummaryRecord } from '@chinilla/api';
 import {
   vojoToChinillaLocaleString,
   vojoToCATLocaleString,

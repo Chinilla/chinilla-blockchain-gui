@@ -187,8 +187,8 @@ msgstr "Адрес / Хэш-головоломка"
 #~ msgstr ""
 
 #: src/components/WalletHistory.tsx:245
-msgid "All"
-msgstr ""
+#~ msgid "All"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:238
 #~ msgid "Alternate tmpdir/tmpdir2"
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Amount must be an even amount."
 msgstr "Сумма должна быть не менее %{count}"
 
-#: src/components/offers/OfferManager.tsx:108
+#: src/components/offers/OfferManager.tsx:109
 msgid "Are you sure you want to cancel your offer?"
 msgstr ""
 
@@ -369,8 +369,8 @@ msgstr ""
 #~ msgstr "Покупка"
 
 #: src/constants/WalletName.ts:23
-msgid "CAT Wallet"
-msgstr ""
+#~ msgid "CAT Wallet"
+#~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:49
 #~ msgid "CC Wallet"
@@ -394,9 +394,9 @@ msgstr ""
 msgid "Cancel"
 msgstr "Отмена"
 
-#: src/components/offers/OfferManager.tsx:102
-#: src/components/offers/OfferManager.tsx:170
-#: src/components/offers/OfferManager.tsx:421
+#: src/components/offers/OfferManager.tsx:103
+#: src/components/offers/OfferManager.tsx:175
+#: src/components/offers/OfferManager.tsx:432
 msgid "Cancel Offer"
 msgstr ""
 
@@ -404,7 +404,7 @@ msgstr ""
 #~ msgid "Cancel and Spend"
 #~ msgstr "Отменить и отправить"
 
-#: src/components/offers/OfferManager.tsx:127
+#: src/components/offers/OfferManager.tsx:130
 msgid "Cancel on blockchain"
 msgstr ""
 
@@ -443,6 +443,10 @@ msgstr ""
 #: src/electron/main.tsx:412
 #~ msgid "Chat on KeyBase"
 #~ msgstr "Чат в KeyBase"
+
+#: src/constants/WalletName.ts:23
+msgid "Chinilla Asset Token"
+msgstr ""
 
 #: src/electron/main.tsx:430
 #~ msgid "Chinilla"
@@ -650,7 +654,7 @@ msgstr "Кошелек Chinilla"
 #~ msgid "Claim Rewards"
 #~ msgstr "Забрать награду"
 
-#: src/components/offers/OfferManager.tsx:163
+#: src/components/offers/OfferManager.tsx:168
 #: src/components/offers/OfferShareDialog.tsx:380
 #: src/components/offers/OfferShareDialog.tsx:523
 #: src/components/offers/OfferShareDialog.tsx:727
@@ -881,11 +885,11 @@ msgstr "Создать транзакцию"
 #~ msgstr "Создать администрационный кошелек"
 
 #: src/components/offers/OfferEditor.tsx:227
-#: src/components/offers/OfferManager.tsx:517
+#: src/components/offers/OfferManager.tsx:528
 msgid "Create an Offer"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:512
+#: src/components/offers/OfferManager.tsx:523
 msgid "Create an offer to exchange HCX or other tokens. View an offer to inspect and accept an offer made by another party."
 msgstr ""
 
@@ -925,7 +929,7 @@ msgstr ""
 #~ msgid "Created by us:"
 #~ msgstr "Создано нами?"
 
-#: src/components/offers/OfferManager.tsx:129
+#: src/components/offers/OfferManager.tsx:132
 msgid "Creates and submits a transaction on the blockchain that cancels the offer"
 msgstr ""
 
@@ -937,7 +941,7 @@ msgstr ""
 #~ msgid "Creating Plot NFT for Self Pooling"
 #~ msgstr "Создание участка NFT для самостоятельной добычи"
 
-#: src/components/offers/OfferManager.tsx:338
+#: src/components/offers/OfferManager.tsx:348
 #: src/components/offers/OfferViewer.tsx:204
 msgid "Creation Date"
 msgstr ""
@@ -1087,7 +1091,7 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Отключить"
 
-#: src/components/offers/OfferManager.tsx:391
+#: src/components/offers/OfferManager.tsx:402
 msgid "Display Offer Data"
 msgstr ""
 
@@ -1301,7 +1305,7 @@ msgstr "Ферма"
 #: src/components/cat/WalletCATSend.tsx:218
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
-#: src/components/offers/OfferManager.tsx:144
+#: src/components/offers/OfferManager.tsx:147
 #: src/components/offers/OfferViewer.tsx:469
 #: src/components/rateLimited/WalletRateLimited.jsx:732
 #: src/components/WalletHistory.tsx:173
@@ -1469,7 +1473,7 @@ msgstr "IP адрес"
 msgid "If selected, your offer will be not be shared publicly."
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:113
+#: src/components/offers/OfferManager.tsx:116
 msgid "If you have already shared your offer file, you may need to submit a transaction to cancel the pending offer. Click \"Cancel on blockchain\" to submit a cancellation transaction."
 msgstr ""
 
@@ -1723,7 +1727,7 @@ msgstr ""
 #~ msgid "Manage Farming Rewards"
 #~ msgstr "Управление вознаграждением за фарминг"
 
-#: src/components/offers/OfferManager.tsx:504
+#: src/components/offers/OfferManager.tsx:515
 #: src/components/WalletHeader.tsx:85
 msgid "Manage Offers"
 msgstr ""
@@ -1848,7 +1852,7 @@ msgstr "Псевдоним"
 #~ msgid "No blocks farmed yet"
 #~ msgstr "Выращенных блоков пока нет"
 
-#: src/components/offers/OfferManager.tsx:457
+#: src/components/offers/OfferManager.tsx:468
 msgid "No current offers"
 msgstr ""
 
@@ -1971,7 +1975,7 @@ msgstr ""
 msgid "OfferBin URL"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:299
+#: src/components/offers/OfferManager.tsx:309
 msgid "Offered"
 msgstr ""
 
@@ -1979,11 +1983,11 @@ msgstr ""
 #~ msgid "Offers Created"
 #~ msgstr "Предложение создано"
 
-#: src/components/offers/OfferManager.tsx:531
+#: src/components/offers/OfferManager.tsx:542
 msgid "Offers you accepted"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:526
+#: src/components/offers/OfferManager.tsx:537
 msgid "Offers you created"
 msgstr ""
 
@@ -2647,7 +2651,7 @@ msgstr ""
 #~ msgid "Report an Issue..."
 #~ msgstr "Сообщить о проблеме..."
 
-#: src/components/offers/OfferManager.tsx:322
+#: src/components/offers/OfferManager.tsx:332
 msgid "Requested"
 msgstr ""
 
@@ -2684,7 +2688,7 @@ msgstr "Сохранить"
 msgid "Save Offer"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:406
+#: src/components/offers/OfferManager.tsx:417
 msgid "Save Offer File"
 msgstr ""
 
@@ -2825,7 +2829,7 @@ msgstr "Отправьте этот публичный ключ админист
 #~ msgid "Settings"
 #~ msgstr ""
 
-#: src/components/offers/OfferManager.tsx:352
+#: src/components/offers/OfferManager.tsx:363
 #: src/components/offers/OfferShareDialog.tsx:437
 #: src/components/offers/OfferShareDialog.tsx:566
 #: src/components/offers/OfferShareDialog.tsx:806
@@ -2865,7 +2869,7 @@ msgstr ""
 msgid "Show Asset Id"
 msgstr ""
 
-#: src/components/offers/OfferManager.tsx:377
+#: src/components/offers/OfferManager.tsx:388
 msgid "Show Details"
 msgstr ""
 
@@ -2958,7 +2962,7 @@ msgstr ""
 #~ msgid "State"
 #~ msgstr "Состояние"
 
-#: src/components/offers/OfferManager.tsx:276
+#: src/components/offers/OfferManager.tsx:286
 #: src/components/offers/OfferViewer.tsx:177
 #: src/components/WalletStatusCard.tsx:22
 msgid "Status"
@@ -3389,8 +3393,8 @@ msgstr ""
 #~ msgid "Unknown"
 #~ msgstr "Неизвестный"
 
-#: src/components/offers/OfferManager.tsx:283
-#: src/components/offers/OfferManager.tsx:306
+#: src/components/offers/OfferManager.tsx:293
+#: src/components/offers/OfferManager.tsx:316
 #: src/components/offers/OfferSummaryRow.tsx:66
 #: src/components/offers/OfferViewer.tsx:412
 msgid "Unknown CAT"
@@ -3456,7 +3460,7 @@ msgstr "Пользовательский публичный ключ"
 #~ msgstr "Ссылка для входа на пул"
 
 #: src/components/offers/OfferImport.tsx:153
-#: src/components/offers/OfferManager.tsx:520
+#: src/components/offers/OfferManager.tsx:531
 msgid "View an Offer"
 msgstr ""
 

@@ -19,9 +19,9 @@ type FeeProps = AmountProps;
 export default function Fee(props: FeeProps) {
   return (
     <Amount {...props}>
-      {({ value, vojo}) => {
-        const bigVojo= new Big(vojo.toString());
-        const isHigh = bigVojo.gte('1000');
+      {({ value, vojo }) => {
+        const bigVojo = new Big(vojo.toString());
+        const isHigh = bigVojo.gte('100000000000');
         const isLow = bigVojo.gt('0') && bigVojo.lt('1');
 
         if (!value) {
