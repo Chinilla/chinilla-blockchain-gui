@@ -184,8 +184,12 @@ msgid "Are you sure you want to disconnect?"
 msgstr "Opravdu se chcete odpojit?"
 
 #: src/electron/main.tsx:268
-msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
-msgstr "Opravdu chcete odejít? Vytváření aktuálních polí bude ztraceno a farmaření zastaveno."
+msgid "Are you sure you want to quit?"
+msgstr ""
+
+#: src/electron/main.tsx:268
+#~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
+#~ msgstr "Opravdu chcete odejít? Vytváření aktuálních polí bude ztraceno a farmaření zastaveno."
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:31
 #~ msgid "Are you sure you want to use k={plotSize}"

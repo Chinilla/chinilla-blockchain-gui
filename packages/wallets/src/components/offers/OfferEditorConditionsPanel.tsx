@@ -115,7 +115,7 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
               name={`${namePrefix}.amount`}
               disabled={disabled}
               symbol={item.walletType === WalletType.STANDARD_WALLET ? undefined : ""}
-              showAmountInMojos={item.walletType === WalletType.STANDARD_WALLET}
+              showAmountInVojos={item.walletType === WalletType.STANDARD_WALLET}
               onChange={(value: number) => handleAmountChange(namePrefix, value)}
               required
               fullWidth

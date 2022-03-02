@@ -21,7 +21,7 @@ const WalletName = {
     message: 'Custody Wallet',
   }),
   [WalletType.CAT]: defineMessage({
-    message: 'Chia Asset Token',
+    message: 'Chinilla Asset Token',
   }),
   [WalletType.RECOVERABLE]: defineMessage({
     message: 'Recoverable Wallet',

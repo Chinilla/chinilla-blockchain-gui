@@ -184,8 +184,12 @@ msgid "Are you sure you want to disconnect?"
 msgstr "Are you sure you want to remove this peer?"
 
 #: src/electron/main.tsx:268
-msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
-msgstr "Are you sure you want to quit? GUI Plotting and farming will stop, and no more beer money will be earned."
+msgid "Are you sure you want to quit?"
+msgstr ""
+
+#: src/electron/main.tsx:268
+#~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
+#~ msgstr "Are you sure you want to quit? GUI Plotting and farming will stop, and no more beer money will be earned."
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:31
 #~ msgid "Are you sure you want to use k={plotSize}"
