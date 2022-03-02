@@ -444,16 +444,13 @@ msgstr ""
 #~ msgid "Chat on KeyBase"
 #~ msgstr "Chat en Keybase"
 
-#: src/constants/WalletName.ts:23
-msgid "Chinilla Asset Token"
-msgstr ""
-
 #: src/electron/main.tsx:430
 #~ msgid "Chinilla"
 #~ msgstr "Chinilla"
 
 #: src/components/cat/WalletCATSelect.tsx:25
 #: src/components/create/WalletCreateList.tsx:32
+#: src/constants/WalletName.ts:23
 msgid "Chinilla Asset Token"
 msgstr ""
 

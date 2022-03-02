@@ -491,13 +491,13 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://keybase.io/team/chinilla_network.public');
+              openExternal('https://keybase.io/team/chinilla');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/chinilla_project');
+              openExternal('https://twitter.com/chinillaproject');
             },
           },
         ],
