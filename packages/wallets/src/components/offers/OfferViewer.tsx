@@ -77,12 +77,12 @@ const StyledValue = styled(Box)`
   word-break: break-all;
 `;
 
-type OfferChinAmountProps = {
+type OfferVojoAmountProps = {
   vojos: number;
   vojoThreshold?: number
 };
 
-function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement{
+function OfferVojoAmount(props: OfferVojoAmountProps): React.ReactElement{
   const { vojos, vojoThreshold } = props;
 
   return (
@@ -101,7 +101,7 @@ function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement{
   );
 }
 
-OfferChinAmount.defaultProps = {
+OfferVojoAmount.defaultProps = {
   vojos: 0,
   vojoThreshold: 1000000000,  // 1 billion
 };
@@ -432,7 +432,7 @@ function OfferDetails(props: OfferDetailsProps) {
         </Typography>
         {assetIdInfo?.walletType === WalletType.STANDARD_WALLET && (
           <Typography variant="body1" color="textSecondary">
-            <OfferChinAmount vojos={amount} />
+            <OfferVojoAmount vojos={amount} />
           </Typography>
         )}
       </Flex>

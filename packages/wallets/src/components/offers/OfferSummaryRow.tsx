@@ -25,11 +25,11 @@ const StyledValue = styled(Box)`
   word-break: break-all;
 `;
 
-type OfferChinAmountProps = {
+type OfferVojoAmountProps = {
   vojos: number;
 };
 
-function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement | null {
+function OfferVojoAmount(props: OfferVojoAmountProps): React.ReactElement | null {
   const { vojos } = props;
 
   return (
@@ -44,11 +44,11 @@ function OfferChinAmount(props: OfferChinAmountProps): React.ReactElement | null
   );
 }
 
-OfferChinAmount.defaultProps = {
+OfferVojoAmount.defaultProps = {
   vojos: 0,
 };
 
-function shouldShowChinAmount(vojos: number, vojoThreshold = 1000000000 /* 1 billion */): boolean {
+function shouldShowVojoAmount(vojos: number, vojoThreshold = 1000000000 /* 1 billion */): boolean {
   return vojoThreshold > 0 && (vojos < vojoThreshold);
 }
 
@@ -64,7 +64,7 @@ export default function OfferSummaryRow(props: Props) {
   const assetIdInfo = lookupByAssetId(assetId);
   const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : vojoToCATLocaleString(amount);
   const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
-  const showChinAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowChinAmount(amount);
+  const showVojoAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowVojoAmount(amount);
 
   return (
     <Flex flexDirections="row" alignItems="center" gap={1}>
@@ -76,9 +76,9 @@ export default function OfferSummaryRow(props: Props) {
           <Typography>{displayAmount} {displayName}</Typography>
         </Flex>
       </Typography>
-      {showChinAmount && (
+      {showVojoAmount && (
         <Typography variant="body1" color="textSecondary">
-          <OfferChinAmount vojos={amount} />
+          <OfferVojoAmount vojos={amount} />
         </Typography>
       )}
       <TooltipIcon interactive>

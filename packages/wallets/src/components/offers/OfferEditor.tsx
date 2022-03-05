@@ -70,7 +70,7 @@ function OfferEditor(props: OfferEditorProps) {
       else if (walletType === WalletType.CAT) {
         vojoAmount = Number.parseFloat(catToVojo(amount));
       }
-      offer[assetWalletId] = debit ? -chinAmount : vojoAmount;
+      offer[assetWalletId] = debit ? -vojoAmount : vojoAmount;
     }
     else {
       console.log('missing asset wallet id');
