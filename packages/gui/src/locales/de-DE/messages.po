@@ -110,7 +110,7 @@ msgstr "Plot zur Warteschlange hinzufügen"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:45
-#: src/components/plot/add/PlotAddForm.tsx:178
+#: src/components/plot/add/PlotAddForm.tsx:176
 #: src/components/plot/overview/PlotOverviewHero.tsx:52
 #: src/components/plot/PlotHeader.tsx:61
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
@@ -313,9 +313,9 @@ msgstr "Aber aktuell farmst du <0/>"
 
 #: src/components/app/AppPassPrompt.tsx:152
 #: src/components/backup/BackupCreate.tsx:50
-#: src/components/farm/FarmManageFarmingRewards.tsx:176
-#: src/components/fullNode/FullNodeAddConnection.tsx:86
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:128
+#: src/components/farm/FarmManageFarmingRewards.tsx:187
+#: src/components/fullNode/FullNodeAddConnection.tsx:85
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
 #: src/components/settings/ChangePassphrasePrompt.tsx:224
@@ -447,7 +447,7 @@ msgstr ""
 #~ msgid "Coloured Coin Options"
 #~ msgstr "Optionen für farbigen Coin"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:173
 #: src/electron/main.tsx:266
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
@@ -479,11 +479,11 @@ msgstr "Bestätigung"
 #~ msgid "Confirmed at height {0}"
 #~ msgstr "Bestätigt bei Höhe {0}"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:89
+#: src/components/fullNode/FullNodeAddConnection.tsx:88
 msgid "Connect"
 msgstr "Verbinden"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:65
+#: src/components/fullNode/FullNodeAddConnection.tsx:64
 #: src/components/fullNode/FullNodeConnections.tsx:109
 msgid "Connect to other peers"
 msgstr "Mit anderen Peers verbinden"
@@ -542,8 +542,8 @@ msgstr "Auf GitHub mitwirken"
 #~ msgstr "In die Zwischenablage kopieren"
 
 #: src/components/backup/BackupCreate.tsx:58
-#: src/components/plot/add/PlotAddForm.tsx:198
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:177
+#: src/components/plot/add/PlotAddForm.tsx:196
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:176
 msgid "Create"
 msgstr "Erstellen"
 
@@ -649,7 +649,7 @@ msgstr "Erstellen eines Plot-NFT und Pool-Beitritt"
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Erstellen eines Plot-NFT für Selbst-Pooling"
 
-#: src/components/plot/add/PlotAddForm.tsx:109
+#: src/components/plot/add/PlotAddForm.tsx:107
 msgid "Currency code is not defined"
 msgstr "Währungscode ist nicht definiert"
 
@@ -832,7 +832,7 @@ msgstr "Ändern"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:258
 #: src/components/plotNFT/PlotNFTCard.tsx:298
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:81
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:80
 msgid "Edit Payout Instructions"
 msgstr "Auszahlungseinstellungen bearbeiten"
 
@@ -936,11 +936,11 @@ msgstr "Öffentlicher Schlüssel des Farmers"
 msgid "Farmer Puzzle Hash"
 msgstr "Farmer Puzzle Hash"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:143
+#: src/components/farm/FarmManageFarmingRewards.tsx:154
 msgid "Farmer Reward Address"
 msgstr "Farmer Belohnungs Adresse"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:117
+#: src/components/farm/FarmManageFarmingRewards.tsx:128
 msgid "Farmer Reward Address is not properly formatted."
 msgstr "Adresse der Farmerbelohnung ist nicht korrekt formatiert."
 
@@ -948,7 +948,7 @@ msgstr "Adresse der Farmerbelohnung ist nicht korrekt formatiert."
 #~ msgid "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:111
+#: src/components/farm/FarmManageFarmingRewards.tsx:122
 msgid "Farmer Reward Address must not be empty."
 msgstr "Die Farmerbelohnungs-Adresse darf nicht leer sein."
 
@@ -989,7 +989,7 @@ msgstr ""
 msgid "Farming Status"
 msgstr "Farm Status"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:160
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:159
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:146
 #: src/components/pool/PoolInfo.tsx:17
 msgid "Fee"
@@ -1132,7 +1132,7 @@ msgstr "Host Name"
 msgid "IP address"
 msgstr "IP Adresse"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:72
+#: src/components/fullNode/FullNodeAddConnection.tsx:71
 msgid "IP address / host"
 msgstr "IP Adresse / Host"
 
@@ -1253,6 +1253,10 @@ msgstr "Letzter versuchter Nachweis"
 msgid "Last Height Farmed"
 msgstr "Letzte gefarmte Höhe"
 
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:18
+msgid "Last Transaction Block Time"
+msgstr ""
+
 #: src/components/farm/FarmLatestBlockChallenges.tsx:30
 msgid "Latest Block Challenges"
 msgstr "Neueste Block Herausforderungen"
@@ -1263,7 +1267,7 @@ msgid "Launcher Id"
 msgstr "Launcher ID"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:77
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:119
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:118
 msgid "Learn More"
 msgstr "Mehr erfahren"
 
@@ -1355,7 +1359,7 @@ msgstr "Farming Belohnungen verwalten"
 #~ msgid "Manage Recovery DIDs"
 #~ msgstr ""
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:99
+#: src/components/farm/FarmManageFarmingRewards.tsx:110
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Verwalte deine Farming Belohnungs Adressen"
 
@@ -1458,7 +1462,7 @@ msgstr "Bisher keine Blocks gefarmt"
 #~ msgid "No previous transactions"
 #~ msgstr "Bisher keine Transaktionen"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:136
+#: src/components/farm/FarmManageFarmingRewards.tsx:147
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "Keine privaten Schlüssel für eine oder beide Adresse. Nur sicher, wenn du Belohnungen an eine andere Wallet sendest."
 
@@ -1509,7 +1513,7 @@ msgstr "Nicht verbunden"
 msgid "Not found Plots"
 msgstr "Nicht gefundene Plots"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:164
+#: src/components/farm/FarmManageFarmingRewards.tsx:175
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 msgstr "Beachten Sie, dass dies Ihre Pooling-Auszahlungsadressen nicht ändert. Dies betrifft nur die alten Plots und die 0.25HCXBelohnung für Pooling-Plots."
 
@@ -1621,8 +1625,8 @@ msgstr "Spitzenhöhe"
 #~ msgstr "Peak Sub-block Height"
 
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:18
-msgid "Peak Time"
-msgstr "Spitzenzeit"
+#~ msgid "Peak Time"
+#~ msgstr "Spitzenzeit"
 
 #: src/components/plotNFT/PlotNFTState.tsx:43
 msgid "Pending"
@@ -1643,7 +1647,7 @@ msgstr "Ausstehend"
 #~ msgid "Pending Total Balance"
 #~ msgstr "Ausstehendes Gesamtguthaben"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:137
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
 #: src/hooks/useAbsorbRewards.tsx:43
 msgid "Please Confirm"
 msgstr "Bitte bestätigen"
@@ -1795,7 +1799,7 @@ msgstr "Plot Schlüssel"
 msgid "Plot NFT"
 msgstr "Plot-NFT"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:109
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:108
 #: src/components/plotNFT/PlotNFTChangePool.tsx:92
 msgid "Plot NFT with p2_singleton_puzzle_hash {plotNFTId} does not exists"
 msgstr "Plot-NFT mit p2_singleton_puzzle_hash {plotNFTId} existiert nicht"
@@ -1899,7 +1903,7 @@ msgstr "Pool Schlüssel"
 msgid "Pool Login Link"
 msgstr "Pool Login Link"
 
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:92
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:91
 msgid "Pool Payout Instructions"
 msgstr "Pool Auszahlungsanweisungen"
 
@@ -1912,11 +1916,11 @@ msgstr "Öffentlicher Pool Schlüssel"
 msgid "Pool Puzzle Hash"
 msgstr "Pool Puzzle Hash"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:153
+#: src/components/farm/FarmManageFarmingRewards.tsx:164
 msgid "Pool Reward Address"
 msgstr "Pool Belohnungs Adresse"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:129
+#: src/components/farm/FarmManageFarmingRewards.tsx:140
 msgid "Pool Reward Address is not properly formatted."
 msgstr "Adresse der Farmerbelohnung ist nicht korrekt formatiert."
 
@@ -1924,7 +1928,7 @@ msgstr "Adresse der Farmerbelohnung ist nicht korrekt formatiert."
 #~ msgid "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:124
+#: src/components/farm/FarmManageFarmingRewards.tsx:135
 msgid "Pool Reward Address must not be empty."
 msgstr "Die Farmerbelohnung-Adresse darf nicht leer sein."
 
@@ -1965,17 +1969,17 @@ msgstr "Pooling"
 
 #: src/components/farm/FarmFullNodeConnections.tsx:43
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:42
-#: src/components/fullNode/FullNodeAddConnection.tsx:77
+#: src/components/fullNode/FullNodeAddConnection.tsx:76
 #: src/components/fullNode/FullNodeConnections.tsx:45
 msgid "Port"
 msgstr "Port"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:94
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:93
 #: src/components/plotNFT/PlotNFTChangePool.tsx:85
 msgid "Preparing Plot NFT"
 msgstr "Plot-NFT wird vorbereitet"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:102
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:101
 msgid "Preparing standard wallet"
 msgstr "Standard Wallet wird vorbereitet"
 
@@ -2165,8 +2169,8 @@ msgstr ""
 msgid "Safe To Skip"
 msgstr "Überspringen bestätigen"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:179
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:131
+#: src/components/farm/FarmManageFarmingRewards.tsx:190
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
 msgid "Save"
 msgstr "Speichern"
 
@@ -2180,7 +2184,7 @@ msgstr ""
 #~ msgid "Search"
 #~ msgstr ""
 
-#: src/components/fullNode/FullNodeBlockSearch.tsx:41
+#: src/components/fullNode/FullNodeBlockSearch.tsx:40
 msgid "Search block by header hash"
 msgstr "Block nach Header-Hash durchsuchen"
 
@@ -2571,7 +2575,7 @@ msgstr "Die Gesamtzahl der VDF (überprüfbare Verzögerungsfunktion) oder der N
 msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Die gesamten Transaktionsgebühren in diesem Block. Die Belohnung bekommt der Farmer."
 
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:107
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:106
 msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HCX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 msgstr "Hier sind die Anweisungen wie der Farmer bezahlt werden möchte. Standardmäßig ist dies eine HCX - Adresse, aber es kann ein beliebiger String kleiner als 1024 Zeichen sein, welcher auch eine andere Blockchain oder ein anderes Bezahlungssystem repräsentieren kann."
 
@@ -2605,12 +2609,16 @@ msgstr "Diese Funktion ist ausschließlich in der GUI verfügbar."
 #~ msgstr "Dies ist die Summe der eingehenden und ausgehenden ausstehenden Transaktionen (noch nicht in der Blockchain enthalten). Dies beinhaltet keine Farming Belohnungen."
 
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:19
-msgid "This is the time of the latest peak sub block."
-msgstr "Dies ist die Zeit des letzten Peak-Unterblocks."
+#~ msgid "This is the time of the latest peak sub block."
+#~ msgstr "Dies ist die Zeit des letzten Peak-Unterblocks."
 
 #: src/components/block/Block.jsx:183
 msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 msgstr "Das ist die Zeit, zu der der Block vom Farmer erstellt wurde, bevor er mit proof of time abgeschlossen wird"
+
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:19
+msgid "This is the timestamp of the most recent transaction block."
+msgstr ""
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:34
 #~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
@@ -2880,7 +2888,7 @@ msgstr "Wallet-Status:"
 #~ msgid "Wallet does not exists"
 #~ msgstr ""
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:70
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:69
 msgid "Wallet is not defined"
 msgstr ""
 
@@ -3043,7 +3051,7 @@ msgstr "Du musst zuerst deine Belohnungen einfordern"
 msgid "You need {currencyCode} to join a pool."
 msgstr "Du benötigst {currencyCode} um einem Pool beizutreten."
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:143
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:142
 msgid "You will recieve <0/> to {0}"
 msgstr "Du wirst <0/> auf {0} erhalten"
 
@@ -3129,7 +3137,7 @@ msgstr "[Error 22] Datei nicht gefunden. Wahrscheinlich hat einer der Plot-Ordne
 #~ msgid "not synced"
 #~ msgstr "nicht synchronisiert"
 
-#: src/components/plot/add/PlotAddForm.tsx:127
+#: src/components/plot/add/PlotAddForm.tsx:125
 msgid "p2SingletonPuzzleHash is not defined"
 msgstr ""
 

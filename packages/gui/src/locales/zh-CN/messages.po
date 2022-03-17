@@ -110,7 +110,7 @@ msgstr "将农田开垦任务加入队列"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:45
-#: src/components/plot/add/PlotAddForm.tsx:178
+#: src/components/plot/add/PlotAddForm.tsx:176
 #: src/components/plot/overview/PlotOverviewHero.tsx:52
 #: src/components/plot/PlotHeader.tsx:61
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
@@ -313,9 +313,9 @@ msgstr "但你目前正在耕种<0/>"
 
 #: src/components/app/AppPassPrompt.tsx:152
 #: src/components/backup/BackupCreate.tsx:50
-#: src/components/farm/FarmManageFarmingRewards.tsx:176
-#: src/components/fullNode/FullNodeAddConnection.tsx:86
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:128
+#: src/components/farm/FarmManageFarmingRewards.tsx:187
+#: src/components/fullNode/FullNodeAddConnection.tsx:85
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
 #: src/components/settings/ChangePassphrasePrompt.tsx:224
@@ -447,7 +447,7 @@ msgstr ""
 #~ msgid "Coloured Coin Options"
 #~ msgstr "染色币选项"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:173
 #: src/electron/main.tsx:266
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
@@ -479,11 +479,11 @@ msgstr "确认"
 #~ msgid "Confirmed at height {0}"
 #~ msgstr "确认于区块高度 {0}"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:89
+#: src/components/fullNode/FullNodeAddConnection.tsx:88
 msgid "Connect"
 msgstr "连接"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:65
+#: src/components/fullNode/FullNodeAddConnection.tsx:64
 #: src/components/fullNode/FullNodeConnections.tsx:109
 msgid "Connect to other peers"
 msgstr "连接到其它节点"
@@ -542,8 +542,8 @@ msgstr "在 GitHub 上贡献"
 #~ msgstr "复制到剪贴板"
 
 #: src/components/backup/BackupCreate.tsx:58
-#: src/components/plot/add/PlotAddForm.tsx:198
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:177
+#: src/components/plot/add/PlotAddForm.tsx:196
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:176
 msgid "Create"
 msgstr "创建"
 
@@ -649,7 +649,7 @@ msgstr "正在创建农田NFT并加入农业合作社"
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "正在创建自耕种的农田NFT"
 
-#: src/components/plot/add/PlotAddForm.tsx:109
+#: src/components/plot/add/PlotAddForm.tsx:107
 msgid "Currency code is not defined"
 msgstr "货币代码未定义"
 
@@ -826,7 +826,7 @@ msgstr "编辑"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:258
 #: src/components/plotNFT/PlotNFTCard.tsx:298
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:81
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:80
 msgid "Edit Payout Instructions"
 msgstr "编辑支付指令"
 
@@ -930,11 +930,11 @@ msgstr "农民公钥"
 msgid "Farmer Puzzle Hash"
 msgstr "农民解谜哈希"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:143
+#: src/components/farm/FarmManageFarmingRewards.tsx:154
 msgid "Farmer Reward Address"
 msgstr "农民奖励地址"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:117
+#: src/components/farm/FarmManageFarmingRewards.tsx:128
 msgid "Farmer Reward Address is not properly formatted."
 msgstr "农民奖励地址格式不正确。"
 
@@ -942,7 +942,7 @@ msgstr "农民奖励地址格式不正确。"
 #~ msgid "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:111
+#: src/components/farm/FarmManageFarmingRewards.tsx:122
 msgid "Farmer Reward Address must not be empty."
 msgstr "农民奖励地址不能为空。"
 
@@ -983,7 +983,7 @@ msgstr ""
 msgid "Farming Status"
 msgstr "耕种状态"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:160
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:159
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:146
 #: src/components/pool/PoolInfo.tsx:17
 msgid "Fee"
@@ -1126,7 +1126,7 @@ msgstr "主机名"
 msgid "IP address"
 msgstr "IP地址"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:72
+#: src/components/fullNode/FullNodeAddConnection.tsx:71
 msgid "IP address / host"
 msgstr "IP地址 / 主机"
 
@@ -1247,6 +1247,10 @@ msgstr "最近尝试过的证明"
 msgid "Last Height Farmed"
 msgstr "最新收割的区块高度"
 
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:18
+msgid "Last Transaction Block Time"
+msgstr ""
+
 #: src/components/farm/FarmLatestBlockChallenges.tsx:30
 msgid "Latest Block Challenges"
 msgstr "最新的区块挑战"
@@ -1257,7 +1261,7 @@ msgid "Launcher Id"
 msgstr "启动器ID"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:77
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:119
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:118
 msgid "Learn More"
 msgstr "了解更多"
 
@@ -1349,7 +1353,7 @@ msgstr "管理耕种奖励"
 #~ msgid "Manage Recovery DIDs"
 #~ msgstr "管理恢复去中心化标识"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:99
+#: src/components/farm/FarmManageFarmingRewards.tsx:110
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "管理耕种奖励发放地址"
 
@@ -1452,7 +1456,7 @@ msgstr "尚未有区块有收获"
 #~ msgid "No previous transactions"
 #~ msgstr "无过往交易"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:136
+#: src/components/farm/FarmManageFarmingRewards.tsx:147
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "本机没有所输入地址对应的私钥。请确认是否要将奖励发送至非本机钱包。"
 
@@ -1503,7 +1507,7 @@ msgstr "未连接"
 msgid "Not found Plots"
 msgstr "未找到农田"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:164
+#: src/components/farm/FarmManageFarmingRewards.tsx:175
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 msgstr "请注意，这将不会改变你的合作社耕作支付地址。这只会影响旧农田文件，以及0.25HCX的合作社耕作奖励。"
 
@@ -1615,8 +1619,8 @@ msgstr "最高高度"
 #~ msgstr "Peak Sub-block Height"
 
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:18
-msgid "Peak Time"
-msgstr "最高时间"
+#~ msgid "Peak Time"
+#~ msgstr "最高时间"
 
 #: src/components/plotNFT/PlotNFTState.tsx:43
 msgid "Pending"
@@ -1637,7 +1641,7 @@ msgstr "待处理"
 #~ msgid "Pending Total Balance"
 #~ msgstr "待处理总余额"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:137
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
 #: src/hooks/useAbsorbRewards.tsx:43
 msgid "Please Confirm"
 msgstr "请确认"
@@ -1789,7 +1793,7 @@ msgstr "农田密钥"
 msgid "Plot NFT"
 msgstr "农田NFT"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:109
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:108
 #: src/components/plotNFT/PlotNFTChangePool.tsx:92
 msgid "Plot NFT with p2_singleton_puzzle_hash {plotNFTId} does not exists"
 msgstr "p2_singleton_puzzle_hash为 {plotNFTId} 的农田NTF不存在。"
@@ -1891,7 +1895,7 @@ msgstr "池密钥"
 msgid "Pool Login Link"
 msgstr "农业合作社登录链接"
 
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:92
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:91
 msgid "Pool Payout Instructions"
 msgstr "农业合作社支付说明"
 
@@ -1904,11 +1908,11 @@ msgstr "池公钥"
 msgid "Pool Puzzle Hash"
 msgstr "池谜语哈希"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:153
+#: src/components/farm/FarmManageFarmingRewards.tsx:164
 msgid "Pool Reward Address"
 msgstr "池奖励地址"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:129
+#: src/components/farm/FarmManageFarmingRewards.tsx:140
 msgid "Pool Reward Address is not properly formatted."
 msgstr "池奖励地址格式不正确。"
 
@@ -1916,7 +1920,7 @@ msgstr "池奖励地址格式不正确。"
 #~ msgid "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:124
+#: src/components/farm/FarmManageFarmingRewards.tsx:135
 msgid "Pool Reward Address must not be empty."
 msgstr "池奖励地址不能为空。"
 
@@ -1957,17 +1961,17 @@ msgstr "合作社耕作"
 
 #: src/components/farm/FarmFullNodeConnections.tsx:43
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:42
-#: src/components/fullNode/FullNodeAddConnection.tsx:77
+#: src/components/fullNode/FullNodeAddConnection.tsx:76
 #: src/components/fullNode/FullNodeConnections.tsx:45
 msgid "Port"
 msgstr "端口"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:94
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:93
 #: src/components/plotNFT/PlotNFTChangePool.tsx:85
 msgid "Preparing Plot NFT"
 msgstr "正在准备农田NFT"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:102
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:101
 msgid "Preparing standard wallet"
 msgstr "正在准备标准钱包"
 
@@ -2157,8 +2161,8 @@ msgstr ""
 msgid "Safe To Skip"
 msgstr "可安全跳过此步骤"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:179
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:131
+#: src/components/farm/FarmManageFarmingRewards.tsx:190
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
 msgid "Save"
 msgstr "保存"
 
@@ -2172,7 +2176,7 @@ msgstr ""
 #~ msgid "Search"
 #~ msgstr ""
 
-#: src/components/fullNode/FullNodeBlockSearch.tsx:41
+#: src/components/fullNode/FullNodeBlockSearch.tsx:40
 msgid "Search block by header hash"
 msgstr "按头部哈希搜索区块"
 
@@ -2563,7 +2567,7 @@ msgstr "本区块上花费的总VDF(延迟验证函数) 或时间验证的迭代
 msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "本区块上奖励给农民的全部交易费用。"
 
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:107
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:106
 msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HCX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 msgstr "这是农民耕种奖励的支付方式。默认情况下，这将是一个HCX钱包地址，但是你可以设置任意长度小于1024的字符串，也就是说，你可以指定其它区块链或者支付系统标识。"
 
@@ -2597,12 +2601,16 @@ msgstr "此功能只在图形界面中提供。"
 #~ msgstr "待处理的收入与支出总和(还未上链). 不包括农场耕种奖励."
 
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:19
-msgid "This is the time of the latest peak sub block."
-msgstr "最新的子块时间."
+#~ msgid "This is the time of the latest peak sub block."
+#~ msgstr "最新的子块时间."
 
 #: src/components/block/Block.jsx:183
 msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 msgstr "此时间是该区块被农民创建的时间，因此，此时间会早于其被时间认证机制最终确认的时间。"
+
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:19
+msgid "This is the timestamp of the most recent transaction block."
+msgstr ""
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:34
 #~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
@@ -2872,7 +2880,7 @@ msgstr "钱包状态："
 #~ msgid "Wallet does not exists"
 #~ msgstr "钱包不存在"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:70
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:69
 msgid "Wallet is not defined"
 msgstr ""
 
@@ -3035,7 +3043,7 @@ msgstr "你需要先领取你的奖励。"
 msgid "You need {currencyCode} to join a pool."
 msgstr "必须持有 {currencyCode} 才有加入农业合作社。"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:143
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:142
 msgid "You will recieve <0/> to {0}"
 msgstr "你将会收到 <0/> 至 {0}"
 
@@ -3121,7 +3129,7 @@ msgstr "[错误 22] 文件未找到。农田文件夹中的 config.yaml 文件�
 #~ msgid "not synced"
 #~ msgstr "未同步"
 
-#: src/components/plot/add/PlotAddForm.tsx:127
+#: src/components/plot/add/PlotAddForm.tsx:125
 msgid "p2SingletonPuzzleHash is not defined"
 msgstr ""
 
