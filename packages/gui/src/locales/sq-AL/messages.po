@@ -110,7 +110,7 @@ msgstr "Shto Plote ne radhë"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:45
-#: src/components/plot/add/PlotAddForm.tsx:178
+#: src/components/plot/add/PlotAddForm.tsx:176
 #: src/components/plot/overview/PlotOverviewHero.tsx:52
 #: src/components/plot/PlotHeader.tsx:61
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
@@ -313,9 +313,9 @@ msgstr "Ju jeni duke vjelë<0/>"
 
 #: src/components/app/AppPassPrompt.tsx:152
 #: src/components/backup/BackupCreate.tsx:50
-#: src/components/farm/FarmManageFarmingRewards.tsx:176
-#: src/components/fullNode/FullNodeAddConnection.tsx:86
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:128
+#: src/components/farm/FarmManageFarmingRewards.tsx:187
+#: src/components/fullNode/FullNodeAddConnection.tsx:85
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
 #: src/components/settings/ChangePassphrasePrompt.tsx:224
@@ -447,7 +447,7 @@ msgstr ""
 #~ msgid "Coloured Coin Options"
 #~ msgstr "Opsioni i ngjyrave te monedhes"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:174
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:173
 #: src/electron/main.tsx:266
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
@@ -479,11 +479,11 @@ msgstr "Konfirmimi"
 #~ msgid "Confirmed at height {0}"
 #~ msgstr "Konfirmuar në lartesinë {0}"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:89
+#: src/components/fullNode/FullNodeAddConnection.tsx:88
 msgid "Connect"
 msgstr "Lidhu"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:65
+#: src/components/fullNode/FullNodeAddConnection.tsx:64
 #: src/components/fullNode/FullNodeConnections.tsx:109
 msgid "Connect to other peers"
 msgstr "Lidhu me te tjerët"
@@ -542,8 +542,8 @@ msgstr "Kontribo në GitHub"
 #~ msgstr "Kopjo në klipbord"
 
 #: src/components/backup/BackupCreate.tsx:58
-#: src/components/plot/add/PlotAddForm.tsx:198
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:177
+#: src/components/plot/add/PlotAddForm.tsx:196
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:176
 msgid "Create"
 msgstr "Krijo"
 
@@ -649,7 +649,7 @@ msgstr "Krijimi i Plotit NFT dhe Lidhja me Pollet"
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Krijimi i plotit NFT për Vetë-Grumbullim"
 
-#: src/components/plot/add/PlotAddForm.tsx:109
+#: src/components/plot/add/PlotAddForm.tsx:107
 msgid "Currency code is not defined"
 msgstr "Kodi i valutës nuk është përcaktuar"
 
@@ -826,7 +826,7 @@ msgstr "Modifiko"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:258
 #: src/components/plotNFT/PlotNFTCard.tsx:298
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:81
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:80
 msgid "Edit Payout Instructions"
 msgstr "Ndryshoni udhëzimet e pagesës"
 
@@ -930,11 +930,11 @@ msgstr "Çelësi publik i fermerit"
 msgid "Farmer Puzzle Hash"
 msgstr "Kodi i kombinuar i Fermës"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:143
+#: src/components/farm/FarmManageFarmingRewards.tsx:154
 msgid "Farmer Reward Address"
 msgstr "Adresa e perfitimeve e fermerit"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:117
+#: src/components/farm/FarmManageFarmingRewards.tsx:128
 msgid "Farmer Reward Address is not properly formatted."
 msgstr "Adresa e Shpërblimit të Fermerit nuk është e formatuar siç duhet."
 
@@ -942,7 +942,7 @@ msgstr "Adresa e Shpërblimit të Fermerit nuk është e formatuar siç duhet."
 #~ msgid "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:111
+#: src/components/farm/FarmManageFarmingRewards.tsx:122
 msgid "Farmer Reward Address must not be empty."
 msgstr "Adresa e Shpërblimit të Fermerit nuk duhet të jetë bosh."
 
@@ -983,7 +983,7 @@ msgstr ""
 msgid "Farming Status"
 msgstr "Statusi i Farming"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:160
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:159
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:146
 #: src/components/pool/PoolInfo.tsx:17
 msgid "Fee"
@@ -1126,7 +1126,7 @@ msgstr "Emri i hostit"
 msgid "IP address"
 msgstr "Adresa IP"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:72
+#: src/components/fullNode/FullNodeAddConnection.tsx:71
 msgid "IP address / host"
 msgstr "Adresa IP / Hosti"
 
@@ -1247,6 +1247,10 @@ msgstr "Provë e fundit e provuar"
 msgid "Last Height Farmed"
 msgstr "Lartësia e Fundit e Fermuar"
 
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:18
+msgid "Last Transaction Block Time"
+msgstr ""
+
 #: src/components/farm/FarmLatestBlockChallenges.tsx:30
 msgid "Latest Block Challenges"
 msgstr "Sfidat e fundit të bllokut"
@@ -1257,7 +1261,7 @@ msgid "Launcher Id"
 msgstr "Id e lëshuesit"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:77
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:119
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:118
 msgid "Learn More"
 msgstr "Mëso më shumë"
 
@@ -1349,7 +1353,7 @@ msgstr "Menaxhoni shpërblimet e fermerit"
 #~ msgid "Manage Recovery DIDs"
 #~ msgstr ""
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:99
+#: src/components/farm/FarmManageFarmingRewards.tsx:110
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Menaxhoni adresat tuaja të synuara për shpërblimet tuaja të fermerit"
 
@@ -1452,7 +1456,7 @@ msgstr "Ende nuk ka blloqe të kultivuara"
 #~ msgid "No previous transactions"
 #~ msgstr "Nuk ka transaksione të mëparshme"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:136
+#: src/components/farm/FarmManageFarmingRewards.tsx:147
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "Nuk ka çelësa privatë për një ose për të dy adresat. Sigurohu vetëm nëse jeni duke dërguar shpërblime në një portofol tjetër."
 
@@ -1503,7 +1507,7 @@ msgstr "Nuk është lidhur"
 msgid "Not found Plots"
 msgstr "Nuk gjenden Plotet"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:164
+#: src/components/farm/FarmManageFarmingRewards.tsx:175
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 msgstr "Vini re se kjo nuk ndryshon adresat tuaja të grumbullimit të pagesave. Kjo ndikon vetëm në komplotet e formatit të vjetër dhe në shpërblimin 0.25HCXpër komplotet e bashkimit."
 
@@ -1615,8 +1619,8 @@ msgstr "Lartësia e majës"
 #~ msgstr "Peak Sub-block Height"
 
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:18
-msgid "Peak Time"
-msgstr "Koha e pikut"
+#~ msgid "Peak Time"
+#~ msgstr "Koha e pikut"
 
 #: src/components/plotNFT/PlotNFTState.tsx:43
 msgid "Pending"
@@ -1637,7 +1641,7 @@ msgstr "Në pritje"
 #~ msgid "Pending Total Balance"
 #~ msgstr "Në pritje të balancit total"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:137
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
 #: src/hooks/useAbsorbRewards.tsx:43
 msgid "Please Confirm"
 msgstr "Të lutem konfirmo"
@@ -1789,7 +1793,7 @@ msgstr "Çelësi i plotit"
 msgid "Plot NFT"
 msgstr "Ploti NFT"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:109
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:108
 #: src/components/plotNFT/PlotNFTChangePool.tsx:92
 msgid "Plot NFT with p2_singleton_puzzle_hash {plotNFTId} does not exists"
 msgstr "Plot NFT me p2_singleton_puzzle_hash {plotNFTId} nuk ekziston"
@@ -1891,7 +1895,7 @@ msgstr "Çelësi i pollit"
 msgid "Pool Login Link"
 msgstr "Lidhja e hyrjes në poll"
 
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:92
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:91
 msgid "Pool Payout Instructions"
 msgstr "Udhëzimet e Pagimit të Pollit"
 
@@ -1904,11 +1908,11 @@ msgstr "Çelësi publik i pollit"
 msgid "Pool Puzzle Hash"
 msgstr "Pazell e pollit"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:153
+#: src/components/farm/FarmManageFarmingRewards.tsx:164
 msgid "Pool Reward Address"
 msgstr "Adresa e perfitimeve të fermerit"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:129
+#: src/components/farm/FarmManageFarmingRewards.tsx:140
 msgid "Pool Reward Address is not properly formatted."
 msgstr "Adresa e Shpërblimit të Pollit nuk është e formatuar siç duhet."
 
@@ -1916,7 +1920,7 @@ msgstr "Adresa e Shpërblimit të Pollit nuk është e formatuar siç duhet."
 #~ msgid "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:124
+#: src/components/farm/FarmManageFarmingRewards.tsx:135
 msgid "Pool Reward Address must not be empty."
 msgstr "Adresa e Shpërblimit të Pollit nuk duhet të jetë bosh."
 
@@ -1957,17 +1961,17 @@ msgstr "Lidhur"
 
 #: src/components/farm/FarmFullNodeConnections.tsx:43
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:42
-#: src/components/fullNode/FullNodeAddConnection.tsx:77
+#: src/components/fullNode/FullNodeAddConnection.tsx:76
 #: src/components/fullNode/FullNodeConnections.tsx:45
 msgid "Port"
 msgstr "Porta"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:94
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:93
 #: src/components/plotNFT/PlotNFTChangePool.tsx:85
 msgid "Preparing Plot NFT"
 msgstr "Përgatitja e plotit NFT"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:102
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:101
 msgid "Preparing standard wallet"
 msgstr "Përgatitja e portofolit standard"
 
@@ -2157,8 +2161,8 @@ msgstr ""
 msgid "Safe To Skip"
 msgstr "I sigurt për të kapërcyer"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:179
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:131
+#: src/components/farm/FarmManageFarmingRewards.tsx:190
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
 msgid "Save"
 msgstr "Ruaj"
 
@@ -2172,7 +2176,7 @@ msgstr ""
 #~ msgid "Search"
 #~ msgstr ""
 
-#: src/components/fullNode/FullNodeBlockSearch.tsx:41
+#: src/components/fullNode/FullNodeBlockSearch.tsx:40
 msgid "Search block by header hash"
 msgstr "Blloku i kërkimit sipas kokës hash"
 
@@ -2563,7 +2567,7 @@ msgstr "Numri i përgjithshëm i VDF (funksioni i verifikimit të vonesës) ose 
 msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Tarifat totale të transaksioneve në këtë bllok. Shpërblyer për fermerin."
 
-#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:107
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:106
 msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HCX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 msgstr "Këto janë udhëzimet se si fermeri dëshiron të paguhet. Si parazgjedhje kjo do të jetë një adresë HCX, por mund të vendoset në çdo varg me madhësi më të vogël se 1024 karaktere, kështu që mund të përfaqësojë një tjetër identifikues të bllokut ose sistemit të pagesave."
 
@@ -2597,12 +2601,16 @@ msgstr "Kjo veçori është në dispozicion vetëm nga GUI."
 #~ msgstr "Kjo është shuma e transaksioneve hyrëse dhe dalëse në pritje (nuk janë përfshirë ende në blockchain). Kjo nuk përfshin shpërblimet fermerit."
 
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:19
-msgid "This is the time of the latest peak sub block."
-msgstr "Kjo është koha e nën bllokut të pikut të fundit."
+#~ msgid "This is the time of the latest peak sub block."
+#~ msgstr "Kjo është koha e nën bllokut të pikut të fundit."
 
 #: src/components/block/Block.jsx:183
 msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 msgstr "Kjo është koha kur blloku është krijuar nga fermeri, e cila është para se të finalizohet me një provë të kohës"
+
+#: src/components/fullNode/card/FullNodeCardPeakTime.tsx:19
+msgid "This is the timestamp of the most recent transaction block."
+msgstr ""
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:34
 #~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
@@ -2872,7 +2880,7 @@ msgstr "Statusi i Portofolit:"
 #~ msgid "Wallet does not exists"
 #~ msgstr ""
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:70
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:69
 msgid "Wallet is not defined"
 msgstr ""
 
@@ -3035,7 +3043,7 @@ msgstr "Së pari duhet të kërkoni shpërblimet tuaja"
 msgid "You need {currencyCode} to join a pool."
 msgstr "Ju duhet {currencyCode} për t'u bashkuar me një poll."
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:143
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:142
 msgid "You will recieve <0/> to {0}"
 msgstr "Ju do të merrni <0/> te {0}"
 
@@ -3121,7 +3129,7 @@ msgstr "[Gabimi 22] Skedari nuk u gjet. Ka shumë të ngjarë që një nga dosje
 #~ msgid "not synced"
 #~ msgstr "i pa sinkronizuar"
 
-#: src/components/plot/add/PlotAddForm.tsx:127
+#: src/components/plot/add/PlotAddForm.tsx:125
 msgid "p2SingletonPuzzleHash is not defined"
 msgstr ""
 
