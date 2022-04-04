@@ -44,10 +44,13 @@ export default function OfferSummary(props: Props) {
   const makerFee: number = summary.fees;
   const makerAssetInfo = makerEntries.length === 1 ? lookupByAssetId(makerEntries[0][0]) : undefined;
   const takerAssetInfo = takerEntries.length === 1 ? lookupByAssetId(takerEntries[0][0]) : undefined;
-  const makerAmount = makerEntries[0][0].toLowerCase() === 'hcx' ? Number(vojoToChinilla(makerEntries[0][1])) : Number(vojoToCAT(makerEntries[0][1]));
-  const takerAmount = takerEntries[0][0].toLowerCase() === 'hcx' ? Number(vojoToChinilla(takerEntries[0][1])) : Number(vojoToCAT(takerEntries[0][1]));
-  const makerExchangeRate = makerAssetInfo && takerAssetInfo ? takerAmount / makerAmount : undefined;
-  const takerExchangeRate = makerAssetInfo && takerAssetInfo ? makerAmount / takerAmount : undefined;
+  const makerAmount = makerEntries.length > 0 ? (['hcx', 'thcx'].includes(makerEntries[0][0].toLowerCase()) ? vojoToChinilla(makerEntries[0][1]) : vojoToCAT(makerEntries[0][1])) : undefined;
+  const takerAmount = takerEntries.length > 0 ? (['hcx', 'thcx'].includes(takerEntries[0][0].toLowerCase()) ? vojoToChinilla(takerEntries[0][1]) : vojoToCAT(takerEntries[0][1])) : undefined;
+  const canSetExchangeRate = makerAssetInfo && takerAssetInfo && makerAmount && takerAmount;
+  const makerExchangeRate = canSetExchangeRate ? takerAmount / makerAmount : undefined;
+  const takerExchangeRate = canSetExchangeRate ? makerAmount / takerAmount : undefined;
+
+
 
   const [takerUnknownCATs, makerUnknownCATs] = useMemo(() => {
     if (isMyOffer) {
