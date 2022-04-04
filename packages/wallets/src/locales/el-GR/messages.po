@@ -1163,7 +1163,7 @@ msgstr "Προμήθεια"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/components/offers/OfferSummary.tsx:119
+#: src/components/offers/OfferSummary.tsx:122
 msgid "Fees included in offer:"
 msgstr ""
 
@@ -3059,11 +3059,11 @@ msgstr "Αυτό είναι το συνολικό υπόλοιπο + το εκκ
 msgid "This number reflects the number of nodes that the accepted SpendBundle has been sent to"
 msgstr ""
 
-#: src/components/offers/OfferSummary.tsx:129
+#: src/components/offers/OfferSummary.tsx:132
 msgid "This offer has a fee included to help expedite the transaction when the offer is accepted."
 msgstr ""
 
-#: src/components/offers/OfferSummary.tsx:125
+#: src/components/offers/OfferSummary.tsx:128
 msgid "This offer has a fee included to help expedite the transaction when the offer is accepted. You may specify an additional fee if you feel that the included fee is too small."
 msgstr ""
 
@@ -3446,7 +3446,7 @@ msgstr ""
 #~ msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 #~ msgstr ""
 
-#: src/components/offers/OfferSummary.tsx:94
+#: src/components/offers/OfferSummary.tsx:97
 msgid "Warning: Verify that the offered CAT asset IDs match the asset IDs of the tokens you expect to receive."
 msgstr ""
 
@@ -3706,7 +3706,7 @@ msgstr ""
 #~ msgid "{currencyCode} User Transaction Fees"
 #~ msgstr "{currencyCode} Τέλη Συναλλαγής Χρήστη"
 
-#: src/components/offers/OfferSummary.tsx:122
+#: src/components/offers/OfferSummary.tsx:125
 msgid "{makerFee, plural, one {vojo} other {vojos}}"
 msgstr ""
 
