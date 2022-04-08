@@ -500,6 +500,18 @@ if (!handleSquirrelEvent()) {
               openExternal('https://twitter.com/chinillaproject');
             },
           },
+          {
+            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
+            click: () => {
+              openExternal('https://discord.gg/5E5XsKrch5');
+            },
+          },
+          {
+            label: i18n._(/* i18n */ { id: 'Github Discussions' }),
+            click: () => {
+              openExternal('https://github.com/Chinilla/chinilla-blockchain/discussions');
+            },
+          },
         ],
       },
     ];
