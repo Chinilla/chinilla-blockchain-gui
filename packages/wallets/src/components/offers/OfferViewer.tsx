@@ -82,12 +82,12 @@ type OfferVojoAmountProps = {
   vojoThreshold?: number
 };
 
-function OfferVojoAmount(props: OfferVojoAmountProps): React.ReactElement{
+function OfferVojoAmount(props: OfferVojoAmountProps): React.ReactElement {
   const { vojos, vojoThreshold } = props;
 
   return (
     <>
-      { vojoThreshold && vojos < vojoThreshold && (
+      {vojoThreshold && vojos < vojoThreshold && (
         <Flex flexDirection="row" flexGrow={1} gap={1}>
           (
           <FormatLargeNumber value={vojos} />
@@ -117,13 +117,13 @@ type OfferDetailsRow = {
   name: React.ReactElement;
   value: any;
   color?:
-      | 'initial'
-      | 'inherit'
-      | 'primary'
-      | 'secondary'
-      | 'textPrimary'
-      | 'textSecondary'
-      | 'error';
+  | 'initial'
+  | 'inherit'
+  | 'primary'
+  | 'secondary'
+  | 'textPrimary'
+  | 'textSecondary'
+  | 'error';
   tooltip?: React.ReactElement;
 };
 
@@ -294,36 +294,36 @@ function OfferDetails(props: OfferDetailsProps) {
         <Flex flexDirection="column" gap={3}>
           {offeredUnknownCATs.length > 0 && (
             <>
-            <Flex flexDirection="column" gap={1}>
-              <Typography variant="h6"><Trans>Warning</Trans></Typography>
-              <Typography variant="body1">
-                <Trans>
-                  One or more unknown tokens are being offered. Please verify that the asset IDs of the tokens listed below match the asset IDs of the tokens you expect to receive.
-                </Trans>
-              </Typography>
-              <Typography variant="subtitle1">
-                Unknown CATs:
-              </Typography>
-              <StyledSummaryBox>
-                <Flex flexDirection="column">
-                  {offeredUnknownCATs.map((assetId) => (
-                    <Flex alignItems="center" justifyContent="space-between" gap={1}>
-                      <Typography variant="caption">{assetId.toLowerCase()}</Typography>
-                      <CopyToClipboard value={assetId.toLowerCase()} fontSize="small" />
-                    </Flex>
-                  ))}
-                </Flex>
-              </StyledSummaryBox>
+              <Flex flexDirection="column" gap={1}>
+                <Typography variant="h6"><Trans>Warning</Trans></Typography>
+                <Typography variant="body1">
+                  <Trans>
+                    One or more unknown tokens are being offered. Please verify that the asset IDs of the tokens listed below match the asset IDs of the tokens you expect to receive.
+                  </Trans>
+                </Typography>
+                <Typography variant="subtitle1">
+                  Unknown CATs:
+                </Typography>
+                <StyledSummaryBox>
+                  <Flex flexDirection="column">
+                    {offeredUnknownCATs.map((assetId) => (
+                      <Flex alignItems="center" justifyContent="space-between" gap={1}>
+                        <Typography variant="caption">{assetId.toLowerCase()}</Typography>
+                        <CopyToClipboard value={assetId.toLowerCase()} fontSize="small" />
+                      </Flex>
+                    ))}
+                  </Flex>
+                </StyledSummaryBox>
 
-            </Flex>
-            <Divider />
+              </Flex>
+              <Divider />
             </>
           )}
           <Typography>
-          <Trans>
-            Once you accept this offer, you will not be able to cancel the transaction.
-            Are you sure you want to accept this offer?
-          </Trans>
+            <Trans>
+              Once you accept this offer, you will not be able to cancel the transaction.
+              Are you sure you want to accept this offer?
+            </Trans>
           </Typography>
         </Flex>
       </ConfirmDialog>
@@ -406,7 +406,7 @@ function OfferDetails(props: OfferDetailsProps) {
     isComplete: false,
   };
 
-  function OfferSummaryEntry({ assetId, amount, ...rest}: { assetId: string, amount: number }) {
+  function OfferSummaryEntry({ assetId, amount, ...rest }: { assetId: string, amount: number }) {
     const assetIdInfo = lookupByAssetId(assetId);
     const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : vojoToCATLocaleString(amount);
     const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;

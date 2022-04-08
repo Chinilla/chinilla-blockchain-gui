@@ -10,7 +10,7 @@ import {
 } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
 import { Trans } from '@lingui/macro';
-import { useGetBlockQuery, useGetBlockRecordQuery  } from '@chinilla/api-react'
+import { useGetBlockQuery, useGetBlockRecordQuery } from '@chinilla/api-react'
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Back,
@@ -257,13 +257,13 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.chinillaexplorer.com/blockchain/puzzlehash/${blockRecord.farmerPuzzleHash}`}
+          href={`https://www.chinilla.com/blockchain/puzzlehash/${blockRecord.farmerPuzzleHash}`}
         >
           {currencyCode
             ? toBech32m(
-                blockRecord.farmerPuzzleHash,
-                currencyCode.toLowerCase(),
-              )
+              blockRecord.farmerPuzzleHash,
+              currencyCode.toLowerCase(),
+            )
             : ''}
         </Link>
       ),
@@ -273,13 +273,13 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.chinillaexplorer.com/blockchain/puzzlehash/${blockRecord.poolPuzzleHash}`}
+          href={`https://www.chinilla.com/blockchain/puzzlehash/${blockRecord.poolPuzzleHash}`}
         >
           {currencyCode
             ? toBech32m(
-                blockRecord.poolPuzzleHash,
-                currencyCode.toLowerCase(),
-              )
+              blockRecord.poolPuzzleHash,
+              currencyCode.toLowerCase(),
+            )
             : ''}
         </Link>
       ),

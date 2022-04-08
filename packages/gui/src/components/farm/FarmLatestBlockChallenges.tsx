@@ -59,12 +59,11 @@ export default function FarmLatestBlockChallenges() {
           *Want to explore Chinilla’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://www.chinillaexplorer.com/"
+            href="https://www.chinilla.com/blockchain"
             target="_blank"
           >
             Chinilla Explorer
           </Link>{' '}
-          built by an open source developer.
         </Trans>
       </Typography>
     </Card>
