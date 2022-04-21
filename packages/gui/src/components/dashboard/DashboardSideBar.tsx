@@ -24,8 +24,6 @@ const StyledItemsContainer = styled(Flex)`
 const StyledRoot = styled(Flex)`
   height: 100%;
   overflow-y: auto;
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   flex-direction: column;
 `;
 

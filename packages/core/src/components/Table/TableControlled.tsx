@@ -24,7 +24,7 @@ const StyledTableHead = styled(TableHead)`
 
 export const StyledTableRow = styled(({ odd, ...rest }) => <TableRow {...rest} />)`
   ${({ odd, theme }) => odd 
-    ? `background-color: ${theme.palette.type === 'dark' ? '#515151' : '#f2ecd5'};` 
+    ? `background-color: ${theme.palette.mode === 'dark' ? '#515151' : '#f2ecd5'};` 
     : undefined
   }
 `;
@@ -278,7 +278,7 @@ export default function TableControlled(props: TableControlledProps) {
           </TableBody>
         </TableBase>
         {pages && (
-          <StyledTablePagination
+          <TablePagination
             rowsPerPageOptions={rowsPerPageOptions}
             component="div"
             count={count ?? rows.length ?? 0}

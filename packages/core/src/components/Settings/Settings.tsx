@@ -10,14 +10,14 @@ import SettingsFooter from './SettingsFooter';
 
 const StyledHeader = styled(Box)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
+    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
   padding: 0.5rem 1rem;
   width: 360px;
 `;
 
 const StyledBody = styled(Box)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
+    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
   padding: 1rem 1rem;
   flex-grow: 1;
   overflow-y: overlay;
@@ -25,7 +25,7 @@ const StyledBody = styled(Box)`
 
 const StyledDrawer = styled(Drawer)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
+    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 export type SettingsProps = {

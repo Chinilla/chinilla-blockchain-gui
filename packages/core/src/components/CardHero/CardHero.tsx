@@ -7,7 +7,7 @@ const StyledContent = styled(CardContent)`
   padding: ${({ theme }) =>
    `${theme.spacing(5)} ${theme.spacing(4)} !important`};
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
+    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 type Props = {

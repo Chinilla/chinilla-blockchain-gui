@@ -15,8 +15,6 @@ import { DropdownIconButton } from '../Dropdown';
 // import LayoutFooter from '../LayoutMain/LayoutFooter';
 
 const StyledRoot = styled(Flex)`
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   height: 100%;
   //overflow: hidden;
 `;
@@ -24,13 +22,9 @@ const StyledRoot = styled(Flex)`
 const StyledContainer = styled(Container)`
   padding-top: ${({ theme }) => `${theme.spacing(2)}px`};
   padding-bottom: ${({ theme }) => `${theme.spacing(2)}px`};
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
 `;
 
 const StyledAppBar = styled(AppBar)`
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid ${({ theme }) => theme.palette.divider};
   width: ${({ theme, drawer }) => drawer ? `calc(100% - ${theme.drawer.width})` : '100%'};
@@ -39,8 +33,6 @@ const StyledAppBar = styled(AppBar)`
 `;
 
 const StyledDrawer = styled(Drawer)`
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   z-index: ${({ theme }) => theme.zIndex.drawer + 2};
   width: ${({ theme }) => theme.drawer.width};
   flex-shrink: 0;
@@ -52,14 +44,10 @@ const StyledDrawer = styled(Drawer)`
 `;
 
 const StyledBody = styled(Flex)`
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   min-width: 0;
 `;
 
 const StyledBrandWrapper = styled(Flex)`
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
   height: 64px;
   align-items: center;
   justify-content: center;
@@ -70,8 +58,6 @@ const StyledBrandWrapper = styled(Flex)`
 const StyledToolbar = styled(Toolbar)`
   padding-left: ${({ theme }) => theme.spacing(3)};
   padding-right: ${({ theme }) => theme.spacing(3)};
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#424242' : '#F3E5AB'};
 `;
 
 const StyledInlineTypography = styled(Typography)`

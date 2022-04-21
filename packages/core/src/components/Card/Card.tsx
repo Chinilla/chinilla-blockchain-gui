@@ -30,7 +30,7 @@ const StyledCardMaterial = styled(({ cursor, opacity, clickable, fullHeight, hig
   }
   
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
+    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 
   ${({ transparent }) => transparent ? `
     background-color: transparent;
