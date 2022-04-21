@@ -149,7 +149,7 @@ msgstr ""
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr ""
 
-#: src/components/Amount/Amount.tsx:113
+#: src/components/Amount/Amount.tsx:114
 msgid "Amount"
 msgstr "Количина"
 
@@ -499,7 +499,7 @@ msgstr "Повезано"
 #~ msgid "Contribute on GitHub"
 #~ msgstr "Допринеси на GitHub-у"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:31
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:37
 msgid "Copied"
 msgstr "Копирано"
 
@@ -510,7 +510,7 @@ msgstr "Копирано"
 #~ msgid "Copy"
 #~ msgstr "Копирај"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:33
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:39
 msgid "Copy to Clipboard"
 msgstr "Копирај у привремену меморију"
 
@@ -752,6 +752,7 @@ msgstr ""
 #~ msgid "Disable bitfield plotting"
 #~ msgstr "Онемогући цртање битног поља"
 
+#: src/components/Back/Back.tsx:40
 #: src/components/FormBackButton/FormBackButton.tsx:27
 msgid "Discard"
 msgstr ""
@@ -948,7 +949,7 @@ msgstr "Обрађивање"
 #~ msgid "Farming Status"
 #~ msgstr "Статус обраде"
 
-#: src/components/Fee/Fee.tsx:54
+#: src/components/Fee/Fee.tsx:52
 msgid "Fee"
 msgstr "Накнада"
 
@@ -1064,7 +1065,7 @@ msgstr "Често Постављана Питања"
 msgid "Help"
 msgstr "Помоћ"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:69
+#: src/components/LocaleToggle/LocaleToggle.tsx:70
 msgid "Help translate"
 msgstr "Помози у превођењу"
 
@@ -1114,7 +1115,7 @@ msgstr "Увези уз помоћ мнемотехнике (24 речи)"
 #~ msgid "Incoming"
 #~ msgstr "Долазни"
 
-#: src/components/Fee/Fee.tsx:42
+#: src/components/Fee/Fee.tsx:40
 msgid "Incorrect value"
 msgstr ""
 
@@ -1265,8 +1266,8 @@ msgstr ""
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:133
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:155
 msgid "Log Out"
 msgstr ""
 
@@ -1274,8 +1275,8 @@ msgstr ""
 #~ msgid "Logging in"
 #~ msgstr "Пријављивање"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:105
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:132
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:134
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:154
 msgid "Logout"
 msgstr ""
 
@@ -1489,6 +1490,10 @@ msgstr "Није повезано"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:164
 #~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+#~ msgstr ""
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:115
+#~ msgid "Notifications"
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
@@ -2773,7 +2778,7 @@ msgstr ""
 #~ msgid "Unique identifier"
 #~ msgstr "Јединствени идентификатор"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:47
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
 msgid "Unknown"
 msgstr "Непознато"
 
@@ -2781,6 +2786,7 @@ msgstr "Непознато"
 #~ msgid "Unlock Keyring"
 #~ msgstr ""
 
+#: src/components/Back/Back.tsx:39
 #: src/components/FormBackButton/FormBackButton.tsx:26
 msgid "Unsaved Changes"
 msgstr ""
@@ -2806,7 +2812,7 @@ msgstr ""
 #~ msgid "Value is too high"
 #~ msgstr "Value is too high"
 
-#: src/components/Fee/Fee.tsx:34
+#: src/components/Fee/Fee.tsx:32
 msgid "Value seems high"
 msgstr ""
 
@@ -2863,6 +2869,7 @@ msgstr ""
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr ""
 
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr ""
@@ -3004,6 +3011,7 @@ msgstr "Добродошли у Chinilla. Пријави се помоћу по�
 #~ msgid "You do not need to be synched or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
 #~ msgstr "Не мораш се синхронизовати или повезати да би се креирао плот. Привремене датотеке се креирају током процеса креирања плотова који премашују величину коначног плота. Провери да ли имаш довољно простора. <0> Сазнај више </0>"
 
+#: src/components/Back/Back.tsx:43
 #: src/components/FormBackButton/FormBackButton.tsx:30
 msgid "You have made changes. Do you want to discard them?"
 msgstr ""
@@ -3151,6 +3159,10 @@ msgstr ""
 #~ msgid "{0, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 #~ msgstr ""
 
+#: src/components/Amount/Amount.tsx:96
+msgid "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
+
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"
 #~ msgstr "{0} Block Rewards"
@@ -3185,8 +3197,8 @@ msgid "{minPassphraseLength, plural, one {Passphrases must be at least # charact
 msgstr ""
 
 #: src/components/Amount/Amount.tsx:95
-msgid "{vojo, plural, one {vojo} other {vojos}}"
-msgstr ""
+#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Loading, Flex } from '@chinilla/core';
-import { Grid } from '@material-ui/core';
+import { Grid } from '@mui/material';
 import PlotHero from './PlotOverviewHero';
 import PlotOverviewPlots from './PlotOverviewPlots';
 import usePlots from '../../../hooks/usePlots';

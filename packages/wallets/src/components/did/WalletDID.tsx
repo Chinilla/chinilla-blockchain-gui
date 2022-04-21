@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import Grid from '@material-ui/core/Grid';
-import { Alert } from '@material-ui/lab';
-import { makeStyles } from '@material-ui/core/styles';
+import { Alert, Grid } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { Trans } from '@lingui/macro';
-import { Backup as BackupIcon } from '@material-ui/icons';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import Backdrop from '@material-ui/core/Backdrop';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import { Backup as BackupIcon } from '@mui/icons-material';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 import { AlertDialog, Card, Flex, Loading, Dropzone, vojoToChinillaLocaleString } from '@chinilla/core';
 import {
   did_generate_backup_file,
@@ -25,10 +24,10 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Tooltip } from '@material-ui/core';
-import HelpIcon from '@material-ui/icons/Help';
+} from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Tooltip } from '@mui/material';
+import HelpIcon from '@mui/icons-material/Help';
 import { useForm, Controller, useFieldArray } from 'react-hook-form';
 import { openDialog } from '../../../modules/dialog';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
@@ -444,6 +443,7 @@ const RecoveryCard = (props) => {
                     <Button
                       onClick={(event) => handleRemoveFile(event, object)}
                       variant="contained"
+                      color="danger"
                     >
                       <Trans>Delete</Trans>
                     </Button>
@@ -856,6 +856,7 @@ const ManageDIDsCard = (props) => {
                   <Button
                     onClick={() => remove(index)}
                     variant="contained"
+                    color="danger"
                     disableElevation
                   >
                     <Trans>Delete</Trans>
@@ -867,7 +868,7 @@ const ManageDIDsCard = (props) => {
                   onClick={() => {
                     append({ backupid: 'Backup ID' });
                   }}
-                  variant="contained"
+                  variant="outlined"
                   disableElevation
                 >
                   <Trans>Add Backup ID</Trans>

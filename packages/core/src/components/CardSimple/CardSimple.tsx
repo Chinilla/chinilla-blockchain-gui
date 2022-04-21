@@ -10,14 +10,14 @@ import {
   Typography,
   TypographyProps,
   CircularProgress,
-} from '@material-ui/core';
+} from '@mui/material';
 
 const StyledCard = styled(Card)`
   height: 100%;
   overflow: visible;
   margin-bottom: -0.5rem;
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
+    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 const StyledTitle = styled(Box)`

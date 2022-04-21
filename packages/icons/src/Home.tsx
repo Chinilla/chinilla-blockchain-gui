@@ -1,5 +1,5 @@
 import React from 'react';
-import { SvgIcon, SvgIconProps } from '@material-ui/core';
+import { SvgIcon, SvgIconProps } from '@mui/material';
 import styled from 'styled-components';
 import HomeIcon from './images/home.svg';
 
@@ -7,7 +7,7 @@ function getColor({ theme, color }) {
   if (color !== 'inherit') {
     return color;
   }
-  return theme.palette.type === 'dark' ? 'white' : '#757575';
+  return theme.palette.mode === 'dark' ? 'white' : '#757575';
 }
 
 const StyledHomeIcon = styled(HomeIcon)`

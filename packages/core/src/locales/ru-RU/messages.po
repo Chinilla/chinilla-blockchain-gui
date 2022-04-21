@@ -149,7 +149,7 @@ msgstr ""
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr ""
 
-#: src/components/Amount/Amount.tsx:113
+#: src/components/Amount/Amount.tsx:114
 msgid "Amount"
 msgstr "Количество"
 
@@ -671,7 +671,7 @@ msgstr "Подключен"
 #~ msgid "Contribute on GitHub"
 #~ msgstr "Сотрудничать на GitHub"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:31
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:37
 msgid "Copied"
 msgstr "Скопировано"
 
@@ -682,7 +682,7 @@ msgstr "Скопировано"
 #~ msgid "Copy"
 #~ msgstr "Копировать"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:33
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:39
 msgid "Copy to Clipboard"
 msgstr "Скопировать в буфер обмена"
 
@@ -924,6 +924,7 @@ msgstr ""
 #~ msgid "Disable bitfield plotting"
 #~ msgstr "Отключить битовое поле"
 
+#: src/components/Back/Back.tsx:40
 #: src/components/FormBackButton/FormBackButton.tsx:27
 msgid "Discard"
 msgstr "Oтказаться"
@@ -1120,7 +1121,7 @@ msgstr "Фарминг"
 #~ msgid "Farming Status"
 #~ msgstr "Статус фарминга"
 
-#: src/components/Fee/Fee.tsx:54
+#: src/components/Fee/Fee.tsx:52
 msgid "Fee"
 msgstr "Комиссия"
 
@@ -1236,7 +1237,7 @@ msgstr "Часто задаваемые вопросы"
 msgid "Help"
 msgstr "Помощь"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:69
+#: src/components/LocaleToggle/LocaleToggle.tsx:70
 msgid "Help translate"
 msgstr "Помогите с переводом"
 
@@ -1286,7 +1287,7 @@ msgstr "Импорт мнемоники (24 слова)"
 #~ msgid "Incoming"
 #~ msgstr "Входящие"
 
-#: src/components/Fee/Fee.tsx:42
+#: src/components/Fee/Fee.tsx:40
 msgid "Incorrect value"
 msgstr "Некорректное значение"
 
@@ -1437,8 +1438,8 @@ msgstr ""
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:133
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:155
 msgid "Log Out"
 msgstr ""
 
@@ -1446,8 +1447,8 @@ msgstr ""
 #~ msgid "Logging in"
 #~ msgstr "Вход в систему"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:105
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:132
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:134
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:154
 msgid "Logout"
 msgstr ""
 
@@ -1662,6 +1663,10 @@ msgstr "Нет подключения"
 #: src/components/farm/FarmManageFarmingRewards.tsx:164
 #~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 #~ msgstr "Обратите внимание, что это не меняет адреса выплат пула. Это влияет только на старый формат участков и на вознаграждение 0.25HCXза участки в пуле."
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:115
+#~ msgid "Notifications"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:157
@@ -2945,7 +2950,7 @@ msgstr ""
 #~ msgid "Unique identifier"
 #~ msgstr "Уникальный идентификатор"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:47
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
 msgid "Unknown"
 msgstr "Неизвестный"
 
@@ -2953,6 +2958,7 @@ msgstr "Неизвестный"
 #~ msgid "Unlock Keyring"
 #~ msgstr ""
 
+#: src/components/Back/Back.tsx:39
 #: src/components/FormBackButton/FormBackButton.tsx:26
 msgid "Unsaved Changes"
 msgstr "Несохранённые изменения"
@@ -2978,7 +2984,7 @@ msgstr ""
 #~ msgid "Value is too high"
 #~ msgstr "Value is too high"
 
-#: src/components/Fee/Fee.tsx:34
+#: src/components/Fee/Fee.tsx:32
 msgid "Value seems high"
 msgstr "Значение вероятно завышено"
 
@@ -3035,6 +3041,7 @@ msgstr "Значение вероятно завышено"
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr "Ожидание подтверждения транзакции"
 
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr ""
@@ -3176,6 +3183,7 @@ msgstr "Добро пожаловать в Чиа. Пожалуйста, вой�
 #~ msgid "You do not need to be synched or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
 #~ msgstr "Вам не нужно синхронизировать узел или быть подключенным к участку. Во время процесса засеивания участков создаются временные файлы, размер которых превышает размер итоговых файлов участков. Убедитесь, что у вас достаточно места. <0>Подробнее</0>"
 
+#: src/components/Back/Back.tsx:43
 #: src/components/FormBackButton/FormBackButton.tsx:30
 msgid "You have made changes. Do you want to discard them?"
 msgstr "У вас есть несохраненные изменения. Хотите сохранить их?"
@@ -3323,6 +3331,10 @@ msgstr ""
 #~ msgid "{0, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 #~ msgstr ""
 
+#: src/components/Amount/Amount.tsx:96
+msgid "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
+
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"
 #~ msgstr "{0} Block Rewards"
@@ -3357,8 +3369,8 @@ msgid "{minPassphraseLength, plural, one {Passphrases must be at least # charact
 msgstr ""
 
 #: src/components/Amount/Amount.tsx:95
-msgid "{vojo, plural, one {vojo} other {vojos}}"
-msgstr ""
+#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

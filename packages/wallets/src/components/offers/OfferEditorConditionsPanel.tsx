@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import BigNumber from 'bignumber.js';
 import { useFormContext, useFieldArray } from 'react-hook-form';
 import { Trans } from '@lingui/macro';
 import {
@@ -10,14 +11,15 @@ import {
   vojoToChinillaLocaleString,
   vojoToCAT,
   vojoToCATLocaleString,
+  useLocale,
 } from '@chinilla/core';
 import {
   Box,
   Divider,
   IconButton,
   Typography,
-} from '@material-ui/core';
-import { Add, Remove } from '@material-ui/icons';
+} from '@mui/material';
+import { Add, Remove } from '@mui/icons-material';
 import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@chinilla/api-react';
 import { Wallet, WalletType } from '@chinilla/api';
 import type OfferEditorRowData from './OfferEditorRowData';
@@ -39,21 +41,22 @@ type OfferEditorConditionsRowProps = {
 function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
   const { namePrefix, item, tradeSide, addRow, removeRow, updateRow, showAddWalletMessage, disabled, ...rest } = props;
   const { getValues } = useFormContext();
+  const [locale] = useLocale();
   const row: OfferEditorRowData = getValues(namePrefix);
   const { data: walletBalance, isLoading } = useGetWalletBalanceQuery({ walletId: row.assetWalletId });
 
   const spendableBalanceString: string | undefined = useMemo(() => {
-    let balanceString = undefined;
-    let balance = 0;
+    let balanceString: string | undefined;
+    let balance = new BigNumber(0);
 
     if (!isLoading && tradeSide === 'sell' && walletBalance && walletBalance.walletId == row.assetWalletId) {
       switch (item.walletType) {
         case WalletType.STANDARD_WALLET:
-          balanceString = vojoToChinillaLocaleString(walletBalance.spendableBalance);
+          balanceString = vojoToChinillaLocaleString(walletBalance.spendableBalance, locale);
           balance = vojoToChinilla(walletBalance.spendableBalance);
           break;
         case WalletType.CAT:
-          balanceString = vojoToCATLocaleString(walletBalance.spendableBalance);
+          balanceString = vojoToCATLocaleString(walletBalance.spendableBalance, locale);
           balance = vojoToCAT(walletBalance.spendableBalance);
           break;
         default:
@@ -61,7 +64,7 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
       }
     }
 
-    if (balanceString !== row.spendableBalanceString || balance !== row.spendableBalance) {
+    if (balanceString !== row.spendableBalanceString || !balance.isEqualTo(row.spendableBalance)) {
       row.spendableBalanceString = balanceString;
       row.spendableBalance = balance;
 
@@ -69,7 +72,7 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
     }
 
     return balanceString;
-  }, [row.assetWalletId, walletBalance, isLoading]);
+  }, [row.assetWalletId, walletBalance, isLoading, locale]);
 
   function handleAssetChange(namePrefix: string, selectedWalletId: number, selectedWalletType: WalletType) {
     const row: OfferEditorRowData = getValues(namePrefix);
@@ -77,17 +80,20 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
     row.assetWalletId = selectedWalletId;
     row.walletType = selectedWalletType;
     row.spendableBalanceString = spendableBalanceString;
-    row.spendableBalance = walletBalance ? walletBalance.spendableBalance : 0;
+    row.spendableBalance = walletBalance
+      ? new BigNumber(walletBalance.spendableBalance)
+      : new BigNumber(0);
 
     updateRow(row);
   }
 
-  function handleAmountChange(namePrefix: string, amount: number) {
+  function handleAmountChange(namePrefix: string, amount: string) {
     const row: OfferEditorRowData = getValues(namePrefix);
 
-    row.amount = amount;
-
-    updateRow(row);
+    updateRow({
+      ...row,
+      amount,
+    });
   }
 
   return (
@@ -113,13 +119,12 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
               variant="filled"
               color="secondary"
               label={<Trans>Amount</Trans>}
-              defaultValue={item.amount}
               id={`${namePrefix}.amount`}
               name={`${namePrefix}.amount`}
               disabled={disabled}
               symbol={item.walletType === WalletType.STANDARD_WALLET ? undefined : ""}
               showAmountInVojos={item.walletType === WalletType.STANDARD_WALLET}
-              onChange={(value: number) => handleAmountChange(namePrefix, value)}
+              onChange={(value: string) => handleAmountChange(namePrefix, value)}
               required
               fullWidth
             />
@@ -233,16 +238,35 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
     { side: 'buy', fields: takerFields, namePrefix: 'takerRows', canAddRow: canAddTakerRow },
     { side: 'sell', fields: makerFields, namePrefix: 'makerRows', canAddRow: canAddMakerRow },
   ];
-  const showAddCATsMessage = !canAddTakerRow && wallets.length === 1;
-  const showExchangeRate = !!makerAssetInfo && !!makerExchangeRate && !!takerAssetInfo && !!takerExchangeRate;
+  const showAddCATsMessage = !canAddTakerRow && wallets?.length === 1;
+  const showExchangeRate = !!makerAssetInfo && !!takerAssetInfo;
 
   if (makerSide === 'sell') {
     sections.reverse();
   }
 
-  // sections[0].headerTitle = sections[0].side === 'buy' ? <Trans>You will buy</Trans> : <Trans>You will sell</Trans>;
   sections[0].headerTitle = <Trans>You will offer</Trans>;
   sections[1].headerTitle = <Trans>In exchange for</Trans>
+
+  function exchangeRateChanged(updatedExchangeRate: string | number, side: 'maker' | 'taker') {
+    const rate: number = Number(updatedExchangeRate);
+    const amount: number = Number(side === 'taker' ? makerRows[0].amount : takerRows[0].amount);
+    const haveAmount: boolean = amount > 0 && Number.isFinite(amount);
+    const assetInfo: AssetIdMapEntry | undefined = side === 'maker' ? makerAssetInfo : takerAssetInfo;
+    const newAmount = Number(haveAmount ? rate * amount : updatedExchangeRate).toFixed(assetInfo?.walletType === WalletType.STANDARD_WALLET ? 9 : 12);
+    if (side === 'taker') {
+      takerUpdate(0, { ...takerRows[0], amount: newAmount });
+      if (!haveAmount) {
+        makerUpdate(0, { ...makerRows[0], amount: 1 });
+      }
+    }
+    else {
+      makerUpdate(0, { ...makerRows[0], amount: newAmount });
+      if (!haveAmount) {
+        takerUpdate(0, { ...takerRows[0], amount: 1 });
+      }
+    }
+  }
 
   return (
     <Flex flexDirection="column" gap={3}>
@@ -277,12 +301,20 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
           )}
         </Flex>
       ))}
-      {!!makerAssetInfo && !!makerExchangeRate && !!takerAssetInfo && !!takerExchangeRate && (
+      {showExchangeRate && (
         <>
           <Divider />
           <Flex flexDirection="row" gap={0}>
-            <Flex flexDirection="column" style={{ width: '90%' }}>
-              <OfferExchangeRate makerAssetInfo={makerAssetInfo} makerExchangeRate={makerExchangeRate} takerAssetInfo={takerAssetInfo} takerExchangeRate={takerExchangeRate} />
+            <Flex flexDirection="column" style={{width: '90%'}}>
+              <OfferExchangeRate
+                readOnly={false}
+                makerAssetInfo={makerAssetInfo}
+                makerExchangeRate={makerExchangeRate}
+                takerAssetInfo={takerAssetInfo}
+                takerExchangeRate={takerExchangeRate}
+                takerExchangeRateChanged={(rate) => exchangeRateChanged(rate, 'taker')}
+                makerExchangeRateChanged={(rate) => exchangeRateChanged(rate, 'maker')}
+              />
             </Flex>
             {/* 10% reserved for the end to align with the - + buttons in OfferEditorConditionRow */}
             <Flex flexDirection="column" alignItems="center" style={{ width: '10%' }}>

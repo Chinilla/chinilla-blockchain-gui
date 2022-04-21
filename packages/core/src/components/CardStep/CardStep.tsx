@@ -8,18 +8,18 @@ import {
   Divider,
   Grid,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import Flex from '../Flex';
 
 const StyledCardHeader = styled(CardHeader)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#3d3c3c' : '#fff2c2'};
+    theme.palette.mode === 'dark' ? '#3d3c3c' : '#fff2c2'};
 `;
 
 const StyledCardContent = styled(CardContent)`
   padding-left: 72px;
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
+    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 const StyledStep = styled(Avatar)`

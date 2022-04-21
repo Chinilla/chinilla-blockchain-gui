@@ -30,9 +30,13 @@ msgstr ""
 msgid "(Optional)"
 msgstr "(Valfritt)"
 
+#: src/components/farm/FarmLatestBlockChallenges.tsx:60
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr ""
+
 #: src/components/farm/FarmLatestBlockChallenges.tsx:58
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "*Vill du utforska Chinillas block lite mer? Ta en titt på <0>Chinilla Explorer</0> som har skapats som öppen källkod av en utvecklare."
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "*Vill du utforska Chinillas block lite mer? Ta en titt på <0>Chinilla Explorer</0> som har skapats som öppen källkod av en utvecklare."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -54,7 +58,7 @@ msgstr "+ Lägg till ny plott-NFT"
 #~ msgid "128 buckets is recommended"
 #~ msgstr "128 buckets rekommenderas"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:96
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:95
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "En skördare är en tjänst som körs på en maskin där plottar lagras. En odlare och skördare kommunicerar med en fullständig nod för att läsa blockkedjans tillstånd. Du kan se ditt nätverk av anslutna skördare nedan Läs mer"
 
@@ -62,8 +66,8 @@ msgstr "En skördare är en tjänst som körs på en maskin där plottar lagras.
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:513
-#: src/electron/main.tsx:600
+#: src/electron/main.tsx:525
+#: src/electron/main.tsx:612
 msgid "About Chinilla Blockchain"
 msgstr "Om Chinilla Blockchain"
 
@@ -81,10 +85,9 @@ msgstr "Om Chinilla Blockchain"
 msgid "Action"
 msgstr "Åtgärd"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:68
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:67
+#: src/components/farm/FarmFullNodeConnections.tsx:66
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:66
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/pool/PoolOverview.tsx:66
 msgid "Actions"
 msgstr "Åtgärder"
 
@@ -97,7 +100,7 @@ msgstr "Åtgärder"
 #~ msgid "Add Backup ID"
 #~ msgstr "Lägg till säkerhetskopierings-ID"
 
-#: src/components/plot/PlotHeader.tsx:89
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Lägg till mapp med plottar"
 
@@ -109,10 +112,10 @@ msgstr "Lägg till plott i kön"
 #~ msgid "Add Wallet"
 #~ msgstr "Add Wallet"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:45
-#: src/components/plot/add/PlotAddForm.tsx:176
+#: src/components/farm/overview/FarmOverviewHero.tsx:41
+#: src/components/plot/add/PlotAddForm.tsx:173
 #: src/components/plot/overview/PlotOverviewHero.tsx:52
-#: src/components/plot/PlotHeader.tsx:61
+#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
 #: src/components/plotNFT/PlotNFTCard.tsx:269
 msgid "Add a Plot"
@@ -122,11 +125,11 @@ msgstr "Lägg till en plott"
 msgid "Add a Plot NFT"
 msgstr "Lägg till en plott-NFT"
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:85
+#: src/components/plot/PlotAddDirectoryDialog.tsx:84
 msgid "Add a plot"
 msgstr "Lägg till en plott"
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:124
+#: src/components/plot/PlotAddDirectoryDialog.tsx:123
 msgid "Add plot directory"
 msgstr "Lägg till mapp med plottar"
 
@@ -145,7 +148,7 @@ msgstr "Lägg till {currencyCode} från kranen"
 #~ msgid "Address / Puzzle hash"
 #~ msgstr "Adress/pusselhash"
 
-#: src/components/app/AppKeyringMigrator.tsx:199
+#: src/components/app/AppKeyringMigrator.tsx:198
 msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
 msgstr ""
 
@@ -187,7 +190,7 @@ msgstr "Är det säkert att du vill koppla ifrån?"
 msgid "Are you sure you want to quit?"
 msgstr ""
 
-#: src/electron/main.tsx:268
+#: src/electron/main.tsx:262
 #~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 #~ msgstr "Är det säkert att du vill stänga av? Plottning och odling i GUI kommer att stoppas."
 
@@ -212,7 +215,7 @@ msgstr "Autogenererat namn från poolkontraktsadress"
 #~ msgid "Back"
 #~ msgstr "Tillbaka"
 
-#: src/components/backup/BackupCreate.tsx:45
+#: src/components/backup/BackupCreate.tsx:46
 msgid "Backup file is used to restore smart wallets."
 msgstr "Säkerhetskopierad fil används för att återställa smarta plånböcker."
 
@@ -222,12 +225,11 @@ msgstr "Säkerhetskopierad fil används för att återställa smarta plånböcke
 #~ msgid "Balance"
 #~ msgstr "Saldo"
 
-#: src/components/block/Block.jsx:306
+#: src/components/block/Block.jsx:295
 msgid "Base Farmer Reward Amount"
 msgstr "Grundbelopp för odlarbelöning"
 
-#: src/components/farm/FarmLatestBlockChallenges.tsx:33
-#: src/components/farm/FarmLatestBlockChallenges.tsx:43
+#: src/components/farm/FarmLatestBlockChallenges.tsx:35
 msgid "Below are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
 msgstr "Nedan visas aktuella blockverifieringar. Eventuellt har du ett bevis-på-utrymme för dessa verifieringar. Dessa block innehåller för närvarande inget bevis-på-tid."
 
@@ -239,15 +241,11 @@ msgstr "Bästa uppskattning under de senaste 24 timmarna"
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:116
-#: src/components/block/Block.jsx:125
-#: src/components/block/Block.jsx:142
-#: src/components/block/Block.jsx:146
-#: src/components/block/Block.jsx:322
+#: src/components/block/Block.jsx:136
 msgid "Block"
 msgstr "Block"
 
-#: src/components/farm/card/FarmCardBlockRewards.tsx:30
+#: src/components/farm/card/FarmCardBlockRewards.tsx:31
 msgid "Block Rewards"
 msgstr ""
 
@@ -255,11 +253,11 @@ msgstr ""
 #~ msgid "Block Test"
 #~ msgstr "Blocktest"
 
-#: src/components/block/Block.jsx:224
+#: src/components/block/Block.jsx:213
 msgid "Block VDF Iterations"
 msgstr "VDF-iterationer för block"
 
-#: src/components/block/Block.jsx:326
+#: src/components/block/Block.jsx:314
 msgid "Block at height {0} in the Chinilla blockchain"
 msgstr "Block vid höjd {0} i Chinilla-blockkedjan"
 
@@ -267,15 +265,15 @@ msgstr "Block vid höjd {0} i Chinilla-blockkedjan"
 #~ msgid "Block hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:129
+#: src/components/block/Block.jsx:122
 msgid "Block with hash {headerHash}"
 msgstr "Block med hash {headerHash}"
 
-#: src/components/block/Block.jsx:151
+#: src/components/block/Block.jsx:141
 msgid "Block with hash {headerHash} does not exist."
 msgstr "Block med hash {headerHash} existerar inte."
 
-#: src/components/fullNode/FullNode.jsx:124
+#: src/components/fullNode/FullNode.jsx:121
 msgid "Blocks"
 msgstr "Block"
 
@@ -283,13 +281,13 @@ msgstr "Block"
 #~ msgid "Both values are empty. This is ok if you are, for example, sending your rewards to an offline wallet."
 #~ msgstr "Both values are empty. This is ok if you are, for example, sending your rewards to an offline wallet."
 
-#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:72
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:73
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:92
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:123
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:124
 msgid "Browse"
 msgstr "Bläddra"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:74
+#: src/components/farm/FarmLastAttemptedProof.tsx:72
 msgid "But you are currently farming <0/>"
 msgstr "Men för tillfället odlar du <0/>"
 
@@ -311,16 +309,18 @@ msgstr "Men för tillfället odlar du <0/>"
 #~ msgid "Can be backed up to mnemonic seed"
 #~ msgstr "Kan säkerhetskopieras till minnesfras"
 
-#: src/components/app/AppPassPrompt.tsx:152
-#: src/components/backup/BackupCreate.tsx:50
-#: src/components/farm/FarmManageFarmingRewards.tsx:187
-#: src/components/fullNode/FullNodeAddConnection.tsx:85
+#: src/components/app/AppPassPrompt.tsx:151
+#: src/components/backup/BackupCreate.tsx:51
+#: src/components/block/FarmManageFarmingRewards.tsx:175
+#: src/components/block/FullNodeAddConnection.tsx:85
+#: src/components/farm/FarmManageFarmingRewards.tsx:186
+#: src/components/fullNode/FullNodeAddConnection.tsx:84
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
-#: src/components/settings/ChangePassphrasePrompt.tsx:224
-#: src/components/settings/RemovePassphrasePrompt.tsx:138
-#: src/components/settings/SetPassphrasePrompt.tsx:207
+#: src/components/settings/ChangePassphrasePrompt.tsx:221
+#: src/components/settings/RemovePassphrasePrompt.tsx:135
+#: src/components/settings/SetPassphrasePrompt.tsx:203
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -332,7 +332,7 @@ msgstr "Avbryt"
 msgid "Caution, deleting these plots will delete them forever. Check that the storage devices are properly connected."
 msgstr "Var försiktig. Om dessa plottar tas bort försvinner de för alltid. Kontrollera att lagringsenheterna är ordentligt anslutna."
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:15
+#: src/components/farm/FarmLastAttemptedProof.tsx:14
 msgid "Challenge"
 msgstr "Verifiering"
 
@@ -344,23 +344,26 @@ msgstr "Verifieringshash"
 msgid "Change"
 msgstr "Byt"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:232
-#: src/components/settings/Settings.tsx:160
+#: src/components/settings/ChangePassphrasePrompt.tsx:229
+#: src/components/settings/Settings.tsx:164
 #: src/components/settings/SettingsPanel.tsx:165
 msgid "Change Passphrase"
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:405
 #: src/components/plotNFT/PlotNFTChangePool.tsx:121
-#: src/components/pool/PoolOverview.tsx:112
 msgid "Change Pool"
 msgstr "Byt pool"
+
+#: src/electron/main.tsx:504
+msgid "Chat on Discord"
+msgstr ""
 
 #: src/electron/main.tsx:492
 msgid "Chat on KeyBase"
 msgstr "Chatta på KeyBase"
 
-#: src/electron/main.tsx:510
+#: src/electron/main.tsx:522
 msgid "Chinilla"
 msgstr "Chinilla"
 
@@ -372,7 +375,7 @@ msgstr "Chinilla Blockchains wiki"
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Chinilla-plånbok"
 
-#: src/components/app/AppSelectMode.tsx:163
+#: src/components/app/AppSelectMode.tsx:158
 msgid "Choose Farming Mode"
 msgstr ""
 
@@ -388,17 +391,17 @@ msgstr "Välj plottstorlek"
 msgid "Choose Plotter"
 msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:112
+#: src/components/app/AppSelectMode.tsx:107
 msgid "Choose Wallet Mode"
 msgstr ""
 
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
 #: src/components/plotNFT/PlotNFTCard.tsx:381
-#: src/components/pool/PoolOverview.tsx:89
 msgid "Claim Rewards"
 msgstr "Begär in belöningar"
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:131
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:82
+#: src/components/plot/PlotAddDirectoryDialog.tsx:130
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
 msgstr "Stäng"
 
@@ -447,7 +450,7 @@ msgstr ""
 #~ msgid "Coloured Coin Options"
 #~ msgstr "Alternativ för färgade mynt"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:173
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:180
 #: src/electron/main.tsx:266
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
@@ -457,13 +460,13 @@ msgstr "Bekräfta"
 msgid "Confirm Disconnect"
 msgstr "Bekräfta frånkoppling"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:182
+#: src/components/settings/ChangePassphrasePrompt.tsx:180
 msgid "Confirm New Passphrase"
 msgstr ""
 
+#: src/components/app/AppKeyringMigrator.tsx:149
 #: src/components/app/AppKeyringMigrator.tsx:150
-#: src/components/app/AppKeyringMigrator.tsx:151
-#: src/components/settings/SetPassphrasePrompt.tsx:162
+#: src/components/settings/SetPassphrasePrompt.tsx:160
 msgid "Confirm Passphrase"
 msgstr ""
 
@@ -479,11 +482,13 @@ msgstr "Bekräfta"
 #~ msgid "Confirmed at height {0}"
 #~ msgstr "Bekräftad vid höjd {0}"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:88
+#: src/components/block/FullNodeAddConnection.tsx:88
+#: src/components/fullNode/FullNodeAddConnection.tsx:87
 msgid "Connect"
 msgstr "Anslut"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:64
+#: src/components/block/FullNodeAddConnection.tsx:64
+#: src/components/fullNode/FullNodeAddConnection.tsx:63
 #: src/components/fullNode/FullNodeConnections.tsx:109
 msgid "Connect to other peers"
 msgstr "Anslut till andra peer-datorer"
@@ -509,8 +514,8 @@ msgstr ""
 msgid "Connection Status"
 msgstr "Anslutningsstatus"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:109
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:107
+#: src/components/farm/FarmFullNodeConnections.tsx:108
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:106
 msgid "Connection Status:"
 msgstr "Anslutningsstatus:"
 
@@ -541,13 +546,13 @@ msgstr "Delta på GitHub"
 #~ msgid "Copy to Clipboard"
 #~ msgstr "Kopiera till Urklipp"
 
-#: src/components/backup/BackupCreate.tsx:58
-#: src/components/plot/add/PlotAddForm.tsx:196
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:176
+#: src/components/backup/BackupCreate.tsx:59
+#: src/components/plot/add/PlotAddForm.tsx:190
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:181
 msgid "Create"
 msgstr "Skapa"
 
-#: src/components/app/AppSelectMode.tsx:145
+#: src/components/app/AppSelectMode.tsx:140
 msgid "Create & Manage plots"
 msgstr ""
 
@@ -597,7 +602,7 @@ msgstr ""
 #~ msgid "Create Transaction"
 #~ msgstr "Skapa transaktion"
 
-#: src/components/backup/BackupCreate.tsx:41
+#: src/components/backup/BackupCreate.tsx:42
 msgid "Create a Backup"
 msgstr "Skapa en säkerhetskopia"
 
@@ -649,7 +654,7 @@ msgstr "Skapar en plott-NFT och går med i poolen"
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Skapar plott-NFT för självpoolning"
 
-#: src/components/plot/add/PlotAddForm.tsx:107
+#: src/components/plot/add/PlotAddForm.tsx:105
 msgid "Currency code is not defined"
 msgstr "Valutakoden är inte definierad"
 
@@ -658,7 +663,7 @@ msgstr "Valutakoden är inte definierad"
 msgid "Current Difficulty"
 msgstr "Aktuell svårighetsgrad"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:162
+#: src/components/settings/ChangePassphrasePrompt.tsx:160
 msgid "Current Passphrase"
 msgstr ""
 
@@ -683,7 +688,7 @@ msgstr "Aktuellt poängsaldo"
 #~ msgid "DIDListItems.title"
 #~ msgstr ""
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:31
+#: src/components/farm/FarmLastAttemptedProof.tsx:30
 msgid "Date"
 msgstr "Datum"
 
@@ -699,7 +704,7 @@ msgstr "Fördröjning"
 msgid "Delete"
 msgstr "Ta bort"
 
-#: src/components/app/AppPassPrompt.tsx:93
+#: src/components/app/AppPassPrompt.tsx:92
 msgid "Delete Key"
 msgstr ""
 
@@ -729,7 +734,7 @@ msgstr "Ta bort obekräftade transaktioner"
 #~ msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
 #~ msgstr "Om du tar bort alla nycklar kommer de att permanent tas bort från datorn. Se till att du har säkerhetskopierat dem. Är det säkert att du vill fortsätta?"
 
-#: src/components/app/AppPassPrompt.tsx:89
+#: src/components/app/AppPassPrompt.tsx:88
 msgid "Deleting key"
 msgstr ""
 
@@ -749,7 +754,7 @@ msgstr "Utvecklare"
 msgid "Developer Tools"
 msgstr "Utvecklarverktyg"
 
-#: src/components/block/Block.jsx:210
+#: src/components/block/Block.jsx:199
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:14
 msgid "Difficulty"
 msgstr "Svårighetsgrad"
@@ -795,7 +800,7 @@ msgstr "Koppla ifrån"
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:51
+#: src/components/farm/overview/FarmOverviewHero.tsx:47
 #: src/components/plot/overview/PlotOverviewHero.tsx:67
 msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
 msgstr "Har du redan några plottar på denna maskin? <0>Lägg till plottmapp</0>"
@@ -812,7 +817,7 @@ msgstr "Stöder din maskin parallell plottning?"
 #~ msgid "Drag and drop offer file"
 #~ msgstr "Dra och släpp erbjudandefil"
 
-#: src/components/backup/BackupRestore.tsx:173
+#: src/components/backup/BackupRestore.tsx:172
 msgid "Drag and drop your backup file"
 msgstr "Drag och släpp din säkerhetskopierade fil"
 
@@ -838,11 +843,11 @@ msgstr ""
 #~ msgid "Enter Passphrase"
 #~ msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:129
+#: src/components/app/AppKeyringMigrator.tsx:128
 msgid "Enter a strong passphrase and click Migrate Keys to secure your keys"
 msgstr ""
 
-#: src/components/settings/SetPassphrasePrompt.tsx:141
+#: src/components/settings/SetPassphrasePrompt.tsx:139
 msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
@@ -850,7 +855,7 @@ msgstr ""
 #~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 #~ msgstr "Skriv in din sparade minnesfras på 24 ord för att återställa din Chinilla-plånbok."
 
-#: src/components/settings/RemovePassphrasePrompt.tsx:104
+#: src/components/settings/RemovePassphrasePrompt.tsx:102
 msgid "Enter your passphrase:"
 msgstr ""
 
@@ -902,7 +907,7 @@ msgstr "Det gick inte att öppna (ogiltiga plottar)"
 #~ msgid "Failed to remove passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/settings/SetPassphrasePrompt.tsx:85
+#: src/components/settings/SetPassphrasePrompt.tsx:83
 msgid "Failed to set passphrase: {0}"
 msgstr ""
 
@@ -910,7 +915,7 @@ msgstr ""
 #~ msgid "Failed to set passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:113
+#: src/components/settings/ChangePassphrasePrompt.tsx:111
 msgid "Failed to update passphrase: {0}"
 msgstr ""
 
@@ -918,23 +923,25 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:48
-msgid "Farm"
-msgstr "Odling"
+#: src/components/dashboard/DashboardSideBar.tsx:46
+#~ msgid "Farm"
+#~ msgstr "Odling"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:297
 msgid "Farmer Public Key"
 msgstr "Publik nyckel för odlare"
 
-#: src/components/block/Block.jsx:256
+#: src/components/block/Block.jsx:245
 msgid "Farmer Puzzle Hash"
 msgstr "Odlare-pusselhash"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:154
+#: src/components/block/FarmManageFarmingRewards.tsx:142
+#: src/components/farm/FarmManageFarmingRewards.tsx:153
 msgid "Farmer Reward Address"
 msgstr "Adress för odlarbelöning"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:128
+#: src/components/block/FarmManageFarmingRewards.tsx:116
+#: src/components/farm/FarmManageFarmingRewards.tsx:127
 msgid "Farmer Reward Address is not properly formatted."
 msgstr "Den här dressen är inte korrekt formaterad."
 
@@ -942,7 +949,8 @@ msgstr "Den här dressen är inte korrekt formaterad."
 #~ msgid "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:122
+#: src/components/block/FarmManageFarmingRewards.tsx:110
+#: src/components/farm/FarmManageFarmingRewards.tsx:121
 msgid "Farmer Reward Address must not be empty."
 msgstr "Adress får inte vara tom."
 
@@ -960,18 +968,18 @@ msgstr "Odlaren körs inte"
 #~ msgid "Farmer public key:"
 #~ msgstr "Publik nyckel för odlare:"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:32
+#: src/components/farm/overview/FarmOverviewHero.tsx:28
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Odlare tjänar blockbelöningar och transaktionsavgifter genom att dedikera ledigt utrymme till nätverket för att hjälpa till att säkra transaktioner. Detta är vad din odling gör när du väl har lagt till en plott. <0>Läs mer</0>"
 
+#: src/components/dashboard/DashboardSideBar.tsx:95
 #: src/components/farm/card/FarmCardStatus.tsx:61
-#: src/components/farm/Farm.tsx:19
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Odlar"
 
-#: src/components/app/AppSelectMode.tsx:130
+#: src/components/app/AppSelectMode.tsx:125
 msgid "Farming Mode"
 msgstr ""
 
@@ -983,7 +991,7 @@ msgstr ""
 msgid "Farming Status"
 msgstr "Odlingsstatus"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:159
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:167
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:146
 #: src/components/pool/PoolInfo.tsx:17
 msgid "Fee"
@@ -1005,7 +1013,7 @@ msgstr "Avgift"
 msgid "Fee is used TWICE: once to leave pool, once to join."
 msgstr ""
 
-#: src/components/block/Block.jsx:310
+#: src/components/block/Block.jsx:299
 msgid "Fees Amount"
 msgstr "Avgiftsbelopp"
 
@@ -1014,7 +1022,7 @@ msgstr "Avgiftsbelopp"
 #~ msgstr ""
 
 #: src/electron/main.tsx:340
-#: src/electron/main.tsx:547
+#: src/electron/main.tsx:559
 msgid "File"
 msgstr "Fil"
 
@@ -1028,8 +1036,8 @@ msgstr "Filnamn"
 msgid "Final folder location"
 msgstr "Sökväg till slutlig mapp"
 
-#: src/components/fullNode/FullNode.jsx:42
-#: src/components/fullNode/FullNode.jsx:96
+#: src/components/fullNode/FullNode.jsx:39
+#: src/components/fullNode/FullNode.jsx:93
 msgid "Finished"
 msgstr "Färdigt"
 
@@ -1041,14 +1049,14 @@ msgstr "Följ på Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Vanliga frågor"
 
-#: src/components/dashboard/DashboardSideBar.tsx:32
-#: src/components/fullNode/FullNode.jsx:137
+#: src/components/dashboard/DashboardSideBar.tsx:76
+#: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Fullständig nod"
 
-#: src/components/fullNode/FullNode.jsx:140
-msgid "Full Node Overview"
-msgstr "Översikt över fullständig nod"
+#: src/components/fullNode/FullNode.jsx:138
+#~ msgid "Full Node Overview"
+#~ msgstr "Översikt över fullständig nod"
 
 #: src/components/fullNode/FullNode.jsx:267
 #~ msgid "Full Node Status"
@@ -1058,6 +1066,10 @@ msgstr "Översikt över fullständig nod"
 msgid "Full Screen"
 msgstr "Helskärm"
 
+#: src/components/settings/Settings.tsx:257
+msgid "General"
+msgstr ""
+
 #: src/components/_wallet_old/create/createNewColouredCoin.jsx:102
 #~ msgid "Generate New Colour"
 #~ msgstr "Skapa ny färg"
@@ -1066,9 +1078,13 @@ msgstr "Helskärm"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
-#: src/components/pool/PoolOverview.tsx:173
-msgid "Grid view"
-msgstr "Rutnätsvy"
+#: src/electron/main.tsx:510
+msgid "Github Discussions"
+msgstr ""
+
+#: src/components/pool/PoolOverview.tsx:172
+#~ msgid "Grid view"
+#~ msgstr "Rutnätsvy"
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:576
 #~ msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
@@ -1082,16 +1098,16 @@ msgstr "Rutnätsvy"
 msgid "Harvester Plots"
 msgstr "Lokala plottar"
 
-#: src/components/fullNode/FullNode.jsx:60
+#: src/components/fullNode/FullNode.jsx:57
 msgid "Header Hash"
 msgstr "Huvudhash"
 
-#: src/components/block/Block.jsx:174
+#: src/components/block/Block.jsx:163
 msgid "Header hash"
 msgstr "Huvudhash"
 
-#: src/components/block/Block.jsx:190
-#: src/components/fullNode/FullNode.jsx:78
+#: src/components/block/Block.jsx:179
+#: src/components/fullNode/FullNode.jsx:75
 #: src/components/fullNode/FullNodeConnections.tsx:78
 msgid "Height"
 msgstr "Höjd"
@@ -1104,12 +1120,16 @@ msgstr "Hjälp"
 #~ msgid "Help translate"
 #~ msgstr "Hjälp till med översättning"
 
+#: src/components/farm/FarmLatestBlockChallenges.tsx:51
+msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
+msgstr ""
+
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:75
 #~ msgid "Hide Advanced Options"
 #~ msgstr "Dölj avancerade alternativ"
 
-#: src/components/app/AppPassPrompt.tsx:128
-#: src/components/settings/RemovePassphrasePrompt.tsx:120
+#: src/components/app/AppPassPrompt.tsx:127
+#: src/components/settings/RemovePassphrasePrompt.tsx:118
 msgid "Hint"
 msgstr ""
 
@@ -1117,8 +1137,8 @@ msgstr ""
 #~ msgid "History"
 #~ msgstr "Historik"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:37
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:36
+#: src/components/farm/FarmFullNodeConnections.tsx:35
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:35
 msgid "Host Name"
 msgstr "Värdnamn"
 
@@ -1126,11 +1146,16 @@ msgstr "Värdnamn"
 msgid "IP address"
 msgstr "IP-adress"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:71
+#: src/components/block/FullNodeAddConnection.tsx:71
+#: src/components/fullNode/FullNodeAddConnection.tsx:70
 msgid "IP address / host"
 msgstr "IP-adress/värd"
 
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:128
+#: src/components/settings/Settings.tsx:258
+#~ msgid "Identities"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:129
 msgid "If none selected, then it will default to the temporary directory."
 msgstr "Om ingen anges kommer den tillfälliga mappen att användas."
 
@@ -1142,7 +1167,7 @@ msgstr "Om ingen anges kommer den tillfälliga mappen att användas."
 #~ msgid "Import from Mnemonics (24 words)"
 #~ msgstr "Importera från minnesfras (24 ord)"
 
-#: src/components/fullNode/FullNode.jsx:44
+#: src/components/fullNode/FullNode.jsx:41
 msgid "In Progress"
 msgstr "Pågår"
 
@@ -1187,18 +1212,19 @@ msgstr "Index"
 msgid "Invalid state"
 msgstr "Ogiltigt tillstånd"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:67
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:66
 msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
 msgstr "Det är en engångsinloggningslänk som kan användas för att logga in på en pools hemsida. Den innehåller en signatur med nyckel från plottens NFT. Inte alla pooler stöder denna funktion."
 
 #: src/components/plotNFT/PlotNFTCard.tsx:403
-#: src/components/pool/PoolOverview.tsx:110
 msgid "Join Pool"
 msgstr "Gå med i en pool"
 
 #: src/components/plot/add/PlotAddNFT.tsx:64
 #: src/components/plot/add/PlotAddNFT.tsx:146
-#: src/components/pool/PoolHero.tsx:31
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:131
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:145
+#: src/components/pool/PoolHero.tsx:26
 msgid "Join a Pool"
 msgstr "Gå med i en pool"
 
@@ -1214,7 +1240,7 @@ msgstr "Gå med i en pool och få konsekventa HCX-odlingsbelöningar. Genomsnitt
 msgid "Join a pool and get more consistent HCX farming rewards. Create a plot NFT and assign your new plots to a group."
 msgstr "Gå med i en pool och få mer konsekventa HCX-odlingsbelöningar. Skapa en plott-NFT och tilldela dina nya plottar till en grupp."
 
-#: src/components/app/AppSelectMode.tsx:151
+#: src/components/app/AppSelectMode.tsx:146
 msgid "Join farming pools"
 msgstr ""
 
@@ -1222,7 +1248,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-storlek"
 
-#: src/components/app/AppKeyringMigrator.tsx:94
+#: src/components/app/AppKeyringMigrator.tsx:93
 msgid "Keyring migration failed: {0}"
 msgstr ""
 
@@ -1234,12 +1260,12 @@ msgstr ""
 #~ msgid "Keys"
 #~ msgstr "Nycklar"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:65
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:64
+#: src/components/farm/FarmFullNodeConnections.tsx:63
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:63
 msgid "KiB Up/Down"
 msgstr "KiB Upp/Ner"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:45
+#: src/components/farm/FarmLastAttemptedProof.tsx:44
 msgid "Last Attempted Proof"
 msgstr "Senaste bevis som prövats"
 
@@ -1251,7 +1277,7 @@ msgstr "Senaste höjd som odlats på"
 msgid "Last Transaction Block Time"
 msgstr ""
 
-#: src/components/farm/FarmLatestBlockChallenges.tsx:30
+#: src/components/farm/FarmLatestBlockChallenges.tsx:32
 msgid "Latest Block Challenges"
 msgstr "Senaste blockverifieringar"
 
@@ -1260,7 +1286,7 @@ msgstr "Senaste blockverifieringar"
 msgid "Launcher Id"
 msgstr "Launcher-ID"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:77
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:76
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:118
 msgid "Learn More"
 msgstr "Läs mer"
@@ -1269,15 +1295,15 @@ msgstr "Läs mer"
 msgid "Leaving Pool"
 msgstr "Lämnar poolen"
 
-#: src/components/pool/PoolOverview.tsx:173
-msgid "List view"
-msgstr "Listvy"
+#: src/components/pool/PoolOverview.tsx:172
+#~ msgid "List view"
+#~ msgstr "Listvy"
 
 #: src/components/pool/Pool.tsx:21
 #~ msgid "Loading Plot NFTs"
 #~ msgstr "Läser in plott-NFT:er"
 
-#: src/components/app/AppProviders.tsx:66
+#: src/components/app/AppProviders.tsx:65
 msgid "Loading configuration"
 msgstr ""
 
@@ -1289,7 +1315,7 @@ msgstr ""
 #~ msgid "Loading list of wallets"
 #~ msgstr "Läser in en lista över plånböcker"
 
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:35
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:34
 msgid "Loading..."
 msgstr "Läser in …"
 
@@ -1341,7 +1367,7 @@ msgstr "Läser in …"
 #~ msgid "MainWalletList.title"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:100
+#: src/components/app/AppSelectMode.tsx:95
 msgid "Manage CAT tokens"
 msgstr ""
 
@@ -1353,7 +1379,8 @@ msgstr "Hantera odlingsbelöningar"
 #~ msgid "Manage Recovery DIDs"
 #~ msgstr "Hantera återställnings-DID"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:110
+#: src/components/block/FarmManageFarmingRewards.tsx:98
+#: src/components/farm/FarmManageFarmingRewards.tsx:109
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Hantera dina måladresser för odlarbelöningar"
 
@@ -1365,20 +1392,20 @@ msgstr "MiB upp/ner"
 #~ msgid "Migrate"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:182
+#: src/components/settings/Settings.tsx:186
 #: src/components/settings/SettingsPanel.tsx:186
 msgid "Migrate Keyring"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:230
+#: src/components/app/AppKeyringMigrator.tsx:229
 msgid "Migrate Keys"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:125
+#: src/components/app/AppKeyringMigrator.tsx:124
 msgid "Migration required"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:123
+#: src/components/settings/Settings.tsx:127
 #: src/components/settings/SettingsPanel.tsx:131
 msgid "Migration required to support passphrase protection"
 msgstr ""
@@ -1420,7 +1447,7 @@ msgstr "Nätverksnamn"
 #~ msgid "New Address"
 #~ msgstr "Ny adress"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:172
+#: src/components/settings/ChangePassphrasePrompt.tsx:170
 msgid "New Passphrase"
 msgstr ""
 
@@ -1432,7 +1459,7 @@ msgstr ""
 #~ msgid "New passphrase is the same as your current passphrase"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:340
+#: src/components/block/Block.jsx:328
 msgid "Next"
 msgstr "Nästa"
 
@@ -1456,12 +1483,13 @@ msgstr "Inga block har odlats ännu"
 #~ msgid "No previous transactions"
 #~ msgstr "Inga tidigare transaktioner"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:147
+#: src/components/block/FarmManageFarmingRewards.tsx:135
+#: src/components/farm/FarmManageFarmingRewards.tsx:146
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "Inga privata nycklar för en eller båda adresser. Endast säkert om du skicka belöningar till en annan plånbok."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:33
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:32
+#: src/components/farm/FarmFullNodeConnections.tsx:31
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:31
 #: src/components/fullNode/FullNodeConnections.tsx:35
 msgid "Node ID"
 msgstr "Node-ID"
@@ -1474,7 +1502,7 @@ msgstr "Nod-ID"
 msgid "None"
 msgstr "Ingen"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:69
+#: src/components/farm/FarmLastAttemptedProof.tsx:67
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Ingen av dina plottar har passerat plottfiltret ännu."
 
@@ -1507,9 +1535,18 @@ msgstr "Inte ansluten"
 msgid "Not found Plots"
 msgstr "Ej hittade plottar"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:175
+#: src/components/block/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:174
+#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
+#~ msgstr "Observera att detta inte ändrar dina poolutbetalningsadresser. Detta påverkar endast plottar med det gamla formatet och belöningen 0,25HCX för poolplotter."
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:174
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
-msgstr "Observera att detta inte ändrar dina poolutbetalningsadresser. Detta påverkar endast plottar med det gamla formatet och belöningen 0,25HCXför poolplotter."
+msgstr ""
+
+#: src/components/block/FarmManageFarmingRewards.tsx:163
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
+msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:157
@@ -1528,13 +1565,17 @@ msgstr ""
 msgid "Number of threads"
 msgstr "Antal trådar"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:88
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:87
 msgid "OK"
 msgstr "OK"
 
 #: src/components/trading/ViewOffer.jsx:67
 #~ msgid "Offer"
 #~ msgstr "Erbjudande"
+
+#: src/components/dashboard/DashboardSideBar.tsx:64
+msgid "Offers"
+msgstr ""
 
 #: src/components/trading/TradingOverview.jsx:412
 #~ msgid "Offers Created"
@@ -1556,28 +1597,28 @@ msgstr "OK"
 #~ msgid "Outgoing"
 #~ msgstr "Utgående"
 
+#: src/components/app/AppKeyringMigrator.tsx:138
 #: src/components/app/AppKeyringMigrator.tsx:139
-#: src/components/app/AppKeyringMigrator.tsx:140
-#: src/components/app/AppPassPrompt.tsx:120
-#: src/components/settings/RemovePassphrasePrompt.tsx:112
-#: src/components/settings/SetPassphrasePrompt.tsx:151
+#: src/components/app/AppPassPrompt.tsx:119
+#: src/components/settings/RemovePassphrasePrompt.tsx:110
+#: src/components/settings/SetPassphrasePrompt.tsx:149
 #: src/components/settings/SettingsPanel.tsx:217
 msgid "Passphrase"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:163
-#: src/components/settings/ChangePassphrasePrompt.tsx:193
-#: src/components/settings/SetPassphrasePrompt.tsx:175
+#: src/components/app/AppKeyringMigrator.tsx:162
+#: src/components/settings/ChangePassphrasePrompt.tsx:191
+#: src/components/settings/SetPassphrasePrompt.tsx:173
 msgid "Passphrase Hint"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:162
-#: src/components/settings/ChangePassphrasePrompt.tsx:192
-#: src/components/settings/SetPassphrasePrompt.tsx:174
+#: src/components/app/AppKeyringMigrator.tsx:161
+#: src/components/settings/ChangePassphrasePrompt.tsx:190
+#: src/components/settings/SetPassphrasePrompt.tsx:172
 msgid "Passphrase Hint (Optional)"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:213
+#: src/components/settings/Settings.tsx:217
 msgid "Passphrase Settings"
 msgstr ""
 
@@ -1586,22 +1627,22 @@ msgstr ""
 #~ msgid "Passphrase is incorrect"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:96
+#: src/components/settings/Settings.tsx:100
 #: src/components/settings/SettingsPanel.tsx:102
 msgid "Passphrase protection has been disabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:133
+#: src/components/settings/Settings.tsx:137
 #: src/components/settings/SettingsPanel.tsx:142
 msgid "Passphrase protection is disabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:130
+#: src/components/settings/Settings.tsx:134
 #: src/components/settings/SettingsPanel.tsx:138
 msgid "Passphrase protection is enabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:124
+#: src/components/settings/Settings.tsx:128
 #: src/components/settings/SettingsPanel.tsx:132
 msgid "Passphrase support requires migrating your keys to a new keyring"
 msgstr ""
@@ -1641,7 +1682,7 @@ msgstr "Väntande"
 #~ msgid "Pending Total Balance"
 #~ msgstr "Väntande totalt saldo"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:144
 #: src/hooks/useAbsorbRewards.tsx:43
 msgid "Please Confirm"
 msgstr "Bekräfta"
@@ -1663,8 +1704,8 @@ msgstr "Bekräfta"
 #~ msgid "Please enter a filename"
 #~ msgstr "Vänligen ange ett filnamn"
 
-#: src/components/app/AppPassPrompt.tsx:53
-#: src/components/settings/SetPassphrasePrompt.tsx:53
+#: src/components/app/AppPassPrompt.tsx:52
+#: src/components/settings/SetPassphrasePrompt.tsx:51
 msgid "Please enter a passphrase"
 msgstr ""
 
@@ -1715,17 +1756,17 @@ msgstr ""
 #~ msgid "Please enter a valid pubkey"
 #~ msgstr "Ange en giltig publik nyckel"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:75
+#: src/components/settings/ChangePassphrasePrompt.tsx:73
 msgid "Please enter your current passphrase, and a new passphrase"
 msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:80
-#: src/components/app/AppPassPrompt.tsx:96
-#: src/components/settings/RemovePassphrasePrompt.tsx:52
+#: src/components/app/AppPassPrompt.tsx:79
+#: src/components/app/AppPassPrompt.tsx:95
+#: src/components/settings/RemovePassphrasePrompt.tsx:50
 msgid "Please enter your passphrase"
 msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:90
+#: src/components/app/AppPassPrompt.tsx:89
 msgid "Please enter your passphrase to proceed"
 msgstr ""
 
@@ -1781,7 +1822,7 @@ msgstr "Vänta på synkronisering av plånboken"
 msgid "Plot Count"
 msgstr "Antal plottar"
 
-#: src/components/block/Block.jsx:288
+#: src/components/block/Block.jsx:277
 msgid "Plot Id"
 msgstr "Plott-ID"
 
@@ -1789,11 +1830,11 @@ msgstr "Plott-ID"
 msgid "Plot Key"
 msgstr "Plottnyckel"
 
-#: src/components/pool/PoolOverview.tsx:39
-msgid "Plot NFT"
-msgstr "Plott-NFT"
+#: src/components/pool/PoolOverview.tsx:38
+#~ msgid "Plot NFT"
+#~ msgstr "Plott-NFT"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:108
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:111
 #: src/components/plotNFT/PlotNFTChangePool.tsx:92
 msgid "Plot NFT with p2_singleton_puzzle_hash {plotNFTId} does not exists"
 msgstr "Plott-NFT med p2_singleton_puzzle_hash {plotNFTId} finns inte"
@@ -1802,7 +1843,7 @@ msgstr "Plott-NFT med p2_singleton_puzzle_hash {plotNFTId} finns inte"
 #~ msgid "Plot Name"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:248
+#: src/components/block/Block.jsx:237
 msgid "Plot Public Key"
 msgstr "Publik nyckel för plott"
 
@@ -1830,12 +1871,11 @@ msgstr "Plotten är en dubblett av {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT håller på att byta status till (target state). Detta kan ta ett tag. Stäng inte programmet förrän detta är slutfört."
 
-#: src/components/dashboard/DashboardSideBar.tsx:43
-#: src/components/plot/Plot.tsx:14
+#: src/components/dashboard/DashboardSideBar.tsx:82
 msgid "Plots"
 msgstr "Plottar"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:21
+#: src/components/farm/FarmLastAttemptedProof.tsx:20
 msgid "Plots Passed Filter"
 msgstr "Plottar som passerat filtret"
 
@@ -1880,8 +1920,8 @@ msgstr "Poäng lyckade under de senaste 24 timmarna"
 
 #: src/components/dashboard/DashboardSideBar.tsx:53
 #: src/components/pool/Pool.tsx:17
-msgid "Pool"
-msgstr "Pool"
+#~ msgid "Pool"
+#~ msgstr "Pool"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:100
 msgid "Pool Contract Address"
@@ -1891,7 +1931,7 @@ msgstr "Poolens kontraktsadress"
 msgid "Pool Key"
 msgstr "Pool-nyckel"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:54
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:53
 msgid "Pool Login Link"
 msgstr "Inloggningslänk för pool"
 
@@ -1899,20 +1939,22 @@ msgstr "Inloggningslänk för pool"
 msgid "Pool Payout Instructions"
 msgstr "Instruktioner för poolutbetalning"
 
-#: src/components/block/Block.jsx:252
+#: src/components/block/Block.jsx:241
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:308
 msgid "Pool Public Key"
 msgstr "Publik nyckel för pool"
 
-#: src/components/block/Block.jsx:272
+#: src/components/block/Block.jsx:261
 msgid "Pool Puzzle Hash"
 msgstr "Pool-pusselhash"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:164
+#: src/components/block/FarmManageFarmingRewards.tsx:152
+#: src/components/farm/FarmManageFarmingRewards.tsx:163
 msgid "Pool Reward Address"
 msgstr "Adress för pool-belöning"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:140
+#: src/components/block/FarmManageFarmingRewards.tsx:128
+#: src/components/farm/FarmManageFarmingRewards.tsx:139
 msgid "Pool Reward Address is not properly formatted."
 msgstr "Den här dressen är inte korrekt formaterad."
 
@@ -1920,11 +1962,12 @@ msgstr "Den här dressen är inte korrekt formaterad."
 #~ msgid "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:135
+#: src/components/block/FarmManageFarmingRewards.tsx:123
+#: src/components/farm/FarmManageFarmingRewards.tsx:134
 msgid "Pool Reward Address must not be empty."
 msgstr "Adress får inte vara tom."
 
-#: src/components/block/Block.jsx:302
+#: src/components/block/Block.jsx:291
 msgid "Pool Reward Amount"
 msgstr "Belopp för pool-belöning"
 
@@ -1954,28 +1997,30 @@ msgstr ""
 msgid "Pool:"
 msgstr "Pool:"
 
+#: src/components/dashboard/DashboardSideBar.tsx:100
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
 msgstr "Poolning"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:43
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:42
-#: src/components/fullNode/FullNodeAddConnection.tsx:76
+#: src/components/block/FullNodeAddConnection.tsx:76
+#: src/components/farm/FarmFullNodeConnections.tsx:41
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:41
+#: src/components/fullNode/FullNodeAddConnection.tsx:75
 #: src/components/fullNode/FullNodeConnections.tsx:45
 msgid "Port"
 msgstr "Port"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:93
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:96
 #: src/components/plotNFT/PlotNFTChangePool.tsx:85
 msgid "Preparing Plot NFT"
 msgstr "Förbereder plott-NFT"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:101
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:104
 msgid "Preparing standard wallet"
 msgstr "Förbereder standardplånbok"
 
-#: src/components/block/Block.jsx:337
+#: src/components/block/Block.jsx:325
 msgid "Previous"
 msgstr "Föregående"
 
@@ -1983,7 +2028,7 @@ msgstr "Föregående"
 #~ msgid "Previous Block Hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:204
+#: src/components/block/Block.jsx:193
 msgid "Previous Header Hash"
 msgstr "Föregående huvudhash"
 
@@ -2003,11 +2048,11 @@ msgstr "Föregående huvudhash"
 #~ msgid "Private key:"
 #~ msgstr "Privat nyckel:"
 
-#: src/components/block/Block.jsx:240
+#: src/components/block/Block.jsx:229
 msgid "Proof of Space Size"
 msgstr "Storlek på bevis-på-utrymme"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:25
+#: src/components/farm/FarmLastAttemptedProof.tsx:24
 msgid "Proofs Found"
 msgstr "Hittade bevis"
 
@@ -2078,7 +2123,7 @@ msgstr "Max RAM-användning"
 #~ msgid "Receive Address"
 #~ msgstr "Mottagaradress"
 
-#: src/components/app/AppSelectMode.tsx:121
+#: src/components/app/AppSelectMode.tsx:116
 msgid "Recommended"
 msgstr ""
 
@@ -2105,7 +2150,7 @@ msgstr ""
 #~ msgstr "Återställ plånbok"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:60
-#: src/components/plot/PlotHeader.tsx:76
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "Uppdatera plottar"
 
@@ -2117,14 +2162,14 @@ msgstr "Relativ låshöjd"
 msgid "Release Notes"
 msgstr "Viktig information"
 
-#: src/components/settings/RemovePassphrasePrompt.tsx:100
-#: src/components/settings/RemovePassphrasePrompt.tsx:147
-#: src/components/settings/Settings.tsx:194
+#: src/components/settings/RemovePassphrasePrompt.tsx:98
+#: src/components/settings/RemovePassphrasePrompt.tsx:143
+#: src/components/settings/Settings.tsx:198
 #: src/components/settings/SettingsPanel.tsx:196
 msgid "Remove Passphrase"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:196
+#: src/components/app/AppKeyringMigrator.tsx:195
 msgid "Remove keys from old keyring upon successful migration"
 msgstr ""
 
@@ -2140,7 +2185,7 @@ msgstr "Tar bort"
 msgid "Report an Issue..."
 msgstr "Rapportera ett problem ..."
 
-#: src/components/backup/BackupRestore.tsx:160
+#: src/components/backup/BackupRestore.tsx:159
 msgid "Restore Metadata for Coloured Coins and other Smart Wallets from Backup"
 msgstr "Återställ metadata för färgade mynt och andra smarta plånböcker från backup"
 
@@ -2148,7 +2193,7 @@ msgstr "Återställ metadata för färgade mynt och andra smarta plånböcker fr
 #~ msgid "Restore Smart Wallets From Backup"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:157
+#: src/components/app/AppSelectMode.tsx:152
 msgid "Runs the full node"
 msgstr ""
 
@@ -2157,18 +2202,19 @@ msgstr ""
 #~ msgid "SB Height"
 #~ msgstr "SB Height"
 
-#: src/components/backup/BackupRestore.tsx:186
+#: src/components/backup/BackupRestore.tsx:185
 msgid "Safe To Skip"
 msgstr "Kan hoppas över"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:190
+#: src/components/block/FarmManageFarmingRewards.tsx:178
+#: src/components/farm/FarmManageFarmingRewards.tsx:189
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
 msgid "Save"
 msgstr "Spara"
 
-#: src/components/app/AppKeyringMigrator.tsx:178
-#: src/components/settings/ChangePassphrasePrompt.tsx:208
-#: src/components/settings/SetPassphrasePrompt.tsx:190
+#: src/components/app/AppKeyringMigrator.tsx:177
+#: src/components/settings/ChangePassphrasePrompt.tsx:206
+#: src/components/settings/SetPassphrasePrompt.tsx:188
 msgid "Save passphrase"
 msgstr ""
 
@@ -2184,7 +2230,7 @@ msgstr "Sök block baserat på header hash"
 msgid "Second temporary folder location"
 msgstr "Andra tillfällig mapp"
 
-#: src/components/settings/Settings.tsx:126
+#: src/components/settings/Settings.tsx:130
 #: src/components/settings/SettingsPanel.tsx:134
 msgid "Secure your keychain using a strong passphrase"
 msgstr ""
@@ -2221,7 +2267,7 @@ msgstr "Välj tillfällig mapp"
 #~ msgid "Select Wallet Type"
 #~ msgstr "Välj plånbokstyp"
 
-#: src/components/app/AppSelectMode.tsx:70
+#: src/components/app/AppSelectMode.tsx:65
 msgid "Select Your Client Mode"
 msgstr ""
 
@@ -2245,9 +2291,9 @@ msgstr "Välj din plott-NFT"
 msgid "Select your Plot NFT from the dropdown or create a new one."
 msgstr "Välj din plott-NFT från listrutan, eller skapa en ny."
 
-#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:72
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:73
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:90
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:121
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:122
 msgid "Selected"
 msgstr "Vald"
 
@@ -2284,9 +2330,9 @@ msgstr "Självpoolning. När du vinner ett block tjänar du HCX-belöningar."
 #~ msgid "Send your pubkey to your Rate Limited Wallet admin:"
 #~ msgstr "Skicka din publika nyckel till admin för din spenderbegränsade plånbok:"
 
-#: src/components/settings/SetPassphrasePrompt.tsx:137
-#: src/components/settings/SetPassphrasePrompt.tsx:216
-#: src/components/settings/Settings.tsx:205
+#: src/components/settings/SetPassphrasePrompt.tsx:135
+#: src/components/settings/SetPassphrasePrompt.tsx:211
+#: src/components/settings/Settings.tsx:209
 #: src/components/settings/SettingsPanel.tsx:205
 msgid "Set Passphrase"
 msgstr ""
@@ -2295,13 +2341,14 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:241
+#: src/components/dashboard/DashboardSideBar.tsx:109
+#: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr ""
 
 #: src/components/app/AppSelectMode.tsx:171
-msgid "Settings are located at the upper right corner"
-msgstr ""
+#~ msgid "Settings are located at the upper right corner"
+#~ msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
@@ -2320,12 +2367,12 @@ msgstr ""
 #~ msgid "Sign In"
 #~ msgstr "Logga in"
 
-#: src/components/app/AppKeyringMigrator.tsx:58
-#: src/components/app/AppKeyringMigrator.tsx:219
+#: src/components/app/AppKeyringMigrator.tsx:57
+#: src/components/app/AppKeyringMigrator.tsx:218
 msgid "Skip"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:57
+#: src/components/app/AppKeyringMigrator.tsx:56
 msgid "Skip Keyring Migration"
 msgstr ""
 
@@ -2341,7 +2388,7 @@ msgstr ""
 msgid "Skips adding a final directory to harvester for farming"
 msgstr "Hoppar över steget att lägga till en slutlig mapp till skördaren för odling"
 
-#: src/components/pool/PoolHero.tsx:26
+#: src/components/pool/PoolHero.tsx:21
 msgid "Smooth out your HCX farming rewards by joining a pool."
 msgstr "Jämna ut dina HCX-odlarbelöningar genom att gå med i en pool."
 
@@ -2353,7 +2400,7 @@ msgstr "Jämna ut dina HCX-odlarbelöningar genom att gå med i en pool."
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:561
+#: src/electron/main.tsx:573
 msgid "Speech"
 msgstr "Tal"
 
@@ -2389,7 +2436,7 @@ msgstr "Tal"
 msgid "Starting services"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:98
+#: src/components/fullNode/FullNode.jsx:95
 msgid "State"
 msgstr "Tillstånd"
 
@@ -2398,7 +2445,6 @@ msgstr "Tillstånd"
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
 #: src/components/plotNFT/PlotNFTCard.tsx:142
-#: src/components/pool/PoolOverview.tsx:43
 msgid "Status"
 msgstr "Status"
 
@@ -2422,7 +2468,7 @@ msgstr "Status"
 #~ msgid "StatusCard.title"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:94
+#: src/components/app/AppSelectMode.tsx:89
 msgid "Store and Send HCX"
 msgstr ""
 
@@ -2438,7 +2484,7 @@ msgstr ""
 #~ msgid "Sub Block at height {0} in the Chinilla blockchain"
 #~ msgstr "Sub Block at height {0} in the Chinilla blockchain"
 
-#: src/components/app/AppPassPrompt.tsx:97
+#: src/components/app/AppPassPrompt.tsx:96
 msgid "Submit"
 msgstr "Skicka"
 
@@ -2500,7 +2546,7 @@ msgstr "Tillfällig mapp"
 #~ msgid "The application will stop working at block height 193536."
 #~ msgstr "Applikationen kommer att sluta fungera på blockhöjd 193536."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:95
+#: src/components/farm/FarmFullNodeConnections.tsx:94
 msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
 msgstr "Den fullständiga nod din odlare är ansluten till är nedan. <0>Läs mer</0>"
 
@@ -2551,19 +2597,19 @@ msgstr "Poolbytet avbröts. Försök igen genom att byta pool eller använda sj�
 #~ msgid "The provided passphrase and confirmation do not match"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:291
+#: src/components/block/Block.jsx:280
 msgid "The seed used to create the plot. This depends on the pool pk and plot pk."
 msgstr "Den minnesfras som användes för att skapa plotten. Denna beror av den publika nyckeln för pool respektive plott."
 
-#: src/components/block/Block.jsx:217
+#: src/components/block/Block.jsx:206
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
 msgstr "Sammanlagt antal VDF- (verifiable delay function) eller bevis-på-tid-iterationer på hela kedjan upp till detta underblock."
 
-#: src/components/block/Block.jsx:233
+#: src/components/block/Block.jsx:222
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
 msgstr "Sammanlagt antal VDF- (verifiable delay function) eller bevis-på-tid-iterationer på detta block."
 
-#: src/components/block/Block.jsx:313
+#: src/components/block/Block.jsx:302
 msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Summan av transaktionsavgifterna i detta block. Utbetalda till odlaren."
 
@@ -2575,7 +2621,7 @@ msgstr "Det här är instruktionerna för hur odlaren vill få betalt. Som stand
 msgid "These plots are invalid, you might want to delete them."
 msgstr "Dessa plottar är ogiltiga. Det kan vara lämpligt att ta bort dem."
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:89
+#: src/components/plot/PlotAddDirectoryDialog.tsx:88
 msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
 msgstr "Detta låter dig lägga till en mapp som innehåller plottar. Om du inte har skapat några plottar går du till sidan plottning."
 
@@ -2604,7 +2650,7 @@ msgstr "Denna funktion kan bara användas från GUI."
 #~ msgid "This is the time of the latest peak sub block."
 #~ msgstr "Detta är tidpunkten för det senaste topp-underblocket."
 
-#: src/components/block/Block.jsx:183
+#: src/components/block/Block.jsx:172
 msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 msgstr "Detta är den tidpunkt då blocket skapades av odlaren, vilket är innan det färdigställs med ett bevis-på-tid"
 
@@ -2646,7 +2692,7 @@ msgstr "Denna plott-NFT är tilldelad till en annan nyckel. Du kan fortfarande s
 #~ msgid "This table shows you the last time your farm attempted to win a block challenge."
 #~ msgstr ""
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:47
+#: src/components/farm/FarmLastAttemptedProof.tsx:46
 msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
 msgstr "Denna tabell visar den sista tidpunkt då din odling försökte vinna en blockverifiering. <0>Läs mer</0>"
 
@@ -2666,7 +2712,7 @@ msgstr "Denna tabell visar den sista tidpunkt då din odling försökte vinna en
 msgid "Thread Multiplier for Phase 2"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:90
+#: src/components/fullNode/FullNode.jsx:87
 msgid "Time Created"
 msgstr "Skapat"
 
@@ -2674,7 +2720,7 @@ msgstr "Skapat"
 #~ msgid "Time this trade was created at this time"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:178
+#: src/components/block/Block.jsx:167
 msgid "Timestamp"
 msgstr "Tidsstämpel"
 
@@ -2682,13 +2728,17 @@ msgstr "Tidsstämpel"
 #~ msgid "To"
 #~ msgstr "Till"
 
+#: src/components/dashboard/DashboardSideBar.tsx:52
+msgid "Tokens"
+msgstr ""
+
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:32
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:379
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:543
 #~ msgid "Total Balance"
 #~ msgstr "Totalt saldo"
 
-#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:26
+#: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:27
 msgid "Total Chinilla Farmed"
 msgstr ""
 
@@ -2708,7 +2758,7 @@ msgstr "Sammanlagd plottstorlek:"
 msgid "Total Size of Plots"
 msgstr "Sammanlagd storlek hos alla plottar"
 
-#: src/components/block/Block.jsx:214
+#: src/components/block/Block.jsx:203
 msgid "Total VDF Iterations"
 msgstr "Totalt antal VDF-iterationer"
 
@@ -2736,7 +2786,7 @@ msgstr "Totalt antal iterationer sedan blockkedjan startade"
 #~ msgid "Trade Overview"
 #~ msgstr "Handelsöversikt"
 
-#: src/components/app/AppSelectMode.tsx:106
+#: src/components/app/AppSelectMode.tsx:101
 msgid "Trade tokens"
 msgstr ""
 
@@ -2752,7 +2802,7 @@ msgstr ""
 #~ msgid "Trading History"
 #~ msgstr "Handelshistorik"
 
-#: src/components/block/Block.jsx:298
+#: src/components/block/Block.jsx:287
 msgid "Transactions Filter Hash"
 msgstr "Transaktionsfilterhash"
 
@@ -2765,11 +2815,10 @@ msgstr "Transaktionsfilterhash"
 #~ msgstr "Det gick inte att skapa plott-NFT"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:147
-#: src/components/pool/PoolOverview.tsx:63
 msgid "Unclaimed Rewards"
 msgstr "Belöningar som inte begärts in"
 
-#: src/components/fullNode/FullNode.jsx:96
+#: src/components/fullNode/FullNode.jsx:93
 msgid "Unfinished"
 msgstr "Ej färdigt"
 
@@ -2781,7 +2830,7 @@ msgstr "Ej färdigt"
 #~ msgid "Unknown"
 #~ msgstr "Okänd"
 
-#: src/components/app/AppPassPrompt.tsx:83
+#: src/components/app/AppPassPrompt.tsx:82
 msgid "Unlock Keyring"
 msgstr ""
 
@@ -2794,7 +2843,7 @@ msgstr ""
 #~ msgid "User Pubkey"
 #~ msgstr "Publik nyckel för användare"
 
-#: src/components/farm/card/FarmCardUserFees.tsx:26
+#: src/components/farm/card/FarmCardUserFees.tsx:27
 msgid "User Transaction Fees"
 msgstr ""
 
@@ -2823,7 +2872,7 @@ msgid "View"
 msgstr "Visa"
 
 #: src/components/plot/queue/PlotQueueActions.tsx:75
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:56
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:55
 msgid "View Log"
 msgstr "Visa logg"
 
@@ -2867,20 +2916,20 @@ msgstr "Väntar på synkronisering"
 msgid "Waiting for the transaction to be confirmed"
 msgstr "Väntar på att transaktionen ska bekräftas"
 
-#: src/components/app/AppSelectMode.tsx:86
-#: src/components/app/AppSelectMode.tsx:138
+#: src/components/app/AppSelectMode.tsx:81
+#: src/components/app/AppSelectMode.tsx:133
 msgid "Wallet Mode"
 msgstr ""
 
-#: src/components/pool/PoolOverview.tsx:182
-msgid "Wallet Status:"
-msgstr "Plånboksstatus:"
+#: src/components/pool/PoolOverview.tsx:181
+#~ msgid "Wallet Status:"
+#~ msgstr "Plånboksstatus:"
 
 #: src/components/_wallet_old/did/WalletDID.tsx:1121
 #~ msgid "Wallet does not exists"
 #~ msgstr "Plånboken finns inte"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:69
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:72
 msgid "Wallet is not defined"
 msgstr ""
 
@@ -2912,9 +2961,9 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:38
-msgid "Wallets"
-msgstr "Plånböcker"
+#: src/components/dashboard/DashboardSideBar.tsx:36
+#~ msgid "Wallets"
+#~ msgstr "Plånböcker"
 
 #: src/components/wallet/Wallets.tsx:131
 #~ msgid "Wallets.title"
@@ -2949,11 +2998,11 @@ msgstr ""
 #~ msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 #~ msgstr "Varning: Denna nyckel används av din pool. Genom att ta bort denna nyckel kan du förlora tillgång till framtida vinster från poolen"
 
-#: src/components/block/Block.jsx:194
+#: src/components/block/Block.jsx:183
 msgid "Weight"
 msgstr "Vikt"
 
-#: src/components/block/Block.jsx:197
+#: src/components/block/Block.jsx:186
 msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
 msgstr "Vikt är den sammanlagda svårighetsgraden för alla underblock upp till och inklusive detta"
 
@@ -2973,7 +3022,7 @@ msgstr "Vikt är den sammanlagda svårighetsgraden för alla underblock upp till
 msgid "Window"
 msgstr "Fönster"
 
-#: src/components/farm/card/FarmCardBlockRewards.tsx:31
+#: src/components/farm/card/FarmCardBlockRewards.tsx:32
 msgid "Without fees"
 msgstr "Utan avgifter"
 
@@ -2991,7 +3040,7 @@ msgstr "Du är i ett väntande tillstånd. Vänta på bekräftelse"
 msgid "You are not self pooling"
 msgstr "Du använder inte självpoolning"
 
-#: src/components/app/AppSelectMode.tsx:173
+#: src/components/app/AppSelectMode.tsx:167
 msgid "You can always change your mode later in the settings"
 msgstr ""
 
@@ -3046,9 +3095,10 @@ msgid "You need {currencyCode} to join a pool."
 msgstr "Du behöver {currencyCode} för att gå med i en pool."
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:142
-msgid "You will recieve <0/> to {0}"
-msgstr "Du kommer att få <0/> till {0}"
+#~ msgid "You will recieve <0/> to {0}"
+#~ msgstr "Du kommer att få <0/> till {0}"
 
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:150
 #: src/hooks/useAbsorbRewards.tsx:51
 msgid "You will recieve <0/> to {address}"
 msgstr "Du kommer att få <0/> till {address}"
@@ -3061,23 +3111,23 @@ msgstr "Du kommer att få <0/> till {address}"
 msgid "Your Farm Overview"
 msgstr "Översikt över din odling"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:93
+#: src/components/farm/FarmFullNodeConnections.tsx:92
 msgid "Your Full Node Connection"
 msgstr "Din fullständiga nods anslutning"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:94
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:93
 msgid "Your Harvester Network"
 msgstr "Ditt nätverk av skördare"
 
-#: src/components/pool/PoolOverview.tsx:157
+#: src/components/pool/PoolOverview.tsx:42
 msgid "Your Pool Overview"
 msgstr "Din poolöversikt"
 
-#: src/components/app/AppPassPrompt.tsx:79
+#: src/components/app/AppPassPrompt.tsx:78
 msgid "Your keyring is locked"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:63
+#: src/components/app/AppKeyringMigrator.tsx:62
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
 msgstr ""
 
@@ -3085,26 +3135,26 @@ msgstr ""
 #~ msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 #~ msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:106
+#: src/components/app/AppKeyringMigrator.tsx:105
 msgid "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:112
+#: src/components/app/AppKeyringMigrator.tsx:111
 msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:181
-#: src/components/settings/ChangePassphrasePrompt.tsx:211
-#: src/components/settings/SetPassphrasePrompt.tsx:193
+#: src/components/app/AppKeyringMigrator.tsx:180
+#: src/components/settings/ChangePassphrasePrompt.tsx:209
+#: src/components/settings/SetPassphrasePrompt.tsx:191
 msgid "Your passphrase can be stored in your system's secure credential store. Chinilla will be able to access your keys without prompting for your passphrase."
 msgstr ""
 
-#: src/components/settings/Settings.tsx:85
+#: src/components/settings/Settings.tsx:89
 #: src/components/settings/SettingsPanel.tsx:91
 msgid "Your passphrase has been set"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:74
+#: src/components/settings/Settings.tsx:78
 #: src/components/settings/SettingsPanel.tsx:80
 msgid "Your passphrase has been updated"
 msgstr ""
@@ -3131,7 +3181,7 @@ msgstr "[Felkod 22] Filen går inte att hitta. Troligtvis en av katalog för plo
 #~ msgid "not synced"
 #~ msgstr "ej synkad"
 
-#: src/components/plot/add/PlotAddForm.tsx:125
+#: src/components/plot/add/PlotAddForm.tsx:123
 msgid "p2SingletonPuzzleHash is not defined"
 msgstr ""
 

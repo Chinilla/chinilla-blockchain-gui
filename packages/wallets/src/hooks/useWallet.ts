@@ -4,7 +4,7 @@ import { WalletType } from '@chinilla/api';
 import type { Wallet } from '@chinilla/api';
 import { useCurrencyCode } from '@chinilla/core';
 
-export default function useWallet(walletId: number): {
+export default function useWallet(walletId?: number | string): {
   loading: boolean;
   wallet?: Wallet;
   unit?: string;
@@ -14,7 +14,7 @@ export default function useWallet(walletId: number): {
   const { data: catList = [], isLoading: isCatListLoading } = useGetCatListQuery();
 
   const wallet = useMemo(() => {
-    return wallets?.find((item) => item.id === walletId);
+    return wallets?.find((item) => item.id.toString() === walletId?.toString());
   }, [wallets, walletId]);
 
   const unit = useMemo(() => {

@@ -13,32 +13,25 @@ import {
   Tooltip,
   TablePagination,
   Collapse,
-} from '@material-ui/core';
+} from '@mui/material';
 import LoadingOverlay from '../LoadingOverlay';
 
 
 const StyledTableHead = styled(TableHead)`
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#202020' : '#D6B75A'};
-  font-weight: 500;
-`;
-
-const StyledTablePagination = styled(TablePagination)`
-  background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#202020' : '#D6B75A'};
+  background-color: ${({ theme }) => theme.palette.action.selected};
   font-weight: 500;
 `;
 
 export const StyledTableRow = styled(({ odd, ...rest }) => <TableRow {...rest} />)`
   ${({ odd, theme }) => odd 
-    ? `background-color: ${theme.palette.type === 'dark' ? '#515151' : '#f2ecd5'};` 
+    ? `background-color: ${theme.palette.mode === 'dark' ? '#515151' : '#f2ecd5'};` 
     : undefined
   }
 `;
 
 const StyledExpandedTableRow = styled(TableRow)`
   background-color: ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#1E1E1E' : '#EEEEEE'};
+    theme.palette.mode === 'dark' ? '#1E1E1E' : '#EEEEEE'};
   ${({ isExpanded }) => !isExpanded ? 'display: none;' : undefined}
 `;
 
@@ -50,7 +43,7 @@ const StyledTableCell = styled(({ width, minWidth, maxWidth, ...rest }) => (
   min-width: ${({ minWidth }) => minWidth || '0'};
   width: ${({ width, minWidth }) => (width || minWidth ? width : 'auto')}};
   border-bottom: 1px solid ${({ theme }) =>
-    theme.palette.type === 'dark' ? '#353535' : '#e0e0e0'};
+    theme.palette.mode === 'dark' ? '#353535' : '#e0e0e0'};
 `;
 
 const StyledTableCellContent = styled(Box)`
@@ -207,7 +200,7 @@ export default function TableControlled(props: TableControlledProps) {
               </TableRow>
             </StyledTableHead>
           )}
-          
+
           <TableBody>
             {children}
             {preparedRows.map((row, rowIndex) => {
@@ -285,7 +278,7 @@ export default function TableControlled(props: TableControlledProps) {
           </TableBody>
         </TableBase>
         {pages && (
-          <StyledTablePagination
+          <TablePagination
             rowsPerPageOptions={rowsPerPageOptions}
             component="div"
             count={count ?? rows.length ?? 0}
@@ -301,6 +294,8 @@ export default function TableControlled(props: TableControlledProps) {
 }
 
 TableControlled.defaultProps = {
+  rows: [],
+  cols: [],
   pages: false,
   rowsPerPageOptions: [10, 25, 100],
   rowsPerPage: 10,

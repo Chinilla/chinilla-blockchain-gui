@@ -2,7 +2,7 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { Card, Table } from '@chinilla/core';
 import { useGetCombinedFailedToOpenFilenamesQuery } from '@chinilla/api-react';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import PlotAction from './PlotAction';
 import type { Plot } from '@chinilla/api';
 

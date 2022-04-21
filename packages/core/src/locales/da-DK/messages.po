@@ -149,7 +149,7 @@ msgstr ""
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr ""
 
-#: src/components/Amount/Amount.tsx:113
+#: src/components/Amount/Amount.tsx:114
 msgid "Amount"
 msgstr "Beløb"
 
@@ -499,7 +499,7 @@ msgstr "Forbundet"
 #~ msgid "Contribute on GitHub"
 #~ msgstr "Bidrag på GitHub"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:31
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:37
 msgid "Copied"
 msgstr "Kopieret"
 
@@ -510,7 +510,7 @@ msgstr "Kopieret"
 #~ msgid "Copy"
 #~ msgstr "Kopier"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:33
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:39
 msgid "Copy to Clipboard"
 msgstr "Kopier til Udklipsholder"
 
@@ -752,6 +752,7 @@ msgstr ""
 #~ msgid "Disable bitfield plotting"
 #~ msgstr "Deaktiver bitfield plotning"
 
+#: src/components/Back/Back.tsx:40
 #: src/components/FormBackButton/FormBackButton.tsx:27
 msgid "Discard"
 msgstr "Kassér"
@@ -948,7 +949,7 @@ msgstr "Farmer"
 #~ msgid "Farming Status"
 #~ msgstr "Farmer Status"
 
-#: src/components/Fee/Fee.tsx:54
+#: src/components/Fee/Fee.tsx:52
 msgid "Fee"
 msgstr "Gebyr"
 
@@ -1064,7 +1065,7 @@ msgstr "Ofte Stillet Spørgsmål"
 msgid "Help"
 msgstr "Hjælp"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:69
+#: src/components/LocaleToggle/LocaleToggle.tsx:70
 msgid "Help translate"
 msgstr "Hjælp med oversættelse"
 
@@ -1114,7 +1115,7 @@ msgstr "Importer fra mnemonik (24 ord)"
 #~ msgid "Incoming"
 #~ msgstr "Indgående"
 
-#: src/components/Fee/Fee.tsx:42
+#: src/components/Fee/Fee.tsx:40
 msgid "Incorrect value"
 msgstr "Forkert værdi"
 
@@ -1265,8 +1266,8 @@ msgstr ""
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:133
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:155
 msgid "Log Out"
 msgstr ""
 
@@ -1274,8 +1275,8 @@ msgstr ""
 #~ msgid "Logging in"
 #~ msgstr "Logger ind"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:105
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:132
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:134
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:154
 msgid "Logout"
 msgstr ""
 
@@ -1490,6 +1491,10 @@ msgstr "Ikke forbundet"
 #: src/components/farm/FarmManageFarmingRewards.tsx:164
 #~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 #~ msgstr "Bemærk, at dette ikke ændrer din pulje udbetalingsadresser. Dette påvirker kun gamle plot filer af gammelt format, og 0,25HCXbelønning for pulje plots."
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:115
+#~ msgid "Notifications"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:157
@@ -2773,7 +2778,7 @@ msgstr ""
 #~ msgid "Unique identifier"
 #~ msgstr "Unik identifikator"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:47
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
 msgid "Unknown"
 msgstr "Ukendt"
 
@@ -2781,6 +2786,7 @@ msgstr "Ukendt"
 #~ msgid "Unlock Keyring"
 #~ msgstr ""
 
+#: src/components/Back/Back.tsx:39
 #: src/components/FormBackButton/FormBackButton.tsx:26
 msgid "Unsaved Changes"
 msgstr "Ikke Gemte Ændringer"
@@ -2806,7 +2812,7 @@ msgstr ""
 #~ msgid "Value is too high"
 #~ msgstr "Value is too high"
 
-#: src/components/Fee/Fee.tsx:34
+#: src/components/Fee/Fee.tsx:32
 msgid "Value seems high"
 msgstr "Værdi virker høj"
 
@@ -2863,6 +2869,7 @@ msgstr "Værdi virker høj"
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr "Afventer at transaktionen bekræftes"
 
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr ""
@@ -3004,6 +3011,7 @@ msgstr "Velkommen til Chinilla. Venligst log ind med en eksisterende nøgle, ell
 #~ msgid "You do not need to be synched or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
 #~ msgstr "Du behøver ikke at være i synk eller forbundet for at plotte. Midletidige filer er oprettet under plotningsprocessen som overstiger størrelsen på den endelige plot fil. Vær sikker på du har nok plads. <0>Lær mere</0>"
 
+#: src/components/Back/Back.tsx:43
 #: src/components/FormBackButton/FormBackButton.tsx:30
 msgid "You have made changes. Do you want to discard them?"
 msgstr "Du har foretaget ændringer. Vil du kassere dem?"
@@ -3151,6 +3159,10 @@ msgstr ""
 #~ msgid "{0, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 #~ msgstr ""
 
+#: src/components/Amount/Amount.tsx:96
+msgid "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
+
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"
 #~ msgstr "{0} Block Rewards"
@@ -3185,8 +3197,8 @@ msgid "{minPassphraseLength, plural, one {Passphrases must be at least # charact
 msgstr ""
 
 #: src/components/Amount/Amount.tsx:95
-msgid "{vojo, plural, one {vojo} other {vojos}}"
-msgstr "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

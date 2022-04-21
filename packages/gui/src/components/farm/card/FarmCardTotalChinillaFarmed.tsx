@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, vojoToChinillaLocaleString, CardSimple } from '@chinilla/core';
+import { useCurrencyCode, vojoToChinillaLocaleString, CardSimple, useLocale } from '@chinilla/core';
 import { useGetFarmedAmountQuery } from '@chinilla/api-react';
 
 export default function FarmCardTotalChinillaFarmed() {
   const currencyCode = useCurrencyCode();
+  const [locale] = useLocale();
   const { data, isLoading, error } = useGetFarmedAmountQuery();
 
   const farmedAmount = data?.farmedAmount;
@@ -13,13 +14,13 @@ export default function FarmCardTotalChinillaFarmed() {
     if (farmedAmount !== undefined) {
       return (
         <>
-          {vojoToChinillaLocaleString(farmedAmount)}
+          {vojoToChinillaLocaleString(farmedAmount, locale)}
           &nbsp;
           {currencyCode}
         </>
       );
     }
-  }, [farmedAmount]);
+  }, [farmedAmount, locale, currencyCode]);
 
   return (
     <CardSimple
