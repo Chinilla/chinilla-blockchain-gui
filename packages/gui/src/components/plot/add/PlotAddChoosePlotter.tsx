@@ -10,7 +10,7 @@ import {
   InputLabel,
   MenuItem,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import styled from 'styled-components';
 import { defaultPlotter, PlotterName } from '@chinilla/api';
 import type { Plotter, PlotterMap } from '@chinilla/api';

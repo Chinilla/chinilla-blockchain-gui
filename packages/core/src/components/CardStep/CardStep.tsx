@@ -8,7 +8,7 @@ import {
   Divider,
   Grid,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import Flex from '../Flex';
 
 const StyledCardHeader = styled(CardHeader)`

@@ -149,7 +149,7 @@ msgstr ""
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr ""
 
-#: src/components/Amount/Amount.tsx:113
+#: src/components/Amount/Amount.tsx:114
 msgid "Amount"
 msgstr "Beløp"
 
@@ -499,7 +499,7 @@ msgstr "Koble til"
 #~ msgid "Contribute on GitHub"
 #~ msgstr "Bidra på GitHub"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:31
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:37
 msgid "Copied"
 msgstr "Kopiert"
 
@@ -510,7 +510,7 @@ msgstr "Kopiert"
 #~ msgid "Copy"
 #~ msgstr "Kopier"
 
-#: src/components/CopyToClipboard/CopyToClipboard.tsx:33
+#: src/components/CopyToClipboard/CopyToClipboard.tsx:39
 msgid "Copy to Clipboard"
 msgstr "Kopier til utklippstavlen"
 
@@ -948,7 +948,7 @@ msgstr "Jordbruk"
 #~ msgid "Farming Status"
 #~ msgstr "Jordbruk status"
 
-#: src/components/Fee/Fee.tsx:54
+#: src/components/Fee/Fee.tsx:52
 msgid "Fee"
 msgstr "Avgift"
 
@@ -1064,7 +1064,7 @@ msgstr "Ofte Stilte Spørsmål"
 msgid "Help"
 msgstr "Hjelp"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:69
+#: src/components/LocaleToggle/LocaleToggle.tsx:70
 msgid "Help translate"
 msgstr "Hjelp med oversetting"
 
@@ -1114,7 +1114,7 @@ msgstr "Importer fra Mnemonics (24 ord)"
 #~ msgid "Incoming"
 #~ msgstr "Innkommende"
 
-#: src/components/Fee/Fee.tsx:42
+#: src/components/Fee/Fee.tsx:40
 msgid "Incorrect value"
 msgstr ""
 
@@ -1265,8 +1265,8 @@ msgstr ""
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:106
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:133
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:116
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
 msgid "Log Out"
 msgstr ""
 
@@ -1274,8 +1274,8 @@ msgstr ""
 #~ msgid "Logging in"
 #~ msgstr "Logger inn"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:105
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:132
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:115
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:134
 msgid "Logout"
 msgstr ""
 
@@ -1489,6 +1489,10 @@ msgstr "Ikke tilkoblet"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:164
 #~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+#~ msgstr ""
+
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:115
+#~ msgid "Notifications"
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
@@ -2773,7 +2777,7 @@ msgstr ""
 #~ msgid "Unique identifier"
 #~ msgstr "Unik identifikator"
 
-#: src/components/LocaleToggle/LocaleToggle.tsx:47
+#: src/components/LocaleToggle/LocaleToggle.tsx:48
 msgid "Unknown"
 msgstr ""
 
@@ -2806,7 +2810,7 @@ msgstr ""
 #~ msgid "Value is too high"
 #~ msgstr "Value is too high"
 
-#: src/components/Fee/Fee.tsx:34
+#: src/components/Fee/Fee.tsx:32
 msgid "Value seems high"
 msgstr ""
 
@@ -2863,6 +2867,7 @@ msgstr ""
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr ""
 
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:91
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr ""
@@ -3151,6 +3156,10 @@ msgstr ""
 #~ msgid "{0, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 #~ msgstr ""
 
+#: src/components/Amount/Amount.tsx:96
+msgid "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
+
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"
 #~ msgstr "{0} Block Rewards"
@@ -3185,8 +3194,8 @@ msgid "{minPassphraseLength, plural, one {Passphrases must be at least # charact
 msgstr ""
 
 #: src/components/Amount/Amount.tsx:95
-msgid "{vojo, plural, one {vojo} other {vojos}}"
-msgstr ""
+#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

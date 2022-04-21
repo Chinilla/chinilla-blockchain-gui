@@ -1,11 +1,11 @@
-import Big from 'big.js';
+import BigNumber from 'bignumber.js';
 
-const VOJO_PER_CHINILLA = Big('1000000000000');
+const VOJO_PER_CHINILLA = new BigNumber('1000000000000');
 const BLOCKS_PER_YEAR = 1681920;
 const POOL_REWARD = '0.875'; // 7 / 8
 const FARMER_REWARD = '0.125'; // 1 /8
 
-export function calculatePoolReward(height: number): Big {
+export function calculatePoolReward(height: number): BigNumber {
   if (height === 0) {
     return VOJO_PER_CHINILLA.times('21000000').times(POOL_REWARD);
   }
@@ -25,7 +25,7 @@ export function calculatePoolReward(height: number): Big {
   return VOJO_PER_CHINILLA.times('0.125').times(POOL_REWARD);
 }
 
-export function calculateBaseFarmerReward(height: number): Big {
+export function calculateBaseFarmerReward(height: number): BigNumber {
   if (height === 0) {
     return VOJO_PER_CHINILLA.times('21000000').times(FARMER_REWARD);
   }

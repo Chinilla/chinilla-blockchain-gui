@@ -84,7 +84,7 @@ msgstr "Tindakan"
 #: src/components/farm/FarmFullNodeConnections.tsx:68
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:67
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/pool/PoolOverview.tsx:66
+#: src/components/pool/PoolOverview.tsx:65
 msgid "Actions"
 msgstr "Tindakan"
 
@@ -97,7 +97,7 @@ msgstr "Tindakan"
 #~ msgid "Add Backup ID"
 #~ msgstr "Tambah ID sampingan"
 
-#: src/components/plot/PlotHeader.tsx:89
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Tambah Direktori Plot"
 
@@ -109,7 +109,8 @@ msgstr "Tambahkan Plot ke Antrian"
 #~ msgid "Add Wallet"
 #~ msgstr "Add Wallet"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:45
+#: src/components/farm/overview/FarmOverviewHero.tsx:41
+#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:176
 #: src/components/plot/overview/PlotOverviewHero.tsx:52
 #: src/components/plot/PlotHeader.tsx:61
@@ -122,11 +123,11 @@ msgstr "Tambah sebuah Plot"
 msgid "Add a Plot NFT"
 msgstr "Tambah Plot NFT"
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:85
+#: src/components/plot/PlotAddDirectoryDialog.tsx:84
 msgid "Add a plot"
 msgstr "Tambah sebuah plot"
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:124
+#: src/components/plot/PlotAddDirectoryDialog.tsx:123
 msgid "Add plot directory"
 msgstr "Tambah direktori plot"
 
@@ -145,7 +146,7 @@ msgstr "Tambah {currencyCode} dari sebuah Faucet"
 #~ msgid "Address / Puzzle hash"
 #~ msgstr "Alamat / Hash teka-teki"
 
-#: src/components/app/AppKeyringMigrator.tsx:199
+#: src/components/app/AppKeyringMigrator.tsx:198
 msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
 msgstr ""
 
@@ -187,7 +188,7 @@ msgstr "Anda yakin ingin memutuskan koneksi?"
 msgid "Are you sure you want to quit?"
 msgstr ""
 
-#: src/electron/main.tsx:268
+#: src/electron/main.tsx:262
 #~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 #~ msgstr "Anda yakin ingin keluar dari program? Plotting dan Farming di GUI akan berhenti."
 
@@ -212,7 +213,7 @@ msgstr "Nama di ciptakan otomatis dari buku alamat Pool"
 #~ msgid "Back"
 #~ msgstr "Kembali"
 
-#: src/components/backup/BackupCreate.tsx:45
+#: src/components/backup/BackupCreate.tsx:46
 msgid "Backup file is used to restore smart wallets."
 msgstr "Berkas cadangan digunakan untuk mengembalikan smart wallet."
 
@@ -222,7 +223,7 @@ msgstr "Berkas cadangan digunakan untuk mengembalikan smart wallet."
 #~ msgid "Balance"
 #~ msgstr "Saldo"
 
-#: src/components/block/Block.jsx:306
+#: src/components/block/Block.jsx:295
 msgid "Base Farmer Reward Amount"
 msgstr "Jumlah Upah Pokok Farmer"
 
@@ -239,11 +240,7 @@ msgstr "Estimasi terbaik berdasarkan 24 jam lalu"
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:116
-#: src/components/block/Block.jsx:125
-#: src/components/block/Block.jsx:142
-#: src/components/block/Block.jsx:146
-#: src/components/block/Block.jsx:322
+#: src/components/block/Block.jsx:136
 msgid "Block"
 msgstr "Blok"
 
@@ -255,11 +252,11 @@ msgstr ""
 #~ msgid "Block Test"
 #~ msgstr "Test Blok"
 
-#: src/components/block/Block.jsx:224
+#: src/components/block/Block.jsx:213
 msgid "Block VDF Iterations"
 msgstr "Perulangan blok VDF"
 
-#: src/components/block/Block.jsx:326
+#: src/components/block/Block.jsx:314
 msgid "Block at height {0} in the Chinilla blockchain"
 msgstr "Blok pada puncak {0} dalam rantai blok Chinilla"
 
@@ -267,15 +264,15 @@ msgstr "Blok pada puncak {0} dalam rantai blok Chinilla"
 #~ msgid "Block hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:129
+#: src/components/block/Block.jsx:122
 msgid "Block with hash {headerHash}"
 msgstr "Blok dengan hash {headerHash}"
 
-#: src/components/block/Block.jsx:151
+#: src/components/block/Block.jsx:141
 msgid "Block with hash {headerHash} does not exist."
 msgstr "Blok dengan hash {headerHash} tidak ada."
 
-#: src/components/fullNode/FullNode.jsx:124
+#: src/components/fullNode/FullNode.jsx:122
 msgid "Blocks"
 msgstr "Blok-blok"
 
@@ -311,16 +308,18 @@ msgstr "Namun saat ini anda sedang farming <0/>"
 #~ msgid "Can be backed up to mnemonic seed"
 #~ msgstr "Dapat dibackup ke mnemonic seed"
 
-#: src/components/app/AppPassPrompt.tsx:152
-#: src/components/backup/BackupCreate.tsx:50
-#: src/components/farm/FarmManageFarmingRewards.tsx:187
-#: src/components/fullNode/FullNodeAddConnection.tsx:85
+#: src/components/app/AppPassPrompt.tsx:151
+#: src/components/backup/BackupCreate.tsx:51
+#: src/components/block/FarmManageFarmingRewards.tsx:175
+#: src/components/block/FullNodeAddConnection.tsx:85
+#: src/components/farm/FarmManageFarmingRewards.tsx:186
+#: src/components/fullNode/FullNodeAddConnection.tsx:84
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
-#: src/components/settings/ChangePassphrasePrompt.tsx:224
-#: src/components/settings/RemovePassphrasePrompt.tsx:138
-#: src/components/settings/SetPassphrasePrompt.tsx:207
+#: src/components/settings/ChangePassphrasePrompt.tsx:221
+#: src/components/settings/RemovePassphrasePrompt.tsx:135
+#: src/components/settings/SetPassphrasePrompt.tsx:203
 msgid "Cancel"
 msgstr "Batal"
 
@@ -344,15 +343,15 @@ msgstr "Challenge Hash"
 msgid "Change"
 msgstr "Ubah"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:232
-#: src/components/settings/Settings.tsx:160
+#: src/components/settings/ChangePassphrasePrompt.tsx:229
+#: src/components/settings/Settings.tsx:164
 #: src/components/settings/SettingsPanel.tsx:165
 msgid "Change Passphrase"
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:405
 #: src/components/plotNFT/PlotNFTChangePool.tsx:121
-#: src/components/pool/PoolOverview.tsx:112
+#: src/components/pool/PoolOverview.tsx:111
 msgid "Change Pool"
 msgstr "Ubah Pool"
 
@@ -372,7 +371,7 @@ msgstr "Wiki Chinilla Blockchain"
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Wallet Chinilla"
 
-#: src/components/app/AppSelectMode.tsx:163
+#: src/components/app/AppSelectMode.tsx:158
 msgid "Choose Farming Mode"
 msgstr ""
 
@@ -388,17 +387,17 @@ msgstr "Pilih Ukuran Plot"
 msgid "Choose Plotter"
 msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:112
+#: src/components/app/AppSelectMode.tsx:107
 msgid "Choose Wallet Mode"
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:381
-#: src/components/pool/PoolOverview.tsx:89
+#: src/components/pool/PoolOverview.tsx:88
 msgid "Claim Rewards"
 msgstr "Ambil Hadiah"
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:131
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:82
+#: src/components/plot/PlotAddDirectoryDialog.tsx:130
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
 msgstr "Tutup"
 
@@ -457,13 +456,13 @@ msgstr "Konfirmasi"
 msgid "Confirm Disconnect"
 msgstr "Konfirmasi Pemutusan Koneksi"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:182
+#: src/components/settings/ChangePassphrasePrompt.tsx:180
 msgid "Confirm New Passphrase"
 msgstr ""
 
+#: src/components/app/AppKeyringMigrator.tsx:149
 #: src/components/app/AppKeyringMigrator.tsx:150
-#: src/components/app/AppKeyringMigrator.tsx:151
-#: src/components/settings/SetPassphrasePrompt.tsx:162
+#: src/components/settings/SetPassphrasePrompt.tsx:160
 msgid "Confirm Passphrase"
 msgstr ""
 
@@ -479,11 +478,13 @@ msgstr "Konfirmasi"
 #~ msgid "Confirmed at height {0}"
 #~ msgstr "Dikonfirmasi pada tinggi {0}"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:88
+#: src/components/block/FullNodeAddConnection.tsx:88
+#: src/components/fullNode/FullNodeAddConnection.tsx:87
 msgid "Connect"
 msgstr "Sambung"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:64
+#: src/components/block/FullNodeAddConnection.tsx:64
+#: src/components/fullNode/FullNodeAddConnection.tsx:63
 #: src/components/fullNode/FullNodeConnections.tsx:109
 msgid "Connect to other peers"
 msgstr "Sambung ke peer lain"
@@ -541,13 +542,13 @@ msgstr "Berkontribusi di GitHub"
 #~ msgid "Copy to Clipboard"
 #~ msgstr "Salin ke Clipboard"
 
-#: src/components/backup/BackupCreate.tsx:58
+#: src/components/backup/BackupCreate.tsx:59
 #: src/components/plot/add/PlotAddForm.tsx:196
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:176
 msgid "Create"
 msgstr "Buat"
 
-#: src/components/app/AppSelectMode.tsx:145
+#: src/components/app/AppSelectMode.tsx:140
 msgid "Create & Manage plots"
 msgstr ""
 
@@ -597,7 +598,7 @@ msgstr ""
 #~ msgid "Create Transaction"
 #~ msgstr "Buat Transaksi"
 
-#: src/components/backup/BackupCreate.tsx:41
+#: src/components/backup/BackupCreate.tsx:42
 msgid "Create a Backup"
 msgstr "Buat sebuah Backup"
 
@@ -658,7 +659,7 @@ msgstr "Kode mata uang diperlukan"
 msgid "Current Difficulty"
 msgstr "Tingkat ke rumitan saat ini"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:162
+#: src/components/settings/ChangePassphrasePrompt.tsx:160
 msgid "Current Passphrase"
 msgstr ""
 
@@ -699,7 +700,7 @@ msgstr "Tunda"
 msgid "Delete"
 msgstr "Hapus"
 
-#: src/components/app/AppPassPrompt.tsx:93
+#: src/components/app/AppPassPrompt.tsx:92
 msgid "Delete Key"
 msgstr ""
 
@@ -729,7 +730,7 @@ msgstr "Hapus transaksi yang belum di konfirmasi"
 #~ msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
 #~ msgstr "Menghapus semua kunci akan menghilangkan kunci-kunci tersebut dari komputer anda, pastikan anda telah memiliki cadangan. Apa anda yakin ingin melanjutkan?"
 
-#: src/components/app/AppPassPrompt.tsx:89
+#: src/components/app/AppPassPrompt.tsx:88
 msgid "Deleting key"
 msgstr ""
 
@@ -749,7 +750,7 @@ msgstr "Developer"
 msgid "Developer Tools"
 msgstr "Developer Tools"
 
-#: src/components/block/Block.jsx:210
+#: src/components/block/Block.jsx:199
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:14
 msgid "Difficulty"
 msgstr "Tingkat kesulitan"
@@ -795,7 +796,7 @@ msgstr "Putuskan Sambungan"
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:51
+#: src/components/farm/overview/FarmOverviewHero.tsx:47
 #: src/components/plot/overview/PlotOverviewHero.tsx:67
 msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
 msgstr "Apakah sudah memiliki plot pada komputer ini? <0>Tambahkan Direktori Plot</0>"
@@ -812,7 +813,7 @@ msgstr "Apakah mesin anda mendukung plotting pararel?"
 #~ msgid "Drag and drop offer file"
 #~ msgstr "Seret dan lepas berkas penawaran"
 
-#: src/components/backup/BackupRestore.tsx:173
+#: src/components/backup/BackupRestore.tsx:172
 msgid "Drag and drop your backup file"
 msgstr "Seret dan lepas berkas cadangan anda"
 
@@ -838,11 +839,11 @@ msgstr ""
 #~ msgid "Enter Passphrase"
 #~ msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:129
+#: src/components/app/AppKeyringMigrator.tsx:128
 msgid "Enter a strong passphrase and click Migrate Keys to secure your keys"
 msgstr ""
 
-#: src/components/settings/SetPassphrasePrompt.tsx:141
+#: src/components/settings/SetPassphrasePrompt.tsx:139
 msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
@@ -850,7 +851,7 @@ msgstr ""
 #~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 #~ msgstr "Masukkan 24 kata mnemonik yang telah anda simpan untuk mengembalikan dompet Chinilla anda."
 
-#: src/components/settings/RemovePassphrasePrompt.tsx:104
+#: src/components/settings/RemovePassphrasePrompt.tsx:102
 msgid "Enter your passphrase:"
 msgstr ""
 
@@ -858,6 +859,8 @@ msgstr ""
 #: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:34
+#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -902,7 +905,7 @@ msgstr "Gagal membuka (plot tidak valid)"
 #~ msgid "Failed to remove passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/settings/SetPassphrasePrompt.tsx:85
+#: src/components/settings/SetPassphrasePrompt.tsx:83
 msgid "Failed to set passphrase: {0}"
 msgstr ""
 
@@ -910,7 +913,7 @@ msgstr ""
 #~ msgid "Failed to set passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:113
+#: src/components/settings/ChangePassphrasePrompt.tsx:111
 msgid "Failed to update passphrase: {0}"
 msgstr ""
 
@@ -918,23 +921,25 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:48
-msgid "Farm"
-msgstr "Farm"
+#: src/components/dashboard/DashboardSideBar.tsx:46
+#~ msgid "Farm"
+#~ msgstr "Farm"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:297
 msgid "Farmer Public Key"
 msgstr "Kunci Publik Farmer"
 
-#: src/components/block/Block.jsx:256
+#: src/components/block/Block.jsx:245
 msgid "Farmer Puzzle Hash"
 msgstr "Teka-teki Hash Farmer"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:154
+#: src/components/block/FarmManageFarmingRewards.tsx:142
+#: src/components/farm/FarmManageFarmingRewards.tsx:153
 msgid "Farmer Reward Address"
 msgstr "Alamat Upah Farmer"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:128
+#: src/components/block/FarmManageFarmingRewards.tsx:116
+#: src/components/farm/FarmManageFarmingRewards.tsx:127
 msgid "Farmer Reward Address is not properly formatted."
 msgstr "Alamat penghasilan Farmer tidak sesuai format."
 
@@ -942,7 +947,8 @@ msgstr "Alamat penghasilan Farmer tidak sesuai format."
 #~ msgid "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:122
+#: src/components/block/FarmManageFarmingRewards.tsx:110
+#: src/components/farm/FarmManageFarmingRewards.tsx:121
 msgid "Farmer Reward Address must not be empty."
 msgstr "Alamat penghasilan farmer tidak seharus nya kosong."
 
@@ -960,18 +966,18 @@ msgstr "Farmer sedang tidak berjalan"
 #~ msgid "Farmer public key:"
 #~ msgstr "Kunci Publik Farmer:"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:32
+#: src/components/farm/overview/FarmOverviewHero.tsx:28
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Para farmer mendapatkan upah blok dan biaya transaksi dengan mengalokasikan ruang kosong untuk membantu pengamanan transaksi. Ini adalah tempat farm anda setelah anda menambahkan sebuah plot. <0>Pelajari lebih lanjut</0>"
 
-#: src/components/farm/card/FarmCardStatus.tsx:61
-#: src/components/farm/Farm.tsx:19
+#: src/components/dashboard/DashboardSideBar.tsx:99
 #: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Farming"
 
-#: src/components/app/AppSelectMode.tsx:130
+#: src/components/app/AppSelectMode.tsx:125
 msgid "Farming Mode"
 msgstr ""
 
@@ -1005,7 +1011,7 @@ msgstr "Biaya"
 msgid "Fee is used TWICE: once to leave pool, once to join."
 msgstr ""
 
-#: src/components/block/Block.jsx:310
+#: src/components/block/Block.jsx:299
 msgid "Fees Amount"
 msgstr "Jumlah Biaya"
 
@@ -1028,8 +1034,8 @@ msgstr "Nama file"
 msgid "Final folder location"
 msgstr "Lokasi folder akhir"
 
-#: src/components/fullNode/FullNode.jsx:42
-#: src/components/fullNode/FullNode.jsx:96
+#: src/components/fullNode/FullNode.jsx:40
+#: src/components/fullNode/FullNode.jsx:94
 msgid "Finished"
 msgstr "Selesai"
 
@@ -1041,14 +1047,14 @@ msgstr "Follow di Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Frequently Asked Questions"
 
-#: src/components/dashboard/DashboardSideBar.tsx:32
+#: src/components/dashboard/DashboardSideBar.tsx:80
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "Full Node"
 
-#: src/components/fullNode/FullNode.jsx:140
-msgid "Full Node Overview"
-msgstr "Gambaran node Total"
+#: src/components/fullNode/FullNode.jsx:138
+#~ msgid "Full Node Overview"
+#~ msgstr "Gambaran node Total"
 
 #: src/components/fullNode/FullNode.jsx:267
 #~ msgid "Full Node Status"
@@ -1058,6 +1064,10 @@ msgstr "Gambaran node Total"
 msgid "Full Screen"
 msgstr "Layar Penuh"
 
+#: src/components/settings/Settings.tsx:257
+msgid "General"
+msgstr ""
+
 #: src/components/_wallet_old/create/createNewColouredCoin.jsx:102
 #~ msgid "Generate New Colour"
 #~ msgstr "Hasilkan Warna Baru"
@@ -1066,7 +1076,7 @@ msgstr "Layar Penuh"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
-#: src/components/pool/PoolOverview.tsx:173
+#: src/components/pool/PoolOverview.tsx:172
 msgid "Grid view"
 msgstr "Tampilan grid"
 
@@ -1082,16 +1092,16 @@ msgstr "Tampilan grid"
 msgid "Harvester Plots"
 msgstr "Plot Harvester Lokal"
 
-#: src/components/fullNode/FullNode.jsx:60
+#: src/components/fullNode/FullNode.jsx:58
 msgid "Header Hash"
 msgstr "Kepala hash"
 
-#: src/components/block/Block.jsx:174
+#: src/components/block/Block.jsx:163
 msgid "Header hash"
 msgstr "Kepala hash"
 
-#: src/components/block/Block.jsx:190
-#: src/components/fullNode/FullNode.jsx:78
+#: src/components/block/Block.jsx:179
+#: src/components/fullNode/FullNode.jsx:76
 #: src/components/fullNode/FullNodeConnections.tsx:78
 msgid "Height"
 msgstr "Tinggi"
@@ -1108,8 +1118,8 @@ msgstr "Bantuan"
 #~ msgid "Hide Advanced Options"
 #~ msgstr "Sembunyikan Opsi Tingkat Lanjut"
 
-#: src/components/app/AppPassPrompt.tsx:128
-#: src/components/settings/RemovePassphrasePrompt.tsx:120
+#: src/components/app/AppPassPrompt.tsx:127
+#: src/components/settings/RemovePassphrasePrompt.tsx:118
 msgid "Hint"
 msgstr ""
 
@@ -1126,9 +1136,14 @@ msgstr "Nama Host"
 msgid "IP address"
 msgstr "Alamat IP"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:71
+#: src/components/block/FullNodeAddConnection.tsx:71
+#: src/components/fullNode/FullNodeAddConnection.tsx:70
 msgid "IP address / host"
 msgstr "Alamat IP / host"
+
+#: src/components/settings/Settings.tsx:258
+msgid "Identities"
+msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:128
 msgid "If none selected, then it will default to the temporary directory."
@@ -1142,7 +1157,7 @@ msgstr "Jika tidak ada yang dipilih, maka akan default ke direktori sementara."
 #~ msgid "Import from Mnemonics (24 words)"
 #~ msgstr "Impor dari Mnemonic (24 kata)"
 
-#: src/components/fullNode/FullNode.jsx:44
+#: src/components/fullNode/FullNode.jsx:42
 msgid "In Progress"
 msgstr "Sedang Berlangsung"
 
@@ -1187,18 +1202,18 @@ msgstr "Index"
 msgid "Invalid state"
 msgstr "Keadaan Salah"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:67
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:66
 msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:403
-#: src/components/pool/PoolOverview.tsx:110
+#: src/components/pool/PoolOverview.tsx:109
 msgid "Join Pool"
 msgstr "Gabung ke Pool"
 
 #: src/components/plot/add/PlotAddNFT.tsx:64
 #: src/components/plot/add/PlotAddNFT.tsx:146
-#: src/components/pool/PoolHero.tsx:31
+#: src/components/pool/PoolHero.tsx:26
 msgid "Join a Pool"
 msgstr "Gabung ke Pool"
 
@@ -1214,7 +1229,7 @@ msgstr ""
 msgid "Join a pool and get more consistent HCX farming rewards. Create a plot NFT and assign your new plots to a group."
 msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:151
+#: src/components/app/AppSelectMode.tsx:146
 msgid "Join farming pools"
 msgstr ""
 
@@ -1222,7 +1237,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "Ukuran-K"
 
-#: src/components/app/AppKeyringMigrator.tsx:94
+#: src/components/app/AppKeyringMigrator.tsx:93
 msgid "Keyring migration failed: {0}"
 msgstr ""
 
@@ -1260,7 +1275,7 @@ msgstr "Blok Challenge Terbaru"
 msgid "Launcher Id"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:77
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:76
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:118
 msgid "Learn More"
 msgstr "Pelajari Lebih Lanjut"
@@ -1269,7 +1284,7 @@ msgstr "Pelajari Lebih Lanjut"
 msgid "Leaving Pool"
 msgstr "Meninggalkan Pool"
 
-#: src/components/pool/PoolOverview.tsx:173
+#: src/components/pool/PoolOverview.tsx:172
 msgid "List view"
 msgstr "Tampilan daftar"
 
@@ -1277,7 +1292,7 @@ msgstr "Tampilan daftar"
 #~ msgid "Loading Plot NFTs"
 #~ msgstr "Memuat Plot NFT"
 
-#: src/components/app/AppProviders.tsx:66
+#: src/components/app/AppProviders.tsx:65
 msgid "Loading configuration"
 msgstr ""
 
@@ -1289,7 +1304,7 @@ msgstr ""
 #~ msgid "Loading list of wallets"
 #~ msgstr "Memuat Daftar dompet"
 
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:35
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:34
 msgid "Loading..."
 msgstr "Memuat..."
 
@@ -1341,7 +1356,7 @@ msgstr "Memuat..."
 #~ msgid "MainWalletList.title"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:100
+#: src/components/app/AppSelectMode.tsx:95
 msgid "Manage CAT tokens"
 msgstr ""
 
@@ -1353,7 +1368,8 @@ msgstr "Kelola Upah Farming"
 #~ msgid "Manage Recovery DIDs"
 #~ msgstr "Mengelola Pemulihan DIDs"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:110
+#: src/components/block/FarmManageFarmingRewards.tsx:98
+#: src/components/farm/FarmManageFarmingRewards.tsx:109
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Kelola Alamat Tujuan Upah Farming Anda"
 
@@ -1365,20 +1381,20 @@ msgstr "MiB Naik/Turun"
 #~ msgid "Migrate"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:182
+#: src/components/settings/Settings.tsx:186
 #: src/components/settings/SettingsPanel.tsx:186
 msgid "Migrate Keyring"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:230
+#: src/components/app/AppKeyringMigrator.tsx:229
 msgid "Migrate Keys"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:125
+#: src/components/app/AppKeyringMigrator.tsx:124
 msgid "Migration required"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:123
+#: src/components/settings/Settings.tsx:127
 #: src/components/settings/SettingsPanel.tsx:131
 msgid "Migration required to support passphrase protection"
 msgstr ""
@@ -1420,7 +1436,7 @@ msgstr "Nama jaringan"
 #~ msgid "New Address"
 #~ msgstr "Alamat Baru"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:172
+#: src/components/settings/ChangePassphrasePrompt.tsx:170
 msgid "New Passphrase"
 msgstr ""
 
@@ -1432,7 +1448,7 @@ msgstr ""
 #~ msgid "New passphrase is the same as your current passphrase"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:340
+#: src/components/block/Block.jsx:328
 msgid "Next"
 msgstr "Selanjutnya"
 
@@ -1456,7 +1472,8 @@ msgstr "Belum ada blok yang dibudidayakan"
 #~ msgid "No previous transactions"
 #~ msgstr "Tiada transaksi sebelum ini"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:147
+#: src/components/block/FarmManageFarmingRewards.tsx:135
+#: src/components/farm/FarmManageFarmingRewards.tsx:146
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "Tiada kod pribadi untuk satu atau semua alamat. Hanya selamat jika menghantar ganjaran ke dompet elektronik."
 
@@ -1481,6 +1498,8 @@ msgstr "Anda tidak ada plot yang telah lulus plot filter."
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/farm/FarmerStatus.tsx:20
+#: src/components/farm/card/FarmCardNotAvailable.tsx:19
+#: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:362
 msgid "Not Available"
@@ -1507,8 +1526,9 @@ msgstr "Tidak terhubung"
 msgid "Not found Plots"
 msgstr "Tidak dijumpai plot-plot"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:175
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+#: src/components/block/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:174
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
@@ -1528,13 +1548,17 @@ msgstr ""
 msgid "Number of threads"
 msgstr "Bilangan thread"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:88
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:87
 msgid "OK"
 msgstr "OK"
 
 #: src/components/trading/ViewOffer.jsx:67
 #~ msgid "Offer"
 #~ msgstr "Tawaran"
+
+#: src/components/dashboard/DashboardSideBar.tsx:70
+msgid "Offers"
+msgstr ""
 
 #: src/components/trading/TradingOverview.jsx:412
 #~ msgid "Offers Created"
@@ -1556,28 +1580,28 @@ msgstr "OK"
 #~ msgid "Outgoing"
 #~ msgstr "Keluar"
 
+#: src/components/app/AppKeyringMigrator.tsx:138
 #: src/components/app/AppKeyringMigrator.tsx:139
-#: src/components/app/AppKeyringMigrator.tsx:140
-#: src/components/app/AppPassPrompt.tsx:120
-#: src/components/settings/RemovePassphrasePrompt.tsx:112
-#: src/components/settings/SetPassphrasePrompt.tsx:151
+#: src/components/app/AppPassPrompt.tsx:119
+#: src/components/settings/RemovePassphrasePrompt.tsx:110
+#: src/components/settings/SetPassphrasePrompt.tsx:149
 #: src/components/settings/SettingsPanel.tsx:217
 msgid "Passphrase"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:163
-#: src/components/settings/ChangePassphrasePrompt.tsx:193
-#: src/components/settings/SetPassphrasePrompt.tsx:175
+#: src/components/app/AppKeyringMigrator.tsx:162
+#: src/components/settings/ChangePassphrasePrompt.tsx:191
+#: src/components/settings/SetPassphrasePrompt.tsx:173
 msgid "Passphrase Hint"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:162
-#: src/components/settings/ChangePassphrasePrompt.tsx:192
-#: src/components/settings/SetPassphrasePrompt.tsx:174
+#: src/components/app/AppKeyringMigrator.tsx:161
+#: src/components/settings/ChangePassphrasePrompt.tsx:190
+#: src/components/settings/SetPassphrasePrompt.tsx:172
 msgid "Passphrase Hint (Optional)"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:213
+#: src/components/settings/Settings.tsx:217
 msgid "Passphrase Settings"
 msgstr ""
 
@@ -1586,22 +1610,22 @@ msgstr ""
 #~ msgid "Passphrase is incorrect"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:96
+#: src/components/settings/Settings.tsx:100
 #: src/components/settings/SettingsPanel.tsx:102
 msgid "Passphrase protection has been disabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:133
+#: src/components/settings/Settings.tsx:137
 #: src/components/settings/SettingsPanel.tsx:142
 msgid "Passphrase protection is disabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:130
+#: src/components/settings/Settings.tsx:134
 #: src/components/settings/SettingsPanel.tsx:138
 msgid "Passphrase protection is enabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:124
+#: src/components/settings/Settings.tsx:128
 #: src/components/settings/SettingsPanel.tsx:132
 msgid "Passphrase support requires migrating your keys to a new keyring"
 msgstr ""
@@ -1663,8 +1687,8 @@ msgstr "Silahkan Konfirmasi"
 #~ msgid "Please enter a filename"
 #~ msgstr "Silakan masukkan nama fail"
 
-#: src/components/app/AppPassPrompt.tsx:53
-#: src/components/settings/SetPassphrasePrompt.tsx:53
+#: src/components/app/AppPassPrompt.tsx:52
+#: src/components/settings/SetPassphrasePrompt.tsx:51
 msgid "Please enter a passphrase"
 msgstr ""
 
@@ -1715,17 +1739,17 @@ msgstr ""
 #~ msgid "Please enter a valid pubkey"
 #~ msgstr "Silakan masukkan public key yang valid"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:75
+#: src/components/settings/ChangePassphrasePrompt.tsx:73
 msgid "Please enter your current passphrase, and a new passphrase"
 msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:80
-#: src/components/app/AppPassPrompt.tsx:96
-#: src/components/settings/RemovePassphrasePrompt.tsx:52
+#: src/components/app/AppPassPrompt.tsx:79
+#: src/components/app/AppPassPrompt.tsx:95
+#: src/components/settings/RemovePassphrasePrompt.tsx:50
 msgid "Please enter your passphrase"
 msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:90
+#: src/components/app/AppPassPrompt.tsx:89
 msgid "Please enter your passphrase to proceed"
 msgstr ""
 
@@ -1781,7 +1805,7 @@ msgstr "Harap tunggu sampai sinkronisasi dompet selesai"
 msgid "Plot Count"
 msgstr "Jumlah Plot"
 
-#: src/components/block/Block.jsx:288
+#: src/components/block/Block.jsx:277
 msgid "Plot Id"
 msgstr "ID Plot"
 
@@ -1789,7 +1813,7 @@ msgstr "ID Plot"
 msgid "Plot Key"
 msgstr "Key Plot"
 
-#: src/components/pool/PoolOverview.tsx:39
+#: src/components/pool/PoolOverview.tsx:38
 msgid "Plot NFT"
 msgstr "Plot NFT"
 
@@ -1802,7 +1826,7 @@ msgstr ""
 #~ msgid "Plot Name"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:248
+#: src/components/block/Block.jsx:237
 msgid "Plot Public Key"
 msgstr "Public Key Plot"
 
@@ -1830,8 +1854,7 @@ msgstr "Plot ini duplikat dari {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:43
-#: src/components/plot/Plot.tsx:14
+#: src/components/dashboard/DashboardSideBar.tsx:86
 msgid "Plots"
 msgstr "Plot-Plot"
 
@@ -1882,8 +1905,8 @@ msgstr ""
 
 #: src/components/dashboard/DashboardSideBar.tsx:53
 #: src/components/pool/Pool.tsx:17
-msgid "Pool"
-msgstr ""
+#~ msgid "Pool"
+#~ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:100
 msgid "Pool Contract Address"
@@ -1893,7 +1916,7 @@ msgstr ""
 msgid "Pool Key"
 msgstr "Kunci Pool"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:54
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:53
 msgid "Pool Login Link"
 msgstr ""
 
@@ -1901,20 +1924,22 @@ msgstr ""
 msgid "Pool Payout Instructions"
 msgstr ""
 
-#: src/components/block/Block.jsx:252
+#: src/components/block/Block.jsx:241
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:308
 msgid "Pool Public Key"
 msgstr "Pool Kunci Publik"
 
-#: src/components/block/Block.jsx:272
+#: src/components/block/Block.jsx:261
 msgid "Pool Puzzle Hash"
 msgstr "Teka-teki Hash Pool"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:164
+#: src/components/block/FarmManageFarmingRewards.tsx:152
+#: src/components/farm/FarmManageFarmingRewards.tsx:163
 msgid "Pool Reward Address"
 msgstr "Alamat Upah Pool"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:140
+#: src/components/block/FarmManageFarmingRewards.tsx:128
+#: src/components/farm/FarmManageFarmingRewards.tsx:139
 msgid "Pool Reward Address is not properly formatted."
 msgstr ""
 
@@ -1922,11 +1947,12 @@ msgstr ""
 #~ msgid "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:135
+#: src/components/block/FarmManageFarmingRewards.tsx:123
+#: src/components/farm/FarmManageFarmingRewards.tsx:134
 msgid "Pool Reward Address must not be empty."
 msgstr ""
 
-#: src/components/block/Block.jsx:302
+#: src/components/block/Block.jsx:291
 msgid "Pool Reward Amount"
 msgstr "Jumlah Upah Pool"
 
@@ -1956,14 +1982,16 @@ msgstr ""
 msgid "Pool:"
 msgstr ""
 
+#: src/components/dashboard/DashboardSideBar.tsx:104
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
 msgstr ""
 
+#: src/components/block/FullNodeAddConnection.tsx:76
 #: src/components/farm/FarmFullNodeConnections.tsx:43
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:42
-#: src/components/fullNode/FullNodeAddConnection.tsx:76
+#: src/components/fullNode/FullNodeAddConnection.tsx:75
 #: src/components/fullNode/FullNodeConnections.tsx:45
 msgid "Port"
 msgstr "Port"
@@ -1977,7 +2005,7 @@ msgstr ""
 msgid "Preparing standard wallet"
 msgstr ""
 
-#: src/components/block/Block.jsx:337
+#: src/components/block/Block.jsx:325
 msgid "Previous"
 msgstr "Sebelumnya"
 
@@ -1985,7 +2013,7 @@ msgstr "Sebelumnya"
 #~ msgid "Previous Block Hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:204
+#: src/components/block/Block.jsx:193
 msgid "Previous Header Hash"
 msgstr "Header Hash Sebelumnya"
 
@@ -2005,7 +2033,7 @@ msgstr "Header Hash Sebelumnya"
 #~ msgid "Private key:"
 #~ msgstr "Kunci privat:"
 
-#: src/components/block/Block.jsx:240
+#: src/components/block/Block.jsx:229
 msgid "Proof of Space Size"
 msgstr "Ukuran Bukti Dari Ruang"
 
@@ -2080,7 +2108,7 @@ msgstr "Penggunaan RAM tertinggi"
 #~ msgid "Receive Address"
 #~ msgstr "Alamat Penerima"
 
-#: src/components/app/AppSelectMode.tsx:121
+#: src/components/app/AppSelectMode.tsx:116
 msgid "Recommended"
 msgstr ""
 
@@ -2106,6 +2134,7 @@ msgstr ""
 #~ msgid "Recover Wallet"
 #~ msgstr "Dapatkan kembali dompet"
 
+#: src/components/plot/PlotHeader.tsx:75
 #: src/components/plot/overview/PlotOverviewHero.tsx:60
 #: src/components/plot/PlotHeader.tsx:76
 msgid "Refresh Plots"
@@ -2119,14 +2148,14 @@ msgstr ""
 msgid "Release Notes"
 msgstr "Release Notes"
 
-#: src/components/settings/RemovePassphrasePrompt.tsx:100
-#: src/components/settings/RemovePassphrasePrompt.tsx:147
-#: src/components/settings/Settings.tsx:194
+#: src/components/settings/RemovePassphrasePrompt.tsx:98
+#: src/components/settings/RemovePassphrasePrompt.tsx:143
+#: src/components/settings/Settings.tsx:198
 #: src/components/settings/SettingsPanel.tsx:196
 msgid "Remove Passphrase"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:196
+#: src/components/app/AppKeyringMigrator.tsx:195
 msgid "Remove keys from old keyring upon successful migration"
 msgstr ""
 
@@ -2142,7 +2171,7 @@ msgstr "Menghapus"
 msgid "Report an Issue..."
 msgstr "Melaporkan sebuah masalah..."
 
-#: src/components/backup/BackupRestore.tsx:160
+#: src/components/backup/BackupRestore.tsx:159
 msgid "Restore Metadata for Coloured Coins and other Smart Wallets from Backup"
 msgstr "Pulihkan Metadata untuk Coloured Coins dan Smart Wallet lainnya dari Cadangan"
 
@@ -2150,7 +2179,7 @@ msgstr "Pulihkan Metadata untuk Coloured Coins dan Smart Wallet lainnya dari Cad
 #~ msgid "Restore Smart Wallets From Backup"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:157
+#: src/components/app/AppSelectMode.tsx:152
 msgid "Runs the full node"
 msgstr ""
 
@@ -2159,18 +2188,19 @@ msgstr ""
 #~ msgid "SB Height"
 #~ msgstr "SB Height"
 
-#: src/components/backup/BackupRestore.tsx:186
+#: src/components/backup/BackupRestore.tsx:185
 msgid "Safe To Skip"
 msgstr "Langkah Tidak Wajib"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:190
+#: src/components/block/FarmManageFarmingRewards.tsx:178
+#: src/components/farm/FarmManageFarmingRewards.tsx:189
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
 msgid "Save"
 msgstr "Simpan"
 
-#: src/components/app/AppKeyringMigrator.tsx:178
-#: src/components/settings/ChangePassphrasePrompt.tsx:208
-#: src/components/settings/SetPassphrasePrompt.tsx:190
+#: src/components/app/AppKeyringMigrator.tsx:177
+#: src/components/settings/ChangePassphrasePrompt.tsx:206
+#: src/components/settings/SetPassphrasePrompt.tsx:188
 msgid "Save passphrase"
 msgstr ""
 
@@ -2186,7 +2216,7 @@ msgstr "Cari block dari hulu hash"
 msgid "Second temporary folder location"
 msgstr "Folder sementara dua"
 
-#: src/components/settings/Settings.tsx:126
+#: src/components/settings/Settings.tsx:130
 #: src/components/settings/SettingsPanel.tsx:134
 msgid "Secure your keychain using a strong passphrase"
 msgstr ""
@@ -2223,7 +2253,7 @@ msgstr "Pilih Direktori Sementara"
 #~ msgid "Select Wallet Type"
 #~ msgstr "Pilih Jenis Dompet elektronik"
 
-#: src/components/app/AppSelectMode.tsx:70
+#: src/components/app/AppSelectMode.tsx:65
 msgid "Select Your Client Mode"
 msgstr ""
 
@@ -2286,9 +2316,9 @@ msgstr ""
 #~ msgid "Send your pubkey to your Rate Limited Wallet admin:"
 #~ msgstr "Kirim pubkey anda ke admin Dompet Hak Terbatas:"
 
-#: src/components/settings/SetPassphrasePrompt.tsx:137
-#: src/components/settings/SetPassphrasePrompt.tsx:216
-#: src/components/settings/Settings.tsx:205
+#: src/components/settings/SetPassphrasePrompt.tsx:135
+#: src/components/settings/SetPassphrasePrompt.tsx:211
+#: src/components/settings/Settings.tsx:209
 #: src/components/settings/SettingsPanel.tsx:205
 msgid "Set Passphrase"
 msgstr ""
@@ -2297,13 +2327,15 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:241
+#: src/components/dashboard/DashboardSideBar.tsx:113
+#: src/components/dashboard/DashboardSideBar.tsx:121
+#: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr ""
 
 #: src/components/app/AppSelectMode.tsx:171
-msgid "Settings are located at the upper right corner"
-msgstr ""
+#~ msgid "Settings are located at the upper right corner"
+#~ msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
@@ -2322,12 +2354,12 @@ msgstr ""
 #~ msgid "Sign In"
 #~ msgstr "Log Masuk"
 
-#: src/components/app/AppKeyringMigrator.tsx:58
-#: src/components/app/AppKeyringMigrator.tsx:219
+#: src/components/app/AppKeyringMigrator.tsx:57
+#: src/components/app/AppKeyringMigrator.tsx:218
 msgid "Skip"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:57
+#: src/components/app/AppKeyringMigrator.tsx:56
 msgid "Skip Keyring Migration"
 msgstr ""
 
@@ -2343,7 +2375,7 @@ msgstr ""
 msgid "Skips adding a final directory to harvester for farming"
 msgstr "Lewati saja penambahan sebuah direktori akhir ke harvester unuk farming"
 
-#: src/components/pool/PoolHero.tsx:26
+#: src/components/pool/PoolHero.tsx:21
 msgid "Smooth out your HCX farming rewards by joining a pool."
 msgstr ""
 
@@ -2391,7 +2423,7 @@ msgstr "Pertuturan"
 msgid "Starting services"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:98
+#: src/components/fullNode/FullNode.jsx:96
 msgid "State"
 msgstr "Keadaan"
 
@@ -2400,7 +2432,7 @@ msgstr "Keadaan"
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
 #: src/components/plotNFT/PlotNFTCard.tsx:142
-#: src/components/pool/PoolOverview.tsx:43
+#: src/components/pool/PoolOverview.tsx:42
 msgid "Status"
 msgstr "Status"
 
@@ -2424,7 +2456,7 @@ msgstr "Status"
 #~ msgid "StatusCard.title"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:94
+#: src/components/app/AppSelectMode.tsx:89
 msgid "Store and Send HCX"
 msgstr ""
 
@@ -2440,7 +2472,7 @@ msgstr ""
 #~ msgid "Sub Block at height {0} in the Chinilla blockchain"
 #~ msgstr "Sub Block at height {0} in the Chinilla blockchain"
 
-#: src/components/app/AppPassPrompt.tsx:97
+#: src/components/app/AppPassPrompt.tsx:96
 msgid "Submit"
 msgstr "Kirim"
 
@@ -2454,6 +2486,7 @@ msgstr "Sinkron"
 
 #: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Syncing"
 msgstr "Sinkronisasi"
@@ -2553,19 +2586,19 @@ msgstr ""
 #~ msgid "The provided passphrase and confirmation do not match"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:291
+#: src/components/block/Block.jsx:280
 msgid "The seed used to create the plot. This depends on the pool pk and plot pk."
 msgstr "Bulir yang digunakan untuk membuat plot. Ini tergantung oleh pool pk dan plot pk."
 
-#: src/components/block/Block.jsx:217
+#: src/components/block/Block.jsx:206
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
 msgstr "Jumlah total dari VDF (fungsi delay yang dapat diverfikasikan) atau bukti dari iterasi waktu pada keseluruhan chain sampai pada blok sub ini."
 
-#: src/components/block/Block.jsx:233
+#: src/components/block/Block.jsx:222
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
 msgstr "Jumlah total dari VDF (fungsi delay yang dapat diverfikasikan) atau bukti dari iterasi waktu pada blok ini."
 
-#: src/components/block/Block.jsx:313
+#: src/components/block/Block.jsx:302
 msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Total dari biaya transaksi pada block ini. Diberikan kepada farmer."
 
@@ -2577,7 +2610,7 @@ msgstr ""
 msgid "These plots are invalid, you might want to delete them."
 msgstr "Plot - plot ini tidak valid, anda sebaiknya menghapus semuanya."
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:89
+#: src/components/plot/PlotAddDirectoryDialog.tsx:88
 msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
 msgstr "Anda dapat menambah direktori yang berisikan plot. Apa bila belum membuat plot, silahkan ke halaman pembuatan plot."
 
@@ -2606,7 +2639,7 @@ msgstr "Fitur ini hanya tersedia di GUI."
 #~ msgid "This is the time of the latest peak sub block."
 #~ msgstr "Ini adalah waktu dari ketinggian terakhir sub block."
 
-#: src/components/block/Block.jsx:183
+#: src/components/block/Block.jsx:172
 msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 msgstr "Ini adalah waktu dimana blok di hasilkan oleh farmer, sebelum di finalisasi dengan bukti dari waktu"
 
@@ -2668,7 +2701,7 @@ msgstr "Tabel berikut menunjukan waktu terakhir farm anda mencoba untuk memenang
 msgid "Thread Multiplier for Phase 2"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:90
+#: src/components/fullNode/FullNode.jsx:88
 msgid "Time Created"
 msgstr "Waktu Dibuat"
 
@@ -2676,13 +2709,17 @@ msgstr "Waktu Dibuat"
 #~ msgid "Time this trade was created at this time"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:178
+#: src/components/block/Block.jsx:167
 msgid "Timestamp"
 msgstr "Timestamp"
 
 #: src/components/_wallet_old/WalletHistory.tsx:42
 #~ msgid "To"
 #~ msgstr "Ke"
+
+#: src/components/dashboard/DashboardSideBar.tsx:58
+msgid "Tokens"
+msgstr ""
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:32
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:379
@@ -2710,7 +2747,7 @@ msgstr "Jumlah Ukuran Plot:"
 msgid "Total Size of Plots"
 msgstr "Jumlah Ukuran Plot-Plot"
 
-#: src/components/block/Block.jsx:214
+#: src/components/block/Block.jsx:203
 msgid "Total VDF Iterations"
 msgstr "Jumlah iterasi VDF"
 
@@ -2738,7 +2775,7 @@ msgstr "Jumlah bilangan sejak mula blockchain"
 #~ msgid "Trade Overview"
 #~ msgstr "Overview Perdagangan"
 
-#: src/components/app/AppSelectMode.tsx:106
+#: src/components/app/AppSelectMode.tsx:101
 msgid "Trade tokens"
 msgstr ""
 
@@ -2754,7 +2791,7 @@ msgstr ""
 #~ msgid "Trading History"
 #~ msgstr "Sejarah Perdagangan"
 
-#: src/components/block/Block.jsx:298
+#: src/components/block/Block.jsx:287
 msgid "Transactions Filter Hash"
 msgstr "Seleksi Hash Transaksi"
 
@@ -2767,11 +2804,11 @@ msgstr "Seleksi Hash Transaksi"
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:147
-#: src/components/pool/PoolOverview.tsx:63
+#: src/components/pool/PoolOverview.tsx:62
 msgid "Unclaimed Rewards"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:96
+#: src/components/fullNode/FullNode.jsx:94
 msgid "Unfinished"
 msgstr "Belum Selesai"
 
@@ -2783,7 +2820,7 @@ msgstr "Belum Selesai"
 #~ msgid "Unknown"
 #~ msgstr "Diketahui"
 
-#: src/components/app/AppPassPrompt.tsx:83
+#: src/components/app/AppPassPrompt.tsx:82
 msgid "Unlock Keyring"
 msgstr ""
 
@@ -2825,7 +2862,7 @@ msgid "View"
 msgstr "Lihat"
 
 #: src/components/plot/queue/PlotQueueActions.tsx:75
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:56
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:55
 msgid "View Log"
 msgstr "Lihat Log"
 
@@ -2869,12 +2906,12 @@ msgstr "Menunggu sikronisasi"
 msgid "Waiting for the transaction to be confirmed"
 msgstr "Menunggu transaksi untuk di konfirmasi"
 
-#: src/components/app/AppSelectMode.tsx:86
-#: src/components/app/AppSelectMode.tsx:138
+#: src/components/app/AppSelectMode.tsx:81
+#: src/components/app/AppSelectMode.tsx:133
 msgid "Wallet Mode"
 msgstr ""
 
-#: src/components/pool/PoolOverview.tsx:182
+#: src/components/pool/PoolOverview.tsx:181
 msgid "Wallet Status:"
 msgstr "Status Dompet:"
 
@@ -2914,9 +2951,9 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:38
-msgid "Wallets"
-msgstr "Wallets"
+#: src/components/dashboard/DashboardSideBar.tsx:36
+#~ msgid "Wallets"
+#~ msgstr "Wallets"
 
 #: src/components/wallet/Wallets.tsx:131
 #~ msgid "Wallets.title"
@@ -2951,11 +2988,11 @@ msgstr ""
 #~ msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:194
+#: src/components/block/Block.jsx:183
 msgid "Weight"
 msgstr "Berat"
 
-#: src/components/block/Block.jsx:197
+#: src/components/block/Block.jsx:186
 msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
 msgstr "Beban adalah jumlah total ke rumitan semua sub blok sampai dengan blok ini"
 
@@ -2993,7 +3030,7 @@ msgstr "Kamu masi dalam keadaan pending. Tolong tunggu untuk konfirmasi"
 msgid "You are not self pooling"
 msgstr "Kamu tidak sedan membuat pool sendiri"
 
-#: src/components/app/AppSelectMode.tsx:173
+#: src/components/app/AppSelectMode.tsx:167
 msgid "You can always change your mode later in the settings"
 msgstr ""
 
@@ -3069,15 +3106,15 @@ msgstr "Koneksi Full Node Anda"
 msgid "Your Harvester Network"
 msgstr "Jaringan Harvester Anda"
 
-#: src/components/pool/PoolOverview.tsx:157
+#: src/components/pool/PoolOverview.tsx:156
 msgid "Your Pool Overview"
 msgstr "Gambaran Pool Anda"
 
-#: src/components/app/AppPassPrompt.tsx:79
+#: src/components/app/AppPassPrompt.tsx:78
 msgid "Your keyring is locked"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:63
+#: src/components/app/AppKeyringMigrator.tsx:62
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
 msgstr ""
 
@@ -3085,26 +3122,26 @@ msgstr ""
 #~ msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 #~ msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:106
+#: src/components/app/AppKeyringMigrator.tsx:105
 msgid "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:112
+#: src/components/app/AppKeyringMigrator.tsx:111
 msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:181
-#: src/components/settings/ChangePassphrasePrompt.tsx:211
-#: src/components/settings/SetPassphrasePrompt.tsx:193
+#: src/components/app/AppKeyringMigrator.tsx:180
+#: src/components/settings/ChangePassphrasePrompt.tsx:209
+#: src/components/settings/SetPassphrasePrompt.tsx:191
 msgid "Your passphrase can be stored in your system's secure credential store. Chinilla will be able to access your keys without prompting for your passphrase."
 msgstr ""
 
-#: src/components/settings/Settings.tsx:85
+#: src/components/settings/Settings.tsx:89
 #: src/components/settings/SettingsPanel.tsx:91
 msgid "Your passphrase has been set"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:74
+#: src/components/settings/Settings.tsx:78
 #: src/components/settings/SettingsPanel.tsx:80
 msgid "Your passphrase has been updated"
 msgstr ""

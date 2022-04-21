@@ -84,7 +84,7 @@ msgstr "Дзеянне"
 #: src/components/farm/FarmFullNodeConnections.tsx:68
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:67
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/pool/PoolOverview.tsx:66
+#: src/components/pool/PoolOverview.tsx:65
 msgid "Actions"
 msgstr "Дзеянні"
 
@@ -97,7 +97,7 @@ msgstr "Дзеянні"
 #~ msgid "Add Backup ID"
 #~ msgstr ""
 
-#: src/components/plot/PlotHeader.tsx:89
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Дадаць каталог з дзялянкамі"
 
@@ -109,7 +109,8 @@ msgstr "Дадаць дзялянку ў чаргу"
 #~ msgid "Add Wallet"
 #~ msgstr "Add Wallet"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:45
+#: src/components/farm/overview/FarmOverviewHero.tsx:41
+#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:176
 #: src/components/plot/overview/PlotOverviewHero.tsx:52
 #: src/components/plot/PlotHeader.tsx:61
@@ -122,11 +123,11 @@ msgstr "Дадаць дзялянку"
 msgid "Add a Plot NFT"
 msgstr ""
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:85
+#: src/components/plot/PlotAddDirectoryDialog.tsx:84
 msgid "Add a plot"
 msgstr "Дадаць дзялянку"
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:124
+#: src/components/plot/PlotAddDirectoryDialog.tsx:123
 msgid "Add plot directory"
 msgstr "Дадаць каталог з дзялянкамі"
 
@@ -145,7 +146,7 @@ msgstr ""
 #~ msgid "Address / Puzzle hash"
 #~ msgstr "Адрас / Хэш-галаваломка"
 
-#: src/components/app/AppKeyringMigrator.tsx:199
+#: src/components/app/AppKeyringMigrator.tsx:198
 msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
 msgstr ""
 
@@ -187,7 +188,7 @@ msgstr "Сапраўды адлучыцца?"
 msgid "Are you sure you want to quit?"
 msgstr ""
 
-#: src/electron/main.tsx:268
+#: src/electron/main.tsx:262
 #~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 #~ msgstr "Сапраўды хочаце выйсці? Засяванне і фермерства, запушчаныя праз графічны інтэрфейс, будуць спынены."
 
@@ -212,7 +213,7 @@ msgstr ""
 #~ msgid "Back"
 #~ msgstr "Назад"
 
-#: src/components/backup/BackupCreate.tsx:45
+#: src/components/backup/BackupCreate.tsx:46
 msgid "Backup file is used to restore smart wallets."
 msgstr "Файл рэзервовай копіі выкарыстоўваецца для аднаўлення смарт-кашалькоў."
 
@@ -222,7 +223,7 @@ msgstr "Файл рэзервовай копіі выкарыстоўваецц�
 #~ msgid "Balance"
 #~ msgstr "Баланс"
 
-#: src/components/block/Block.jsx:306
+#: src/components/block/Block.jsx:295
 msgid "Base Farmer Reward Amount"
 msgstr "Базавая сума ўзнагароды фермера"
 
@@ -239,11 +240,7 @@ msgstr "Найлепшы папярэдні разлік за апошнія 24�
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:116
-#: src/components/block/Block.jsx:125
-#: src/components/block/Block.jsx:142
-#: src/components/block/Block.jsx:146
-#: src/components/block/Block.jsx:322
+#: src/components/block/Block.jsx:136
 msgid "Block"
 msgstr "Блок"
 
@@ -255,11 +252,11 @@ msgstr ""
 #~ msgid "Block Test"
 #~ msgstr "Праверка блока"
 
-#: src/components/block/Block.jsx:224
+#: src/components/block/Block.jsx:213
 msgid "Block VDF Iterations"
 msgstr "Ітэрацый VDF блока"
 
-#: src/components/block/Block.jsx:326
+#: src/components/block/Block.jsx:314
 msgid "Block at height {0} in the Chinilla blockchain"
 msgstr "Блок на вышыні {0} у блокчэйне Chinilla"
 
@@ -267,15 +264,15 @@ msgstr "Блок на вышыні {0} у блокчэйне Chinilla"
 #~ msgid "Block hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:129
+#: src/components/block/Block.jsx:122
 msgid "Block with hash {headerHash}"
 msgstr "Блок з хэшам {headerHash}"
 
-#: src/components/block/Block.jsx:151
+#: src/components/block/Block.jsx:141
 msgid "Block with hash {headerHash} does not exist."
 msgstr "Блока з хэшам {headerHash} не існуе."
 
-#: src/components/fullNode/FullNode.jsx:124
+#: src/components/fullNode/FullNode.jsx:122
 msgid "Blocks"
 msgstr "Блокі"
 
@@ -311,16 +308,18 @@ msgstr "Але зараз ідзе фермерства на <0/>"
 #~ msgid "Can be backed up to mnemonic seed"
 #~ msgstr "Рэзервовая копія можна быць зроблена ў мнеманічнае зерне"
 
-#: src/components/app/AppPassPrompt.tsx:152
-#: src/components/backup/BackupCreate.tsx:50
-#: src/components/farm/FarmManageFarmingRewards.tsx:187
-#: src/components/fullNode/FullNodeAddConnection.tsx:85
+#: src/components/app/AppPassPrompt.tsx:151
+#: src/components/backup/BackupCreate.tsx:51
+#: src/components/block/FarmManageFarmingRewards.tsx:175
+#: src/components/block/FullNodeAddConnection.tsx:85
+#: src/components/farm/FarmManageFarmingRewards.tsx:186
+#: src/components/fullNode/FullNodeAddConnection.tsx:84
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
-#: src/components/settings/ChangePassphrasePrompt.tsx:224
-#: src/components/settings/RemovePassphrasePrompt.tsx:138
-#: src/components/settings/SetPassphrasePrompt.tsx:207
+#: src/components/settings/ChangePassphrasePrompt.tsx:221
+#: src/components/settings/RemovePassphrasePrompt.tsx:135
+#: src/components/settings/SetPassphrasePrompt.tsx:203
 msgid "Cancel"
 msgstr "Скасаваць"
 
@@ -344,15 +343,15 @@ msgstr "Хэш выпрабавання"
 msgid "Change"
 msgstr ""
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:232
-#: src/components/settings/Settings.tsx:160
+#: src/components/settings/ChangePassphrasePrompt.tsx:229
+#: src/components/settings/Settings.tsx:164
 #: src/components/settings/SettingsPanel.tsx:165
 msgid "Change Passphrase"
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:405
 #: src/components/plotNFT/PlotNFTChangePool.tsx:121
-#: src/components/pool/PoolOverview.tsx:112
+#: src/components/pool/PoolOverview.tsx:111
 msgid "Change Pool"
 msgstr ""
 
@@ -372,7 +371,7 @@ msgstr "Вікі блокчэйна Chinilla"
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Кашалёк Chinilla"
 
-#: src/components/app/AppSelectMode.tsx:163
+#: src/components/app/AppSelectMode.tsx:158
 msgid "Choose Farming Mode"
 msgstr ""
 
@@ -388,17 +387,17 @@ msgstr "Выберыце памер дзялянкі"
 msgid "Choose Plotter"
 msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:112
+#: src/components/app/AppSelectMode.tsx:107
 msgid "Choose Wallet Mode"
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:381
-#: src/components/pool/PoolOverview.tsx:89
+#: src/components/pool/PoolOverview.tsx:88
 msgid "Claim Rewards"
 msgstr ""
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:131
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:82
+#: src/components/plot/PlotAddDirectoryDialog.tsx:130
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
 msgstr "Закрыць"
 
@@ -457,13 +456,13 @@ msgstr "Пацвердзіць"
 msgid "Confirm Disconnect"
 msgstr "Пацвердзіць адлучэнне"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:182
+#: src/components/settings/ChangePassphrasePrompt.tsx:180
 msgid "Confirm New Passphrase"
 msgstr ""
 
+#: src/components/app/AppKeyringMigrator.tsx:149
 #: src/components/app/AppKeyringMigrator.tsx:150
-#: src/components/app/AppKeyringMigrator.tsx:151
-#: src/components/settings/SetPassphrasePrompt.tsx:162
+#: src/components/settings/SetPassphrasePrompt.tsx:160
 msgid "Confirm Passphrase"
 msgstr ""
 
@@ -479,11 +478,13 @@ msgstr ""
 #~ msgid "Confirmed at height {0}"
 #~ msgstr "Пацверджана на вышыні {0}"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:88
+#: src/components/block/FullNodeAddConnection.tsx:88
+#: src/components/fullNode/FullNodeAddConnection.tsx:87
 msgid "Connect"
 msgstr "Падлучыцца"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:64
+#: src/components/block/FullNodeAddConnection.tsx:64
+#: src/components/fullNode/FullNodeAddConnection.tsx:63
 #: src/components/fullNode/FullNodeConnections.tsx:109
 msgid "Connect to other peers"
 msgstr "Падлучыцца да іншых удзельнікаў сеткі"
@@ -541,13 +542,13 @@ msgstr "Дапамагчы ў распрацоўцы на GitHub"
 #~ msgid "Copy to Clipboard"
 #~ msgstr "Скапіраваць у буфер абмену"
 
-#: src/components/backup/BackupCreate.tsx:58
+#: src/components/backup/BackupCreate.tsx:59
 #: src/components/plot/add/PlotAddForm.tsx:196
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:176
 msgid "Create"
 msgstr "Стварыць"
 
-#: src/components/app/AppSelectMode.tsx:145
+#: src/components/app/AppSelectMode.tsx:140
 msgid "Create & Manage plots"
 msgstr ""
 
@@ -597,7 +598,7 @@ msgstr ""
 #~ msgid "Create Transaction"
 #~ msgstr "Стварыць трансакцыю"
 
-#: src/components/backup/BackupCreate.tsx:41
+#: src/components/backup/BackupCreate.tsx:42
 msgid "Create a Backup"
 msgstr "Стварыць рэзервовую копію"
 
@@ -658,7 +659,7 @@ msgstr ""
 msgid "Current Difficulty"
 msgstr ""
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:162
+#: src/components/settings/ChangePassphrasePrompt.tsx:160
 msgid "Current Passphrase"
 msgstr ""
 
@@ -699,7 +700,7 @@ msgstr "Затрымка"
 msgid "Delete"
 msgstr "Выдаліць"
 
-#: src/components/app/AppPassPrompt.tsx:93
+#: src/components/app/AppPassPrompt.tsx:92
 msgid "Delete Key"
 msgstr ""
 
@@ -729,7 +730,7 @@ msgstr ""
 #~ msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
 #~ msgstr "Выдаленне ўсіх ключоў незваротна выдаліць ключы з вашага камп'ютара — перад гэтым упэўніцеся, што маеце іх рэзервовыя копіі. Сапраўды працягнуць?"
 
-#: src/components/app/AppPassPrompt.tsx:89
+#: src/components/app/AppPassPrompt.tsx:88
 msgid "Deleting key"
 msgstr ""
 
@@ -749,7 +750,7 @@ msgstr "Распрацоўшчык"
 msgid "Developer Tools"
 msgstr "Інструменты для распрацоўшчыкаў"
 
-#: src/components/block/Block.jsx:210
+#: src/components/block/Block.jsx:199
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:14
 msgid "Difficulty"
 msgstr "Складанасць"
@@ -795,7 +796,7 @@ msgstr "Адлучыць"
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:51
+#: src/components/farm/overview/FarmOverviewHero.tsx:47
 #: src/components/plot/overview/PlotOverviewHero.tsx:67
 msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
 msgstr "На гэтым камп'ютары ёсць вашы дзялянкі? <0>Дадайце каталог з дзялянкамі</0>"
@@ -812,7 +813,7 @@ msgstr "Ці падтрымлівае ваш камп'ютар паралель�
 #~ msgid "Drag and drop offer file"
 #~ msgstr "Перацягніце сюды файл аферты"
 
-#: src/components/backup/BackupRestore.tsx:173
+#: src/components/backup/BackupRestore.tsx:172
 msgid "Drag and drop your backup file"
 msgstr "Перацягніце сюды файл рэзервовай копіі"
 
@@ -838,11 +839,11 @@ msgstr ""
 #~ msgid "Enter Passphrase"
 #~ msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:129
+#: src/components/app/AppKeyringMigrator.tsx:128
 msgid "Enter a strong passphrase and click Migrate Keys to secure your keys"
 msgstr ""
 
-#: src/components/settings/SetPassphrasePrompt.tsx:141
+#: src/components/settings/SetPassphrasePrompt.tsx:139
 msgid "Enter a strong passphrase to secure your keys:"
 msgstr ""
 
@@ -850,7 +851,7 @@ msgstr ""
 #~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 #~ msgstr "Каб аднавіць свой кашалёк Chinilla, увядзіце раней захаваную вамі мнеманічную фразу з 24 слоў у правільным парадку."
 
-#: src/components/settings/RemovePassphrasePrompt.tsx:104
+#: src/components/settings/RemovePassphrasePrompt.tsx:102
 msgid "Enter your passphrase:"
 msgstr ""
 
@@ -858,6 +859,8 @@ msgstr ""
 #: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:34
+#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -902,7 +905,7 @@ msgstr "Не ўдалося адкрыць (дзялянкі з памылкам
 #~ msgid "Failed to remove passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/settings/SetPassphrasePrompt.tsx:85
+#: src/components/settings/SetPassphrasePrompt.tsx:83
 msgid "Failed to set passphrase: {0}"
 msgstr ""
 
@@ -910,7 +913,7 @@ msgstr ""
 #~ msgid "Failed to set passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:113
+#: src/components/settings/ChangePassphrasePrompt.tsx:111
 msgid "Failed to update passphrase: {0}"
 msgstr ""
 
@@ -918,23 +921,25 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:48
-msgid "Farm"
-msgstr "Ферма"
+#: src/components/dashboard/DashboardSideBar.tsx:46
+#~ msgid "Farm"
+#~ msgstr "Ферма"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:297
 msgid "Farmer Public Key"
 msgstr "Адкрыты ключ фермера"
 
-#: src/components/block/Block.jsx:256
+#: src/components/block/Block.jsx:245
 msgid "Farmer Puzzle Hash"
 msgstr "Хэш-галаваломка фермера"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:154
+#: src/components/block/FarmManageFarmingRewards.tsx:142
+#: src/components/farm/FarmManageFarmingRewards.tsx:153
 msgid "Farmer Reward Address"
 msgstr "Адрас узнагароды фермеру"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:128
+#: src/components/block/FarmManageFarmingRewards.tsx:116
+#: src/components/farm/FarmManageFarmingRewards.tsx:127
 msgid "Farmer Reward Address is not properly formatted."
 msgstr ""
 
@@ -942,7 +947,8 @@ msgstr ""
 #~ msgid "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:122
+#: src/components/block/FarmManageFarmingRewards.tsx:110
+#: src/components/farm/FarmManageFarmingRewards.tsx:121
 msgid "Farmer Reward Address must not be empty."
 msgstr ""
 
@@ -960,18 +966,18 @@ msgstr "Фермер не працуе"
 #~ msgid "Farmer public key:"
 #~ msgstr ""
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:32
+#: src/components/farm/overview/FarmOverviewHero.tsx:28
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Фермеры зарабляюць ўзнагароду за блокі і камісійныя за трансакцыі аддаючы сваю вольную прастору на патрэбы сеткі і забяспечваючы тым самым бяспечныя трансакцыі. Тут з'явіцца ваша ферма, калі вы дадасце дзялянку.<0> Даведацца больш</0>"
 
-#: src/components/farm/card/FarmCardStatus.tsx:61
-#: src/components/farm/Farm.tsx:19
+#: src/components/dashboard/DashboardSideBar.tsx:99
 #: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Ідзе фермерства"
 
-#: src/components/app/AppSelectMode.tsx:130
+#: src/components/app/AppSelectMode.tsx:125
 msgid "Farming Mode"
 msgstr ""
 
@@ -1005,7 +1011,7 @@ msgstr "Камісійныя"
 msgid "Fee is used TWICE: once to leave pool, once to join."
 msgstr ""
 
-#: src/components/block/Block.jsx:310
+#: src/components/block/Block.jsx:299
 msgid "Fees Amount"
 msgstr "Сума камісійных"
 
@@ -1028,8 +1034,8 @@ msgstr "Назва файла"
 msgid "Final folder location"
 msgstr "Размяшчэнне канцавой папкі"
 
-#: src/components/fullNode/FullNode.jsx:42
-#: src/components/fullNode/FullNode.jsx:96
+#: src/components/fullNode/FullNode.jsx:40
+#: src/components/fullNode/FullNode.jsx:94
 msgid "Finished"
 msgstr "Завершана"
 
@@ -1041,14 +1047,14 @@ msgstr "Падпісацца ў Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Частыя пытанні"
 
-#: src/components/dashboard/DashboardSideBar.tsx:32
+#: src/components/dashboard/DashboardSideBar.tsx:80
 #: src/components/fullNode/FullNode.jsx:137
 msgid "Full Node"
 msgstr "Поўны вузел"
 
-#: src/components/fullNode/FullNode.jsx:140
-msgid "Full Node Overview"
-msgstr ""
+#: src/components/fullNode/FullNode.jsx:138
+#~ msgid "Full Node Overview"
+#~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:267
 #~ msgid "Full Node Status"
@@ -1058,6 +1064,10 @@ msgstr ""
 msgid "Full Screen"
 msgstr "На ўвесь экран"
 
+#: src/components/settings/Settings.tsx:257
+msgid "General"
+msgstr ""
+
 #: src/components/_wallet_old/create/createNewColouredCoin.jsx:102
 #~ msgid "Generate New Colour"
 #~ msgstr "Згенерыраваць новы колер"
@@ -1066,7 +1076,7 @@ msgstr "На ўвесь экран"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
-#: src/components/pool/PoolOverview.tsx:173
+#: src/components/pool/PoolOverview.tsx:172
 msgid "Grid view"
 msgstr ""
 
@@ -1082,16 +1092,16 @@ msgstr ""
 msgid "Harvester Plots"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:60
+#: src/components/fullNode/FullNode.jsx:58
 msgid "Header Hash"
 msgstr "Хэш загалоўка"
 
-#: src/components/block/Block.jsx:174
+#: src/components/block/Block.jsx:163
 msgid "Header hash"
 msgstr "Хэш загалоўка"
 
-#: src/components/block/Block.jsx:190
-#: src/components/fullNode/FullNode.jsx:78
+#: src/components/block/Block.jsx:179
+#: src/components/fullNode/FullNode.jsx:76
 #: src/components/fullNode/FullNodeConnections.tsx:78
 msgid "Height"
 msgstr "Вышыня"
@@ -1108,8 +1118,8 @@ msgstr "Даведка"
 #~ msgid "Hide Advanced Options"
 #~ msgstr "Не паказваць дадатковыя параметры"
 
-#: src/components/app/AppPassPrompt.tsx:128
-#: src/components/settings/RemovePassphrasePrompt.tsx:120
+#: src/components/app/AppPassPrompt.tsx:127
+#: src/components/settings/RemovePassphrasePrompt.tsx:118
 msgid "Hint"
 msgstr ""
 
@@ -1126,9 +1136,14 @@ msgstr "Імя хоста"
 msgid "IP address"
 msgstr "IP-адрас"
 
-#: src/components/fullNode/FullNodeAddConnection.tsx:71
+#: src/components/block/FullNodeAddConnection.tsx:71
+#: src/components/fullNode/FullNodeAddConnection.tsx:70
 msgid "IP address / host"
 msgstr "IP-адрас / хост"
+
+#: src/components/settings/Settings.tsx:258
+msgid "Identities"
+msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:128
 msgid "If none selected, then it will default to the temporary directory."
@@ -1142,7 +1157,7 @@ msgstr "Калі нічога не выбрана, перадвызначана 
 #~ msgid "Import from Mnemonics (24 words)"
 #~ msgstr "Імпарт з мнеманічнага фразы (24 словы)"
 
-#: src/components/fullNode/FullNode.jsx:44
+#: src/components/fullNode/FullNode.jsx:42
 msgid "In Progress"
 msgstr "Выконваецца"
 
@@ -1187,18 +1202,18 @@ msgstr "Індэкс"
 msgid "Invalid state"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:67
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:66
 msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:403
-#: src/components/pool/PoolOverview.tsx:110
+#: src/components/pool/PoolOverview.tsx:109
 msgid "Join Pool"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:64
 #: src/components/plot/add/PlotAddNFT.tsx:146
-#: src/components/pool/PoolHero.tsx:31
+#: src/components/pool/PoolHero.tsx:26
 msgid "Join a Pool"
 msgstr ""
 
@@ -1214,7 +1229,7 @@ msgstr ""
 msgid "Join a pool and get more consistent HCX farming rewards. Create a plot NFT and assign your new plots to a group."
 msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:151
+#: src/components/app/AppSelectMode.tsx:146
 msgid "Join farming pools"
 msgstr ""
 
@@ -1222,7 +1237,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-памер"
 
-#: src/components/app/AppKeyringMigrator.tsx:94
+#: src/components/app/AppKeyringMigrator.tsx:93
 msgid "Keyring migration failed: {0}"
 msgstr ""
 
@@ -1260,7 +1275,7 @@ msgstr "Самыя апошнія выпрабаванні блокаў"
 msgid "Launcher Id"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:77
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:76
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:118
 msgid "Learn More"
 msgstr ""
@@ -1269,7 +1284,7 @@ msgstr ""
 msgid "Leaving Pool"
 msgstr ""
 
-#: src/components/pool/PoolOverview.tsx:173
+#: src/components/pool/PoolOverview.tsx:172
 msgid "List view"
 msgstr ""
 
@@ -1277,7 +1292,7 @@ msgstr ""
 #~ msgid "Loading Plot NFTs"
 #~ msgstr ""
 
-#: src/components/app/AppProviders.tsx:66
+#: src/components/app/AppProviders.tsx:65
 msgid "Loading configuration"
 msgstr ""
 
@@ -1289,7 +1304,7 @@ msgstr ""
 #~ msgid "Loading list of wallets"
 #~ msgstr ""
 
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:35
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:34
 msgid "Loading..."
 msgstr "Ідзе загрузка..."
 
@@ -1341,7 +1356,7 @@ msgstr "Ідзе загрузка..."
 #~ msgid "MainWalletList.title"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:100
+#: src/components/app/AppSelectMode.tsx:95
 msgid "Manage CAT tokens"
 msgstr ""
 
@@ -1353,7 +1368,8 @@ msgstr "Кіраванне ўзнагародай за фермерства"
 #~ msgid "Manage Recovery DIDs"
 #~ msgstr ""
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:110
+#: src/components/block/FarmManageFarmingRewards.tsx:98
+#: src/components/farm/FarmManageFarmingRewards.tsx:109
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Кіраванне мэтавымі адрасамі для атрымання ўзнагарод за фермерства"
 
@@ -1365,20 +1381,20 @@ msgstr "Увах./вых. МіБ"
 #~ msgid "Migrate"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:182
+#: src/components/settings/Settings.tsx:186
 #: src/components/settings/SettingsPanel.tsx:186
 msgid "Migrate Keyring"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:230
+#: src/components/app/AppKeyringMigrator.tsx:229
 msgid "Migrate Keys"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:125
+#: src/components/app/AppKeyringMigrator.tsx:124
 msgid "Migration required"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:123
+#: src/components/settings/Settings.tsx:127
 #: src/components/settings/SettingsPanel.tsx:131
 msgid "Migration required to support passphrase protection"
 msgstr ""
@@ -1420,7 +1436,7 @@ msgstr "Назва сеткі"
 #~ msgid "New Address"
 #~ msgstr "Новы адрас"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:172
+#: src/components/settings/ChangePassphrasePrompt.tsx:170
 msgid "New Passphrase"
 msgstr ""
 
@@ -1432,7 +1448,7 @@ msgstr ""
 #~ msgid "New passphrase is the same as your current passphrase"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:340
+#: src/components/block/Block.jsx:328
 msgid "Next"
 msgstr "Наступны"
 
@@ -1456,7 +1472,8 @@ msgstr "Ураджайных блокаў яшчэ няма"
 #~ msgid "No previous transactions"
 #~ msgstr "Папярэдніх трансакцый няма"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:147
+#: src/components/block/FarmManageFarmingRewards.tsx:135
+#: src/components/farm/FarmManageFarmingRewards.tsx:146
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "Адсутнічаюць закрытыя ключы для аднаго або абодвух адрасоў. Бяспечна толькі ў выпадку адпраўкі ўзнагароды на іншы кашалёк."
 
@@ -1481,6 +1498,8 @@ msgstr "Ніводная з вашых дзялянак яшчэ не прайш
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/farm/FarmerStatus.tsx:20
+#: src/components/farm/card/FarmCardNotAvailable.tsx:19
+#: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:362
 msgid "Not Available"
@@ -1507,8 +1526,9 @@ msgstr "Падлучэння няма"
 msgid "Not found Plots"
 msgstr "Дзялянак не знойдзена"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:175
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+#: src/components/block/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:174
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
@@ -1528,13 +1548,17 @@ msgstr ""
 msgid "Number of threads"
 msgstr "Колькасць патокаў"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:88
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:87
 msgid "OK"
 msgstr "ОК"
 
 #: src/components/trading/ViewOffer.jsx:67
 #~ msgid "Offer"
 #~ msgstr "Аферта"
+
+#: src/components/dashboard/DashboardSideBar.tsx:70
+msgid "Offers"
+msgstr ""
 
 #: src/components/trading/TradingOverview.jsx:412
 #~ msgid "Offers Created"
@@ -1556,28 +1580,28 @@ msgstr "ОК"
 #~ msgid "Outgoing"
 #~ msgstr "Выходныя"
 
+#: src/components/app/AppKeyringMigrator.tsx:138
 #: src/components/app/AppKeyringMigrator.tsx:139
-#: src/components/app/AppKeyringMigrator.tsx:140
-#: src/components/app/AppPassPrompt.tsx:120
-#: src/components/settings/RemovePassphrasePrompt.tsx:112
-#: src/components/settings/SetPassphrasePrompt.tsx:151
+#: src/components/app/AppPassPrompt.tsx:119
+#: src/components/settings/RemovePassphrasePrompt.tsx:110
+#: src/components/settings/SetPassphrasePrompt.tsx:149
 #: src/components/settings/SettingsPanel.tsx:217
 msgid "Passphrase"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:163
-#: src/components/settings/ChangePassphrasePrompt.tsx:193
-#: src/components/settings/SetPassphrasePrompt.tsx:175
+#: src/components/app/AppKeyringMigrator.tsx:162
+#: src/components/settings/ChangePassphrasePrompt.tsx:191
+#: src/components/settings/SetPassphrasePrompt.tsx:173
 msgid "Passphrase Hint"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:162
-#: src/components/settings/ChangePassphrasePrompt.tsx:192
-#: src/components/settings/SetPassphrasePrompt.tsx:174
+#: src/components/app/AppKeyringMigrator.tsx:161
+#: src/components/settings/ChangePassphrasePrompt.tsx:190
+#: src/components/settings/SetPassphrasePrompt.tsx:172
 msgid "Passphrase Hint (Optional)"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:213
+#: src/components/settings/Settings.tsx:217
 msgid "Passphrase Settings"
 msgstr ""
 
@@ -1586,22 +1610,22 @@ msgstr ""
 #~ msgid "Passphrase is incorrect"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:96
+#: src/components/settings/Settings.tsx:100
 #: src/components/settings/SettingsPanel.tsx:102
 msgid "Passphrase protection has been disabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:133
+#: src/components/settings/Settings.tsx:137
 #: src/components/settings/SettingsPanel.tsx:142
 msgid "Passphrase protection is disabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:130
+#: src/components/settings/Settings.tsx:134
 #: src/components/settings/SettingsPanel.tsx:138
 msgid "Passphrase protection is enabled"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:124
+#: src/components/settings/Settings.tsx:128
 #: src/components/settings/SettingsPanel.tsx:132
 msgid "Passphrase support requires migrating your keys to a new keyring"
 msgstr ""
@@ -1663,8 +1687,8 @@ msgstr ""
 #~ msgid "Please enter a filename"
 #~ msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:53
-#: src/components/settings/SetPassphrasePrompt.tsx:53
+#: src/components/app/AppPassPrompt.tsx:52
+#: src/components/settings/SetPassphrasePrompt.tsx:51
 msgid "Please enter a passphrase"
 msgstr ""
 
@@ -1715,17 +1739,17 @@ msgstr ""
 #~ msgid "Please enter a valid pubkey"
 #~ msgstr "Укажыце сапраўдны адкрыты ключ"
 
-#: src/components/settings/ChangePassphrasePrompt.tsx:75
+#: src/components/settings/ChangePassphrasePrompt.tsx:73
 msgid "Please enter your current passphrase, and a new passphrase"
 msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:80
-#: src/components/app/AppPassPrompt.tsx:96
-#: src/components/settings/RemovePassphrasePrompt.tsx:52
+#: src/components/app/AppPassPrompt.tsx:79
+#: src/components/app/AppPassPrompt.tsx:95
+#: src/components/settings/RemovePassphrasePrompt.tsx:50
 msgid "Please enter your passphrase"
 msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:90
+#: src/components/app/AppPassPrompt.tsx:89
 msgid "Please enter your passphrase to proceed"
 msgstr ""
 
@@ -1781,7 +1805,7 @@ msgstr ""
 msgid "Plot Count"
 msgstr "Колькасць дзялянак"
 
-#: src/components/block/Block.jsx:288
+#: src/components/block/Block.jsx:277
 msgid "Plot Id"
 msgstr "Ідэнтыфікатар дзялянкі"
 
@@ -1789,7 +1813,7 @@ msgstr "Ідэнтыфікатар дзялянкі"
 msgid "Plot Key"
 msgstr "Ключ дзялянкі"
 
-#: src/components/pool/PoolOverview.tsx:39
+#: src/components/pool/PoolOverview.tsx:38
 msgid "Plot NFT"
 msgstr ""
 
@@ -1802,7 +1826,7 @@ msgstr ""
 #~ msgid "Plot Name"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:248
+#: src/components/block/Block.jsx:237
 msgid "Plot Public Key"
 msgstr "Адкрыты ключ дзялянкі"
 
@@ -1830,8 +1854,7 @@ msgstr "Дзялянка з'яўляецца дублікатам {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:43
-#: src/components/plot/Plot.tsx:14
+#: src/components/dashboard/DashboardSideBar.tsx:86
 msgid "Plots"
 msgstr "Дзялянкі"
 
@@ -1880,8 +1903,8 @@ msgstr ""
 
 #: src/components/dashboard/DashboardSideBar.tsx:53
 #: src/components/pool/Pool.tsx:17
-msgid "Pool"
-msgstr ""
+#~ msgid "Pool"
+#~ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:100
 msgid "Pool Contract Address"
@@ -1891,7 +1914,7 @@ msgstr ""
 msgid "Pool Key"
 msgstr "Ключ пула"
 
-#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:54
+#: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:53
 msgid "Pool Login Link"
 msgstr ""
 
@@ -1899,20 +1922,22 @@ msgstr ""
 msgid "Pool Payout Instructions"
 msgstr ""
 
-#: src/components/block/Block.jsx:252
+#: src/components/block/Block.jsx:241
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:308
 msgid "Pool Public Key"
 msgstr "Адкрыты ключ пула"
 
-#: src/components/block/Block.jsx:272
+#: src/components/block/Block.jsx:261
 msgid "Pool Puzzle Hash"
 msgstr "Хэш-галаваломка пула"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:164
+#: src/components/block/FarmManageFarmingRewards.tsx:152
+#: src/components/farm/FarmManageFarmingRewards.tsx:163
 msgid "Pool Reward Address"
 msgstr "Адрас узнагароды пулу"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:140
+#: src/components/block/FarmManageFarmingRewards.tsx:128
+#: src/components/farm/FarmManageFarmingRewards.tsx:139
 msgid "Pool Reward Address is not properly formatted."
 msgstr ""
 
@@ -1920,11 +1945,12 @@ msgstr ""
 #~ msgid "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 #~ msgstr "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:135
+#: src/components/block/FarmManageFarmingRewards.tsx:123
+#: src/components/farm/FarmManageFarmingRewards.tsx:134
 msgid "Pool Reward Address must not be empty."
 msgstr ""
 
-#: src/components/block/Block.jsx:302
+#: src/components/block/Block.jsx:291
 msgid "Pool Reward Amount"
 msgstr "Сума ўзнагароды пула"
 
@@ -1954,14 +1980,16 @@ msgstr ""
 msgid "Pool:"
 msgstr ""
 
+#: src/components/dashboard/DashboardSideBar.tsx:104
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
 msgstr ""
 
+#: src/components/block/FullNodeAddConnection.tsx:76
 #: src/components/farm/FarmFullNodeConnections.tsx:43
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:42
-#: src/components/fullNode/FullNodeAddConnection.tsx:76
+#: src/components/fullNode/FullNodeAddConnection.tsx:75
 #: src/components/fullNode/FullNodeConnections.tsx:45
 msgid "Port"
 msgstr "Порт"
@@ -1975,7 +2003,7 @@ msgstr ""
 msgid "Preparing standard wallet"
 msgstr ""
 
-#: src/components/block/Block.jsx:337
+#: src/components/block/Block.jsx:325
 msgid "Previous"
 msgstr "Папярэдні"
 
@@ -1983,7 +2011,7 @@ msgstr "Папярэдні"
 #~ msgid "Previous Block Hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:204
+#: src/components/block/Block.jsx:193
 msgid "Previous Header Hash"
 msgstr "Хэш папярэдняга загалоўка"
 
@@ -2003,7 +2031,7 @@ msgstr "Хэш папярэдняга загалоўка"
 #~ msgid "Private key:"
 #~ msgstr "Закрыты ключ:"
 
-#: src/components/block/Block.jsx:240
+#: src/components/block/Block.jsx:229
 msgid "Proof of Space Size"
 msgstr "Памер пацвярджэнне месцам (Proof of Space)"
 
@@ -2078,7 +2106,7 @@ msgstr "Макс. выкарыстанне RAM"
 #~ msgid "Receive Address"
 #~ msgstr "Адрас атрымання"
 
-#: src/components/app/AppSelectMode.tsx:121
+#: src/components/app/AppSelectMode.tsx:116
 msgid "Recommended"
 msgstr ""
 
@@ -2104,6 +2132,7 @@ msgstr ""
 #~ msgid "Recover Wallet"
 #~ msgstr ""
 
+#: src/components/plot/PlotHeader.tsx:75
 #: src/components/plot/overview/PlotOverviewHero.tsx:60
 #: src/components/plot/PlotHeader.tsx:76
 msgid "Refresh Plots"
@@ -2117,14 +2146,14 @@ msgstr ""
 msgid "Release Notes"
 msgstr "Заўвагі да выпуску"
 
-#: src/components/settings/RemovePassphrasePrompt.tsx:100
-#: src/components/settings/RemovePassphrasePrompt.tsx:147
-#: src/components/settings/Settings.tsx:194
+#: src/components/settings/RemovePassphrasePrompt.tsx:98
+#: src/components/settings/RemovePassphrasePrompt.tsx:143
+#: src/components/settings/Settings.tsx:198
 #: src/components/settings/SettingsPanel.tsx:196
 msgid "Remove Passphrase"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:196
+#: src/components/app/AppKeyringMigrator.tsx:195
 msgid "Remove keys from old keyring upon successful migration"
 msgstr ""
 
@@ -2140,7 +2169,7 @@ msgstr "Ідзе выдаленне"
 msgid "Report an Issue..."
 msgstr "Паведаміць аб праблеме..."
 
-#: src/components/backup/BackupRestore.tsx:160
+#: src/components/backup/BackupRestore.tsx:159
 msgid "Restore Metadata for Coloured Coins and other Smart Wallets from Backup"
 msgstr "Аднавіць метаданыя для каляровых манет і іншых смарт-кашалькоў з рэзервовай копіі"
 
@@ -2148,7 +2177,7 @@ msgstr "Аднавіць метаданыя для каляровых манет
 #~ msgid "Restore Smart Wallets From Backup"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:157
+#: src/components/app/AppSelectMode.tsx:152
 msgid "Runs the full node"
 msgstr ""
 
@@ -2157,18 +2186,19 @@ msgstr ""
 #~ msgid "SB Height"
 #~ msgstr "SB Height"
 
-#: src/components/backup/BackupRestore.tsx:186
+#: src/components/backup/BackupRestore.tsx:185
 msgid "Safe To Skip"
 msgstr "Можна прапусціць"
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:190
+#: src/components/block/FarmManageFarmingRewards.tsx:178
+#: src/components/farm/FarmManageFarmingRewards.tsx:189
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
 msgid "Save"
 msgstr "Захаваць"
 
-#: src/components/app/AppKeyringMigrator.tsx:178
-#: src/components/settings/ChangePassphrasePrompt.tsx:208
-#: src/components/settings/SetPassphrasePrompt.tsx:190
+#: src/components/app/AppKeyringMigrator.tsx:177
+#: src/components/settings/ChangePassphrasePrompt.tsx:206
+#: src/components/settings/SetPassphrasePrompt.tsx:188
 msgid "Save passphrase"
 msgstr ""
 
@@ -2184,7 +2214,7 @@ msgstr "Пошук блока па хэше загалоўка"
 msgid "Second temporary folder location"
 msgstr "Размяшчэнне другой часовай папкі"
 
-#: src/components/settings/Settings.tsx:126
+#: src/components/settings/Settings.tsx:130
 #: src/components/settings/SettingsPanel.tsx:134
 msgid "Secure your keychain using a strong passphrase"
 msgstr ""
@@ -2221,7 +2251,7 @@ msgstr "Выберыце часовы каталог"
 #~ msgid "Select Wallet Type"
 #~ msgstr "Выберыце тып кашалька"
 
-#: src/components/app/AppSelectMode.tsx:70
+#: src/components/app/AppSelectMode.tsx:65
 msgid "Select Your Client Mode"
 msgstr ""
 
@@ -2284,9 +2314,9 @@ msgstr ""
 #~ msgid "Send your pubkey to your Rate Limited Wallet admin:"
 #~ msgstr "Адпраўце гэты адкрыты ключ адміністратару вашага кашалька з абмежаваннямі вываду:"
 
-#: src/components/settings/SetPassphrasePrompt.tsx:137
-#: src/components/settings/SetPassphrasePrompt.tsx:216
-#: src/components/settings/Settings.tsx:205
+#: src/components/settings/SetPassphrasePrompt.tsx:135
+#: src/components/settings/SetPassphrasePrompt.tsx:211
+#: src/components/settings/Settings.tsx:209
 #: src/components/settings/SettingsPanel.tsx:205
 msgid "Set Passphrase"
 msgstr ""
@@ -2295,13 +2325,15 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr ""
 
-#: src/components/settings/Settings.tsx:241
+#: src/components/dashboard/DashboardSideBar.tsx:113
+#: src/components/dashboard/DashboardSideBar.tsx:121
+#: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr ""
 
 #: src/components/app/AppSelectMode.tsx:171
-msgid "Settings are located at the upper right corner"
-msgstr ""
+#~ msgid "Settings are located at the upper right corner"
+#~ msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
@@ -2320,12 +2352,12 @@ msgstr ""
 #~ msgid "Sign In"
 #~ msgstr "Увайсці ў сістэму"
 
-#: src/components/app/AppKeyringMigrator.tsx:58
-#: src/components/app/AppKeyringMigrator.tsx:219
+#: src/components/app/AppKeyringMigrator.tsx:57
+#: src/components/app/AppKeyringMigrator.tsx:218
 msgid "Skip"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:57
+#: src/components/app/AppKeyringMigrator.tsx:56
 msgid "Skip Keyring Migration"
 msgstr ""
 
@@ -2341,7 +2373,7 @@ msgstr ""
 msgid "Skips adding a final directory to harvester for farming"
 msgstr "Прапускае дадаванне канцавога каталога ў камбайн для фермерства"
 
-#: src/components/pool/PoolHero.tsx:26
+#: src/components/pool/PoolHero.tsx:21
 msgid "Smooth out your HCX farming rewards by joining a pool."
 msgstr ""
 
@@ -2389,7 +2421,7 @@ msgstr "Маўленне"
 msgid "Starting services"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:98
+#: src/components/fullNode/FullNode.jsx:96
 msgid "State"
 msgstr "Стан"
 
@@ -2398,7 +2430,7 @@ msgstr "Стан"
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
 #: src/components/plotNFT/PlotNFTCard.tsx:142
-#: src/components/pool/PoolOverview.tsx:43
+#: src/components/pool/PoolOverview.tsx:42
 msgid "Status"
 msgstr "Стан"
 
@@ -2422,7 +2454,7 @@ msgstr "Стан"
 #~ msgid "StatusCard.title"
 #~ msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:94
+#: src/components/app/AppSelectMode.tsx:89
 msgid "Store and Send HCX"
 msgstr ""
 
@@ -2438,7 +2470,7 @@ msgstr ""
 #~ msgid "Sub Block at height {0} in the Chinilla blockchain"
 #~ msgstr "Sub Block at height {0} in the Chinilla blockchain"
 
-#: src/components/app/AppPassPrompt.tsx:97
+#: src/components/app/AppPassPrompt.tsx:96
 msgid "Submit"
 msgstr "Адправіць"
 
@@ -2452,6 +2484,7 @@ msgstr "Сінхранізаваны"
 
 #: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Syncing"
 msgstr "Ідзе сінхранізацыя"
@@ -2551,19 +2584,19 @@ msgstr ""
 #~ msgid "The provided passphrase and confirmation do not match"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:291
+#: src/components/block/Block.jsx:280
 msgid "The seed used to create the plot. This depends on the pool pk and plot pk."
 msgstr "Зерне, выкарыстанае для стварэння дзялянкі. Залежыць ад адкрытага ключа пула і адкрытага ключа дзялянкі."
 
-#: src/components/block/Block.jsx:217
+#: src/components/block/Block.jsx:206
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
 msgstr "Агульная колькасць VDF (ад англ. Verifiable Delay Function — спраўджальная функцыя затрымкі) або ітэрацый пацвярджэння часам (proof of time) па ўсім блокчэйне да гэтага падблока."
 
-#: src/components/block/Block.jsx:233
+#: src/components/block/Block.jsx:222
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
 msgstr "Агульная колькасць VDF (ад англ. Verifiable Delay Function — спраўджальная функцыя затрымкі) або ітэрацый пацвярджэння часам (proof of time) у гэтым блоку."
 
-#: src/components/block/Block.jsx:313
+#: src/components/block/Block.jsx:302
 msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Агульныя камісійныя за трансакцыі ў гэтым блоку. Узнагарода фермеру."
 
@@ -2575,7 +2608,7 @@ msgstr ""
 msgid "These plots are invalid, you might want to delete them."
 msgstr "Гэтыя дзялянкі з памылкамі — іх можна выдаліць."
 
-#: src/components/plot/PlotAddDirectoryDialog.tsx:89
+#: src/components/plot/PlotAddDirectoryDialog.tsx:88
 msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
 msgstr "Гэта дазваляе вам дадаць каталог, у якім ужо ёсць дзялянкі. Калі вы яшчэ не стварылі ніякіх дзялянак, перайдзіце на экран стварэння дзялянак."
 
@@ -2604,7 +2637,7 @@ msgstr "Гэтая функцыя даступная толькі праз гр�
 #~ msgid "This is the time of the latest peak sub block."
 #~ msgstr "Момант часу самага апошняга крайняга падблока."
 
-#: src/components/block/Block.jsx:183
+#: src/components/block/Block.jsx:172
 msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 msgstr "Момант часу, калі блок быў створаны фермерам, г.зн. да таго, як ён быў завершаны праз пацвярджэнне часам (proof of time)."
 
@@ -2666,7 +2699,7 @@ msgstr "У гэтай табліцы паказваецца, калі ваша �
 msgid "Thread Multiplier for Phase 2"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:90
+#: src/components/fullNode/FullNode.jsx:88
 msgid "Time Created"
 msgstr "Створана"
 
@@ -2674,13 +2707,17 @@ msgstr "Створана"
 #~ msgid "Time this trade was created at this time"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:178
+#: src/components/block/Block.jsx:167
 msgid "Timestamp"
 msgstr "Метка часу"
 
 #: src/components/_wallet_old/WalletHistory.tsx:42
 #~ msgid "To"
 #~ msgstr "Каму"
+
+#: src/components/dashboard/DashboardSideBar.tsx:58
+msgid "Tokens"
+msgstr ""
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:32
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:379
@@ -2708,7 +2745,7 @@ msgstr "Агульны памер дзялянак:"
 msgid "Total Size of Plots"
 msgstr "Агульны памер дзялянак"
 
-#: src/components/block/Block.jsx:214
+#: src/components/block/Block.jsx:203
 msgid "Total VDF Iterations"
 msgstr "Усяго ітэрацый VDF"
 
@@ -2736,7 +2773,7 @@ msgstr "Агульная колькасць ітэрацый з моманту �
 #~ msgid "Trade Overview"
 #~ msgstr "Агляд здзелкі"
 
-#: src/components/app/AppSelectMode.tsx:106
+#: src/components/app/AppSelectMode.tsx:101
 msgid "Trade tokens"
 msgstr ""
 
@@ -2752,7 +2789,7 @@ msgstr ""
 #~ msgid "Trading History"
 #~ msgstr "Гісторыя таргоў"
 
-#: src/components/block/Block.jsx:298
+#: src/components/block/Block.jsx:287
 msgid "Transactions Filter Hash"
 msgstr "Хэш фільтра трансакцый"
 
@@ -2765,11 +2802,11 @@ msgstr "Хэш фільтра трансакцый"
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTCard.tsx:147
-#: src/components/pool/PoolOverview.tsx:63
+#: src/components/pool/PoolOverview.tsx:62
 msgid "Unclaimed Rewards"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:96
+#: src/components/fullNode/FullNode.jsx:94
 msgid "Unfinished"
 msgstr "Незавершаны"
 
@@ -2781,7 +2818,7 @@ msgstr "Незавершаны"
 #~ msgid "Unknown"
 #~ msgstr "Невядомы"
 
-#: src/components/app/AppPassPrompt.tsx:83
+#: src/components/app/AppPassPrompt.tsx:82
 msgid "Unlock Keyring"
 msgstr ""
 
@@ -2823,7 +2860,7 @@ msgid "View"
 msgstr "Выгляд"
 
 #: src/components/plot/queue/PlotQueueActions.tsx:75
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:56
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:55
 msgid "View Log"
 msgstr "Праглядзець журнал"
 
@@ -2867,12 +2904,12 @@ msgstr "Чаканне сінхранізацыі"
 msgid "Waiting for the transaction to be confirmed"
 msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:86
-#: src/components/app/AppSelectMode.tsx:138
+#: src/components/app/AppSelectMode.tsx:81
+#: src/components/app/AppSelectMode.tsx:133
 msgid "Wallet Mode"
 msgstr ""
 
-#: src/components/pool/PoolOverview.tsx:182
+#: src/components/pool/PoolOverview.tsx:181
 msgid "Wallet Status:"
 msgstr ""
 
@@ -2912,9 +2949,9 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:38
-msgid "Wallets"
-msgstr "Кашалькі"
+#: src/components/dashboard/DashboardSideBar.tsx:36
+#~ msgid "Wallets"
+#~ msgstr "Кашалькі"
 
 #: src/components/wallet/Wallets.tsx:131
 #~ msgid "Wallets.title"
@@ -2949,11 +2986,11 @@ msgstr ""
 #~ msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:194
+#: src/components/block/Block.jsx:183
 msgid "Weight"
 msgstr "Вага"
 
-#: src/components/block/Block.jsx:197
+#: src/components/block/Block.jsx:186
 msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
 msgstr "Вага — гэта агульная дабаўленая складанасць усіх падблокаў, у тым ліку гэтага"
 
@@ -2991,7 +3028,7 @@ msgstr ""
 msgid "You are not self pooling"
 msgstr ""
 
-#: src/components/app/AppSelectMode.tsx:173
+#: src/components/app/AppSelectMode.tsx:167
 msgid "You can always change your mode later in the settings"
 msgstr ""
 
@@ -3067,15 +3104,15 @@ msgstr "Ваша падлучэнне да поўнага вузла"
 msgid "Your Harvester Network"
 msgstr "Ваша сетка камбайнаў"
 
-#: src/components/pool/PoolOverview.tsx:157
+#: src/components/pool/PoolOverview.tsx:156
 msgid "Your Pool Overview"
 msgstr ""
 
-#: src/components/app/AppPassPrompt.tsx:79
+#: src/components/app/AppPassPrompt.tsx:78
 msgid "Your keyring is locked"
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:63
+#: src/components/app/AppKeyringMigrator.tsx:62
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
 msgstr ""
 
@@ -3083,26 +3120,26 @@ msgstr ""
 #~ msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 #~ msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:106
+#: src/components/app/AppKeyringMigrator.tsx:105
 msgid "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:112
+#: src/components/app/AppKeyringMigrator.tsx:111
 msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 msgstr ""
 
-#: src/components/app/AppKeyringMigrator.tsx:181
-#: src/components/settings/ChangePassphrasePrompt.tsx:211
-#: src/components/settings/SetPassphrasePrompt.tsx:193
+#: src/components/app/AppKeyringMigrator.tsx:180
+#: src/components/settings/ChangePassphrasePrompt.tsx:209
+#: src/components/settings/SetPassphrasePrompt.tsx:191
 msgid "Your passphrase can be stored in your system's secure credential store. Chinilla will be able to access your keys without prompting for your passphrase."
 msgstr ""
 
-#: src/components/settings/Settings.tsx:85
+#: src/components/settings/Settings.tsx:89
 #: src/components/settings/SettingsPanel.tsx:91
 msgid "Your passphrase has been set"
 msgstr ""
 
-#: src/components/settings/Settings.tsx:74
+#: src/components/settings/Settings.tsx:78
 #: src/components/settings/SettingsPanel.tsx:80
 msgid "Your passphrase has been updated"
 msgstr ""

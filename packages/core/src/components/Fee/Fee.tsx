@@ -1,7 +1,6 @@
 import React from 'react';
-import Big from 'big.js';
 import { Trans } from '@lingui/macro';
-import { Box } from '@material-ui/core';
+import { Box } from '@mui/material';
 import styled from 'styled-components';
 import StateColor from '../../constants/StateColor';
 import Amount, { AmountProps } from '../Amount';
@@ -20,9 +19,8 @@ export default function Fee(props: FeeProps) {
   return (
     <Amount {...props}>
       {({ value, vojo }) => {
-        const bigVojo = new Big(vojo.toString());
-        const isHigh = bigVojo.gte('100000000000');
-        const isLow = bigVojo.gt('0') && bigVojo.lt('1');
+        const isHigh = vojo.gte('100000000000');
+        const isLow = vojo.gt('0') && vojo.lt('1');
 
         if (!value) {
           return;

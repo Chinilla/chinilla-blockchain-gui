@@ -1,12 +1,13 @@
 import React, { ReactNode } from 'react';
 import { Trans, Plural } from '@lingui/macro';
+import BigNumber from 'bignumber.js';
 import NumberFormat from 'react-number-format';
 import {
   Box,
   InputAdornment,
   FormControl,
   FormHelperText,
-} from '@material-ui/core';
+} from '@mui/material';
 import { useWatch, useFormContext } from 'react-hook-form';
 import TextField, { TextFieldProps } from '../TextField';
 import chinillaToVojo from '../../utils/chinillaToVojo';
@@ -41,7 +42,7 @@ function NumberFormatCustom(props: NumberFormatCustomProps) {
 }
 
 export type AmountProps = TextFieldProps & {
-  children?: (props: { vojo: number; value: string | undefined }) => ReactNode;
+  children?: (props: { vojo: BigNumber; value: string | undefined }) => ReactNode;
   name?: string;
   symbol?: string; // if set, overrides the currencyCode. empty string is allowed
   showAmountInVojos?: boolean; // if true, shows the vojoamount below the input field
@@ -58,7 +59,7 @@ export default function Amount(props: AmountProps) {
     name,
   });
 
-  const correctedValue = value[0] === '.' ? `0${value}` : value;
+  const correctedValue = value && value[0] === '.' ? `0${value}` : value;
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
   const isChinillaCurrency = ['HCX', 'THCX'].includes(currencyCode);
@@ -88,11 +89,11 @@ export default function Amount(props: AmountProps) {
           <Flex alignItems="center" gap={2}>
             {showAmountInVojos && (
               <Flex flexGrow={1} gap={1}>
-                {!!vojo&& (
+                {!vojo.isZero() && (
                   <>
                     <FormatLargeNumber value={vojo} />
                     <Box>
-                      <Plural value={vojo} one="vojo" other="vojos" />
+                      <Plural value={vojo.toNumber()} one="vojo" other="vojos" />
                     </Box>
                   </>
                 )}

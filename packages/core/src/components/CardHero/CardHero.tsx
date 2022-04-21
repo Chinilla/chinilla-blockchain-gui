@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-import { Card, CardContent } from '@material-ui/core';
+import { Card, CardContent } from '@mui/material';
 import Flex from '../Flex';
 
 const StyledContent = styled(CardContent)`
   padding: ${({ theme }) =>
-    `${theme.spacing(5)}px ${theme.spacing(4)}px !important`};
+   `${theme.spacing(5)} ${theme.spacing(4)} !important`};
   background-color: ${({ theme }) =>
     theme.palette.type === 'dark' ? '#333333' : '#FCF6E0'};
 `;

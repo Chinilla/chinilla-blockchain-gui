@@ -6,12 +6,11 @@ import {
   DialogActions,
   TextField,
   Typography,
-  Button,
-} from '@material-ui/core';
+} from '@mui/material';
 import { Trans, t } from '@lingui/macro';
 import { PassphrasePromptReason } from '@chinilla/api';
 import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@chinilla/api-react';
-import { Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@chinilla/core';
+import { Button, Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@chinilla/core';
 
 type Props = {
   reason: PassphrasePromptReason;
