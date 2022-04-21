@@ -1717,7 +1717,7 @@ msgid "Note that this does not change your pooling payout addresses. This only a
 msgstr ""
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
