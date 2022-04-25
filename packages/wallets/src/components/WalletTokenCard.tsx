@@ -124,7 +124,7 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
             </Tooltip>
           )}
           {assetId && (
-            <Link href={`https://www.taildatabase.com/tail/${assetId}`} target="_blank" variant="caption">
+            <Link href={`https://www.chinilla.com/tail/${assetId}`} target="_blank" variant="caption">
               <Trans>Search on Tail Database</Trans>
             </Link>
           )}
