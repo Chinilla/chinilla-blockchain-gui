@@ -64,10 +64,10 @@ export default function WalletCATTAILDialog(props: Props) {
                   ),
                 }}
                 fullWidth
-                multiline
+                multilines
               />
             </Box>
-            <Link href={`https://www.taildatabase.com/tail/${wallet.meta?.assetId}`} target="_blank" variant="body2">
+            <Link href={`https://www.chinilla.com/tail/${wallet.meta?.assetId}`} target="_blank" variant="body2">
               <Trans>Search on Tail Database</Trans>
             </Link>
           </Flex>
