@@ -291,7 +291,7 @@ msgstr "Bilancio"
 #~ msgid "Base Farmer Reward Amount"
 #~ msgstr "Ricompensa minima per il farmer"
 
-#: src/components/offers/OfferShareDialog.tsx:759
+#: src/components/offers/OfferShareDialog.tsx:768
 msgid "Before posting an offer in Keybase to the #{KeybaseChannelName} channel, you must first join the {KeybaseTeamName} team. Please note that it might take a few moments to join the channel."
 msgstr ""
 
@@ -385,10 +385,10 @@ msgstr ""
 #~ msgstr "Può essere eseguito il backup su seed mnemonico"
 
 #: src/components/offers/OfferDataEntryDialog.tsx:67
-#: src/components/offers/OfferShareDialog.tsx:428
-#: src/components/offers/OfferShareDialog.tsx:555
-#: src/components/offers/OfferShareDialog.tsx:791
-#: src/components/offers/OfferShareDialog.tsx:904
+#: src/components/offers/OfferShareDialog.tsx:437
+#: src/components/offers/OfferShareDialog.tsx:564
+#: src/components/offers/OfferShareDialog.tsx:800
+#: src/components/offers/OfferShareDialog.tsx:913
 #: src/components/offers/OfferViewer.tsx:292
 #: src/components/WalletRenameDialog.tsx:90
 msgid "Cancel"
@@ -462,6 +462,10 @@ msgstr ""
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Portafoglio Chinilla"
 
+#: src/components/offers/OfferShareDialog.tsx:359
+msgid "ChinillaOffers URL"
+msgstr ""
+
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 #~ msgid "Choose Number of Plots"
 #~ msgstr "Scegli il numero di Plot"
@@ -480,11 +484,11 @@ msgstr ""
 #~ msgstr "Reclama Ricompense"
 
 #: src/components/offers/OfferManager.tsx:159
-#: src/components/offers/OfferShareDialog.tsx:379
-#: src/components/offers/OfferShareDialog.tsx:520
-#: src/components/offers/OfferShareDialog.tsx:722
-#: src/components/offers/OfferShareDialog.tsx:868
-#: src/components/offers/OfferShareDialog.tsx:1025
+#: src/components/offers/OfferShareDialog.tsx:388
+#: src/components/offers/OfferShareDialog.tsx:529
+#: src/components/offers/OfferShareDialog.tsx:731
+#: src/components/offers/OfferShareDialog.tsx:877
+#: src/components/offers/OfferShareDialog.tsx:1012
 msgid "Close"
 msgstr "Chiudi"
 
@@ -933,7 +937,7 @@ msgstr ""
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/offers/OfferShareDialog.tsx:1014
+#: src/components/offers/OfferShareDialog.tsx:1001
 msgid "Do not show this dialog again"
 msgstr ""
 
@@ -1041,8 +1045,8 @@ msgstr ""
 #~ msgid "Expected Time to Win"
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:232
-#: src/components/offers/OfferShareDialog.tsx:232
+#: src/components/offers/OfferShareDialog.tsx:241
+#: src/components/offers/OfferShareDialog.tsx:241
 msgid "Failed to execute Keybase command: {stderr}"
 msgstr ""
 
@@ -1224,12 +1228,12 @@ msgstr "Nome del file"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
-#: src/components/offers/OfferShareDialog.tsx:715
-#: src/components/offers/OfferShareDialog.tsx:782
+#: src/components/offers/OfferShareDialog.tsx:724
+#: src/components/offers/OfferShareDialog.tsx:791
 msgid "Go to #{KeybaseChannelName}"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:865
+#: src/components/offers/OfferShareDialog.tsx:874
 msgid "Go to Offerpool"
 msgstr ""
 
@@ -1253,7 +1257,7 @@ msgstr ""
 #~ msgid "Harvester Plots"
 #~ msgstr "Plot Harvester Locale"
 
-#: src/components/offers/OfferShareDialog.tsx:491
+#: src/components/offers/OfferShareDialog.tsx:500
 msgid "Hashgreen DEX URL"
 msgstr ""
 
@@ -1309,7 +1313,7 @@ msgstr "Indirizzo IP"
 #~ msgid "If none selected, then it will default to the temporary directory."
 #~ msgstr "Se non è selezionato nulla, allora sarà impostata di default la cartella temporanea."
 
-#: src/components/offers/OfferShareDialog.tsx:414
+#: src/components/offers/OfferShareDialog.tsx:423
 msgid "If selected, your offer will be not be shared publicly."
 msgstr ""
 
@@ -1342,9 +1346,9 @@ msgstr "Importa Wallet dalle Mnemonic"
 msgid "In exchange for"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:403
-#: src/components/offers/OfferShareDialog.tsx:544
-#: src/components/offers/OfferShareDialog.tsx:892
+#: src/components/offers/OfferShareDialog.tsx:412
+#: src/components/offers/OfferShareDialog.tsx:553
+#: src/components/offers/OfferShareDialog.tsx:901
 msgid "In exchange for:"
 msgstr ""
 
@@ -1385,7 +1389,7 @@ msgstr "Quantità Iniziale"
 msgid "Initialize a Rate Limited User Wallet:"
 msgstr "Inizializza un Wallet Utente a tariffa Limitata:"
 
-#: src/components/offers/OfferShareDialog.tsx:754
+#: src/components/offers/OfferShareDialog.tsx:763
 msgid "Install Keybase"
 msgstr ""
 
@@ -1436,7 +1440,7 @@ msgstr "Intervallo"
 #~ msgid "Join a pool and get more consistent HCX farming rewards. Create a plot NFT and assign your new plots to a group."
 #~ msgstr "Unisciti a una pool e ottieni ricompense continue per il farming in HCX. Crea un plot NFT e assegna i tuoi nuovi plot ad un gruppo."
 
-#: src/components/offers/OfferShareDialog.tsx:771
+#: src/components/offers/OfferShareDialog.tsx:780
 msgid "Join {KeybaseTeamName}"
 msgstr ""
 
@@ -1444,11 +1448,11 @@ msgstr ""
 #~ msgid "K-Size"
 #~ msgstr "Dimensione-K"
 
-#: src/components/offers/OfferShareDialog.tsx:656
+#: src/components/offers/OfferShareDialog.tsx:665
 msgid "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:744
+#: src/components/offers/OfferShareDialog.tsx:753
 msgid "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {KeybaseTeamName} team, you must first have Keybase installed."
 msgstr ""
 
@@ -1821,19 +1825,15 @@ msgstr ""
 msgid "Offer Identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:345
-#: src/components/offers/OfferShareDialog.tsx:486
-#: src/components/offers/OfferShareDialog.tsx:703
-#: src/components/offers/OfferShareDialog.tsx:849
+#: src/components/offers/OfferShareDialog.tsx:354
+#: src/components/offers/OfferShareDialog.tsx:495
+#: src/components/offers/OfferShareDialog.tsx:712
+#: src/components/offers/OfferShareDialog.tsx:858
 msgid "Offer Shared"
 msgstr ""
 
 #: src/components/offers/OfferViewer.tsx:344
 msgid "Offer has been accepted and is awaiting confirmation."
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:350
-msgid "OfferBin URL"
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:300
@@ -2713,34 +2713,34 @@ msgstr "Invia la tua pubkey all'amministratore del tuo Wallet a Velocità Limita
 #~ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:354
-#: src/components/offers/OfferShareDialog.tsx:435
-#: src/components/offers/OfferShareDialog.tsx:562
-#: src/components/offers/OfferShareDialog.tsx:798
-#: src/components/offers/OfferShareDialog.tsx:911
+#: src/components/offers/OfferShareDialog.tsx:444
+#: src/components/offers/OfferShareDialog.tsx:571
+#: src/components/offers/OfferShareDialog.tsx:807
+#: src/components/offers/OfferShareDialog.tsx:920
 msgid "Share"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:973
+#: src/components/offers/OfferShareDialog.tsx:982
 msgid "Share Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:412
+#: src/components/offers/OfferShareDialog.tsx:421
 msgid "Share Privately"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:537
+#: src/components/offers/OfferShareDialog.tsx:405
+msgid "Share on ChinillaOffers"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:546
 msgid "Share on Hashgreen DEX"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:739
+#: src/components/offers/OfferShareDialog.tsx:748
 msgid "Share on Keybase"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:396
-msgid "Share on OfferBin"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:885
+#: src/components/offers/OfferShareDialog.tsx:894
 msgid "Share on offerpool"
 msgstr ""
 
@@ -3268,11 +3268,11 @@ msgstr ""
 #~ msgid "Unable to create plot NFT"
 #~ msgstr "Impossibile creare plot NFT"
 
-#: src/components/offers/OfferShareDialog.tsx:669
+#: src/components/offers/OfferShareDialog.tsx:678
 msgid "Unable to open Keybase. Install Keybase from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:592
+#: src/components/offers/OfferShareDialog.tsx:601
 msgid "Unable to open browser. Install Keybase from https://keybase.io"
 msgstr ""
 
@@ -3364,12 +3364,12 @@ msgstr "Pubkey utente"
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:509
-msgid "View on Hashgreen DEX"
+#: src/components/offers/OfferShareDialog.tsx:377
+msgid "View on ChinillaOffers"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:368
-msgid "View on OfferBin"
+#: src/components/offers/OfferShareDialog.tsx:518
+msgid "View on Hashgreen DEX"
 msgstr ""
 
 #: src/components/rateLimited/WalletRateLimited.jsx:561
@@ -3659,13 +3659,13 @@ msgstr ""
 #~ msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:707
+#: src/components/offers/OfferShareDialog.tsx:716
 msgid "Your offer has been successfully posted to Keybase."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:402
-#: src/components/offers/OfferShareDialog.tsx:543
-#: src/components/offers/OfferShareDialog.tsx:891
+#: src/components/offers/OfferShareDialog.tsx:411
+#: src/components/offers/OfferShareDialog.tsx:552
+#: src/components/offers/OfferShareDialog.tsx:900
 msgid "Your offer:"
 msgstr ""
 
@@ -3731,7 +3731,7 @@ msgstr "sincronizzando"
 #~ msgid "{0, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:853
+#: src/components/offers/OfferShareDialog.tsx:862
 msgid "{0}"
 msgstr ""
 

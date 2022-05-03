@@ -43,7 +43,7 @@ type CommonDialogProps = {
   onClose: (value: boolean) => void;
 }
 
-type OfferShareOfferBinDialogProps = CommonOfferProps & CommonDialogProps;
+type OfferShareChinillaOffersDialogProps = CommonOfferProps & CommonDialogProps;
 type OfferShareHashgreenDialogProps = CommonOfferProps & CommonDialogProps;
 type OfferShareKeybaseDialogProps = CommonOfferProps & CommonDialogProps;
 type OfferShareOfferpoolDialogProps = CommonOfferProps & CommonDialogProps;
@@ -59,31 +59,40 @@ async function writeTempOfferFile(offerData: string, filename: string): Promise<
   return filePath;
 }
 
-// Posts the offer data to OfferBin and returns a URL to the offer.
-async function postToOfferBin(offerData: string, sharePrivately: boolean): Promise<string> {
+// Posts the offer data to ChinillaOffers and returns a URL to the offer.
+async function postToChinilla(offerData: string, sharePrivately: boolean): Promise<string> {
   const ipcRenderer = (window as any).ipcRenderer;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
-    hostname: 'api.offerbin.io',
+    hostname: 'chinilla.com',
     port: 443,
-    path: '/upload' + (sharePrivately ? '?private=true' : ''),
+    path: '/offer/upload',
   };
   const requestHeaders = {
-    'Content-Type': 'application/text',
+    'accept': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded'
   }
-  const requestData = offerData;
+
+  const requestData = `offer=${offerData}` + (sharePrivately ? '&private=true' : '');
   const { err, statusCode, statusMessage, responseBody } = await ipcRenderer?.invoke('fetchTextResponse', requestOptions, requestHeaders, requestData);
 
   if (err || statusCode !== 200) {
-    const error = new Error(`OfferBin upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`);
+    const error = new Error(`ChinillaOffers upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}`);
     throw error;
   }
 
-  console.log('OfferBin upload completed');
-  const { hash } = JSON.parse(responseBody);
+  const jsonObj = JSON.parse(responseBody);
+  const { status, message, offer } = jsonObj;
+ 
+  if (status == "error") {
+    const error = new Error(message);
+    throw error;
+  }
+  
+  console.log('Chinilla.com Offer upload completed');
 
-  return `https://offerbin.io/offer/${hash}`;
+  return `https://chinilla.com/offer/details/${offer}`;
 }
 
 enum HashgreenErrorCodes {
@@ -302,7 +311,7 @@ async function postToOfferpool(offerData: string): Promise<PostToOfferpoolRespon
   return JSON.parse(responseBody);
 }
 
-function OfferShareOfferBinDialog(props: OfferShareOfferBinDialogProps) {
+function OfferShareChinillaOffersDialog(props: OfferShareChinillaOffersDialogProps) {
   const { offerRecord, offerData, onClose, open } = props;
   const openExternal = useOpenExternal();
   const showError = useShowError();
@@ -318,9 +327,9 @@ function OfferShareOfferBinDialog(props: OfferShareOfferBinDialogProps) {
     try {
       setIsSubmitting(true);
 
-      const url = await postToOfferBin(offerData, sharePrivately);
+      const url = await postToChinilla(offerData, sharePrivately);
 
-      console.log(`OfferBin URL (private=${sharePrivately}): ${url}`);
+      console.log(`Chinilla.com Offers URL (private=${sharePrivately}): ${url}`);
       setSharedURL(url);
     }
     catch (e) {
@@ -347,7 +356,7 @@ function OfferShareOfferBinDialog(props: OfferShareOfferBinDialogProps) {
         <DialogContent dividers>
           <Flex flexDirection="column" gap={3}>
             <TextField
-              label={<Trans>OfferBin URL</Trans>}
+              label={<Trans>ChinillaOffers URL</Trans>}
               value={sharedURL}
               variant="filled"
               InputProps={{
@@ -365,7 +374,7 @@ function OfferShareOfferBinDialog(props: OfferShareOfferBinDialogProps) {
               variant="outlined"
               onClick={() => openExternal(sharedURL)}
             >
-              <Trans>View on OfferBin</Trans>
+              <Trans>View on ChinillaOffers</Trans>
             </Button>
             </Flex>
           </Flex>
@@ -393,7 +402,7 @@ function OfferShareOfferBinDialog(props: OfferShareOfferBinDialogProps) {
       fullWidth
     >
       <DialogTitle id="alert-dialog-title">
-        <Trans>Share on OfferBin</Trans>
+        <Trans>Share on ChinillaOffers</Trans>
       </DialogTitle>
       <DialogContent dividers>
         <OfferSummary
@@ -439,7 +448,7 @@ function OfferShareOfferBinDialog(props: OfferShareOfferBinDialogProps) {
   );
 }
 
-OfferShareOfferBinDialog.defaultProps = {
+OfferShareChinillaOffersDialog.defaultProps = {
   open: false,
   onClose: () => {},
 };
@@ -933,9 +942,9 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
     onClose(false);
   }
 
-  async function handleOfferBin() {
+  async function handleChinillaOffers() {
     await openDialog(
-      <OfferShareOfferBinDialog offerRecord={offerRecord} offerData={offerData} />
+      <OfferShareChinillaOffersDialog offerRecord={offerRecord} offerData={offerData} />
     );
   }
 
@@ -980,31 +989,9 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
             <Flex flexDirection="row" gap={3}>
               <Button
                 variant="outlined"
-                onClick={handleOfferBin}
+                onClick={handleChinillaOffers}
               >
-                OfferBin
-              </Button>
-              <Button
-                variant="outlined"
-                onClick={handleHashgreen}
-              >
-                Hashgreen DEX
-              </Button>
-              <Button
-                variant="outlined"
-                onClick={handleOfferpool}
-              >
-                <Flex flexDirection="column">
-                  offerpool
-                </Flex>
-              </Button>
-              <Button
-                variant="outlined"
-                onClick={handleKeybase}
-              >
-                <Flex flexDirection="column">
-                  Keybase
-                </Flex>
+                Chinilla.com Offers
               </Button>
             </Flex>
           </Flex>
