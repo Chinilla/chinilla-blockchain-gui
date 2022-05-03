@@ -68,7 +68,7 @@ export default function WalletCATTAILDialog(props: Props) {
               />
             </Box>
             <Link href={`https://www.chinilla.com/tail/${wallet.meta?.assetId}`} target="_blank" variant="body2">
-              <Trans>Search on Tail Database</Trans>
+              <Trans>Search on Token Database</Trans>
             </Link>
           </Flex>
         )}
