@@ -458,13 +458,13 @@ msgstr "Chinilla Asset Token"
 #~ msgid "Chinilla Blockchain Wiki"
 #~ msgstr "Chinilla Blockchain Wiki"
 
+#: src/components/offers/OfferShareDialog.tsx:359
+msgid "Chinilla Offers URL"
+msgstr "Chinilla Offers URL"
+
 #: src/components/standard/WalletStandard.tsx:23
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Chinilla Wallet"
-
-#: src/components/offers/OfferShareDialog.tsx:359
-msgid "ChinillaOffers URL"
-msgstr "ChinillaOffers URL"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 #~ msgid "Choose Number of Plots"
@@ -2733,8 +2733,8 @@ msgid "Share Privately"
 msgstr "Share Privately"
 
 #: src/components/offers/OfferShareDialog.tsx:405
-msgid "Share on ChinillaOffers"
-msgstr "Share on ChinillaOffers"
+msgid "Share on Chinilla Offers"
+msgstr "Share on Chinilla Offers"
 
 #: src/components/offers/OfferShareDialog.tsx:546
 msgid "Share on Hashgreen DEX"
@@ -3369,8 +3369,8 @@ msgid "View an Offer"
 msgstr "View an Offer"
 
 #: src/components/offers/OfferShareDialog.tsx:377
-msgid "View on ChinillaOffers"
-msgstr "View on ChinillaOffers"
+msgid "View on Chinilla Offers"
+msgstr "View on Chinilla Offers"
 
 #: src/components/offers/OfferShareDialog.tsx:518
 msgid "View on Hashgreen DEX"

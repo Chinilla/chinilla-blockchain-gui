@@ -458,13 +458,13 @@ msgstr ""
 #~ msgid "Chinilla Blockchain Wiki"
 #~ msgstr "Wiki Blockchain Chinilla"
 
+#: src/components/offers/OfferShareDialog.tsx:359
+msgid "Chinilla Offers URL"
+msgstr ""
+
 #: src/components/standard/WalletStandard.tsx:23
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Portofel Chinilla"
-
-#: src/components/offers/OfferShareDialog.tsx:359
-msgid "ChinillaOffers URL"
-msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 #~ msgid "Choose Number of Plots"
@@ -2729,7 +2729,7 @@ msgid "Share Privately"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:405
-msgid "Share on ChinillaOffers"
+msgid "Share on Chinilla Offers"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:546
@@ -3365,7 +3365,7 @@ msgid "View an Offer"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:377
-msgid "View on ChinillaOffers"
+msgid "View on Chinilla Offers"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:518

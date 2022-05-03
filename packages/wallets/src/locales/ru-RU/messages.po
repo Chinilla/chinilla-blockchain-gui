@@ -630,13 +630,13 @@ msgstr ""
 #~ "\n"
 #~ "Приведенная выше команда создает одио поле (указывается -n 1), для параллельного построения вам нужно повторить команду (не закрывая первую). Увеличьте значение -n для последовательного построения, то есть после завершения первого участка запускается следующий."
 
+#: src/components/offers/OfferShareDialog.tsx:359
+msgid "Chinilla Offers URL"
+msgstr ""
+
 #: src/components/standard/WalletStandard.tsx:23
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Кошелек Chinilla"
-
-#: src/components/offers/OfferShareDialog.tsx:359
-msgid "ChinillaOffers URL"
-msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 #~ msgid "Choose Number of Plots"
@@ -2901,7 +2901,7 @@ msgid "Share Privately"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:405
-msgid "Share on ChinillaOffers"
+msgid "Share on Chinilla Offers"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:546
@@ -3537,7 +3537,7 @@ msgid "View an Offer"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:377
-msgid "View on ChinillaOffers"
+msgid "View on Chinilla Offers"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:518

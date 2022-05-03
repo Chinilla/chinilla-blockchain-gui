@@ -356,7 +356,7 @@ function OfferShareChinillaOffersDialog(props: OfferShareChinillaOffersDialogPro
         <DialogContent dividers>
           <Flex flexDirection="column" gap={3}>
             <TextField
-              label={<Trans>ChinillaOffers URL</Trans>}
+              label={<Trans>Chinilla Offers URL</Trans>}
               value={sharedURL}
               variant="filled"
               InputProps={{
@@ -374,7 +374,7 @@ function OfferShareChinillaOffersDialog(props: OfferShareChinillaOffersDialogPro
               variant="outlined"
               onClick={() => openExternal(sharedURL)}
             >
-              <Trans>View on ChinillaOffers</Trans>
+              <Trans>View on Chinilla Offers</Trans>
             </Button>
             </Flex>
           </Flex>
@@ -402,7 +402,7 @@ function OfferShareChinillaOffersDialog(props: OfferShareChinillaOffersDialogPro
       fullWidth
     >
       <DialogTitle id="alert-dialog-title">
-        <Trans>Share on ChinillaOffers</Trans>
+        <Trans>Share on Chinilla Offers</Trans>
       </DialogTitle>
       <DialogContent dividers>
         <OfferSummary
