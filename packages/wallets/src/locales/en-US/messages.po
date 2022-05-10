@@ -129,14 +129,12 @@ msgstr "Add Custom Token"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:158
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
 #: src/components/hero/WalletHeroWallets.tsx:83
 #: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:143
+#: src/components/WalletsManageTokens.tsx:158
 msgid "Add Token"
 msgstr "Add Token"
 
@@ -177,7 +175,6 @@ msgstr "Adding {0} token"
 msgid "Address"
 msgstr "Address"
 
-#: src/components/WalletSend.tsx:154
 #: src/components/cat/WalletCATSend.tsx:196
 #: src/components/rateLimited/WalletRateLimited.jsx:700
 #: src/components/WalletSend.tsx:154
@@ -196,8 +193,6 @@ msgstr "Address / Puzzle hash"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/offers/OfferEditorConditionsPanel.tsx:121
 #: src/components/offers/OfferViewer.tsx:226
@@ -413,7 +408,6 @@ msgstr "Cancel Offer"
 msgid "Cancel on blockchain"
 msgstr "Cancel on blockchain"
 
-#: src/components/WalletSend.tsx:101
 #: src/components/cat/WalletCATSend.tsx:119
 #: src/components/WalletSend.tsx:101
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
@@ -703,7 +697,6 @@ msgstr "Create Rate Limited User Wallet"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:136
 #: src/components/cat/WalletCATSend.tsx:177
 #: src/components/rateLimited/WalletRateLimited.jsx:683
 #: src/components/WalletSend.tsx:136
@@ -1081,8 +1074,8 @@ msgstr "Failed to execute Keybase command: {stderr}"
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:184
 #: src/components/cat/WalletCATSend.tsx:241
+#: src/components/WalletSend.tsx:184
 msgid "Farm"
 msgstr "Farm"
 
@@ -1143,8 +1136,6 @@ msgstr "Farm"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
 #: src/components/cat/WalletCATSend.tsx:220
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
@@ -1403,15 +1394,19 @@ msgid "Install Keybase"
 msgstr "Install Keybase"
 
 #: src/components/offers/OfferViewer.tsx:358
-msgid "Insufficient funds available to accept offer. Ensure that your\n"
+msgid ""
+"Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr "Insufficient funds available to accept offer. Ensure that your \n"
+msgstr ""
+"Insufficient funds available to accept offer. Ensure that your \n"
 "spendable balance is sufficient to cover the offer amount."
 
 #: src/components/offers/OfferEditor.tsx:166
-msgid "Insufficient funds available to create offer. Ensure that your\n"
+msgid ""
+"Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr "Insufficient funds available to create offer. Ensure that your\n"
+msgstr ""
+"Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
 
 #: src/components/create/createRLAdmin.jsx:217
@@ -1607,7 +1602,6 @@ msgstr "Manage token list"
 
 #: src/components/cat/WalletCATSend.tsx:232
 #: src/components/WalletHistory.tsx:116
-#: src/components/cat/WalletCATSend.tsx:232
 msgid "Memo"
 msgstr "Memo"
 
@@ -1862,8 +1856,8 @@ msgstr "Offers you accepted"
 msgid "Offers you created"
 msgstr "Offers you created"
 
-#: src/components/WalletSend.tsx:139
 #: src/components/cat/WalletCATSend.tsx:180
+#: src/components/WalletSend.tsx:139
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 
@@ -2034,7 +2028,6 @@ msgstr "Please enter a valid initial coin amount"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Please enter an integer value of 0 or greater for the number of Backup IDs needed for recovery."
 
-#: src/components/WalletSend.tsx:91
 #: src/components/cat/WalletCATSend.tsx:105
 #: src/components/rateLimited/WalletRateLimited.jsx:638
 #: src/components/WalletSend.tsx:91
@@ -2045,7 +2038,6 @@ msgstr "Please enter a valid numeric amount"
 msgid "Please enter a valid numeric amount."
 msgstr "Please enter a numeric amount."
 
-#: src/components/WalletSend.tsx:96
 #: src/components/cat/WalletCATSend.tsx:110
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
@@ -2091,7 +2083,6 @@ msgstr "Please enter valid wallet name"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:86
 #: src/components/cat/WalletCATSend.tsx:96
 #: src/components/rateLimited/WalletRateLimited.jsx:622
 #: src/components/WalletSend.tsx:86
@@ -2596,10 +2587,13 @@ msgstr "Save Offer File"
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:130
-#: src/components/cat/WalletCATTAILDialog.tsx:71
-#: src/components/offers/OfferSummaryRow.tsx:95
 msgid "Search on Tail Database"
 msgstr "Search on Tail Database"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+#: src/components/offers/OfferSummaryRow.tsx:95
+msgid "Search on Token Database"
+msgstr "Search on Token Database"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 #~ msgid "Second temporary folder location"
@@ -2695,8 +2689,6 @@ msgstr "Selected recovery file:"
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
 #: src/components/cat/WalletCATSend.tsx:251
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
@@ -2915,7 +2907,6 @@ msgstr "Success"
 
 #: src/components/offers/OfferViewer.tsx:452
 #: src/components/WalletHeader.tsx:58
-#: src/components/offers/OfferViewer.tsx:452
 msgid "Summary"
 msgstr "Summary"
 
@@ -3797,4 +3788,3 @@ msgstr "{vojos, plural, one {vojo} other {vojos}}"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"
 #~ msgstr "{warning}"
-

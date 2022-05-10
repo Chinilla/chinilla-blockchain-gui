@@ -1270,8 +1270,8 @@ msgstr "Memuat Daftar dompet"
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:111
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:131
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:124
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
 msgid "Log Out"
 msgstr "Keluar"
 
@@ -1279,8 +1279,8 @@ msgstr "Keluar"
 #~ msgid "Logging in"
 #~ msgstr "Logging in"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:130
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:123
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:143
 msgid "Logout"
 msgstr "Keluar"
 
@@ -2881,7 +2881,7 @@ msgstr "Nilai Kelihatan terlalu tinggi"
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr "Waiting for the transaction to be confirmed"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:84
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:97
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Dompet"
@@ -3215,4 +3215,3 @@ msgstr "{minPassphraseLength, plural, one {Kata kunci harus paling sedikit # kar
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"
 #~ msgstr "{warning}"
-

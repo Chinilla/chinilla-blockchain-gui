@@ -31,8 +31,12 @@ msgid "(Optional)"
 msgstr "(nem kötelező)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:60
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "Fel szeretnéd fedezni a Chinilla rendszerét bővebben? Nézd meg a <0> Chinilla Explorert</0> amit egy nyílt forráskóddal foglalkozó fejlesztő készített."
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:60
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "Fel szeretnéd fedezni a Chinilla rendszerét bővebben? Nézd meg a <0> Chinilla Explorert</0> amit egy nyílt forráskóddal foglalkozó fejlesztő készített."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -58,7 +62,7 @@ msgstr "+ Plot hozzáadása"
 #~ msgid "128 buckets is recommended"
 #~ msgstr "128 buckets is recommended"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:95
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:96
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "A betakarító egy szolgáltatás ahol a parcellák valójában tárolásra kerülnek. A gazdász és a betakarító kommunikációjából kivehető egy teljes rész, hogy látható legyen miként is áll a lánc. Alább láthatód azokat a betakarítókat akik a hálózatodhoz vannak csatlakozva. Tudj meg többet"
 
@@ -83,7 +87,7 @@ msgstr "A Chinilla Blockchain-ről"
 #: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:18
 #: src/components/plot/PlotHarvesterPlotsFailed.tsx:18
 #: src/components/plot/PlotHarvesterPlotsNotFound.tsx:18
-#: src/components/plot/PlotPlotting.tsx:29
+#: src/components/plot/PlotPlotting.tsx:32
 msgid "Action"
 msgstr "Művelet"
 
@@ -102,8 +106,8 @@ msgstr "Műveletek"
 #~ msgid "Add Backup ID"
 #~ msgstr "Add Backup ID"
 
-#: src/components/plot/PlotHeader.tsx:88
 #: src/components/plot/overview/PlotOverviewPlots.tsx:65
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Plot könyvtár hozzáadása"
 
@@ -116,9 +120,9 @@ msgstr "Plot hozzáadása a sorhoz"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/FarmHero.tsx:40
-#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:173
 #: src/components/plot/overview/PlotOverviewHero.tsx:51
+#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
 #: src/components/plotNFT/PlotNFTCard.tsx:268
 msgid "Add a Plot"
@@ -517,8 +521,8 @@ msgstr "Csatlakozás a daemonhoz"
 msgid "Connection Status"
 msgstr "Kapcsolat állapota"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:108
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:106
+#: src/components/farm/FarmFullNodeConnections.tsx:109
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:107
 msgid "Connection Status:"
 msgstr "A kapcsolat állapota:"
 
@@ -987,8 +991,7 @@ msgstr "A farmer nem fut"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "A  farmerek blokkjutalmakat és tranzakciós díjakat keresnek azzal, hogy tartalék helyet szánnak a hálózatnak a tranzakciók biztosítása érdekében. Itt lesz a farm, ha hozzáadsz egy parcellát. <0> További információ </0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:94
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/dashboard/DashboardSideBar.tsx:95
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1066,7 +1069,7 @@ msgstr "Kövess minket a Twitteren"
 msgid "Frequently Asked Questions"
 msgstr "Gyakran Ismételt Kérdések"
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:76
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Teljes csomópont"
@@ -1095,9 +1098,9 @@ msgstr "Általános"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
-#: src/components/pool/PoolOverview.tsx:172
-#~ msgid "Grid view"
-#~ msgstr ""
+#: src/electron/main.tsx:510
+msgid "Github Discussions"
+msgstr ""
 
 #: src/components/pool/PoolOverview.tsx:172
 #~ msgid "Grid view"
@@ -1140,10 +1143,6 @@ msgstr "Súgó"
 #: src/components/core/components/LocaleToggle/LocaleToggle.tsx:76
 #~ msgid "Help translate"
 #~ msgstr "Help translate"
-
-#: src/components/farm/FarmLatestBlockChallenges.tsx:51
-msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
-msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:51
 msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
@@ -1589,11 +1588,11 @@ msgstr "Nincs csatlakozva"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
-msgstr ""
+msgstr "Vegye figyelembe, hogy ez nem változtatja meg a pooling kifizetési címeket. Ez csak a régi formátumú telkeket és a pooling telkek 0,25HCX jutalmát érinti."
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:174
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
-msgstr "Vegye figyelembe, hogy ez nem változtatja meg a pooling kifizetési címeket. Ez csak a régi formátumú telkeket és a pooling telkek 0,25HCX jutalmát érinti."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:158
@@ -1620,7 +1619,7 @@ msgstr "Rendben"
 #~ msgid "Offer"
 #~ msgstr "Offer"
 
-#: src/components/dashboard/DashboardSideBar.tsx:63
+#: src/components/dashboard/DashboardSideBar.tsx:64
 msgid "Offers"
 msgstr "Ajánlatok"
 
@@ -1918,7 +1917,7 @@ msgstr "A parcella a {0} másolata"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:82
 #: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "Parcellák"
@@ -1947,7 +1946,7 @@ msgstr "A plotok a farmoláshoz fenntartott helyek a merevlemezen, amikből Chin
 msgid "Plotter"
 msgstr "Plottoló"
 
-#: src/components/plot/PlotPlotting.tsx:45
+#: src/components/plot/PlotPlotting.tsx:49
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
 msgstr "Mûvelés"
@@ -2062,7 +2061,7 @@ msgstr ""
 msgid "Pool:"
 msgstr "Pool:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:99
+#: src/components/dashboard/DashboardSideBar.tsx:100
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2138,8 +2137,8 @@ msgstr "Protokol verzió"
 #~ msgid "Puzzlehash"
 #~ msgstr "Puzzlehash"
 
-#: src/components/plot/PlotPlotting.tsx:23
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:204
+#: src/components/plot/PlotPlotting.tsx:24
 msgid "Queue Name"
 msgstr "Sor megnevezése"
 
@@ -2215,9 +2214,9 @@ msgstr "Ajánlott"
 #~ msgid "Recover Wallet"
 #~ msgstr "Recover Wallet"
 
-#: src/components/plot/PlotHeader.tsx:75
 #: src/components/plot/overview/PlotOverviewHero.tsx:59
 #: src/components/plot/overview/PlotOverviewPlots.tsx:78
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "Cserepek frissítése"
 
@@ -2412,7 +2411,7 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:109
 #: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr ""
@@ -2514,7 +2513,7 @@ msgstr "Megye"
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:62
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:70
 #: src/components/plot/PlotHarvesterPlots.tsx:75
-#: src/components/plot/PlotPlotting.tsx:26
+#: src/components/plot/PlotPlotting.tsx:28
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
 #: src/components/plotNFT/PlotNFTCard.tsx:143
 msgid "Status"
@@ -2618,7 +2617,7 @@ msgstr "Átmeneti könyvtár helye"
 #~ msgid "The application will stop working at block height 193536."
 #~ msgstr "The application will stop working at block height 193536."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:94
+#: src/components/farm/FarmFullNodeConnections.tsx:95
 msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
 msgstr "A teljes node, melyhez a farmer csatlakozik. <0>További információ</0>"
 
@@ -2764,7 +2763,7 @@ msgstr ""
 #~ msgid "This table shows you the last time your farm attempted to win a block challenge."
 #~ msgstr ""
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:46
+#: src/components/farm/FarmLastAttemptedProof.tsx:47
 msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
 msgstr "Ez a táblázat megmutatja egy blokk kihívás elnyerésére tett kísérlet utolsó időpontját. <0>Részletek</0>"
 
@@ -2800,7 +2799,7 @@ msgstr "Időbélyeg"
 #~ msgid "To"
 #~ msgstr "To"
 
-#: src/components/dashboard/DashboardSideBar.tsx:51
+#: src/components/dashboard/DashboardSideBar.tsx:52
 msgid "Tokens"
 msgstr ""
 
@@ -3330,4 +3329,3 @@ msgstr "{0} pont {1} - {2} órával ezelőtt"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr "{warning}"
-

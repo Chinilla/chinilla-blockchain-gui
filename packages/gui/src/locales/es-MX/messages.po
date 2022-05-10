@@ -31,8 +31,12 @@ msgid "(Optional)"
 msgstr "(Opcional)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:60
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "*¿Quieres explorar más hacerca de los bloques de Chinilla? Echa un vistazo a <0>Chinilla Explorer</0>, creado por un desarrollador de código abierto."
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:60
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "*¿Quieres explorar más hacerca de los bloques de Chinilla? Echa un vistazo a <0>Chinilla Explorer</0>, creado por un desarrollador de código abierto."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -58,7 +62,7 @@ msgstr ""
 #~ msgid "128 buckets is recommended"
 #~ msgstr "128 buckets is recommended"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:95
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:96
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "Un cosechador es un servicio que se ejecuta en una máquina en donde actualmente se almacenan las parcelas. Un agricultor y un cosechador hablan con un nodo completo para ver el estado de la cadena. Vea su red de cosechadoras conectadas a continuación Más información"
 
@@ -83,7 +87,7 @@ msgstr "Acerca de Chinilla Blockchain"
 #: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:18
 #: src/components/plot/PlotHarvesterPlotsFailed.tsx:18
 #: src/components/plot/PlotHarvesterPlotsNotFound.tsx:18
-#: src/components/plot/PlotPlotting.tsx:29
+#: src/components/plot/PlotPlotting.tsx:32
 msgid "Action"
 msgstr "Acción"
 
@@ -102,8 +106,8 @@ msgstr "Acciones"
 #~ msgid "Add Backup ID"
 #~ msgstr "Add Backup ID"
 
-#: src/components/plot/PlotHeader.tsx:88
 #: src/components/plot/overview/PlotOverviewPlots.tsx:65
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Añadir Directorio de Parcela"
 
@@ -116,9 +120,9 @@ msgstr "Añadir Parcela a la Cola"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/FarmHero.tsx:40
-#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:173
 #: src/components/plot/overview/PlotOverviewHero.tsx:51
+#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
 #: src/components/plotNFT/PlotNFTCard.tsx:268
 msgid "Add a Plot"
@@ -366,7 +370,7 @@ msgstr ""
 msgid "Chat on KeyBase"
 msgstr "Chatear en Keybase"
 
-#: src/electron/main.tsx:510
+#: src/electron/main.tsx:522
 msgid "Chinilla"
 msgstr ""
 
@@ -517,8 +521,8 @@ msgstr ""
 msgid "Connection Status"
 msgstr "Estado de Conexión"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:108
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:106
+#: src/components/farm/FarmFullNodeConnections.tsx:109
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:107
 msgid "Connection Status:"
 msgstr "Estado de Conexión:"
 
@@ -987,8 +991,7 @@ msgstr "El Agricultor no está funcionando"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Los agricultores obtienen recompensas en bloque y tarifas de transacción al asignar espacio libre a la red para ayudar a asegurar las transacciones. Aquí es donde estará su granja una vez que agregue una parcela. <0> Más información </0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:94
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/dashboard/DashboardSideBar.tsx:95
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1066,7 +1069,7 @@ msgstr "Seguir en Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Preguntas Frecuentes"
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:76
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Nodo Completo"
@@ -1140,10 +1143,6 @@ msgstr "Ayuda"
 #: src/components/core/components/LocaleToggle/LocaleToggle.tsx:76
 #~ msgid "Help translate"
 #~ msgstr "Help translate"
-
-#: src/components/farm/FarmLatestBlockChallenges.tsx:51
-msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
-msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:51
 msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
@@ -1620,7 +1619,7 @@ msgstr ""
 #~ msgid "Offer"
 #~ msgstr "Offer"
 
-#: src/components/dashboard/DashboardSideBar.tsx:63
+#: src/components/dashboard/DashboardSideBar.tsx:64
 msgid "Offers"
 msgstr ""
 
@@ -1918,7 +1917,7 @@ msgstr "La parcela es un duplicado de {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT está transicionando hacia (estado de destino). Esto puede tardar un tiempo. Por favor, no cierre la aplicación hasta que esto esté finalizado."
 
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:82
 #: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "Parcelas"
@@ -1947,7 +1946,7 @@ msgstr ""
 msgid "Plotter"
 msgstr ""
 
-#: src/components/plot/PlotPlotting.tsx:45
+#: src/components/plot/PlotPlotting.tsx:49
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
 msgstr "Sembrando"
@@ -2062,7 +2061,7 @@ msgstr ""
 msgid "Pool:"
 msgstr "Conjunto:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:99
+#: src/components/dashboard/DashboardSideBar.tsx:100
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2138,8 +2137,8 @@ msgstr "Versión del Protocolo"
 #~ msgid "Puzzlehash"
 #~ msgstr "Puzzlehash"
 
-#: src/components/plot/PlotPlotting.tsx:23
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:204
+#: src/components/plot/PlotPlotting.tsx:24
 msgid "Queue Name"
 msgstr "Nombre de Cola"
 
@@ -2215,9 +2214,9 @@ msgstr ""
 #~ msgid "Recover Wallet"
 #~ msgstr "Recover Wallet"
 
-#: src/components/plot/PlotHeader.tsx:75
 #: src/components/plot/overview/PlotOverviewHero.tsx:59
 #: src/components/plot/overview/PlotOverviewPlots.tsx:78
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "Actualizar Parcelas"
 
@@ -2412,7 +2411,7 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:109
 #: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr ""
@@ -2514,7 +2513,7 @@ msgstr "Estado"
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:62
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:70
 #: src/components/plot/PlotHarvesterPlots.tsx:75
-#: src/components/plot/PlotPlotting.tsx:26
+#: src/components/plot/PlotPlotting.tsx:28
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
 #: src/components/plotNFT/PlotNFTCard.tsx:143
 msgid "Status"
@@ -2618,7 +2617,7 @@ msgstr "Ubicación de la carpeta temporal"
 #~ msgid "The application will stop working at block height 193536."
 #~ msgstr "The application will stop working at block height 193536."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:94
+#: src/components/farm/FarmFullNodeConnections.tsx:95
 msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
 msgstr "El nodo completo al que está conectado su agricultor se encuentra a continuación. <0> Más información </0>"
 
@@ -2764,7 +2763,7 @@ msgstr "Esta parcela NFT está asignada a una llave diferente. Todavía puede cr
 #~ msgid "This table shows you the last time your farm attempted to win a block challenge."
 #~ msgstr ""
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:46
+#: src/components/farm/FarmLastAttemptedProof.tsx:47
 msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
 msgstr "Está tabla muestra la última vez que su granja intentó ganar un desafío de bloque. <0>Aprenda más</0>"
 
@@ -2800,7 +2799,7 @@ msgstr "Marca de tiempo"
 #~ msgid "To"
 #~ msgstr "To"
 
-#: src/components/dashboard/DashboardSideBar.tsx:51
+#: src/components/dashboard/DashboardSideBar.tsx:52
 msgid "Tokens"
 msgstr ""
 
@@ -3330,4 +3329,3 @@ msgstr "{0} puntos {1} - hace {2} horas"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr ""
-

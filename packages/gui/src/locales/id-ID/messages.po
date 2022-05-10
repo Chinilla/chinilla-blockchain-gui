@@ -31,8 +31,12 @@ msgid "(Optional)"
 msgstr "(Pilihan)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:60
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "*Ingin tahu soal blok Chinilla lebih jauh? Periksa laman <0>Chinilla Explorer</0> yang dibuat oleh software sumber terbuka."
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:60
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "*Ingin tahu soal blok Chinilla lebih jauh? Periksa laman <0>Chinilla Explorer</0> yang dibuat oleh software sumber terbuka."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -58,7 +62,7 @@ msgstr "+ Tambah sebuah Plot"
 #~ msgid "128 buckets is recommended"
 #~ msgstr "128 buckets is recommended"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:95
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:96
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "Harvester adalah layanan yang berjalan pada komputer dimana plot disimpan. Farmer dan Harvester terhubung dengan jaringan untuk memeriksa status rantai. Tampilkan jaringan Harvester terhubung anda di bawah ini Pelajari lebih lanjut"
 
@@ -83,7 +87,7 @@ msgstr "Tentang Chinilla Blockchain"
 #: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:18
 #: src/components/plot/PlotHarvesterPlotsFailed.tsx:18
 #: src/components/plot/PlotHarvesterPlotsNotFound.tsx:18
-#: src/components/plot/PlotPlotting.tsx:29
+#: src/components/plot/PlotPlotting.tsx:32
 msgid "Action"
 msgstr "Tindakan"
 
@@ -102,8 +106,8 @@ msgstr "Tindakan"
 #~ msgid "Add Backup ID"
 #~ msgstr "Add Backup ID"
 
-#: src/components/plot/PlotHeader.tsx:88
 #: src/components/plot/overview/PlotOverviewPlots.tsx:65
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Tambah Direktori Plot"
 
@@ -116,9 +120,9 @@ msgstr "Tambahkan Plot ke Antrian"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/FarmHero.tsx:40
-#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:173
 #: src/components/plot/overview/PlotOverviewHero.tsx:51
+#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
 #: src/components/plotNFT/PlotNFTCard.tsx:268
 msgid "Add a Plot"
@@ -517,8 +521,8 @@ msgstr "Menyambungkan ke daemon"
 msgid "Connection Status"
 msgstr "Status Koneksi"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:108
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:106
+#: src/components/farm/FarmFullNodeConnections.tsx:109
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:107
 msgid "Connection Status:"
 msgstr "Status Koneksi:"
 
@@ -987,8 +991,7 @@ msgstr "Farmer sedang tidak berjalan"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Para farmer mendapatkan upah blok dan biaya transaksi dengan mengalokasikan ruang kosong untuk membantu pengamanan transaksi. Ini adalah tempat farm anda setelah anda menambahkan sebuah plot. <0>Pelajari lebih lanjut</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:94
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/dashboard/DashboardSideBar.tsx:95
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1066,7 +1069,7 @@ msgstr "Follow di Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Pertanyaan Umum"
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:76
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Full Node"
@@ -1140,10 +1143,6 @@ msgstr "Bantuan"
 #: src/components/core/components/LocaleToggle/LocaleToggle.tsx:76
 #~ msgid "Help translate"
 #~ msgstr "Help translate"
-
-#: src/components/farm/FarmLatestBlockChallenges.tsx:51
-msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
-msgstr "Dibawah ini adalah tantangan blok saat ini. Anda mungkin atau mungkin memiliki sebuah bukti ruang untuk tantangan ini. Untuk saat ini blok-blok berikut tidak memiliki bukti waktu."
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:51
 msgid "Here are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
@@ -1589,11 +1588,11 @@ msgstr "Tidak terhubung"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
-msgstr ""
+msgstr "Mohon di ingat ini tidak akan merubah alamat pembayaran pool. Ini hanya mempengaruhi plot format lama, dan 0.25HCX penghasilan dari memasukan plot ke pool."
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:174
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
-msgstr "Mohon di ingat ini tidak akan merubah alamat pembayaran pool. Ini hanya mempengaruhi plot format lama, dan 0.25HCX penghasilan dari memasukan plot ke pool."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:158
@@ -1620,7 +1619,7 @@ msgstr "OK"
 #~ msgid "Offer"
 #~ msgstr "Offer"
 
-#: src/components/dashboard/DashboardSideBar.tsx:63
+#: src/components/dashboard/DashboardSideBar.tsx:64
 msgid "Offers"
 msgstr "Penawaran"
 
@@ -1918,7 +1917,7 @@ msgstr "Plot ini duplikat dari {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT sedang bertransisi ke (target state). Ini akan berlangsung beberapa waktu. Tolong jangan matikan apliksi sampai selesai."
 
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:82
 #: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "Plot-Plot"
@@ -1941,14 +1940,15 @@ msgstr "Plot dengan kunci yang hilang"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:33
 msgid "Plots are allocated space on your hard drive used to farm and earn Chinilla.<0>Learn more</0>"
-msgstr "Plot adalah penempatan ruang dalam hard drive yang digunakan untuk disewakan dan memperoleh Chinilla\n"
+msgstr ""
+"Plot adalah penempatan ruang dalam hard drive yang digunakan untuk disewakan dan memperoleh Chinilla\n"
 "<0>Pelajari lebih lanjut</0>"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:103
 msgid "Plotter"
 msgstr "Plotter"
 
-#: src/components/plot/PlotPlotting.tsx:45
+#: src/components/plot/PlotPlotting.tsx:49
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
 msgstr "Plotkan"
@@ -2063,7 +2063,7 @@ msgstr "Pool tidak menyediakan targetPuzzleHash."
 msgid "Pool:"
 msgstr "Pool:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:99
+#: src/components/dashboard/DashboardSideBar.tsx:100
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2139,8 +2139,8 @@ msgstr "Versi Protokol"
 #~ msgid "Puzzlehash"
 #~ msgstr "Puzzlehash"
 
-#: src/components/plot/PlotPlotting.tsx:23
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:204
+#: src/components/plot/PlotPlotting.tsx:24
 msgid "Queue Name"
 msgstr "Nama Antrian"
 
@@ -2216,9 +2216,9 @@ msgstr "Direkomendasikan"
 #~ msgid "Recover Wallet"
 #~ msgstr "Recover Wallet"
 
-#: src/components/plot/PlotHeader.tsx:75
 #: src/components/plot/overview/PlotOverviewHero.tsx:59
 #: src/components/plot/overview/PlotOverviewPlots.tsx:78
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "Segarkan data Plot-Plot"
 
@@ -2413,7 +2413,7 @@ msgstr "Kata sandi baru"
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:109
 #: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr "Pengaturan"
@@ -2515,7 +2515,7 @@ msgstr "Keadaan"
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:62
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:70
 #: src/components/plot/PlotHarvesterPlots.tsx:75
-#: src/components/plot/PlotPlotting.tsx:26
+#: src/components/plot/PlotPlotting.tsx:28
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
 #: src/components/plotNFT/PlotNFTCard.tsx:143
 msgid "Status"
@@ -2619,7 +2619,7 @@ msgstr "Folder sementara untuk kompilasi"
 #~ msgid "The application will stop working at block height 193536."
 #~ msgstr "The application will stop working at block height 193536."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:94
+#: src/components/farm/FarmFullNodeConnections.tsx:95
 msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
 msgstr "Node penuh yang terhubung ke farmer anda di bawah. <0>Pelajari lebih lanjut</0>"
 
@@ -2765,7 +2765,7 @@ msgstr "PlotNFT ini telah di alokasi kan ke kunci yang berbeda. Anda masi bisa m
 #~ msgid "This table shows you the last time your farm attempted to win a block challenge."
 #~ msgstr ""
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:46
+#: src/components/farm/FarmLastAttemptedProof.tsx:47
 msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
 msgstr "Tabel berikut menunjukan waktu terakhir farm anda mencoba untuk memenangkan sebuah blok tantangan. <0>Pelajari lebih lanjut</0>"
 
@@ -2801,7 +2801,7 @@ msgstr "Stempel waktu"
 #~ msgid "To"
 #~ msgstr "To"
 
-#: src/components/dashboard/DashboardSideBar.tsx:51
+#: src/components/dashboard/DashboardSideBar.tsx:52
 msgid "Tokens"
 msgstr "Token"
 
@@ -3331,4 +3331,3 @@ msgstr "{0} poin {1} - {2} jam yang lalu"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr "{warning}"
-

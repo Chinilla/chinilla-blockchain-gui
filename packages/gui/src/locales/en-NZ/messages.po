@@ -31,8 +31,12 @@ msgid "(Optional)"
 msgstr "(Optional)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:60
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:60
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -58,7 +62,7 @@ msgstr "+ Add a Plot"
 #~ msgid "128 buckets is recommended"
 #~ msgstr "128 buckets is recommended"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:95
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:96
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 
@@ -83,7 +87,7 @@ msgstr "About Chinilla Blockchain"
 #: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:18
 #: src/components/plot/PlotHarvesterPlotsFailed.tsx:18
 #: src/components/plot/PlotHarvesterPlotsNotFound.tsx:18
-#: src/components/plot/PlotPlotting.tsx:29
+#: src/components/plot/PlotPlotting.tsx:32
 msgid "Action"
 msgstr "Action"
 
@@ -102,8 +106,8 @@ msgstr "Actions"
 #~ msgid "Add Backup ID"
 #~ msgstr "Add Backup ID"
 
-#: src/components/plot/PlotHeader.tsx:88
 #: src/components/plot/overview/PlotOverviewPlots.tsx:65
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Add Plot Directory"
 
@@ -116,9 +120,9 @@ msgstr "Add Plot to Queue"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/FarmHero.tsx:40
-#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:173
 #: src/components/plot/overview/PlotOverviewHero.tsx:51
+#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
 #: src/components/plotNFT/PlotNFTCard.tsx:268
 msgid "Add a Plot"
@@ -517,8 +521,8 @@ msgstr "Connecting to daemon"
 msgid "Connection Status"
 msgstr "Connection Status"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:108
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:106
+#: src/components/farm/FarmFullNodeConnections.tsx:109
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:107
 msgid "Connection Status:"
 msgstr "Connection Status:"
 
@@ -987,8 +991,7 @@ msgstr "Farmer is not running"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:94
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/dashboard/DashboardSideBar.tsx:95
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1066,7 +1069,7 @@ msgstr "Follow on Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Frequently Asked Questions"
 
-#: src/components/dashboard/DashboardSideBar.tsx:75
+#: src/components/dashboard/DashboardSideBar.tsx:76
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Full Node"
@@ -1616,7 +1619,7 @@ msgstr "OK"
 #~ msgid "Offer"
 #~ msgstr "Offer"
 
-#: src/components/dashboard/DashboardSideBar.tsx:63
+#: src/components/dashboard/DashboardSideBar.tsx:64
 msgid "Offers"
 msgstr "Offers"
 
@@ -1914,7 +1917,7 @@ msgstr "Plot is duplicate of {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalised."
 
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:82
 #: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "Plots"
@@ -1943,7 +1946,7 @@ msgstr "Plots are allocated space on your hard drive used to farm and earn Chini
 msgid "Plotter"
 msgstr "Plotter"
 
-#: src/components/plot/PlotPlotting.tsx:45
+#: src/components/plot/PlotPlotting.tsx:49
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
 msgstr "Plotting"
@@ -2058,7 +2061,7 @@ msgstr "Pool does not provide targetPuzzleHash."
 msgid "Pool:"
 msgstr "Pool:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:99
+#: src/components/dashboard/DashboardSideBar.tsx:100
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2134,8 +2137,8 @@ msgstr "Protocol Version"
 #~ msgid "Puzzlehash"
 #~ msgstr "Puzzlehash"
 
-#: src/components/plot/PlotPlotting.tsx:23
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:204
+#: src/components/plot/PlotPlotting.tsx:24
 msgid "Queue Name"
 msgstr "Queue Name"
 
@@ -2211,9 +2214,9 @@ msgstr "Recommended"
 #~ msgid "Recover Wallet"
 #~ msgstr "Recover Wallet"
 
-#: src/components/plot/PlotHeader.tsx:75
 #: src/components/plot/overview/PlotOverviewHero.tsx:59
 #: src/components/plot/overview/PlotOverviewPlots.tsx:78
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "Refresh Plots"
 
@@ -2408,7 +2411,7 @@ msgstr "Set Passphrase"
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:109
 #: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr "Settings"
@@ -2510,7 +2513,7 @@ msgstr "State"
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:62
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:70
 #: src/components/plot/PlotHarvesterPlots.tsx:75
-#: src/components/plot/PlotPlotting.tsx:26
+#: src/components/plot/PlotPlotting.tsx:28
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
 #: src/components/plotNFT/PlotNFTCard.tsx:143
 msgid "Status"
@@ -2614,7 +2617,7 @@ msgstr "Temporary folder location"
 #~ msgid "The application will stop working at block height 193536."
 #~ msgstr "The application will stop working at block height 193536."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:94
+#: src/components/farm/FarmFullNodeConnections.tsx:95
 msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
 msgstr "The full node that your farmer is connected to is below. <0>Learn more</0>"
 
@@ -2760,7 +2763,7 @@ msgstr "This plot NFT is assigned to a different key. You can still create plots
 #~ msgid "This table shows you the last time your farm attempted to win a block challenge."
 #~ msgstr ""
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:46
+#: src/components/farm/FarmLastAttemptedProof.tsx:47
 msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
 msgstr "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
 
@@ -2796,7 +2799,7 @@ msgstr "Timestamp"
 #~ msgid "To"
 #~ msgstr "To"
 
-#: src/components/dashboard/DashboardSideBar.tsx:51
+#: src/components/dashboard/DashboardSideBar.tsx:52
 msgid "Tokens"
 msgstr "Tokens"
 
@@ -3326,4 +3329,3 @@ msgstr "{0} points {1} - {2} hours ago"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr "{warning}"
-

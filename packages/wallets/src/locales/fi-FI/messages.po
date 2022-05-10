@@ -129,14 +129,12 @@ msgstr "Lisää Kustomoitu Token"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:158
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
 #: src/components/hero/WalletHeroWallets.tsx:83
 #: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:143
+#: src/components/WalletsManageTokens.tsx:158
 msgid "Add Token"
 msgstr "Lisää Token"
 
@@ -177,7 +175,6 @@ msgstr "Lisätään {0} token"
 msgid "Address"
 msgstr "Osoite"
 
-#: src/components/WalletSend.tsx:154
 #: src/components/cat/WalletCATSend.tsx:196
 #: src/components/rateLimited/WalletRateLimited.jsx:700
 #: src/components/WalletSend.tsx:154
@@ -196,8 +193,6 @@ msgstr "Osoite / Puzzle-tiiviste"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/offers/OfferEditorConditionsPanel.tsx:121
 #: src/components/offers/OfferViewer.tsx:226
@@ -413,8 +408,8 @@ msgstr "Peru Tarjous"
 msgid "Cancel on blockchain"
 msgstr "Peru lohkoketjussa"
 
-#: src/components/WalletSend.tsx:101
 #: src/components/cat/WalletCATSend.tsx:119
+#: src/components/WalletSend.tsx:101
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Chinillaa (HCX) ei voi lähettää CAT-osoitteeseen. Anna chinilla-osoite."
 
@@ -462,6 +457,10 @@ msgstr "Chinilla Asset Token"
 #: src/electron/main.tsx:369
 #~ msgid "Chinilla Blockchain Wiki"
 #~ msgstr "Chinilla Blockchain Wiki"
+
+#: src/components/offers/OfferShareDialog.tsx:359
+msgid "Chinilla Offers URL"
+msgstr ""
 
 #: src/components/standard/WalletStandard.tsx:23
 #~ msgid "Chinilla Wallet"
@@ -595,10 +594,6 @@ msgstr "Vahvistettu korkeudessa"
 
 #: src/components/WalletStatusHeader.tsx:33
 msgid "Connected ({0})"
-msgstr "Yhdistetty ({0})"
-
-#: src/components/WalletStatusHeader.tsx:33
-msgid "Connected ({0})"
 msgstr ""
 
 #: src/components/app/AppState.tsx:141
@@ -702,7 +697,6 @@ msgstr "Luo Siirtorajoitettu Käyttäjälompakko"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:136
 #: src/components/cat/WalletCATSend.tsx:177
 #: src/components/rateLimited/WalletRateLimited.jsx:683
 #: src/components/WalletSend.tsx:136
@@ -1080,8 +1074,8 @@ msgstr "Komennon suorittaminen Keybaseen epäonnistui: {stderr}"
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:184
 #: src/components/cat/WalletCATSend.tsx:241
+#: src/components/WalletSend.tsx:184
 msgid "Farm"
 msgstr "Farmi"
 
@@ -1142,8 +1136,6 @@ msgstr "Farmi"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
 #: src/components/cat/WalletCATSend.tsx:220
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
@@ -1402,15 +1394,19 @@ msgid "Install Keybase"
 msgstr "Asenna Keybase"
 
 #: src/components/offers/OfferViewer.tsx:358
-msgid "Insufficient funds available to accept offer. Ensure that your\n"
+msgid ""
+"Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr "Riittämätön määrä varoja tarjouksen hyväksymiseen. Varmista, että\n"
+msgstr ""
+"Riittämätön määrä varoja tarjouksen hyväksymiseen. Varmista, että\n"
 "käytettävissä oleva saldo riittää tarjouksen määrän kattamiseen."
 
 #: src/components/offers/OfferEditor.tsx:166
-msgid "Insufficient funds available to create offer. Ensure that your\n"
+msgid ""
+"Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr "Riittämätön määrä varoja tarjouksen luomiseen. Varmista, että\n"
+msgstr ""
+"Riittämätön määrä varoja tarjouksen luomiseen. Varmista, että\n"
 "käytettävissä oleva saldo riittää tarjouksen määrän kattamiseen."
 
 #: src/components/create/createRLAdmin.jsx:217
@@ -1606,7 +1602,6 @@ msgstr "Hallitse tokenilistaa"
 
 #: src/components/cat/WalletCATSend.tsx:232
 #: src/components/WalletHistory.tsx:116
-#: src/components/cat/WalletCATSend.tsx:232
 msgid "Memo"
 msgstr "Muistio"
 
@@ -1846,8 +1841,8 @@ msgid "Offer has been accepted and is awaiting confirmation."
 msgstr "Tarjous on hyväksytty ja odottaa vahvistusta."
 
 #: src/components/offers/OfferShareDialog.tsx:350
-msgid "OfferBin URL"
-msgstr "OfferBin URL"
+#~ msgid "OfferBin URL"
+#~ msgstr "OfferBin URL"
 
 #: src/components/offers/OfferManager.tsx:300
 msgid "Offered"
@@ -1865,8 +1860,8 @@ msgstr "Hyväksymäsi tarjoukset"
 msgid "Offers you created"
 msgstr "Luomasi tarjoukset"
 
-#: src/components/WalletSend.tsx:139
 #: src/components/cat/WalletCATSend.tsx:180
+#: src/components/WalletSend.tsx:139
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Transaktiolohkon väli on keskimäärin minuutti. Ruuhkattomana aikana transaktiosi voidaan lisätä alle minuutissa lohkoketjuun."
 
@@ -2037,7 +2032,6 @@ msgstr "Anna käypä kolikoiden määrä"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Syötä kelvollinen 0 tai suurempi kokonaisluku varmuuskopion tunnusten lukumäärälle, jota tarvitaan palauttamiseen."
 
-#: src/components/WalletSend.tsx:91
 #: src/components/cat/WalletCATSend.tsx:105
 #: src/components/rateLimited/WalletRateLimited.jsx:638
 #: src/components/WalletSend.tsx:91
@@ -2048,7 +2042,6 @@ msgstr "Anna käypä numeerinen arvo"
 msgid "Please enter a valid numeric amount."
 msgstr "Anna kelvollinen numeerinen summa."
 
-#: src/components/WalletSend.tsx:96
 #: src/components/cat/WalletCATSend.tsx:110
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
@@ -2094,7 +2087,6 @@ msgstr "Anna kelvollinen lompakon nimi"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:86
 #: src/components/cat/WalletCATSend.tsx:96
 #: src/components/rateLimited/WalletRateLimited.jsx:622
 #: src/components/WalletSend.tsx:86
@@ -2599,10 +2591,13 @@ msgstr "Tallenna Tarjoustiedosto"
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:130
-#: src/components/cat/WalletCATTAILDialog.tsx:71
-#: src/components/offers/OfferSummaryRow.tsx:95
 msgid "Search on Tail Database"
 msgstr "Etsi Tail-tietokannasta"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+#: src/components/offers/OfferSummaryRow.tsx:95
+msgid "Search on Token Database"
+msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 #~ msgid "Second temporary folder location"
@@ -2698,8 +2693,6 @@ msgstr "Valittu palautustiedosto:"
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
 #: src/components/cat/WalletCATSend.tsx:251
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
@@ -2759,10 +2752,10 @@ msgid "Share on Keybase"
 msgstr "Jaa KeyBasessa"
 
 #: src/components/offers/OfferShareDialog.tsx:396
-msgid "Share on OfferBin"
-msgstr "Jaa OfferBinissä"
+#~ msgid "Share on OfferBin"
+#~ msgstr "Jaa OfferBinissä"
 
-#: src/components/offers/OfferShareDialog.tsx:885
+#: src/components/offers/OfferShareDialog.tsx:894
 msgid "Share on offerpool"
 msgstr "Jaa Offerpoolissa"
 
@@ -2922,7 +2915,6 @@ msgstr "Onnistui"
 
 #: src/components/offers/OfferViewer.tsx:452
 #: src/components/WalletHeader.tsx:58
-#: src/components/offers/OfferViewer.tsx:452
 msgid "Summary"
 msgstr "Yhteenveto"
 
@@ -3388,13 +3380,17 @@ msgstr "Käyttäjän julkinen avain"
 msgid "View an Offer"
 msgstr "Näytä Tarjous"
 
-#: src/components/offers/OfferShareDialog.tsx:509
+#: src/components/offers/OfferShareDialog.tsx:377
+msgid "View on Chinilla Offers"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:518
 msgid "View on Hashgreen DEX"
 msgstr "Näytä Hashgreen DEX:ssä"
 
 #: src/components/offers/OfferShareDialog.tsx:368
-msgid "View on OfferBin"
-msgstr "Näytä OfferBinissä"
+#~ msgid "View on OfferBin"
+#~ msgstr "Näytä OfferBinissä"
 
 #: src/components/rateLimited/WalletRateLimited.jsx:561
 msgid "View pending balances"
@@ -3804,4 +3800,3 @@ msgstr "{vojos, plural, one {vojo} other {vojoa}}"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"
 #~ msgstr "{warning}"
-

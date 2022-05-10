@@ -129,14 +129,12 @@ msgstr "Pridať vlastný token"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:158
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
 #: src/components/hero/WalletHeroWallets.tsx:83
 #: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:143
+#: src/components/WalletsManageTokens.tsx:158
 msgid "Add Token"
 msgstr "Pridať token"
 
@@ -177,7 +175,6 @@ msgstr "Pridávanie tokenu {0}"
 msgid "Address"
 msgstr "Adresa"
 
-#: src/components/WalletSend.tsx:154
 #: src/components/cat/WalletCATSend.tsx:196
 #: src/components/rateLimited/WalletRateLimited.jsx:700
 #: src/components/WalletSend.tsx:154
@@ -196,8 +193,6 @@ msgstr "Adresa"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/offers/OfferEditorConditionsPanel.tsx:121
 #: src/components/offers/OfferViewer.tsx:226
@@ -413,8 +408,8 @@ msgstr "Zrušiť ponuku"
 msgid "Cancel on blockchain"
 msgstr "Zrušiť na blockchaine"
 
-#: src/components/WalletSend.tsx:101
 #: src/components/cat/WalletCATSend.tsx:119
+#: src/components/WalletSend.tsx:101
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Chinilla nie je možné odoslať na farebnú adresu. Zadajte prosím Chinilla adresu."
 
@@ -599,10 +594,6 @@ msgstr "Potvrdené na pozícii"
 
 #: src/components/WalletStatusHeader.tsx:33
 msgid "Connected ({0})"
-msgstr "Pripojené ({0})"
-
-#: src/components/WalletStatusHeader.tsx:33
-msgid "Connected ({0})"
 msgstr ""
 
 #: src/components/app/AppState.tsx:141
@@ -706,7 +697,6 @@ msgstr "Vytvoriť Používateľskú Peňaženku s Obmedzenou Sadzbou"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:136
 #: src/components/cat/WalletCATSend.tsx:177
 #: src/components/rateLimited/WalletRateLimited.jsx:683
 #: src/components/WalletSend.tsx:136
@@ -1084,8 +1074,8 @@ msgstr "Nepodarilo sa vykonať Keybase príkaz: {stderr}"
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:184
 #: src/components/cat/WalletCATSend.tsx:241
+#: src/components/WalletSend.tsx:184
 msgid "Farm"
 msgstr "Farma"
 
@@ -1146,8 +1136,6 @@ msgstr "Farma"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
 #: src/components/cat/WalletCATSend.tsx:220
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
@@ -1406,15 +1394,19 @@ msgid "Install Keybase"
 msgstr "Nainštalovať Keybase"
 
 #: src/components/offers/OfferViewer.tsx:358
-msgid "Insufficient funds available to accept offer. Ensure that your\n"
+msgid ""
+"Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr "Nedostatok finančných prostriedkov na prijatie ponuky. Uistite sa, že váš\n"
+msgstr ""
+"Nedostatok finančných prostriedkov na prijatie ponuky. Uistite sa, že váš\n"
 "disponibilný zostatok je dostatočný na pokrytie ponuky."
 
 #: src/components/offers/OfferEditor.tsx:166
-msgid "Insufficient funds available to create offer. Ensure that your\n"
+msgid ""
+"Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr "Nedostatok finančných prostriedkov na vytvorenie ponuky. Uistite sa, že váš\n"
+msgstr ""
+"Nedostatok finančných prostriedkov na vytvorenie ponuky. Uistite sa, že váš\n"
 "disponibilný zostatok je dostatočný na pokrytie ponuky."
 
 #: src/components/create/createRLAdmin.jsx:217
@@ -1610,7 +1602,6 @@ msgstr "Spravovať zoznam tokenov"
 
 #: src/components/cat/WalletCATSend.tsx:232
 #: src/components/WalletHistory.tsx:116
-#: src/components/cat/WalletCATSend.tsx:232
 msgid "Memo"
 msgstr "Poznámka"
 
@@ -1850,8 +1841,8 @@ msgid "Offer has been accepted and is awaiting confirmation."
 msgstr "Ponuka bola prijatá a čaká na potvrdenie."
 
 #: src/components/offers/OfferShareDialog.tsx:350
-msgid "OfferBin URL"
-msgstr "OfferBin URL"
+#~ msgid "OfferBin URL"
+#~ msgstr "OfferBin URL"
 
 #: src/components/offers/OfferManager.tsx:300
 msgid "Offered"
@@ -1869,8 +1860,8 @@ msgstr "Ponuky, ktoré ste prijali"
 msgid "Offers you created"
 msgstr "Ponuky, ktoré ste vytvorili"
 
-#: src/components/WalletSend.tsx:139
 #: src/components/cat/WalletCATSend.tsx:180
+#: src/components/WalletSend.tsx:139
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Priemerný čas medzi jednotlivými blokmi transakcií je jedna minúta. Ak nedôjde k preťaženiu, môžete očakávať, že vaša transakcia bude zahrnutá za menej ako minútu."
 
@@ -2041,7 +2032,6 @@ msgstr "Prosím zadajte platnú počiatočnú sumu"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Zadajte prosím platné celé číslo od 0 alebo vyššie pre počet záložných ID potrebných na obnovu."
 
-#: src/components/WalletSend.tsx:91
 #: src/components/cat/WalletCATSend.tsx:105
 #: src/components/rateLimited/WalletRateLimited.jsx:638
 #: src/components/WalletSend.tsx:91
@@ -2052,7 +2042,6 @@ msgstr "Prosím zadajte platnú číselnú sumu"
 msgid "Please enter a valid numeric amount."
 msgstr "Zadajte prosím platnú číselnú sumu."
 
-#: src/components/WalletSend.tsx:96
 #: src/components/cat/WalletCATSend.tsx:110
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
@@ -2098,7 +2087,6 @@ msgstr "Prosím zadajte platný názov peňaženky"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:86
 #: src/components/cat/WalletCATSend.tsx:96
 #: src/components/rateLimited/WalletRateLimited.jsx:622
 #: src/components/WalletSend.tsx:86
@@ -2603,10 +2591,13 @@ msgstr "Uložiť súbor ponuky"
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:130
-#: src/components/cat/WalletCATTAILDialog.tsx:71
-#: src/components/offers/OfferSummaryRow.tsx:95
 msgid "Search on Tail Database"
 msgstr "Hľadať v Tail databáze"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+#: src/components/offers/OfferSummaryRow.tsx:95
+msgid "Search on Token Database"
+msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 #~ msgid "Second temporary folder location"
@@ -2702,8 +2693,6 @@ msgstr "Vybratý obnovovací súbor:"
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
 #: src/components/cat/WalletCATSend.tsx:251
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
@@ -2763,10 +2752,10 @@ msgid "Share on Keybase"
 msgstr "Zdieľať na Keybase"
 
 #: src/components/offers/OfferShareDialog.tsx:396
-msgid "Share on OfferBin"
-msgstr "Zdieľať na OfferBin"
+#~ msgid "Share on OfferBin"
+#~ msgstr "Zdieľať na OfferBin"
 
-#: src/components/offers/OfferShareDialog.tsx:885
+#: src/components/offers/OfferShareDialog.tsx:894
 msgid "Share on offerpool"
 msgstr "Zdieľať na offerpool"
 
@@ -2926,7 +2915,6 @@ msgstr "Úspech"
 
 #: src/components/offers/OfferViewer.tsx:452
 #: src/components/WalletHeader.tsx:58
-#: src/components/offers/OfferViewer.tsx:452
 msgid "Summary"
 msgstr "Zhrnutie"
 
@@ -3392,13 +3380,17 @@ msgstr "Používateľov verejný kľúč"
 msgid "View an Offer"
 msgstr "Zobraziť ponuku"
 
-#: src/components/offers/OfferShareDialog.tsx:509
+#: src/components/offers/OfferShareDialog.tsx:377
+msgid "View on Chinilla Offers"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:518
 msgid "View on Hashgreen DEX"
 msgstr "Zobraziť na Hashgreen DEX"
 
 #: src/components/offers/OfferShareDialog.tsx:368
-msgid "View on OfferBin"
-msgstr "Zobraziť na OfferBin"
+#~ msgid "View on OfferBin"
+#~ msgstr "Zobraziť na OfferBin"
 
 #: src/components/rateLimited/WalletRateLimited.jsx:561
 msgid "View pending balances"
@@ -3808,4 +3800,3 @@ msgstr "{vojos, plural, one {vojo} few {vojos} many {vojos} other {vojos}}"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"
 #~ msgstr "{warning}"
-
