@@ -8,15 +8,15 @@ msgstr ""
 "Language: en_US\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-09-17 17:39\n"
+"PO-Revision-Date: 2022-05-09 18:33\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: chinilla-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: en\n"
-"X-Crowdin-File: /[Chinilla.chinilla-blockchain-gui] main/src/locales/en-US/messages.po\n"
-"X-Crowdin-File-ID: 118\n"
+"X-Crowdin-File: /main/packages/gui/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1888\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:74
 msgid "(Not Installed)"
@@ -31,12 +31,8 @@ msgid "(Optional)"
 msgstr "(Optional)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:60
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
-msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
-
-#: src/components/farm/FarmLatestBlockChallenges.tsx:58
-#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-#~ msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -50,6 +46,10 @@ msgstr "+ Add New Plot NFT"
 #~ msgid "+ Add Wallet"
 #~ msgstr "+ Add Wallet"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:49
+msgid "+ Add a Plot"
+msgstr "+ Add a Plot"
+
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
 #~ msgid "0 automatically chooses bucket count"
 #~ msgstr ""
@@ -60,7 +60,7 @@ msgstr "+ Add New Plot NFT"
 
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:95
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
-msgstr "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
+msgstr "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below. Learn more"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:155
 msgid "A value of {0} is recommended"
@@ -79,9 +79,11 @@ msgstr "About Chinilla Blockchain"
 #~ msgid "Accepted at time:"
 #~ msgstr "Accepted at time:"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
-#: src/components/plot/PlotsFailed.tsx:18
-#: src/components/plot/PlotsNotFound.tsx:18
+#: src/components/plot/PlotHarvesterPlots.tsx:79
+#: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:18
+#: src/components/plot/PlotHarvesterPlotsFailed.tsx:18
+#: src/components/plot/PlotHarvesterPlotsNotFound.tsx:18
+#: src/components/plot/PlotPlotting.tsx:29
 msgid "Action"
 msgstr "Action"
 
@@ -101,6 +103,7 @@ msgstr "Actions"
 #~ msgstr "Add Backup ID"
 
 #: src/components/plot/PlotHeader.tsx:88
+#: src/components/plot/overview/PlotOverviewPlots.tsx:65
 msgid "Add Plot Directory"
 msgstr "Add Plot Directory"
 
@@ -112,12 +115,12 @@ msgstr "Add Plot to Queue"
 #~ msgid "Add Wallet"
 #~ msgstr "Add Wallet"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:41
-#: src/components/plot/add/PlotAddForm.tsx:173
-#: src/components/plot/overview/PlotOverviewHero.tsx:52
+#: src/components/farm/FarmHero.tsx:40
 #: src/components/plot/PlotHeader.tsx:60
+#: src/components/plot/add/PlotAddForm.tsx:173
+#: src/components/plot/overview/PlotOverviewHero.tsx:51
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:229
-#: src/components/plotNFT/PlotNFTCard.tsx:269
+#: src/components/plotNFT/PlotNFTCard.tsx:268
 msgid "Add a Plot"
 msgstr "Add a Plot"
 
@@ -178,7 +181,7 @@ msgstr "Alternate tmpdir/tmpdir2"
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Are you sure you want to delete the plot? The plot cannot be recovered."
 
-#: src/components/plotNFT/PlotNFTCard.tsx:126
+#: src/components/plotNFT/PlotNFTCard.tsx:127
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr "Are you sure you want to delete unconfirmed transactions?"
 
@@ -287,9 +290,9 @@ msgstr "Blocks"
 msgid "Browse"
 msgstr "Browse"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:72
-msgid "But you are currently farming <0/>"
-msgstr "But you are currently farming <0/>"
+#: src/components/farm/FarmLastAttemptedProof.tsx:74
+#~ msgid "But you are currently farming <0/>"
+#~ msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:162
 #: src/components/trading/TradesTable.tsx:46
@@ -329,8 +332,8 @@ msgstr "Cancel"
 #~ msgstr "Cancel and Spend"
 
 #: src/components/plot/PlotsNotFound.tsx:36
-msgid "Caution, deleting these plots will delete them forever. Check that the storage devices are properly connected."
-msgstr "Caution, deleting these plots will delete them forever. Check that the storage devices are properly connected."
+#~ msgid "Caution, deleting these plots will delete them forever. Check that the storage devices are properly connected."
+#~ msgstr ""
 
 #: src/components/farm/FarmLastAttemptedProof.tsx:14
 msgid "Challenge"
@@ -350,7 +353,7 @@ msgstr "Change"
 msgid "Change Passphrase"
 msgstr "Change Passphrase"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:405
+#: src/components/plotNFT/PlotNFTCard.tsx:404
 #: src/components/plotNFT/PlotNFTChangePool.tsx:121
 msgid "Change Pool"
 msgstr "Change Pool"
@@ -396,7 +399,7 @@ msgid "Choose Wallet Mode"
 msgstr "Choose Wallet Mode"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
-#: src/components/plotNFT/PlotNFTCard.tsx:381
+#: src/components/plotNFT/PlotNFTCard.tsx:380
 msgid "Claim Rewards"
 msgstr "Claim Rewards"
 
@@ -470,7 +473,7 @@ msgstr "Confirm New Passphrase"
 msgid "Confirm Passphrase"
 msgstr "Confirm Passphrase"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:119
+#: src/components/plotNFT/PlotNFTCard.tsx:120
 msgid "Confirmation"
 msgstr "Confirmation"
 
@@ -489,7 +492,7 @@ msgstr "Connect"
 
 #: src/components/block/FullNodeAddConnection.tsx:64
 #: src/components/fullNode/FullNodeAddConnection.tsx:63
-#: src/components/fullNode/FullNodeConnections.tsx:109
+#: src/components/fullNode/FullNodeConnections.tsx:110
 msgid "Connect to other peers"
 msgstr "Connect to other peers"
 
@@ -659,7 +662,7 @@ msgid "Currency code is not defined"
 msgstr "Currency code is not defined"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:138
-#: src/components/plotNFT/PlotNFTCard.tsx:178
+#: src/components/plotNFT/PlotNFTCard.tsx:177
 msgid "Current Difficulty"
 msgstr "Current Difficulty"
 
@@ -668,7 +671,7 @@ msgid "Current Passphrase"
 msgstr "Current Passphrase"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:155
-#: src/components/plotNFT/PlotNFTCard.tsx:195
+#: src/components/plotNFT/PlotNFTCard.tsx:194
 msgid "Current Points Balance"
 msgstr "Current Points Balance"
 
@@ -700,7 +703,7 @@ msgstr "Delay"
 #: src/components/plot/PlotAction.tsx:51
 #: src/components/plot/queue/PlotQueueActions.tsx:41
 #: src/components/plot/queue/PlotQueueActions.tsx:93
-#: src/components/plotNFT/PlotNFTCard.tsx:120
+#: src/components/plotNFT/PlotNFTCard.tsx:121
 msgid "Delete"
 msgstr "Delete"
 
@@ -713,7 +716,7 @@ msgstr "Delete Key"
 msgid "Delete Plot"
 msgstr "Delete Plot"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:312
+#: src/components/plotNFT/PlotNFTCard.tsx:311
 msgid "Delete Unconfirmed Transactions"
 msgstr "Delete Unconfirmed Transactions"
 
@@ -800,8 +803,8 @@ msgstr "Disconnect"
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:47
-#: src/components/plot/overview/PlotOverviewHero.tsx:67
+#: src/components/farm/FarmHero.tsx:46
+#: src/components/plot/overview/PlotOverviewHero.tsx:66
 msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
 msgstr "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
 
@@ -825,12 +828,20 @@ msgstr "Drag and drop your backup file"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr "Drag and drop your recovery backup file"
 
+#: src/components/plot/PlotHarvester.tsx:131
+msgid "Duplicate"
+msgstr "Duplicate"
+
+#: src/components/plot/card/PlotCardPlotsDuplicate.tsx:11
+msgid "Duplicate Plots"
+msgstr "Duplicate Plots"
+
 #: src/electron/main.tsx:348
 msgid "Edit"
 msgstr "Edit"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:258
-#: src/components/plotNFT/PlotNFTCard.tsx:298
+#: src/components/plotNFT/PlotNFTCard.tsx:297
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:80
 msgid "Edit Payout Instructions"
 msgstr "Edit Payout Instructions"
@@ -877,8 +888,8 @@ msgstr "Error"
 msgid "Estimated Network Space"
 msgstr "Estimated Network Space"
 
-#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:43
-#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:51
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:47
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:55
 msgid "Estimated Time to Win"
 msgstr "Estimated Time to Win"
 
@@ -899,9 +910,13 @@ msgstr "Exclude final directory"
 #~ msgid "Expected Time to Win"
 #~ msgstr ""
 
+#: src/components/plot/PlotHarvester.tsx:118
+msgid "Failed"
+msgstr "Failed"
+
 #: src/components/plot/PlotsFailed.tsx:34
-msgid "Failed to open (invalid plots)"
-msgstr "Failed to open (invalid plots)"
+#~ msgid "Failed to open (invalid plots)"
+#~ msgstr ""
 
 #: src/components/settings/ChangePassphrasePrompt.tsx:97
 #~ msgid "Failed to remove passphrase: {error}"
@@ -968,11 +983,12 @@ msgstr "Farmer is not running"
 #~ msgid "Farmer public key:"
 #~ msgstr "Farmer public key:"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:28
+#: src/components/farm/FarmHero.tsx:27
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:95
+#: src/components/dashboard/DashboardSideBar.tsx:94
+#: src/components/farm/FarmerStatus.tsx:18
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1026,9 +1042,10 @@ msgstr "Fees Amount"
 msgid "File"
 msgstr "File"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
-#: src/components/plot/PlotsFailed.tsx:13
-#: src/components/plot/PlotsNotFound.tsx:13
+#: src/components/plot/PlotHarvesterPlots.tsx:71
+#: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:13
+#: src/components/plot/PlotHarvesterPlotsFailed.tsx:13
+#: src/components/plot/PlotHarvesterPlotsNotFound.tsx:13
 msgid "Filename"
 msgstr "Filename"
 
@@ -1049,7 +1066,7 @@ msgstr "Follow on Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Frequently Asked Questions"
 
-#: src/components/dashboard/DashboardSideBar.tsx:76
+#: src/components/dashboard/DashboardSideBar.tsx:75
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Full Node"
@@ -1084,7 +1101,7 @@ msgstr "Github Discussions"
 
 #: src/components/pool/PoolOverview.tsx:172
 #~ msgid "Grid view"
-#~ msgstr "Grid view"
+#~ msgstr ""
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:576
 #~ msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
@@ -1095,8 +1112,12 @@ msgstr "Github Discussions"
 #~ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:132
-msgid "Harvester Plots"
-msgstr "Harvester Plots"
+#~ msgid "Harvester Plots"
+#~ msgstr ""
+
+#: src/components/plot/PlotHarvesters.tsx:39
+msgid "Harvesters"
+msgstr "Harvesters"
 
 #: src/components/fullNode/FullNode.jsx:57
 msgid "Header Hash"
@@ -1137,6 +1158,12 @@ msgstr "Hint"
 #~ msgid "History"
 #~ msgstr "History"
 
+#: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:65
+#: src/components/plot/PlotHarvesterPlotsFailed.tsx:65
+#: src/components/plot/PlotHarvesterPlotsNotFound.tsx:65
+msgid "Hooray, no files here!"
+msgstr "Hooray, no files here!"
+
 #: src/components/farm/FarmFullNodeConnections.tsx:35
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:35
 msgid "Host Name"
@@ -1153,7 +1180,7 @@ msgstr "IP address / host"
 
 #: src/components/settings/Settings.tsx:258
 #~ msgid "Identities"
-#~ msgstr "Identities"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:129
 msgid "If none selected, then it will default to the temporary directory."
@@ -1204,6 +1231,10 @@ msgstr "Index"
 #~ msgid "Initialize a Rate Limited User Wallet:"
 #~ msgstr "Initialize a Rate Limited User Wallet:"
 
+#: src/components/plot/PlotHarvesterPlots.tsx:125
+msgid "Initializing..."
+msgstr "Initializing..."
+
 #: src/components/_wallet_old/create/createRLAdmin.jsx:218
 #~ msgid "Interval"
 #~ msgstr "Interval"
@@ -1216,7 +1247,7 @@ msgstr "Invalid state"
 msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
 msgstr "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
 
-#: src/components/plotNFT/PlotNFTCard.tsx:403
+#: src/components/plotNFT/PlotNFTCard.tsx:402
 msgid "Join Pool"
 msgstr "Join Pool"
 
@@ -1244,7 +1275,8 @@ msgstr "Join a pool and get more consistent HCX farming rewards. Create a plot N
 msgid "Join farming pools"
 msgstr "Join farming pools"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:63
+#: src/components/plot/PlotHarvesterPlots.tsx:40
+#: src/components/plot/PlotPlotting.tsx:20
 msgid "K-Size"
 msgstr "K-Size"
 
@@ -1277,12 +1309,12 @@ msgstr "Last Height Farmed"
 msgid "Last Transaction Block Time"
 msgstr "Last Transaction Block Time"
 
-#: src/components/farm/FarmLatestBlockChallenges.tsx:32
+#: src/components/farm/FarmLatestBlockChallenges.tsx:31
 msgid "Latest Block Challenges"
 msgstr "Latest Block Challenges"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:294
-#: src/components/plotNFT/PlotNFTCard.tsx:347
+#: src/components/plotNFT/PlotNFTCard.tsx:346
 msgid "Launcher Id"
 msgstr "Launcher Id"
 
@@ -1297,15 +1329,19 @@ msgstr "Leaving Pool"
 
 #: src/components/pool/PoolOverview.tsx:172
 #~ msgid "List view"
-#~ msgstr "List view"
+#~ msgstr ""
 
 #: src/components/pool/Pool.tsx:21
 #~ msgid "Loading Plot NFTs"
 #~ msgstr "Loading Plot NFTs"
 
-#: src/components/app/AppProviders.tsx:65
+#: src/components/app/AppProviders.tsx:66
 msgid "Loading configuration"
 msgstr "Loading configuration"
+
+#: src/components/farm/Farm.tsx:24
+msgid "Loading farming data"
+msgstr "Loading farming data"
 
 #: src/components/app/AppState.tsx:117
 msgid "Loading keyring status"
@@ -1318,6 +1354,10 @@ msgstr "Loading keyring status"
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:34
 msgid "Loading..."
 msgstr "Loading..."
+
+#: src/components/plot/PlotHarvester.tsx:56
+msgid "Local"
+msgstr "Local"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:126
 #~ msgid "Local Harvester Plots"
@@ -1371,7 +1411,7 @@ msgstr "Loading..."
 msgid "Manage CAT tokens"
 msgstr "Manage CAT tokens"
 
-#: src/components/farm/overview/FarmOverview.tsx:49
+#: src/components/farm/FarmHeader.tsx:41
 msgid "Manage Farming Rewards"
 msgstr "Manage Farming Rewards"
 
@@ -1417,6 +1457,10 @@ msgstr "Minimum Difficulty"
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:98
 msgid "Minutes"
 msgstr "Minutes"
+
+#: src/components/plot/PlotHarvester.tsx:105
+msgid "Missing Keys"
+msgstr "Missing Keys"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:118
 msgid "More memory slightly increases speed"
@@ -1479,6 +1523,10 @@ msgstr "No"
 msgid "No blocks farmed yet"
 msgstr "No blocks farmed yet"
 
+#: src/components/plot/PlotHarvesterPlots.tsx:123
+msgid "No plots yet"
+msgstr "No plots yet"
+
 #: src/components/_wallet_old/WalletHistory.tsx:102
 #~ msgid "No previous transactions"
 #~ msgstr "No previous transactions"
@@ -1495,14 +1543,14 @@ msgid "Node ID"
 msgstr "Node ID"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:87
-msgid "Node Id"
-msgstr "Node Id"
+#~ msgid "Node Id"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:91
 msgid "None"
 msgstr "None"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:67
+#: src/components/farm/FarmLastAttemptedProof.tsx:68
 msgid "None of your plots have passed the plot filter yet."
 msgstr "None of your plots have passed the plot filter yet."
 
@@ -1510,7 +1558,7 @@ msgstr "None of your plots have passed the plot filter yet."
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
-#: src/components/plotNFT/PlotNFTCard.tsx:362
+#: src/components/plotNFT/PlotNFTCard.tsx:361
 msgid "Not Available"
 msgstr "Not Available"
 
@@ -1532,8 +1580,8 @@ msgid "Not connected"
 msgstr "Not connected"
 
 #: src/components/plot/PlotsNotFound.tsx:34
-msgid "Not found Plots"
-msgstr "Not found Plots"
+#~ msgid "Not found Plots"
+#~ msgstr ""
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
@@ -1544,7 +1592,7 @@ msgid "Note that this does not change your pooling payout addresses. This only a
 msgstr "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
-#: src/components/plotNFT/PlotNFTCard.tsx:157
+#: src/components/plotNFT/PlotNFTCard.tsx:158
 msgid "Number of Plots"
 msgstr "Number of Plots"
 
@@ -1568,7 +1616,7 @@ msgstr "OK"
 #~ msgid "Offer"
 #~ msgstr "Offer"
 
-#: src/components/dashboard/DashboardSideBar.tsx:64
+#: src/components/dashboard/DashboardSideBar.tsx:63
 msgid "Offers"
 msgstr "Offers"
 
@@ -1642,7 +1690,7 @@ msgstr "Passphrase protection is enabled"
 msgid "Passphrase support requires migrating your keys to a new keyring"
 msgstr "Passphrase support requires migrating your keys to a new keyring"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:358
+#: src/components/plotNFT/PlotNFTCard.tsx:357
 msgid "Payout Address"
 msgstr "Payout Address"
 
@@ -1821,13 +1869,13 @@ msgstr "Plot Count"
 msgid "Plot Id"
 msgstr "Plot Id"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:75
+#: src/components/plot/PlotHarvesterPlots.tsx:46
 msgid "Plot Key"
 msgstr "Plot Key"
 
 #: src/components/pool/PoolOverview.tsx:38
 #~ msgid "Plot NFT"
-#~ msgstr "Plot NFT"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:111
 #: src/components/plotNFT/PlotNFTChangePool.tsx:92
@@ -1854,7 +1902,7 @@ msgstr "Plot Size"
 msgid "Plot in Parallel"
 msgstr "Plot in Parallel"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:46
+#: src/components/plot/PlotHarvesterPlots.tsx:23
 msgid "Plot is duplicate of {0}"
 msgstr "Plot is a duplicate of {0}"
 
@@ -1866,25 +1914,43 @@ msgstr "Plot is a duplicate of {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 
-#: src/components/dashboard/DashboardSideBar.tsx:82
+#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "Plots"
+
+#: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:13
+msgid "Plots Failed To Open"
+msgstr "Plots Failed to Open"
 
 #: src/components/farm/FarmLastAttemptedProof.tsx:20
 msgid "Plots Passed Filter"
 msgstr "Plots Passed Filter"
 
+#: src/components/plot/card/PlotCardNotFound.tsx:11
+msgid "Plots With Missing Keys"
+msgstr "Plots with Missing Keys"
+
 #: src/components/plot/overview/PlotOverviewHero.tsx:33
-msgid "Plots are allocated space on your hard drive used to farm and earn Chinilla. <0>Learn more</0>"
-msgstr "Plots are allocated space on your hard drive used to farm and earn Chinilla. <0>Learn more</0>"
+#~ msgid "Plots are allocated space on your hard drive used to farm and earn Chinilla. <0>Learn more</0>"
+#~ msgstr ""
+
+#: src/components/plot/overview/PlotOverviewHero.tsx:33
+msgid "Plots are allocated space on your hard drive used to farm and earn Chinilla.<0>Learn more</0>"
+msgstr "Plots are allocated space on your hard drive used to farm and earn Chinilla.<0>Learn more</0>"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:103
 msgid "Plotter"
 msgstr "Plotter"
 
+#: src/components/plot/PlotPlotting.tsx:45
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
 msgstr "Plotting"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:45
+msgid "Plotting Manager"
+msgstr "Plotting Manager"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:58
 msgid "Plotting in parallel can save time. Otherwise, add plot(s) to the queue."
@@ -1899,17 +1965,17 @@ msgstr "Plotting with bitfield enabled has about 30% less overall writes and is 
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:173
-#: src/components/plotNFT/PlotNFTCard.tsx:213
+#: src/components/plotNFT/PlotNFTCard.tsx:212
 msgid "Points Found Since Start"
 msgstr "Points Found Since Start"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:184
-#: src/components/plotNFT/PlotNFTCard.tsx:224
+#: src/components/plotNFT/PlotNFTCard.tsx:223
 msgid "Points Found in Last 24 Hours"
 msgstr "Points Found in Last 24 Hours"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:193
-#: src/components/plotNFT/PlotNFTCard.tsx:233
+#: src/components/plotNFT/PlotNFTCard.tsx:232
 msgid "Points Successful in Last 24 Hours"
 msgstr "Points Successful in Last 24 Hours"
 
@@ -1918,11 +1984,11 @@ msgstr "Points Successful in Last 24 Hours"
 #~ msgid "Pool"
 #~ msgstr "Pool"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:100
+#: src/components/plot/PlotHarvesterPlots.tsx:65
 msgid "Pool Contract Address"
 msgstr "Pool Contract Address"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:81
+#: src/components/plot/PlotHarvesterPlots.tsx:52
 msgid "Pool Key"
 msgstr "Pool Key"
 
@@ -1987,12 +2053,12 @@ msgstr "Pool does not provide targetPuzzleHash."
 #~ msgstr "Pool public key:"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:271
-#: src/components/plotNFT/PlotNFTCard.tsx:324
+#: src/components/plotNFT/PlotNFTCard.tsx:323
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:65
 msgid "Pool:"
 msgstr "Pool:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:100
+#: src/components/dashboard/DashboardSideBar.tsx:99
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2068,13 +2134,14 @@ msgstr "Protocol Version"
 #~ msgid "Puzzlehash"
 #~ msgstr "Puzzlehash"
 
+#: src/components/plot/PlotPlotting.tsx:23
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:204
 msgid "Queue Name"
 msgstr "Queue Name"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:69
-msgid "Queue name"
-msgstr "Queue Name"
+#~ msgid "Queue name"
+#~ msgstr "Queue Name"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:35
 msgid "Queued"
@@ -2144,8 +2211,9 @@ msgstr "Recommended"
 #~ msgid "Recover Wallet"
 #~ msgstr "Recover Wallet"
 
-#: src/components/plot/overview/PlotOverviewHero.tsx:60
 #: src/components/plot/PlotHeader.tsx:75
+#: src/components/plot/overview/PlotOverviewHero.tsx:59
+#: src/components/plot/overview/PlotOverviewPlots.tsx:78
 msgid "Refresh Plots"
 msgstr "Refresh Plots"
 
@@ -2156,6 +2224,10 @@ msgstr "Relative Lock Height"
 #: src/electron/main.tsx:465
 msgid "Release Notes"
 msgstr "Release Notes"
+
+#: src/components/plot/PlotHarvester.tsx:56
+msgid "Remote"
+msgstr "Remote"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:98
 #: src/components/settings/RemovePassphrasePrompt.tsx:143
@@ -2336,7 +2408,7 @@ msgstr "Set Passphrase"
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:109
+#: src/components/dashboard/DashboardSideBar.tsx:108
 #: src/components/settings/Settings.tsx:248
 msgid "Settings"
 msgstr "Settings"
@@ -2365,7 +2437,7 @@ msgstr "Settings"
 #: src/components/app/AppKeyringMigrator.tsx:57
 #: src/components/app/AppKeyringMigrator.tsx:218
 msgid "Skip"
-msgstr ""
+msgstr "Skip"
 
 #: src/components/app/AppKeyringMigrator.tsx:56
 msgid "Skip Keyring Migration"
@@ -2437,9 +2509,10 @@ msgstr "State"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:62
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:70
-#: src/components/plot/overview/PlotOverviewPlots.tsx:110
+#: src/components/plot/PlotHarvesterPlots.tsx:75
+#: src/components/plot/PlotPlotting.tsx:26
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:112
-#: src/components/plotNFT/PlotNFTCard.tsx:142
+#: src/components/plotNFT/PlotNFTCard.tsx:143
 msgid "Status"
 msgstr "Status"
 
@@ -2566,7 +2639,7 @@ msgstr "The node is syncing to reach the latest block in the chain by downloadin
 
 #: src/hooks/usePoolInfo.ts:56
 msgid "The pool URL \"{normalizedUrl}\" is not working. Is it pool? Error: {0}"
-msgstr "The pool URL \"{normalizedUrl}\" is not working. Is it pool? Error: {0}"
+msgstr "The pool URL \"{normalizedUrl}\" is not working. Is it a pool? Error: {0}"
 
 #: src/hooks/usePoolInfo.ts:44
 msgid "The pool URL is not valid. {normalizedUrl}"
@@ -2612,7 +2685,7 @@ msgstr "The total transactions fees in this block. Rewarded to the farmer."
 msgid "These are the instructions for how the farmer wants to get paid. By default this will be an HCX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 msgstr "These are the instructions for how the farmer wants to get paid. By default this will be an HCX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 
-#: src/components/plot/PlotsFailed.tsx:36
+#: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:15
 msgid "These plots are invalid, you might want to delete them."
 msgstr "These plots are invalid, you may want to delete them."
 
@@ -2621,7 +2694,7 @@ msgid "This allows you to add a directory that has plots in it. If you have not 
 msgstr "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:129
-#: src/components/plotNFT/PlotNFTCard.tsx:169
+#: src/components/plotNFT/PlotNFTCard.tsx:168
 msgid "This difficulty is an artifically lower difficulty than on the real network, and is used when farming, in order to find more proofs and send them to the pool. The more plots you have, the higher difficulty you will have. However, the difficulty does not affect rewards."
 msgstr "This difficulty is an artificially lower difficulty than on the real network and is used when farming, in order to find more proofs and send them to the pool. The more plots you have, the higher difficulty you will have. However, the difficulty does not affect rewards."
 
@@ -2662,14 +2735,14 @@ msgstr "This is the timestamp of the most recent transaction block."
 #~ msgstr "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:148
-#: src/components/plotNFT/PlotNFTCard.tsx:188
+#: src/components/plotNFT/PlotNFTCard.tsx:187
 msgid "This is the total number of points this plotNFT has with this pool, since the last payout. The pool will reset the points after making a payout."
 msgstr "This is the total number of points this plotNFT has with this pool, since the last payout. The pool will reset the points after making a payout."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:165
-#: src/components/plotNFT/PlotNFTCard.tsx:205
+#: src/components/plotNFT/PlotNFTCard.tsx:204
 msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
-msgstr "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
+msgstr "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, you should expect around 1000 points per day, or 41 points per hour."
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:52
 msgid "This node is fully caught up and validating the network"
@@ -2723,7 +2796,7 @@ msgstr "Timestamp"
 #~ msgid "To"
 #~ msgstr "To"
 
-#: src/components/dashboard/DashboardSideBar.tsx:52
+#: src/components/dashboard/DashboardSideBar.tsx:51
 msgid "Tokens"
 msgstr "Tokens"
 
@@ -2735,7 +2808,11 @@ msgstr "Tokens"
 
 #: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:27
 msgid "Total Chinilla Farmed"
-msgstr ""
+msgstr "Total Chinilla Farmed"
+
+#: src/components/plot/card/PlotCardTotalHarvesters.tsx:11
+msgid "Total Harvesters"
+msgstr "Total Harvesters"
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:14
 msgid "Total Iterations"
@@ -2746,8 +2823,16 @@ msgid "Total Network Space"
 msgstr "Total Network Space"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:146
-msgid "Total Plot Size:"
-msgstr "Total Plot Size:"
+#~ msgid "Total Plot Size:"
+#~ msgstr ""
+
+#: src/components/plot/card/PlotCardTotalPlots.tsx:11
+msgid "Total Plots"
+msgstr "Total Plots"
+
+#: src/components/plot/card/PlotCardTotalPlotsSize.tsx:11
+msgid "Total Plots Size"
+msgstr "Total Plots Size"
 
 #: src/components/farm/card/FarmCardTotalSizeOfPlots.tsx:11
 msgid "Total Size of Plots"
@@ -2809,7 +2894,7 @@ msgstr "Transactions Filter Hash"
 #~ msgid "Unable to create plot NFT"
 #~ msgstr "Unable to create plot NFT"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:147
+#: src/components/plotNFT/PlotNFTCard.tsx:148
 msgid "Unclaimed Rewards"
 msgstr "Unclaimed Rewards"
 
@@ -2880,7 +2965,7 @@ msgstr "View Log"
 #~ msgid "View Payout Instructions"
 #~ msgstr "View Payout Instructions"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:283
+#: src/components/plotNFT/PlotNFTCard.tsx:282
 msgid "View Pool Login Link"
 msgstr "View Pool Login Link"
 
@@ -2918,7 +3003,7 @@ msgstr "Wallet Mode"
 
 #: src/components/pool/PoolOverview.tsx:181
 #~ msgid "Wallet Status:"
-#~ msgstr "Wallet Status:"
+#~ msgstr ""
 
 #: src/components/_wallet_old/did/WalletDID.tsx:1121
 #~ msgid "Wallet does not exists"
@@ -2969,8 +3054,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Want to Join a Pool? Create a Plot NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more Chinilla? Add more plots to your farm."
-msgstr "Want to earn more Chinilla? Add more plots to your farm."
+#~ msgid "Want to earn more Chinilla? Add more plots to your farm."
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:87
 msgid "Want to have a delay before the next plot starts?"
@@ -3039,7 +3124,7 @@ msgstr "You are not self pooling"
 msgid "You can always change your mode later in the settings"
 msgstr "You can always change your mode later in the settings"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:421
+#: src/components/plotNFT/PlotNFTCard.tsx:420
 msgid "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
 msgstr "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
 
@@ -3063,7 +3148,7 @@ msgstr "You do not need to be synced or connected to plot. Temporary files are c
 #~ msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation."
 #~ msgstr ""
 
-#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:54
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:58
 msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3 to 4 times longer than this estimate."
 msgstr "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3 to 4 times longer than this estimate."
 
@@ -3100,7 +3185,7 @@ msgstr "You will receive <0/> to {address}"
 #~ msgid "Your DID requires at least {dids_num_req} attestation file{0} for recovery. Please upload additional files."
 #~ msgstr "Your DID requires at least {dids_num_req} attestation file{0} for recovery. Please upload additional files."
 
-#: src/components/farm/overview/FarmOverview.tsx:33
+#: src/components/farm/FarmHeader.tsx:25
 msgid "Your Farm Overview"
 msgstr "Your Farm Overview"
 
@@ -3241,3 +3326,4 @@ msgstr "{0} points {1} - {2} hours ago"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr "{warning}"
+

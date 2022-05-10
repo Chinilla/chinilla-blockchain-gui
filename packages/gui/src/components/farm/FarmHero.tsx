@@ -4,10 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { Divider, Grid, Typography } from '@mui/material';
 import { Button, CardHero, Link, useOpenDialog } from '@chinilla/core';
 import { Farming } from '@chinilla/icons';
-import PlotAddDirectoryDialog from '../../plot/PlotAddDirectoryDialog';
+import PlotAddDirectoryDialog from '../plot/PlotAddDirectoryDialog';
 
-
-export default function FarmOverviewHero() {
+export default function FarmHero() {
   const navigate = useNavigate();
   const openDialog = useOpenDialog();
 

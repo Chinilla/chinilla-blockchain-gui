@@ -31,9 +31,8 @@ export default function PlotOverviewHero() {
           <Plots color="primary" fontSize="extraLarge" />
           <Typography variant="body1">
             <Trans>
-              {
-                'Plots are allocated space on your hard drive used to farm and earn Chinilla. '
-              }
+              Plots are allocated space on your hard drive used to farm and earn Chinilla.
+              &nbsp;
               <Link
                 target="_blank"
                 href="https://github.com/Chinilla/chinilla-blockchain/wiki/Network-Architecture"

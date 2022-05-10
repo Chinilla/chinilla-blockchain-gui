@@ -6,11 +6,11 @@ import { DeleteForever as DeleteForeverIcon } from '@mui/icons-material';
 import { useDeletePlotMutation } from '@chinilla/api-react';
 import type { Plot } from '@chinilla/api';
 
-type Props = {
+export type PlotActionProps = {
   plot: Plot;
 };
 
-export default function PlotAction(props: Props) {
+export default function PlotAction(props: PlotActionProps) {
   const {
     plot: { filename },
   } = props;

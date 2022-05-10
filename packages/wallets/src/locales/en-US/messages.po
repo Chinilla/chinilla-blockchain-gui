@@ -8,15 +8,15 @@ msgstr ""
 "Language: en_US\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-09-17 17:39\n"
+"PO-Revision-Date: 2022-05-09 18:35\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: chinilla-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: en\n"
-"X-Crowdin-File: /[Chinilla.chinilla-blockchain-gui] main/src/locales/en-US/messages.po\n"
-"X-Crowdin-File-ID: 118\n"
+"X-Crowdin-File: /main/packages/wallets/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 1890\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:74
 #~ msgid "(Not Installed)"
@@ -129,6 +129,8 @@ msgstr "Add Custom Token"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
+#: src/components/WalletsList.tsx:54
+#: src/components/WalletsManageTokens.tsx:158
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -175,6 +177,7 @@ msgstr "Adding {0} token"
 msgid "Address"
 msgstr "Address"
 
+#: src/components/WalletSend.tsx:154
 #: src/components/cat/WalletCATSend.tsx:196
 #: src/components/rateLimited/WalletRateLimited.jsx:700
 #: src/components/WalletSend.tsx:154
@@ -193,6 +196,8 @@ msgstr "Address / Puzzle hash"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
+#: src/components/WalletHistory.tsx:165
+#: src/components/WalletSend.tsx:164
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/offers/OfferEditorConditionsPanel.tsx:121
 #: src/components/offers/OfferViewer.tsx:226
@@ -210,7 +215,7 @@ msgstr "Amount"
 msgid "Amount For Initial Coin"
 msgstr "Amount for Initial Coin"
 
-#: src/components/offers/OfferEditor.tsx:114
+#: src/components/offers/OfferEditor.tsx:115
 msgid "Amount exceeds spendable balance"
 msgstr "Amount exceeds spendable balance"
 
@@ -408,6 +413,7 @@ msgstr "Cancel Offer"
 msgid "Cancel on blockchain"
 msgstr "Cancel on blockchain"
 
+#: src/components/WalletSend.tsx:101
 #: src/components/cat/WalletCATSend.tsx:119
 #: src/components/WalletSend.tsx:101
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
@@ -697,6 +703,7 @@ msgstr "Create Rate Limited User Wallet"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
+#: src/components/WalletSend.tsx:136
 #: src/components/cat/WalletCATSend.tsx:177
 #: src/components/rateLimited/WalletRateLimited.jsx:683
 #: src/components/WalletSend.tsx:136
@@ -719,7 +726,7 @@ msgstr "Create Transaction"
 #~ msgid "Create admin wallet"
 #~ msgstr "Create admin wallet"
 
-#: src/components/offers/OfferEditor.tsx:226
+#: src/components/offers/OfferEditor.tsx:227
 #: src/components/offers/OfferManager.tsx:518
 msgid "Create an Offer"
 msgstr "Create an Offer"
@@ -1074,8 +1081,8 @@ msgstr "Failed to execute Keybase command: {stderr}"
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/cat/WalletCATSend.tsx:241
 #: src/components/WalletSend.tsx:184
+#: src/components/cat/WalletCATSend.tsx:241
 msgid "Farm"
 msgstr "Farm"
 
@@ -1136,6 +1143,8 @@ msgstr "Farm"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
+#: src/components/WalletHistory.tsx:177
+#: src/components/WalletSend.tsx:175
 #: src/components/cat/WalletCATSend.tsx:220
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
@@ -1243,7 +1252,7 @@ msgstr "Go to Offerpool"
 
 #: src/components/WalletReceiveAddress.tsx:39
 #~ msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
-#~ msgstr "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
+#~ msgstr ""
 
 #: src/components/WalletReceiveAddress.tsx:38
 msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefore wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
@@ -1394,19 +1403,15 @@ msgid "Install Keybase"
 msgstr "Install Keybase"
 
 #: src/components/offers/OfferViewer.tsx:358
-msgid ""
-"Insufficient funds available to accept offer. Ensure that your\n"
+msgid "Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr ""
-"Insufficient funds available to accept offer. Ensure that your\n"
+msgstr "Insufficient funds available to accept offer. Ensure that your \n"
 "spendable balance is sufficient to cover the offer amount."
 
-#: src/components/offers/OfferEditor.tsx:165
-msgid ""
-"Insufficient funds available to create offer. Ensure that your\n"
+#: src/components/offers/OfferEditor.tsx:166
+msgid "Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr ""
-"Insufficient funds available to create offer. Ensure that your\n"
+msgstr "Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
 
 #: src/components/create/createRLAdmin.jsx:217
@@ -1596,12 +1601,13 @@ msgstr "Manage Recovery DIDs"
 #~ msgid "Manage Your Farming Rewards Target Addresses"
 #~ msgstr "Manage Your Farming Rewards Target Addresses"
 
-#: src/components/WalletsManageTokens.tsx:124
+#: src/components/WalletsManageTokens.tsx:135
 msgid "Manage token list"
 msgstr "Manage token list"
 
 #: src/components/cat/WalletCATSend.tsx:232
 #: src/components/WalletHistory.tsx:116
+#: src/components/cat/WalletCATSend.tsx:232
 msgid "Memo"
 msgstr "Memo"
 
@@ -1856,8 +1862,8 @@ msgstr "Offers you accepted"
 msgid "Offers you created"
 msgstr "Offers you created"
 
-#: src/components/cat/WalletCATSend.tsx:180
 #: src/components/WalletSend.tsx:139
+#: src/components/cat/WalletCATSend.tsx:180
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 
@@ -2028,6 +2034,7 @@ msgstr "Please enter a valid initial coin amount"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Please enter an integer value of 0 or greater for the number of Backup IDs needed for recovery."
 
+#: src/components/WalletSend.tsx:91
 #: src/components/cat/WalletCATSend.tsx:105
 #: src/components/rateLimited/WalletRateLimited.jsx:638
 #: src/components/WalletSend.tsx:91
@@ -2038,6 +2045,7 @@ msgstr "Please enter a valid numeric amount"
 msgid "Please enter a valid numeric amount."
 msgstr "Please enter a numeric amount."
 
+#: src/components/WalletSend.tsx:96
 #: src/components/cat/WalletCATSend.tsx:110
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
@@ -2061,7 +2069,7 @@ msgstr "Please enter a valid pubkey"
 msgid "Please enter a valid token name"
 msgstr "Please enter a valid token name"
 
-#: src/components/offers/OfferEditor.tsx:111
+#: src/components/offers/OfferEditor.tsx:112
 msgid "Please enter an amount for each row"
 msgstr "Please enter an amount for each row"
 
@@ -2083,6 +2091,7 @@ msgstr "Please enter valid wallet name"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
+#: src/components/WalletSend.tsx:86
 #: src/components/cat/WalletCATSend.tsx:96
 #: src/components/rateLimited/WalletRateLimited.jsx:622
 #: src/components/WalletSend.tsx:86
@@ -2097,7 +2106,7 @@ msgstr "Please finish syncing before making a transaction"
 #~ msgid "Please select amount"
 #~ msgstr "Please select amount"
 
-#: src/components/offers/OfferEditor.tsx:108
+#: src/components/offers/OfferEditor.tsx:109
 msgid "Please select an asset for each row"
 msgstr "Please select an asset for each row"
 
@@ -2535,7 +2544,7 @@ msgstr "Rename Wallet"
 msgid "Requested"
 msgstr "Requested"
 
-#: src/components/offers/OfferEditor.tsx:194
+#: src/components/offers/OfferEditor.tsx:195
 msgid "Reset"
 msgstr "Reset"
 
@@ -2564,7 +2573,7 @@ msgstr "Retire"
 msgid "Save"
 msgstr "Save"
 
-#: src/components/offers/OfferEditor.tsx:202
+#: src/components/offers/OfferEditor.tsx:203
 msgid "Save Offer"
 msgstr "Save Offer"
 
@@ -2586,11 +2595,11 @@ msgstr "Save Offer File"
 #~ msgid "Search block by header hash"
 #~ msgstr "Search block by header hash"
 
+#: src/components/WalletTokenCard.tsx:130
 #: src/components/cat/WalletCATTAILDialog.tsx:71
-#: src/components/offers/OfferSummaryRow.tsx:94
-#: src/components/WalletTokenCard.tsx:128
-msgid "Search on Token Database"
-msgstr "Search on Token Database"
+#: src/components/offers/OfferSummaryRow.tsx:95
+msgid "Search on Tail Database"
+msgstr "Search on Tail Database"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 #~ msgid "Second temporary folder location"
@@ -2686,6 +2695,8 @@ msgstr "Selected recovery file:"
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
+#: src/components/WalletHeader.tsx:59
+#: src/components/WalletSend.tsx:194
 #: src/components/cat/WalletCATSend.tsx:251
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
@@ -2904,6 +2915,7 @@ msgstr "Success"
 
 #: src/components/offers/OfferViewer.tsx:452
 #: src/components/WalletHeader.tsx:58
+#: src/components/offers/OfferViewer.tsx:452
 msgid "Summary"
 msgstr "Summary"
 
@@ -3300,6 +3312,7 @@ msgstr "Unable to open browser. Install Keybase from https://keybase.io"
 #: src/components/offers/OfferManager.tsx:284
 #: src/components/offers/OfferManager.tsx:307
 #: src/components/offers/OfferSummaryRow.tsx:67
+#: src/components/offers/OfferSummaryRow.tsx:68
 #: src/components/offers/OfferViewer.tsx:412
 msgid "Unknown CAT"
 msgstr "Unknown CAT"
@@ -3784,3 +3797,4 @@ msgstr "{vojos, plural, one {vojo} other {vojos}}"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"
 #~ msgstr "{warning}"
+

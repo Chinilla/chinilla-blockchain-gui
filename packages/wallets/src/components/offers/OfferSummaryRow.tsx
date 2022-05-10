@@ -65,6 +65,7 @@ export default function OfferSummaryRow(props: Props) {
   const assetIdInfo = lookupByAssetId(assetId);
   const displayAmount = assetIdInfo ? formatAmountForWalletType(amount as number, assetIdInfo.walletType) : vojoToCATLocaleString(amount);
   const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
+  const tooltipDisplayName = assetIdInfo?.name ?? t`Unknown CAT`;
   const showVojoAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowVojoAmount(amount);
 
   return (
@@ -89,16 +90,16 @@ export default function OfferSummaryRow(props: Props) {
               <Box flexGrow={1}>
                 <StyledTitle>Name</StyledTitle>
               </Box>
-              {assetIdInfo?.walletType === WalletType.CAT && (
-                <Link href={`https://www.chinilla.com/tail/${assetId.toLowerCase()}`} target="_blank">
+              {(!assetIdInfo || assetIdInfo?.walletType === WalletType.CAT) && (
+                <Link href={`https://chinilla.com/tail/${assetId.toLowerCase()}`} target="_blank">
                   <Trans>Search on Token Database</Trans>
                 </Link>
               )}
             </Flex>
 
-            <StyledValue>{assetIdInfo?.name}</StyledValue>
+            <StyledValue>{tooltipDisplayName}</StyledValue>
           </Flex>
-          {assetIdInfo?.walletType === WalletType.CAT && (
+          {(!assetIdInfo || assetIdInfo?.walletType === WalletType.CAT) && (
             <Flex flexDirection="column" gap={0}>
               <StyledTitle>Asset ID</StyledTitle>
               <Flex alignItems="center" gap={1}>
