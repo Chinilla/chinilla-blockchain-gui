@@ -2585,7 +2585,7 @@ msgstr ""
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:130
-msgid "Search on Tail Database"
+msgid "Search on Token Database"
 msgstr ""
 
 #: src/components/cat/WalletCATTAILDialog.tsx:71

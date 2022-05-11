@@ -2591,8 +2591,8 @@ msgstr "Save Offer File"
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:130
-msgid "Search on Tail Database"
-msgstr "Search on Tail Database"
+msgid "Search on Token Database"
+msgstr "Search on Token Database"
 
 #: src/components/cat/WalletCATTAILDialog.tsx:71
 #: src/components/offers/OfferSummaryRow.tsx:95

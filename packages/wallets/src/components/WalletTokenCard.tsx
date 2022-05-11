@@ -127,7 +127,7 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
               )}
               {assetId && (
                 <Link href={`https://chinilla.com/token/${assetId}`} target="_blank" variant="caption">
-                  <Trans>Search on Tail Database</Trans>
+                  <Trans>Search on Token Database</Trans>
                 </Link>
               )}
             </Flex>

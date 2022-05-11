@@ -2583,7 +2583,7 @@ msgstr ""
 #: src/components/WalletTokenCard.tsx:130
 #: src/components/cat/WalletCATTAILDialog.tsx:71
 #: src/components/offers/OfferSummaryRow.tsx:95
-msgid "Search on Tail Database"
+msgid "Search on Token Database"
 msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106

@@ -2591,7 +2591,7 @@ msgstr "Uložiť súbor ponuky"
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:130
-msgid "Search on Tail Database"
+msgid "Search on Token Database"
 msgstr "Hľadať v Tail databáze"
 
 #: src/components/cat/WalletCATTAILDialog.tsx:71
