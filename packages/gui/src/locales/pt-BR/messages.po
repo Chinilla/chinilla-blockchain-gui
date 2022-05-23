@@ -8,7 +8,7 @@ msgstr ""
 "Language: pt_BR\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-05-09 18:33\n"
+"PO-Revision-Date: 2022-05-11 12:25\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -52,7 +52,7 @@ msgstr "+ Adicionar novo lote NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:49
 msgid "+ Add a Plot"
-msgstr ""
+msgstr "+ Adicionar Lote"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
 #~ msgid "0 automatically chooses bucket count"
@@ -195,7 +195,7 @@ msgstr "Tem certeza que quer se desconectar?"
 
 #: src/electron/main.tsx:268
 msgid "Are you sure you want to quit?"
-msgstr ""
+msgstr "Você tem certeza que quer sair?"
 
 #: src/electron/main.tsx:262
 #~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
@@ -254,7 +254,7 @@ msgstr "Bloco"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:31
 msgid "Block Rewards"
-msgstr ""
+msgstr "Recompensas de Bloco"
 
 #: src/components/block/Block.jsx:138
 #~ msgid "Block Test"
@@ -355,7 +355,7 @@ msgstr "Alterar"
 #: src/components/settings/Settings.tsx:164
 #: src/components/settings/SettingsPanel.tsx:165
 msgid "Change Passphrase"
-msgstr ""
+msgstr "Mudar Senha"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:404
 #: src/components/plotNFT/PlotNFTChangePool.tsx:121
@@ -384,7 +384,7 @@ msgstr "Wiki da Chinilla Blockchain"
 
 #: src/components/app/AppSelectMode.tsx:158
 msgid "Choose Farming Mode"
-msgstr ""
+msgstr "Escolher Modo de Cultivo"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:34
 msgid "Choose Number of Plots"
@@ -396,7 +396,7 @@ msgstr "Escolha o tamanho do lote"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:90
 msgid "Choose Plotter"
-msgstr ""
+msgstr "Escolher Plotter"
 
 #: src/components/app/AppSelectMode.tsx:107
 msgid "Choose Wallet Mode"
@@ -561,7 +561,7 @@ msgstr "Criar"
 
 #: src/components/app/AppSelectMode.tsx:140
 msgid "Create & Manage plots"
-msgstr ""
+msgstr "Criar e Gerenciar lotes"
 
 #: src/components/_wallet_old/did/WalletDID.tsx:970
 #~ msgid "Create An Attestation Packet"
@@ -672,7 +672,7 @@ msgstr "Dificuldade Atual"
 
 #: src/components/settings/ChangePassphrasePrompt.tsx:160
 msgid "Current Passphrase"
-msgstr ""
+msgstr "Senha atual"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:155
 #: src/components/plotNFT/PlotNFTCard.tsx:194
@@ -713,7 +713,7 @@ msgstr "Apagar"
 
 #: src/components/app/AppPassPrompt.tsx:92
 msgid "Delete Key"
-msgstr ""
+msgstr "Excluir Chave"
 
 #: src/components/plot/PlotAction.tsx:24
 #: src/components/plot/queue/PlotQueueActions.tsx:40
@@ -751,7 +751,7 @@ msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:92
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
-msgstr ""
+msgstr "De acordo com as configurações do seu sistema pode ser possível verificar que um plotter alternativo produz lotes mais rapidamente que o plotter padrão da Chinilla. Caso não tenha o conhecimento técnico para avaliar isso com segurança, use o plotter padrão da Chinilla."
 
 #: src/electron/main.tsx:389
 msgid "Developer"
@@ -780,7 +780,7 @@ msgstr ""
 
 #: src/electron/main.tsx:401
 msgid "Disable Simulator"
-msgstr ""
+msgstr "Desativar Simulador"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:114
 #~ msgid "Disable bifield plotting when your temporary directory is on fast storage like SSD or you need lower per process RAM requirements. Plotting with bitfield enabled has about 20% less overall writes."
@@ -852,7 +852,7 @@ msgstr "Editar Instruções de Pagamento"
 
 #: src/electron/main.tsx:402
 msgid "Enable Simulator"
-msgstr ""
+msgstr "Ativar Simulador"
 
 #: src/components/wallet/EnterPassphrasePrompt.tsx:111
 #~ msgid "Enter Passphrase"
@@ -872,7 +872,7 @@ msgstr ""
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:102
 msgid "Enter your passphrase:"
-msgstr ""
+msgstr "Digite sua senha:"
 
 #: src/components/farm/card/FarmCardStatus.tsx:34
 #: src/components/farm/card/FarmCardStatus.tsx:48
@@ -1000,7 +1000,7 @@ msgstr "Cultivando"
 
 #: src/components/app/AppSelectMode.tsx:125
 msgid "Farming Mode"
-msgstr ""
+msgstr "Modo de Cultivo"
 
 #: src/components/farm/card/FarmCardStatus.tsx:14
 #: src/components/farm/card/FarmCardStatus.tsx:25
@@ -1155,7 +1155,7 @@ msgstr ""
 #: src/components/app/AppPassPrompt.tsx:127
 #: src/components/settings/RemovePassphrasePrompt.tsx:118
 msgid "Hint"
-msgstr ""
+msgstr "Dica"
 
 #: src/components/_wallet_old/WalletHistory.tsx:91
 #~ msgid "History"
@@ -1236,7 +1236,7 @@ msgstr "Índice"
 
 #: src/components/plot/PlotHarvesterPlots.tsx:125
 msgid "Initializing..."
-msgstr ""
+msgstr "Inicializando..."
 
 #: src/components/_wallet_old/create/createRLAdmin.jsx:218
 #~ msgid "Interval"
@@ -1340,11 +1340,11 @@ msgstr "Saindo do bolão"
 
 #: src/components/app/AppProviders.tsx:66
 msgid "Loading configuration"
-msgstr ""
+msgstr "Carregando configuração"
 
 #: src/components/farm/Farm.tsx:24
 msgid "Loading farming data"
-msgstr ""
+msgstr "Carregando dados do cultivo"
 
 #: src/components/app/AppState.tsx:117
 msgid "Loading keyring status"
@@ -1496,7 +1496,7 @@ msgstr "Nome da rede"
 
 #: src/components/settings/ChangePassphrasePrompt.tsx:170
 msgid "New Passphrase"
-msgstr ""
+msgstr "Nova Senha"
 
 #: src/components/_wallet_old/WalletAdd.tsx:63
 #~ msgid "New Wallet"
@@ -2065,7 +2065,7 @@ msgstr "Bolão:"
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
-msgstr "Participando do bolão"
+msgstr "Bolão"
 
 #: src/components/block/FullNodeAddConnection.tsx:76
 #: src/components/farm/FarmFullNodeConnections.tsx:41

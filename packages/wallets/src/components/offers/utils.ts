@@ -1,5 +1,5 @@
 import { WalletType } from '@chinilla/api';
-import { type ChipProps } from '@mui/material';
+import type { ChipProps } from '@mui/material';
 import type { OfferSummaryRecord } from '@chinilla/api';
 import {
   vojoToChinillaLocaleString,

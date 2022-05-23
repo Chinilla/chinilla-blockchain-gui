@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
-import { WalletType, type Wallet } from '@chinilla/api';
+import { WalletType } from '@chinilla/api';
+import type { Wallet } from '@chinilla/api';
 import { useShowError} from '@chinilla/core';
 import { orderBy } from 'lodash';
 import { useGetWalletsQuery, useGetStrayCatsQuery, useGetCatListQuery, useAddCATTokenMutation } from '@chinilla/api-react';

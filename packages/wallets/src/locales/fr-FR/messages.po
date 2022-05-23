@@ -8,7 +8,7 @@ msgstr ""
 "Language: fr_FR\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-05-09 18:35\n"
+"PO-Revision-Date: 2022-05-12 17:41\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -1581,7 +1581,7 @@ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:505
 msgid "Manage Offers"
-msgstr ""
+msgstr "Gérer les Offres"
 
 #: src/components/cat/WalletDID.tsx:805
 #: src/components/did/WalletDID.tsx:805
@@ -1661,7 +1661,7 @@ msgstr "Ma clé publique"
 
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:71
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:14
 #~ msgid "Network Name"
@@ -1752,7 +1752,7 @@ msgstr "Non Disponible"
 
 #: src/components/WalletStatusHeader.tsx:31
 msgid "Not Connected"
-msgstr ""
+msgstr "Non connecté"
 
 #: src/components/WalletStatus.tsx:39
 msgid "Not Synced"
@@ -1760,7 +1760,7 @@ msgstr "Non Synchronisé"
 
 #: src/components/offers/OfferViewer.tsx:198
 msgid "Not accepted"
-msgstr ""
+msgstr "Refusée"
 
 #: src/components/trading/TradingOverview.jsx:221
 #~ msgid "Not accepted yet"
@@ -1768,7 +1768,7 @@ msgstr ""
 
 #: src/components/offers/OfferViewer.tsx:189
 msgid "Not confirmed"
-msgstr ""
+msgstr "Non confirmée"
 
 #: src/components/trading/TradingOverview.jsx:194
 #~ msgid "Not confirmed yet"
@@ -1806,7 +1806,7 @@ msgstr ""
 #: src/components/cat/WalletCATTAILDialog.tsx:82
 #: src/components/offers/OfferDataDialog.tsx:75
 msgid "OK"
-msgstr ""
+msgstr "D'accord"
 
 #: src/components/trading/ViewOffer.jsx:67
 #~ msgid "Offer"
@@ -1814,7 +1814,7 @@ msgstr ""
 
 #: src/components/WalletHistory.tsx:122
 msgid "Offer Accepted"
-msgstr ""
+msgstr "Offre Acceptée"
 
 #: src/components/offers/OfferDataDialog.tsx:42
 #: src/components/offers/OfferDataDialog.tsx:50
@@ -1823,14 +1823,14 @@ msgstr ""
 
 #: src/components/offers/OfferViewer.tsx:183
 msgid "Offer Identifier"
-msgstr ""
+msgstr "Identifiant de l'offre"
 
 #: src/components/offers/OfferShareDialog.tsx:354
 #: src/components/offers/OfferShareDialog.tsx:495
 #: src/components/offers/OfferShareDialog.tsx:712
 #: src/components/offers/OfferShareDialog.tsx:858
 msgid "Offer Shared"
-msgstr ""
+msgstr "Offre partagée"
 
 #: src/components/offers/OfferViewer.tsx:344
 msgid "Offer has been accepted and is awaiting confirmation."
