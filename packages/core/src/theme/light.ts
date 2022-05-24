@@ -10,6 +10,10 @@ export default createTheme(deepmerge(theme, {
     },
     secondary: {
       main: '#000000',
+      contrastText: '#FFFFFF',
+    },
+    warning: {
+      main: '#FCF6E0',
       contrastText: '#000000',
     },
     mode: 'light',

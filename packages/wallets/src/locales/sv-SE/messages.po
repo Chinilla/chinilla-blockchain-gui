@@ -390,6 +390,7 @@ msgstr "Innan du lägger upp ett erbjudande i Keybase på #{KeybaseChannelName}-
 #: src/components/offers/OfferShareDialog.tsx:800
 #: src/components/offers/OfferShareDialog.tsx:913
 #: src/components/offers/OfferViewer.tsx:292
+#: src/components/PasteMnemonic.tsx:78
 #: src/components/WalletRenameDialog.tsx:90
 msgid "Cancel"
 msgstr "Avbryt"
@@ -993,7 +994,7 @@ msgstr "Drag och släpp din säkerhetskopierade fil"
 #~ msgid "Enter a strong passphrase to secure your keys:"
 #~ msgstr "Enter a strong passphrase to secure your keys:"
 
-#: src/components/WalletImport.tsx:84
+#: src/components/WalletImport.tsx:134
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Skriv in din sparade minnesfras på 24 ord för att återställa din Chinilla-plånbok."
 
@@ -1326,10 +1327,11 @@ msgid "If you would like to speed up the transaction, please delete unconfirmed 
 msgstr ""
 
 #: src/components/offers/OfferDataEntryDialog.tsx:74
+#: src/components/PasteMnemonic.tsx:86
 msgid "Import"
 msgstr "Importera"
 
-#: src/components/WalletImport.tsx:81
+#: src/components/WalletImport.tsx:131
 msgid "Import Wallet from Mnemonics"
 msgstr "Importera plånbok från minnesfras"
 
@@ -1692,7 +1694,7 @@ msgstr "Ny plånbok"
 #~ msgstr "New passphrase is the same as your current passphrase"
 
 #: src/components/WalletAdd.tsx:107
-#: src/components/WalletImport.tsx:111
+#: src/components/WalletImport.tsx:165
 msgid "Next"
 msgstr "Nästa"
 
@@ -1929,6 +1931,14 @@ msgstr "Överordnat mynt"
 #: src/components/settings/Settings.tsx:124
 #~ msgid "Passphrase support requires migrating your keys to a new keyring"
 #~ msgstr "Passphrase support requires migrating your keys to a new keyring"
+
+#: src/components/WalletImport.tsx:96
+msgid "Paste Mnemonic"
+msgstr ""
+
+#: src/components/PasteMnemonic.tsx:55
+msgid "Paste Mnemonic (24 words)"
+msgstr ""
 
 #: src/components/offers/OfferDataEntryDialog.tsx:40
 #: src/components/offers/OfferImport.tsx:129
@@ -2586,12 +2596,9 @@ msgstr "Spara erbjudandefil"
 #~ msgid "Search block by header hash"
 #~ msgstr "Search block by header hash"
 
-#: src/components/WalletTokenCard.tsx:130
-msgid "Search on Token Database"
-msgstr "Sök i Tail-databasen"
-
 #: src/components/cat/WalletCATTAILDialog.tsx:71
 #: src/components/offers/OfferSummaryRow.tsx:95
+#: src/components/WalletTokenCard.tsx:130
 msgid "Search on Token Database"
 msgstr ""
 
@@ -3698,6 +3705,10 @@ msgstr "Ditt erbjudande:"
 #: src/components/settings/Settings.tsx:74
 #~ msgid "Your passphrase has been updated"
 #~ msgstr "Your passphrase has been updated"
+
+#: src/components/WalletImport.tsx:71
+msgid "Your pasted list does not include 24 valid mnemonic words."
+msgstr ""
 
 #: src/util/getDescriptiveError.ts:5
 #~ msgid "[Error 13] Permission denied. You are trying to access a file/directory without having the necessary permissions. Most likely one of the plot folders in your config.yaml has an issue."

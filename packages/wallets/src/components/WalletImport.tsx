@@ -89,6 +89,7 @@ export default function WalletImport() {
     return (
       <Button
         onClick={() => setMnemonicPasteOpen(true)}
+        color="secondary"
         variant="contained"
         disableElevation
       >

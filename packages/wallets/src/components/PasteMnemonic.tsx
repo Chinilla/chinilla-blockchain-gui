@@ -71,7 +71,7 @@ export default function MnemonicPaste(props: Props) {
       <DialogActions>
         <Button
           onClick={handleCancel}
-          color="secondary"
+          color="warning"
           variant="contained"
           style={{ marginBottom: '8px', marginRight: '8px' }}
         >
