@@ -1270,7 +1270,7 @@ msgstr "Chargement de la liste des clés"
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:124
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:123
 #: src/components/LayoutDashboard/LayoutDashboard.tsx:144
 msgid "Log Out"
 msgstr "Se déconnecter"
@@ -1279,7 +1279,6 @@ msgstr "Se déconnecter"
 #~ msgid "Logging in"
 #~ msgstr "Logging in"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:123
 #: src/components/LayoutDashboard/LayoutDashboard.tsx:143
 msgid "Logout"
 msgstr "Déconnexion"

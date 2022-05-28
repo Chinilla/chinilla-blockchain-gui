@@ -2857,7 +2857,6 @@ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:277
 #: src/components/offers/OfferViewer.tsx:177
-#: src/components/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "状態"
 
@@ -3088,8 +3087,16 @@ msgstr "これが (まだブロックチェーンに含まれていない) 保�
 #~ msgstr "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "現在の先端サブブロックにおいて、あなたの秘密鍵が所有している全チアの額です。凍結中の耕作報酬は含まれますが、承認待ちの入出金取引は反映されていません。"
+msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "現在の先端サブブロックにおいて、あなたの秘密鍵が所有している全チアの額です。凍結中の耕作報酬は含まれますが、承認待ちの入出金取引は反映されていません。"
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -3707,12 +3714,12 @@ msgstr ""
 #~ msgstr "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 
 #: src/components/WalletStatusCard.tsx:41
-msgid "connections:"
-msgstr "接続数:"
+#~ msgid "connections:"
+#~ msgstr "接続数:"
 
 #: src/components/WalletStatusCard.tsx:33
-msgid "height:"
-msgstr "高さ:"
+#~ msgid "height:"
+#~ msgstr "高さ:"
 
 #: src/components/_wallet_old/Wallets.tsx:61
 #~ msgid "not synced"
@@ -3727,16 +3734,16 @@ msgstr "高さ:"
 #~ msgstr "p2_singleton_puzzle_hash is not defined"
 
 #: src/components/WalletStatusCard.tsx:27
-msgid "status:"
-msgstr "状態:"
+#~ msgid "status:"
+#~ msgstr "状態:"
 
 #: src/components/WalletStatusCard.tsx:29
-msgid "synced"
-msgstr "同期完了"
+#~ msgid "synced"
+#~ msgstr "同期完了"
 
 #: src/components/WalletStatusCard.tsx:29
-msgid "syncing"
-msgstr "同期中"
+#~ msgid "syncing"
+#~ msgstr "同期中"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:89
 #~ msgid "thirdparty.plotter.disclaimer"

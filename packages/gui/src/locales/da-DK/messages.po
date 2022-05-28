@@ -2673,8 +2673,12 @@ msgid "The seed used to create the plot. This depends on the pool pk and plot pk
 msgstr "Det seed der er brugt tul at generer plotfilen. Dette er afhængig af pool pk og plot pk."
 
 #: src/components/block/Block.jsx:206
-msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
-msgstr "Det samlede nummer af VDF (verifiable delay function) eller bevis af tid gentagelser på den samlede kæde op til denne blok."
+msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this block."
+msgstr ""
+
+#: src/components/block/Block.jsx:206
+#~ msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
+#~ msgstr "Det samlede nummer af VDF (verifiable delay function) eller bevis af tid gentagelser på den samlede kæde op til denne blok."
 
 #: src/components/block/Block.jsx:222
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
@@ -3086,8 +3090,12 @@ msgid "Weight"
 msgstr "Vægt"
 
 #: src/components/block/Block.jsx:186
-msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
-msgstr "Vægt er den totale tilførte sværhedsgrad af alle blokke op til og indklusiv denne blok"
+msgid "Weight is the total added difficulty of all blocks up to and including this one"
+msgstr ""
+
+#: src/components/block/Block.jsx:186
+#~ msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
+#~ msgstr "Vægt er den totale tilførte sværhedsgrad af alle blokke op til og indklusiv denne blok"
 
 #: src/components/_selectKey_old/SelectKey.tsx:183
 #~ msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."

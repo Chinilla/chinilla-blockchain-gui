@@ -2857,7 +2857,6 @@ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:277
 #: src/components/offers/OfferViewer.tsx:177
-#: src/components/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "Κατάσταση"
 
@@ -3088,8 +3087,16 @@ msgstr "Αυτό είναι το άθροισμα των εισερχόμενω�
 #~ msgstr "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Αυτή είναι η συνολική ποσότητα chinilla στο blockchain στο τρέχον υπο-μπλοκ κορυφής που ελέγχεται από τα ιδιωτικά σας κλειδιά. Περιλαμβάνει βραβεία frozen farming, αλλά όχι εισερχόμενες και εξερχόμενες συναλλαγές."
+msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "Αυτή είναι η συνολική ποσότητα chinilla στο blockchain στο τρέχον υπο-μπλοκ κορυφής που ελέγχεται από τα ιδιωτικά σας κλειδιά. Περιλαμβάνει βραβεία frozen farming, αλλά όχι εισερχόμενες και εξερχόμενες συναλλαγές."
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -3707,12 +3714,12 @@ msgstr ""
 #~ msgstr "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 
 #: src/components/WalletStatusCard.tsx:41
-msgid "connections:"
-msgstr "συνδέσεις:"
+#~ msgid "connections:"
+#~ msgstr "συνδέσεις:"
 
 #: src/components/WalletStatusCard.tsx:33
-msgid "height:"
-msgstr "ύψος:"
+#~ msgid "height:"
+#~ msgstr "ύψος:"
 
 #: src/components/_wallet_old/Wallets.tsx:61
 #~ msgid "not synced"
@@ -3727,16 +3734,16 @@ msgstr "ύψος:"
 #~ msgstr "p2_singleton_puzzle_hash is not defined"
 
 #: src/components/WalletStatusCard.tsx:27
-msgid "status:"
-msgstr "κατάσταση:"
+#~ msgid "status:"
+#~ msgstr "κατάσταση:"
 
 #: src/components/WalletStatusCard.tsx:29
-msgid "synced"
-msgstr "συγχρονίστηκε"
+#~ msgid "synced"
+#~ msgstr "συγχρονίστηκε"
 
 #: src/components/WalletStatusCard.tsx:29
-msgid "syncing"
-msgstr "συγχρονισμός..."
+#~ msgid "syncing"
+#~ msgstr "συγχρονισμός..."
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:89
 #~ msgid "thirdparty.plotter.disclaimer"

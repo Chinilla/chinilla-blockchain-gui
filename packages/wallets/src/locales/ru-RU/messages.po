@@ -2857,7 +2857,6 @@ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:277
 #: src/components/offers/OfferViewer.tsx:177
-#: src/components/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "Статус"
 
@@ -3088,8 +3087,16 @@ msgstr "Здесь рассчитана сумма входящих и исхо�
 #~ msgstr "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Это общее количество монет Чиа в блокчейне в текущем пиковом суб блоке, которые контролируются вашими приватными ключами. Баланс включает в себя замороженные награды за фарм, но не включает ожидающие входящие и исходящие транзакции."
+msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "Это общее количество монет Чиа в блокчейне в текущем пиковом суб блоке, которые контролируются вашими приватными ключами. Баланс включает в себя замороженные награды за фарм, но не включает ожидающие входящие и исходящие транзакции."
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -3707,12 +3714,12 @@ msgstr ""
 #~ msgstr "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 
 #: src/components/WalletStatusCard.tsx:41
-msgid "connections:"
-msgstr "подключения:"
+#~ msgid "connections:"
+#~ msgstr "подключения:"
 
 #: src/components/WalletStatusCard.tsx:33
-msgid "height:"
-msgstr "высота:"
+#~ msgid "height:"
+#~ msgstr "высота:"
 
 #: src/components/_wallet_old/Wallets.tsx:61
 #~ msgid "not synced"
@@ -3727,16 +3734,16 @@ msgstr "высота:"
 #~ msgstr "p2_singleton_puzzle_hash is not defined"
 
 #: src/components/WalletStatusCard.tsx:27
-msgid "status:"
-msgstr "статус:"
+#~ msgid "status:"
+#~ msgstr "статус:"
 
 #: src/components/WalletStatusCard.tsx:29
-msgid "synced"
-msgstr "синхр."
+#~ msgid "synced"
+#~ msgstr "синхр."
 
 #: src/components/WalletStatusCard.tsx:29
-msgid "syncing"
-msgstr "синх-ция"
+#~ msgid "syncing"
+#~ msgstr "синх-ция"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:89
 #~ msgid "thirdparty.plotter.disclaimer"

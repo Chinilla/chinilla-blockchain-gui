@@ -2673,8 +2673,12 @@ msgid "The seed used to create the plot. This depends on the pool pk and plot pk
 msgstr "Зерно, яке використовувалося для створення ділянки. Зерно залежить від публічного ключа пулу і публічного ключа ділянки."
 
 #: src/components/block/Block.jsx:206
-msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
-msgstr "Загальна кількість ітерації VDF (від англ. Verifiable Delay Function - перевіряєма функція затримки) або доказів тимчасових ітерацій по всьому ланцюжку до цього підблока."
+msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this block."
+msgstr ""
+
+#: src/components/block/Block.jsx:206
+#~ msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
+#~ msgstr "Загальна кількість ітерації VDF (від англ. Verifiable Delay Function - перевіряєма функція затримки) або доказів тимчасових ітерацій по всьому ланцюжку до цього підблока."
 
 #: src/components/block/Block.jsx:222
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
@@ -3086,8 +3090,12 @@ msgid "Weight"
 msgstr "Вага"
 
 #: src/components/block/Block.jsx:186
-msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
-msgstr "Вага - це загальна додана складність усіх підблоків до цього, та включно з цим"
+msgid "Weight is the total added difficulty of all blocks up to and including this one"
+msgstr ""
+
+#: src/components/block/Block.jsx:186
+#~ msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
+#~ msgstr "Вага - це загальна додана складність усіх підблоків до цього, та включно з цим"
 
 #: src/components/_selectKey_old/SelectKey.tsx:183
 #~ msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."

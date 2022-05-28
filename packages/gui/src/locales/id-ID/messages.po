@@ -2675,8 +2675,12 @@ msgid "The seed used to create the plot. This depends on the pool pk and plot pk
 msgstr "Bulir yang digunakan untuk membuat plot. Ini tergantung oleh pool pk dan plot pk."
 
 #: src/components/block/Block.jsx:206
-msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
-msgstr "Jumlah total dari VDF (fungsi delay yang dapat diverfikasikan) atau bukti dari iterasi waktu pada keseluruhan chain sampai pada blok sub ini."
+msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this block."
+msgstr ""
+
+#: src/components/block/Block.jsx:206
+#~ msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
+#~ msgstr "Jumlah total dari VDF (fungsi delay yang dapat diverfikasikan) atau bukti dari iterasi waktu pada keseluruhan chain sampai pada blok sub ini."
 
 #: src/components/block/Block.jsx:222
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
@@ -3088,8 +3092,12 @@ msgid "Weight"
 msgstr "Berat"
 
 #: src/components/block/Block.jsx:186
-msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
-msgstr "Beban adalah jumlah total ke rumitan semua sub blok sampai dengan blok ini"
+msgid "Weight is the total added difficulty of all blocks up to and including this one"
+msgstr ""
+
+#: src/components/block/Block.jsx:186
+#~ msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
+#~ msgstr "Beban adalah jumlah total ke rumitan semua sub blok sampai dengan blok ini"
 
 #: src/components/_selectKey_old/SelectKey.tsx:183
 #~ msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."
