@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh_CN\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-05-09 18:35\n"
+"PO-Revision-Date: 2022-05-31 09:21\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -293,7 +293,7 @@ msgstr "余额"
 
 #: src/components/offers/OfferShareDialog.tsx:768
 msgid "Before posting an offer in Keybase to the #{KeybaseChannelName} channel, you must first join the {KeybaseTeamName} team. Please note that it might take a few moments to join the channel."
-msgstr ""
+msgstr "在 #{KeybaseChannelName} 频道发布密钥库之前, 您必须先加入 {KeybaseTeamName} 团队。 请注意，加入频道可能需要一些时间。"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:33
 #: src/components/farm/FarmLatestBlockChallenges.tsx:43
@@ -595,7 +595,7 @@ msgstr "确认于区块高度"
 
 #: src/components/WalletStatusHeader.tsx:33
 msgid "Connected ({0})"
-msgstr ""
+msgstr "已连接 ({0})"
 
 #: src/components/app/AppState.tsx:141
 #: src/components/app/AppState.tsx:145
@@ -940,7 +940,7 @@ msgstr "分布式身份认证"
 
 #: src/components/offers/OfferShareDialog.tsx:1001
 msgid "Do not show this dialog again"
-msgstr ""
+msgstr "不再显示此对话框"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:51
 #: src/components/plot/overview/PlotOverviewHero.tsx:67
@@ -1329,7 +1329,7 @@ msgstr ""
 #: src/components/offers/OfferDataEntryDialog.tsx:74
 #: src/components/PasteMnemonic.tsx:86
 msgid "Import"
-msgstr ""
+msgstr "导入"
 
 #: src/components/WalletImport.tsx:131
 msgid "Import Wallet from Mnemonics"
@@ -1396,14 +1396,12 @@ msgid "Install Keybase"
 msgstr ""
 
 #: src/components/offers/OfferViewer.tsx:358
-msgid ""
-"Insufficient funds available to accept offer. Ensure that your\n"
+msgid "Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
 msgstr ""
 
 #: src/components/offers/OfferEditor.tsx:166
-msgid ""
-"Insufficient funds available to create offer. Ensure that your\n"
+msgid "Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
 msgstr ""
 
@@ -1609,7 +1607,7 @@ msgstr ""
 
 #: src/components/WalletSendTransactionResultDialog.tsx:19
 msgid "Mempool Full"
-msgstr ""
+msgstr "内存已满"
 
 #: src/components/WalletConnections.tsx:55
 msgid "MiB Up/Down"
@@ -1650,7 +1648,7 @@ msgstr "MiB 上传/下载"
 
 #: src/constants/WalletName.ts:17
 msgid "Multi Sig Wallet"
-msgstr ""
+msgstr "多个签名钱包"
 
 #: src/components/cat/WalletDID.tsx:536
 #: src/components/did/WalletDID.tsx:536
@@ -1663,7 +1661,7 @@ msgstr "我的公钥"
 
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:71
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:14
 #~ msgid "Network Name"
@@ -1717,7 +1715,7 @@ msgstr "昵称"
 
 #: src/components/offers/OfferManager.tsx:458
 msgid "No current offers"
-msgstr ""
+msgstr "当前没有报价"
 
 #: src/components/WalletHistory.tsx:323
 msgid "No previous transactions"
@@ -1729,7 +1727,7 @@ msgstr "无过往交易"
 
 #: src/components/offers/OfferViewer.tsx:209
 msgid "Node Count"
-msgstr ""
+msgstr "节点数"
 
 #: src/components/WalletConnections.tsx:23
 msgid "Node ID"
@@ -1754,7 +1752,7 @@ msgstr "不可用"
 
 #: src/components/WalletStatusHeader.tsx:31
 msgid "Not Connected"
-msgstr ""
+msgstr "未连接"
 
 #: src/components/WalletStatus.tsx:39
 msgid "Not Synced"
@@ -1762,7 +1760,7 @@ msgstr "未同步"
 
 #: src/components/offers/OfferViewer.tsx:198
 msgid "Not accepted"
-msgstr ""
+msgstr "未接受"
 
 #: src/components/trading/TradingOverview.jsx:221
 #~ msgid "Not accepted yet"
@@ -1770,7 +1768,7 @@ msgstr ""
 
 #: src/components/offers/OfferViewer.tsx:189
 msgid "Not confirmed"
-msgstr ""
+msgstr "未确认"
 
 #: src/components/trading/TradingOverview.jsx:194
 #~ msgid "Not confirmed yet"
@@ -1930,11 +1928,11 @@ msgstr ""
 
 #: src/components/WalletImport.tsx:96
 msgid "Paste Mnemonic"
-msgstr ""
+msgstr "粘贴助记符"
 
 #: src/components/PasteMnemonic.tsx:55
 msgid "Paste Mnemonic (24 words)"
-msgstr ""
+msgstr "粘贴助记符（24个词）"
 
 #: src/components/offers/OfferDataEntryDialog.tsx:40
 #: src/components/offers/OfferImport.tsx:129
@@ -2495,7 +2493,7 @@ msgstr ""
 
 #: src/components/cat/WalletCATSelect.tsx:39
 msgid "Recovery Wallet"
-msgstr ""
+msgstr "恢复钱包"
 
 #: src/components/plot/PlotHeader.tsx:76
 #: src/components/plot/overview/PlotOverviewHero.tsx:60
@@ -2531,7 +2529,7 @@ msgstr ""
 #: src/components/cat/WalletCAT.tsx:91
 #: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
-msgstr ""
+msgstr "重命名钱包"
 
 #: src/electron/main.tsx:404
 #~ msgid "Report an Issue..."
@@ -2543,7 +2541,7 @@ msgstr ""
 
 #: src/components/offers/OfferEditor.tsx:195
 msgid "Reset"
-msgstr ""
+msgstr "重置"
 
 #: src/components/backup/BackupRestore.tsx:160
 #~ msgid "Restore Metadata for Coloured Coins and other Smart Wallets from Backup"
@@ -2572,11 +2570,11 @@ msgstr "保存"
 
 #: src/components/offers/OfferEditor.tsx:203
 msgid "Save Offer"
-msgstr ""
+msgstr "保存报价"
 
 #: src/components/offers/OfferManager.tsx:408
 msgid "Save Offer File"
-msgstr ""
+msgstr "保存报价文件"
 
 #: src/components/app/AppKeyringMigrator.tsx:178
 #: src/components/settings/ChangePassphrasePrompt.tsx:208
@@ -2594,9 +2592,8 @@ msgstr ""
 
 #: src/components/cat/WalletCATTAILDialog.tsx:71
 #: src/components/offers/OfferSummaryRow.tsx:95
-#: src/components/WalletTokenCard.tsx:130
-msgid "Search on Token Database"
-msgstr ""
+msgid "Search on Tail Database"
+msgstr "在 Tail 数据库中搜索"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 #~ msgid "Second temporary folder location"
@@ -2632,7 +2629,7 @@ msgstr ""
 
 #: src/components/offers/OfferImport.tsx:136
 msgid "Select Offer File"
-msgstr ""
+msgstr "选择报价文件"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:52
 #~ msgid "Select Temporary Directory"
@@ -2641,7 +2638,7 @@ msgstr ""
 #: src/components/hero/WalletHeroWallets.tsx:47
 #: src/components/WalletsList.tsx:32
 msgid "Select Wallet"
-msgstr ""
+msgstr "选择钱包"
 
 #: src/components/create/WalletCreateList.tsx:25
 msgid "Select Wallet Type"
@@ -2728,11 +2725,11 @@ msgstr "将你的公钥发送到你的费用限定型管理者钱包:"
 #: src/components/offers/OfferShareDialog.tsx:807
 #: src/components/offers/OfferShareDialog.tsx:920
 msgid "Share"
-msgstr ""
+msgstr "分享"
 
 #: src/components/offers/OfferShareDialog.tsx:982
 msgid "Share Offer"
-msgstr ""
+msgstr "分享报价"
 
 #: src/components/offers/OfferShareDialog.tsx:421
 msgid "Share Privately"
@@ -2905,12 +2902,12 @@ msgstr "提交"
 #: src/components/offers/OfferViewer.tsx:343
 #: src/components/WalletSendTransactionResultDialog.tsx:15
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #: src/components/offers/OfferViewer.tsx:452
 #: src/components/WalletHeader.tsx:58
 msgid "Summary"
-msgstr ""
+msgstr "摘要"
 
 #: src/components/WalletStatus.tsx:44
 msgid "Synced"
@@ -3087,16 +3084,12 @@ msgstr "待处理的收入与支出总和(还未上链). 不包括农场耕种�
 #~ msgstr "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr ""
-
-#: src/components/standard/WalletStandardCards.tsx:16
-#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-#~ msgstr ""
+msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "这里是你的私钥所控制的，到目前最新子块高度为止的全部奇亚数。包含被冻结的耕种奖励， 但不包含待处理的收入与支出。"
 
 #: src/components/standard/WalletStandardCards.tsx:16
 #~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-#~ msgstr "这里是你的私钥所控制的, 到目前最新子块高度为止的全部奇亚数. 包含被冻结的耕种奖励, 但不包含待处理的收入与支出."
+#~ msgstr "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -3271,7 +3264,7 @@ msgstr ""
 
 #: src/components/WalletHistory.tsx:244
 msgid "Transactions"
-msgstr ""
+msgstr "交易"
 
 #: src/components/block/Block.jsx:298
 #~ msgid "Transactions Filter Hash"
@@ -3703,7 +3696,7 @@ msgstr ""
 
 #: src/components/WalletImport.tsx:71
 msgid "Your pasted list does not include 24 valid mnemonic words."
-msgstr ""
+msgstr "您粘贴的列表中未包含24个有效的助记词。"
 
 #: src/util/getDescriptiveError.ts:5
 #~ msgid "[Error 13] Permission denied. You are trying to access a file/directory without having the necessary permissions. Most likely one of the plot folders in your config.yaml has an issue."
@@ -3715,11 +3708,11 @@ msgstr ""
 
 #: src/components/WalletStatusCard.tsx:41
 #~ msgid "connections:"
-#~ msgstr "连接："
+#~ msgstr "connections:"
 
 #: src/components/WalletStatusCard.tsx:33
 #~ msgid "height:"
-#~ msgstr "高度："
+#~ msgstr "height:"
 
 #: src/components/_wallet_old/Wallets.tsx:61
 #~ msgid "not synced"
@@ -3735,15 +3728,15 @@ msgstr ""
 
 #: src/components/WalletStatusCard.tsx:27
 #~ msgid "status:"
-#~ msgstr "状态："
+#~ msgstr "status:"
 
 #: src/components/WalletStatusCard.tsx:29
 #~ msgid "synced"
-#~ msgstr "已同步"
+#~ msgstr "synced"
 
 #: src/components/WalletStatusCard.tsx:29
 #~ msgid "syncing"
-#~ msgstr "同步中"
+#~ msgstr "syncing"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:89
 #~ msgid "thirdparty.plotter.disclaimer"
@@ -3802,3 +3795,4 @@ msgstr ""
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"
 #~ msgstr "{warning}"
+

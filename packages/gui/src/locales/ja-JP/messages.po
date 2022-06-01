@@ -8,7 +8,7 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-05-09 18:33\n"
+"PO-Revision-Date: 2022-05-28 06:48\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -52,7 +52,7 @@ msgstr "+ 新規プロットNFT を追加"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:49
 msgid "+ Add a Plot"
-msgstr ""
+msgstr "+ 耕地を追加"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
 #~ msgid "0 automatically chooses bucket count"
@@ -68,7 +68,7 @@ msgstr "収穫機は耕地が実際に保存されているデバイス上に走
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:155
 msgid "A value of {0} is recommended"
-msgstr ""
+msgstr "{0} の値を推奨します"
 
 #: src/electron/main.tsx:525
 #: src/electron/main.tsx:612
@@ -195,7 +195,7 @@ msgstr "本当に接続を解除しますか？"
 
 #: src/electron/main.tsx:268
 msgid "Are you sure you want to quit?"
-msgstr ""
+msgstr "本当に終了しますか?"
 
 #: src/electron/main.tsx:262
 #~ msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
@@ -254,7 +254,7 @@ msgstr "ブロック"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:31
 msgid "Block Rewards"
-msgstr ""
+msgstr "ブロック報酬"
 
 #: src/components/block/Block.jsx:138
 #~ msgid "Block Test"
@@ -355,7 +355,7 @@ msgstr "変更する"
 #: src/components/settings/Settings.tsx:164
 #: src/components/settings/SettingsPanel.tsx:165
 msgid "Change Passphrase"
-msgstr ""
+msgstr "パスフレーズを変更する"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:404
 #: src/components/plotNFT/PlotNFTChangePool.tsx:121
@@ -418,7 +418,7 @@ msgstr "閉じる"
 
 #: src/components/app/AppState.tsx:98
 msgid "Closing down services"
-msgstr ""
+msgstr "各サービスを終了中"
 
 #: src/components/app/AppState.tsx:98
 #~ msgid "Closing services"
@@ -469,13 +469,13 @@ msgstr "接続解除の確認"
 
 #: src/components/settings/ChangePassphrasePrompt.tsx:180
 msgid "Confirm New Passphrase"
-msgstr ""
+msgstr "新パスフレーズを確認"
 
 #: src/components/app/AppKeyringMigrator.tsx:149
 #: src/components/app/AppKeyringMigrator.tsx:150
 #: src/components/settings/SetPassphrasePrompt.tsx:160
 msgid "Confirm Passphrase"
-msgstr ""
+msgstr "パスフレーズを確認"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:120
 msgid "Confirmation"
@@ -502,7 +502,7 @@ msgstr "手動で接続"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:115
 msgid "Connect to pool"
-msgstr ""
+msgstr "プールに接続"
 
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:20
 msgid "Connected"
@@ -511,7 +511,7 @@ msgstr "接続済み"
 #: src/components/app/AppState.tsx:144
 #: src/components/app/AppState.tsx:148
 msgid "Connecting to daemon"
-msgstr ""
+msgstr "デーモンに接続中"
 
 #: src/components/app/AppRouter.tsx:61
 #~ msgid "Connecting to wallet"
@@ -713,7 +713,7 @@ msgstr "削除"
 
 #: src/components/app/AppPassPrompt.tsx:92
 msgid "Delete Key"
-msgstr ""
+msgstr "鍵を削除する"
 
 #: src/components/plot/PlotAction.tsx:24
 #: src/components/plot/queue/PlotQueueActions.tsx:40
@@ -722,7 +722,7 @@ msgstr "耕地を削除"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:311
 msgid "Delete Unconfirmed Transactions"
-msgstr ""
+msgstr "承認待ちの取引を削除"
 
 #: src/components/_selectKey_old/SelectKey.tsx:114
 #: src/components/_selectKey_old/SelectKey.tsx:273
@@ -743,7 +743,7 @@ msgstr ""
 
 #: src/components/app/AppPassPrompt.tsx:88
 msgid "Deleting key"
-msgstr ""
+msgstr "鍵を削除中"
 
 #: src/components/selectKey/SelectKey.tsx:101
 #~ msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
@@ -2678,7 +2678,7 @@ msgstr ""
 
 #: src/components/block/Block.jsx:206
 #~ msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
-#~ msgstr "このブロックまでに全ブロックチェーンに行った VDF (検証可能遅延関数)、つまり時間証明の評価回数"
+#~ msgstr "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
 
 #: src/components/block/Block.jsx:222
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
@@ -3095,7 +3095,7 @@ msgstr ""
 
 #: src/components/block/Block.jsx:186
 #~ msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
-#~ msgstr "ブロック重とはこのブロックを含めた全てのブロックの難易度の合計です。"
+#~ msgstr "Weight is the total added difficulty of all sub blocks up to and including this one"
 
 #: src/components/_selectKey_old/SelectKey.tsx:183
 #~ msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."
@@ -3337,3 +3337,4 @@ msgstr ""
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr ""
+
