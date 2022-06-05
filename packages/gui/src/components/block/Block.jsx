@@ -10,7 +10,8 @@ import {
 } from '@mui/material';
 import moment from 'moment';
 import { Trans } from '@lingui/macro';
-import { useGetBlockQuery, useGetBlockRecordQuery } from '@chinilla/api-react'
+import { toBech32m } from '@chinilla/api';
+import { useGetBlockQuery, useGetBlockRecordQuery  } from '@chinilla/api-react'
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Back,
@@ -27,7 +28,6 @@ import {
   useCurrencyCode,
   vojoToChinilla,
   Suspender,
-  toBech32m,
 } from '@chinilla/core';
 import {
   hex_to_array,

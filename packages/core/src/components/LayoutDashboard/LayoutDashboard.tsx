@@ -2,7 +2,15 @@ import React, { ReactNode, Suspense } from 'react';
 import styled from 'styled-components';
 import { useNavigate, Outlet } from 'react-router-dom';
 import { t, Trans } from '@lingui/macro';
-import { Box, AppBar, Toolbar, Drawer, Container, IconButton, Typography } from '@mui/material';
+import {
+  Box,
+  AppBar,
+  Toolbar,
+  Drawer,
+  Container,
+  IconButton,
+  Typography,
+} from '@mui/material';
 import Flex from '../Flex';
 import Logo from '../Logo';
 import ToolbarSpacing from '../ToolbarSpacing';
@@ -26,8 +34,9 @@ const StyledContainer = styled(Container)`
 const StyledAppBar = styled(AppBar)`
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid ${({ theme }) => theme.palette.divider};
-  width: ${({ theme, drawer }) => drawer ? `calc(100% - ${theme.drawer.width})` : '100%'};
-  margin-left: ${({ theme, drawer }) => drawer ? theme.drawer.width : 0};
+  width: ${({ theme, drawer }) =>
+    drawer ? `calc(100% - ${theme.drawer.width})` : '100%'};
+  margin-left: ${({ theme, drawer }) => (drawer ? theme.drawer.width : 0)};
   z-index: ${({ theme }) => theme.zIndex.drawer + 1};};
 `;
 
@@ -44,14 +53,6 @@ const StyledDrawer = styled(Drawer)`
 
 const StyledBody = styled(Flex)`
   min-width: 0;
-`;
-
-const StyledBrandWrapper = styled(Flex)`
-  height: 64px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  // border-right: 1px solid rgba(0, 0, 0, 0.12);
 `;
 
 const StyledToolbar = styled(Toolbar)`
@@ -89,25 +90,31 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
       <Suspense fallback={<Loading center />}>
         {sidebar ? (
           <>
-            <StyledAppBar position="fixed" color="transparent" elevation={0} drawer>
+            <StyledAppBar
+              position="fixed"
+              color="transparent"
+              elevation={0}
+              drawer
+            >
               <StyledToolbar>
-                  <Flex alignItems="center" width="100%">
-                    <Box flexGrow={1}>
-                      <Typography variant="h4">
-                        <Trans>
-                          Wallet
-                        </Trans>
-                        &nbsp;
-                        {fingerprint && (
-                          <StyledInlineTypography color="textSecondary" variant="h5">
-                            {fingerprint}
-                          </StyledInlineTypography>
-                        )}
-                      </Typography>
-                    </Box>
-                    <Flex gap={4}>
-                      {actions}
-                      {/*
+                <Flex alignItems="center" width="100%">
+                  <Box flexGrow={1}>
+                    <Typography variant="h4">
+                      <Trans>Wallet</Trans>
+                      &nbsp;
+                      {fingerprint && (
+                        <StyledInlineTypography
+                          color="textSecondary"
+                          variant="h5"
+                        >
+                          {fingerprint}
+                        </StyledInlineTypography>
+                      )}
+                    </Typography>
+                  </Box>
+                  <Flex gap={4}>
+                    {actions}
+                    {/*
                       <DropdownIconButton
                         icon={<Notifications />}
                         title={t`Notifications`}
@@ -120,18 +127,16 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
                       </DropdownIconButton>
                       &nbsp;
                       */}
-                      <Tooltip title={<Trans>Log Out</Trans>}>
-                        <IconButton onClick={handleLogout}>
-                          <ExitToAppIcon />
-                        </IconButton>
-                      </Tooltip>
-                    </Flex>
+                    <Tooltip title={<Trans>Log Out</Trans>}>
+                      <IconButton onClick={handleLogout}>
+                        <ExitToAppIcon />
+                      </IconButton>
+                    </Tooltip>
                   </Flex>
+                </Flex>
               </StyledToolbar>
             </StyledAppBar>
-            <StyledDrawer variant="permanent">
-              {sidebar}
-            </StyledDrawer>
+            <StyledDrawer variant="permanent">{sidebar}</StyledDrawer>
           </>
         ) : (
           <StyledAppBar position="fixed" color="transparent" elevation={0}>
@@ -141,13 +146,15 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
                   <Logo width="100px" />
                   <Flex flexGrow={1} />
                   <Tooltip title={<Trans>Logout</Trans>}>
-                    <IconButton color="inherit" onClick={handleLogout} title={t`Log Out`}>
+                    <IconButton
+                      color="inherit"
+                      onClick={handleLogout}
+                      title={t`Log Out`}
+                    >
                       <ExitToAppIcon />
                     </IconButton>
                   </Tooltip>
-                  <Settings>
-                    {settings}
-                  </Settings>
+                  <Settings>{settings}</Settings>
                 </Flex>
               </Container>
             </StyledToolbar>

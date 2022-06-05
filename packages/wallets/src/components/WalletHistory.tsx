@@ -4,11 +4,11 @@ import { Trans } from '@lingui/macro';
 import moment from 'moment';
 import { Box, IconButton, Table as TableBase, TableBody, TableCell, TableRow, Tooltip, Typography, Chip } from '@mui/material';
 import { CallReceived as CallReceivedIcon, CallMade as CallMadeIcon, ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@mui/icons-material';
-import { Card, CardKeyValue, CopyToClipboard, Flex, Loading, StateColor, TableControlled, toBech32m, useCurrencyCode, vojoToChinilla, vojoToCAT, FormatLargeNumber } from '@chinilla/core';
+import { Card, CardKeyValue, CopyToClipboard, Flex, Loading, StateColor, TableControlled, useCurrencyCode, vojoToChinilla, vojoToCAT, FormatLargeNumber } from '@chinilla/core';
 import { useGetOfferRecordMutation, useGetSyncStatusQuery } from '@chinilla/api-react';
 import styled from 'styled-components';
 import type { Row } from '@chinilla/core';
-import { WalletType, TransactionType } from '@chinilla/api';
+import { WalletType, TransactionType, toBech32m } from '@chinilla/api';
 import useWallet from '../hooks/useWallet';
 import useWalletTransactions from '../hooks/useWalletTransactions';
 

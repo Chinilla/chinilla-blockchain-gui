@@ -11,22 +11,21 @@ import {
   ButtonLoading,
   Flex,
   Form,
+  useOpenDialog,
   useShowError,
-  useShowSaveDialog,
 } from '@chinilla/core';
 import { useCreateOfferForIdsMutation } from '@chinilla/api-react';
-import {
-  Grid,
-} from '@mui/material';
+import { Grid } from '@mui/material';
 import type OfferEditorRowData from './OfferEditorRowData';
-import { suggestedFilenameForOffer } from './utils';
-import useAssetIdName from '../../hooks/useAssetIdName';
 import { WalletType } from '@chinilla/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
+import OfferEditorConfirmationDialog from './OfferEditorConfirmationDialog';
 import OfferLocalStorageKeys from './OfferLocalStorage';
 import { chinillaToVojo, catToVojo } from '@chinilla/core';
-import fs from 'fs';
 
+/* ========================================================================== */
+/*                                Offer Editor                                */
+/* ========================================================================== */
 
 type FormData = {
   selectedTab: number;
@@ -36,44 +35,66 @@ type FormData = {
 };
 
 type OfferEditorProps = {
-  onOfferCreated: (obj: { offerRecord: any, offerData: any }) => void;
+  walletId?: number;
+  walletType?: WalletType;
+  onOfferCreated: (obj: { offerRecord: any; offerData: any }) => void;
 };
 
+function defaultMakerRow(
+  walletId?: number,
+  walletType?: WalletType,
+): OfferEditorRowData {
+  return {
+    amount: '',
+    assetWalletId: walletId ?? 0,
+    walletType: walletType ?? WalletType.STANDARD_WALLET,
+    spendableBalance: new BigNumber(0),
+  };
+}
+
 function OfferEditor(props: OfferEditorProps) {
-  const { onOfferCreated } = props;
-  const showSaveDialog = useShowSaveDialog();
+  const { walletId, walletType, onOfferCreated } = props;
   const navigate = useNavigate();
   const defaultValues: FormData = {
     selectedTab: 0,
-    makerRows: [{ amount: '', assetWalletId: 0, walletType: WalletType.STANDARD_WALLET, spendableBalance: new BigNumber(0) }],
-    takerRows: [{ amount: '', assetWalletId: 0, walletType: WalletType.STANDARD_WALLET, spendableBalance: new BigNumber(0) }],
+    makerRows: [defaultMakerRow(walletId, walletType)],
+    takerRows: [
+      {
+        amount: '',
+        assetWalletId: 0,
+        walletType: WalletType.STANDARD_WALLET,
+        spendableBalance: new BigNumber(0),
+      },
+    ],
     fee: '',
   };
   const methods = useForm<FormData>({
     defaultValues,
   });
+  const openDialog = useOpenDialog();
   const errorDialog = useShowError();
-  const { lookupByAssetId } = useAssetIdName();
-  const [suppressShareOnCreate] = useLocalStorage<boolean>(OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE);
+  const [suppressShareOnCreate] = useLocalStorage<boolean>(
+    OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE,
+  );
   const [createOfferForIds] = useCreateOfferForIdsMutation();
   const [processing, setIsProcessing] = useState<boolean>(false);
 
-  function updateOffer(offer: { [key: string]: BigNumber }, row: OfferEditorRowData, debit: boolean) {
+  function updateOffer(
+    offer: { [key: string]: BigNumber },
+    row: OfferEditorRowData,
+    debit: boolean,
+  ) {
     const { amount, assetWalletId, walletType } = row;
     if (assetWalletId > 0) {
       let vojoAmount = new BigNumber(0);
       if (walletType === WalletType.STANDARD_WALLET) {
         vojoAmount = chinillaToVojo(amount);
-      }
-      else if (walletType === WalletType.CAT) {
+      } else if (walletType === WalletType.CAT) {
         vojoAmount = catToVojo(amount);
       }
 
-      offer[assetWalletId] = debit
-        ? vojoAmount.negated()
-        : vojoAmount;
-    }
-    else {
+      offer[assetWalletId] = debit ? vojoAmount.negated() : vojoAmount;
+    } else {
       console.log('missing asset wallet id');
     }
   }
@@ -89,11 +110,11 @@ function OfferEditor(props: OfferEditorProps) {
       updateOffer(offer, row, true);
       if (row.assetWalletId === 0) {
         missingAssetSelection = true;
-      }
-      else if (!row.amount) {
+      } else if (!row.amount) {
         missingAmount = true;
-      }
-      else if (new BigNumber(row.amount).isGreaterThan(row.spendableBalance)) {
+      } else if (
+        new BigNumber(row.amount).isGreaterThan(row.spendableBalance)
+      ) {
         amountExceedsSpendableBalance = true;
       }
     });
@@ -104,62 +125,57 @@ function OfferEditor(props: OfferEditorProps) {
       }
     });
 
-    if (missingAssetSelection || missingAmount || amountExceedsSpendableBalance) {
+    if (
+      missingAssetSelection ||
+      missingAmount ||
+      amountExceedsSpendableBalance
+    ) {
       if (missingAssetSelection) {
         errorDialog(new Error(t`Please select an asset for each row`));
-      }
-      else if (missingAmount) {
+      } else if (missingAmount) {
         errorDialog(new Error(t`Please enter an amount for each row`));
-      }
-      else if (amountExceedsSpendableBalance) {
+      } else if (amountExceedsSpendableBalance) {
         errorDialog(new Error(t`Amount exceeds spendable balance`));
       }
 
       return;
     }
 
+    const confirmedCreation = await openDialog(
+      <OfferEditorConfirmationDialog />,
+    );
+
+    if (!confirmedCreation) {
+      return;
+    }
+
     setIsProcessing(true);
 
     try {
-      // preflight offer creation to check validity
-      const response = await createOfferForIds({ walletIdsAndAmounts: offer, feeInVojos, validateOnly: true }).unwrap();
-
+      const response = await createOfferForIds({
+        walletIdsAndAmounts: offer,
+        feeInVojos,
+        validateOnly: false,
+      }).unwrap();
       if (response.success === false) {
-        const error = response.error || new Error("Encountered an unknown error while validating offer");
+        const error =
+          response.error ||
+          new Error('Encountered an unknown error while creating offer');
         errorDialog(error);
-      }
-      else {
-        const dialogOptions = { defaultPath: suggestedFilenameForOffer(response.tradeRecord.summary, lookupByAssetId) };
+      } else {
+        const { offer: offerData, tradeRecord: offerRecord } = response;
 
-        const result = await showSaveDialog(dialogOptions);
-        console.log('result', result, dialogOptions);
-        const { filePath, canceled } = result;
+        try {
+          navigate(-1);
 
-        if (!canceled && filePath) {
-          const response = await createOfferForIds({ walletIdsAndAmounts: offer, feeInVojos, validateOnly: false }).unwrap();
-          if (response.success === false) {
-            const error = response.error || new Error("Encountered an unknown error while creating offer");
-            errorDialog(error);
+          if (!suppressShareOnCreate) {
+            onOfferCreated({ offerRecord, offerData });
           }
-          else {
-            const { offer: offerData, tradeRecord: offerRecord } = response;
-
-            try {
-              fs.writeFileSync(filePath, offerData);
-              navigate(-1);
-
-              if (!suppressShareOnCreate) {
-                onOfferCreated({ offerRecord, offerData });
-              }
-            }
-            catch (err) {
-              console.error(err);
-            }
-          }
+        } catch (err) {
+          console.error(err);
         }
       }
-    }
-    catch (e) {
+    } catch (e) {
       let error = e as Error;
 
       if (error.message.startsWith('insufficient funds')) {
@@ -169,14 +185,16 @@ function OfferEditor(props: OfferEditorProps) {
         `);
       }
       errorDialog(error);
-    }
-    finally {
+    } finally {
       setIsProcessing(false);
     }
   }
 
   function handleReset() {
-    methods.reset(defaultValues);
+    methods.reset({
+      ...defaultValues,
+      makerRows: [defaultMakerRow()],
+    });
   }
 
   return (
@@ -200,7 +218,7 @@ function OfferEditor(props: OfferEditorProps) {
             type="submit"
             loading={processing}
           >
-            <Trans>Save Offer</Trans>
+            <Trans>Create Offer</Trans>
           </ButtonLoading>
         </Flex>
       </Flex>
@@ -213,21 +231,33 @@ OfferEditor.defaultProps = {
 };
 
 type CreateOfferEditorProps = {
-  onOfferCreated: (obj: { offerRecord: any, offerData: any }) => void;
+  walletId?: number;
+  walletType?: WalletType;
+  referrerPath?: string;
+  onOfferCreated: (obj: { offerRecord: any; offerData: any }) => void;
 };
 
 export function CreateOfferEditor(props: CreateOfferEditorProps) {
-  const { onOfferCreated } = props;
+  const { walletId, walletType, referrerPath, onOfferCreated } = props;
+
+  const title = <Trans>Create an Offer</Trans>;
+  const navElement = referrerPath ? (
+    <Back variant="h5" to={referrerPath}>
+      {title}
+    </Back>
+  ) : (
+    <>{title}</>
+  );
 
   return (
     <Grid container>
       <Flex flexDirection="column" flexGrow={1} gap={3}>
-        <Flex>
-          <Back variant="h5" to="/dashboard/offers/manage">
-            <Trans>Create an Offer</Trans>
-          </Back>
-        </Flex>
-        <OfferEditor onOfferCreated={onOfferCreated} />
+        <Flex>{navElement}</Flex>
+        <OfferEditor
+          walletId={walletId}
+          walletType={walletType}
+          onOfferCreated={onOfferCreated}
+        />
       </Flex>
     </Grid>
   );
