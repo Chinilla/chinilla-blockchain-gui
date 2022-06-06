@@ -31,8 +31,12 @@ msgid "(Optional)"
 msgstr "（可选）"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:67
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "* 想要进一步了解奇亚？来看看一位开源开发者创建的 <0>奇亚区块浏览器</0>。"
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:67
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "* 想要进一步了解奇亚？来看看一位开源开发者创建的 <0>奇亚区块浏览器</0>。"
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -82,8 +86,8 @@ msgstr "收割机是一个在存有农田文件的机器上运行的服务。农
 msgid "A value of {0} is recommended"
 msgstr "建议值 {0}"
 
-#: src/electron/main.tsx:572
-#: src/electron/main.tsx:659
+#: src/electron/main.tsx:584
+#: src/electron/main.tsx:671
 msgid "About Chinilla Blockchain"
 msgstr "关于奇亚Chinilla区块链项目"
 
@@ -133,8 +137,8 @@ msgstr "操作"
 msgid "Add CAT wallets to have more options"
 msgstr ""
 
-#: src/components/plot/PlotHeader.tsx:88
 #: src/components/plot/overview/PlotOverviewPlots.tsx:55
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "添加农田文件夹"
 
@@ -147,7 +151,6 @@ msgstr "将农田开垦任务加入队列"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/FarmHero.tsx:40
-#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:182
 #: src/components/plot/overview/PlotOverviewHero.tsx:51
 #: src/components/plot/PlotHeader.tsx:60
@@ -187,10 +190,10 @@ msgstr "从水龙头获取 {currencyCode}"
 msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
 msgstr "当您的密钥成功迁移到新密钥串后，您可以选择从旧密钥串中移除您的密钥。"
 
-#: src/components/nfts/NFTProfileDropdown.tsx:64
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:44
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:73
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:86
+#: src/components/nfts/NFTProfileDropdown.tsx:64
 msgid "All"
 msgstr ""
 
@@ -451,6 +454,10 @@ msgstr "修改私钥密码"
 msgid "Change Pool"
 msgstr "更换农业合作社"
 
+#: src/electron/main.tsx:563
+msgid "Chat on Discord"
+msgstr ""
+
 #: src/electron/main.tsx:551
 msgid "Chat on KeyBase"
 msgstr "在Keybase上参与讨论"
@@ -463,7 +470,7 @@ msgstr ""
 msgid "Check Provenance on Spacescan.io"
 msgstr ""
 
-#: src/electron/main.tsx:569
+#: src/electron/main.tsx:581
 msgid "Chinilla"
 msgstr "奇亚"
 
@@ -542,8 +549,8 @@ msgstr ""
 #~ msgid "Coins:"
 #~ msgstr "Coins:"
 
-#: src/components/nfts/NFTSummary.tsx:59
 #: src/components/nfts/detail/NFTDetail.tsx:168
+#: src/components/nfts/NFTSummary.tsx:59
 msgid "Collection"
 msgstr ""
 
@@ -1216,8 +1223,7 @@ msgstr "农民节点没有运行"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "农民们通过贡献自己的空余存储空间，可以帮助提高整个网络的安全性，进而获得区块奖励和交易费用的奖励。当你的第一块农田开垦完成后，这里就是你的农场。<0>了解更多</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:96
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/dashboard/DashboardSideBar.tsx:97
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1279,7 +1285,7 @@ msgid "Fees included in offer:"
 msgstr ""
 
 #: src/electron/main.tsx:399
-#: src/electron/main.tsx:606
+#: src/electron/main.tsx:618
 msgid "File"
 msgstr "文件"
 
@@ -1307,7 +1313,7 @@ msgstr "关注我们的Twitter"
 msgid "Frequently Asked Questions"
 msgstr "常见问题解答"
 
-#: src/components/dashboard/DashboardSideBar.tsx:77
+#: src/components/dashboard/DashboardSideBar.tsx:78
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "全节点"
@@ -1336,6 +1342,10 @@ msgstr "常规"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
+#: src/electron/main.tsx:569
+msgid "Github Discussions"
+msgstr ""
+
 #: src/components/offers/OfferShareDialog.tsx:1015
 #: src/components/offers/OfferShareDialog.tsx:1076
 msgid "Go to #{channelName}"
@@ -1348,6 +1358,10 @@ msgstr ""
 #: src/components/pool/PoolOverview.tsx:172
 #~ msgid "Grid view"
 #~ msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:145
+msgid "HCX for NFT"
+msgstr ""
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:576
 #~ msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
@@ -1878,7 +1892,7 @@ msgstr ""
 msgid "NFT not specified"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "NFTs"
 msgstr ""
 
@@ -1976,6 +1990,7 @@ msgstr "你的农田还没有通过过滤器检查."
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/nfts/detail/NFTDetail.tsx:162
 #: src/components/nfts/detail/NFTDetail.tsx:172
 #: src/components/nfts/detail/NFTDetailV2.tsx:145
@@ -2081,7 +2096,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Offers"
 msgstr "报价"
 
@@ -2448,7 +2463,7 @@ msgstr "农田与 {0} 重复"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "农田NFT正在过渡到（目标状态）。这可能需要一段时间。请在完成之前不要关闭应用程序。"
 
-#: src/components/dashboard/DashboardSideBar.tsx:83
+#: src/components/dashboard/DashboardSideBar.tsx:84
 #: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "农田"
@@ -2592,7 +2607,7 @@ msgstr "耕作池未提供 targetPuzzleHash。"
 msgid "Pool:"
 msgstr "农业合作社："
 
-#: src/components/dashboard/DashboardSideBar.tsx:101
+#: src/components/dashboard/DashboardSideBar.tsx:102
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2665,8 +2680,8 @@ msgstr "空间证明的大小"
 msgid "Proofs Found"
 msgstr "已找到证明"
 
-#: src/components/nfts/NFTProperties.tsx:67
 #: src/components/nfts/detail/NFTDetailV2.tsx:150
+#: src/components/nfts/NFTProperties.tsx:67
 msgid "Properties"
 msgstr ""
 
@@ -2782,6 +2797,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:59
 #: src/components/plot/overview/PlotOverviewPlots.tsx:68
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "刷新农田列表"
 
@@ -3018,7 +3034,7 @@ msgstr "设置私钥密码"
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:110
+#: src/components/dashboard/DashboardSideBar.tsx:111
 #: src/components/settings/Settings.tsx:257
 msgid "Settings"
 msgstr "设置"
@@ -3119,7 +3135,7 @@ msgstr "加入农业合作社来稳定HCX耕作收益。"
 msgid "Specify a value of 0 to use all available threads"
 msgstr "输 0 即使用所有可用线程"
 
-#: src/electron/main.tsx:620
+#: src/electron/main.tsx:632
 msgid "Speech"
 msgstr "演说"
 
@@ -3490,10 +3506,10 @@ msgstr "创建时间"
 msgid "Timestamp"
 msgstr "时间戳"
 
-#: src/components/nfts/NFTCard.tsx:77
-#: src/components/nfts/NFTSummary.tsx:186
 #: src/components/nfts/detail/NFTDetail.tsx:127
 #: src/components/nfts/detail/NFTDetailV2.tsx:138
+#: src/components/nfts/NFTCard.tsx:77
+#: src/components/nfts/NFTSummary.tsx:186
 msgid "Title Not Available"
 msgstr ""
 
@@ -3509,7 +3525,7 @@ msgstr ""
 msgid "Token Standard"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
@@ -3924,10 +3940,6 @@ msgstr ""
 #~ msgid "Would you like to transfer the specified NFT to a new owner? It is recommended that you include a fee to ensure that the transaction is completed in a timely manner."
 #~ msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:145
-msgid "HCX for NFT"
-msgstr ""
-
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:323
 msgid "Yes"
@@ -4187,6 +4199,10 @@ msgstr "{0} 积点 {1} - {2} 小时前"
 msgid "{makerFee, plural, one {vojo} other {vojos}}"
 msgstr ""
 
+#: src/components/nfts/NFTRankings.tsx:52
+msgid "{value} of {max_value}"
+msgstr ""
+
 #: src/components/core/components/Amount/Amount.tsx:82
 #~ msgid "{vojo, plural, one {vojo} other {vojos}}"
 #~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
@@ -4194,10 +4210,6 @@ msgstr ""
 #: src/components/offers/OfferSummaryRow.tsx:46
 #: src/components/offers/OfferViewer.tsx:65
 msgid "{vojos, plural, one {vojo} other {vojos}}"
-msgstr ""
-
-#: src/components/nfts/NFTRankings.tsx:52
-msgid "{value} of {max_value}"
 msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118

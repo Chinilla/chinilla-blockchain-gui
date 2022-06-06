@@ -31,8 +31,12 @@ msgid "(Optional)"
 msgstr "(Opcional)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:67
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "*¿Quieres explorar más hacerca de los bloques de Chinilla? Echa un vistazo a <0>Chinilla Explorer</0>, creado por un desarrollador de código abierto."
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr ""
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:67
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "*¿Quieres explorar más hacerca de los bloques de Chinilla? Echa un vistazo a <0>Chinilla Explorer</0>, creado por un desarrollador de código abierto."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -82,8 +86,8 @@ msgstr "Un cosechador es un servicio que se ejecuta en una máquina en donde act
 msgid "A value of {0} is recommended"
 msgstr ""
 
-#: src/electron/main.tsx:572
-#: src/electron/main.tsx:659
+#: src/electron/main.tsx:584
+#: src/electron/main.tsx:671
 msgid "About Chinilla Blockchain"
 msgstr "Acerca de Chinilla Blockchain"
 
@@ -133,8 +137,8 @@ msgstr "Acciones"
 msgid "Add CAT wallets to have more options"
 msgstr ""
 
-#: src/components/plot/PlotHeader.tsx:88
 #: src/components/plot/overview/PlotOverviewPlots.tsx:55
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Añadir Directorio de Parcela"
 
@@ -147,7 +151,6 @@ msgstr "Añadir Parcela a la Cola"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/FarmHero.tsx:40
-#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:182
 #: src/components/plot/overview/PlotOverviewHero.tsx:51
 #: src/components/plot/PlotHeader.tsx:60
@@ -187,10 +190,10 @@ msgstr "Añade {currencyCode} del Faucet"
 msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
 msgstr ""
 
-#: src/components/nfts/NFTProfileDropdown.tsx:64
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:44
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:73
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:86
+#: src/components/nfts/NFTProfileDropdown.tsx:64
 msgid "All"
 msgstr ""
 
@@ -451,6 +454,10 @@ msgstr ""
 msgid "Change Pool"
 msgstr "Cambiar Conjunto"
 
+#: src/electron/main.tsx:563
+msgid "Chat on Discord"
+msgstr ""
+
 #: src/electron/main.tsx:551
 msgid "Chat on KeyBase"
 msgstr "Chatear en Keybase"
@@ -463,7 +470,7 @@ msgstr ""
 msgid "Check Provenance on Spacescan.io"
 msgstr ""
 
-#: src/electron/main.tsx:569
+#: src/electron/main.tsx:581
 msgid "Chinilla"
 msgstr ""
 
@@ -542,8 +549,8 @@ msgstr ""
 #~ msgid "Coins:"
 #~ msgstr "Coins:"
 
-#: src/components/nfts/NFTSummary.tsx:59
 #: src/components/nfts/detail/NFTDetail.tsx:168
+#: src/components/nfts/NFTSummary.tsx:59
 msgid "Collection"
 msgstr ""
 
@@ -1216,8 +1223,7 @@ msgstr "El Agricultor no está funcionando"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Los agricultores obtienen recompensas en bloque y tarifas de transacción al asignar espacio libre a la red para ayudar a asegurar las transacciones. Aquí es donde estará su granja una vez que agregue una parcela. <0> Más información </0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:96
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/dashboard/DashboardSideBar.tsx:97
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1279,7 +1285,7 @@ msgid "Fees included in offer:"
 msgstr ""
 
 #: src/electron/main.tsx:399
-#: src/electron/main.tsx:606
+#: src/electron/main.tsx:618
 msgid "File"
 msgstr "Archivo"
 
@@ -1307,7 +1313,7 @@ msgstr "Seguir en Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Preguntas Frecuentes"
 
-#: src/components/dashboard/DashboardSideBar.tsx:77
+#: src/components/dashboard/DashboardSideBar.tsx:78
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Nodo Completo"
@@ -1336,6 +1342,10 @@ msgstr ""
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
+#: src/electron/main.tsx:569
+msgid "Github Discussions"
+msgstr ""
+
 #: src/components/offers/OfferShareDialog.tsx:1015
 #: src/components/offers/OfferShareDialog.tsx:1076
 msgid "Go to #{channelName}"
@@ -1348,6 +1358,10 @@ msgstr ""
 #: src/components/pool/PoolOverview.tsx:172
 #~ msgid "Grid view"
 #~ msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:145
+msgid "HCX for NFT"
+msgstr ""
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:576
 #~ msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
@@ -1878,7 +1892,7 @@ msgstr ""
 msgid "NFT not specified"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "NFTs"
 msgstr ""
 
@@ -1976,6 +1990,7 @@ msgstr "Ninguna de sus parcelas a pasado un filtro de parcela aún."
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/nfts/detail/NFTDetail.tsx:162
 #: src/components/nfts/detail/NFTDetail.tsx:172
 #: src/components/nfts/detail/NFTDetailV2.tsx:145
@@ -2081,7 +2096,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Offers"
 msgstr ""
 
@@ -2448,7 +2463,7 @@ msgstr "La parcela es un duplicado de {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT está transicionando hacia (estado de destino). Esto puede tardar un tiempo. Por favor, no cierre la aplicación hasta que esto esté finalizado."
 
-#: src/components/dashboard/DashboardSideBar.tsx:83
+#: src/components/dashboard/DashboardSideBar.tsx:84
 #: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "Parcelas"
@@ -2592,7 +2607,7 @@ msgstr ""
 msgid "Pool:"
 msgstr "Conjunto:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:101
+#: src/components/dashboard/DashboardSideBar.tsx:102
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2665,8 +2680,8 @@ msgstr "Prueba de Tamaño de Espacio"
 msgid "Proofs Found"
 msgstr "Pruebas Encontradas"
 
-#: src/components/nfts/NFTProperties.tsx:67
 #: src/components/nfts/detail/NFTDetailV2.tsx:150
+#: src/components/nfts/NFTProperties.tsx:67
 msgid "Properties"
 msgstr ""
 
@@ -2782,6 +2797,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:59
 #: src/components/plot/overview/PlotOverviewPlots.tsx:68
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "Actualizar Parcelas"
 
@@ -3018,7 +3034,7 @@ msgstr ""
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:110
+#: src/components/dashboard/DashboardSideBar.tsx:111
 #: src/components/settings/Settings.tsx:257
 msgid "Settings"
 msgstr ""
@@ -3119,7 +3135,7 @@ msgstr "Suaviza tus recompensas de cría HCX uniéndote a un conjunto."
 msgid "Specify a value of 0 to use all available threads"
 msgstr ""
 
-#: src/electron/main.tsx:620
+#: src/electron/main.tsx:632
 msgid "Speech"
 msgstr "Habla"
 
@@ -3490,10 +3506,10 @@ msgstr "Hora de Creación"
 msgid "Timestamp"
 msgstr "Marca de tiempo"
 
-#: src/components/nfts/NFTCard.tsx:77
-#: src/components/nfts/NFTSummary.tsx:186
 #: src/components/nfts/detail/NFTDetail.tsx:127
 #: src/components/nfts/detail/NFTDetailV2.tsx:138
+#: src/components/nfts/NFTCard.tsx:77
+#: src/components/nfts/NFTSummary.tsx:186
 msgid "Title Not Available"
 msgstr ""
 
@@ -3509,7 +3525,7 @@ msgstr ""
 msgid "Token Standard"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
@@ -3924,10 +3940,6 @@ msgstr ""
 #~ msgid "Would you like to transfer the specified NFT to a new owner? It is recommended that you include a fee to ensure that the transaction is completed in a timely manner."
 #~ msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:145
-msgid "HCX for NFT"
-msgstr ""
-
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:323
 msgid "Yes"
@@ -4187,6 +4199,10 @@ msgstr "{0} puntos {1} - hace {2} horas"
 msgid "{makerFee, plural, one {vojo} other {vojos}}"
 msgstr ""
 
+#: src/components/nfts/NFTRankings.tsx:52
+msgid "{value} of {max_value}"
+msgstr ""
+
 #: src/components/core/components/Amount/Amount.tsx:82
 #~ msgid "{vojo, plural, one {vojo} other {vojos}}"
 #~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
@@ -4194,10 +4210,6 @@ msgstr ""
 #: src/components/offers/OfferSummaryRow.tsx:46
 #: src/components/offers/OfferViewer.tsx:65
 msgid "{vojos, plural, one {vojo} other {vojos}}"
-msgstr ""
-
-#: src/components/nfts/NFTRankings.tsx:52
-msgid "{value} of {max_value}"
 msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118

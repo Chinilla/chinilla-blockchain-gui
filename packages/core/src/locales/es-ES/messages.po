@@ -1270,8 +1270,8 @@ msgstr "Cargando lista de llaves"
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:124
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:146
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:130
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:152
 msgid "Log Out"
 msgstr "Cerrar sesión"
 
@@ -1279,7 +1279,7 @@ msgstr "Cerrar sesión"
 #~ msgid "Logging in"
 #~ msgstr "Logging in"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:148
 msgid "Logout"
 msgstr "Cerrar sesión"
 
@@ -2880,7 +2880,7 @@ msgstr "El valor parece alto"
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr "Waiting for the transaction to be confirmed"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:97
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:103
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Cartera"

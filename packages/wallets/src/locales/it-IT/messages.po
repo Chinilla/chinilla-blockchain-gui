@@ -129,14 +129,12 @@ msgstr "Aggiungi un nodo personalizzato"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:166
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
 #: src/components/hero/WalletHeroWallets.tsx:83
 #: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:158
+#: src/components/WalletsManageTokens.tsx:166
 msgid "Add Token"
 msgstr "Aggiungi token"
 
@@ -177,7 +175,6 @@ msgstr "Aggiunta del token {0}"
 msgid "Address"
 msgstr "Indirizzo"
 
-#: src/components/WalletSend.tsx:154
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
 #: src/components/WalletSend.tsx:154
@@ -196,8 +193,6 @@ msgstr "Indirizzo / Puzzle hash"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
 #: src/components/cat/WalletCATSend.tsx:206
 #: src/components/rateLimited/WalletRateLimited.jsx:719
 #: src/components/WalletHistory.tsx:165
@@ -387,12 +382,6 @@ msgstr "Bilancio"
 #~ msgid "Can be backed up to mnemonic seed"
 #~ msgstr "Can be backed up to mnemonic seed"
 
-#: src/components/offers/OfferDataEntryDialog.tsx:67
-#: src/components/offers/OfferShareDialog.tsx:437
-#: src/components/offers/OfferShareDialog.tsx:564
-#: src/components/offers/OfferShareDialog.tsx:800
-#: src/components/offers/OfferShareDialog.tsx:913
-#: src/components/offers/OfferViewer.tsx:292
 #: src/components/PasteMnemonic.tsx:78
 #: src/components/WalletRenameDialog.tsx:90
 msgid "Cancel"
@@ -412,8 +401,8 @@ msgstr "Annulla"
 #~ msgid "Cancel on blockchain"
 #~ msgstr "Annulla sulla blockchain"
 
-#: src/components/WalletSend.tsx:101
 #: src/components/cat/WalletCATSend.tsx:118
+#: src/components/WalletSend.tsx:101
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Errore: impossibile inviare chinilla ad un indirizzo colorato. Perfavore inserisci un indirizzo chinilla."
 
@@ -463,8 +452,8 @@ msgstr "Chinilla Asset Token"
 #~ msgstr "Chinilla Blockchain Wiki"
 
 #: src/components/offers/OfferShareDialog.tsx:359
-msgid "Chinilla Offers URL"
-msgstr ""
+#~ msgid "Chinilla Offers URL"
+#~ msgstr ""
 
 #: src/components/standard/WalletStandard.tsx:23
 #~ msgid "Chinilla Wallet"
@@ -701,7 +690,6 @@ msgstr "Crea un portafoglio di tipo utente con tariffa limitata"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:136
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
 #: src/components/WalletSend.tsx:136
@@ -1079,8 +1067,8 @@ msgstr "Errore l'indirizzo inserito sembra essere di un colore diverso."
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:184
 #: src/components/cat/WalletCATSend.tsx:240
+#: src/components/WalletSend.tsx:184
 msgid "Farm"
 msgstr "Coltiva"
 
@@ -1141,8 +1129,6 @@ msgstr "Coltiva"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
 #: src/components/cat/WalletCATSend.tsx:219
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
@@ -1604,8 +1590,8 @@ msgstr "Gestisci DID di Recupero"
 msgid "Manage token list"
 msgstr "Gestisci l'elenco dei token"
 
-#: src/components/WalletHistory.tsx:116
 #: src/components/cat/WalletCATSend.tsx:231
+#: src/components/WalletHistory.tsx:116
 msgid "Memo"
 msgstr "Memo"
 
@@ -1867,8 +1853,8 @@ msgstr "Offerta accettata"
 #~ msgid "Offers you created"
 #~ msgstr "Offerte che hai creato"
 
-#: src/components/WalletSend.tsx:139
 #: src/components/cat/WalletCATSend.tsx:179
+#: src/components/WalletSend.tsx:139
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Il tempo medio che passa tra un blocco di transazioni e l'altro è di un minuto. Pertanto, salvo casi di congestione, è possibile aspettarsi che una transazione appena effettuata sarà inclusa nel primo blocco utile, quindi validata, in meno di un minuto."
 
@@ -2047,7 +2033,6 @@ msgstr "Per favore inserisci un ammontare di moneta iniziale valido"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Inserisci un numero intero valido pari o superiore a 0 per il numero di Backup ID che intendi recuperare."
 
-#: src/components/WalletSend.tsx:91
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
 #: src/components/WalletSend.tsx:91
@@ -2058,7 +2043,6 @@ msgstr "Per favore inserisci una ammontare numerico valido"
 msgid "Please enter a valid numeric amount."
 msgstr "Per favore inserisci una ammontare numerico valido."
 
-#: src/components/WalletSend.tsx:96
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
@@ -2104,7 +2088,6 @@ msgstr "Per favore inserisci un nome valido per il portafoglio"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:86
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
 #: src/components/WalletSend.tsx:86
@@ -2544,8 +2527,8 @@ msgstr "Ripristina Wallet"
 #~ msgid "Rename"
 #~ msgstr "Rename"
 
-#: src/components/WalletRenameDialog.tsx:69
 #: src/components/cat/WalletCAT.tsx:102
+#: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
 msgstr "Rinomina Portafoglio"
 
@@ -2609,9 +2592,12 @@ msgstr "Salva"
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:144
-#: src/components/cat/WalletCATTAILDialog.tsx:71
 msgid "Search on Tail Database"
 msgstr "Cerca nel Tail Database"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Token Database"
+msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 #~ msgid "Second temporary folder location"
@@ -2707,8 +2693,6 @@ msgstr "Seleziona file di recupero:"
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
 #: src/components/cat/WalletCATSend.tsx:250
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59

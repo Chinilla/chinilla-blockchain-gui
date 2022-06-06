@@ -31,8 +31,12 @@ msgid "(Optional)"
 msgstr "(Optional)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:67
-msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
-msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0>"
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:67
+#~ msgid "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
+#~ msgstr "*Want to explore Chinilla’s blocks further? Check out <0>Chinilla Explorer</0> built by an open source developer."
 
 #: src/components/app/AppSelectMode.tsx:120
 #~ msgid "+"
@@ -82,8 +86,8 @@ msgstr "A harvester is a service running on a machine where plot(s) are actually
 msgid "A value of {0} is recommended"
 msgstr "A value of {0} is recommended"
 
-#: src/electron/main.tsx:572
-#: src/electron/main.tsx:659
+#: src/electron/main.tsx:584
+#: src/electron/main.tsx:671
 msgid "About Chinilla Blockchain"
 msgstr "About Chinilla Blockchain"
 
@@ -133,8 +137,8 @@ msgstr "Actions"
 msgid "Add CAT wallets to have more options"
 msgstr "Add CAT wallets to have more options"
 
-#: src/components/plot/PlotHeader.tsx:88
 #: src/components/plot/overview/PlotOverviewPlots.tsx:55
+#: src/components/plot/PlotHeader.tsx:88
 msgid "Add Plot Directory"
 msgstr "Add Plot Directory"
 
@@ -147,7 +151,6 @@ msgstr "Add Plot to Queue"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/FarmHero.tsx:40
-#: src/components/plot/PlotHeader.tsx:60
 #: src/components/plot/add/PlotAddForm.tsx:182
 #: src/components/plot/overview/PlotOverviewHero.tsx:51
 #: src/components/plot/PlotHeader.tsx:60
@@ -187,10 +190,10 @@ msgstr "Add {currencyCode} from the Faucet"
 msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
 msgstr "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
 
-#: src/components/nfts/NFTProfileDropdown.tsx:64
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:44
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:73
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:86
+#: src/components/nfts/NFTProfileDropdown.tsx:64
 msgid "All"
 msgstr "All"
 
@@ -451,6 +454,10 @@ msgstr "Change Passphrase"
 msgid "Change Pool"
 msgstr "Change Pool"
 
+#: src/electron/main.tsx:563
+msgid "Chat on Discord"
+msgstr "Chat on Discord"
+
 #: src/electron/main.tsx:551
 msgid "Chat on KeyBase"
 msgstr "Chat on KeyBase"
@@ -463,7 +470,7 @@ msgstr "Check Provenance on MintGarden"
 msgid "Check Provenance on Spacescan.io"
 msgstr "Check Provenance on Spacescan.io"
 
-#: src/electron/main.tsx:569
+#: src/electron/main.tsx:581
 msgid "Chinilla"
 msgstr "Chinilla"
 
@@ -542,8 +549,8 @@ msgstr "Coins"
 #~ msgid "Coins:"
 #~ msgstr "Coins:"
 
-#: src/components/nfts/NFTSummary.tsx:59
 #: src/components/nfts/detail/NFTDetail.tsx:168
+#: src/components/nfts/NFTSummary.tsx:59
 msgid "Collection"
 msgstr "Collection"
 
@@ -1216,8 +1223,7 @@ msgstr "Farmer is not running"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:96
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/dashboard/DashboardSideBar.tsx:97
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1279,7 +1285,7 @@ msgid "Fees included in offer:"
 msgstr "Fees included in offer:"
 
 #: src/electron/main.tsx:399
-#: src/electron/main.tsx:606
+#: src/electron/main.tsx:618
 msgid "File"
 msgstr "File"
 
@@ -1307,7 +1313,7 @@ msgstr "Follow on Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Frequently Asked Questions"
 
-#: src/components/dashboard/DashboardSideBar.tsx:77
+#: src/components/dashboard/DashboardSideBar.tsx:78
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Full Node"
@@ -1336,6 +1342,10 @@ msgstr "General"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
+#: src/electron/main.tsx:569
+msgid "Github Discussions"
+msgstr "Github Discussions"
+
 #: src/components/offers/OfferShareDialog.tsx:1015
 #: src/components/offers/OfferShareDialog.tsx:1076
 msgid "Go to #{channelName}"
@@ -1348,6 +1358,10 @@ msgstr "Go to Offerpool"
 #: src/components/pool/PoolOverview.tsx:172
 #~ msgid "Grid view"
 #~ msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:145
+msgid "HCX for NFT"
+msgstr "HCX for NFT"
 
 #: src/components/_wallet_old/standard/WalletStandard.tsx:576
 #~ msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
@@ -1882,7 +1896,7 @@ msgstr "NFT for HCX"
 msgid "NFT not specified"
 msgstr "NFT not specified"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "NFTs"
 msgstr "NFTs"
 
@@ -1980,6 +1994,7 @@ msgstr "None of your plots have passed the plot filter yet."
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/nfts/detail/NFTDetail.tsx:162
 #: src/components/nfts/detail/NFTDetail.tsx:172
 #: src/components/nfts/detail/NFTDetailV2.tsx:145
@@ -2085,7 +2100,7 @@ msgstr "Offered"
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "Offering: [{makerString}], Requesting: [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Offers"
 msgstr "Offers"
 
@@ -2452,7 +2467,7 @@ msgstr "Plot is a duplicate of {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 
-#: src/components/dashboard/DashboardSideBar.tsx:83
+#: src/components/dashboard/DashboardSideBar.tsx:84
 #: src/components/plot/PlotHarvester.tsx:93
 msgid "Plots"
 msgstr "Plots"
@@ -2596,7 +2611,7 @@ msgstr "Pool does not provide targetPuzzleHash."
 msgid "Pool:"
 msgstr "Pool:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:101
+#: src/components/dashboard/DashboardSideBar.tsx:102
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2669,8 +2684,8 @@ msgstr "Proof of Space Size"
 msgid "Proofs Found"
 msgstr "Proofs Found"
 
-#: src/components/nfts/NFTProperties.tsx:67
 #: src/components/nfts/detail/NFTDetailV2.tsx:150
+#: src/components/nfts/NFTProperties.tsx:67
 msgid "Properties"
 msgstr "Properties"
 
@@ -2786,6 +2801,7 @@ msgstr "Recommended: 0.000005 HCX"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:59
 #: src/components/plot/overview/PlotOverviewPlots.tsx:68
+#: src/components/plot/PlotHeader.tsx:75
 msgid "Refresh Plots"
 msgstr "Refresh Plots"
 
@@ -3022,7 +3038,7 @@ msgstr "Set Passphrase"
 #~ msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 #~ msgstr "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 
-#: src/components/dashboard/DashboardSideBar.tsx:110
+#: src/components/dashboard/DashboardSideBar.tsx:111
 #: src/components/settings/Settings.tsx:257
 msgid "Settings"
 msgstr "Settings"
@@ -3123,7 +3139,7 @@ msgstr "Smooth out your HCX farming rewards by joining a pool."
 msgid "Specify a value of 0 to use all available threads"
 msgstr "Specify a value of 0 to use all available threads"
 
-#: src/electron/main.tsx:620
+#: src/electron/main.tsx:632
 msgid "Speech"
 msgstr "Speech"
 
@@ -3494,10 +3510,10 @@ msgstr "Time Created"
 msgid "Timestamp"
 msgstr "Timestamp"
 
-#: src/components/nfts/NFTCard.tsx:77
-#: src/components/nfts/NFTSummary.tsx:186
 #: src/components/nfts/detail/NFTDetail.tsx:127
 #: src/components/nfts/detail/NFTDetailV2.tsx:138
+#: src/components/nfts/NFTCard.tsx:77
+#: src/components/nfts/NFTSummary.tsx:186
 msgid "Title Not Available"
 msgstr "Title Not Available"
 
@@ -3513,7 +3529,7 @@ msgstr "Token Offer"
 msgid "Token Standard"
 msgstr "Token Standard"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
@@ -3928,10 +3944,6 @@ msgstr "Would you like to transfer the specified NFT to a new owner?"
 #~ msgid "Would you like to transfer the specified NFT to a new owner? It is recommended that you include a fee to ensure that the transaction is completed in a timely manner."
 #~ msgstr "Would you like to transfer the specified NFT to a new owner? It is recommended that you include a fee to ensure that the transaction is completed in a timely manner."
 
-#: src/components/offers/NFTOfferEditor.tsx:145
-msgid "HCX for NFT"
-msgstr "HCX for NFT"
-
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:323
 msgid "Yes"
@@ -4191,6 +4203,10 @@ msgstr "{0} points {1} - {2} hours ago"
 msgid "{makerFee, plural, one {vojo} other {vojos}}"
 msgstr "{makerFee, plural, one {vojo} other {vojos}}"
 
+#: src/components/nfts/NFTRankings.tsx:52
+msgid "{value} of {max_value}"
+msgstr "{value} of {max_value}"
+
 #: src/components/core/components/Amount/Amount.tsx:82
 #~ msgid "{vojo, plural, one {vojo} other {vojos}}"
 #~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
@@ -4199,10 +4215,6 @@ msgstr "{makerFee, plural, one {vojo} other {vojos}}"
 #: src/components/offers/OfferViewer.tsx:65
 msgid "{vojos, plural, one {vojo} other {vojos}}"
 msgstr "{vojos, plural, one {vojo} other {vojos}}"
-
-#: src/components/nfts/NFTRankings.tsx:52
-msgid "{value} of {max_value}"
-msgstr "{value} of {max_value}"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"

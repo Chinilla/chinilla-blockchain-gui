@@ -129,14 +129,12 @@ msgstr "添加自定义代币"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:166
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
 #: src/components/hero/WalletHeroWallets.tsx:83
 #: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:158
+#: src/components/WalletsManageTokens.tsx:166
 msgid "Add Token"
 msgstr "添加代币"
 
@@ -177,7 +175,6 @@ msgstr "添加 {0} 代币"
 msgid "Address"
 msgstr "地址"
 
-#: src/components/WalletSend.tsx:154
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
 #: src/components/WalletSend.tsx:154
@@ -196,8 +193,6 @@ msgstr "地址 / 谜语哈希"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
 #: src/components/cat/WalletCATSend.tsx:206
 #: src/components/rateLimited/WalletRateLimited.jsx:719
 #: src/components/WalletHistory.tsx:165
@@ -387,12 +382,6 @@ msgstr "余额"
 #~ msgid "Can be backed up to mnemonic seed"
 #~ msgstr "Can be backed up to mnemonic seed"
 
-#: src/components/offers/OfferDataEntryDialog.tsx:67
-#: src/components/offers/OfferShareDialog.tsx:437
-#: src/components/offers/OfferShareDialog.tsx:564
-#: src/components/offers/OfferShareDialog.tsx:800
-#: src/components/offers/OfferShareDialog.tsx:913
-#: src/components/offers/OfferViewer.tsx:292
 #: src/components/PasteMnemonic.tsx:78
 #: src/components/WalletRenameDialog.tsx:90
 msgid "Cancel"
@@ -412,8 +401,8 @@ msgstr "取消"
 #~ msgid "Cancel on blockchain"
 #~ msgstr "在区块链上取消"
 
-#: src/components/WalletSend.tsx:101
 #: src/components/cat/WalletCATSend.tsx:118
+#: src/components/WalletSend.tsx:101
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr ""
 
@@ -463,8 +452,8 @@ msgstr ""
 #~ msgstr "Chinilla Blockchain Wiki"
 
 #: src/components/offers/OfferShareDialog.tsx:359
-msgid "Chinilla Offers URL"
-msgstr ""
+#~ msgid "Chinilla Offers URL"
+#~ msgstr ""
 
 #: src/components/standard/WalletStandard.tsx:23
 #~ msgid "Chinilla Wallet"
@@ -701,7 +690,6 @@ msgstr "创建费用限定型用户钱包"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:136
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
 #: src/components/WalletSend.tsx:136
@@ -1079,8 +1067,8 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:184
 #: src/components/cat/WalletCATSend.tsx:240
+#: src/components/WalletSend.tsx:184
 msgid "Farm"
 msgstr "农场"
 
@@ -1141,8 +1129,6 @@ msgstr "农场"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
 #: src/components/cat/WalletCATSend.tsx:219
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
@@ -1600,8 +1586,8 @@ msgstr "管理恢复去中心化标识"
 msgid "Manage token list"
 msgstr ""
 
-#: src/components/WalletHistory.tsx:116
 #: src/components/cat/WalletCATSend.tsx:231
+#: src/components/WalletHistory.tsx:116
 msgid "Memo"
 msgstr ""
 
@@ -1863,8 +1849,8 @@ msgstr ""
 #~ msgid "Offers you created"
 #~ msgstr ""
 
-#: src/components/WalletSend.tsx:139
 #: src/components/cat/WalletCATSend.tsx:179
+#: src/components/WalletSend.tsx:139
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "每个交易区块平均打包时间为一分钟。通常您的交易将在一分钟内被确认，除非出现拥堵。"
 
@@ -2043,7 +2029,6 @@ msgstr "请输入一个有效的初始币数量"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "请输入一个大于或者等于 0 的整数，用于恢复所需的备份ID。"
 
-#: src/components/WalletSend.tsx:91
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
 #: src/components/WalletSend.tsx:91
@@ -2054,7 +2039,6 @@ msgstr "请输入一个正确的数目"
 msgid "Please enter a valid numeric amount."
 msgstr "请输入有效的数字金额。"
 
-#: src/components/WalletSend.tsx:96
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
@@ -2100,7 +2084,6 @@ msgstr ""
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:86
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
 #: src/components/WalletSend.tsx:86
@@ -2540,8 +2523,8 @@ msgstr "恢复钱包"
 #~ msgid "Rename"
 #~ msgstr "Rename"
 
-#: src/components/WalletRenameDialog.tsx:69
 #: src/components/cat/WalletCAT.tsx:102
+#: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
 msgstr "重命名钱包"
 
@@ -2605,9 +2588,12 @@ msgstr "保存"
 #~ msgstr "Search block by header hash"
 
 #: src/components/WalletTokenCard.tsx:144
-#: src/components/cat/WalletCATTAILDialog.tsx:71
 msgid "Search on Tail Database"
 msgstr "在 Tail 数据库中搜索"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Token Database"
+msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 #~ msgid "Second temporary folder location"
@@ -2703,8 +2689,6 @@ msgstr "选择恢复文件："
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
 #: src/components/cat/WalletCATSend.tsx:250
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
@@ -3098,8 +3082,12 @@ msgstr "待处理的收入与支出总和(还未上链). 不包括农场耕种�
 #~ msgstr "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "这里是你的私钥所控制的，到目前最新子块高度为止的全部奇亚数。包含被冻结的耕种奖励， 但不包含待处理的收入与支出。"
+msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "这里是你的私钥所控制的，到目前最新子块高度为止的全部奇亚数。包含被冻结的耕种奖励， 但不包含待处理的收入与支出。"
 
 #: src/components/standard/WalletStandardCards.tsx:16
 #~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
