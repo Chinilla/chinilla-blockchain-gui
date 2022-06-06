@@ -856,7 +856,7 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [isJoiningTeam, setIsJoiningTeam] = React.useState(false);
   const [shared, setShared] = React.useState(false);
-  const teamName = testnet ? 'testxchoffersdev' : KeybaseTeamName;
+  const teamName = testnet ? 'testhcxoffersdev' : KeybaseTeamName;
   const channelName = testnet ? 'offers' : KeybaseChannelName;
 
   function handleClose() {

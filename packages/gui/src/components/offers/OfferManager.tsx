@@ -106,7 +106,7 @@ function ConfirmOfferCancellation(props: ConfirmOfferCancellationProps) {
   async function handleConfirm() {
     const { fee: hcxFee } = methods.getValues();
 
-    const fee = cancelWithTransaction ? chinillaToVojo(xchFee) : new BigNumber(0);
+    const fee = cancelWithTransaction ? chinillaToVojo(hcxFee) : new BigNumber(0);
 
     onClose([true, { cancelWithTransaction, cancellationFee: fee }]);
   }
@@ -259,7 +259,7 @@ function OfferList(props: OfferListProps) {
   const [saveOffer] = useSaveOfferFile();
   const { data: wallets, isLoading: isLoadingWallets } = useGetWalletsQuery();
   const { lookupByAssetId } = useAssetIdName();
-  const testnet = useCurrencyCode() === 'TXCH';
+  const testnet = useCurrencyCode() === 'THCX';
   const openDialog = useOpenDialog();
   const navigate = useNavigate();
   const {
@@ -662,7 +662,7 @@ export function CreateOffer() {
   const location: any = useLocation();
   const openDialog = useOpenDialog();
   const [saveOffer] = useSaveOfferFile();
-  const testnet = useCurrencyCode() === 'TXCH';
+  const testnet = useCurrencyCode() === 'THCX';
 
   async function handleOfferCreated(obj: { offerRecord: any; offerData: any }) {
     const { offerRecord, offerData } = obj;

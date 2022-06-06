@@ -232,7 +232,7 @@ export function offerAssetTypeForAssetId(
 ): OfferAsset | undefined {
   let assetType: OfferAsset | undefined;
 
-  if (['hcx', 'txch'].includes(assetId)) {
+  if (['hcx', 'thcx'].includes(assetId)) {
     assetType = OfferAsset.CHINILLA;
   } else {
     const infos: OfferSummaryInfos = offerSummary.infos;

@@ -71,7 +71,7 @@ function NFTOfferSummaryRow(props: NFTOfferSummaryRowProps) {
         const infoDict = summaryInfo[key];
         let assetType: OfferAsset | undefined;
 
-        if (['hcx', 'txch'].includes(key.toLowerCase())) {
+        if (['hcx', 'thcx'].includes(key.toLowerCase())) {
           assetType = OfferAsset.CHINILLA;
         } else if (!!infoDict?.type) {
           switch (infoDict.type.toLowerCase()) {

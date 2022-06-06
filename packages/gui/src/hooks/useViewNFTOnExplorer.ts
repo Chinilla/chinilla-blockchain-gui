@@ -13,7 +13,7 @@ function getMintGardenURL(nft: NFTInfo, testnet: boolean) {
 }
 
 function getSpacescanURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://spacescan.io/${testnet ? 'txch10' : 'hcx'}/nft/${
+  const url = `https://spacescan.io/${testnet ? 'thcx10' : 'hcx'}/nft/${
     nft.$nftId
   }`;
   return url;
@@ -33,7 +33,7 @@ const UrlBuilderMapping = {
 
 export default function useViewNFTOnExplorer() {
   const openExternal = useOpenExternal();
-  const testnet = useCurrencyCode() === 'TXCH';
+  const testnet = useCurrencyCode() === 'THCX';
 
   function handleViewNFTOnExplorer(nft: NFTInfo, explorer: NFTExplorer) {
     const { nftId: $nftId } = nft;

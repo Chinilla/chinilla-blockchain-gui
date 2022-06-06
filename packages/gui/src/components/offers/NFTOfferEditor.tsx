@@ -36,8 +36,8 @@ import NFTOfferPreview from './NFTOfferPreview';
 /* ========================================================================== */
 
 enum NFTOfferEditorExchangeType {
-  NFTForXCH = 'nft_for_xch',
-  XCHForNFT = 'xch_for_nft',
+  NFTForHCX = 'nft_for_hcx',
+  HCXForNFT = 'hcx_for_nft',
 }
 
 /* ========================================================================== */
@@ -54,7 +54,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
   const [amountFocused, setAmountFocused] = useState<boolean>(false);
 
   const tab = methods.watch('exchangeType');
-  const amount = methods.watch('xchAmount');
+  const amount = methods.watch('hcxAmount');
   // HACK: manually determine the value for the amount field's shrink input prop.
   // Without this, toggling between the two tabs with an amount specified will cause
   // the textfield's label and value to overlap.
@@ -89,7 +89,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
         id={`${tab}-amount}`}
         key={`${tab}-amount}`}
         variant="filled"
-        name="xchAmount"
+        name="hcxAmount"
         color="secondary"
         disabled={disabled}
         label={<Trans>Amount</Trans>}
@@ -104,12 +104,12 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
     </Grid>
   );
   const offerElem =
-    tab === NFTOfferEditorExchangeType.NFTForXCH ? nftElem : amountElem;
+    tab === NFTOfferEditorExchangeType.NFTForHCX ? nftElem : amountElem;
   const takerElem =
-    tab === NFTOfferEditorExchangeType.NFTForXCH ? amountElem : nftElem;
+    tab === NFTOfferEditorExchangeType.NFTForHCX ? amountElem : nftElem;
 
   function handleAmountChange(amount: string) {
-    methods.setValue('xchAmount', amount);
+    methods.setValue('hcxAmount', amount);
   }
 
   function handleFeeChange(fee: string) {
@@ -136,12 +136,12 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
         indicatorColor="primary"
       >
         <Tab
-          value={NFTOfferEditorExchangeType.NFTForXCH}
+          value={NFTOfferEditorExchangeType.NFTForHCX}
           label={<Trans>NFT for HCX</Trans>}
           disabled={disabled}
         />
         <Tab
-          value={NFTOfferEditorExchangeType.XCHForNFT}
+          value={NFTOfferEditorExchangeType.HCXForNFT}
           label={<Trans>HCX for NFT</Trans>}
           disabled={disabled}
         />
@@ -212,14 +212,14 @@ NFTOfferConditionalsPanel.defaultProps = {
 type NFTOfferEditorFormData = {
   exchangeType: NFTOfferEditorExchangeType;
   nftId?: string;
-  xchAmount: string;
+  hcxAmount: string;
   fee: string;
 };
 
 type NFTOfferEditorValidatedFormData = {
   exchangeType: NFTOfferEditorExchangeType;
   launcherId: string;
-  xchAmount: string;
+  hcxAmount: string;
   fee: string;
 };
 
@@ -232,18 +232,18 @@ function buildOfferRequest(
   exchangeType: NFTOfferEditorExchangeType,
   nft: NFTInfo,
   nftLauncherId: string,
-  xchAmount: string,
+  hcxAmount: string,
   fee: string,
 ) {
-  const baseVojoAmount: BigNumber = chinillaToVojo(xchAmount);
+  const baseVojoAmount: BigNumber = chinillaToVojo(hcxAmount);
   const vojoAmount =
-    exchangeType === NFTOfferEditorExchangeType.NFTForXCH
+    exchangeType === NFTOfferEditorExchangeType.NFTForHCX
       ? baseVojoAmount
       : baseVojoAmount.negated();
   const feeVojoAmount = chinillaToVojo(fee);
   const nftAmount =
-    exchangeType === NFTOfferEditorExchangeType.NFTForXCH ? -1 : 1;
-  const xchWalletId = 1;
+    exchangeType === NFTOfferEditorExchangeType.NFTForHCX ? -1 : 1;
+  const hcxWalletId = 1;
   const driverDict = {
     [nftLauncherId]: {
       type: 'singleton',
@@ -260,7 +260,7 @@ function buildOfferRequest(
   return [
     {
       [nftLauncherId]: nftAmount,
-      [xchWalletId]: vojoAmount,
+      [hcxWalletId]: vojoAmount,
     },
     driverDict,
     feeVojoAmount,
@@ -278,9 +278,9 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
     OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE,
   );
   const defaultValues: NFTOfferEditorFormData = {
-    exchangeType: NFTOfferEditorExchangeType.NFTForXCH,
+    exchangeType: NFTOfferEditorExchangeType.NFTForHCX,
     nftId: nft?.$nftId ?? '',
-    xchAmount: '',
+    hcxAmount: '',
     fee: '',
   };
   const methods = useForm<NFTOfferEditorFormData>({
@@ -298,7 +298,7 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
   function validateFormData(
     unvalidatedFormData: NFTOfferEditorFormData,
   ): NFTOfferEditorValidatedFormData | undefined {
-    const { exchangeType, nftId, xchAmount, fee } = unvalidatedFormData;
+    const { exchangeType, nftId, hcxAmount, fee } = unvalidatedFormData;
     let result: NFTOfferEditorValidatedFormData | undefined = undefined;
 
     if (!nftId) {
@@ -307,13 +307,13 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
       errorDialog(new Error(t`Invalid NFT identifier`));
     } else if (!launcherId) {
       errorDialog(new Error(t`Failed to decode NFT identifier`));
-    } else if (!xchAmount || xchAmount === '0') {
+    } else if (!hcxAmount || hcxAmount === '0') {
       errorDialog(new Error(t`Please enter an amount`));
     } else {
       result = {
         exchangeType,
         launcherId,
-        xchAmount,
+        hcxAmount,
         fee,
       };
     }
@@ -337,12 +337,12 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
       return;
     }
 
-    const { exchangeType, launcherId, xchAmount, fee } = formData;
+    const { exchangeType, launcherId, hcxAmount, fee } = formData;
     const [offer, driverDict, feeInVojos] = buildOfferRequest(
       exchangeType,
       offerNFT,
       launcherId,
-      xchAmount,
+      hcxAmount,
       fee,
     );
 
