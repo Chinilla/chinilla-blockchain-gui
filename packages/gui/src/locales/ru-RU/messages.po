@@ -120,7 +120,7 @@ msgstr "Действие"
 #: src/components/farm/FarmFullNodeConnections.tsx:66
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:66
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/nfts/NFTContextualActions.tsx:290
+#: src/components/nfts/NFTContextualActions.tsx:341
 msgid "Actions"
 msgstr "Действия"
 
@@ -193,11 +193,11 @@ msgstr "После того как ваши ключи будут успешно
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:44
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:73
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:86
-#: src/components/nfts/NFTProfileDropdown.tsx:64
+#: src/components/nfts/NFTProfileDropdown.tsx:91
 msgid "All"
 msgstr ""
 
-#: src/components/nfts/NFTProfileDropdown.tsx:42
+#: src/components/nfts/NFTProfileDropdown.tsx:51
 msgid "All Profiles"
 msgstr ""
 
@@ -303,7 +303,7 @@ msgstr ""
 msgid "Base Farmer Reward Amount"
 msgstr "Базовая сумма вознаграждения фермера"
 
-#: src/components/offers/OfferShareDialog.tsx:1053
+#: src/components/offers/OfferShareDialog.tsx:1211
 msgid "Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team. Please note that it might take a few moments to join the channel."
 msgstr ""
 
@@ -397,8 +397,8 @@ msgstr "Обзор"
 #: src/components/offers/OfferAcceptConfirmationDialog.tsx:26
 #: src/components/offers/OfferDataEntryDialog.tsx:67
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:18
-#: src/components/offers/OfferShareDialog.tsx:1085
-#: src/components/offers/OfferShareDialog.tsx:1258
+#: src/components/offers/OfferShareDialog.tsx:1243
+#: src/components/offers/OfferShareDialog.tsx:1416
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
@@ -654,6 +654,10 @@ msgstr ""
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Chinilla Wallet"
 
+#: src/components/offers/OfferShareDialog.tsx:853
+msgid "Chinilla.com Offers URL"
+msgstr ""
+
 #: src/components/app/AppSelectMode.tsx:158
 msgid "Choose Farming Mode"
 msgstr "Выберите режим фарминга"
@@ -681,13 +685,14 @@ msgstr "Забрать награду"
 
 #: src/components/nfts/NFTTransferAction.tsx:253
 #: src/components/offers/OfferManager.tsx:199
-#: src/components/offers/OfferShareDialog.tsx:562
-#: src/components/offers/OfferShareDialog.tsx:643
-#: src/components/offers/OfferShareDialog.tsx:725
-#: src/components/offers/OfferShareDialog.tsx:827
-#: src/components/offers/OfferShareDialog.tsx:1018
-#: src/components/offers/OfferShareDialog.tsx:1150
-#: src/components/offers/OfferShareDialog.tsx:1436
+#: src/components/offers/OfferShareDialog.tsx:617
+#: src/components/offers/OfferShareDialog.tsx:698
+#: src/components/offers/OfferShareDialog.tsx:780
+#: src/components/offers/OfferShareDialog.tsx:878
+#: src/components/offers/OfferShareDialog.tsx:985
+#: src/components/offers/OfferShareDialog.tsx:1176
+#: src/components/offers/OfferShareDialog.tsx:1308
+#: src/components/offers/OfferShareDialog.tsx:1598
 #: src/components/plot/PlotAddDirectoryDialog.tsx:130
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
@@ -721,7 +726,7 @@ msgstr ""
 #~ msgid "Coins:"
 #~ msgstr "Coins:"
 
-#: src/components/nfts/detail/NFTDetail.tsx:168
+#: src/components/nfts/detail/NFTDetail.tsx:189
 #: src/components/nfts/NFTSummary.tsx:59
 msgid "Collection"
 msgstr ""
@@ -860,7 +865,11 @@ msgstr "Сотрудничать на GitHub"
 #~ msgid "Copy"
 #~ msgstr "Copy"
 
-#: src/components/nfts/NFTContextualActions.tsx:230
+#: src/components/nfts/NFTContextualActions.tsx:84
+msgid "Copy NFT ID"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:281
 msgid "Copy URL"
 msgstr ""
 
@@ -895,7 +904,7 @@ msgstr ""
 #~ msgid "Create New Wallet"
 #~ msgstr "Create New Wallet"
 
-#: src/components/nfts/NFTContextualActions.tsx:82
+#: src/components/nfts/NFTContextualActions.tsx:130
 #: src/components/offers/NFTOfferEditor.tsx:195
 #: src/components/offers/OfferEditor.tsx:221
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:15
@@ -1044,12 +1053,12 @@ msgstr "Текущий баланс пунктов"
 #~ msgid "DIDListItems.title"
 #~ msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:68
+#: src/components/nfts/detail/NFTDetail.tsx:92
 #: src/components/nfts/detail/NFTDetailV2.tsx:69
 msgid "Data Hash"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:92
+#: src/components/nfts/detail/NFTDetail.tsx:83
 #: src/components/nfts/detail/NFTDetailV2.tsx:77
 msgid "Data URL {0}"
 msgstr ""
@@ -1112,7 +1121,7 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr "В зависимости от конфигурации системы, вы можете заметить, что альтернативный плоттер создает участки быстрее, чем стандартный плоттер Chinilla Proof Space. Если вы не уверены, то используйте стандартный плоттер Chinilla Proof Space."
 
-#: src/components/nfts/detail/NFTDetail.tsx:158
+#: src/components/nfts/detail/NFTDetail.tsx:179
 #: src/components/nfts/detail/NFTDetailV2.tsx:142
 msgid "Description"
 msgstr ""
@@ -1125,7 +1134,7 @@ msgstr ""
 msgid "Destination:"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:193
+#: src/components/nfts/detail/NFTDetail.tsx:214
 #: src/components/nfts/detail/NFTDetailV2.tsx:171
 #: src/components/offers/OfferViewer.tsx:357
 msgid "Details"
@@ -1139,7 +1148,7 @@ msgstr "Разработчик"
 msgid "Developer Tools"
 msgstr "Инструменты разработчика"
 
-#: src/components/offers/OfferShareDialog.tsx:537
+#: src/components/offers/OfferShareDialog.tsx:592
 msgid "Dexie URL"
 msgstr ""
 
@@ -1193,7 +1202,7 @@ msgstr ""
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/offers/OfferShareDialog.tsx:1429
+#: src/components/offers/OfferShareDialog.tsx:1591
 #: src/hooks/useOpenUnsafeLink.tsx:77
 msgid "Do not show this dialog again"
 msgstr ""
@@ -1318,7 +1327,7 @@ msgstr "Неудачно"
 msgid "Failed to decode NFT identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:412
+#: src/components/offers/OfferShareDialog.tsx:467
 msgid "Failed to execute Keybase command: {stderr}"
 msgstr ""
 
@@ -1518,12 +1527,12 @@ msgstr ""
 msgid "Github Discussions"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1015
-#: src/components/offers/OfferShareDialog.tsx:1076
+#: src/components/offers/OfferShareDialog.tsx:1173
+#: src/components/offers/OfferShareDialog.tsx:1234
 msgid "Go to #{channelName}"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1147
+#: src/components/offers/OfferShareDialog.tsx:1305
 msgid "Go to Offerpool"
 msgstr ""
 
@@ -1551,7 +1560,7 @@ msgstr ""
 msgid "Harvesters"
 msgstr "Комбайны"
 
-#: src/components/offers/OfferShareDialog.tsx:802
+#: src/components/offers/OfferShareDialog.tsx:960
 msgid "Hashgreen DEX URL"
 msgstr ""
 
@@ -1626,7 +1635,8 @@ msgstr "IP адрес / хост"
 msgid "If none selected, then it will default to the temporary directory."
 msgstr "Если ничего не выбрано, по умолчанию используется временный каталог."
 
-#: src/components/offers/OfferShareDialog.tsx:754
+#: src/components/offers/OfferShareDialog.tsx:809
+#: src/components/offers/OfferShareDialog.tsx:907
 msgid "If selected, your offer will be not be shared publicly."
 msgstr ""
 
@@ -1634,7 +1644,7 @@ msgstr ""
 msgid "If you have already shared your offer file, you may need to submit a transaction to cancel the pending offer. Click \"Cancel on blockchain\" to submit a cancellation transaction."
 msgstr ""
 
-#: src/components/nfts/NFTPreview.tsx:106
+#: src/components/nfts/NFTPreview.tsx:107
 msgid "Image Hash Mismatch"
 msgstr ""
 
@@ -1660,7 +1670,7 @@ msgstr "В процессе"
 msgid "In exchange for"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1241
+#: src/components/offers/OfferShareDialog.tsx:1399
 msgid "In exchange for:"
 msgstr ""
 
@@ -1705,7 +1715,7 @@ msgstr "Индекс"
 msgid "Initializing..."
 msgstr "Инициализация..."
 
-#: src/components/offers/OfferShareDialog.tsx:1048
+#: src/components/offers/OfferShareDialog.tsx:1206
 msgid "Install Keybase"
 msgstr ""
 
@@ -1765,7 +1775,7 @@ msgstr "Присоединяйтесь к пулу и получите боле�
 msgid "Join farming pools"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1065
+#: src/components/offers/OfferShareDialog.tsx:1223
 msgid "Join {teamName}"
 msgstr ""
 
@@ -1774,11 +1784,11 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-размер"
 
-#: src/components/offers/OfferShareDialog.tsx:951
+#: src/components/offers/OfferShareDialog.tsx:1109
 msgid "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1040
+#: src/components/offers/OfferShareDialog.tsx:1198
 msgid "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName} team, you must first have Keybase installed."
 msgstr ""
 
@@ -1834,12 +1844,12 @@ msgstr "Подробнее"
 msgid "Leaving Pool"
 msgstr "Выход из пула"
 
-#: src/components/nfts/detail/NFTDetail.tsx:101
+#: src/components/nfts/detail/NFTDetail.tsx:132
 #: src/components/nfts/detail/NFTDetailV2.tsx:86
 msgid "License Hash"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:110
+#: src/components/nfts/detail/NFTDetail.tsx:123
 #: src/components/nfts/detail/NFTDetailV2.tsx:95
 msgid "License URL {0}"
 msgstr ""
@@ -1872,8 +1882,8 @@ msgstr "Загрузка статуса ключей"
 #~ msgid "Loading list of wallets"
 #~ msgstr "Loading list of wallets"
 
-#: src/components/nfts/NFTPreview.tsx:128
-#: src/components/nfts/NFTPreview.tsx:147
+#: src/components/nfts/NFTPreview.tsx:129
+#: src/components/nfts/NFTPreview.tsx:148
 msgid "Loading preview..."
 msgstr ""
 
@@ -1954,6 +1964,14 @@ msgstr ""
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Управление целевыми адресами для получения вознаграждений за фарминг"
 
+#: src/components/nfts/detail/NFTDetail.tsx:114
+msgid "Metadata Hash"
+msgstr ""
+
+#: src/components/nfts/detail/NFTDetail.tsx:105
+msgid "Metadata URL {0}"
+msgstr ""
+
 #: src/components/fullNode/FullNodeConnections.tsx:67
 msgid "MiB Up/Down"
 msgstr "МиБ Исх./Вх."
@@ -1984,7 +2002,7 @@ msgstr "Миграция необходима для поддержки защи
 msgid "Minimum Difficulty"
 msgstr "Минимальная сложность"
 
-#: src/components/offers/OfferShareDialog.tsx:618
+#: src/components/offers/OfferShareDialog.tsx:673
 msgid "MintGarden URL"
 msgstr ""
 
@@ -2040,7 +2058,7 @@ msgstr ""
 msgid "NFT Offer"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:105
+#: src/components/nfts/NFTContextualActions.tsx:156
 msgid "NFT Transfer Complete"
 msgstr ""
 
@@ -2048,7 +2066,7 @@ msgstr ""
 #~ msgid "NFT Transfer Demo"
 #~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:115
+#: src/components/nfts/NFTContextualActions.tsx:166
 msgid "NFT Transfer Failed"
 msgstr ""
 
@@ -2121,7 +2139,7 @@ msgstr "Выращенных блоков пока нет"
 msgid "No current offers"
 msgstr ""
 
-#: src/components/nfts/NFTPreview.tsx:120
+#: src/components/nfts/NFTPreview.tsx:121
 msgid "No file available"
 msgstr ""
 
@@ -2163,8 +2181,8 @@ msgstr "Ни один из ваших участков пока не проше�
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/farm/FarmerStatus.tsx:20
-#: src/components/nfts/detail/NFTDetail.tsx:162
-#: src/components/nfts/detail/NFTDetail.tsx:172
+#: src/components/nfts/detail/NFTDetail.tsx:183
+#: src/components/nfts/detail/NFTDetail.tsx:193
 #: src/components/nfts/detail/NFTDetailV2.tsx:145
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:361
@@ -2243,12 +2261,13 @@ msgstr ""
 msgid "Offer Identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:532
-#: src/components/offers/OfferShareDialog.tsx:613
-#: src/components/offers/OfferShareDialog.tsx:695
-#: src/components/offers/OfferShareDialog.tsx:797
-#: src/components/offers/OfferShareDialog.tsx:1006
-#: src/components/offers/OfferShareDialog.tsx:1131
+#: src/components/offers/OfferShareDialog.tsx:587
+#: src/components/offers/OfferShareDialog.tsx:668
+#: src/components/offers/OfferShareDialog.tsx:750
+#: src/components/offers/OfferShareDialog.tsx:848
+#: src/components/offers/OfferShareDialog.tsx:955
+#: src/components/offers/OfferShareDialog.tsx:1164
+#: src/components/offers/OfferShareDialog.tsx:1289
 msgid "Offer Shared"
 msgstr ""
 
@@ -2256,7 +2275,7 @@ msgstr ""
 msgid "Offer has been accepted and is awaiting confirmation."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:700
+#: src/components/offers/OfferShareDialog.tsx:755
 msgid "OfferBin URL"
 msgstr ""
 
@@ -2312,7 +2331,7 @@ msgstr ""
 msgid "Open Link"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:190
+#: src/components/nfts/NFTContextualActions.tsx:241
 msgid "Open in Web Browser"
 msgstr ""
 
@@ -2426,7 +2445,7 @@ msgstr ""
 #~ msgid "Pending Total Balance"
 #~ msgstr "Pending Total Balance"
 
-#: src/components/nfts/NFTPreview.tsx:104
+#: src/components/nfts/NFTPreview.tsx:105
 msgid "Pending Transfer"
 msgstr ""
 
@@ -2802,7 +2821,7 @@ msgstr "Подготовка участка NFT"
 msgid "Preparing standard wallet"
 msgstr "Подготовка стандартного кошелька"
 
-#: src/components/nfts/NFTPreview.tsx:124
+#: src/components/nfts/NFTPreview.tsx:125
 msgid "Preview URL is not valid"
 msgstr ""
 
@@ -3072,8 +3091,8 @@ msgid "Search on Tail Database"
 msgstr ""
 
 #: src/components/nfts/gallery/NFTGallery.tsx:87
-msgid "Search..."
-msgstr ""
+#~ msgid "Search..."
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 msgid "Second temporary folder location"
@@ -3191,7 +3210,7 @@ msgstr ""
 msgid "Series #"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:179
+#: src/components/nfts/detail/NFTDetail.tsx:200
 msgid "Series Number"
 msgstr ""
 
@@ -3216,40 +3235,42 @@ msgstr "Настройки"
 #~ msgstr "Settings are located at the upper right corner"
 
 #: src/components/offers/OfferManager.tsx:427
-#: src/components/offers/OfferShareDialog.tsx:1092
-#: src/components/offers/OfferShareDialog.tsx:1265
+#: src/components/offers/OfferShareDialog.tsx:1250
+#: src/components/offers/OfferShareDialog.tsx:1423
 msgid "Share"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1388
+#: src/components/offers/OfferShareDialog.tsx:1550
 msgid "Share Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:752
+#: src/components/offers/OfferShareDialog.tsx:807
+#: src/components/offers/OfferShareDialog.tsx:905
 msgid "Share Privately"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:574
+#: src/components/offers/OfferShareDialog.tsx:629
 msgid "Share on Dexie"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:839
+#: src/components/offers/OfferShareDialog.tsx:997
 msgid "Share on Hashgreen DEX"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1035
+#: src/components/offers/OfferShareDialog.tsx:1193
 msgid "Share on Keybase"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:655
+#: src/components/offers/OfferShareDialog.tsx:710
 msgid "Share on MintGarden"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:737
+#: src/components/offers/OfferShareDialog.tsx:792
+#: src/components/offers/OfferShareDialog.tsx:890
 msgid "Share on OfferBin"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1162
+#: src/components/offers/OfferShareDialog.tsx:1320
 msgid "Share on offerpool"
 msgstr ""
 
@@ -3462,11 +3483,11 @@ msgstr "Хеш-головоломка фермера"
 msgid "Temporary folder location"
 msgstr "Расположение временной папки"
 
-#: src/components/nfts/NFTContextualActions.tsx:116
+#: src/components/nfts/NFTContextualActions.tsx:167
 msgid "The NFT transfer failed: {error}"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:106
+#: src/components/nfts/NFTContextualActions.tsx:157
 msgid "The NFT transfer transaction has been successfully submitted to the blockchain."
 msgstr ""
 
@@ -3678,9 +3699,9 @@ msgstr "Время создания"
 msgid "Timestamp"
 msgstr "Временная метка"
 
-#: src/components/nfts/detail/NFTDetail.tsx:127
+#: src/components/nfts/detail/NFTDetail.tsx:148
 #: src/components/nfts/detail/NFTDetailV2.tsx:138
-#: src/components/nfts/NFTCard.tsx:77
+#: src/components/nfts/NFTCard.tsx:73
 #: src/components/nfts/NFTSummary.tsx:186
 msgid "Title Not Available"
 msgstr ""
@@ -3798,7 +3819,7 @@ msgstr ""
 #~ msgid "Transfer Identity"
 #~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:141
+#: src/components/nfts/NFTContextualActions.tsx:192
 #: src/components/nfts/NFTTransferAction.tsx:310
 msgid "Transfer NFT"
 msgstr ""
@@ -3815,11 +3836,11 @@ msgstr ""
 #~ msgid "Unable to create plot NFT"
 #~ msgstr "Unable to create plot NFT"
 
-#: src/components/offers/OfferShareDialog.tsx:966
+#: src/components/offers/OfferShareDialog.tsx:1124
 msgid "Unable to open Keybase. Install Keybase from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:873
+#: src/components/offers/OfferShareDialog.tsx:1031
 msgid "Unable to open browser. Install Keybase from https://keybase.io"
 msgstr ""
 
@@ -3914,24 +3935,28 @@ msgstr "Ссылка для входа на пул"
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:555
+#: src/components/offers/OfferShareDialog.tsx:871
+msgid "View on Chinilla.com"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:610
 msgid "View on Dexie"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:820
+#: src/components/offers/OfferShareDialog.tsx:978
 msgid "View on Hashgreen DEX"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:311
-#: src/components/offers/OfferShareDialog.tsx:636
+#: src/components/nfts/NFTContextualActions.tsx:366
+#: src/components/offers/OfferShareDialog.tsx:691
 msgid "View on MintGarden"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:718
+#: src/components/offers/OfferShareDialog.tsx:773
 msgid "View on OfferBin"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:318
+#: src/components/nfts/NFTContextualActions.tsx:373
 msgid "View on Spacescan.io"
 msgstr ""
 
@@ -4244,11 +4269,11 @@ msgstr "Ваши ключи должны быть перенесены в нов
 msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 msgstr "Ваши ключи должны быть перенесены в новую связку ключей, которая будет защищена мастер паролем."
 
-#: src/components/offers/OfferShareDialog.tsx:1010
+#: src/components/offers/OfferShareDialog.tsx:1168
 msgid "Your offer has been successfully posted to Keybase."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1236
+#: src/components/offers/OfferShareDialog.tsx:1394
 msgid "Your offer:"
 msgstr ""
 
@@ -4329,7 +4354,7 @@ msgstr "p2SingletonPuzzleHash не определен"
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1135
+#: src/components/offers/OfferShareDialog.tsx:1293
 msgid "{0}"
 msgstr ""
 
@@ -4346,7 +4371,7 @@ msgstr ""
 msgid "{0} buckets is recommended"
 msgstr "рекомендуется сегментов {0}"
 
-#: src/components/nfts/detail/NFTDetail.tsx:183
+#: src/components/nfts/detail/NFTDetail.tsx:204
 msgid "{0} of {1}"
 msgstr ""
 

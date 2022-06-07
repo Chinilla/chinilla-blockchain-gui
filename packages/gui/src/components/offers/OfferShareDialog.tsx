@@ -45,6 +45,7 @@ enum OfferSharingService {
   Hashgreen = 'Hashgreen',
   MintGarden = 'MintGarden',
   OfferBin = 'OfferBin',
+  ChinillaOffers = 'Chinilla.com Offers',
   Offerpool = 'Offerpool',
   Keybase = 'Keybase',
 }
@@ -98,6 +99,11 @@ const OfferSharingProviders: {
     service: OfferSharingService.OfferBin,
     name: 'OfferBin',
     capabilities: [OfferSharingCapability.Token, OfferSharingCapability.NFT],
+  },
+  [OfferSharingService.ChinillaOffers]: {
+    service: OfferSharingService.ChinillaOffers,
+    name: 'Chinilla.com Offers',
+    capabilities: [OfferSharingCapability.Token],
   },
   [OfferSharingService.Offerpool]: {
     service: OfferSharingService.Offerpool,
@@ -246,6 +252,55 @@ async function postToOfferBin(
   const { hash } = JSON.parse(responseBody);
 
   return `https://offerbin.io/offer/${hash}`;
+}
+
+// Posts the offer data to Chinilla.com Offers and returns a URL to the offer.
+async function postToChinillaOffers(
+  offerData: string,
+  sharePrivately: boolean,
+  testnet: boolean,
+): Promise<string> {
+  const ipcRenderer = (window as any).ipcRenderer;
+  const requestOptions = {
+    method: 'POST',
+    protocol: 'https:',
+    hostname: testnet ? testnetDummyHost : 'chinilla.com',
+    port: 443,
+    path: testnet
+      ? testnetDummyEndpoint
+      : '/offer/upload',
+  };
+  const requestHeaders = {
+    'accept': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded'
+  }
+  const requestData = `offer=${offerData}` + (sharePrivately ? '&private=true' : '');
+  const { err, statusCode, statusMessage, responseBody } =
+    await ipcRenderer?.invoke(
+      'fetchTextResponse',
+      requestOptions,
+      requestHeaders,
+      requestData,
+    );
+
+  if (err || statusCode !== 200) {
+    const error = new Error(
+      `Chinilla.com Offers upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+    );
+    throw error;
+  }
+
+  const jsonObj = JSON.parse(responseBody);
+  const { status, message, offer } = jsonObj;
+ 
+  if (status == "error") {
+    const error = new Error(message);
+    throw error;
+  }
+  
+  console.log('Chinilla.com Offer upload completed');
+
+  return `https://chinilla.com/offer/details/${offer}`;
 }
 
 enum HashgreenErrorCodes {
@@ -763,7 +818,110 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
+function OfferShareChinillaOffersDialog(props: OfferShareServiceDialogProps) {
+  const { offerRecord, offerData, testnet, onClose, open } = props;
+  const openExternal = useOpenExternal();
+  const [sharePrivately, setSharePrivately] = React.useState(false);
+  const [sharedURL, setSharedURL] = React.useState('');
+
+  function handleClose() {
+    onClose(false);
+  }
+
+  async function handleConfirm() {
+    const url = await postToChinillaOffers(offerData, sharePrivately, testnet);
+    console.log(`Chinilla.com Offers URL (private=${sharePrivately}): ${url}`);
+    setSharedURL(url);
+  }
+
+  if (sharedURL) {
+    return (
+      <Dialog
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+        maxWidth="xs"
+        open={open}
+        onClose={handleClose}
+        fullWidth
+      >
+        <DialogTitle>
+          <Trans>Offer Shared</Trans>
+        </DialogTitle>
+        <DialogContent dividers>
+          <Flex flexDirection="column" gap={3}>
+            <TextField
+              label={<Trans>Chinilla.com Offers URL</Trans>}
+              value={sharedURL}
+              variant="filled"
+              InputProps={{
+                readOnly: true,
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <CopyToClipboard value={sharedURL} />
+                  </InputAdornment>
+                ),
+              }}
+              fullWidth
+            />
+            <Flex>
+              <Button
+                variant="outlined"
+                onClick={() => openExternal(sharedURL)}
+              >
+                <Trans>View on Chinilla.com</Trans>
+              </Button>
+            </Flex>
+          </Flex>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary" variant="contained">
+            <Trans>Close</Trans>
+          </Button>
+        </DialogActions>
+      </Dialog>
+    );
+  }
+
+  return (
+    <OfferShareConfirmationDialog
+      offerRecord={offerRecord}
+      offerData={offerData}
+      testnet={testnet}
+      title={<Trans>Share on OfferBin</Trans>}
+      onConfirm={handleConfirm}
+      open={open}
+      onClose={onClose}
+      actions={
+        <FormControlLabel
+          control={
+            <Checkbox
+              name="sharePrivately"
+              checked={sharePrivately}
+              onChange={(event) => setSharePrivately(event.target.checked)}
+            />
+          }
+          label={
+            <>
+              <Trans>Share Privately</Trans>{' '}
+              <TooltipIcon>
+                <Trans>
+                  If selected, your offer will be not be shared publicly.
+                </Trans>
+              </TooltipIcon>
+            </>
+          }
+        />
+      }
+    />
+  );
+}
+
 OfferShareOfferBinDialog.defaultProps = {
+  open: false,
+  onClose: () => {},
+};
+
+OfferShareChinillaOffersDialog.defaultProps = {
   open: false,
   onClose: () => {},
 };
@@ -1322,6 +1480,10 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
       },
       [OfferSharingService.OfferBin]: {
         component: OfferShareOfferBinDialog,
+        props: {},
+      },
+      [OfferSharingService.ChinillaOffers]: {
+        component: OfferShareChinillaOffersDialog,
         props: {},
       },
       [OfferSharingService.Offerpool]: {
