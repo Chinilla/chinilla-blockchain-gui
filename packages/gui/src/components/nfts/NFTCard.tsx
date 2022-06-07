@@ -56,12 +56,6 @@ export default function NFTCard(props: NFTCardProps) {
     navigate(`/dashboard/nfts/${nft.$nftId}`);
   }
 
-  const transferPending = nft.pendingTransaction;
-  const unavailableActions = transferPending
-    ? NFTContextualActionTypes.CreateOffer | NFTContextualActionTypes.Transfer
-    : NFTContextualActionTypes.None;
-  const actions = availableActions & ~unavailableActions;
-
   return (
     <Card>
       {isLoading ? (
@@ -71,41 +65,28 @@ export default function NFTCard(props: NFTCardProps) {
       ) : (
         <>
           <CardActionArea onClick={handleClick} disabled={!canExpandDetails}>
-            <NFTPreview nft={nft} />
+            <NFTPreview nft={nft} fit="contain" />
             <StyledCardContent>
-              <Typography noWrap>
-                {metadata?.name ?? <Trans>Title Not Available</Trans>}
-              </Typography>
+              <Flex justifyContent="space-between" alignItems="center">
+                <Flex gap={1} alignItems="center">
+                  <Typography noWrap>
+                    {metadata?.name ?? <Trans>Title Not Available</Trans>}
+                  </Typography>
+                </Flex>
+                {availableActions !== NFTContextualActionTypes.None && (
+                  <NFTContextualActions
+                    selection={{ items: [nft] }}
+                    availableActions={availableActions}
+                    toggle={
+                      <IconButton>
+                        <MoreVert />
+                      </IconButton>
+                    }
+                  />
+                )}
+              </Flex>
             </StyledCardContent>
           </CardActionArea>
-          <StyledCardFooter>
-            <Flex justifyContent="space-between" alignItems="center">
-              <Flex gap={1} alignItems="center">
-                <CopyToClipboard
-                  value={nftId}
-                  color="#90A4AE"
-                  size="small"
-                  sx={{ color: '#90A4AE' }}
-                />
-                <Tooltip title={nftId}>
-                  <Typography color="textSecondary" variant="body2" noWrap>
-                    <Truncate>{nftId}</Truncate>
-                  </Typography>
-                </Tooltip>
-              </Flex>
-              {availableActions !== NFTContextualActionTypes.None && (
-                <NFTContextualActions
-                  selection={{ items: [nft] }}
-                  availableActions={actions}
-                  toggle={
-                    <IconButton>
-                      <MoreVert />
-                    </IconButton>
-                  }
-                />
-              )}
-            </Flex>
-          </StyledCardFooter>
         </>
       )}
     </Card>
