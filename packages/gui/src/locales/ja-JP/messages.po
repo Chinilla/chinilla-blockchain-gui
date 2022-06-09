@@ -1475,7 +1475,7 @@ msgstr ""
 msgid "If you have already shared your offer file, you may need to submit a transaction to cancel the pending offer. Click \"Cancel on blockchain\" to submit a cancellation transaction."
 msgstr ""
 
-#: src/components/nfts/NFTPreview.tsx:107
+#: src/components/nfts/NFTPreview.tsx:106
 msgid "Image Hash Mismatch"
 msgstr ""
 
@@ -1721,8 +1721,8 @@ msgstr ""
 #~ msgid "Loading list of wallets"
 #~ msgstr "Loading list of wallets"
 
-#: src/components/nfts/NFTPreview.tsx:129
-#: src/components/nfts/NFTPreview.tsx:148
+#: src/components/nfts/NFTPreview.tsx:128
+#: src/components/nfts/NFTPreview.tsx:147
 msgid "Loading preview..."
 msgstr ""
 
@@ -1982,7 +1982,7 @@ msgstr "まだ収穫ブロックはありません"
 msgid "No current offers"
 msgstr ""
 
-#: src/components/nfts/NFTPreview.tsx:121
+#: src/components/nfts/NFTPreview.tsx:120
 msgid "No file available"
 msgstr ""
 
@@ -2292,7 +2292,7 @@ msgstr ""
 #~ msgid "Pending Total Balance"
 #~ msgstr "Pending Total Balance"
 
-#: src/components/nfts/NFTPreview.tsx:105
+#: src/components/nfts/NFTPreview.tsx:104
 msgid "Pending Transfer"
 msgstr ""
 
@@ -2668,7 +2668,7 @@ msgstr ""
 msgid "Preparing standard wallet"
 msgstr ""
 
-#: src/components/nfts/NFTPreview.tsx:125
+#: src/components/nfts/NFTPreview.tsx:124
 msgid "Preview URL is not valid"
 msgstr ""
 
