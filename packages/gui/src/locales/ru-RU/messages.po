@@ -303,7 +303,7 @@ msgstr ""
 msgid "Base Farmer Reward Amount"
 msgstr "Базовая сумма вознаграждения фермера"
 
-#: src/components/offers/OfferShareDialog.tsx:1211
+#: src/components/offers/OfferShareDialog.tsx:719
 msgid "Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team. Please note that it might take a few moments to join the channel."
 msgstr ""
 
@@ -318,6 +318,10 @@ msgstr "Лучшая калькуляция за последние 24 часа"
 #: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:8
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:468
+msgid "Blexie URL"
+msgstr ""
 
 #: src/components/block/Block.jsx:136
 msgid "Block"
@@ -397,8 +401,8 @@ msgstr "Обзор"
 #: src/components/offers/OfferAcceptConfirmationDialog.tsx:26
 #: src/components/offers/OfferDataEntryDialog.tsx:67
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:18
-#: src/components/offers/OfferShareDialog.tsx:1243
-#: src/components/offers/OfferShareDialog.tsx:1416
+#: src/components/offers/OfferShareDialog.tsx:751
+#: src/components/offers/OfferShareDialog.tsx:853
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
@@ -463,11 +467,7 @@ msgid "Chat on KeyBase"
 msgstr "Чат в KeyBase"
 
 #: src/components/offers/NFTOfferPreview.tsx:125
-msgid "Check Provenance on MintGarden"
-msgstr ""
-
-#: src/components/offers/NFTOfferPreview.tsx:135
-msgid "Check Provenance on Spacescan.io"
+msgid "Check Provenance on Blexie"
 msgstr ""
 
 #: src/electron/main.tsx:581
@@ -650,11 +650,15 @@ msgstr ""
 "\n"
 "Приведенная выше команда создает одио поле (указывается -n 1), для параллельного построения вам нужно повторить команду (не закрывая первую). Увеличьте значение -n для последовательного построения, то есть после завершения первого участка запускается следующий."
 
+#: src/components/offers/OfferShareDialog.tsx:592
+#~ msgid "Chinilla URL"
+#~ msgstr ""
+
 #: src/components/_wallet_old/standard/WalletStandard.tsx:642
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Chinilla Wallet"
 
-#: src/components/offers/OfferShareDialog.tsx:853
+#: src/components/offers/OfferShareDialog.tsx:366
 msgid "Chinilla.com Offers URL"
 msgstr ""
 
@@ -685,14 +689,10 @@ msgstr "Забрать награду"
 
 #: src/components/nfts/NFTTransferAction.tsx:253
 #: src/components/offers/OfferManager.tsx:199
-#: src/components/offers/OfferShareDialog.tsx:617
-#: src/components/offers/OfferShareDialog.tsx:698
-#: src/components/offers/OfferShareDialog.tsx:780
-#: src/components/offers/OfferShareDialog.tsx:878
-#: src/components/offers/OfferShareDialog.tsx:985
-#: src/components/offers/OfferShareDialog.tsx:1176
-#: src/components/offers/OfferShareDialog.tsx:1308
-#: src/components/offers/OfferShareDialog.tsx:1598
+#: src/components/offers/OfferShareDialog.tsx:391
+#: src/components/offers/OfferShareDialog.tsx:493
+#: src/components/offers/OfferShareDialog.tsx:684
+#: src/components/offers/OfferShareDialog.tsx:1019
 #: src/components/plot/PlotAddDirectoryDialog.tsx:130
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
@@ -1148,10 +1148,6 @@ msgstr "Разработчик"
 msgid "Developer Tools"
 msgstr "Инструменты разработчика"
 
-#: src/components/offers/OfferShareDialog.tsx:592
-msgid "Dexie URL"
-msgstr ""
-
 #: src/components/block/Block.jsx:199
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:14
 msgid "Difficulty"
@@ -1202,7 +1198,7 @@ msgstr ""
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/offers/OfferShareDialog.tsx:1591
+#: src/components/offers/OfferShareDialog.tsx:1012
 #: src/hooks/useOpenUnsafeLink.tsx:77
 msgid "Do not show this dialog again"
 msgstr ""
@@ -1327,7 +1323,7 @@ msgstr "Неудачно"
 msgid "Failed to decode NFT identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:467
+#: src/components/offers/OfferShareDialog.tsx:281
 msgid "Failed to execute Keybase command: {stderr}"
 msgstr ""
 
@@ -1527,14 +1523,14 @@ msgstr ""
 msgid "Github Discussions"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1173
-#: src/components/offers/OfferShareDialog.tsx:1234
+#: src/components/offers/OfferShareDialog.tsx:681
+#: src/components/offers/OfferShareDialog.tsx:742
 msgid "Go to #{channelName}"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1305
-msgid "Go to Offerpool"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:1180
+#~ msgid "Go to Offerpool"
+#~ msgstr ""
 
 #: src/components/pool/PoolOverview.tsx:172
 #~ msgid "Grid view"
@@ -1560,9 +1556,9 @@ msgstr ""
 msgid "Harvesters"
 msgstr "Комбайны"
 
-#: src/components/offers/OfferShareDialog.tsx:960
-msgid "Hashgreen DEX URL"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:835
+#~ msgid "Hashgreen DEX URL"
+#~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:57
 msgid "Header Hash"
@@ -1635,8 +1631,7 @@ msgstr "IP адрес / хост"
 msgid "If none selected, then it will default to the temporary directory."
 msgstr "Если ничего не выбрано, по умолчанию используется временный каталог."
 
-#: src/components/offers/OfferShareDialog.tsx:809
-#: src/components/offers/OfferShareDialog.tsx:907
+#: src/components/offers/OfferShareDialog.tsx:420
 msgid "If selected, your offer will be not be shared publicly."
 msgstr ""
 
@@ -1670,7 +1665,7 @@ msgstr "В процессе"
 msgid "In exchange for"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1399
+#: src/components/offers/OfferShareDialog.tsx:836
 msgid "In exchange for:"
 msgstr ""
 
@@ -1715,7 +1710,7 @@ msgstr "Индекс"
 msgid "Initializing..."
 msgstr "Инициализация..."
 
-#: src/components/offers/OfferShareDialog.tsx:1206
+#: src/components/offers/OfferShareDialog.tsx:714
 msgid "Install Keybase"
 msgstr ""
 
@@ -1775,7 +1770,7 @@ msgstr "Присоединяйтесь к пулу и получите боле�
 msgid "Join farming pools"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1223
+#: src/components/offers/OfferShareDialog.tsx:731
 msgid "Join {teamName}"
 msgstr ""
 
@@ -1784,11 +1779,11 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-размер"
 
-#: src/components/offers/OfferShareDialog.tsx:1109
+#: src/components/offers/OfferShareDialog.tsx:617
 msgid "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1198
+#: src/components/offers/OfferShareDialog.tsx:706
 msgid "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName} team, you must first have Keybase installed."
 msgstr ""
 
@@ -2001,10 +1996,6 @@ msgstr "Миграция необходима для поддержки защи
 #: src/components/pool/PoolInfo.tsx:27
 msgid "Minimum Difficulty"
 msgstr "Минимальная сложность"
-
-#: src/components/offers/OfferShareDialog.tsx:673
-msgid "MintGarden URL"
-msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:98
 msgid "Minutes"
@@ -2261,13 +2252,9 @@ msgstr ""
 msgid "Offer Identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:587
-#: src/components/offers/OfferShareDialog.tsx:668
-#: src/components/offers/OfferShareDialog.tsx:750
-#: src/components/offers/OfferShareDialog.tsx:848
-#: src/components/offers/OfferShareDialog.tsx:955
-#: src/components/offers/OfferShareDialog.tsx:1164
-#: src/components/offers/OfferShareDialog.tsx:1289
+#: src/components/offers/OfferShareDialog.tsx:361
+#: src/components/offers/OfferShareDialog.tsx:463
+#: src/components/offers/OfferShareDialog.tsx:672
 msgid "Offer Shared"
 msgstr ""
 
@@ -2275,9 +2262,9 @@ msgstr ""
 msgid "Offer has been accepted and is awaiting confirmation."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:755
-msgid "OfferBin URL"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:733
+#~ msgid "OfferBin URL"
+#~ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:370
 msgid "Offered"
@@ -3235,44 +3222,46 @@ msgstr "Настройки"
 #~ msgstr "Settings are located at the upper right corner"
 
 #: src/components/offers/OfferManager.tsx:427
-#: src/components/offers/OfferShareDialog.tsx:1250
-#: src/components/offers/OfferShareDialog.tsx:1423
+#: src/components/offers/OfferShareDialog.tsx:758
+#: src/components/offers/OfferShareDialog.tsx:860
 msgid "Share"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1550
+#: src/components/offers/OfferShareDialog.tsx:971
 msgid "Share Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:807
-#: src/components/offers/OfferShareDialog.tsx:905
+#: src/components/offers/OfferShareDialog.tsx:418
 msgid "Share Privately"
 msgstr ""
 
+#: src/components/offers/OfferShareDialog.tsx:505
+msgid "Share on Blexie"
+msgstr ""
+
 #: src/components/offers/OfferShareDialog.tsx:629
-msgid "Share on Dexie"
+#~ msgid "Share on Chinilla"
+#~ msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:403
+msgid "Share on Chinilla.com"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:997
-msgid "Share on Hashgreen DEX"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:872
+#~ msgid "Share on Hashgreen DEX"
+#~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1193
+#: src/components/offers/OfferShareDialog.tsx:701
 msgid "Share on Keybase"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:710
-msgid "Share on MintGarden"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:770
+#~ msgid "Share on OfferBin"
+#~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:792
-#: src/components/offers/OfferShareDialog.tsx:890
-msgid "Share on OfferBin"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:1320
-msgid "Share on offerpool"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:1195
+#~ msgid "Share on offerpool"
+#~ msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:74
 #~ msgid "Show Advanced Options"
@@ -3836,11 +3825,11 @@ msgstr ""
 #~ msgid "Unable to create plot NFT"
 #~ msgstr "Unable to create plot NFT"
 
-#: src/components/offers/OfferShareDialog.tsx:1124
+#: src/components/offers/OfferShareDialog.tsx:632
 msgid "Unable to open Keybase. Install Keybase from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1031
+#: src/components/offers/OfferShareDialog.tsx:539
 msgid "Unable to open browser. Install Keybase from https://keybase.io"
 msgstr ""
 
@@ -3935,30 +3924,30 @@ msgstr "Ссылка для входа на пул"
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:871
-msgid "View on Chinilla.com"
+#: src/components/nfts/NFTContextualActions.tsx:366
+#: src/components/offers/OfferShareDialog.tsx:486
+msgid "View on Blexie"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:610
-msgid "View on Dexie"
+#~ msgid "View on Chinilla"
+#~ msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:384
+msgid "View on Chinilla.com"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:978
-msgid "View on Hashgreen DEX"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:853
+#~ msgid "View on Hashgreen DEX"
+#~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:366
-#: src/components/offers/OfferShareDialog.tsx:691
-msgid "View on MintGarden"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:773
-msgid "View on OfferBin"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:751
+#~ msgid "View on OfferBin"
+#~ msgstr ""
 
 #: src/components/nfts/NFTContextualActions.tsx:373
-msgid "View on Spacescan.io"
-msgstr ""
+#~ msgid "View on Spacescan.io"
+#~ msgstr ""
 
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:562
 #~ msgid "View pending balances"
@@ -4269,11 +4258,11 @@ msgstr "Ваши ключи должны быть перенесены в нов
 msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 msgstr "Ваши ключи должны быть перенесены в новую связку ключей, которая будет защищена мастер паролем."
 
-#: src/components/offers/OfferShareDialog.tsx:1168
+#: src/components/offers/OfferShareDialog.tsx:676
 msgid "Your offer has been successfully posted to Keybase."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1394
+#: src/components/offers/OfferShareDialog.tsx:831
 msgid "Your offer:"
 msgstr ""
 
@@ -4354,9 +4343,9 @@ msgstr "p2SingletonPuzzleHash не определен"
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1293
-msgid "{0}"
-msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:1168
+#~ msgid "{0}"
+#~ msgstr ""
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"

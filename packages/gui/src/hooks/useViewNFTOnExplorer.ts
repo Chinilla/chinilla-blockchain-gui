@@ -5,15 +5,8 @@ import useOpenExternal from './useOpenExternal';
 
 /* ========================================================================== */
 
-function getMintGardenURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://${testnet ? 'testnet.' : ''}mintgarden.io/nfts/${
-    nft.$nftId
-  }`;
-  return url;
-}
-
-function getSpacescanURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://spacescan.io/${testnet ? 'thcx10' : 'hcx'}/nft/${
+function getBlexieURL(nft: NFTInfo, testnet: boolean) {
+  const url = `https://${testnet ? 'testnet.' : ''}blexie.io/nfts/${
     nft.$nftId
   }`;
   return url;
@@ -22,13 +15,11 @@ function getSpacescanURL(nft: NFTInfo, testnet: boolean) {
 /* ========================================================================== */
 
 export enum NFTExplorer {
-  MintGarden = 'mintgarden',
-  Spacescan = 'spacescan',
+  Blexie = 'blexie',
 }
 
 const UrlBuilderMapping = {
-  [NFTExplorer.MintGarden]: getMintGardenURL,
-  [NFTExplorer.Spacescan]: getSpacescanURL,
+  [NFTExplorer.Blexie]: getBlexieURL,
 };
 
 export default function useViewNFTOnExplorer() {
