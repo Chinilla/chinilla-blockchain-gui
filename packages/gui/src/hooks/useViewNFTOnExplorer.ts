@@ -6,7 +6,7 @@ import useOpenExternal from './useOpenExternal';
 /* ========================================================================== */
 
 function getBlexieURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://${testnet ? 'testnet.' : ''}blexie.io/nfts/${
+  const url = `https://${testnet ? 'testnet.' : ''}blexie.com/nft/${
     nft.$nftId
   }`;
   return url;

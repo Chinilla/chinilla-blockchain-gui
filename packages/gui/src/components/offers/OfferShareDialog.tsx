@@ -167,7 +167,7 @@ async function postToBlexie(
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
-    hostname: testnet ? 'api.testnet.blexie.io' : 'api.blexie.io',
+    hostname: testnet ? 'testnet.blexie.com' : 'blexie.com',
     port: 443,
     path: '/offer',
   };
@@ -197,7 +197,7 @@ async function postToBlexie(
   } = JSON.parse(responseBody);
   const nftId = toBech32m(nft_id, 'nft');
 
-  return `https://${testnet ? 'testnet.' : ''}blexie.io/nfts/${nftId}`;
+  return `https://${testnet ? 'testnet.' : ''}blexie.com/nft/${nftId}`;
 }
 
 enum KeybaseCLIActions {
