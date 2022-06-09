@@ -5,13 +5,15 @@ import { Trans } from '@lingui/macro';
 import type { NFTInfo } from '@chinilla/api';
 import { AlertDialog, DropdownActions, useOpenDialog } from '@chinilla/core';
 import type { DropdownActionsChildProps } from '@chinilla/core';
-import { Offers as OffersIcon } from '@chinilla/icons';
+import {
+  LinkSmall as LinkSmallIcon,
+  NFTsSmall as NFTsSmallIcon,
+  OffersSmall as OffersSmallIcon,
+} from '@chinilla/icons';
 import { ListItemIcon, MenuItem, Typography } from '@mui/material';
 import {
   ArrowForward as TransferIcon,
-  Fingerprint as FingerprintIcon,
   Link as LinkIcon,
-  OpenInBrowser,
 } from '@mui/icons-material';
 import { NFTTransferDialog, NFTTransferResult } from './NFTTransferAction';
 import NFTSelection from '../../types/NFTSelection';
@@ -78,7 +80,7 @@ function NFTCopyNFTIdContextualAction(
       disabled={disabled}
     >
       <ListItemIcon>
-        <FingerprintIcon />
+        <NFTsSmallIcon />
       </ListItemIcon>
       <Typography variant="inherit" noWrap>
         <Trans>Copy NFT ID</Trans>
@@ -124,7 +126,7 @@ function NFTCreateOfferContextualAction(
       disabled={disabled}
     >
       <ListItemIcon>
-        <OffersIcon />
+        <OffersSmallIcon />
       </ListItemIcon>
       <Typography variant="inherit" noWrap>
         <Trans>Create Offer</Trans>
@@ -235,7 +237,7 @@ function NFTOpenInBrowserContextualAction(
       disabled={disabled}
     >
       <ListItemIcon>
-        <OpenInBrowser />
+        <LinkSmallIcon />
       </ListItemIcon>
       <Typography variant="inherit" noWrap>
         <Trans>Open in Web Browser</Trans>
@@ -316,7 +318,7 @@ function NFTViewOnExplorerContextualAction(
       disabled={disabled}
     >
       <ListItemIcon>
-        <OpenInBrowser />
+        <LinkSmallIcon />
       </ListItemIcon>
       <Typography variant="inherit" noWrap>
         {title}

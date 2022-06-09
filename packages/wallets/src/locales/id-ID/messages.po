@@ -134,7 +134,7 @@ msgstr ""
 #: src/components/hero/WalletHeroAdd.tsx:64
 #: src/components/hero/WalletHeroWallets.tsx:83
 #: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:166
+#: src/components/WalletsManageTokens.tsx:170
 msgid "Add Token"
 msgstr ""
 
@@ -1582,7 +1582,7 @@ msgstr "Mengelola Pemulihan DIDs"
 #~ msgid "Manage Your Farming Rewards Target Addresses"
 #~ msgstr "Manage Your Farming Rewards Target Addresses"
 
-#: src/components/WalletsManageTokens.tsx:143
+#: src/components/WalletsManageTokens.tsx:147
 msgid "Manage token list"
 msgstr ""
 

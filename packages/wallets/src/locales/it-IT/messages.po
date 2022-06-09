@@ -134,7 +134,7 @@ msgstr "Aggiungi un nodo personalizzato"
 #: src/components/hero/WalletHeroAdd.tsx:64
 #: src/components/hero/WalletHeroWallets.tsx:83
 #: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:166
+#: src/components/WalletsManageTokens.tsx:170
 msgid "Add Token"
 msgstr "Aggiungi token"
 
@@ -1586,7 +1586,7 @@ msgstr "Gestisci DID di Recupero"
 #~ msgid "Manage Your Farming Rewards Target Addresses"
 #~ msgstr "Manage Your Farming Rewards Target Addresses"
 
-#: src/components/WalletsManageTokens.tsx:143
+#: src/components/WalletsManageTokens.tsx:147
 msgid "Manage token list"
 msgstr "Gestisci l'elenco dei token"
 

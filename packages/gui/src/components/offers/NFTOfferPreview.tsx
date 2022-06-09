@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useGetNFTInfoQuery } from '@chinilla/api-react';
-import { Button, Flex, TooltipIcon } from '@chinilla/core';
+import { Button, Flex, Loading, TooltipIcon } from '@chinilla/core';
 import { Card, Typography } from '@mui/material';
 import NFTCard from '../nfts/NFTCard';
 import { launcherIdFromNFTId } from '../../util/nfts';
@@ -21,7 +21,7 @@ const StyledPreviewContainer = styled(Flex)`
 
 const StyledCard = styled(Card)`
   width: 300px;
-  height: 406px;
+  height: 362px;
   display: flex;
 `;
 
@@ -34,15 +34,78 @@ type NFTOfferPreviewProps = {
 export default function NFTOfferPreview(props: NFTOfferPreviewProps) {
   const { nftId } = props;
   const launcherId = launcherIdFromNFTId(nftId ?? '');
-  const borderStyle = launcherId
-    ? 'none' //'2px solid #E0E0E0'
-    : '2px dashed #E0E0E0';
   const {
     data: nft,
-    isLoading,
+    isLoading: isLoadingNFT,
     error,
   } = useGetNFTInfoQuery({ coinId: launcherId });
   const viewOnExplorer = useViewNFTOnExplorer();
+
+  const cardContentElem = (function () {
+    if (isLoadingNFT) {
+      return (
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          flexGrow={1}
+          gap={1}
+          style={{
+            wordBreak: 'break-all',
+          }}
+        >
+          <Loading center>
+            <Trans>Loading NFT Info...</Trans>
+          </Loading>
+        </Flex>
+      );
+    } else if (launcherId && nft) {
+      return (
+        <NFTCard
+          nft={nft}
+          canExpandDetails={false}
+          availableActions={
+            NFTContextualActionTypes.CopyNFTId |
+            NFTContextualActionTypes.ViewOnExplorer |
+            NFTContextualActionTypes.OpenInBrowser |
+            NFTContextualActionTypes.CopyURL
+          }
+        />
+      );
+    } else if (error) {
+      return (
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          flexGrow={1}
+          gap={1}
+          style={{
+            wordBreak: 'break-all',
+          }}
+        >
+          <Typography variant="body1" color="error">
+            {error.message}
+          </Typography>
+        </Flex>
+      );
+    } else {
+      <Flex
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        flexGrow={1}
+        gap={1}
+        style={{
+          wordBreak: 'break-all',
+        }}
+      >
+        <Typography variant="h6">
+          <Trans>NFT not specified</Trans>
+        </Typography>
+      </Flex>;
+    }
+  })();
 
   return (
     <StyledPreviewContainer
@@ -53,40 +116,13 @@ export default function NFTOfferPreview(props: NFTOfferPreviewProps) {
     >
       <Flex
         flexDirection="column"
-        flexGrow={1}
         gap={1}
         style={{
           padding: '1.5rem',
         }}
       >
         <Typography variant="subtitle1">Preview</Typography>
-        <StyledCard>
-          {launcherId && nft ? (
-            <NFTCard
-              nft={nft}
-              canExpandDetails={false}
-              availableActions={
-                NFTContextualActionTypes.OpenInBrowser |
-                NFTContextualActionTypes.CopyURL
-              }
-            />
-          ) : (
-            <Flex
-              flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
-              flexGrow={1}
-              gap={1}
-              style={{
-                wordBreak: 'break-all',
-              }}
-            >
-              <Typography variant="h6">
-                <Trans>NFT not specified</Trans>
-              </Typography>
-            </Flex>
-          )}
-        </StyledCard>
+        <StyledCard>{cardContentElem}</StyledCard>
       </Flex>
       {nft && (
         <Flex

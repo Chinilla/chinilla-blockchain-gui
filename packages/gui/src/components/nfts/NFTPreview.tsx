@@ -18,7 +18,6 @@ const StyledCardPreview = styled(Box)`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding-top: 20px;
 `;
 
 const StyledIframe = styled('iframe')`

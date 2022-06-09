@@ -120,7 +120,7 @@ msgstr "Action"
 #: src/components/farm/FarmFullNodeConnections.tsx:66
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:66
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/nfts/NFTContextualActions.tsx:341
+#: src/components/nfts/NFTContextualActions.tsx:343
 msgid "Actions"
 msgstr "Actions"
 
@@ -205,7 +205,7 @@ msgstr "All Profiles"
 msgid "Alternate tmpdir/tmpdir2"
 msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/offers/NFTOfferEditor.tsx:95
+#: src/components/offers/NFTOfferEditor.tsx:196
 #: src/components/offers/OfferEditorConditionsPanel.tsx:148
 #: src/components/offers/OfferViewer.tsx:202
 msgid "Amount"
@@ -227,7 +227,7 @@ msgstr "Amount exceeds spendable balance"
 #~ msgid "Amount must be an even amount."
 #~ msgstr "Amount must be an even amount."
 
-#: src/components/offers/NFTOfferPreview.tsx:110
+#: src/components/offers/NFTOfferPreview.tsx:146
 msgid "An NFT's provenance is a complete record of its ownership history. It provides a direct lineage that connects everyone who has owned the NFT, all the way back to the original artist. This helps to verify that the NFT is authentic."
 msgstr "An NFT's provenance is a complete record of its ownership history. It provides a direct lineage that connects everyone who has owned the NFT, all the way back to the original artist. This helps to verify that the NFT is authentic."
 
@@ -466,7 +466,7 @@ msgstr "Chat on Discord"
 msgid "Chat on KeyBase"
 msgstr "Chat on KeyBase"
 
-#: src/components/offers/NFTOfferPreview.tsx:125
+#: src/components/offers/NFTOfferPreview.tsx:161
 msgid "Check Provenance on Blexie"
 msgstr "Check Provenance on Blexie"
 
@@ -558,7 +558,7 @@ msgstr "Coins"
 #~ msgid "Coins:"
 #~ msgstr "Coins:"
 
-#: src/components/nfts/detail/NFTDetail.tsx:189
+#: src/components/nfts/detail/NFTDetail.tsx:295
 #: src/components/nfts/NFTSummary.tsx:59
 msgid "Collection"
 msgstr "Collection"
@@ -697,11 +697,11 @@ msgstr "Contribute on GitHub"
 #~ msgid "Copy"
 #~ msgstr "Copy"
 
-#: src/components/nfts/NFTContextualActions.tsx:84
+#: src/components/nfts/NFTContextualActions.tsx:86
 msgid "Copy NFT ID"
 msgstr "Copy NFT ID"
 
-#: src/components/nfts/NFTContextualActions.tsx:281
+#: src/components/nfts/NFTContextualActions.tsx:283
 msgid "Copy URL"
 msgstr "Copy URL"
 
@@ -736,8 +736,8 @@ msgstr "Create & Manage plots"
 #~ msgid "Create New Wallet"
 #~ msgstr "Create New Wallet"
 
-#: src/components/nfts/NFTContextualActions.tsx:130
-#: src/components/offers/NFTOfferEditor.tsx:195
+#: src/components/nfts/NFTContextualActions.tsx:132
+#: src/components/offers/NFTOfferEditor.tsx:394
 #: src/components/offers/OfferEditor.tsx:221
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:15
 msgid "Create Offer"
@@ -789,7 +789,7 @@ msgstr "Create a new profile"
 #~ msgid "Create admin wallet"
 #~ msgstr "Create admin wallet"
 
-#: src/components/offers/NFTOfferEditor.tsx:426
+#: src/components/offers/NFTOfferEditor.tsx:639
 msgid "Create an NFT Offer"
 msgstr "Create an NFT Offer"
 
@@ -847,6 +847,14 @@ msgstr "Creating Plot NFT for Self Pooling"
 msgid "Creation Date"
 msgstr "Creation Date"
 
+#: src/components/offers/NFTOfferEditor.tsx:270
+msgid "Creator Fee ({royaltyPercentage}%)"
+msgstr "Creator Fee ({royaltyPercentage}%)"
+
+#: src/components/offers/NFTOfferEditor.tsx:275
+msgid "Creator royalty percentage seems high"
+msgstr "Creator royalty percentage seems high"
+
 #: src/components/plot/add/PlotAddForm.tsx:113
 msgid "Currency code is not defined"
 msgstr "Currency code is not defined"
@@ -885,12 +893,12 @@ msgstr "Current Points Balance"
 #~ msgid "DIDListItems.title"
 #~ msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:92
+#: src/components/nfts/detail/NFTDetail.tsx:182
 #: src/components/nfts/detail/NFTDetailV2.tsx:69
 msgid "Data Hash"
 msgstr "Data Hash"
 
-#: src/components/nfts/detail/NFTDetail.tsx:83
+#: src/components/nfts/detail/NFTDetail.tsx:169
 #: src/components/nfts/detail/NFTDetailV2.tsx:77
 msgid "Data URL {0}"
 msgstr "Data URL {0}"
@@ -953,7 +961,7 @@ msgstr "Deleting key"
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 
-#: src/components/nfts/detail/NFTDetail.tsx:179
+#: src/components/nfts/detail/NFTDetail.tsx:285
 #: src/components/nfts/detail/NFTDetailV2.tsx:142
 msgid "Description"
 msgstr "Description"
@@ -966,7 +974,7 @@ msgstr "Destination"
 msgid "Destination:"
 msgstr "Destination:"
 
-#: src/components/nfts/detail/NFTDetail.tsx:214
+#: src/components/nfts/detail/NFTDetail.tsx:320
 #: src/components/nfts/detail/NFTDetailV2.tsx:171
 #: src/components/offers/OfferViewer.tsx:357
 msgid "Details"
@@ -1151,7 +1159,7 @@ msgstr "Exclude final directory"
 msgid "Failed"
 msgstr "Failed"
 
-#: src/components/offers/NFTOfferEditor.tsx:309
+#: src/components/offers/NFTOfferEditor.tsx:508
 msgid "Failed to decode NFT identifier"
 msgstr "Failed to decode NFT identifier"
 
@@ -1252,7 +1260,7 @@ msgid "Farming Status"
 msgstr "Farming Status"
 
 #: src/components/nfts/NFTTransferAction.tsx:242
-#: src/components/offers/NFTOfferEditor.tsx:169
+#: src/components/offers/NFTOfferEditor.tsx:306
 #: src/components/offers/NFTOfferViewer.tsx:462
 #: src/components/offers/OfferEditorConditionsPanel.tsx:457
 #: src/components/offers/OfferManager.tsx:174
@@ -1368,7 +1376,7 @@ msgstr "Go to #{channelName}"
 #~ msgid "Grid view"
 #~ msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:145
+#: src/components/offers/NFTOfferEditor.tsx:251
 msgid "HCX for NFT"
 msgstr "HCX for NFT"
 
@@ -1505,6 +1513,10 @@ msgstr "In exchange for:"
 msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted."
 msgstr "Including a fee in the offer can help expedite the transaction when the offer is accepted."
 
+#: src/components/offers/NFTOfferEditor.tsx:311
+msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 XCH (5,000,000 vojos)"
+msgstr "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 XCH (5,000,000 vojos)"
+
 #: src/components/_wallet_old/WalletHistory.tsx:23
 #~ msgid "Incoming"
 #~ msgstr "Incoming"
@@ -1566,7 +1578,7 @@ msgstr ""
 #~ msgid "Interval"
 #~ msgstr "Interval"
 
-#: src/components/offers/NFTOfferEditor.tsx:307
+#: src/components/offers/NFTOfferEditor.tsx:506
 msgid "Invalid NFT identifier"
 msgstr "Invalid NFT identifier"
 
@@ -1656,7 +1668,7 @@ msgstr "Last Transaction Block Time"
 msgid "Latest Block Challenges"
 msgstr "Latest Block Challenges"
 
-#: src/components/nfts/detail/NFTDetail.tsx:54
+#: src/components/nfts/detail/NFTDetail.tsx:85
 #: src/components/nfts/detail/NFTDetailV2.tsx:55
 msgid "Launcher ID"
 msgstr "Launcher ID"
@@ -1675,12 +1687,12 @@ msgstr "Learn More"
 msgid "Leaving Pool"
 msgstr "Leaving Pool"
 
-#: src/components/nfts/detail/NFTDetail.tsx:132
+#: src/components/nfts/detail/NFTDetail.tsx:234
 #: src/components/nfts/detail/NFTDetailV2.tsx:86
 msgid "License Hash"
 msgstr "License Hash"
 
-#: src/components/nfts/detail/NFTDetail.tsx:123
+#: src/components/nfts/detail/NFTDetail.tsx:221
 #: src/components/nfts/detail/NFTDetailV2.tsx:95
 msgid "License URL {0}"
 msgstr "License URL {0}"
@@ -1692,6 +1704,10 @@ msgstr "License URL {0}"
 #: src/components/nfts/NFTSummary.tsx:114
 msgid "Loading NFT"
 msgstr "Loading NFT"
+
+#: src/components/offers/NFTOfferPreview.tsx:58
+msgid "Loading NFT Info..."
+msgstr "Loading NFT Info..."
 
 #: src/components/pool/Pool.tsx:21
 #~ msgid "Loading Plot NFTs"
@@ -1795,11 +1811,11 @@ msgstr "Manage Offers"
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Manage Your Farming Rewards Target Addresses"
 
-#: src/components/nfts/detail/NFTDetail.tsx:114
+#: src/components/nfts/detail/NFTDetail.tsx:208
 msgid "Metadata Hash"
 msgstr "Metadata Hash"
 
-#: src/components/nfts/detail/NFTDetail.tsx:105
+#: src/components/nfts/detail/NFTDetail.tsx:195
 msgid "Metadata URL {0}"
 msgstr "Metadata URL {0}"
 
@@ -1833,6 +1849,10 @@ msgstr "Migration required to support passphrase protection"
 msgid "Minimum Difficulty"
 msgstr "Minimum Difficulty"
 
+#: src/components/nfts/detail/NFTDetail.tsx:160
+msgid "Minted at Block Height"
+msgstr "Minted at Block Height"
+
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:98
 msgid "Minutes"
 msgstr "Minutes"
@@ -1845,7 +1865,7 @@ msgstr "Missing Keys"
 msgid "More memory slightly increases speed"
 msgstr "More memory slightly increases speed"
 
-#: src/components/settings/ProfileView.tsx:95
+#: src/components/settings/ProfileView.tsx:98
 msgid "My DID"
 msgstr "My DID"
 
@@ -1857,7 +1877,7 @@ msgstr "My DID"
 #~ msgid "My Pubkey"
 #~ msgstr "My Pubkey"
 
-#: src/components/offers/NFTOfferEditor.tsx:77
+#: src/components/offers/NFTOfferEditor.tsx:178
 msgid "NFT"
 msgstr "NFT"
 
@@ -1869,7 +1889,11 @@ msgstr "NFT"
 #~ msgid "NFT Create Offer Demo"
 #~ msgstr "NFT Create Offer Demo"
 
-#: src/components/offers/NFTOfferEditor.tsx:79
+#: src/components/nfts/detail/NFTDetail.tsx:76
+msgid "NFT ID"
+msgstr "NFT ID"
+
+#: src/components/offers/NFTOfferEditor.tsx:180
 msgid "NFT Identifier"
 msgstr "NFT Identifier"
 
@@ -1885,7 +1909,7 @@ msgstr "NFT Identifier"
 msgid "NFT Offer"
 msgstr "NFT Offer"
 
-#: src/components/nfts/NFTContextualActions.tsx:156
+#: src/components/nfts/NFTContextualActions.tsx:158
 msgid "NFT Transfer Complete"
 msgstr "NFT Transfer Complete"
 
@@ -1893,19 +1917,19 @@ msgstr "NFT Transfer Complete"
 #~ msgid "NFT Transfer Demo"
 #~ msgstr "NFT Transfer Demo"
 
-#: src/components/nfts/NFTContextualActions.tsx:166
+#: src/components/nfts/NFTContextualActions.tsx:168
 msgid "NFT Transfer Failed"
 msgstr "NFT Transfer Failed"
 
-#: src/components/offers/NFTOfferEditor.tsx:336
+#: src/components/offers/NFTOfferEditor.tsx:535
 msgid "NFT details not available"
 msgstr "NFT details not available"
 
-#: src/components/offers/NFTOfferEditor.tsx:140
+#: src/components/offers/NFTOfferEditor.tsx:246
 msgid "NFT for HCX"
 msgstr "NFT for HCX"
 
-#: src/components/offers/NFTOfferPreview.tsx:85
+#: src/components/offers/NFTOfferPreview.tsx:104
 msgid "NFT not specified"
 msgstr "NFT not specified"
 
@@ -2008,8 +2032,8 @@ msgstr "None of your plots have passed the plot filter yet."
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/farm/FarmerStatus.tsx:20
-#: src/components/nfts/detail/NFTDetail.tsx:183
-#: src/components/nfts/detail/NFTDetail.tsx:193
+#: src/components/nfts/detail/NFTDetail.tsx:289
+#: src/components/nfts/detail/NFTDetail.tsx:299
 #: src/components/nfts/detail/NFTDetailV2.tsx:145
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:361
@@ -2154,13 +2178,21 @@ msgstr "One or more unknown tokens are being offered. Please verify that the ass
 msgid "Open Link"
 msgstr "Open Link"
 
-#: src/components/nfts/NFTContextualActions.tsx:241
+#: src/components/nfts/NFTContextualActions.tsx:243
 msgid "Open in Web Browser"
 msgstr "Open in Web Browser"
 
 #: src/components/_wallet_old/WalletHistory.tsx:23
 #~ msgid "Outgoing"
 #~ msgstr "Outgoing"
+
+#: src/components/nfts/detail/NFTDetail.tsx:101
+msgid "Owner DID"
+msgstr "Owner DID"
+
+#: src/components/nfts/detail/NFTDetail.tsx:140
+msgid "Owner Public Key"
+msgstr "Owner Public Key"
 
 #: src/components/offers/OfferViewer.tsx:230
 msgid "Parent Coin"
@@ -2346,11 +2378,11 @@ msgstr "Please enter a valid numeric fee"
 #~ msgid "Please enter a valid pubkey"
 #~ msgstr "Please enter a valid pubkey"
 
-#: src/components/offers/NFTOfferEditor.tsx:305
+#: src/components/offers/NFTOfferEditor.tsx:504
 msgid "Please enter an NFT identifier"
 msgstr "Please enter an NFT identifier"
 
-#: src/components/offers/NFTOfferEditor.tsx:311
+#: src/components/offers/NFTOfferEditor.tsx:510
 msgid "Please enter an amount"
 msgstr "Please enter an amount"
 
@@ -2681,8 +2713,12 @@ msgstr "Price"
 #~ msgid "Private key:"
 #~ msgstr "Private key:"
 
+#: src/components/settings/ProfileView.tsx:65
+msgid "Profile Name"
+msgstr "Profile Name"
+
 #: src/components/settings/Settings.tsx:273
-#: src/components/settings/SettingsProfiles.tsx:56
+#: src/components/settings/SettingsProfiles.tsx:47
 msgid "Profiles"
 msgstr "Profiles"
 
@@ -2854,7 +2890,7 @@ msgstr "Report an Issue..."
 msgid "Requested"
 msgstr "Requested"
 
-#: src/components/offers/NFTOfferEditor.tsx:187
+#: src/components/offers/NFTOfferEditor.tsx:386
 #: src/components/offers/OfferEditor.tsx:213
 msgid "Reset"
 msgstr "Reset"
@@ -2870,6 +2906,10 @@ msgstr "Restore Metadata for Colored Coins and other Smart Wallets from Backup"
 #: src/components/backup/BackupRestore.tsx:107
 #~ msgid "Restore Smart Wallets From Backup"
 #~ msgstr ""
+
+#: src/components/nfts/detail/NFTDetail.tsx:152
+msgid "Royalty Percentage"
+msgstr "Royalty Percentage"
 
 #: src/components/app/AppSelectMode.tsx:152
 msgid "Runs the full node"
@@ -3033,7 +3073,7 @@ msgstr "Send to Address"
 msgid "Series #"
 msgstr "Series #"
 
-#: src/components/nfts/detail/NFTDetail.tsx:200
+#: src/components/nfts/detail/NFTDetail.tsx:306
 msgid "Series Number"
 msgstr "Series Number"
 
@@ -3308,11 +3348,11 @@ msgstr "Target Puzzle Hash"
 msgid "Temporary folder location"
 msgstr "Temporary folder location"
 
-#: src/components/nfts/NFTContextualActions.tsx:167
+#: src/components/nfts/NFTContextualActions.tsx:169
 msgid "The NFT transfer failed: {error}"
 msgstr "The NFT transfer failed: {error}"
 
-#: src/components/nfts/NFTContextualActions.tsx:157
+#: src/components/nfts/NFTContextualActions.tsx:159
 msgid "The NFT transfer transaction has been successfully submitted to the blockchain."
 msgstr "The NFT transfer transaction has been successfully submitted to the blockchain."
 
@@ -3398,6 +3438,10 @@ msgstr "These are the instructions for how the farmer wants to get paid. By defa
 #: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:15
 msgid "These plots are invalid, you might want to delete them."
 msgstr "These plots are invalid, you may want to delete them."
+
+#: src/components/offers/NFTOfferEditor.tsx:329
+msgid "They will receive"
+msgstr "They will receive"
 
 #: src/components/plot/PlotAddDirectoryDialog.tsx:88
 msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
@@ -3524,9 +3568,9 @@ msgstr "Time Created"
 msgid "Timestamp"
 msgstr "Timestamp"
 
-#: src/components/nfts/detail/NFTDetail.tsx:148
+#: src/components/nfts/detail/NFTDetail.tsx:254
 #: src/components/nfts/detail/NFTDetailV2.tsx:138
-#: src/components/nfts/NFTCard.tsx:73
+#: src/components/nfts/NFTCard.tsx:75
 #: src/components/nfts/NFTSummary.tsx:186
 msgid "Title Not Available"
 msgstr "Title Not Available"
@@ -3539,7 +3583,7 @@ msgstr "Title Not Available"
 msgid "Token Offer"
 msgstr "Token Offer"
 
-#: src/components/settings/ProfileView.tsx:103
+#: src/components/settings/ProfileView.tsx:135
 msgid "Token Standard"
 msgstr "Token Standard"
 
@@ -3548,6 +3592,14 @@ msgstr "Token Standard"
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
 msgstr "Tokens"
+
+#: src/components/offers/NFTOfferEditor.tsx:358
+msgid "Total Amount Offered"
+msgstr "Total Amount Offered"
+
+#: src/components/offers/NFTOfferEditor.tsx:356
+msgid "Total Amount Requested"
+msgstr "Total Amount Requested"
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:32
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:379
@@ -3644,7 +3696,7 @@ msgstr "Transfer"
 #~ msgid "Transfer Identity"
 #~ msgstr "Transfer Identity"
 
-#: src/components/nfts/NFTContextualActions.tsx:192
+#: src/components/nfts/NFTContextualActions.tsx:194
 #: src/components/nfts/NFTTransferAction.tsx:310
 msgid "Transfer NFT"
 msgstr "Transfer NFT"
@@ -3656,6 +3708,14 @@ msgstr "Transfer NFT"
 #: src/hooks/useOpenUnsafeLink.tsx:56
 msgid "URL"
 msgstr "URL"
+
+#: src/components/offers/NFTOfferEditor.tsx:548
+msgid "Unable to create an offer for an NFT with a creator royalty percentage greater than 100%"
+msgstr "Unable to create an offer for an NFT with a creator royalty percentage greater than 100%"
+
+#: src/components/offers/NFTOfferEditor.tsx:345
+msgid "Unable to create an offer where the net amount is negative"
+msgstr "Unable to create an offer where the net amount is negative"
 
 #: src/components/plot/add/PlotAdd.tsx:132
 #~ msgid "Unable to create plot NFT"
@@ -3760,7 +3820,7 @@ msgstr "View Pool Login Link"
 msgid "View an Offer"
 msgstr "View an Offer"
 
-#: src/components/nfts/NFTContextualActions.tsx:366
+#: src/components/nfts/NFTContextualActions.tsx:368
 #: src/components/offers/OfferShareDialog.tsx:486
 msgid "View on Blexie"
 msgstr "View on Blexie"
@@ -3793,17 +3853,17 @@ msgstr "View on Chinilla.com"
 #~ msgid "View pending balances..."
 #~ msgstr "View pending balances..."
 
-#: src/components/offers/OfferViewerTitle.tsx:31
+#: src/components/offers/OfferViewerTitle.tsx:57
 msgid "Viewing offer"
 msgstr "Viewing offer"
 
 #: src/components/offers/OfferViewerTitle.tsx:26
-msgid "Viewing offer created at {0}"
-msgstr "Viewing offer created at {0}"
+#~ msgid "Viewing offer created at {0}"
+#~ msgstr "Viewing offer created at {0}"
 
 #: src/components/offers/OfferViewerTitle.tsx:24
-msgid "Viewing offer: {offerFileName}"
-msgstr "Viewing offer: {offerFileName}"
+#~ msgid "Viewing offer: {offerFileName}"
+#~ msgstr "Viewing offer: {offerFileName}"
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:25
 #: src/components/plot/PlotStatus.tsx:26
@@ -4040,6 +4100,7 @@ msgstr "You need {currencyCode} to join a pool."
 msgid "You will offer"
 msgstr "You will offer"
 
+#: src/components/offers/NFTOfferEditor.tsx:327
 #: src/components/offers/NFTOfferViewer.tsx:426
 #: src/components/offers/OfferViewer.tsx:309
 msgid "You will receive"
@@ -4135,6 +4196,10 @@ msgstr "[Error 22] File not found. Most likely one of the plot folders in your c
 #~ msgid "connections:"
 #~ msgstr "connections:"
 
+#: src/components/offers/OfferViewerTitle.tsx:41
+msgid "created {0}"
+msgstr "created {0}"
+
 #: src/components/_wallet_old/WalletStatusCard.tsx:33
 #: src/components/_wallet_old/Wallets.tsx:67
 #~ msgid "height:"
@@ -4196,7 +4261,7 @@ msgstr "{0, plural, one {vojo} other {vojos}}"
 msgid "{0} buckets is recommended"
 msgstr "{0} buckets is recommended"
 
-#: src/components/nfts/detail/NFTDetail.tsx:204
+#: src/components/nfts/detail/NFTDetail.tsx:310
 msgid "{0} of {1}"
 msgstr "{0} of {1}"
 

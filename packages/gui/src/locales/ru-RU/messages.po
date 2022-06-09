@@ -120,7 +120,7 @@ msgstr "Действие"
 #: src/components/farm/FarmFullNodeConnections.tsx:66
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:66
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/nfts/NFTContextualActions.tsx:341
+#: src/components/nfts/NFTContextualActions.tsx:343
 msgid "Actions"
 msgstr "Действия"
 
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Alternate tmpdir/tmpdir2"
 msgstr "Альтернативный tmpdir/tmpdir2"
 
-#: src/components/offers/NFTOfferEditor.tsx:95
+#: src/components/offers/NFTOfferEditor.tsx:196
 #: src/components/offers/OfferEditorConditionsPanel.tsx:148
 #: src/components/offers/OfferViewer.tsx:202
 msgid "Amount"
@@ -227,7 +227,7 @@ msgstr ""
 #~ msgid "Amount must be an even amount."
 #~ msgstr "Amount must be an even amount."
 
-#: src/components/offers/NFTOfferPreview.tsx:110
+#: src/components/offers/NFTOfferPreview.tsx:146
 msgid "An NFT's provenance is a complete record of its ownership history. It provides a direct lineage that connects everyone who has owned the NFT, all the way back to the original artist. This helps to verify that the NFT is authentic."
 msgstr ""
 
@@ -466,7 +466,7 @@ msgstr ""
 msgid "Chat on KeyBase"
 msgstr "Чат в KeyBase"
 
-#: src/components/offers/NFTOfferPreview.tsx:125
+#: src/components/offers/NFTOfferPreview.tsx:161
 msgid "Check Provenance on Blexie"
 msgstr ""
 
@@ -726,7 +726,7 @@ msgstr ""
 #~ msgid "Coins:"
 #~ msgstr "Coins:"
 
-#: src/components/nfts/detail/NFTDetail.tsx:189
+#: src/components/nfts/detail/NFTDetail.tsx:295
 #: src/components/nfts/NFTSummary.tsx:59
 msgid "Collection"
 msgstr ""
@@ -865,11 +865,11 @@ msgstr "Сотрудничать на GitHub"
 #~ msgid "Copy"
 #~ msgstr "Copy"
 
-#: src/components/nfts/NFTContextualActions.tsx:84
+#: src/components/nfts/NFTContextualActions.tsx:86
 msgid "Copy NFT ID"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:281
+#: src/components/nfts/NFTContextualActions.tsx:283
 msgid "Copy URL"
 msgstr ""
 
@@ -904,8 +904,8 @@ msgstr ""
 #~ msgid "Create New Wallet"
 #~ msgstr "Create New Wallet"
 
-#: src/components/nfts/NFTContextualActions.tsx:130
-#: src/components/offers/NFTOfferEditor.tsx:195
+#: src/components/nfts/NFTContextualActions.tsx:132
+#: src/components/offers/NFTOfferEditor.tsx:394
 #: src/components/offers/OfferEditor.tsx:221
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:15
 msgid "Create Offer"
@@ -957,7 +957,7 @@ msgstr ""
 #~ msgid "Create admin wallet"
 #~ msgstr "Create admin wallet"
 
-#: src/components/offers/NFTOfferEditor.tsx:426
+#: src/components/offers/NFTOfferEditor.tsx:639
 msgid "Create an NFT Offer"
 msgstr ""
 
@@ -1015,6 +1015,14 @@ msgstr "Создание участка NFT для самостоятельно�
 msgid "Creation Date"
 msgstr ""
 
+#: src/components/offers/NFTOfferEditor.tsx:270
+msgid "Creator Fee ({royaltyPercentage}%)"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:275
+msgid "Creator royalty percentage seems high"
+msgstr ""
+
 #: src/components/plot/add/PlotAddForm.tsx:113
 msgid "Currency code is not defined"
 msgstr "Код валюты не определён"
@@ -1053,12 +1061,12 @@ msgstr "Текущий баланс пунктов"
 #~ msgid "DIDListItems.title"
 #~ msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:92
+#: src/components/nfts/detail/NFTDetail.tsx:182
 #: src/components/nfts/detail/NFTDetailV2.tsx:69
 msgid "Data Hash"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:83
+#: src/components/nfts/detail/NFTDetail.tsx:169
 #: src/components/nfts/detail/NFTDetailV2.tsx:77
 msgid "Data URL {0}"
 msgstr ""
@@ -1121,7 +1129,7 @@ msgstr ""
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr "В зависимости от конфигурации системы, вы можете заметить, что альтернативный плоттер создает участки быстрее, чем стандартный плоттер Chinilla Proof Space. Если вы не уверены, то используйте стандартный плоттер Chinilla Proof Space."
 
-#: src/components/nfts/detail/NFTDetail.tsx:179
+#: src/components/nfts/detail/NFTDetail.tsx:285
 #: src/components/nfts/detail/NFTDetailV2.tsx:142
 msgid "Description"
 msgstr ""
@@ -1134,7 +1142,7 @@ msgstr ""
 msgid "Destination:"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:214
+#: src/components/nfts/detail/NFTDetail.tsx:320
 #: src/components/nfts/detail/NFTDetailV2.tsx:171
 #: src/components/offers/OfferViewer.tsx:357
 msgid "Details"
@@ -1319,7 +1327,7 @@ msgstr "Исключить окончательную директорию"
 msgid "Failed"
 msgstr "Неудачно"
 
-#: src/components/offers/NFTOfferEditor.tsx:309
+#: src/components/offers/NFTOfferEditor.tsx:508
 msgid "Failed to decode NFT identifier"
 msgstr ""
 
@@ -1420,7 +1428,7 @@ msgid "Farming Status"
 msgstr "Статус фарминга"
 
 #: src/components/nfts/NFTTransferAction.tsx:242
-#: src/components/offers/NFTOfferEditor.tsx:169
+#: src/components/offers/NFTOfferEditor.tsx:306
 #: src/components/offers/NFTOfferViewer.tsx:462
 #: src/components/offers/OfferEditorConditionsPanel.tsx:457
 #: src/components/offers/OfferManager.tsx:174
@@ -1536,7 +1544,7 @@ msgstr ""
 #~ msgid "Grid view"
 #~ msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:145
+#: src/components/offers/NFTOfferEditor.tsx:251
 msgid "HCX for NFT"
 msgstr ""
 
@@ -1673,6 +1681,10 @@ msgstr ""
 msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted."
 msgstr ""
 
+#: src/components/offers/NFTOfferEditor.tsx:311
+msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 XCH (5,000,000 vojos)"
+msgstr ""
+
 #: src/components/_wallet_old/WalletHistory.tsx:23
 #~ msgid "Incoming"
 #~ msgstr "Incoming"
@@ -1730,7 +1742,7 @@ msgstr ""
 #~ msgid "Interval"
 #~ msgstr "Interval"
 
-#: src/components/offers/NFTOfferEditor.tsx:307
+#: src/components/offers/NFTOfferEditor.tsx:506
 msgid "Invalid NFT identifier"
 msgstr ""
 
@@ -1820,7 +1832,7 @@ msgstr "Время блока последней транзакции"
 msgid "Latest Block Challenges"
 msgstr "Последние испытания блоков"
 
-#: src/components/nfts/detail/NFTDetail.tsx:54
+#: src/components/nfts/detail/NFTDetail.tsx:85
 #: src/components/nfts/detail/NFTDetailV2.tsx:55
 msgid "Launcher ID"
 msgstr ""
@@ -1839,12 +1851,12 @@ msgstr "Подробнее"
 msgid "Leaving Pool"
 msgstr "Выход из пула"
 
-#: src/components/nfts/detail/NFTDetail.tsx:132
+#: src/components/nfts/detail/NFTDetail.tsx:234
 #: src/components/nfts/detail/NFTDetailV2.tsx:86
 msgid "License Hash"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:123
+#: src/components/nfts/detail/NFTDetail.tsx:221
 #: src/components/nfts/detail/NFTDetailV2.tsx:95
 msgid "License URL {0}"
 msgstr ""
@@ -1855,6 +1867,10 @@ msgstr ""
 
 #: src/components/nfts/NFTSummary.tsx:114
 msgid "Loading NFT"
+msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:58
+msgid "Loading NFT Info..."
 msgstr ""
 
 #: src/components/pool/Pool.tsx:21
@@ -1959,11 +1975,11 @@ msgstr ""
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Управление целевыми адресами для получения вознаграждений за фарминг"
 
-#: src/components/nfts/detail/NFTDetail.tsx:114
+#: src/components/nfts/detail/NFTDetail.tsx:208
 msgid "Metadata Hash"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:105
+#: src/components/nfts/detail/NFTDetail.tsx:195
 msgid "Metadata URL {0}"
 msgstr ""
 
@@ -1997,6 +2013,10 @@ msgstr "Миграция необходима для поддержки защи
 msgid "Minimum Difficulty"
 msgstr "Минимальная сложность"
 
+#: src/components/nfts/detail/NFTDetail.tsx:160
+msgid "Minted at Block Height"
+msgstr ""
+
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:98
 msgid "Minutes"
 msgstr "Минут"
@@ -2009,7 +2029,7 @@ msgstr "Отсутствуют ключи"
 msgid "More memory slightly increases speed"
 msgstr "Больше количество памяти немного увеличивает скорость"
 
-#: src/components/settings/ProfileView.tsx:95
+#: src/components/settings/ProfileView.tsx:98
 msgid "My DID"
 msgstr ""
 
@@ -2021,7 +2041,7 @@ msgstr ""
 #~ msgid "My Pubkey"
 #~ msgstr "My Pubkey"
 
-#: src/components/offers/NFTOfferEditor.tsx:77
+#: src/components/offers/NFTOfferEditor.tsx:178
 msgid "NFT"
 msgstr ""
 
@@ -2033,7 +2053,11 @@ msgstr ""
 #~ msgid "NFT Create Offer Demo"
 #~ msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:79
+#: src/components/nfts/detail/NFTDetail.tsx:76
+msgid "NFT ID"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:180
 msgid "NFT Identifier"
 msgstr ""
 
@@ -2049,7 +2073,7 @@ msgstr ""
 msgid "NFT Offer"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:156
+#: src/components/nfts/NFTContextualActions.tsx:158
 msgid "NFT Transfer Complete"
 msgstr ""
 
@@ -2057,19 +2081,19 @@ msgstr ""
 #~ msgid "NFT Transfer Demo"
 #~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:166
+#: src/components/nfts/NFTContextualActions.tsx:168
 msgid "NFT Transfer Failed"
 msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:336
+#: src/components/offers/NFTOfferEditor.tsx:535
 msgid "NFT details not available"
 msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:140
+#: src/components/offers/NFTOfferEditor.tsx:246
 msgid "NFT for HCX"
 msgstr ""
 
-#: src/components/offers/NFTOfferPreview.tsx:85
+#: src/components/offers/NFTOfferPreview.tsx:104
 msgid "NFT not specified"
 msgstr ""
 
@@ -2172,8 +2196,8 @@ msgstr "Ни один из ваших участков пока не проше�
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/farm/FarmerStatus.tsx:20
-#: src/components/nfts/detail/NFTDetail.tsx:183
-#: src/components/nfts/detail/NFTDetail.tsx:193
+#: src/components/nfts/detail/NFTDetail.tsx:289
+#: src/components/nfts/detail/NFTDetail.tsx:299
 #: src/components/nfts/detail/NFTDetailV2.tsx:145
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:361
@@ -2318,13 +2342,21 @@ msgstr ""
 msgid "Open Link"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:241
+#: src/components/nfts/NFTContextualActions.tsx:243
 msgid "Open in Web Browser"
 msgstr ""
 
 #: src/components/_wallet_old/WalletHistory.tsx:23
 #~ msgid "Outgoing"
 #~ msgstr "Outgoing"
+
+#: src/components/nfts/detail/NFTDetail.tsx:101
+msgid "Owner DID"
+msgstr ""
+
+#: src/components/nfts/detail/NFTDetail.tsx:140
+msgid "Owner Public Key"
+msgstr ""
 
 #: src/components/offers/OfferViewer.tsx:230
 msgid "Parent Coin"
@@ -2510,11 +2542,11 @@ msgstr "Please enter a valid numeric fee"
 #~ msgid "Please enter a valid pubkey"
 #~ msgstr "Please enter a valid pubkey"
 
-#: src/components/offers/NFTOfferEditor.tsx:305
+#: src/components/offers/NFTOfferEditor.tsx:504
 msgid "Please enter an NFT identifier"
 msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:311
+#: src/components/offers/NFTOfferEditor.tsx:510
 msgid "Please enter an amount"
 msgstr ""
 
@@ -2845,8 +2877,12 @@ msgstr ""
 #~ msgid "Private key:"
 #~ msgstr "Private key:"
 
+#: src/components/settings/ProfileView.tsx:65
+msgid "Profile Name"
+msgstr ""
+
 #: src/components/settings/Settings.tsx:273
-#: src/components/settings/SettingsProfiles.tsx:56
+#: src/components/settings/SettingsProfiles.tsx:47
 msgid "Profiles"
 msgstr ""
 
@@ -3018,7 +3054,7 @@ msgstr "Сообщить о проблеме..."
 msgid "Requested"
 msgstr ""
 
-#: src/components/offers/NFTOfferEditor.tsx:187
+#: src/components/offers/NFTOfferEditor.tsx:386
 #: src/components/offers/OfferEditor.tsx:213
 msgid "Reset"
 msgstr ""
@@ -3034,6 +3070,10 @@ msgstr "Восстановление метаданных цветных мон�
 #: src/components/backup/BackupRestore.tsx:107
 #~ msgid "Restore Smart Wallets From Backup"
 #~ msgstr ""
+
+#: src/components/nfts/detail/NFTDetail.tsx:152
+msgid "Royalty Percentage"
+msgstr ""
 
 #: src/components/app/AppSelectMode.tsx:152
 msgid "Runs the full node"
@@ -3197,7 +3237,7 @@ msgstr ""
 msgid "Series #"
 msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:200
+#: src/components/nfts/detail/NFTDetail.tsx:306
 msgid "Series Number"
 msgstr ""
 
@@ -3472,11 +3512,11 @@ msgstr "Хеш-головоломка фермера"
 msgid "Temporary folder location"
 msgstr "Расположение временной папки"
 
-#: src/components/nfts/NFTContextualActions.tsx:167
+#: src/components/nfts/NFTContextualActions.tsx:169
 msgid "The NFT transfer failed: {error}"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:157
+#: src/components/nfts/NFTContextualActions.tsx:159
 msgid "The NFT transfer transaction has been successfully submitted to the blockchain."
 msgstr ""
 
@@ -3562,6 +3602,10 @@ msgstr "Это инструкции по поводу того, как ферм�
 #: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:15
 msgid "These plots are invalid, you might want to delete them."
 msgstr "Эти участки невалидны, вы можете удалить их."
+
+#: src/components/offers/NFTOfferEditor.tsx:329
+msgid "They will receive"
+msgstr ""
 
 #: src/components/plot/PlotAddDirectoryDialog.tsx:88
 msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
@@ -3688,9 +3732,9 @@ msgstr "Время создания"
 msgid "Timestamp"
 msgstr "Временная метка"
 
-#: src/components/nfts/detail/NFTDetail.tsx:148
+#: src/components/nfts/detail/NFTDetail.tsx:254
 #: src/components/nfts/detail/NFTDetailV2.tsx:138
-#: src/components/nfts/NFTCard.tsx:73
+#: src/components/nfts/NFTCard.tsx:75
 #: src/components/nfts/NFTSummary.tsx:186
 msgid "Title Not Available"
 msgstr ""
@@ -3703,7 +3747,7 @@ msgstr ""
 msgid "Token Offer"
 msgstr ""
 
-#: src/components/settings/ProfileView.tsx:103
+#: src/components/settings/ProfileView.tsx:135
 msgid "Token Standard"
 msgstr ""
 
@@ -3712,6 +3756,14 @@ msgstr ""
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
 msgstr "Токены"
+
+#: src/components/offers/NFTOfferEditor.tsx:358
+msgid "Total Amount Offered"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:356
+msgid "Total Amount Requested"
+msgstr ""
 
 #: src/components/_wallet_old/card/WalletCardTotalBalance.tsx:32
 #: src/components/_wallet_old/coloured/WalletColoured.tsx:379
@@ -3808,7 +3860,7 @@ msgstr ""
 #~ msgid "Transfer Identity"
 #~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:192
+#: src/components/nfts/NFTContextualActions.tsx:194
 #: src/components/nfts/NFTTransferAction.tsx:310
 msgid "Transfer NFT"
 msgstr ""
@@ -3819,6 +3871,14 @@ msgstr ""
 
 #: src/hooks/useOpenUnsafeLink.tsx:56
 msgid "URL"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:548
+msgid "Unable to create an offer for an NFT with a creator royalty percentage greater than 100%"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:345
+msgid "Unable to create an offer where the net amount is negative"
 msgstr ""
 
 #: src/components/plot/add/PlotAdd.tsx:132
@@ -3924,7 +3984,7 @@ msgstr "Ссылка для входа на пул"
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:366
+#: src/components/nfts/NFTContextualActions.tsx:368
 #: src/components/offers/OfferShareDialog.tsx:486
 msgid "View on Blexie"
 msgstr ""
@@ -3957,17 +4017,17 @@ msgstr ""
 #~ msgid "View pending balances..."
 #~ msgstr "View pending balances..."
 
-#: src/components/offers/OfferViewerTitle.tsx:31
+#: src/components/offers/OfferViewerTitle.tsx:57
 msgid "Viewing offer"
 msgstr ""
 
 #: src/components/offers/OfferViewerTitle.tsx:26
-msgid "Viewing offer created at {0}"
-msgstr ""
+#~ msgid "Viewing offer created at {0}"
+#~ msgstr ""
 
 #: src/components/offers/OfferViewerTitle.tsx:24
-msgid "Viewing offer: {offerFileName}"
-msgstr ""
+#~ msgid "Viewing offer: {offerFileName}"
+#~ msgstr ""
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:25
 #: src/components/plot/PlotStatus.tsx:26
@@ -4204,6 +4264,7 @@ msgstr "Вам нужно {currencyCode} , чтобы присоединитьс
 msgid "You will offer"
 msgstr ""
 
+#: src/components/offers/NFTOfferEditor.tsx:327
 #: src/components/offers/NFTOfferViewer.tsx:426
 #: src/components/offers/OfferViewer.tsx:309
 msgid "You will receive"
@@ -4299,6 +4360,10 @@ msgstr "[Ошибка 22] Файл не найден. Скорее всего, �
 #~ msgid "connections:"
 #~ msgstr "connections:"
 
+#: src/components/offers/OfferViewerTitle.tsx:41
+msgid "created {0}"
+msgstr ""
+
 #: src/components/_wallet_old/WalletStatusCard.tsx:33
 #: src/components/_wallet_old/Wallets.tsx:67
 #~ msgid "height:"
@@ -4360,7 +4425,7 @@ msgstr ""
 msgid "{0} buckets is recommended"
 msgstr "рекомендуется сегментов {0}"
 
-#: src/components/nfts/detail/NFTDetail.tsx:204
+#: src/components/nfts/detail/NFTDetail.tsx:310
 msgid "{0} of {1}"
 msgstr ""
 
