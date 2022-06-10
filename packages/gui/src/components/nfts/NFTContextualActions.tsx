@@ -287,7 +287,7 @@ function NFTCopyURLContextualAction(props: NFTCopyURLContextualActionProps) {
 }
 
 /* ========================================================================== */
-/*                          View on Blexie Action                         */
+/*                          View on ForgeFarm Action                         */
 /* ========================================================================== */
 
 type NFTViewOnExplorerContextualActionProps = NFTContextualActionProps & {
@@ -365,8 +365,8 @@ export default function NFTContextualActions(props: NFTContextualActionsProps) {
         {
           action: NFTViewOnExplorerContextualAction,
           props: {
-            title: <Trans>View on Blexie</Trans>,
-            explorer: NFTExplorer.Blexie,
+            title: <Trans>View on ForgeFarm</Trans>,
+            explorer: NFTExplorer.ForgeFarm,
           },
         },
       ],

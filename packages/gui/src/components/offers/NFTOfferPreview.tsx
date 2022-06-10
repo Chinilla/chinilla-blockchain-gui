@@ -154,11 +154,11 @@ export default function NFTOfferPreview(props: NFTOfferPreviewProps) {
           <Button
             variant="outlined"
             color="primary"
-            onClick={() => viewOnExplorer(nft, NFTExplorer.Blexie)}
+            onClick={() => viewOnExplorer(nft, NFTExplorer.ForgeFarm)}
             style={{ width: '100%' }}
           >
             <Typography variant="caption" color="secondary">
-              <Trans>Check Provenance on Blexie</Trans>
+              <Trans>Check Provenance on ForgeFarm</Trans>
             </Typography>
           </Button>
         </Flex>

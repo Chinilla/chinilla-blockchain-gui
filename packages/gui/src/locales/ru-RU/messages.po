@@ -319,10 +319,6 @@ msgstr "Лучшая калькуляция за последние 24 часа"
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:468
-msgid "Blexie URL"
-msgstr ""
-
 #: src/components/block/Block.jsx:136
 msgid "Block"
 msgstr "Блок"
@@ -467,7 +463,7 @@ msgid "Chat on KeyBase"
 msgstr "Чат в KeyBase"
 
 #: src/components/offers/NFTOfferPreview.tsx:161
-msgid "Check Provenance on Blexie"
+msgid "Check Provenance on ForgeFarm"
 msgstr ""
 
 #: src/electron/main.tsx:581
@@ -1493,6 +1489,10 @@ msgstr "Завершен"
 #: src/electron/main.tsx:557
 msgid "Follow on Twitter"
 msgstr "Следить в Twitter"
+
+#: src/components/offers/OfferShareDialog.tsx:468
+msgid "ForgeFarm URL"
+msgstr ""
 
 #: src/electron/main.tsx:516
 msgid "Frequently Asked Questions"
@@ -3275,16 +3275,16 @@ msgstr ""
 msgid "Share Privately"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:505
-msgid "Share on Blexie"
-msgstr ""
-
 #: src/components/offers/OfferShareDialog.tsx:629
 #~ msgid "Share on Chinilla"
 #~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:403
 msgid "Share on Chinilla.com"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:505
+msgid "Share on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:872
@@ -3984,17 +3984,17 @@ msgstr "Ссылка для входа на пул"
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:368
-#: src/components/offers/OfferShareDialog.tsx:486
-msgid "View on Blexie"
-msgstr ""
-
 #: src/components/offers/OfferShareDialog.tsx:610
 #~ msgid "View on Chinilla"
 #~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:384
 msgid "View on Chinilla.com"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:368
+#: src/components/offers/OfferShareDialog.tsx:486
+msgid "View on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:853

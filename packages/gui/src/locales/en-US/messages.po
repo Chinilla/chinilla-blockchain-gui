@@ -319,10 +319,6 @@ msgstr "Best estimate over last 24 hours"
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:468
-msgid "Blexie URL"
-msgstr "Blexie URL"
-
 #: src/components/block/Block.jsx:136
 msgid "Block"
 msgstr "Block"
@@ -467,8 +463,8 @@ msgid "Chat on KeyBase"
 msgstr "Chat on KeyBase"
 
 #: src/components/offers/NFTOfferPreview.tsx:161
-msgid "Check Provenance on Blexie"
-msgstr "Check Provenance on Blexie"
+msgid "Check Provenance on ForgeFarm"
+msgstr "Check Provenance on ForgeFarm"
 
 #: src/components/offers/NFTOfferPreview.tsx:135
 #~ msgid "Check Provenance on Spacescan.io"
@@ -1325,6 +1321,10 @@ msgstr "Finished"
 #: src/electron/main.tsx:557
 msgid "Follow on Twitter"
 msgstr "Follow on Twitter"
+
+#: src/components/offers/OfferShareDialog.tsx:468
+msgid "ForgeFarm URL"
+msgstr "ForgeFarm URL"
 
 #: src/electron/main.tsx:516
 msgid "Frequently Asked Questions"
@@ -3111,10 +3111,6 @@ msgstr "Share Offer"
 msgid "Share Privately"
 msgstr "Share Privately"
 
-#: src/components/offers/OfferShareDialog.tsx:505
-msgid "Share on Blexie"
-msgstr "Share on Blexie"
-
 #: src/components/offers/OfferShareDialog.tsx:629
 #~ msgid "Share on Chinilla"
 #~ msgstr "Share on Chinilla"
@@ -3122,6 +3118,10 @@ msgstr "Share on Blexie"
 #: src/components/offers/OfferShareDialog.tsx:403
 msgid "Share on Chinilla.com"
 msgstr "Share on Chinilla.com"
+
+#: src/components/offers/OfferShareDialog.tsx:505
+msgid "Share on ForgeFarm"
+msgstr "Share on ForgeFarm"
 
 #: src/components/offers/OfferShareDialog.tsx:872
 #~ msgid "Share on Hashgreen DEX"
@@ -3820,11 +3820,6 @@ msgstr "View Pool Login Link"
 msgid "View an Offer"
 msgstr "View an Offer"
 
-#: src/components/nfts/NFTContextualActions.tsx:368
-#: src/components/offers/OfferShareDialog.tsx:486
-msgid "View on Blexie"
-msgstr "View on Blexie"
-
 #: src/components/offers/OfferShareDialog.tsx:610
 #~ msgid "View on Chinilla"
 #~ msgstr "View on Chinilla"
@@ -3832,6 +3827,11 @@ msgstr "View on Blexie"
 #: src/components/offers/OfferShareDialog.tsx:384
 msgid "View on Chinilla.com"
 msgstr "View on Chinilla.com"
+
+#: src/components/nfts/NFTContextualActions.tsx:368
+#: src/components/offers/OfferShareDialog.tsx:486
+msgid "View on ForgeFarm"
+msgstr "View on ForgeFarm"
 
 #: src/components/offers/OfferShareDialog.tsx:853
 #~ msgid "View on Hashgreen DEX"

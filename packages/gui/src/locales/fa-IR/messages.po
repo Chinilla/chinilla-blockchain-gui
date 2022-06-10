@@ -323,10 +323,6 @@ msgstr "بهترین ارزیابی بر اساس 24 ساعت اخیر"
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:468
-msgid "Blexie URL"
-msgstr ""
-
 #: src/components/block/Block.jsx:136
 msgid "Block"
 msgstr "بلوک"
@@ -471,7 +467,7 @@ msgid "Chat on KeyBase"
 msgstr "در اپلیکیشن KeyBase صبحت کنید"
 
 #: src/components/offers/NFTOfferPreview.tsx:161
-msgid "Check Provenance on Blexie"
+msgid "Check Provenance on ForgeFarm"
 msgstr ""
 
 #: src/electron/main.tsx:581
@@ -1324,6 +1320,10 @@ msgstr ""
 
 #: src/electron/main.tsx:557
 msgid "Follow on Twitter"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:468
+msgid "ForgeFarm URL"
 msgstr ""
 
 #: src/electron/main.tsx:516
@@ -3107,16 +3107,16 @@ msgstr ""
 msgid "Share Privately"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:505
-msgid "Share on Blexie"
-msgstr ""
-
 #: src/components/offers/OfferShareDialog.tsx:629
 #~ msgid "Share on Chinilla"
 #~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:403
 msgid "Share on Chinilla.com"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:505
+msgid "Share on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:872
@@ -3818,17 +3818,17 @@ msgstr ""
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:368
-#: src/components/offers/OfferShareDialog.tsx:486
-msgid "View on Blexie"
-msgstr ""
-
 #: src/components/offers/OfferShareDialog.tsx:610
 #~ msgid "View on Chinilla"
 #~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:384
 msgid "View on Chinilla.com"
+msgstr ""
+
+#: src/components/nfts/NFTContextualActions.tsx:368
+#: src/components/offers/OfferShareDialog.tsx:486
+msgid "View on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:853

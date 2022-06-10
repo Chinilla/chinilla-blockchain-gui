@@ -5,8 +5,8 @@ import useOpenExternal from './useOpenExternal';
 
 /* ========================================================================== */
 
-function getBlexieURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://${testnet ? 'testnet.' : ''}blexie.com/nft/${
+function getForgeFarmURL(nft: NFTInfo, testnet: boolean) {
+  const url = `https://${testnet ? 'testnet.' : ''}forgefarm.io/nft/${
     nft.$nftId
   }`;
   return url;
@@ -15,11 +15,11 @@ function getBlexieURL(nft: NFTInfo, testnet: boolean) {
 /* ========================================================================== */
 
 export enum NFTExplorer {
-  Blexie = 'blexie',
+  ForgeFarm = 'forgefarm',
 }
 
 const UrlBuilderMapping = {
-  [NFTExplorer.Blexie]: getBlexieURL,
+  [NFTExplorer.ForgeFarm]: getForgeFarmURL,
 };
 
 export default function useViewNFTOnExplorer() {

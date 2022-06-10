@@ -42,7 +42,7 @@ import path from 'path';
 
 enum OfferSharingService {
   Chinilla = 'Chinilla',
-  Blexie = 'Blexie',
+  ForgeFarm = 'ForgeFarm',
   Keybase = 'Keybase',
 }
 
@@ -81,9 +81,9 @@ const OfferSharingProviders: {
     name: 'Chinilla',
     capabilities: [OfferSharingCapability.Token],
   },
-  [OfferSharingService.Blexie]: {
-    service: OfferSharingService.Blexie,
-    name: 'Blexie',
+  [OfferSharingService.ForgeFarm]: {
+    service: OfferSharingService.ForgeFarm,
+    name: 'ForgeFarm',
     capabilities: [OfferSharingCapability.NFT],
   },
   [OfferSharingService.Keybase]: {
@@ -159,7 +159,7 @@ async function postToChinilla(
   return `https://chinilla.com/offer/details/${offer}`;
 }
 
-async function postToBlexie(
+async function postToForgeFarm(
   offerData: string,
   testnet: boolean,
 ): Promise<string> {
@@ -167,7 +167,7 @@ async function postToBlexie(
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
-    hostname: testnet ? 'testnet.blexie.com' : 'blexie.com',
+    hostname: testnet ? 'testnet.forgefarm.io' : 'forgefarm.io',
     port: 443,
     path: '/offer',
   };
@@ -185,19 +185,19 @@ async function postToBlexie(
 
   if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `Blexie upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `ForgeFarm upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
     );
     throw error;
   }
 
-  console.log('Blexie upload completed');
+  console.log('ForgeFarm upload completed');
 
   const {
     offer: { nft_id },
   } = JSON.parse(responseBody);
   const nftId = toBech32m(nft_id, 'nft');
 
-  return `https://${testnet ? 'testnet.' : ''}blexie.com/nft/${nftId}`;
+  return `https://${testnet ? 'testnet.' : ''}forgefarm.io/nft/${nftId}`;
 }
 
 enum KeybaseCLIActions {
@@ -434,7 +434,7 @@ OfferShareChinillaDialog.defaultProps = {
   onClose: () => {},
 };
 
-function OfferShareBlexieDialog(props: OfferShareServiceDialogProps) {
+function OfferShareForgeFarmDialog(props: OfferShareServiceDialogProps) {
   const { offerRecord, offerData, testnet, onClose, open } = props;
   const openExternal = useOpenExternal();
   const [sharedURL, setSharedURL] = React.useState('');
@@ -444,8 +444,8 @@ function OfferShareBlexieDialog(props: OfferShareServiceDialogProps) {
   }
 
   async function handleConfirm() {
-    const url = await postToBlexie(offerData, testnet);
-    console.log(`Blexie URL: ${url}`);
+    const url = await postToForgeFarm(offerData, testnet);
+    console.log(`ForgeFarm URL: ${url}`);
     setSharedURL(url);
   }
 
@@ -465,7 +465,7 @@ function OfferShareBlexieDialog(props: OfferShareServiceDialogProps) {
         <DialogContent dividers>
           <Flex flexDirection="column" gap={3}>
             <TextField
-              label={<Trans>Blexie URL</Trans>}
+              label={<Trans>ForgeFarm URL</Trans>}
               value={sharedURL}
               variant="filled"
               InputProps={{
@@ -483,7 +483,7 @@ function OfferShareBlexieDialog(props: OfferShareServiceDialogProps) {
                 variant="outlined"
                 onClick={() => openExternal(sharedURL)}
               >
-                <Trans>View on Blexie</Trans>
+                <Trans>View on ForgeFarm</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -502,7 +502,7 @@ function OfferShareBlexieDialog(props: OfferShareServiceDialogProps) {
       offerRecord={offerRecord}
       offerData={offerData}
       testnet={testnet}
-      title={<Trans>Share on Blexie</Trans>}
+      title={<Trans>Share on ForgeFarm</Trans>}
       onConfirm={handleConfirm}
       open={open}
       onClose={onClose}
@@ -510,7 +510,7 @@ function OfferShareBlexieDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
-OfferShareBlexieDialog.defaultProps = {
+OfferShareForgeFarmDialog.defaultProps = {
   open: false,
   onClose: () => {},
 };
@@ -907,8 +907,8 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
         component: OfferShareChinillaDialog,
         props: {},
       },
-      [OfferSharingService.Blexie]: {
-        component: OfferShareBlexieDialog,
+      [OfferSharingService.ForgeFarm]: {
+        component: OfferShareForgeFarmDialog,
         props: {},
       },
       [OfferSharingService.Keybase]: {
