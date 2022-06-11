@@ -24,7 +24,7 @@ function getSkyNFTURL(nft: NFTInfo, testnet: boolean) {
 }
 
 function getSpacescanURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://spacescan.io/${testnet ? 'txch10' : 'xch'}/nft/${
+  const url = `https://spacescan.io/${testnet ? 'thcx10' : 'hcx'}/nft/${
     nft.$nftId
   }`;
   return url;

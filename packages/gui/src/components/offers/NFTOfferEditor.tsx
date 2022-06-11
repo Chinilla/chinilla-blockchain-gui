@@ -76,14 +76,14 @@ function calculateRoyalties(
     : 0;
   const royaltyAmountString: string = formatAmount(royaltyAmount);
   const nftSellerNetAmount: number =
-    exchangeType === NFTOfferEditorExchangeType.NFTForXCH
+    exchangeType === NFTOfferEditorExchangeType.NFTForHCX
       ? amount
       : parseFloat((amount - parseFloat(royaltyAmountString)).toFixed(12));
   // : parseFloat(
   //     (amount - parseFloat(royaltyAmountString) - makerFee).toFixed(12),
   //   );
   const totalAmount: number =
-    exchangeType === NFTOfferEditorExchangeType.NFTForXCH
+    exchangeType === NFTOfferEditorExchangeType.NFTForHCX
       ? // ? amount + royaltyAmount + makerFee
         amount + royaltyAmount
       : amount + makerFee;
@@ -207,7 +207,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
   const offerElem =
     tab === NFTOfferEditorExchangeType.NFTForHCX ? nftElem : amountElem;
   const takerElem =
-    tab === NFTOfferEditorExchangeType.NFTForXCH ? amountElem : nftElem;
+    tab === NFTOfferEditorExchangeType.NFTForHCX ? amountElem : nftElem;
   const showRoyaltyWarning = (royaltyPercentage ?? 0) >= 20;
   const royaltyPercentageColor = showRoyaltyWarning
     ? StateColor.WARNING
@@ -311,7 +311,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
                     <Trans>
                       Including a fee in the offer can help expedite the
                       transaction when the offer is accepted. The recommended
-                      minimum fee is 0.000005 XCH (5,000,000 vojos)
+                      minimum fee is 0.000005 HCX (5,000,000 vojos)
                     </Trans>
                   </TooltipIcon>
                 </Box>
@@ -323,7 +323,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
               <>
                 <Flex flexDirection="column" gap={0.5}>
                   <Typography variant="body1" color="textSecondary">
-                    {tab === NFTOfferEditorExchangeType.NFTForXCH ? (
+                    {tab === NFTOfferEditorExchangeType.NFTForHCX ? (
                       <Trans>You will receive</Trans>
                     ) : (
                       <Trans>They will receive</Trans>
@@ -352,7 +352,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
                 <Divider />
                 <Flex flexDirection="column" gap={0.5}>
                   <Typography variant="h6">
-                    {tab === NFTOfferEditorExchangeType.NFTForXCH ? (
+                    {tab === NFTOfferEditorExchangeType.NFTForHCX ? (
                       <Trans>Total Amount Requested</Trans>
                     ) : (
                       <Trans>Total Amount Offered</Trans>

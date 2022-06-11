@@ -1517,9 +1517,9 @@ msgstr "Seznam připojení je prázdný"
 #~ msgid "Loading list of wallets"
 #~ msgstr "Loading list of wallets"
 
-#: src/components/plot/queue/PlotQueueLogDialog.tsx:35
-#~ msgid "Loading..."
-#~ msgstr "Loading..."
+#: src/components/WalletReceiveAddressField.tsx:34
+msgid "Loading..."
+msgstr "Loading..."
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:126
 #~ msgid "Local Harvester Plots"
@@ -2455,6 +2455,7 @@ msgid "Receive"
 msgstr "Přijmout"
 
 #: src/components/WalletReceiveAddress.tsx:35
+#: src/components/WalletReceiveAddressField.tsx:32
 msgid "Receive Address"
 msgstr "Adresa příjemce"
 

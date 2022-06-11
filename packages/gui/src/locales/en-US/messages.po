@@ -86,8 +86,8 @@ msgstr "A harvester is a service running on a machine where plot(s) are actually
 msgid "A value of {0} is recommended"
 msgstr "A value of {0} is recommended"
 
-#: src/electron/main.tsx:584
-#: src/electron/main.tsx:671
+#: src/electron/main.tsx:604
+#: src/electron/main.tsx:691
 msgid "About Chinilla Blockchain"
 msgstr "About Chinilla Blockchain"
 
@@ -120,7 +120,7 @@ msgstr "Action"
 #: src/components/farm/FarmFullNodeConnections.tsx:66
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:66
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/nfts/NFTContextualActions.tsx:343
+#: src/components/nfts/NFTContextualActions.tsx:345
 msgid "Actions"
 msgstr "Actions"
 
@@ -227,7 +227,7 @@ msgstr "Amount exceeds spendable balance"
 #~ msgid "Amount must be an even amount."
 #~ msgstr "Amount must be an even amount."
 
-#: src/components/offers/NFTOfferPreview.tsx:146
+#: src/components/offers/NFTOfferPreview.tsx:154
 msgid "An NFT's provenance is a complete record of its ownership history. It provides a direct lineage that connects everyone who has owned the NFT, all the way back to the original artist. This helps to verify that the NFT is authentic."
 msgstr "An NFT's provenance is a complete record of its ownership history. It provides a direct lineage that connects everyone who has owned the NFT, all the way back to the original artist. This helps to verify that the NFT is authentic."
 
@@ -248,7 +248,7 @@ msgstr "Are you sure you want to delete unconfirmed transactions?"
 msgid "Are you sure you want to disconnect?"
 msgstr "Are you sure you want to disconnect?"
 
-#: src/electron/main.tsx:327
+#: src/electron/main.tsx:347
 msgid "Are you sure you want to quit?"
 msgstr "Are you sure you want to quit?"
 
@@ -303,7 +303,7 @@ msgstr "Balance: {standardBalance} HCX"
 msgid "Base Farmer Reward Amount"
 msgstr "Base Farmer Reward Amount"
 
-#: src/components/offers/OfferShareDialog.tsx:719
+#: src/components/offers/OfferShareDialog.tsx:718
 msgid "Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team. Please note that it might take a few moments to join the channel."
 msgstr "Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team. Please note that it might take a few moments to join the channel."
 
@@ -397,8 +397,8 @@ msgstr "Browse"
 #: src/components/offers/OfferAcceptConfirmationDialog.tsx:26
 #: src/components/offers/OfferDataEntryDialog.tsx:67
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:18
-#: src/components/offers/OfferShareDialog.tsx:751
-#: src/components/offers/OfferShareDialog.tsx:853
+#: src/components/offers/OfferShareDialog.tsx:750
+#: src/components/offers/OfferShareDialog.tsx:852
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
@@ -454,27 +454,31 @@ msgstr "Change Passphrase"
 msgid "Change Pool"
 msgstr "Change Pool"
 
-#: src/electron/main.tsx:563
+#: src/electron/main.tsx:583
 msgid "Chat on Discord"
 msgstr "Chat on Discord"
 
-#: src/electron/main.tsx:551
+#: src/electron/main.tsx:571
 msgid "Chat on KeyBase"
 msgstr "Chat on KeyBase"
 
-#: src/components/offers/NFTOfferPreview.tsx:161
+#: src/components/offers/NFTOfferPreview.tsx:169
 msgid "Check Provenance on ForgeFarm"
 msgstr "Check Provenance on ForgeFarm"
 
-#: src/components/offers/NFTOfferPreview.tsx:135
-#~ msgid "Check Provenance on Spacescan.io"
-#~ msgstr "Check Provenance on Spacescan.io"
+#: src/components/offers/NFTOfferPreview.tsx:179
+msgid "Check Provenance on SkyNFT"
+msgstr "Check Provenance on SkyNFT"
 
-#: src/electron/main.tsx:581
+#: src/components/offers/NFTOfferPreview.tsx:189
+msgid "Check Provenance on Spacescan.io"
+msgstr "Check Provenance on Spacescan.io"
+
+#: src/electron/main.tsx:601
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/electron/main.tsx:508
+#: src/electron/main.tsx:528
 msgid "Chinilla Blockchain Wiki"
 msgstr "Chinilla Blockchain Wiki"
 
@@ -486,7 +490,7 @@ msgstr "Chinilla Blockchain Wiki"
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Chinilla Wallet"
 
-#: src/components/offers/OfferShareDialog.tsx:366
+#: src/components/offers/OfferShareDialog.tsx:365
 msgid "Chinilla.com Offers URL"
 msgstr "Chinilla.com Offers URL"
 
@@ -517,10 +521,10 @@ msgstr "Claim Rewards"
 
 #: src/components/nfts/NFTTransferAction.tsx:253
 #: src/components/offers/OfferManager.tsx:199
-#: src/components/offers/OfferShareDialog.tsx:391
-#: src/components/offers/OfferShareDialog.tsx:493
-#: src/components/offers/OfferShareDialog.tsx:684
-#: src/components/offers/OfferShareDialog.tsx:1019
+#: src/components/offers/OfferShareDialog.tsx:390
+#: src/components/offers/OfferShareDialog.tsx:492
+#: src/components/offers/OfferShareDialog.tsx:683
+#: src/components/offers/OfferShareDialog.tsx:1018
 #: src/components/plot/PlotAddDirectoryDialog.tsx:130
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
@@ -554,7 +558,8 @@ msgstr "Coins"
 #~ msgid "Coins:"
 #~ msgstr "Coins:"
 
-#: src/components/nfts/detail/NFTDetail.tsx:295
+#: src/components/nfts/detail/NFTDetail.tsx:296
+#: src/components/nfts/detail/NFTDetailV2.tsx:86
 #: src/components/nfts/NFTSummary.tsx:59
 msgid "Collection"
 msgstr "Collection"
@@ -590,7 +595,7 @@ msgstr "Collections"
 #~ msgstr "Colored Coin Options"
 
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:180
-#: src/electron/main.tsx:325
+#: src/electron/main.tsx:345
 #: src/hooks/useAbsorbRewards.tsx:44
 msgid "Confirm"
 msgstr "Confirm"
@@ -678,7 +683,7 @@ msgstr "Connection type"
 msgid "Connections"
 msgstr "Connections"
 
-#: src/electron/main.tsx:532
+#: src/electron/main.tsx:552
 msgid "Contribute on GitHub"
 msgstr "Contribute on GitHub"
 
@@ -693,13 +698,17 @@ msgstr "Contribute on GitHub"
 #~ msgid "Copy"
 #~ msgstr "Copy"
 
+#: src/components/nfts/NFTContextualActions.tsx:285
+msgid "Copy Media URL"
+msgstr "Copy Media URL"
+
 #: src/components/nfts/NFTContextualActions.tsx:86
 msgid "Copy NFT ID"
 msgstr "Copy NFT ID"
 
 #: src/components/nfts/NFTContextualActions.tsx:283
-msgid "Copy URL"
-msgstr "Copy URL"
+#~ msgid "Copy URL"
+#~ msgstr "Copy URL"
 
 #: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:33
 #~ msgid "Copy to Clipboard"
@@ -889,13 +898,13 @@ msgstr "Current Points Balance"
 #~ msgid "DIDListItems.title"
 #~ msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:182
-#: src/components/nfts/detail/NFTDetailV2.tsx:69
+#: src/components/nfts/detail/NFTDetail.tsx:183
+#: src/components/nfts/NFTDetails.tsx:149
 msgid "Data Hash"
 msgstr "Data Hash"
 
-#: src/components/nfts/detail/NFTDetail.tsx:169
-#: src/components/nfts/detail/NFTDetailV2.tsx:77
+#: src/components/nfts/detail/NFTDetail.tsx:170
+#: src/components/nfts/NFTDetails.tsx:136
 msgid "Data URL {0}"
 msgstr "Data URL {0}"
 
@@ -957,8 +966,8 @@ msgstr "Deleting key"
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 msgstr "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chinilla Proof of Space plotter. If unsure, use the default Chinilla Proof of Space plotter."
 
-#: src/components/nfts/detail/NFTDetail.tsx:285
-#: src/components/nfts/detail/NFTDetailV2.tsx:142
+#: src/components/nfts/detail/NFTDetail.tsx:286
+#: src/components/nfts/detail/NFTDetailV2.tsx:76
 msgid "Description"
 msgstr "Description"
 
@@ -970,17 +979,16 @@ msgstr "Destination"
 msgid "Destination:"
 msgstr "Destination:"
 
-#: src/components/nfts/detail/NFTDetail.tsx:320
-#: src/components/nfts/detail/NFTDetailV2.tsx:171
+#: src/components/nfts/NFTDetails.tsx:224
 #: src/components/offers/OfferViewer.tsx:357
 msgid "Details"
 msgstr "Details"
 
-#: src/electron/main.tsx:448
+#: src/electron/main.tsx:468
 msgid "Developer"
 msgstr "Developer"
 
-#: src/electron/main.tsx:451
+#: src/electron/main.tsx:471
 msgid "Developer Tools"
 msgstr "Developer Tools"
 
@@ -1001,7 +1009,7 @@ msgstr "Disable NUMA"
 #~ msgid "Disable Passphrase Protection"
 #~ msgstr "Disable Passphrase Protection"
 
-#: src/electron/main.tsx:460
+#: src/electron/main.tsx:480
 msgid "Disable Simulator"
 msgstr "Disable Simulator"
 
@@ -1034,7 +1042,7 @@ msgstr "Display Offer Data"
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/offers/OfferShareDialog.tsx:1012
+#: src/components/offers/OfferShareDialog.tsx:1011
 #: src/hooks/useOpenUnsafeLink.tsx:77
 msgid "Do not show this dialog again"
 msgstr "Do not show this dialog again"
@@ -1076,7 +1084,7 @@ msgstr "Duplicate"
 msgid "Duplicate Plots"
 msgstr "Duplicate Plots"
 
-#: src/electron/main.tsx:407
+#: src/electron/main.tsx:427
 msgid "Edit"
 msgstr "Edit"
 
@@ -1086,7 +1094,7 @@ msgstr "Edit"
 msgid "Edit Payout Instructions"
 msgstr "Edit Payout Instructions"
 
-#: src/electron/main.tsx:461
+#: src/electron/main.tsx:481
 msgid "Enable Simulator"
 msgstr "Enable Simulator"
 
@@ -1150,6 +1158,10 @@ msgstr "Exclude final directory"
 #~ msgid "Expected Time to Win"
 #~ msgstr ""
 
+#: src/components/nfts/gallery/NFTGalleryHero.tsx:17
+msgid "Explore the Chinilla ecosystem; discover and trade great NFTs"
+msgstr "Explore the Chinilla ecosystem; discover and trade great NFTs"
+
 #: src/components/offers/utils.ts:170
 #: src/components/plot/PlotHarvester.tsx:118
 msgid "Failed"
@@ -1159,7 +1171,7 @@ msgstr "Failed"
 msgid "Failed to decode NFT identifier"
 msgstr "Failed to decode NFT identifier"
 
-#: src/components/offers/OfferShareDialog.tsx:281
+#: src/components/offers/OfferShareDialog.tsx:280
 msgid "Failed to execute Keybase command: {stderr}"
 msgstr "Failed to execute Keybase command: {stderr}"
 
@@ -1297,8 +1309,8 @@ msgstr "Fees Amount"
 msgid "Fees included in offer:"
 msgstr "Fees included in offer:"
 
-#: src/electron/main.tsx:399
-#: src/electron/main.tsx:618
+#: src/electron/main.tsx:419
+#: src/electron/main.tsx:638
 msgid "File"
 msgstr "File"
 
@@ -1318,15 +1330,15 @@ msgstr "Final folder location"
 msgid "Finished"
 msgstr "Finished"
 
-#: src/electron/main.tsx:557
+#: src/electron/main.tsx:577
 msgid "Follow on Twitter"
 msgstr "Follow on Twitter"
 
-#: src/components/offers/OfferShareDialog.tsx:468
+#: src/components/offers/OfferShareDialog.tsx:467
 msgid "ForgeFarm URL"
 msgstr "ForgeFarm URL"
 
-#: src/electron/main.tsx:516
+#: src/electron/main.tsx:536
 msgid "Frequently Asked Questions"
 msgstr "Frequently Asked Questions"
 
@@ -1343,7 +1355,7 @@ msgstr "Full Node"
 #~ msgid "Full Node Status"
 #~ msgstr "Full Node Status"
 
-#: src/electron/main.tsx:482
+#: src/electron/main.tsx:502
 msgid "Full Screen"
 msgstr "Full Screen"
 
@@ -1359,12 +1371,16 @@ msgstr "General"
 #~ msgid "Get Pool Login Link"
 #~ msgstr "Get Pool Login Link"
 
-#: src/electron/main.tsx:569
+#: src/electron/main.tsx:589
 msgid "Github Discussions"
 msgstr "Github Discussions"
 
-#: src/components/offers/OfferShareDialog.tsx:681
-#: src/components/offers/OfferShareDialog.tsx:742
+#: src/components/nfts/gallery/NFTGalleryHero.tsx:14
+msgid "Go collect some gems"
+msgstr "Go collect some gems"
+
+#: src/components/offers/OfferShareDialog.tsx:680
+#: src/components/offers/OfferShareDialog.tsx:741
 msgid "Go to #{channelName}"
 msgstr "Go to #{channelName}"
 
@@ -1414,7 +1430,7 @@ msgstr "Header hash"
 msgid "Height"
 msgstr "Height"
 
-#: src/electron/main.tsx:504
+#: src/electron/main.tsx:524
 msgid "Help"
 msgstr "Help"
 
@@ -1471,7 +1487,7 @@ msgstr "IP address / host"
 msgid "If none selected, then it will default to the temporary directory."
 msgstr "If none selected, then it will default to the temporary directory."
 
-#: src/components/offers/OfferShareDialog.tsx:420
+#: src/components/offers/OfferShareDialog.tsx:419
 msgid "If selected, your offer will be not be shared publicly."
 msgstr "If selected, your offer will be not be shared publicly."
 
@@ -1479,7 +1495,7 @@ msgstr "If selected, your offer will be not be shared publicly."
 msgid "If you have already shared your offer file, you may need to submit a transaction to cancel the pending offer. Click \"Cancel on blockchain\" to submit a cancellation transaction."
 msgstr "If you have already shared your offer file, you may need to submit a transaction to cancel the pending offer. Click \"Cancel on blockchain\" to submit a cancellation transaction."
 
-#: src/components/nfts/NFTPreview.tsx:106
+#: src/components/nfts/NFTPreview.tsx:99
 msgid "Image Hash Mismatch"
 msgstr "Image Hash Mismatch"
 
@@ -1505,7 +1521,7 @@ msgstr "In Progress"
 msgid "In exchange for"
 msgstr "In exchange for"
 
-#: src/components/offers/OfferShareDialog.tsx:836
+#: src/components/offers/OfferShareDialog.tsx:835
 msgid "In exchange for:"
 msgstr "In exchange for:"
 
@@ -1514,8 +1530,8 @@ msgid "Including a fee in the offer can help expedite the transaction when the o
 msgstr "Including a fee in the offer can help expedite the transaction when the offer is accepted."
 
 #: src/components/offers/NFTOfferEditor.tsx:311
-msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 XCH (5,000,000 vojos)"
-msgstr "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 XCH (5,000,000 vojos)"
+msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 HCX (5,000,000 vojos)"
+msgstr "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 HCX (5,000,000 vojos)"
 
 #: src/components/_wallet_old/WalletHistory.tsx:23
 #~ msgid "Incoming"
@@ -1554,7 +1570,7 @@ msgstr "Index"
 msgid "Initializing..."
 msgstr "Initializing..."
 
-#: src/components/offers/OfferShareDialog.tsx:714
+#: src/components/offers/OfferShareDialog.tsx:713
 msgid "Install Keybase"
 msgstr "Install Keybase"
 
@@ -1618,7 +1634,7 @@ msgstr "Join a pool and get more consistent HCX farming rewards. Create a plot N
 msgid "Join farming pools"
 msgstr "Join farming pools"
 
-#: src/components/offers/OfferShareDialog.tsx:731
+#: src/components/offers/OfferShareDialog.tsx:730
 msgid "Join {teamName}"
 msgstr "Join {teamName}"
 
@@ -1627,11 +1643,11 @@ msgstr "Join {teamName}"
 msgid "K-Size"
 msgstr "K-Size"
 
-#: src/components/offers/OfferShareDialog.tsx:617
+#: src/components/offers/OfferShareDialog.tsx:616
 msgid "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
 msgstr "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
 
-#: src/components/offers/OfferShareDialog.tsx:706
+#: src/components/offers/OfferShareDialog.tsx:705
 msgid "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName} team, you must first have Keybase installed."
 msgstr "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName} team, you must first have Keybase installed."
 
@@ -1668,8 +1684,8 @@ msgstr "Last Transaction Block Time"
 msgid "Latest Block Challenges"
 msgstr "Latest Block Challenges"
 
-#: src/components/nfts/detail/NFTDetail.tsx:85
-#: src/components/nfts/detail/NFTDetailV2.tsx:55
+#: src/components/nfts/detail/NFTDetail.tsx:86
+#: src/components/nfts/NFTDetails.tsx:52
 msgid "Launcher ID"
 msgstr "Launcher ID"
 
@@ -1687,13 +1703,13 @@ msgstr "Learn More"
 msgid "Leaving Pool"
 msgstr "Leaving Pool"
 
-#: src/components/nfts/detail/NFTDetail.tsx:234
-#: src/components/nfts/detail/NFTDetailV2.tsx:86
+#: src/components/nfts/detail/NFTDetail.tsx:235
+#: src/components/nfts/NFTDetails.tsx:209
 msgid "License Hash"
 msgstr "License Hash"
 
-#: src/components/nfts/detail/NFTDetail.tsx:221
-#: src/components/nfts/detail/NFTDetailV2.tsx:95
+#: src/components/nfts/detail/NFTDetail.tsx:222
+#: src/components/nfts/NFTDetails.tsx:194
 msgid "License URL {0}"
 msgstr "License URL {0}"
 
@@ -1705,7 +1721,7 @@ msgstr "License URL {0}"
 msgid "Loading NFT"
 msgstr "Loading NFT"
 
-#: src/components/offers/NFTOfferPreview.tsx:58
+#: src/components/offers/NFTOfferPreview.tsx:66
 msgid "Loading NFT Info..."
 msgstr "Loading NFT Info..."
 
@@ -1729,8 +1745,8 @@ msgstr "Loading keyring status"
 #~ msgid "Loading list of wallets"
 #~ msgstr "Loading list of wallets"
 
-#: src/components/nfts/NFTPreview.tsx:128
-#: src/components/nfts/NFTPreview.tsx:147
+#: src/components/nfts/NFTPreview.tsx:121
+#: src/components/nfts/NFTPreview.tsx:140
 msgid "Loading preview..."
 msgstr "Loading preview..."
 
@@ -1811,11 +1827,13 @@ msgstr "Manage Offers"
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Manage Your Farming Rewards Target Addresses"
 
-#: src/components/nfts/detail/NFTDetail.tsx:208
+#: src/components/nfts/detail/NFTDetail.tsx:209
+#: src/components/nfts/NFTDetails.tsx:179
 msgid "Metadata Hash"
 msgstr "Metadata Hash"
 
-#: src/components/nfts/detail/NFTDetail.tsx:195
+#: src/components/nfts/detail/NFTDetail.tsx:196
+#: src/components/nfts/NFTDetails.tsx:164
 msgid "Metadata URL {0}"
 msgstr "Metadata URL {0}"
 
@@ -1849,7 +1867,8 @@ msgstr "Migration required to support passphrase protection"
 msgid "Minimum Difficulty"
 msgstr "Minimum Difficulty"
 
-#: src/components/nfts/detail/NFTDetail.tsx:160
+#: src/components/nfts/detail/NFTDetail.tsx:161
+#: src/components/nfts/NFTDetails.tsx:127
 msgid "Minted at Block Height"
 msgstr "Minted at Block Height"
 
@@ -1889,7 +1908,8 @@ msgstr "NFT"
 #~ msgid "NFT Create Offer Demo"
 #~ msgstr "NFT Create Offer Demo"
 
-#: src/components/nfts/detail/NFTDetail.tsx:76
+#: src/components/nfts/detail/NFTDetail.tsx:77
+#: src/components/nfts/NFTDetails.tsx:43
 msgid "NFT ID"
 msgstr "NFT ID"
 
@@ -1929,7 +1949,11 @@ msgstr "NFT details not available"
 msgid "NFT for HCX"
 msgstr "NFT for HCX"
 
-#: src/components/offers/NFTOfferPreview.tsx:104
+#: src/components/offers/NFTOfferPreview.tsx:48
+msgid "NFT identifier does not reference a valid NFT coin."
+msgstr "NFT identifier does not reference a valid NFT coin."
+
+#: src/components/offers/NFTOfferPreview.tsx:111
 msgid "NFT not specified"
 msgstr "NFT not specified"
 
@@ -1974,7 +1998,7 @@ msgstr "Next"
 #~ msgid "Nickname"
 #~ msgstr "Nickname"
 
-#: src/electron/main.tsx:322
+#: src/electron/main.tsx:342
 msgid "No"
 msgstr "No"
 
@@ -1990,7 +2014,7 @@ msgstr "No blocks farmed yet"
 msgid "No current offers"
 msgstr "No current offers"
 
-#: src/components/nfts/NFTPreview.tsx:120
+#: src/components/nfts/NFTPreview.tsx:113
 msgid "No file available"
 msgstr "No file available"
 
@@ -2032,9 +2056,10 @@ msgstr "None of your plots have passed the plot filter yet."
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
 #: src/components/farm/FarmerStatus.tsx:20
-#: src/components/nfts/detail/NFTDetail.tsx:289
-#: src/components/nfts/detail/NFTDetail.tsx:299
-#: src/components/nfts/detail/NFTDetailV2.tsx:145
+#: src/components/nfts/detail/NFTDetail.tsx:290
+#: src/components/nfts/detail/NFTDetail.tsx:300
+#: src/components/nfts/detail/NFTDetailV2.tsx:80
+#: src/components/nfts/detail/NFTDetailV2.tsx:90
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:361
 msgid "Not Available"
@@ -2112,9 +2137,9 @@ msgstr "Offer Data"
 msgid "Offer Identifier"
 msgstr "Offer Identifier"
 
-#: src/components/offers/OfferShareDialog.tsx:361
-#: src/components/offers/OfferShareDialog.tsx:463
-#: src/components/offers/OfferShareDialog.tsx:672
+#: src/components/offers/OfferShareDialog.tsx:360
+#: src/components/offers/OfferShareDialog.tsx:462
+#: src/components/offers/OfferShareDialog.tsx:671
 msgid "Offer Shared"
 msgstr "Offer Shared"
 
@@ -2178,19 +2203,25 @@ msgstr "One or more unknown tokens are being offered. Please verify that the ass
 msgid "Open Link"
 msgstr "Open Link"
 
+#: src/components/nfts/NFTContextualActions.tsx:244
+msgid "Open in Browser"
+msgstr "Open in Browser"
+
 #: src/components/nfts/NFTContextualActions.tsx:243
-msgid "Open in Web Browser"
-msgstr "Open in Web Browser"
+#~ msgid "Open in Web Browser"
+#~ msgstr "Open in Web Browser"
 
 #: src/components/_wallet_old/WalletHistory.tsx:23
 #~ msgid "Outgoing"
 #~ msgstr "Outgoing"
 
-#: src/components/nfts/detail/NFTDetail.tsx:101
+#: src/components/nfts/detail/NFTDetail.tsx:102
+#: src/components/nfts/NFTDetails.tsx:68
 msgid "Owner DID"
 msgstr "Owner DID"
 
-#: src/components/nfts/detail/NFTDetail.tsx:140
+#: src/components/nfts/detail/NFTDetail.tsx:141
+#: src/components/nfts/NFTDetails.tsx:107
 msgid "Owner Public Key"
 msgstr "Owner Public Key"
 
@@ -2300,7 +2331,7 @@ msgstr "Pending Confirm"
 #~ msgid "Pending Total Balance"
 #~ msgstr "Pending Total Balance"
 
-#: src/components/nfts/NFTPreview.tsx:104
+#: src/components/nfts/NFTPreview.tsx:97
 msgid "Pending Transfer"
 msgstr "Pending Transfer"
 
@@ -2676,7 +2707,7 @@ msgstr "Preparing Plot NFT"
 msgid "Preparing standard wallet"
 msgstr "Preparing standard wallet"
 
-#: src/components/nfts/NFTPreview.tsx:124
+#: src/components/nfts/NFTPreview.tsx:117
 msgid "Preview URL is not valid"
 msgstr "Preview URL is not valid"
 
@@ -2730,7 +2761,6 @@ msgstr "Proof of Space Size"
 msgid "Proofs Found"
 msgstr "Proofs Found"
 
-#: src/components/nfts/detail/NFTDetailV2.tsx:150
 #: src/components/nfts/NFTProperties.tsx:67
 msgid "Properties"
 msgstr "Properties"
@@ -2855,7 +2885,7 @@ msgstr "Refresh Plots"
 msgid "Relative Lock Height"
 msgstr "Relative Lock Height"
 
-#: src/electron/main.tsx:524
+#: src/electron/main.tsx:544
 msgid "Release Notes"
 msgstr "Release Notes"
 
@@ -2882,7 +2912,7 @@ msgstr "Removing"
 #~ msgid "Rename"
 #~ msgstr "Rename"
 
-#: src/electron/main.tsx:543
+#: src/electron/main.tsx:563
 msgid "Report an Issue..."
 msgstr "Report an Issue..."
 
@@ -2895,7 +2925,7 @@ msgstr "Requested"
 msgid "Reset"
 msgstr "Reset"
 
-#: src/electron/main.tsx:224
+#: src/electron/main.tsx:244
 msgid "Response too large"
 msgstr "Response too large"
 
@@ -2907,7 +2937,8 @@ msgstr "Restore Metadata for Colored Coins and other Smart Wallets from Backup"
 #~ msgid "Restore Smart Wallets From Backup"
 #~ msgstr ""
 
-#: src/components/nfts/detail/NFTDetail.tsx:152
+#: src/components/nfts/detail/NFTDetail.tsx:153
+#: src/components/nfts/NFTDetails.tsx:119
 msgid "Royalty Percentage"
 msgstr "Royalty Percentage"
 
@@ -3073,7 +3104,8 @@ msgstr "Send to Address"
 msgid "Series #"
 msgstr "Series #"
 
-#: src/components/nfts/detail/NFTDetail.tsx:306
+#: src/components/nfts/detail/NFTDetail.tsx:307
+#: src/components/nfts/detail/NFTDetailV2.tsx:97
 msgid "Series Number"
 msgstr "Series Number"
 
@@ -3098,16 +3130,16 @@ msgstr "Settings"
 #~ msgstr "Settings are located at the upper right corner"
 
 #: src/components/offers/OfferManager.tsx:427
-#: src/components/offers/OfferShareDialog.tsx:758
-#: src/components/offers/OfferShareDialog.tsx:860
+#: src/components/offers/OfferShareDialog.tsx:757
+#: src/components/offers/OfferShareDialog.tsx:859
 msgid "Share"
 msgstr "Share"
 
-#: src/components/offers/OfferShareDialog.tsx:971
+#: src/components/offers/OfferShareDialog.tsx:970
 msgid "Share Offer"
 msgstr "Share Offer"
 
-#: src/components/offers/OfferShareDialog.tsx:418
+#: src/components/offers/OfferShareDialog.tsx:417
 msgid "Share Privately"
 msgstr "Share Privately"
 
@@ -3115,11 +3147,11 @@ msgstr "Share Privately"
 #~ msgid "Share on Chinilla"
 #~ msgstr "Share on Chinilla"
 
-#: src/components/offers/OfferShareDialog.tsx:403
+#: src/components/offers/OfferShareDialog.tsx:402
 msgid "Share on Chinilla.com"
 msgstr "Share on Chinilla.com"
 
-#: src/components/offers/OfferShareDialog.tsx:505
+#: src/components/offers/OfferShareDialog.tsx:504
 msgid "Share on ForgeFarm"
 msgstr "Share on ForgeFarm"
 
@@ -3127,7 +3159,7 @@ msgstr "Share on ForgeFarm"
 #~ msgid "Share on Hashgreen DEX"
 #~ msgstr "Share on Hashgreen DEX"
 
-#: src/components/offers/OfferShareDialog.tsx:701
+#: src/components/offers/OfferShareDialog.tsx:700
 msgid "Share on Keybase"
 msgstr "Share on Keybase"
 
@@ -3193,7 +3225,7 @@ msgstr "Smooth out your HCX farming rewards by joining a pool."
 msgid "Specify a value of 0 to use all available threads"
 msgstr "Specify a value of 0 to use all available threads"
 
-#: src/electron/main.tsx:632
+#: src/electron/main.tsx:652
 msgid "Speech"
 msgstr "Speech"
 
@@ -3568,8 +3600,8 @@ msgstr "Time Created"
 msgid "Timestamp"
 msgstr "Timestamp"
 
-#: src/components/nfts/detail/NFTDetail.tsx:254
-#: src/components/nfts/detail/NFTDetailV2.tsx:138
+#: src/components/nfts/detail/NFTDetail.tsx:255
+#: src/components/nfts/detail/NFTDetailV2.tsx:68
 #: src/components/nfts/NFTCard.tsx:75
 #: src/components/nfts/NFTSummary.tsx:186
 msgid "Title Not Available"
@@ -3696,7 +3728,7 @@ msgstr "Transfer"
 #~ msgid "Transfer Identity"
 #~ msgstr "Transfer Identity"
 
-#: src/components/nfts/NFTContextualActions.tsx:194
+#: src/components/nfts/NFTContextualActions.tsx:195
 #: src/components/nfts/NFTTransferAction.tsx:310
 msgid "Transfer NFT"
 msgstr "Transfer NFT"
@@ -3721,11 +3753,11 @@ msgstr "Unable to create an offer where the net amount is negative"
 #~ msgid "Unable to create plot NFT"
 #~ msgstr "Unable to create plot NFT"
 
-#: src/components/offers/OfferShareDialog.tsx:632
+#: src/components/offers/OfferShareDialog.tsx:631
 msgid "Unable to open Keybase. Install Keybase from https://keybase.io"
 msgstr "Unable to open Keybase. Install Keybase from https://keybase.io"
 
-#: src/components/offers/OfferShareDialog.tsx:539
+#: src/components/offers/OfferShareDialog.tsx:538
 msgid "Unable to open browser. Install Keybase from https://keybase.io"
 msgstr "Unable to open browser. Install Keybase from https://keybase.io"
 
@@ -3793,7 +3825,7 @@ msgstr "VDF Sub Slot Iterations"
 msgid "Verify Pool Details"
 msgstr "Verify Pool Details"
 
-#: src/electron/main.tsx:439
+#: src/electron/main.tsx:459
 msgid "View"
 msgstr "View"
 
@@ -3824,12 +3856,12 @@ msgstr "View an Offer"
 #~ msgid "View on Chinilla"
 #~ msgstr "View on Chinilla"
 
-#: src/components/offers/OfferShareDialog.tsx:384
+#: src/components/offers/OfferShareDialog.tsx:383
 msgid "View on Chinilla.com"
 msgstr "View on Chinilla.com"
 
-#: src/components/nfts/NFTContextualActions.tsx:368
-#: src/components/offers/OfferShareDialog.tsx:486
+#: src/components/nfts/NFTContextualActions.tsx:370
+#: src/components/offers/OfferShareDialog.tsx:485
 msgid "View on ForgeFarm"
 msgstr "View on ForgeFarm"
 
@@ -3841,9 +3873,13 @@ msgstr "View on ForgeFarm"
 #~ msgid "View on OfferBin"
 #~ msgstr "View on OfferBin"
 
-#: src/components/nfts/NFTContextualActions.tsx:373
-#~ msgid "View on Spacescan.io"
-#~ msgstr "View on Spacescan.io"
+#: src/components/nfts/NFTContextualActions.tsx:377
+msgid "View on SkyNFT"
+msgstr "View on SkyNFT"
+
+#: src/components/nfts/NFTContextualActions.tsx:384
+msgid "View on Spacescan.io"
+msgstr "View on Spacescan.io"
 
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:562
 #~ msgid "View pending balances"
@@ -4006,7 +4042,7 @@ msgstr "When creating an offer, any assets that are being offered will be locked
 #~ msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 #~ msgstr "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 
-#: src/electron/main.tsx:490
+#: src/electron/main.tsx:510
 msgid "Window"
 msgstr "Window"
 
@@ -4023,7 +4059,7 @@ msgstr "Would you like to transfer the specified NFT to a new owner?"
 #~ msgstr "Would you like to transfer the specified NFT to a new owner? It is recommended that you include a fee to ensure that the transaction is completed in a timely manner."
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
-#: src/electron/main.tsx:323
+#: src/electron/main.tsx:343
 msgid "Yes"
 msgstr "Yes"
 
@@ -4155,11 +4191,11 @@ msgstr "Your keys need to be migrated to a new keyring that is optionally secure
 msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 msgstr "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 
-#: src/components/offers/OfferShareDialog.tsx:676
+#: src/components/offers/OfferShareDialog.tsx:675
 msgid "Your offer has been successfully posted to Keybase."
 msgstr "Your offer has been successfully posted to Keybase."
 
-#: src/components/offers/OfferShareDialog.tsx:831
+#: src/components/offers/OfferShareDialog.tsx:830
 msgid "Your offer:"
 msgstr "Your offer:"
 
@@ -4261,7 +4297,8 @@ msgstr "{0, plural, one {vojo} other {vojos}}"
 msgid "{0} buckets is recommended"
 msgstr "{0} buckets is recommended"
 
-#: src/components/nfts/detail/NFTDetail.tsx:310
+#: src/components/nfts/detail/NFTDetail.tsx:311
+#: src/components/nfts/detail/NFTDetailV2.tsx:101
 msgid "{0} of {1}"
 msgstr "{0} of {1}"
 
