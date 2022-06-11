@@ -1247,10 +1247,6 @@ msgstr "HD alebo Hierarchické Deterministické kľúče sú typ schémy verejn�
 #~ msgid "Harvester Plots"
 #~ msgstr "Harvester Plots"
 
-#: src/components/offers/OfferShareDialog.tsx:491
-#~ msgid "Hashgreen DEX URL"
-#~ msgstr "Hashgreen DEX URL"
-
 #: src/components/fullNode/FullNode.jsx:60
 #~ msgid "Header Hash"
 #~ msgstr "Header Hash"
@@ -1832,10 +1828,6 @@ msgstr "Ponuka prijatá"
 #: src/components/offers/OfferViewer.tsx:344
 #~ msgid "Offer has been accepted and is awaiting confirmation."
 #~ msgstr "Ponuka bola prijatá a čaká na potvrdenie."
-
-#: src/components/offers/OfferShareDialog.tsx:350
-#~ msgid "OfferBin URL"
-#~ msgstr "OfferBin URL"
 
 #: src/components/offers/OfferManager.tsx:300
 #~ msgid "Offered"
@@ -2740,17 +2732,9 @@ msgstr "Pošlite svoj verejný kľúč vášmu správcovi peňaženky s obmedzen
 #~ msgid "Share Privately"
 #~ msgstr "Zdieľať súkromne"
 
-#: src/components/offers/OfferShareDialog.tsx:537
-#~ msgid "Share on Hashgreen DEX"
-#~ msgstr "Zdieľať na Hashgreen DEX"
-
 #: src/components/offers/OfferShareDialog.tsx:739
 #~ msgid "Share on Keybase"
 #~ msgstr "Zdieľať na Keybase"
-
-#: src/components/offers/OfferShareDialog.tsx:396
-#~ msgid "Share on OfferBin"
-#~ msgstr "Zdieľať na OfferBin"
 
 #: src/components/offers/OfferShareDialog.tsx:885
 #~ msgid "Share on offerpool"
@@ -3381,14 +3365,6 @@ msgstr "Používateľov verejný kľúč"
 #: src/components/offers/OfferManager.tsx:521
 #~ msgid "View an Offer"
 #~ msgstr "Zobraziť ponuku"
-
-#: src/components/offers/OfferShareDialog.tsx:509
-#~ msgid "View on Hashgreen DEX"
-#~ msgstr "Zobraziť na Hashgreen DEX"
-
-#: src/components/offers/OfferShareDialog.tsx:368
-#~ msgid "View on OfferBin"
-#~ msgstr "Zobraziť na OfferBin"
 
 #: src/components/rateLimited/WalletRateLimited.jsx:561
 msgid "View pending balances"

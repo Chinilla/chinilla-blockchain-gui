@@ -1247,10 +1247,6 @@ msgstr "HD- eli hierarkis-deterministiset avaimet ovat julkisen ja salaisen avai
 #~ msgid "Harvester Plots"
 #~ msgstr "Harvester Plots"
 
-#: src/components/offers/OfferShareDialog.tsx:491
-#~ msgid "Hashgreen DEX URL"
-#~ msgstr "Hashgreen DEX URL"
-
 #: src/components/fullNode/FullNode.jsx:60
 #~ msgid "Header Hash"
 #~ msgstr "Header Hash"
@@ -1832,10 +1828,6 @@ msgstr "Tarjous Hyväksytty"
 #: src/components/offers/OfferViewer.tsx:344
 #~ msgid "Offer has been accepted and is awaiting confirmation."
 #~ msgstr "Tarjous on hyväksytty ja odottaa vahvistusta."
-
-#: src/components/offers/OfferShareDialog.tsx:350
-#~ msgid "OfferBin URL"
-#~ msgstr "OfferBin URL"
 
 #: src/components/offers/OfferManager.tsx:300
 #~ msgid "Offered"
@@ -2740,17 +2732,9 @@ msgstr "Lähetä julkinen avaimesi Siirtorajoitetun Lompakon pääkäyttäjälle
 #~ msgid "Share Privately"
 #~ msgstr "Jaa Yksityisesti"
 
-#: src/components/offers/OfferShareDialog.tsx:537
-#~ msgid "Share on Hashgreen DEX"
-#~ msgstr "Jaa Hashgreen DEX:ssä"
-
 #: src/components/offers/OfferShareDialog.tsx:739
 #~ msgid "Share on Keybase"
 #~ msgstr "Jaa KeyBasessa"
-
-#: src/components/offers/OfferShareDialog.tsx:396
-#~ msgid "Share on OfferBin"
-#~ msgstr "Jaa OfferBinissä"
 
 #: src/components/offers/OfferShareDialog.tsx:885
 #~ msgid "Share on offerpool"
@@ -3377,14 +3361,6 @@ msgstr "Käyttäjän julkinen avain"
 #: src/components/offers/OfferManager.tsx:521
 #~ msgid "View an Offer"
 #~ msgstr "Näytä Tarjous"
-
-#: src/components/offers/OfferShareDialog.tsx:509
-#~ msgid "View on Hashgreen DEX"
-#~ msgstr "Näytä Hashgreen DEX:ssä"
-
-#: src/components/offers/OfferShareDialog.tsx:368
-#~ msgid "View on OfferBin"
-#~ msgstr "Näytä OfferBinissä"
 
 #: src/components/rateLimited/WalletRateLimited.jsx:561
 msgid "View pending balances"

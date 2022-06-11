@@ -466,14 +466,6 @@ msgstr "Natter on KeyBase"
 msgid "Check Provenance on ForgeFarm"
 msgstr ""
 
-#: src/components/offers/NFTOfferPreview.tsx:179
-msgid "Check Provenance on SkyNFT"
-msgstr ""
-
-#: src/components/offers/NFTOfferPreview.tsx:189
-msgid "Check Provenance on Spacescan.io"
-msgstr ""
-
 #: src/electron/main.tsx:601
 msgid "Chinilla"
 msgstr ""
@@ -1412,10 +1404,6 @@ msgstr ""
 msgid "Harvesters"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:835
-#~ msgid "Hashgreen DEX URL"
-#~ msgstr ""
-
 #: src/components/fullNode/FullNode.jsx:57
 msgid "Header Hash"
 msgstr ""
@@ -2142,10 +2130,6 @@ msgstr ""
 #: src/hooks/useAcceptOfferHook.tsx:63
 msgid "Offer has been accepted and is awaiting confirmation."
 msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:733
-#~ msgid "OfferBin URL"
-#~ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:370
 msgid "Offered"
@@ -3151,17 +3135,9 @@ msgstr ""
 msgid "Share on ForgeFarm"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:872
-#~ msgid "Share on Hashgreen DEX"
-#~ msgstr ""
-
 #: src/components/offers/OfferShareDialog.tsx:700
 msgid "Share on Keybase"
 msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:770
-#~ msgid "Share on OfferBin"
-#~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:1195
 #~ msgid "Share on offerpool"
@@ -3859,22 +3835,6 @@ msgstr ""
 #: src/components/nfts/NFTContextualActions.tsx:370
 #: src/components/offers/OfferShareDialog.tsx:485
 msgid "View on ForgeFarm"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:853
-#~ msgid "View on Hashgreen DEX"
-#~ msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:751
-#~ msgid "View on OfferBin"
-#~ msgstr ""
-
-#: src/components/nfts/NFTContextualActions.tsx:377
-msgid "View on SkyNFT"
-msgstr ""
-
-#: src/components/nfts/NFTContextualActions.tsx:384
-msgid "View on Spacescan.io"
 msgstr ""
 
 #: src/components/_wallet_old/rateLimited/WalletRateLimited.jsx:562

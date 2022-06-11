@@ -1247,10 +1247,6 @@ msgstr "HD or Hierarchical Deterministic keys are a type of public key/private k
 #~ msgid "Harvester Plots"
 #~ msgstr "Harvester Plots"
 
-#: src/components/offers/OfferShareDialog.tsx:491
-#~ msgid "Hashgreen DEX URL"
-#~ msgstr "Hashgreen DEX URL"
-
 #: src/components/fullNode/FullNode.jsx:60
 #~ msgid "Header Hash"
 #~ msgstr "Header Hash"
@@ -1832,10 +1828,6 @@ msgstr "Offer Accepted"
 #: src/components/offers/OfferViewer.tsx:344
 #~ msgid "Offer has been accepted and is awaiting confirmation."
 #~ msgstr "Offer has been accepted and is awaiting confirmation."
-
-#: src/components/offers/OfferShareDialog.tsx:350
-#~ msgid "OfferBin URL"
-#~ msgstr "OfferBin URL"
 
 #: src/components/offers/OfferManager.tsx:300
 #~ msgid "Offered"
@@ -2740,17 +2732,9 @@ msgstr "Send your pubkey to your Rate Limited Wallet admin:"
 #~ msgid "Share Privately"
 #~ msgstr "Share Privately"
 
-#: src/components/offers/OfferShareDialog.tsx:537
-#~ msgid "Share on Hashgreen DEX"
-#~ msgstr "Share on Hashgreen DEX"
-
 #: src/components/offers/OfferShareDialog.tsx:739
 #~ msgid "Share on Keybase"
 #~ msgstr "Share on Keybase"
-
-#: src/components/offers/OfferShareDialog.tsx:396
-#~ msgid "Share on OfferBin"
-#~ msgstr "Share on OfferBin"
 
 #: src/components/offers/OfferShareDialog.tsx:885
 #~ msgid "Share on offerpool"
@@ -3381,14 +3365,6 @@ msgstr "User Pubkey"
 #: src/components/offers/OfferManager.tsx:521
 #~ msgid "View an Offer"
 #~ msgstr "View an Offer"
-
-#: src/components/offers/OfferShareDialog.tsx:509
-#~ msgid "View on Hashgreen DEX"
-#~ msgstr "View on Hashgreen DEX"
-
-#: src/components/offers/OfferShareDialog.tsx:368
-#~ msgid "View on OfferBin"
-#~ msgstr "View on OfferBin"
 
 #: src/components/rateLimited/WalletRateLimited.jsx:561
 msgid "View pending balances"

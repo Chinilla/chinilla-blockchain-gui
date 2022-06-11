@@ -1247,10 +1247,6 @@ msgstr ""
 #~ msgid "Harvester Plots"
 #~ msgstr "Harvester Plots"
 
-#: src/components/offers/OfferShareDialog.tsx:491
-#~ msgid "Hashgreen DEX URL"
-#~ msgstr "Hashgreen DEX URL"
-
 #: src/components/fullNode/FullNode.jsx:60
 #~ msgid "Header Hash"
 #~ msgstr "Header Hash"
@@ -1828,10 +1824,6 @@ msgstr "Erbjudandet accepterat"
 #: src/components/offers/OfferViewer.tsx:344
 #~ msgid "Offer has been accepted and is awaiting confirmation."
 #~ msgstr "Erbjudandet har accepterats och väntar på bekräftelse."
-
-#: src/components/offers/OfferShareDialog.tsx:350
-#~ msgid "OfferBin URL"
-#~ msgstr "OfferBin URL"
 
 #: src/components/offers/OfferManager.tsx:300
 #~ msgid "Offered"
@@ -2736,17 +2728,9 @@ msgstr "Skicka din publika nyckel till admin för din spenderbegränsade plånbo
 #~ msgid "Share Privately"
 #~ msgstr "Delat privat"
 
-#: src/components/offers/OfferShareDialog.tsx:537
-#~ msgid "Share on Hashgreen DEX"
-#~ msgstr "Dela på Hashgreen DEX"
-
 #: src/components/offers/OfferShareDialog.tsx:739
 #~ msgid "Share on Keybase"
 #~ msgstr "Dela på Keybase"
-
-#: src/components/offers/OfferShareDialog.tsx:396
-#~ msgid "Share on OfferBin"
-#~ msgstr "Dela på OfferBin"
 
 #: src/components/offers/OfferShareDialog.tsx:885
 #~ msgid "Share on offerpool"
@@ -3373,14 +3357,6 @@ msgstr "Publik nyckel för användare"
 #: src/components/offers/OfferManager.tsx:521
 #~ msgid "View an Offer"
 #~ msgstr "Visa erbjudande"
-
-#: src/components/offers/OfferShareDialog.tsx:509
-#~ msgid "View on Hashgreen DEX"
-#~ msgstr "Visa på Hashgreen DEX"
-
-#: src/components/offers/OfferShareDialog.tsx:368
-#~ msgid "View on OfferBin"
-#~ msgstr "Visa på OfferBin"
 
 #: src/components/rateLimited/WalletRateLimited.jsx:561
 msgid "View pending balances"
