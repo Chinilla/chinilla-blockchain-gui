@@ -70,8 +70,7 @@ type CommonDialogProps = {
 
 type OfferShareServiceDialogProps = CommonOfferProps & CommonDialogProps;
 
-const testnetDummyHost = 'file-acceptor.chinilla.com';
-const testnetDummyEndpoint = '/';
+const testnetDummyHost = 'offers-api-sim.chinilla.com';
 
 const OfferSharingProviders: {
   [key in OfferSharingService]: OfferSharingProvider;

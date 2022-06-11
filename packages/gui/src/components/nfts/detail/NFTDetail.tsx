@@ -23,6 +23,7 @@ import { didToDIDId } from '../../../util/dids';
 import { convertRoyaltyToPercentage } from '../../../util/nfts';
 import NFTRankings from '../NFTRankings';
 import NFTProperties from '../NFTProperties';
+import NFTDetails from '../NFTDetails';
 import styled from 'styled-components';
 
 /* ========================================================================== */
@@ -315,13 +316,8 @@ export default function NFTDetail() {
               )}
               <NFTProperties attributes={metadata?.attributes} />
               <NFTRankings attributes={metadata?.attributes} />
-              <Flex flexDirection="column" gap={1}>
-                <Typography variant="h6">
-                  <Trans>Details</Trans>
-                </Typography>
 
-                <CardKeyValue rows={details} hideDivider />
-              </Flex>
+              <NFTDetails nft={nft} metadata={metadata} />
             </Flex>
           </Box>
         </Flex>
