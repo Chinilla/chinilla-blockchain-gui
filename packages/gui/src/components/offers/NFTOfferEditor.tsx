@@ -120,7 +120,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
   const [amountFocused, setAmountFocused] = useState<boolean>(false);
 
   const tab = methods.watch('exchangeType');
-  const amount = methods.watch('xchAmount');
+  const amount = methods.watch('hcxAmount');
   const makerFee = methods.watch('fee');
   const nftId = methods.watch('nftId');
   const launcherId = launcherIdFromNFTId(nftId ?? '');
@@ -536,7 +536,7 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
       return;
     }
 
-    const { exchangeType, launcherId, xchAmount, fee } = formData;
+    const { exchangeType, launcherId, hcxAmount, fee } = formData;
 
     const royaltyPercentage = convertRoyaltyToPercentage(
       offerNFT.royaltyPercentage ?? 0,
