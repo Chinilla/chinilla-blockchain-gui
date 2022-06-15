@@ -192,9 +192,8 @@ async function postToForgeFarm(
   console.log('ForgeFarm upload completed');
 
   const {
-    offer: { nft_id },
+    offer: { id },
   } = JSON.parse(responseBody);
-  const nftId = toBech32m(nft_id, 'nft');
 
   return `https://${testnet ? 'testnet.' : ''}forgefarm.io/nft/${nftId}`;
 }
