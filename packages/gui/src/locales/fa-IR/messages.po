@@ -122,7 +122,7 @@ msgstr "عملیات"
 #: src/components/farm/FarmFullNodeConnections.tsx:66
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:66
 #: src/components/fullNode/FullNodeConnections.tsx:81
-#: src/components/nfts/NFTContextualActions.tsx:345
+#: src/components/nfts/NFTContextualActions.tsx:343
 msgid "Actions"
 msgstr "عملیات"
 
@@ -195,11 +195,11 @@ msgstr ""
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:44
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:73
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:86
-#: src/components/nfts/NFTProfileDropdown.tsx:91
+#: src/components/nfts/NFTProfileDropdown.tsx:129
 msgid "All"
 msgstr ""
 
-#: src/components/nfts/NFTProfileDropdown.tsx:51
+#: src/components/nfts/NFTProfileDropdown.tsx:94
 msgid "All Profiles"
 msgstr ""
 
@@ -305,7 +305,7 @@ msgstr ""
 msgid "Base Farmer Reward Amount"
 msgstr "مقدار پایه جایزه‌ِ مزرعه دار"
 
-#: src/components/offers/OfferShareDialog.tsx:718
+#: src/components/offers/OfferShareDialog.tsx:717
 msgid "Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team. Please note that it might take a few moments to join the channel."
 msgstr ""
 
@@ -395,14 +395,14 @@ msgstr "مرور کردن"
 #: src/components/backup/BackupCreate.tsx:51
 #: src/components/block/FarmManageFarmingRewards.tsx:175
 #: src/components/block/FullNodeAddConnection.tsx:85
-#: src/components/farm/FarmManageFarmingRewards.tsx:186
+#: src/components/farm/FarmManageFarmingRewards.tsx:188
 #: src/components/fullNode/FullNodeAddConnection.tsx:84
 #: src/components/nfts/NFTTransferAction.tsx:80
 #: src/components/offers/OfferAcceptConfirmationDialog.tsx:26
 #: src/components/offers/OfferDataEntryDialog.tsx:67
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:18
-#: src/components/offers/OfferShareDialog.tsx:750
-#: src/components/offers/OfferShareDialog.tsx:852
+#: src/components/offers/OfferShareDialog.tsx:749
+#: src/components/offers/OfferShareDialog.tsx:851
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
@@ -486,7 +486,7 @@ msgstr "ویکی زنجیره بلوکی چیـا"
 #~ msgid "Chinilla Wallet"
 #~ msgstr "Chinilla Wallet"
 
-#: src/components/offers/OfferShareDialog.tsx:365
+#: src/components/offers/OfferShareDialog.tsx:364
 msgid "Chinilla.com Offers URL"
 msgstr ""
 
@@ -517,10 +517,10 @@ msgstr ""
 
 #: src/components/nfts/NFTTransferAction.tsx:253
 #: src/components/offers/OfferManager.tsx:199
-#: src/components/offers/OfferShareDialog.tsx:390
-#: src/components/offers/OfferShareDialog.tsx:492
-#: src/components/offers/OfferShareDialog.tsx:683
-#: src/components/offers/OfferShareDialog.tsx:1018
+#: src/components/offers/OfferShareDialog.tsx:389
+#: src/components/offers/OfferShareDialog.tsx:491
+#: src/components/offers/OfferShareDialog.tsx:682
+#: src/components/offers/OfferShareDialog.tsx:1017
 #: src/components/plot/PlotAddDirectoryDialog.tsx:130
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
@@ -694,7 +694,7 @@ msgstr "مشارکت در GitHub"
 #~ msgid "Copy"
 #~ msgstr "Copy"
 
-#: src/components/nfts/NFTContextualActions.tsx:285
+#: src/components/nfts/NFTContextualActions.tsx:283
 msgid "Copy Media URL"
 msgstr ""
 
@@ -1038,7 +1038,7 @@ msgstr ""
 #~ msgid "Distributed Identity Options"
 #~ msgstr "Distributed Identity Options"
 
-#: src/components/offers/OfferShareDialog.tsx:1011
+#: src/components/offers/OfferShareDialog.tsx:1010
 #: src/hooks/useOpenUnsafeLink.tsx:77
 msgid "Do not show this dialog again"
 msgstr ""
@@ -1167,7 +1167,7 @@ msgstr ""
 msgid "Failed to decode NFT identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:280
+#: src/components/offers/OfferShareDialog.tsx:279
 msgid "Failed to execute Keybase command: {stderr}"
 msgstr ""
 
@@ -1208,12 +1208,12 @@ msgid "Farmer Puzzle Hash"
 msgstr "مزرعه دارِ جورچین در هم ریزی(هش)"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:142
-#: src/components/farm/FarmManageFarmingRewards.tsx:153
+#: src/components/farm/FarmManageFarmingRewards.tsx:155
 msgid "Farmer Reward Address"
 msgstr "آدرس پاداش مزرعه دار"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:116
-#: src/components/farm/FarmManageFarmingRewards.tsx:127
+#: src/components/farm/FarmManageFarmingRewards.tsx:129
 msgid "Farmer Reward Address is not properly formatted."
 msgstr ""
 
@@ -1222,7 +1222,7 @@ msgstr ""
 #~ msgstr "Farmer Reward Address is not properly formatted. Using 'paste' is recommended."
 
 #: src/components/block/FarmManageFarmingRewards.tsx:110
-#: src/components/farm/FarmManageFarmingRewards.tsx:121
+#: src/components/farm/FarmManageFarmingRewards.tsx:123
 msgid "Farmer Reward Address must not be empty."
 msgstr ""
 
@@ -1330,7 +1330,7 @@ msgstr ""
 msgid "Follow on Twitter"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:467
+#: src/components/offers/OfferShareDialog.tsx:466
 msgid "ForgeFarm URL"
 msgstr ""
 
@@ -1375,8 +1375,8 @@ msgstr ""
 msgid "Go collect some gems"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:680
-#: src/components/offers/OfferShareDialog.tsx:741
+#: src/components/offers/OfferShareDialog.tsx:679
+#: src/components/offers/OfferShareDialog.tsx:740
 msgid "Go to #{channelName}"
 msgstr ""
 
@@ -1479,7 +1479,7 @@ msgstr ""
 msgid "If none selected, then it will default to the temporary directory."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:419
+#: src/components/offers/OfferShareDialog.tsx:418
 msgid "If selected, your offer will be not be shared publicly."
 msgstr ""
 
@@ -1513,7 +1513,7 @@ msgstr ""
 msgid "In exchange for"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:835
+#: src/components/offers/OfferShareDialog.tsx:834
 msgid "In exchange for:"
 msgstr ""
 
@@ -1562,7 +1562,7 @@ msgstr ""
 msgid "Initializing..."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:713
+#: src/components/offers/OfferShareDialog.tsx:712
 msgid "Install Keybase"
 msgstr ""
 
@@ -1622,7 +1622,7 @@ msgstr ""
 msgid "Join farming pools"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:730
+#: src/components/offers/OfferShareDialog.tsx:729
 msgid "Join {teamName}"
 msgstr ""
 
@@ -1631,11 +1631,11 @@ msgstr ""
 msgid "K-Size"
 msgstr "مقدار حجم-K"
 
-#: src/components/offers/OfferShareDialog.tsx:616
+#: src/components/offers/OfferShareDialog.tsx:615
 msgid "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:705
+#: src/components/offers/OfferShareDialog.tsx:704
 msgid "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName} team, you must first have Keybase installed."
 msgstr ""
 
@@ -1811,7 +1811,7 @@ msgstr ""
 #~ msgstr "Manage Recovery DIDs"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:98
-#: src/components/farm/FarmManageFarmingRewards.tsx:109
+#: src/components/farm/FarmManageFarmingRewards.tsx:111
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "آدرس های مقصد خود را برای پاداش های مزرعه داری مدیریت کنید"
 
@@ -1872,7 +1872,7 @@ msgstr ""
 msgid "More memory slightly increases speed"
 msgstr ""
 
-#: src/components/settings/ProfileView.tsx:98
+#: src/components/settings/ProfileView.tsx:99
 msgid "My DID"
 msgstr ""
 
@@ -1905,6 +1905,10 @@ msgstr ""
 msgid "NFT Identifier"
 msgstr ""
 
+#: src/components/nfts/NFTProfileDropdown.tsx:88
+msgid "NFT Inbox"
+msgstr ""
+
 #: src/components/nfts/NFTTransferAction.tsx:247
 #~ msgid "NFT Name"
 #~ msgstr ""
@@ -1917,7 +1921,7 @@ msgstr ""
 msgid "NFT Offer"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:158
+#: src/components/nfts/NFTContextualActions.tsx:156
 msgid "NFT Transfer Complete"
 msgstr ""
 
@@ -1925,7 +1929,7 @@ msgstr ""
 #~ msgid "NFT Transfer Demo"
 #~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:168
+#: src/components/nfts/NFTContextualActions.tsx:166
 msgid "NFT Transfer Failed"
 msgstr ""
 
@@ -1946,6 +1950,7 @@ msgid "NFT not specified"
 msgstr ""
 
 #: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/nfts/NFTProfileDropdown.tsx:143
 msgid "NFTs"
 msgstr ""
 
@@ -2015,7 +2020,7 @@ msgstr ""
 #~ msgstr "No previous transactions"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:135
-#: src/components/farm/FarmManageFarmingRewards.tsx:146
+#: src/components/farm/FarmManageFarmingRewards.tsx:148
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "بدون کلید خصوصی برای یک یا هر دو آدرس. فقط در صورت ارسال پاداش به کیف پول دیگر ، ایمن است."
 
@@ -2086,7 +2091,7 @@ msgstr ""
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr ""
 
-#: src/components/farm/FarmManageFarmingRewards.tsx:174
+#: src/components/farm/FarmManageFarmingRewards.tsx:176
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
 msgstr ""
 
@@ -2125,9 +2130,9 @@ msgstr ""
 msgid "Offer Identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:360
-#: src/components/offers/OfferShareDialog.tsx:462
-#: src/components/offers/OfferShareDialog.tsx:671
+#: src/components/offers/OfferShareDialog.tsx:359
+#: src/components/offers/OfferShareDialog.tsx:461
+#: src/components/offers/OfferShareDialog.tsx:670
 msgid "Offer Shared"
 msgstr ""
 
@@ -2187,7 +2192,7 @@ msgstr ""
 msgid "Open Link"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:244
+#: src/components/nfts/NFTContextualActions.tsx:242
 msgid "Open in Browser"
 msgstr ""
 
@@ -2620,12 +2625,12 @@ msgid "Pool Puzzle Hash"
 msgstr "استخر جورچین هش(در هم سازی)"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:152
-#: src/components/farm/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:165
 msgid "Pool Reward Address"
 msgstr "آدرس پاداش استخر"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:128
-#: src/components/farm/FarmManageFarmingRewards.tsx:139
+#: src/components/farm/FarmManageFarmingRewards.tsx:141
 msgid "Pool Reward Address is not properly formatted."
 msgstr ""
 
@@ -2634,7 +2639,7 @@ msgstr ""
 #~ msgstr "Pool Reward Address is not properly formatted. Using 'paste' is recommended."
 
 #: src/components/block/FarmManageFarmingRewards.tsx:123
-#: src/components/farm/FarmManageFarmingRewards.tsx:134
+#: src/components/farm/FarmManageFarmingRewards.tsx:136
 msgid "Pool Reward Address must not be empty."
 msgstr ""
 
@@ -2728,7 +2733,7 @@ msgstr ""
 #~ msgid "Private key:"
 #~ msgstr "Private key:"
 
-#: src/components/settings/ProfileView.tsx:65
+#: src/components/settings/ProfileView.tsx:66
 msgid "Profile Name"
 msgstr ""
 
@@ -2940,7 +2945,7 @@ msgid "Safe To Skip"
 msgstr ""
 
 #: src/components/block/FarmManageFarmingRewards.tsx:178
-#: src/components/farm/FarmManageFarmingRewards.tsx:189
+#: src/components/farm/FarmManageFarmingRewards.tsx:191
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:130
 msgid "Save"
 msgstr ""
@@ -3114,16 +3119,16 @@ msgstr ""
 #~ msgstr "Settings are located at the upper right corner"
 
 #: src/components/offers/OfferManager.tsx:427
-#: src/components/offers/OfferShareDialog.tsx:757
-#: src/components/offers/OfferShareDialog.tsx:859
+#: src/components/offers/OfferShareDialog.tsx:756
+#: src/components/offers/OfferShareDialog.tsx:858
 msgid "Share"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:970
+#: src/components/offers/OfferShareDialog.tsx:969
 msgid "Share Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:417
+#: src/components/offers/OfferShareDialog.tsx:416
 msgid "Share Privately"
 msgstr ""
 
@@ -3131,15 +3136,15 @@ msgstr ""
 #~ msgid "Share on Chinilla"
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:402
+#: src/components/offers/OfferShareDialog.tsx:401
 msgid "Share on Chinilla.com"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:504
+#: src/components/offers/OfferShareDialog.tsx:503
 msgid "Share on ForgeFarm"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:700
+#: src/components/offers/OfferShareDialog.tsx:699
 msgid "Share on Keybase"
 msgstr ""
 
@@ -3356,11 +3361,11 @@ msgstr ""
 msgid "Temporary folder location"
 msgstr "مکان ثانویه پوشه موقت"
 
-#: src/components/nfts/NFTContextualActions.tsx:169
+#: src/components/nfts/NFTContextualActions.tsx:167
 msgid "The NFT transfer failed: {error}"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:159
+#: src/components/nfts/NFTContextualActions.tsx:157
 msgid "The NFT transfer transaction has been successfully submitted to the blockchain."
 msgstr ""
 
@@ -3593,7 +3598,7 @@ msgstr ""
 msgid "Token Offer"
 msgstr ""
 
-#: src/components/settings/ProfileView.tsx:135
+#: src/components/settings/ProfileView.tsx:136
 msgid "Token Standard"
 msgstr ""
 
@@ -3706,7 +3711,7 @@ msgstr ""
 #~ msgid "Transfer Identity"
 #~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:195
+#: src/components/nfts/NFTContextualActions.tsx:193
 #: src/components/nfts/NFTTransferAction.tsx:310
 msgid "Transfer NFT"
 msgstr ""
@@ -3731,11 +3736,11 @@ msgstr ""
 #~ msgid "Unable to create plot NFT"
 #~ msgstr "Unable to create plot NFT"
 
-#: src/components/offers/OfferShareDialog.tsx:631
+#: src/components/offers/OfferShareDialog.tsx:630
 msgid "Unable to open Keybase. Install Keybase from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:538
+#: src/components/offers/OfferShareDialog.tsx:537
 msgid "Unable to open browser. Install Keybase from https://keybase.io"
 msgstr ""
 
@@ -3834,12 +3839,12 @@ msgstr ""
 #~ msgid "View on Chinilla"
 #~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:383
+#: src/components/offers/OfferShareDialog.tsx:382
 msgid "View on Chinilla.com"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:370
-#: src/components/offers/OfferShareDialog.tsx:485
+#: src/components/nfts/NFTContextualActions.tsx:368
+#: src/components/offers/OfferShareDialog.tsx:484
 msgid "View on ForgeFarm"
 msgstr ""
 
@@ -4155,11 +4160,11 @@ msgstr ""
 msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:675
+#: src/components/offers/OfferShareDialog.tsx:674
 msgid "Your offer has been successfully posted to Keybase."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:830
+#: src/components/offers/OfferShareDialog.tsx:829
 msgid "Your offer:"
 msgstr ""
 
