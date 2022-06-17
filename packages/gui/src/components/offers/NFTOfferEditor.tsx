@@ -473,7 +473,7 @@ function buildOfferRequest(
           type: 'royalty transfer program',
           launcher_id: `0x${nftLauncherId}`,
           royalty_address: nft.royaltyPuzzleHash,
-          royalty_percentage: nft.royaltyPercentage,
+          royalty_percentage: `${nft.royaltyPercentage}`,
         },
       }
     : undefined;
@@ -595,13 +595,6 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
       hcxAmount,
       fee,
     );
-
-    console.log('offer');
-    console.log(offer);
-    console.log('driverDict');
-    console.log(driverDict);
-    console.log('feeInVojos');
-    console.log(feeInVojos);
 
     const confirmedCreation = await openDialog(
       <OfferEditorConfirmationDialog />,
