@@ -1509,7 +1509,7 @@ msgstr ""
 #~ msgid "Loading list of wallets"
 #~ msgstr "Loading list of wallets"
 
-#: src/components/WalletReceiveAddressField.tsx:34
+#: src/components/WalletReceiveAddressField.tsx:40
 msgid "Loading..."
 msgstr "Loading..."
 
@@ -2443,7 +2443,7 @@ msgid "Receive"
 msgstr ""
 
 #: src/components/WalletReceiveAddress.tsx:35
-#: src/components/WalletReceiveAddressField.tsx:32
+#: src/components/WalletReceiveAddressField.tsx:38
 msgid "Receive Address"
 msgstr "Alamat Penerima"
 

@@ -1,8 +1,6 @@
-import React from 'react';
 import type { NFTInfo } from '@chinilla/api';
 import { useCurrencyCode } from '@chinilla/core';
 import useOpenExternal from './useOpenExternal';
-import { slice } from 'lodash';
 
 /* ========================================================================== */
 
