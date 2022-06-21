@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
 import { Back, Flex, LayoutDashboardSub, Loading } from '@chinilla/core';
-import type { NFTInfo } from '@chinilla/api';
+import type { NFTInfo, Wallet } from '@chinilla/api';
 import { useGetNFTWallets } from '@chinilla/api-react';
 import { Box, Typography } from '@mui/material';
 import { useParams } from 'react-router-dom';
@@ -11,18 +11,6 @@ import useNFTMetadata from '../../../hooks/useNFTMetadata';
 import NFTRankings from '../NFTRankings';
 import NFTProperties from '../NFTProperties';
 import NFTDetails from '../NFTDetails';
-import styled from 'styled-components';
-
-/* ========================================================================== */
-
-const StyledTitle = styled(Box)`
-  font-size: 0.625rem;
-  color: rgba(255, 255, 255, 0.7);
-`;
-
-const StyledValue = styled(Box)`
-  word-break: break-all;
-`;
 
 /* ========================================================================== */
 
@@ -39,7 +27,7 @@ export default function NFTDetail() {
       return;
     }
     return nfts.find((nft: NFTInfo) => nft.$nftId === nftId);
-  }, [nfts]);
+  }, [nfts, nftId]);
   const { metadata, isLoading: isLoadingMetadata } = useNFTMetadata(nft);
   const isLoading = isLoadingWallets || isLoadingNFTs || isLoadingMetadata;
 

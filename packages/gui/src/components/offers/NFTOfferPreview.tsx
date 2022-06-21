@@ -1,7 +1,13 @@
 import React from 'react';
 import { Trans, t } from '@lingui/macro';
 import { useGetNFTInfoQuery } from '@chinilla/api-react';
-import { Button, Flex, Loading, TooltipIcon } from '@chinilla/core';
+import {
+  Button,
+  Flex,
+  Loading,
+  TooltipIcon,
+  useColorModeValue,
+} from '@chinilla/core';
 import { Card, Typography } from '@mui/material';
 import NFTCard from '../nfts/NFTCard';
 import { launcherIdFromNFTId } from '../../util/nfts';
@@ -15,7 +21,9 @@ import useViewNFTOnExplorer, {
 
 const StyledPreviewContainer = styled(Flex)`
   width: 364px;
-  border-left: 1px solid ${({ theme }) => theme.palette.border.main};
+  border-left: ${({ theme }) =>
+    `1px solid ${useColorModeValue(theme, 'border')}`};
+  background-color: ${({ theme }) => theme.palette.background.default};
   padding-bottom: ${({ theme }) => theme.spacing(4)};
 `;
 

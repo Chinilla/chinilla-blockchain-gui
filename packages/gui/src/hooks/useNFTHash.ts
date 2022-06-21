@@ -1,4 +1,4 @@
-import { type NFTInfo } from '@chinilla/api';
+import type NFTInfo from '@chinilla/api';
 import useVerifyURIHash from './useVerifyURIHash';
 
 export default function useNFTHash(nft: NFTInfo) {
