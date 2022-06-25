@@ -28,8 +28,8 @@ import {
   TableControlled,
   useCurrencyCode,
   useSerializedNavigationState,
-  mojoToChinilla,
-  mojoToCAT,
+  vojoToChinilla,
+  vojoToCAT,
   FormatLargeNumber,
 } from '@chinilla/core';
 import {
@@ -215,8 +215,8 @@ const getCols = (type: WalletType, isSyncing, getOfferRecord, navigate) => [
             <FormatLargeNumber
               value={
                 type === WalletType.CAT
-                  ? mojoToCAT(row.amount)
-                  : mojoToChinilla(row.amount)
+                  ? vojoToCAT(row.amount)
+                  : vojoToChinilla(row.amount)
               }
             />
           </strong>
