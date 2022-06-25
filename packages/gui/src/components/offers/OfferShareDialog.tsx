@@ -359,7 +359,7 @@ function OfferShareChinillaDialog(props: OfferShareServiceDialogProps) {
           <Trans>Offer Shared</Trans>
         </DialogTitle>
         <DialogContent dividers>
-          <Flex flexDirection="column" gap={3}>
+          <Flex flexDirection="column" gap={3} sx={{ paddingTop: '1em' }}>
             <TextField
               label={<Trans>Chinilla.com Offers URL</Trans>}
               value={sharedURL}
@@ -461,7 +461,7 @@ function OfferShareForgeFarmDialog(props: OfferShareServiceDialogProps) {
           <Trans>Offer Shared</Trans>
         </DialogTitle>
         <DialogContent dividers>
-          <Flex flexDirection="column" gap={3}>
+          <Flex flexDirection="column" gap={3} sx={{ paddingTop: '1em' }}>
             <TextField
               label={<Trans>ForgeFarm URL</Trans>}
               value={sharedURL}
@@ -670,7 +670,7 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
           <Trans>Offer Shared</Trans>
         </DialogTitle>
         <DialogContent dividers>
-          <Flex flexDirection="column" gap={3}>
+          <Flex flexDirection="column" gap={3} sx={{ paddingTop: '1em' }}>
             <Trans>Your offer has been successfully posted to Keybase.</Trans>
           </Flex>
         </DialogContent>
@@ -916,7 +916,7 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
     };
 
     const options = Object.keys(OfferSharingService)
-      .filter((key) => OfferSharingProviders.hasOwnProperty(key))
+      .filter((key) => Object.keys(dialogComponents).includes(key))
       .filter((key) =>
         OfferSharingProviders[key as OfferSharingService].capabilities.some(
           (cap) => capabilities.includes(cap),

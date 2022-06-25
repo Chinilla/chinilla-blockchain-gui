@@ -241,7 +241,7 @@ if (!handleSquirrelEvent()) {
                 totalLength += chunk.byteLength;
 
                 if (totalLength > maxSize) {
-                  reject(new Error(i18n._(/* i18n */ { id: 'Response too large' })));
+                  reject(new Error('Response too large'));
                   request.abort();
                 }
               });

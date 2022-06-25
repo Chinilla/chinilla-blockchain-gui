@@ -1,8 +1,13 @@
 import React from 'react';
 import { Flex } from '@chinilla/core';
 import { type NFTInfo } from '@chinilla/api';
-import { Dialog } from '@mui/material';
+import { Dialog, Paper } from '@mui/material';
 import NFTPreview from './NFTPreview';
+import { styled } from '@mui/styles';
+
+const StyledNFTPreviewBackground = styled(Paper)({
+  padding: '2rem',
+});
 
 type NFTPreviewDialogProps = {
   nft: NFTInfo;
@@ -18,13 +23,27 @@ export default function NFTPreviewDialog(props: NFTPreviewDialogProps) {
       open={open}
       onClose={onClose}
       PaperComponent={({ children }) => (
-        <Flex width="95vw" height="95vh" onClick={onClose} justifyContent="center" alignItems="center" position="relative">
+        <Flex
+          width="95vw"
+          height="95vh"
+          onClick={onClose}
+          justifyContent="center"
+          alignItems="center"
+          position="relative"
+        >
           {children}
         </Flex>
       )}
       {...rest}
     >
-      <NFTPreview nft={nft} width="100%" height="100%" fit="contain" />
+      <NFTPreview
+        nft={nft}
+        width="100%"
+        height="100%"
+        fit="contain"
+        background={StyledNFTPreviewBackground}
+        hideStatusBar={true}
+      />
     </Dialog>
   );
 }

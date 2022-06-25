@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Trans } from '@lingui/macro';
 import {
   Back,
@@ -7,18 +6,18 @@ import {
   Dropzone,
   Flex,
   useOpenDialog,
+  useSerializedNavigationState,
   useShowError,
 } from '@chinilla/core';
 import { Button, Grid, Typography } from '@mui/material';
 import { useGetOfferSummaryMutation } from '@chinilla/api-react';
 import { type OfferSummaryRecord } from '@chinilla/api';
-import OfferAsset from './OfferAsset';
 import OfferDataEntryDialog from './OfferDataEntryDialog';
 import { offerContainsAssetOfType } from './utils';
 import fs, { Stats } from 'fs';
 
 function SelectOfferFile() {
-  const navigate = useNavigate();
+  const { navigate } = useSerializedNavigationState();
   const [getOfferSummary] = useGetOfferSummaryMutation();
   const openDialog = useOpenDialog();
   const errorDialog = useShowError();

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Trans } from '@lingui/macro';
 import type { Wallet } from '@chinilla/api';
-import { DropdownActions, usePersistState } from '@chinilla/core';
+import { DropdownActions } from '@chinilla/core';
 import {
   AutoAwesome as AutoAwesomeIcon,
   PermIdentity as PermIdentityIcon,

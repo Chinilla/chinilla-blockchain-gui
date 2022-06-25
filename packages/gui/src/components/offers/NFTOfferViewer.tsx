@@ -547,9 +547,18 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
                         <Trans>NFT Purchase Price</Trans>
                       </Typography>
                       <Typography variant="body1">
-                        {exchangeType === NFTOfferExchangeType.NFTForHCX
-                          ? `${nftSaleInfo?.nftSellerNetAmount} ${currencyCode}`
-                          : `${amount} ${currencyCode}`}
+                        <>
+                          <FormatLargeNumber
+                            value={
+                              new BigNumber(
+                                exchangeType === NFTOfferExchangeType.NFTForHCX
+                                  ? nftSaleInfo?.nftSellerNetAmount ?? 0
+                                  : amount ?? 0,
+                              )
+                            }
+                          />{' '}
+                          {currencyCode}
+                        </>
                       </Typography>
                     </Flex>
                     <Flex flexDirection="column" gap={1}>

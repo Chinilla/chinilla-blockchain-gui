@@ -3,13 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Trans, t } from '@lingui/macro';
 import moment from 'moment';
 import BigNumber from 'bignumber.js';
-import {
-  Routes,
-  Route,
-  Navigate,
-  useNavigate,
-  useLocation,
-} from 'react-router-dom';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import {
   Button,
   ButtonLoading,
@@ -28,6 +22,7 @@ import {
   useOpenDialog,
   chinillaToVojo,
   useCurrencyCode,
+  useSerializedNavigationState,
   useShowSaveDialog,
   Tooltip,
   LayoutDashboardSub,
@@ -261,7 +256,7 @@ function OfferList(props: OfferListProps) {
   const { lookupByAssetId } = useAssetIdName();
   const testnet = useCurrencyCode() === 'THCX';
   const openDialog = useOpenDialog();
-  const navigate = useNavigate();
+  const { navigate } = useSerializedNavigationState();
   const {
     offers,
     isLoading: isWalletOffersLoading,
@@ -359,7 +354,9 @@ function OfferList(props: OfferListProps) {
               gap={0.5}
               key={`${index}-${info.displayName}`}
             >
-              <Typography variant="body2">{info.displayAmount}</Typography>
+              <Typography variant="body2">
+                {(info.displayAmount as any).toString()}
+              </Typography>
               <Typography noWrap variant="body2">
                 {info.displayName}
               </Typography>
@@ -382,7 +379,9 @@ function OfferList(props: OfferListProps) {
               gap={0.5}
               key={`${index}-${info.displayName}`}
             >
-              <Typography variant="body2">{info.displayAmount}</Typography>
+              <Typography variant="body2">
+                {(info.displayAmount as any).toString()}
+              </Typography>
               <Typography noWrap variant="body2">
                 {info.displayName}
               </Typography>
@@ -545,33 +544,12 @@ function OfferList(props: OfferListProps) {
 }
 
 export function OfferManager() {
-  // const { data, isLoading } = useGetAllOffersQuery();
   const navigate = useNavigate();
 
-  // const [myOffers, acceptedOffers]: OfferTradeRecord[] = useMemo(() => {
-  //   if (isLoading || !data) {
-  //     return [[], []];
-  //   }
-
-  //   // Show newest offers first
-  //   const sortedOffers = [...data].sort((a: OfferTradeRecord, b: OfferTradeRecord) => b.createdAtTime - a.createdAtTime);
-  //   const myOffers: OfferTradeRecord[] = [];
-  //   const acceptedOffers: OfferTradeRecord[] = [];
-
-  //   sortedOffers.forEach((offer) => {
-  //     if (offer.isMyOffer) {
-  //       myOffers.push(offer);
-  //     }
-  //     else {
-  //       acceptedOffers.push(offer);
-  //     }
-  //   });
-
-  //   return [myOffers, acceptedOffers];
-  // }, [data, isLoading]);
-
   function handleCreateTokenOffer() {
-    navigate('/dashboard/offers/create');
+    navigate('/dashboard/offers/create', {
+      state: { referrerPath: '/dashboard/offers' },
+    });
   }
 
   function handleCreateNFTOffer() {
@@ -659,7 +637,8 @@ export function OfferManager() {
 }
 
 export function CreateOffer() {
-  const location: any = useLocation();
+  const { getLocationState } = useSerializedNavigationState();
+  const locationState = getLocationState(); // For cases where we know that the state has been serialized
   const openDialog = useOpenDialog();
   const [saveOffer] = useSaveOfferFile();
   const testnet = useCurrencyCode() === 'THCX';
@@ -685,9 +664,9 @@ export function CreateOffer() {
           path="create"
           element={
             <CreateOfferEditor
-              walletId={location?.state?.walletId}
-              walletType={location?.state?.walletType}
-              referrerPath={location?.state?.referrerPath}
+              walletId={locationState?.walletId}
+              walletType={locationState?.walletType}
+              referrerPath={locationState?.referrerPath}
               onOfferCreated={handleOfferCreated}
             />
           }
@@ -696,8 +675,8 @@ export function CreateOffer() {
           path="create-with-nft"
           element={
             <CreateNFTOfferEditor
-              nft={location?.state?.nft}
-              referrerPath={location?.state?.referrerPath}
+              nft={locationState?.nft}
+              referrerPath={locationState?.referrerPath}
               onOfferCreated={handleOfferCreated}
             />
           }
@@ -708,11 +687,11 @@ export function CreateOffer() {
           path="view-nft"
           element={
             <NFTOfferViewer
-              tradeRecord={location?.state?.tradeRecord}
-              offerData={location?.state?.offerData}
-              offerSummary={location?.state?.offerSummary}
-              offerFilePath={location?.state?.offerFilePath}
-              imported={location?.state?.imported}
+              tradeRecord={locationState?.tradeRecord}
+              offerData={locationState?.offerData}
+              offerSummary={locationState?.offerSummary}
+              offerFilePath={locationState?.offerFilePath}
+              imported={locationState?.imported}
             />
           }
         />
@@ -720,11 +699,11 @@ export function CreateOffer() {
           path="view"
           element={
             <OfferViewer
-              tradeRecord={location?.state?.tradeRecord}
-              offerData={location?.state?.offerData}
-              offerSummary={location?.state?.offerSummary}
-              offerFilePath={location?.state?.offerFilePath}
-              imported={location?.state?.imported}
+              tradeRecord={locationState?.tradeRecord}
+              offerData={locationState?.offerData}
+              offerSummary={locationState?.offerSummary}
+              offerFilePath={locationState?.offerFilePath}
+              imported={locationState?.imported}
             />
           }
         />
