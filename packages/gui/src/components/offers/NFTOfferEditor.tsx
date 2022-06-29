@@ -583,7 +583,7 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
 
     const { exchangeType, launcherId, hcxAmount, fee } = formData;
 
-    if (exchangeType === NFTOfferExchangeType.NFTForXCH) {
+    if (exchangeType === NFTOfferExchangeType.NFTForHCX) {
       const haveNFT =
         nfts.find((nft: NFTInfo) => nft.$nftId === offerNFT.$nftId) !==
         undefined;
