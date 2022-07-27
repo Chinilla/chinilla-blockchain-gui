@@ -25,8 +25,6 @@ app.disableHardwareAcceleration();
 initialize();
 
 const appIcon = nativeImage.createFromPath(path.join(__dirname, AppIcon));
-let isSimulator = process.env.LOCAL_TEST === 'true';
-const isDev = process.env.NODE_ENV === 'development';
 
 function renderAbout(): string {
   const sheet = new ServerStyleSheet();
@@ -113,17 +111,6 @@ if (!handleSquirrelEvent()) {
 
   const createMenu = () => Menu.buildFromTemplate(getMenuTemplate());
 
-  function toggleSimulatorMode() {
-    isSimulator = !isSimulator;
-
-    if (mainWindow) {
-      mainWindow.webContents.send('simulator-mode', isSimulator);
-    }
-
-    if (app) {
-      app.applicationMenu = createMenu();
-    }
-  }
 
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
@@ -308,13 +295,6 @@ if (!handleSquirrelEvent()) {
         mainWindow.setIcon(appIcon);
       }
 
-      /*
-      if (isSimulator || isDev) {
-        await app.whenReady();
-        installExtension(REDUX_DEVTOOLS);
-        installExtension(REACT_DEVELOPER_TOOLS);
-      }*/
-
       mainWindow.once('ready-to-show', () => {
         mainWindow.show();
       });
@@ -412,9 +392,6 @@ if (!handleSquirrelEvent()) {
       app.applicationMenu = createMenu();
     });
 
-    ipcMain.on('isSimulator', (event) => {
-      event.returnValue = isSimulator;
-    });
   }
 
   const getMenuTemplate = () => {
@@ -479,12 +456,12 @@ if (!handleSquirrelEvent()) {
                     : 'Ctrl+Shift+I',
                 click: () => mainWindow.toggleDevTools(),
               },
-              {
-                label: isSimulator
-                  ? i18n._(/* i18n */ { id: 'Disable Simulator' })
-                  : i18n._(/* i18n */ { id: 'Enable Simulator' }),
-                click: () => toggleSimulatorMode(),
-              },
+              //{
+                //label: isSimulator
+                //  ? i18n._(/* i18n */ { id: 'Disable Simulator' })
+               //   : i18n._(/* i18n */ { id: 'Enable Simulator' }),
+               // click: () => toggleSimulatorMode(),
+              //},
             ],
           },
           {

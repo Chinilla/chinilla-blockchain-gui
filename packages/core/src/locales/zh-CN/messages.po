@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh_CN\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-05-30 00:56\n"
+"PO-Revision-Date: 2022-06-01 00:56\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -825,7 +825,7 @@ msgstr "放弃"
 #~ msgid "Enter your passphrase:"
 #~ msgstr "Enter your passphrase:"
 
-#: src/components/CardSimple/CardSimple.tsx:60
+#: src/components/CardSimple/CardSimple.tsx:63
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "错误"
@@ -1270,8 +1270,8 @@ msgstr "加载密钥列表"
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:134
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:156
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:128
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:150
 msgid "Log Out"
 msgstr "登出"
 
@@ -1279,7 +1279,7 @@ msgstr "登出"
 #~ msgid "Logging in"
 #~ msgstr "Logging in"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:152
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:146
 msgid "Logout"
 msgstr "登出"
 
@@ -2880,7 +2880,7 @@ msgstr "值似乎过高"
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr "Waiting for the transaction to be confirmed"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "钱包"
@@ -3172,7 +3172,7 @@ msgstr "您的密钥尚未迁移到新的密钥串。在迁移完成之前，您
 
 #: src/components/Amount/Amount.tsx:96
 msgid "{0, plural, one {vojo} other {vojos}}"
-msgstr ""
+msgstr "{0, plural, one {vojo} other {vojos}}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:16
 #~ msgid "{0} Block Rewards"

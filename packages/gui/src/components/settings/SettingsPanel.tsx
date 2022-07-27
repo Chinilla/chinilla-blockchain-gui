@@ -12,6 +12,7 @@ import {
   Flex,
   StateTypography,
   State,
+  TooltipIcon,
 } from '@chinilla/core';
 import { useGetKeyringStatusQuery } from '@chinilla/api-react';
 import {
@@ -28,6 +29,7 @@ import {
 import ChangePassphrasePrompt from './ChangePassphrasePrompt';
 import RemovePassphrasePrompt from './RemovePassphrasePrompt';
 import SetPassphrasePrompt from './SetPassphrasePrompt';
+import SettingsDerivationIndex from './SettingsDerivationIndex';
 
 const useStyles = makeStyles((theme) => ({
   passToggleBox: {
@@ -66,7 +68,7 @@ export default function SettingsPanel() {
     );
   }
 
-  const passphraseSupportEnabled = keyringStatus?.passphraseSupportEnabled ?? false; 
+  const passphraseSupportEnabled = keyringStatus?.passphraseSupportEnabled ?? false;
 
   const {
     userPassphraseIsSet,
@@ -132,7 +134,7 @@ export default function SettingsPanel() {
       tooltipTitle = (<Trans>Passphrase support requires migrating your keys to a new keyring</Trans>);
     } else {
       tooltipTitle = (<Trans>Secure your keychain using a strong passphrase</Trans>);
-      
+
       if (userPassphraseIsSet) {
         icon = (<LockIcon style={{ color: '#3AAC59',  marginRight: 6 }} />);
         statusMessage = (<Trans>Passphrase protection is enabled</Trans>);
@@ -211,29 +213,44 @@ export default function SettingsPanel() {
 
   return (
     <SettingsApp>
-      {passphraseSupportEnabled && (
-        <Flex flexDirection="column" gap={1}>
-          <SettingsLabel>
-            <Trans>Passphrase</Trans>
-          </SettingsLabel>
+      <Flex flexDirection="column" gap={1}>
+        <SettingsLabel>
+          <Flex gap={1} alignItems="center">
+            <Trans>Derivation Index</Trans>
+            <TooltipIcon>
+              <Trans>
+                The derivation index sets the range of wallet addresses that the wallet scans the blockchain for.
+                This number is generally higher if you have a lot of transactions or canceled offers for HCX, CATs, or NFTs.
+                If you believe your balance is incorrect because it’s missing coins,
+                then increasing the derivation index could help the wallet include the missing coins in the balance total.
+              </Trans>
+            </TooltipIcon>
+          </Flex>
+        </SettingsLabel>
 
-          <DisplayChangePassphrase />
-          <ActionButtons />
-          {removePassphraseOpen && (
-            <RemovePassphrasePrompt
-              onSuccess={removePassphraseSucceeded}
-              onCancel={closeRemovePassphrase}
-            />
-          )}
-          {addPassphraseOpen && (
-            <SetPassphrasePrompt
-              onSuccess={setPassphraseSucceeded}
-              onCancel={closeSetPassphrase}
-            />
-          )}
-          <PassphraseFeatureStatus />
-        </Flex>
-      )}
+        <SettingsDerivationIndex />
+      </Flex>
+      <Flex flexDirection="column" gap={1}>
+        <SettingsLabel>
+          <Trans>Passphrase</Trans>
+        </SettingsLabel>
+
+        <DisplayChangePassphrase />
+        <ActionButtons />
+        {removePassphraseOpen && (
+          <RemovePassphrasePrompt
+            onSuccess={removePassphraseSucceeded}
+            onCancel={closeRemovePassphrase}
+          />
+        )}
+        {addPassphraseOpen && (
+          <SetPassphrasePrompt
+            onSuccess={setPassphraseSucceeded}
+            onCancel={closeSetPassphrase}
+          />
+        )}
+        <PassphraseFeatureStatus />
+      </Flex>
     </SettingsApp>
   );
 }

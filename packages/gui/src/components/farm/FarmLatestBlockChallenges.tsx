@@ -63,18 +63,6 @@ export default function FarmLatestBlockChallenges() {
         }
         pages
       />
-      <Typography variant="caption">
-        <Trans>
-          *Want to explore Chinilla’s blocks further? Check out{' '}
-          <Link
-            color="primary"
-            href="https://www.chinilla.com/blockchain"
-            target="_blank"
-          >
-            Chinilla Explorer
-          </Link>{' '}
-        </Trans>
-      </Typography>
     </Card>
   );
 }

@@ -14,3 +14,4 @@ export { default as vojoToChinilla } from './vojoToChinilla';
 export { default as vojoToChinillaLocaleString } from './vojoToChinillaLocaleString';
 export { default as sleep } from './sleep';
 export { default as useColorModeValue } from './useColorModeValue';
+export { default as validAddress } from './validAddress';

@@ -825,7 +825,7 @@ msgstr "放棄"
 #~ msgid "Enter your passphrase:"
 #~ msgstr "Enter your passphrase:"
 
-#: src/components/CardSimple/CardSimple.tsx:60
+#: src/components/CardSimple/CardSimple.tsx:63
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "錯誤"
@@ -1270,8 +1270,8 @@ msgstr ""
 #~ msgid "Local Harvester Plots"
 #~ msgstr "Local Harvester Plots"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:134
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:156
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:128
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:150
 msgid "Log Out"
 msgstr ""
 
@@ -1279,7 +1279,7 @@ msgstr ""
 #~ msgid "Logging in"
 #~ msgstr "Logging in"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:152
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:146
 msgid "Logout"
 msgstr ""
 
@@ -2880,7 +2880,7 @@ msgstr "數值有點高"
 #~ msgid "Waiting for the transaction to be confirmed"
 #~ msgstr "Waiting for the transaction to be confirmed"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr ""
