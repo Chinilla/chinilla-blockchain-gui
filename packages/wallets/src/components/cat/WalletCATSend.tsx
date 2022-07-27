@@ -15,7 +15,6 @@ import {
   catToVojo,
   useIsSimulator,
   useCurrencyCode,
-  toBech32m,
   getTransactionResult,
   TooltipIcon,
 } from '@chinilla/core';
@@ -23,7 +22,7 @@ import {
   useSpendCATMutation,
   useFarmBlockMutation,
 } from '@chinilla/api-react';
-import { SyncingStatus } from '@chinilla/api';
+import { SyncingStatus, toBech32m } from '@chinilla/api';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import { Grid, Typography } from '@mui/material';

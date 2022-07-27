@@ -1,6 +1,6 @@
+import { toBech32m, fromBech32m } from '@chinilla/api';
 import type { PlotNFT } from '@chinilla/api';
 import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@chinilla/api-react';
-import { toBech32m, fromBech32m } from '@chinilla/core';
 
 export default function usePayoutAddress(nft: PlotNFT): {
   loading: boolean;
