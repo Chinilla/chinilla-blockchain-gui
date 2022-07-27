@@ -129,8 +129,6 @@ msgstr "Pridať vlastný token"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:170
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -177,10 +175,9 @@ msgstr "Pridávanie tokenu {0}"
 msgid "Address"
 msgstr "Adresa"
 
-#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:154
+#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "Adresa"
 
@@ -196,12 +193,10 @@ msgstr "Adresa"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:228
-#: src/components/WalletSend.tsx:166
 #: src/components/cat/WalletCATSend.tsx:206
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
+#: src/components/WalletHistory.tsx:228
+#: src/components/WalletSend.tsx:166
 msgid "Amount"
 msgstr "Suma"
 
@@ -406,9 +401,8 @@ msgstr "Zrušiť"
 #~ msgid "Cancel on blockchain"
 #~ msgstr "Zrušiť na blockchaine"
 
-#: src/components/WalletSend.tsx:103
 #: src/components/cat/WalletCATSend.tsx:118
-#: src/components/WalletSend.tsx:101
+#: src/components/WalletSend.tsx:103
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Chinilla nie je možné odoslať na farebnú adresu. Zadajte prosím Chinilla adresu."
 
@@ -704,10 +698,9 @@ msgstr "Vytvoriť Používateľskú Peňaženku s Obmedzenou Sadzbou"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:136
+#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "Vytvoriť transakciu"
 
@@ -1086,9 +1079,8 @@ msgstr "Chyba Zdá sa, že zadaná adresa je pre inú farbu."
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:186
 #: src/components/cat/WalletCATSend.tsx:240
-#: src/components/WalletSend.tsx:184
+#: src/components/WalletSend.tsx:186
 msgid "Farm"
 msgstr "Farma"
 
@@ -1149,14 +1141,12 @@ msgstr "Farma"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:240
-#: src/components/WalletSend.tsx:177
 #: src/components/cat/WalletCATSend.tsx:219
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
+#: src/components/WalletHistory.tsx:240
+#: src/components/WalletSend.tsx:177
 msgid "Fee"
 msgstr "Poplatok"
 
@@ -1608,9 +1598,8 @@ msgstr "Spravovať obnovovacie DID"
 msgid "Manage token list"
 msgstr "Spravovať zoznam tokenov"
 
-#: src/components/WalletHistory.tsx:172
 #: src/components/cat/WalletCATSend.tsx:231
-#: src/components/WalletHistory.tsx:116
+#: src/components/WalletHistory.tsx:172
 msgid "Memo"
 msgstr "Poznámka"
 
@@ -1868,9 +1857,8 @@ msgstr "Ponuka prijatá"
 #~ msgid "Offers you created"
 #~ msgstr "Ponuky, ktoré ste vytvorili"
 
-#: src/components/WalletSend.tsx:141
 #: src/components/cat/WalletCATSend.tsx:179
-#: src/components/WalletSend.tsx:139
+#: src/components/WalletSend.tsx:141
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Priemerný čas medzi jednotlivými blokmi transakcií je jedna minúta. Ak nedôjde k preťaženiu, môžete očakávať, že vaša transakcia bude zahrnutá za menej ako minútu."
 
@@ -2049,10 +2037,9 @@ msgstr "Prosím zadajte platnú počiatočnú sumu"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Zadajte prosím platné celé číslo od 0 alebo vyššie pre počet záložných ID potrebných na obnovu."
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:91
+#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "Prosím zadajte platnú číselnú sumu"
 
@@ -2060,11 +2047,10 @@ msgstr "Prosím zadajte platnú číselnú sumu"
 msgid "Please enter a valid numeric amount."
 msgstr "Zadajte prosím platnú číselnú sumu."
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:96
+#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "Prosím zadajte platný číselný poplatok"
 
@@ -2106,10 +2092,9 @@ msgstr "Prosím zadajte platný názov peňaženky"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:86
+#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "Pred uskutočnením transakcie dokončite synchronizáciu"
 
@@ -2717,12 +2702,10 @@ msgstr "Vybratý obnovovací súbor:"
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:196
 #: src/components/cat/WalletCATSend.tsx:250
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
+#: src/components/WalletSend.tsx:196
 msgid "Send"
 msgstr "Odoslať"
 

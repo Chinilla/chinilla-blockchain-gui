@@ -129,8 +129,6 @@ msgstr "添加自定义代币"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:170
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -177,10 +175,9 @@ msgstr "添加 {0} 代币"
 msgid "Address"
 msgstr "地址"
 
-#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:154
+#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "地址 / 谜语哈希"
 
@@ -196,12 +193,10 @@ msgstr "地址 / 谜语哈希"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:228
-#: src/components/WalletSend.tsx:166
 #: src/components/cat/WalletCATSend.tsx:206
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
+#: src/components/WalletHistory.tsx:228
+#: src/components/WalletSend.tsx:166
 msgid "Amount"
 msgstr "数量"
 
@@ -406,9 +401,8 @@ msgstr "取消"
 #~ msgid "Cancel on blockchain"
 #~ msgstr "在区块链上取消"
 
-#: src/components/WalletSend.tsx:103
 #: src/components/cat/WalletCATSend.tsx:118
-#: src/components/WalletSend.tsx:101
+#: src/components/WalletSend.tsx:103
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr ""
 
@@ -704,10 +698,9 @@ msgstr "创建费用限定型用户钱包"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:136
+#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "发起交易"
 
@@ -1086,9 +1079,8 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:186
 #: src/components/cat/WalletCATSend.tsx:240
-#: src/components/WalletSend.tsx:184
+#: src/components/WalletSend.tsx:186
 msgid "Farm"
 msgstr "农场"
 
@@ -1149,14 +1141,12 @@ msgstr "农场"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:240
-#: src/components/WalletSend.tsx:177
 #: src/components/cat/WalletCATSend.tsx:219
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
+#: src/components/WalletHistory.tsx:240
+#: src/components/WalletSend.tsx:177
 msgid "Fee"
 msgstr "费用"
 
@@ -1612,9 +1602,8 @@ msgstr "管理恢复去中心化标识"
 msgid "Manage token list"
 msgstr "管理代币列表"
 
-#: src/components/WalletHistory.tsx:172
 #: src/components/cat/WalletCATSend.tsx:231
-#: src/components/WalletHistory.tsx:116
+#: src/components/WalletHistory.tsx:172
 msgid "Memo"
 msgstr "备注"
 
@@ -1876,9 +1865,8 @@ msgstr "报价已接受"
 #~ msgid "Offers you created"
 #~ msgstr ""
 
-#: src/components/WalletSend.tsx:141
 #: src/components/cat/WalletCATSend.tsx:179
-#: src/components/WalletSend.tsx:139
+#: src/components/WalletSend.tsx:141
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "每个交易区块平均打包时间为一分钟。通常您的交易将在一分钟内被确认，除非出现拥堵。"
 
@@ -2057,10 +2045,9 @@ msgstr "请输入一个有效的初始币数量"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "请输入一个大于或者等于 0 的整数，用于恢复所需的备份ID。"
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:91
+#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "请输入一个正确的数目"
 
@@ -2068,11 +2055,10 @@ msgstr "请输入一个正确的数目"
 msgid "Please enter a valid numeric amount."
 msgstr "请输入有效的数字金额。"
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:96
+#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "请输入一个正确的费用"
 
@@ -2114,10 +2100,9 @@ msgstr "请输入有效的钱包名称"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:86
+#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "同步完成后才能发起交易。"
 
@@ -2725,12 +2710,10 @@ msgstr "选择恢复文件："
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:196
 #: src/components/cat/WalletCATSend.tsx:250
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
+#: src/components/WalletSend.tsx:196
 msgid "Send"
 msgstr "发送"
 
@@ -3843,14 +3826,14 @@ msgstr "您粘贴的列表中未包含24个有效的助记词。"
 #~ msgid "{makerFee, plural, one {mojo} other {mojos}}"
 #~ msgstr "{makerFee, plural, one {mojo} other {mojos}}"
 
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
-#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
-
 #: src/components/offers/OfferSummaryRow.tsx:41
 #: src/components/offers/OfferViewer.tsx:95
 #~ msgid "{mojos, plural, one {mojo} other {mojos}}"
 #~ msgstr "{mojos, plural, one {mojo} other {mojos}}"
+
+#: src/components/core/components/Amount/Amount.tsx:82
+#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
+#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 #~ msgid "{warning}"

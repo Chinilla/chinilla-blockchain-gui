@@ -124,7 +124,7 @@ export default function WalletsSidebar() {
     });
 
   function handleOpenBlogPost() {
-    openExternal('https://www.chinilla.com/cat2blog');
+    openExternal('https://www.chinilla.com/cat2');
   }
 
   function openTokensInfoDialog() {
@@ -139,31 +139,11 @@ export default function WalletsSidebar() {
             <Trans>
               We've made an upgrade to the CAT standard which requires all CATs
               to be re-issued. You will be airdropped your new tokens as they
-              are re-issued by the original issuers. The airdropped tokens will
-              be based on the balance as of block height:
-              <br />
-              <FormatLargeNumber value={2311760} />
-              <br />
-              (Approximate time: July 26th, 2022 @ 17:00 UTC)
+              are re-issued by the original issuers.
             </Trans>
           </Typography>
           <ActionsStyled>
             <Flex gap={3} flexDirection="column" width="100%">
-              <Button
-                variant="outlined"
-                size="large"
-                onClick={() =>
-                  openExternal(
-                    'https://cat1.chinilla.com/#publicKey=' +
-                      privateKey.pk +
-                      '&fingerprint=' +
-                      fingerprint
-                  )
-                }
-                disabled={isLoadingFingerprint || isLoadingPrivateKey}
-              >
-                <Trans>Check my snapshot balance</Trans>
-              </Button>
               <Button variant="outlined" size="large" onClick={handleOpenBlogPost}>
                 <Trans>Read the blog post for details</Trans>
               </Button>
@@ -172,7 +152,7 @@ export default function WalletsSidebar() {
           <p>
             <Trans>Want to see your old balance for yourself?</Trans>
           </p>
-          <Link target="_blank" href="https://www.chinilla.com/download/">
+          <Link target="_blank" href="https://www.chinilla.com/download">
             <Trans>Click here to download an older version of the wallet</Trans>
           </Link>
         </ContentStyled>

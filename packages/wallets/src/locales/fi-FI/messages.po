@@ -129,8 +129,6 @@ msgstr "Lisää Kustomoitu Token"
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:170
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -177,10 +175,9 @@ msgstr "Lisätään {0} token"
 msgid "Address"
 msgstr "Osoite"
 
-#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:154
+#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "Osoite / Puzzle-tiiviste"
 
@@ -196,12 +193,10 @@ msgstr "Osoite / Puzzle-tiiviste"
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:228
-#: src/components/WalletSend.tsx:166
 #: src/components/cat/WalletCATSend.tsx:206
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
+#: src/components/WalletHistory.tsx:228
+#: src/components/WalletSend.tsx:166
 msgid "Amount"
 msgstr "Määrä"
 
@@ -406,9 +401,8 @@ msgstr "Peru"
 #~ msgid "Cancel on blockchain"
 #~ msgstr "Peru lohkoketjussa"
 
-#: src/components/WalletSend.tsx:103
 #: src/components/cat/WalletCATSend.tsx:118
-#: src/components/WalletSend.tsx:101
+#: src/components/WalletSend.tsx:103
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Chinillaa (HCX) ei voi lähettää CAT-osoitteeseen. Anna chinilla-osoite."
 
@@ -704,10 +698,9 @@ msgstr "Luo Siirtorajoitettu Käyttäjälompakko"
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:136
+#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "Luo Transaktio"
 
@@ -1086,9 +1079,8 @@ msgstr "Virhe, annettu osoite näyttää olevan eri tokenille."
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:186
 #: src/components/cat/WalletCATSend.tsx:240
-#: src/components/WalletSend.tsx:184
+#: src/components/WalletSend.tsx:186
 msgid "Farm"
 msgstr "Farmi"
 
@@ -1149,14 +1141,12 @@ msgstr "Farmi"
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:240
-#: src/components/WalletSend.tsx:177
 #: src/components/cat/WalletCATSend.tsx:219
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
+#: src/components/WalletHistory.tsx:240
+#: src/components/WalletSend.tsx:177
 msgid "Fee"
 msgstr "Veloitus"
 
@@ -1608,9 +1598,8 @@ msgstr "Hallitse Palautus-DID:jä"
 msgid "Manage token list"
 msgstr "Hallitse tokenilistaa"
 
-#: src/components/WalletHistory.tsx:172
 #: src/components/cat/WalletCATSend.tsx:231
-#: src/components/WalletHistory.tsx:116
+#: src/components/WalletHistory.tsx:172
 msgid "Memo"
 msgstr "Muistio"
 
@@ -1868,9 +1857,8 @@ msgstr "Tarjous Hyväksytty"
 #~ msgid "Offers you created"
 #~ msgstr "Luomasi tarjoukset"
 
-#: src/components/WalletSend.tsx:141
 #: src/components/cat/WalletCATSend.tsx:179
-#: src/components/WalletSend.tsx:139
+#: src/components/WalletSend.tsx:141
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Transaktiolohkon väli on keskimäärin minuutti. Ruuhkattomana aikana transaktiosi voidaan lisätä alle minuutissa lohkoketjuun."
 
@@ -2049,10 +2037,9 @@ msgstr "Anna käypä kolikoiden määrä"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Syötä kelvollinen 0 tai suurempi kokonaisluku varmuuskopion tunnusten lukumäärälle, jota tarvitaan palauttamiseen."
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:91
+#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "Anna käypä numeerinen arvo"
 
@@ -2060,11 +2047,10 @@ msgstr "Anna käypä numeerinen arvo"
 msgid "Please enter a valid numeric amount."
 msgstr "Anna kelvollinen numeerinen summa."
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:96
+#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "Anna käypä numeerinen veloitus"
 
@@ -2106,10 +2092,9 @@ msgstr "Anna kelvollinen lompakon nimi"
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:86
+#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "Synkronoi loppuun ennen transaktion tekemistä"
 
@@ -2717,12 +2702,10 @@ msgstr "Valittu palautustiedosto:"
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:196
 #: src/components/cat/WalletCATSend.tsx:250
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
+#: src/components/WalletSend.tsx:196
 msgid "Send"
 msgstr "Lähetä"
 
@@ -3108,8 +3091,12 @@ msgstr "Lähtevien ja saapuvien avointen transaktioiden summa (ei vielä lohkoke
 #~ msgstr "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Yksityisten avaimiesi hallinoimien Chiojen kokonaissumma lohkoketjussa. Sisälytää jäädytetyt palkkiot, mutta ei keskeneräisiä tulevia tai lähteviä transaktioita."
+msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "Yksityisten avaimiesi hallinoimien Chiojen kokonaissumma lohkoketjussa. Sisälytää jäädytetyt palkkiot, mutta ei keskeneräisiä tulevia tai lähteviä transaktioita."
 
 #: src/components/standard/WalletStandardCards.tsx:16
 #~ msgid "This is the total amount of chinilla in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."

@@ -129,8 +129,6 @@ msgstr ""
 #~ msgid "Add Plot to Queue"
 #~ msgstr "Add Plot to Queue"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:170
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -177,10 +175,9 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:154
+#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr ""
 
@@ -196,12 +193,10 @@ msgstr ""
 #~ msgid "Alternate tmpdir/tmpdir2"
 #~ msgstr "Alternate tmpdir/tmpdir2"
 
-#: src/components/WalletHistory.tsx:228
-#: src/components/WalletSend.tsx:166
 #: src/components/cat/WalletCATSend.tsx:206
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
+#: src/components/WalletHistory.tsx:228
+#: src/components/WalletSend.tsx:166
 msgid "Amount"
 msgstr "How much beer money"
 
@@ -406,9 +401,8 @@ msgstr "Yeh Nah"
 #~ msgid "Cancel on blockchain"
 #~ msgstr ""
 
-#: src/components/WalletSend.tsx:103
 #: src/components/cat/WalletCATSend.tsx:118
-#: src/components/WalletSend.tsx:101
+#: src/components/WalletSend.tsx:103
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr ""
 
@@ -704,10 +698,9 @@ msgstr ""
 #~ msgid "Create Trade Offer"
 #~ msgstr "Create Trade Offer"
 
-#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:136
+#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr ""
 
@@ -1086,9 +1079,8 @@ msgstr ""
 #~ msgid "Failed to update passphrase: {error}"
 #~ msgstr "Failed to update passphrase: {error}"
 
-#: src/components/WalletSend.tsx:186
 #: src/components/cat/WalletCATSend.tsx:240
-#: src/components/WalletSend.tsx:184
+#: src/components/WalletSend.tsx:186
 msgid "Farm"
 msgstr ""
 
@@ -1149,14 +1141,12 @@ msgstr ""
 #~ msgid "Farming Status"
 #~ msgstr "Farming Status"
 
-#: src/components/WalletHistory.tsx:240
-#: src/components/WalletSend.tsx:177
 #: src/components/cat/WalletCATSend.tsx:219
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
+#: src/components/WalletHistory.tsx:240
+#: src/components/WalletSend.tsx:177
 msgid "Fee"
 msgstr ""
 
@@ -1604,9 +1594,8 @@ msgstr ""
 msgid "Manage token list"
 msgstr ""
 
-#: src/components/WalletHistory.tsx:172
 #: src/components/cat/WalletCATSend.tsx:231
-#: src/components/WalletHistory.tsx:116
+#: src/components/WalletHistory.tsx:172
 msgid "Memo"
 msgstr ""
 
@@ -1864,9 +1853,8 @@ msgstr ""
 #~ msgid "Offers you created"
 #~ msgstr ""
 
-#: src/components/WalletSend.tsx:141
 #: src/components/cat/WalletCATSend.tsx:179
-#: src/components/WalletSend.tsx:139
+#: src/components/WalletSend.tsx:141
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute, so sit back, relax, and have another drink."
 
@@ -2045,10 +2033,9 @@ msgstr ""
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr ""
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:91
+#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr ""
 
@@ -2056,11 +2043,10 @@ msgstr ""
 msgid "Please enter a valid numeric amount."
 msgstr ""
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:96
+#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr ""
 
@@ -2102,10 +2088,9 @@ msgstr ""
 #~ msgid "Please enter your passphrase to proceed"
 #~ msgstr "Please enter your passphrase to proceed"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:86
+#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr ""
 
@@ -2713,12 +2698,10 @@ msgstr ""
 #~ msgid "Sell"
 #~ msgstr "Sell"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:196
 #: src/components/cat/WalletCATSend.tsx:250
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
+#: src/components/WalletSend.tsx:196
 msgid "Send"
 msgstr ""
 
