@@ -100,7 +100,7 @@ msgstr "암호 보호 비활성화"
 msgid "Discard"
 msgstr "디스코드"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "오류"
@@ -162,12 +162,12 @@ msgstr "밝은 테마"
 msgid "Loading list of the keys"
 msgstr "키 목록 로드 중"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "로그아웃"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "로그아웃"
 
@@ -326,7 +326,7 @@ msgstr "키를 보호하려면 암호를 사용하는 것이 좋습니다. 암�
 msgid "Value seems high"
 msgstr "값이 높음"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "내 지갑"

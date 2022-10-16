@@ -100,7 +100,7 @@ msgstr "Deshabilitar protección de frase de contraseña"
 msgid "Discard"
 msgstr "Descartar"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Error"
@@ -162,12 +162,12 @@ msgstr "Claro"
 msgid "Loading list of the keys"
 msgstr "Cargando lista de llaves"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "Cerrar sesión"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "Cerrar sesión"
 
@@ -326,7 +326,7 @@ msgstr "Se recomienda encarecidamente utilizar una frase de contraseña para pro
 msgid "Value seems high"
 msgstr "El valor parece alto"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Cartera"

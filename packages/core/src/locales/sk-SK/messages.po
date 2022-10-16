@@ -100,7 +100,7 @@ msgstr "Deaktivovať ochranu prístupovou frázou"
 msgid "Discard"
 msgstr "Odstrániť"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Chyba"
@@ -162,12 +162,12 @@ msgstr "Svetlý"
 msgid "Loading list of the keys"
 msgstr "Načítavanie zoznamu kľúčov"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "Odhlásiť sa"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "Odhlásiť"
 
@@ -326,7 +326,7 @@ msgstr "Na ochranu vašich kľúčov sa dôrazne odporúča používať prístup
 msgid "Value seems high"
 msgstr "Hodnota sa zdá byť vysoká"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Peňaženka"

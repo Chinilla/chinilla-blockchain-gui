@@ -100,7 +100,7 @@ msgstr "Inaktivera lösenfrasskydd"
 msgid "Discard"
 msgstr "Spara inte"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Fel"
@@ -162,12 +162,12 @@ msgstr "Ljust"
 msgid "Loading list of the keys"
 msgstr "Läser in en lista över nycklarna"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "Logga ut"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "Logga ut"
 
@@ -326,7 +326,7 @@ msgstr "Att använda en lösenfras rekommenderas starkt för att skydda dina nyc
 msgid "Value seems high"
 msgstr "Värdet verkar högt"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Plånbok"

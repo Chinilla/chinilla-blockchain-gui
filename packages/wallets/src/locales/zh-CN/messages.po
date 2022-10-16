@@ -44,8 +44,6 @@ msgstr "添加备份 ID"
 msgid "Add Custom Token"
 msgstr "添加自定义代币"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:170
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -63,19 +61,16 @@ msgstr "添加 {0} 代币"
 msgid "Address"
 msgstr "地址"
 
-#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:154
+#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "地址 / 谜语哈希"
 
-#: src/components/WalletHistory.tsx:226
-#: src/components/WalletSend.tsx:167
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
+#: src/components/WalletHistory.tsx:226
+#: src/components/WalletSend.tsx:167
 msgid "Amount"
 msgstr "数量"
 
@@ -116,8 +111,8 @@ msgstr "余额"
 msgid "Cancel"
 msgstr "取消"
 
-#: src/components/WalletSend.tsx:103
 #: src/components/cat/WalletCATSend.tsx:118
+#: src/components/WalletSend.tsx:103
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "错误: 无法发送奇亚到上色的地址. 请输入一个奇亚钱包地址."
 
@@ -212,10 +207,9 @@ msgstr "创建费用限定型管理钱包"
 msgid "Create Rate Limited User Wallet"
 msgstr "创建费用限定型用户钱包"
 
-#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:136
+#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "发起交易"
 
@@ -235,11 +229,14 @@ msgstr "自定义"
 msgid "DID Wallet"
 msgstr "DID钱包"
 
+#: src/constants/WalletName.ts:38
+msgid "Datalayer Wallet"
+msgstr ""
+
 #: src/components/WalletHistory.tsx:199
 msgid "Date"
 msgstr "日期"
 
-#: src/components/WalletHeader.tsx:38
 #: src/components/cat/WalletDID.tsx:448
 #: src/components/cat/WalletDID.tsx:862
 #: src/components/did/WalletDID.tsx:448
@@ -254,7 +251,7 @@ msgstr "删除"
 msgid "Delete Unconfirmed Transactions"
 msgstr "删除未确认的交易"
 
-#: src/components/card/WalletCardTotalBalance.tsx:63
+#: src/components/card/WalletCardTotalBalance.tsx:74
 msgid "Derivation Index: {0}"
 msgstr "派生索引: {0}"
 
@@ -280,19 +277,17 @@ msgstr "请输入你保存的24个助记词来恢复奇亚钱包"
 msgid "Error the entered address appears to be for a different colour."
 msgstr "错误，输入的地址似乎有不同的颜色。"
 
-#: src/components/WalletSend.tsx:189
 #: src/components/cat/WalletCATSend.tsx:244
+#: src/components/WalletSend.tsx:189
 msgid "Farm"
 msgstr "农场"
 
-#: src/components/WalletHistory.tsx:238
-#: src/components/WalletSend.tsx:179
 #: src/components/cat/WalletCATSend.tsx:221
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
+#: src/components/WalletHistory.tsx:238
+#: src/components/WalletSend.tsx:179
 msgid "Fee"
 msgstr "费用"
 
@@ -359,8 +354,8 @@ msgstr "管理恢复去中心化标识"
 msgid "Manage token list"
 msgstr "管理代币列表"
 
-#: src/components/WalletHistory.tsx:170
 #: src/components/cat/WalletCATSend.tsx:234
+#: src/components/WalletHistory.tsx:170
 msgid "Memo"
 msgstr "备注"
 
@@ -443,9 +438,8 @@ msgstr "确定"
 msgid "Offer Accepted"
 msgstr "报价已接受"
 
-#: src/components/WalletSend.tsx:141
 #: src/components/cat/WalletCATSend.tsx:179
-#: src/components/WalletSend.tsx:139
+#: src/components/WalletSend.tsx:141
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "每个交易区块平均打包时间为一分钟。通常您的交易将在一分钟内被确认，除非出现拥堵。"
 
@@ -457,7 +451,7 @@ msgstr "只允许一个备份文件。"
 msgid "Outgoing"
 msgstr "支出"
 
-#: src/components/WalletImport.tsx:95
+#: src/components/WalletImport.tsx:96
 msgid "Paste Mnemonic"
 msgstr "粘贴助记符"
 
@@ -528,10 +522,9 @@ msgstr "请输入一个有效的初始币数量"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "请输入一个大于或者等于 0 的整数，用于恢复所需的备份ID。"
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:91
+#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "请输入一个正确的数目"
 
@@ -539,11 +532,10 @@ msgstr "请输入一个正确的数目"
 msgid "Please enter a valid numeric amount."
 msgstr "请输入有效的数字金额。"
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:96
+#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "请输入一个正确的费用"
 
@@ -567,10 +559,9 @@ msgstr "请输入有效的令牌名称"
 msgid "Please enter valid wallet name"
 msgstr "请输入有效的钱包名称"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:86
+#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "同步完成后才能发起交易。"
 
@@ -667,7 +658,6 @@ msgstr "可恢复的钱包"
 msgid "Recovery Wallet"
 msgstr "恢复钱包"
 
-#: src/components/WalletRenameDialog.tsx:69
 #: src/components/cat/WalletCAT.tsx:102
 #: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
@@ -681,11 +671,14 @@ msgstr "废弃"
 msgid "Save"
 msgstr "保存"
 
-#: src/components/WalletTokenCard.tsx:144
+#: src/components/WalletTokenCard.tsx:198
 msgid "Search on Tail Database"
 msgstr "在 Tail 数据库中搜索"
 
-#: src/components/WalletsList.tsx:32
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Token Database"
+msgstr ""
+
 #: src/components/hero/WalletHeroWallets.tsx:47
 #: src/components/WalletsList.tsx:32
 msgid "Select Wallet"
@@ -699,12 +692,10 @@ msgstr "选择钱包类别"
 msgid "Selected recovery file:"
 msgstr "选择恢复文件："
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:200
 #: src/components/cat/WalletCATSend.tsx:255
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
+#: src/components/WalletSend.tsx:200
 msgid "Send"
 msgstr "发送"
 
@@ -773,7 +764,7 @@ msgstr "已同步"
 msgid "Syncing"
 msgstr "正在同步"
 
-#: src/components/card/WalletCardTotalBalance.tsx:65
+#: src/components/card/WalletCardTotalBalance.tsx:76
 msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for HCX, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
 msgstr "衍生指数设置钱包链扫描钱包地址的范围。 如果您有大量交易或取消了 XCH、CATs 或 NFT 的报价，这个数字通常更高。 如果你认为你的余额是不正确的，因为它缺少硬币， 增加衍生指数可以帮助钱包在余额总额中包括缺失的硬币。"
 
@@ -835,7 +826,7 @@ msgstr "代币名称为空"
 msgid "Tokens"
 msgstr "代币"
 
-#: src/components/card/WalletCardTotalBalance.tsx:56
+#: src/components/card/WalletCardTotalBalance.tsx:62
 #: src/components/rateLimited/WalletRateLimited.jsx:542
 msgid "Total Balance"
 msgstr "总余额"

@@ -44,8 +44,6 @@ msgstr "Ajouter un identifiant de secours"
 msgid "Add Custom Token"
 msgstr "Ajouter un Jeton Personnalisé"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:170
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -63,19 +61,16 @@ msgstr "Ajout du jeton {0}"
 msgid "Address"
 msgstr "Adresse"
 
-#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:154
+#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "Hash de l'adresse / du puzzle"
 
-#: src/components/WalletHistory.tsx:226
-#: src/components/WalletSend.tsx:167
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
+#: src/components/WalletHistory.tsx:226
+#: src/components/WalletSend.tsx:167
 msgid "Amount"
 msgstr "Montant"
 
@@ -116,8 +111,8 @@ msgstr "Solde"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/components/WalletSend.tsx:103
 #: src/components/cat/WalletCATSend.tsx:118
+#: src/components/WalletSend.tsx:103
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Impossible d'envoyer des chinillas à une adresse colorée. Merci d'entrer une adresse chinilla valide."
 
@@ -212,10 +207,9 @@ msgstr "Créer un Portefeuille Admin à taux limité"
 msgid "Create Rate Limited User Wallet"
 msgstr "Créer un Portefeuille Utilisateur à taux limité"
 
-#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:136
+#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "Créer une transaction"
 
@@ -235,11 +229,14 @@ msgstr "Personnaliser"
 msgid "DID Wallet"
 msgstr "Portefeuille DID"
 
+#: src/constants/WalletName.ts:38
+msgid "Datalayer Wallet"
+msgstr ""
+
 #: src/components/WalletHistory.tsx:199
 msgid "Date"
 msgstr "Date"
 
-#: src/components/WalletHeader.tsx:38
 #: src/components/cat/WalletDID.tsx:448
 #: src/components/cat/WalletDID.tsx:862
 #: src/components/did/WalletDID.tsx:448
@@ -254,7 +251,7 @@ msgstr "Supprimer"
 msgid "Delete Unconfirmed Transactions"
 msgstr "Supprimer les transactions non confirmées"
 
-#: src/components/card/WalletCardTotalBalance.tsx:63
+#: src/components/card/WalletCardTotalBalance.tsx:74
 msgid "Derivation Index: {0}"
 msgstr "Indice de dérivation : {0}"
 
@@ -272,7 +269,7 @@ msgstr "Glisser-déposer le(s) paquet(s) d'attestation"
 msgid "Drag and drop your recovery backup file"
 msgstr "Glisser-déposer votre fichier de sauvegarde de récupération"
 
-#: src/components/WalletImport.tsx:133
+#: src/components/WalletImport.tsx:134
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Entrez les 24 mots mnémotechniques que vous avez sauvegardé afin de restaurer votre portefeuille Chinilla."
 
@@ -280,19 +277,17 @@ msgstr "Entrez les 24 mots mnémotechniques que vous avez sauvegardé afin de re
 msgid "Error the entered address appears to be for a different colour."
 msgstr "Erreur : l'adresse saisie semble avoir une couleur différente."
 
-#: src/components/WalletSend.tsx:189
 #: src/components/cat/WalletCATSend.tsx:244
+#: src/components/WalletSend.tsx:189
 msgid "Farm"
 msgstr "Ferme"
 
-#: src/components/WalletHistory.tsx:238
-#: src/components/WalletSend.tsx:179
 #: src/components/cat/WalletCATSend.tsx:221
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
+#: src/components/WalletHistory.tsx:238
+#: src/components/WalletSend.tsx:179
 msgid "Fee"
 msgstr "Frais"
 
@@ -359,8 +354,8 @@ msgstr "Gérer les identités décentralisées de récupération"
 msgid "Manage token list"
 msgstr "Gérer les types de jetons"
 
-#: src/components/WalletHistory.tsx:170
 #: src/components/cat/WalletCATSend.tsx:234
+#: src/components/WalletHistory.tsx:170
 msgid "Memo"
 msgstr "Note"
 
@@ -443,9 +438,8 @@ msgstr "D'accord"
 msgid "Offer Accepted"
 msgstr "Offre Acceptée"
 
-#: src/components/WalletSend.tsx:141
 #: src/components/cat/WalletCATSend.tsx:179
-#: src/components/WalletSend.tsx:139
+#: src/components/WalletSend.tsx:141
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "En moyenne, il y a une minute entre chaque bloc de transaction. À moins qu'il n'y ait de congestion, vous pouvez vous attendre à ce que votre transaction soit incluse dans moins d'une minute."
 
@@ -457,7 +451,7 @@ msgstr "Seul un fichier de sauvegarde est autorisé."
 msgid "Outgoing"
 msgstr "Sortant"
 
-#: src/components/WalletImport.tsx:95
+#: src/components/WalletImport.tsx:96
 msgid "Paste Mnemonic"
 msgstr "Coller la phrase mnémonique"
 
@@ -528,10 +522,9 @@ msgstr "Veuillez entrer un montant initial valide"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Veuillez saisir un nombre entier valide plus grand ou égal à 0 pour le nombre d'identifiants de sauvegarde nécessaires à la récupération."
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:91
+#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "Veuillez entrer une valeur numérique valide dans le montant"
 
@@ -539,11 +532,10 @@ msgstr "Veuillez entrer une valeur numérique valide dans le montant"
 msgid "Please enter a valid numeric amount."
 msgstr "Veuillez saisir un montant numérique valide."
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:96
+#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "Veuillez entrer une valeur numérique valide dans les frais"
 
@@ -567,10 +559,9 @@ msgstr "Veuillez saisir un nom de jeton valide"
 msgid "Please enter valid wallet name"
 msgstr "Veuillez saisir un nom de portefeuille valide"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:86
+#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "Merci de terminer la synchronisation avant de faire une transaction"
 
@@ -680,9 +671,13 @@ msgstr "Enlever"
 msgid "Save"
 msgstr "Définir"
 
-#: src/components/WalletTokenCard.tsx:144
+#: src/components/WalletTokenCard.tsx:198
 msgid "Search on Tail Database"
 msgstr "Rechercher sur Tail Database"
+
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Token Database"
+msgstr ""
 
 #: src/components/hero/WalletHeroWallets.tsx:47
 #: src/components/WalletsList.tsx:32
@@ -697,12 +692,10 @@ msgstr "Sélectionner un type de portefeuille"
 msgid "Selected recovery file:"
 msgstr "Fichier de récupération sélectionné :"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:200
 #: src/components/cat/WalletCATSend.tsx:255
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
+#: src/components/WalletSend.tsx:200
 msgid "Send"
 msgstr "Envoyer"
 
@@ -771,7 +764,7 @@ msgstr "Synchronisé"
 msgid "Syncing"
 msgstr "Synchronisation"
 
-#: src/components/card/WalletCardTotalBalance.tsx:65
+#: src/components/card/WalletCardTotalBalance.tsx:76
 msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for HCX, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
 msgstr "L'indice de dérivation définit le nombre d'adresses que le portefeuille va scanner sur la blockchain. Ce nombre est généralement plus élevé si vous avez beaucoup de transactions ou d'offres annulées pour HCX, CATs ou NFTs. Si vous pensez que votre solde est incorrect car il manque des pièces, alors augmenter l'indice de dérivation pourrait aider le portefeuille à inclure les pièces manquantes dans le total du solde."
 
@@ -806,8 +799,12 @@ msgid "This is the sum of the incoming and outgoing pending transactions (not ye
 msgstr "Il s'agit de la somme des transactions entrantes et sortantes en attente (pas encore incluses dans la blockchain). Cela n'inclut pas les récompenses de culture."
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Il s'agit du nombre de chinillas contrôlés par vos clés privées, en date du dernier bloc de la blockchain. Il comprend les récompenses de culture, mais exclus les transactions en cours."
+msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/standard/WalletStandardCards.tsx:16
+#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "Il s'agit du nombre de chinillas contrôlés par vos clés privées, en date du dernier bloc de la blockchain. Il comprend les récompenses de culture, mais exclus les transactions en cours."
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -833,7 +830,7 @@ msgstr "Le nom du jeton est vide"
 msgid "Tokens"
 msgstr "Jetons"
 
-#: src/components/card/WalletCardTotalBalance.tsx:56
+#: src/components/card/WalletCardTotalBalance.tsx:62
 #: src/components/rateLimited/WalletRateLimited.jsx:542
 msgid "Total Balance"
 msgstr "Solde total"

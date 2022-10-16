@@ -106,7 +106,7 @@ msgstr ""
 msgid "Discard"
 msgstr "Verwerfen"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Fehler"
@@ -168,12 +168,12 @@ msgstr ""
 msgid "Loading list of the keys"
 msgstr ""
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr ""
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr ""
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "Value seems high"
 msgstr "Wert scheint hoch"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr ""

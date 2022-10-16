@@ -100,7 +100,7 @@ msgstr "Jelszavas védelem kikapcsolása"
 msgid "Discard"
 msgstr "Elvetés"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Hiba"
@@ -162,12 +162,12 @@ msgstr "Világos"
 msgid "Loading list of the keys"
 msgstr "A kulcsok listájának betöltése"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "Kijelentkezés"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "Kijelentkezés"
 
@@ -326,7 +326,7 @@ msgstr "Erősen javasolt a jelszó beállítása, hogy a kulcsok védve legyenek
 msgid "Value seems high"
 msgstr "Az érték túl magasnak tűnik"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Tárca"

@@ -100,7 +100,7 @@ msgstr "Nonaktifkan proteksi sandi"
 msgid "Discard"
 msgstr "Buang"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Error"
@@ -162,12 +162,12 @@ msgstr "Terang"
 msgid "Loading list of the keys"
 msgstr "Memuat Daftar dompet"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "Keluar"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "Keluar"
 
@@ -326,7 +326,7 @@ msgstr "Mengaktifkan opsi kalimat kunci sangat di ajurkan untuk melindungi kunci
 msgid "Value seems high"
 msgstr "Nilai Kelihatan terlalu tinggi"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Dompet"

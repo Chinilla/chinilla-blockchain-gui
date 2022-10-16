@@ -100,7 +100,7 @@ msgstr "Désactiver la protection par phrase secrète"
 msgid "Discard"
 msgstr "Rejeter"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Erreur"
@@ -162,12 +162,12 @@ msgstr "Clair"
 msgid "Loading list of the keys"
 msgstr "Chargement de la liste des clés"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "Se déconnecter"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "Déconnexion"
 
@@ -326,7 +326,7 @@ msgstr "Utiliser une phrase secrète est fortement recommandé pour la protectio
 msgid "Value seems high"
 msgstr "La valeur semble élevée"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "Portefeuille"

@@ -100,7 +100,7 @@ msgstr "跳过私钥密码保护"
 msgid "Discard"
 msgstr "放弃"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:65
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "错误"
@@ -162,12 +162,12 @@ msgstr "浅色"
 msgid "Loading list of the keys"
 msgstr "加载密钥列表"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:129
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:151
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:135
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:157
 msgid "Log Out"
 msgstr "登出"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:147
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:153
 msgid "Logout"
 msgstr "登出"
 
@@ -326,7 +326,7 @@ msgstr "强烈建议设置私钥密码以保护您的密钥。是否要跳过禁
 msgid "Value seems high"
 msgstr "值似乎过高"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:98
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:104
 #: src/components/Settings/SettingsApp.tsx:69
 msgid "Wallet"
 msgstr "钱包"

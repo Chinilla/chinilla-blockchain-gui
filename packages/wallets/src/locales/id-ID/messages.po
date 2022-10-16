@@ -44,8 +44,6 @@ msgstr "Tambah ID sampingan"
 msgid "Add Custom Token"
 msgstr ""
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:170
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
 #: src/components/hero/WalletHeroAdd.tsx:64
@@ -63,19 +61,16 @@ msgstr ""
 msgid "Address"
 msgstr "Alamat"
 
-#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:154
+#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "Alamat / Hash teka-teki"
 
-#: src/components/WalletHistory.tsx:226
-#: src/components/WalletSend.tsx:167
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:165
-#: src/components/WalletSend.tsx:164
+#: src/components/WalletHistory.tsx:226
+#: src/components/WalletSend.tsx:167
 msgid "Amount"
 msgstr "Jumlah"
 
@@ -116,9 +111,8 @@ msgstr "Saldo"
 msgid "Cancel"
 msgstr "Batal"
 
-#: src/components/WalletSend.tsx:103
 #: src/components/cat/WalletCATSend.tsx:118
-#: src/components/WalletSend.tsx:101
+#: src/components/WalletSend.tsx:103
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr ""
 
@@ -213,10 +207,9 @@ msgstr "Buat Wallet Admin dengan Batasan Koneksi"
 msgid "Create Rate Limited User Wallet"
 msgstr "Buat User Wallet dengan Batasan Koneksi"
 
-#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:136
+#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "Buat Transaksi"
 
@@ -236,11 +229,14 @@ msgstr ""
 msgid "DID Wallet"
 msgstr ""
 
+#: src/constants/WalletName.ts:38
+msgid "Datalayer Wallet"
+msgstr ""
+
 #: src/components/WalletHistory.tsx:199
 msgid "Date"
 msgstr "Tanggal"
 
-#: src/components/WalletHeader.tsx:38
 #: src/components/cat/WalletDID.tsx:448
 #: src/components/cat/WalletDID.tsx:862
 #: src/components/did/WalletDID.tsx:448
@@ -255,7 +251,7 @@ msgstr "Hapus"
 msgid "Delete Unconfirmed Transactions"
 msgstr "Hapus transaksi yang belum di konfirmasi"
 
-#: src/components/card/WalletCardTotalBalance.tsx:63
+#: src/components/card/WalletCardTotalBalance.tsx:74
 msgid "Derivation Index: {0}"
 msgstr ""
 
@@ -273,7 +269,7 @@ msgstr "Seret dan letak paket(paket-paket) pengesahan"
 msgid "Drag and drop your recovery backup file"
 msgstr "Seret dan lepas berkas cadangan anda"
 
-#: src/components/WalletImport.tsx:133
+#: src/components/WalletImport.tsx:134
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Masukkan 24 kata mnemonik yang telah anda simpan untuk mengembalikan dompet Chinilla anda."
 
@@ -281,19 +277,17 @@ msgstr "Masukkan 24 kata mnemonik yang telah anda simpan untuk mengembalikan dom
 msgid "Error the entered address appears to be for a different colour."
 msgstr ""
 
-#: src/components/WalletSend.tsx:189
 #: src/components/cat/WalletCATSend.tsx:244
+#: src/components/WalletSend.tsx:189
 msgid "Farm"
 msgstr ""
 
-#: src/components/WalletHistory.tsx:238
-#: src/components/WalletSend.tsx:179
 #: src/components/cat/WalletCATSend.tsx:221
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:177
-#: src/components/WalletSend.tsx:175
+#: src/components/WalletHistory.tsx:238
+#: src/components/WalletSend.tsx:179
 msgid "Fee"
 msgstr "Biaya"
 
@@ -360,8 +354,8 @@ msgstr "Mengelola Pemulihan DIDs"
 msgid "Manage token list"
 msgstr ""
 
-#: src/components/WalletHistory.tsx:170
 #: src/components/cat/WalletCATSend.tsx:234
+#: src/components/WalletHistory.tsx:170
 msgid "Memo"
 msgstr ""
 
@@ -444,9 +438,8 @@ msgstr ""
 msgid "Offer Accepted"
 msgstr ""
 
-#: src/components/WalletSend.tsx:141
 #: src/components/cat/WalletCATSend.tsx:179
-#: src/components/WalletSend.tsx:139
+#: src/components/WalletSend.tsx:141
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Rata rata ada jarak 1 menit antara masing masing blok transaksi. Kecuali ada kebanyakan transaksi, transaksi biasanya akan di ikutkan dalam waktu kurang dari 1 menit."
 
@@ -458,7 +451,7 @@ msgstr "Hanya satu fail backup dibenarkan."
 msgid "Outgoing"
 msgstr "Keluar"
 
-#: src/components/WalletImport.tsx:95
+#: src/components/WalletImport.tsx:96
 msgid "Paste Mnemonic"
 msgstr ""
 
@@ -529,10 +522,9 @@ msgstr "Silakan masukkan jumlah Sebelum pajak yang valid"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Silakan masukkan integer valid 0 atau lebih besar untuk jumlah ID Backup yang diperlukan untuk pemulihan."
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:91
+#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "Sila masukkan nombor yang valid"
 
@@ -540,11 +532,10 @@ msgstr "Sila masukkan nombor yang valid"
 msgid "Please enter a valid numeric amount."
 msgstr "Silahkan memasukkan angka biaya yang sah."
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:96
+#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "Silahkan memasukkan angka biaya yang sah"
 
@@ -568,10 +559,9 @@ msgstr ""
 msgid "Please enter valid wallet name"
 msgstr ""
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:86
+#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "Silahkan menyelesaikan sinkronisasi sebelum melakukan sebuah transaksi"
 
@@ -668,7 +658,6 @@ msgstr ""
 msgid "Recovery Wallet"
 msgstr ""
 
-#: src/components/WalletRenameDialog.tsx:69
 #: src/components/cat/WalletCAT.tsx:102
 #: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
@@ -682,11 +671,14 @@ msgstr ""
 msgid "Save"
 msgstr "Simpan"
 
-#: src/components/WalletTokenCard.tsx:144
+#: src/components/WalletTokenCard.tsx:198
 msgid "Search on Tail Database"
 msgstr ""
 
-#: src/components/WalletsList.tsx:32
+#: src/components/cat/WalletCATTAILDialog.tsx:71
+msgid "Search on Token Database"
+msgstr ""
+
 #: src/components/hero/WalletHeroWallets.tsx:47
 #: src/components/WalletsList.tsx:32
 msgid "Select Wallet"
@@ -700,12 +692,10 @@ msgstr "Pilih Jenis Dompet elektronik"
 msgid "Selected recovery file:"
 msgstr "Pilih fail pulihan:"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:200
 #: src/components/cat/WalletCATSend.tsx:255
 #: src/components/rateLimited/WalletRateLimited.jsx:747
 #: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:194
+#: src/components/WalletSend.tsx:200
 msgid "Send"
 msgstr "Kirim"
 
@@ -774,7 +764,7 @@ msgstr "Sinkron"
 msgid "Syncing"
 msgstr "Sinkronisasi"
 
-#: src/components/card/WalletCardTotalBalance.tsx:65
+#: src/components/card/WalletCardTotalBalance.tsx:76
 msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for HCX, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
 msgstr ""
 
@@ -836,7 +826,7 @@ msgstr ""
 msgid "Tokens"
 msgstr ""
 
-#: src/components/card/WalletCardTotalBalance.tsx:56
+#: src/components/card/WalletCardTotalBalance.tsx:62
 #: src/components/rateLimited/WalletRateLimited.jsx:542
 msgid "Total Balance"
 msgstr "Jumlah Saldo"
