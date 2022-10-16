@@ -6,7 +6,7 @@ import { get } from 'lodash';
 import sleep from './sleep';
 import untildify from './untildify';
 
-function getConfigRootDir(net = 'vanillanet'): string {
+export function getConfigRootDir(net = 'vanillanet'): string {
   const homedir = os.homedir();
 
   return 'CHINILLA_ROOT' in process.env

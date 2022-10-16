@@ -71,11 +71,13 @@ export default function WalletConnections(props: WalletConnectionsProps) {
   const { walletId } = props;
   const { data: connections, isLoading } = useGetWalletConnectionsQuery({
     walletId,
+  }, {
+    pollingInterval: 10000,
   });
 
   return (
     <Card
-      title={<Trans>Connections</Trans>}
+      title={<Trans>Wallet Connections</Trans>}
     >
       {isLoading ? (
         <Loading center />

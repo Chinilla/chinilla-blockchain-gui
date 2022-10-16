@@ -45,12 +45,13 @@ export type AmountProps = TextFieldProps & {
   children?: (props: { vojo: BigNumber; value: string | undefined }) => ReactNode;
   name?: string;
   symbol?: string; // if set, overrides the currencyCode. empty string is allowed
-  showAmountInVojos?: boolean; // if true, shows the vojoamount below the input field
-  feeMode?: boolean // if true, amounts are expressed in vojos used to set a transaction fee
+  showAmountInVojos?: boolean; // if true, shows the vojo amount below the input field
+  feeMode?: boolean; // if true, amounts are expressed in vojos used to set a transaction fee
+  "data-testid"?: string;
 };
 
 export default function Amount(props: AmountProps) {
-  const { children, name, symbol, showAmountInVojos, variant, fullWidth, ...rest } = props;
+  const { children, name, symbol, showAmountInVojos, variant, fullWidth, "data-testid": dataTestid, ...rest } = props;
   const { control } = useFormContext();
   const defaultCurrencyCode = useCurrencyCode();
 
@@ -78,6 +79,7 @@ export default function Amount(props: AmountProps) {
           inputComponent: NumberFormatCustom as any,
           inputProps: {
             decimalScale: isChinillaCurrency ? 12 : 3,
+            "data-testid": dataTestid,
           },
           endAdornment: (
             <InputAdornment position="end">{currencyCode}</InputAdornment>

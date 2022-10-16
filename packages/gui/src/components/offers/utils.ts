@@ -7,9 +7,10 @@ import type {
   OfferSummaryRecord,
 } from '@chinilla/api';
 import {
+  vojoToCAT,
   vojoToChinilla,
-  vojoToChinillaLocaleString,
   vojoToCATLocaleString,
+  vojoToChinillaLocaleString,
 } from '@chinilla/core';
 import NFTOfferExchangeType from './NFTOfferExchangeType';
 import OfferState from './OfferState';
@@ -263,6 +264,10 @@ export function offerAssetIdForAssetType(
   assetType: OfferAsset,
   offerSummary: OfferSummaryRecord,
 ): string | undefined {
+  if (assetType === OfferAsset.CHINILLA) {
+    return 'hcx';
+  }
+
   const assetId = Object.keys(offerSummary.infos).find(
     (assetId) => offerAssetTypeForAssetId(assetId, offerSummary) === assetType,
   );
@@ -304,21 +309,36 @@ export function determineNFTOfferExchangeType(
   }
 
   return nftOffered
-    ? NFTOfferExchangeType.NFTForHCX
-    : NFTOfferExchangeType.HCXForNFT;
+    ? NFTOfferExchangeType.NFTForToken
+    : NFTOfferExchangeType.TokenForNFT;
 }
 
 /* ========================================================================== */
 
+export type GetNFTPriceWithoutRoyaltiesResult = {
+  amount: number;
+  assetId: string;
+  assetType: OfferAsset;
+};
+
 export function getNFTPriceWithoutRoyalties(
   summary: OfferSummaryRecord,
-): number | undefined {
-  // NFTs can only be exchanged for HCX currently
-  const amountInVojos = offerAssetAmountForAssetId('hcx', summary);
-  if (amountInVojos === undefined) {
-    return undefined;
+): GetNFTPriceWithoutRoyaltiesResult | undefined {
+  for (const assetType of [OfferAsset.TOKEN, OfferAsset.CHINILLA]) {
+    const assetId = offerAssetIdForAssetType(assetType, summary);
+    if (assetId) {
+      const amountInVojos = offerAssetAmountForAssetId(assetId, summary);
+      if (amountInVojos) {
+        const amountInTokens =
+          assetType === OfferAsset.CHINILLA
+            ? vojoToChinilla(amountInVojos)
+            : vojoToCAT(amountInVojos);
+        return { amount: amountInTokens.toNumber(), assetId, assetType };
+      }
+    }
   }
-  return vojoToChinilla(amountInVojos).toNumber();
+
+  return undefined;
 }
 
 /* ========================================================================== */
@@ -341,19 +361,14 @@ export function calculateNFTRoyalties(
     ? (royaltyPercentage / 100) * amount
     : 0;
   const royaltyAmountString: string = formatAmount(royaltyAmount);
-  const nftSellerNetAmount: number =
-    exchangeType === NFTOfferExchangeType.NFTForHCX
-      ? amount
-      : parseFloat((amount - parseFloat(royaltyAmountString)).toFixed(12));
+  const nftSellerNetAmount: number = amount;
   // : parseFloat(
   //     (amount - parseFloat(royaltyAmountString) - makerFee).toFixed(12),
   //   );
   const totalAmount: number =
-    exchangeType === NFTOfferExchangeType.NFTForHCX
-      ? // ? amount + royaltyAmount + makerFee
-        amount + royaltyAmount
-      : amount + makerFee;
-  // : amount;
+    exchangeType === NFTOfferExchangeType.NFTForToken
+      ? amount + royaltyAmount
+      : amount + makerFee + royaltyAmount;
   const totalAmountString: string = formatAmount(totalAmount);
 
   return {

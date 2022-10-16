@@ -1,7 +1,6 @@
 import React from 'react';
 import { Trans, t } from '@lingui/macro';
 import {
-  Button,
   ButtonLoading,
   chinillaToVojo,
   Fee,
@@ -20,10 +19,6 @@ import {
 } from '@chinilla/api-react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
-import {
-  WalletType,
-  type Wallet,
- } from '@chinilla/api';
 import useOpenExternal from '../../hooks/useOpenExternal';
 import isNumeric from 'validator/es/lib/isNumeric';
 
@@ -52,7 +47,7 @@ export default function ProfileAdd() {
   });
 
   const [createProfile, { isLoading: isCreateProfileLoading }] = useCreateNewWalletMutation();
-  const { data: balance, isLoading: isLoadingWalletBalance } = useGetWalletBalanceQuery({
+  const { data: balance } = useGetWalletBalanceQuery({
     walletId: 1,
   });
   const navigate = useNavigate();

@@ -1,21 +1,42 @@
 import React, { useState, useEffect, ReactNode, useMemo } from 'react';
 import isElectron from 'is-electron';
 import { Trans } from '@lingui/macro';
-import { ConnectionState, ServiceHumanName, ServiceName, PassphrasePromptReason } from '@chinilla/api';
-import { useCloseMutation, useGetStateQuery, useGetKeyringStatusQuery, useServices } from '@chinilla/api-react';
-import { Flex, useSkipMigration, LayoutHero, LayoutLoading, useMode, useIsSimulator } from '@chinilla/core';
+import {
+  ConnectionState,
+  ServiceHumanName,
+  ServiceName,
+  PassphrasePromptReason,
+} from '@chinilla/api';
+import {
+  useCloseMutation,
+  useGetStateQuery,
+  useGetKeyringStatusQuery,
+  useServices,
+} from '@chinilla/api-react';
+import {
+  Flex,
+  LayoutHero,
+  LayoutLoading,
+  useMode,
+  useIsSimulator,
+} from '@chinilla/core';
 import { Typography, Collapse } from '@mui/material';
 import AppKeyringMigrator from './AppKeyringMigrator';
 import AppPassPrompt from './AppPassPrompt';
 import AppSelectMode from './AppSelectMode';
 import ModeServices, { SimulatorServices } from '../../constants/ModeServices';
+import useEnableDataLayerService from '../../hooks/useEnableDataLayerService';
+import useEnableFilePropagationServer from '../../hooks/useEnableFilePropagationServer';
+import AppAutoLogin from './AppAutoLogin';
 
 const ALL_SERVICES = [
-  ServiceName.WALLET, 
+  ServiceName.WALLET,
   ServiceName.FULL_NODE,
   ServiceName.FARMER,
   ServiceName.HARVESTER,
   ServiceName.SIMULATOR,
+  ServiceName.DATALAYER,
+  ServiceName.DATALAYER_SERVER,
 ];
 
 type Props = {
@@ -26,23 +47,45 @@ export default function AppState(props: Props) {
   const { children } = props;
   const [close] = useCloseMutation();
   const [closing, setClosing] = useState<boolean>(false);
-  const { data: clienState = {}, isLoading: isClientStateLoading } = useGetStateQuery();
-  const { data: keyringStatus, isLoading: isLoadingKeyringStatus } = useGetKeyringStatusQuery();
-  const [isMigrationSkipped] = useSkipMigration();
+  const { data: clientState = {}, isLoading: isClientStateLoading } =
+    useGetStateQuery();
+  const { data: keyringStatus, isLoading: isLoadingKeyringStatus } =
+    useGetKeyringStatusQuery();
   const [mode] = useMode();
   const isSimulator = useIsSimulator();
+  const [enableDataLayerService] = useEnableDataLayerService();
+  const [enableFilePropagationServer] = useEnableFilePropagationServer();
+  // NOTE: We only start the DL at launch time for now
+  const [isDataLayerEnabled] = useState(enableDataLayerService);
+  const [isFilePropagationServerEnabled] = useState(
+    enableFilePropagationServer,
+  );
 
   const runServices = useMemo<ServiceName[] | undefined>(() => {
     if (mode) {
-      if (isSimulator) {
-        return SimulatorServices;
+      const services: ServiceName[] = isSimulator
+        ? SimulatorServices
+        : ModeServices[mode];
+
+      if (isDataLayerEnabled) {
+        if (!services.includes(ServiceName.DATALAYER)) {
+          services.push(ServiceName.DATALAYER);
+        }
+
+        // File propagation server is dependent on the data layer
+        if (
+          isFilePropagationServerEnabled &&
+          !services.includes(ServiceName.DATALAYER_SERVER)
+        ) {
+          services.push(ServiceName.DATALAYER_SERVER);
+        }
       }
 
-      return ModeServices[mode];
+      return services;
     }
 
     return undefined;
-  }, [mode, isSimulator]);
+  }, [mode, isSimulator, isDataLayerEnabled, isFilePropagationServerEnabled]);
 
   const isKeyringReady = !!keyringStatus && !keyringStatus.isKeyringLocked;
 
@@ -56,14 +99,15 @@ export default function AppState(props: Props) {
       return false;
     }
 
-    const specificRunningServiceStates = servicesState
-      .running
-      .filter((serviceState) => runServices.includes(serviceState.service));
+    const specificRunningServiceStates = servicesState.running.filter(
+      (serviceState) => runServices.includes(serviceState.service),
+    );
 
     return specificRunningServiceStates.length === runServices.length;
   }, [servicesState, runServices]);
 
-  const isConnected = !isClientStateLoading && clienState?.state === ConnectionState.CONNECTED;
+  const isConnected =
+    !isClientStateLoading && clientState?.state === ConnectionState.CONNECTED;
 
   async function handleClose(event) {
     if (closing) {
@@ -93,14 +137,24 @@ export default function AppState(props: Props) {
   if (closing) {
     return (
       <LayoutLoading hideSettings>
-        <Flex flexDirection="column" gap={2}> 
+        <Flex flexDirection="column" gap={2}>
           <Typography variant="body1" align="center">
             <Trans>Closing down services</Trans>
           </Typography>
           <Flex flexDirection="column" gap={0.5}>
-            {!!ALL_SERVICES && ALL_SERVICES.map((service) => (
-              <Collapse key={service} in={!!clienState?.startedServices.includes(service)} timeout={{ enter: 0, exit: 1000 }}>
-                <Typography variant="body1" color="textSecondary"  align="center">
+            {ALL_SERVICES.filter(
+              (service) => !!clientState?.startedServices.includes(service),
+            ).map((service) => (
+              <Collapse
+                key={service}
+                in={true}
+                timeout={{ enter: 0, exit: 1000 }}
+              >
+                <Typography
+                  variant="body1"
+                  color="textSecondary"
+                  align="center"
+                >
                   {ServiceHumanName[service]}
                 </Typography>
               </Collapse>
@@ -120,7 +174,7 @@ export default function AppState(props: Props) {
   }
 
   const { needsMigration, isKeyringLocked } = keyringStatus;
-  if (needsMigration && !isMigrationSkipped) {
+  if (needsMigration) {
     return (
       <LayoutHero>
         <AppKeyringMigrator />
@@ -137,7 +191,7 @@ export default function AppState(props: Props) {
   }
 
   if (!isConnected) {
-    const { attempt } = clienState;
+    const { attempt } = clientState;
     return (
       <LayoutLoading>
         {!attempt ? (
@@ -167,27 +221,36 @@ export default function AppState(props: Props) {
   if (!allServicesRunning) {
     return (
       <LayoutLoading>
-        <Flex flexDirection="column" gap={2}> 
+        <Flex flexDirection="column" gap={2}>
           <Typography variant="body1" align="center">
             <Trans>Starting services</Trans>
           </Typography>
           <Flex flexDirection="column" gap={0.5}>
-            {!!runServices && runServices.map((service) => (
-              <Collapse key={service} in={!servicesState.running.find(state => state.service === service)} timeout={{ enter: 0, exit: 1000 }}>
-                <Typography variant="body1" color="textSecondary"  align="center">
-                  {ServiceHumanName[service]}
-                </Typography>
-              </Collapse>
-            ))}
+            {!!runServices &&
+              runServices.map((service) => (
+                <Collapse
+                  key={service}
+                  in={
+                    !servicesState.running.find(
+                      (state) => state.service === service,
+                    )
+                  }
+                  timeout={{ enter: 0, exit: 1000 }}
+                >
+                  <Typography
+                    variant="body1"
+                    color="textSecondary"
+                    align="center"
+                  >
+                    {ServiceHumanName[service]}
+                  </Typography>
+                </Collapse>
+              ))}
           </Flex>
         </Flex>
       </LayoutLoading>
     );
   }
 
-  return (
-    <>
-      {children}
-    </>
-  );
+  return <AppAutoLogin>{children}</AppAutoLogin>;
 }

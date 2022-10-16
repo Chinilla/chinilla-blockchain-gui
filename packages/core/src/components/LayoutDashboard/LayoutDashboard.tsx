@@ -107,6 +107,7 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
                           <StyledInlineTypography
                             color="textSecondary"
                             variant="h5"
+                            data-testid="LayoutDashboard-fingerprint"
                           >
                             {fingerprint}
                           </StyledInlineTypography>
@@ -132,7 +133,7 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
                         &nbsp;
                         */}
                       <Tooltip title={<Trans>Log Out</Trans>}>
-                        <IconButton onClick={handleLogout}>
+                        <IconButton onClick={handleLogout} data-testid="LayoutDashboard-log-out">
                           <ExitToAppIcon />
                         </IconButton>
                       </Tooltip>

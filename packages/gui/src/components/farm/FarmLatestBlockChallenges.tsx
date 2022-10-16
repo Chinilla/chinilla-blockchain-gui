@@ -1,7 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Typography } from '@mui/material';
-import { Link, Table, Card } from '@chinilla/core';
+import { Table, Card } from '@chinilla/core';
 import {
   useGetSignagePointsQuery,
   useGetTotalHarvestersSummaryQuery,
@@ -63,18 +62,6 @@ export default function FarmLatestBlockChallenges() {
         }
         pages
       />
-      <Typography variant="caption">
-        <Trans>
-          *Want to explore Chinilla’s blocks further? Check out{' '}
-          <Link
-            color="primary"
-            href="https://www.chinilla.com/blockchain"
-            target="_blank"
-          >
-            Chinilla Explorer
-          </Link>{' '}
-        </Trans>
-      </Typography>
     </Card>
   );
 }
