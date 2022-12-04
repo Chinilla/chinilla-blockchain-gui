@@ -11,15 +11,8 @@ import {
 } from '@mui/material';
 import Flex from '../Flex';
 
-const StyledCardHeader = styled(CardHeader)`
-  background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? '#3d3c3c' : '#fff2c2'};
-`;
-
 const StyledCardContent = styled(CardContent)`
   padding-left: 72px;
-  background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 const StyledStep = styled(Avatar)`
@@ -39,7 +32,7 @@ export default function CardStep(props: Props) {
 
   return (
     <Card>
-      <StyledCardHeader
+      <CardHeader
         avatar={<StyledStep aria-label="step">{step}</StyledStep>}
         title={<Typography variant="h6">{title}</Typography>}
         action={action}

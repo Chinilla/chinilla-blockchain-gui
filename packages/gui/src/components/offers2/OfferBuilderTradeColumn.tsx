@@ -24,7 +24,7 @@ function getTitle(offering = false, viewer = false, isMyOffer = false) {
   }
 
   if (viewer) {
-    return <Trans>In exchange for</Trans>;
+    return <Trans>In ehcxange for</Trans>;
   }
 
   return <Trans>Requesting</Trans>;

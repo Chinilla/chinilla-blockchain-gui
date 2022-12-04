@@ -19,7 +19,7 @@ import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@chinilla/api-reac
 import { Wallet, WalletType } from '@chinilla/api';
 import type OfferEditorRowData from './OfferEditorRowData';
 import OfferAssetSelector from './OfferAssetSelector';
-import OfferExchangeRate from './OfferExchangeRate';
+import OfferEhcxangeRate from './OfferEhcxangeRate';
 import useAssetIdName, { AssetIdMapEntry } from '../../hooks/useAssetIdName';
 
 type OfferEditorConditionsRowProps = {
@@ -138,7 +138,7 @@ function OfferEditorConditionRow(props: OfferEditorConditionsRowProps) {
           />
         </Flex>
         <Flex style={{ width: '2em' }}>
-          {/* Spacing to accommodate center alignment of the OfferExchangeRate component rendered externally */}
+          {/* Spacing to accommodate center alignment of the OfferEhcxangeRate component rendered externally */}
         </Flex>
         <Flex flexDirection="column" flexGrow={1} style={{ width: '45%' }}>
           <Flex flexDirection="column" gap={1}>
@@ -272,14 +272,14 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
 
   const {
     makerAssetInfo,
-    makerExchangeRate,
+    makerEhcxangeRate,
     takerAssetInfo,
-    takerExchangeRate,
+    takerEhcxangeRate,
   } = useMemo(() => {
     let makerAssetInfo: AssetIdMapEntry | undefined = undefined;
     let takerAssetInfo: AssetIdMapEntry | undefined = undefined;
-    let makerExchangeRate: number | undefined = undefined;
-    let takerExchangeRate: number | undefined = undefined;
+    let makerEhcxangeRate: number | undefined = undefined;
+    let takerEhcxangeRate: number | undefined = undefined;
 
     if (!isLoading && makerRows.length === 1 && takerRows.length === 1) {
       const makerWalletId: string | undefined =
@@ -294,18 +294,18 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
       if (makerWalletId && takerWalletId) {
         makerAssetInfo = lookupByWalletId(makerWalletId);
         takerAssetInfo = lookupByWalletId(takerWalletId);
-        makerExchangeRate =
+        makerEhcxangeRate =
           Number(takerRows[0].amount) / Number(makerRows[0].amount);
-        takerExchangeRate =
+        takerEhcxangeRate =
           Number(makerRows[0].amount) / Number(takerRows[0].amount);
       }
     }
 
     return {
       makerAssetInfo,
-      makerExchangeRate,
+      makerEhcxangeRate,
       takerAssetInfo,
-      takerExchangeRate,
+      takerEhcxangeRate,
     };
   }, [isLoading, makerRows, takerRows]);
 
@@ -331,20 +331,20 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
     },
   ];
   const showAddCATsMessage = !canAddTakerRow && wallets?.length === 1;
-  const showExchangeRate = !!makerAssetInfo && !!takerAssetInfo;
+  const showEhcxangeRate = !!makerAssetInfo && !!takerAssetInfo;
 
   if (makerSide === 'sell') {
     sections.reverse();
   }
 
   sections[0].headerTitle = <Trans>You will offer</Trans>;
-  sections[1].headerTitle = <Trans>In exchange for</Trans>;
+  sections[1].headerTitle = <Trans>In ehcxange for</Trans>;
 
-  function exchangeRateChanged(
-    updatedExchangeRate: string | number,
+  function ehcxangeRateChanged(
+    updatedEhcxangeRate: string | number,
     side: 'maker' | 'taker',
   ) {
-    const rate = Number(updatedExchangeRate);
+    const rate = Number(updatedEhcxangeRate);
     const amount = Number(
       side === 'taker' ? makerRows[0].amount : takerRows[0].amount,
     );
@@ -352,7 +352,7 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
     const assetInfo: AssetIdMapEntry | undefined =
       side === 'maker' ? makerAssetInfo : takerAssetInfo;
     const newAmount = Number(
-      haveAmount ? rate * amount : updatedExchangeRate,
+      haveAmount ? rate * amount : updatedEhcxangeRate,
     ).toFixed(assetInfo?.walletType === WalletType.STANDARD_WALLET ? 9 : 12);
     if (side === 'taker') {
       takerUpdate(0, { ...takerRows[0], amount: newAmount });
@@ -418,22 +418,22 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
           {sectionIndex !== sections.length - 1 && <Divider />}
         </Flex>
       ))}
-      {showExchangeRate && (
+      {showEhcxangeRate && (
         <>
           <Divider />
           <Flex flexDirection="row" gap={0}>
             <Flex flexDirection="column" style={{ width: '90%' }}>
-              <OfferExchangeRate
+              <OfferEhcxangeRate
                 readOnly={false}
                 makerAssetInfo={makerAssetInfo}
-                makerExchangeRate={makerExchangeRate}
+                makerEhcxangeRate={makerEhcxangeRate}
                 takerAssetInfo={takerAssetInfo}
-                takerExchangeRate={takerExchangeRate}
-                takerExchangeRateChanged={(rate) =>
-                  exchangeRateChanged(rate, 'taker')
+                takerEhcxangeRate={takerEhcxangeRate}
+                takerEhcxangeRateChanged={(rate) =>
+                  ehcxangeRateChanged(rate, 'taker')
                 }
-                makerExchangeRateChanged={(rate) =>
-                  exchangeRateChanged(rate, 'maker')
+                makerEhcxangeRateChanged={(rate) =>
+                  ehcxangeRateChanged(rate, 'maker')
                 }
               />
             </Flex>

@@ -28,12 +28,7 @@ import Tooltip from '../Tooltip';
 
 const StyledRoot = styled(Flex)`
   height: 100%;
-  //overflow: hidden;
-`;
-
-const StyledContainer = styled(Container)`
-  padding-top: ${({ theme }) => `${theme.spacing(2)}px`};
-  padding-bottom: ${({ theme }) => `${theme.spacing(2)}px`};
+  // overflow: hidden;
 `;
 
 const StyledAppBar = styled(({ drawer, ...rest }) => <AppBar {...rest} />)`

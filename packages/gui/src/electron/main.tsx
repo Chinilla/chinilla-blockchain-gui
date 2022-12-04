@@ -160,7 +160,7 @@ if (!handleSquirrelEvent()) {
 
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
-    const exitPyProc = (e) => { };
+    const exitPyProc = (e) => {};
 
     app.on('will-quit', exitPyProc);
 
@@ -915,7 +915,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/Chinilla/chinilla-blockchain/blob/master/CONTRIBUTING.md',
+                'https://github.com/Chinilla/chinilla-blockchain/blob/main/CONTRIBUTING.md',
               );
             },
           },
@@ -933,25 +933,13 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://keybase.io/team/chinilla');
+              openExternal('https://keybase.io/team/chinilla_network.public');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/chinillaproject');
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
-            click: () => {
-              openExternal('https://discord.gg/5E5XsKrch5');
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Github Discussions' }),
-            click: () => {
-              openExternal('https://github.com/Chinilla/chinilla-blockchain/discussions');
+              openExternal('https://twitter.com/chinilla_project');
             },
           },
         ],

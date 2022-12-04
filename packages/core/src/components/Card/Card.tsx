@@ -42,9 +42,6 @@ const StyledCardMaterial = styled(
     border-color: ${({ theme, clickable }) =>
       clickable ? theme.palette.primary.main : 'transparent'};
   }
-  
-  background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 
   ${({ transparent }) =>
     transparent

@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
 import { create_cc_for_colour_action } from '../../../modules/message';
-import { chinillaToVojo} from '@chinilla/core';
+import { chinillaToVojo } from '@chinilla/core';
 import { openDialog } from '../../../modules/dialog';
 import config from '../../../config/config';
 

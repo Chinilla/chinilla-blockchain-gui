@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2022-07-27 18:40\n"
 "Last-Translator: \n"
-"Language-Team: vojoese Traditional\n"
+"Language-Team: Chinese Traditional\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Crowdin-Project: chinilla-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
@@ -436,6 +436,7 @@ msgstr ""
 msgid "Coins"
 msgstr ""
 
+#: src/components/nfts/NFTSummary.tsx:59
 #: src/components/nfts/detail/NFTDetail.tsx:83
 #: src/components/nfts/detail/NFTDetailV2.tsx:225
 msgid "Collection"
@@ -578,7 +579,7 @@ msgid "Create an Offer"
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:559
-msgid "Create an offer to exchange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to ehcxange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:152
@@ -842,10 +843,10 @@ msgstr ""
 msgid "Enter your passphrase:"
 msgstr ""
 
-#: src/components/farm/card/FarmCardStatus.tsx:34
-#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:34
+#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -939,9 +940,9 @@ msgstr "塊農未運作"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "農夫可通過提交閒置空間到網路上來幫助保護交易，從而獲得區塊獎勵和交易費。這便是新增耕地後耕種的地方。<0>了解詳情</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:102
-#: src/components/farm/card/FarmCardStatus.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:101
 #: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "耕種中"
@@ -1031,7 +1032,7 @@ msgid "Frequently Asked Questions"
 msgstr "常見問題"
 
 #: src/components/app/AppStatusHeader.tsx:49
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:80
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "完整節點"
@@ -1050,10 +1051,6 @@ msgstr ""
 
 #: src/components/settings/Settings.tsx:67
 msgid "General"
-msgstr ""
-
-#: src/electron/main.tsx:604
-msgid "Github Discussions"
 msgstr ""
 
 #: src/components/nfts/gallery/NFTGalleryHero.tsx:14
@@ -1183,11 +1180,11 @@ msgstr "進行中"
 #: src/components/offers/NFTOfferViewer.tsx:537
 #: src/components/offers/OfferEditorConditionsPanel.tsx:341
 #: src/components/offers/OfferViewer.tsx:278
-msgid "In exchange for"
+msgid "In ehcxange for"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:1398
-msgid "In exchange for:"
+msgid "In ehcxange for:"
 msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:102
@@ -1249,7 +1246,7 @@ msgstr "加入農會並獲得持續的 HCX 耕種獎勵。雖然平均報酬一�
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
 msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "加入農會並獲得持續的HCX耕種獎勵。雖然平均報酬一樣但波動較小相對穩定。分配耕地到農場。你可以更輕鬆的轉換農會而不用重新進行耕地。"
+msgstr "加入農會並獲得持續的HCX 耕種獎勵。雖然平均報酬一樣但波動較小相對穩定。分配耕地到農場。你可以更輕鬆的轉換農會而不用重新進行耕地。"
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
 msgid "Join a pool and get more consistent HCX farming rewards. Create a plot NFT and assign your new plots to a group."
@@ -1544,7 +1541,7 @@ msgstr ""
 msgid "NFT not specified"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "NFTs"
 msgstr ""
 
@@ -1618,9 +1615,9 @@ msgstr "無"
 msgid "None of your plots have passed the plot filter yet."
 msgstr "你還沒有任何的耕地通過篩選。"
 
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/nfts/detail/NFTDetail.tsx:77
 #: src/components/nfts/detail/NFTDetail.tsx:87
 #: src/components/nfts/detail/NFTDetailV2.tsx:219
@@ -1648,12 +1645,9 @@ msgid "Not connected"
 msgstr "未連線"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:176
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr "請注意，這不會變更您的農會支付位址。這只會影響舊的耕地格式和 0.25HCX 的農會耕地獎勵。"
-
-#: src/components/farm/FarmManageFarmingRewards.tsx:176
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
-msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:119
 #: src/components/plotNFT/PlotNFTCard.tsx:161
@@ -1737,7 +1731,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:68
+#: src/components/dashboard/DashboardSideBar.tsx:67
 msgid "Offers"
 msgstr ""
 
@@ -2106,7 +2100,7 @@ msgstr ""
 msgid "Pool:"
 msgstr "農會："
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:107
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2527,8 +2521,8 @@ msgstr ""
 msgid "Synced"
 msgstr "已同步"
 
-#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Syncing"
 msgstr "同步中"
@@ -2758,7 +2752,7 @@ msgstr ""
 msgid "Token Standard"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:56
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
@@ -3044,6 +3038,10 @@ msgstr ""
 msgid "Would you like to transfer the specified NFT to a new owner?"
 msgstr ""
 
+#: src/components/offers/NFTOfferEditor.tsx:261
+#~ msgid "HCX for NFT"
+#~ msgstr ""
+
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:385
 msgid "Yes"
@@ -3229,15 +3227,6 @@ msgstr ""
 
 #: src/components/nfts/NFTRankings.tsx:51
 msgid "{value} of {max_value}"
-msgstr ""
-
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
-#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
-
-#: src/components/offers/OfferSummaryRow.tsx:49
-#: src/components/offers/OfferViewer.tsx:62
-msgid "{vojos, plural, one {vojo} other {vojos}}"
 msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118

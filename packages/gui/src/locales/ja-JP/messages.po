@@ -387,10 +387,6 @@ msgstr "チア"
 msgid "Chinilla Blockchain Wiki"
 msgstr "チアブロックチェーンの Wiki"
 
-#: src/components/offers/OfferShareDialog.tsx:364
-msgid "Chinilla.com Offers URL"
-msgstr ""
-
 #: src/components/app/AppSelectMode.tsx:155
 msgid "Choose Farming Mode"
 msgstr "ファーミングモードの選択"
@@ -440,6 +436,7 @@ msgstr "各サービスを終了中"
 msgid "Coins"
 msgstr ""
 
+#: src/components/nfts/NFTSummary.tsx:59
 #: src/components/nfts/detail/NFTDetail.tsx:83
 #: src/components/nfts/detail/NFTDetailV2.tsx:225
 msgid "Collection"
@@ -582,7 +579,7 @@ msgid "Create an Offer"
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:559
-msgid "Create an offer to exchange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to ehcxange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:152
@@ -846,10 +843,10 @@ msgstr "鍵を保護するため、強力なパスフレーズを入力してく
 msgid "Enter your passphrase:"
 msgstr "パスフレーズを入力してください:"
 
-#: src/components/farm/card/FarmCardStatus.tsx:34
-#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:34
+#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -943,9 +940,9 @@ msgstr "農家が未実行"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "農家は空いている容量をネットワークに提供することで取引の正確性を担保し、対価としてブロック報酬や取引手数料を得られます。耕地を追加したら、ここにあなたの畑が表示されます。<0>詳しく</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:102
-#: src/components/farm/card/FarmCardStatus.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:101
 #: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "耕作中"
@@ -1035,7 +1032,7 @@ msgid "Frequently Asked Questions"
 msgstr "よくある質問"
 
 #: src/components/app/AppStatusHeader.tsx:49
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:80
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "フルノード"
@@ -1055,10 +1052,6 @@ msgstr ""
 #: src/components/settings/Settings.tsx:67
 msgid "General"
 msgstr "一般"
-
-#: src/electron/main.tsx:604
-msgid "Github Discussions"
-msgstr ""
 
 #: src/components/nfts/gallery/NFTGalleryHero.tsx:14
 msgid "Go collect some gems"
@@ -1187,11 +1180,11 @@ msgstr "進行中"
 #: src/components/offers/NFTOfferViewer.tsx:537
 #: src/components/offers/OfferEditorConditionsPanel.tsx:341
 #: src/components/offers/OfferViewer.tsx:278
-msgid "In exchange for"
+msgid "In ehcxange for"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:1398
-msgid "In exchange for:"
+msgid "In ehcxange for:"
 msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:102
@@ -1551,7 +1544,7 @@ msgstr ""
 msgid "NFT not specified"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "NFTs"
 msgstr ""
 
@@ -1625,9 +1618,9 @@ msgstr ""
 msgid "None of your plots have passed the plot filter yet."
 msgstr "お持ちの耕地は現在、どれも耕地フィルターを通過できていません。"
 
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/nfts/detail/NFTDetail.tsx:77
 #: src/components/nfts/detail/NFTDetail.tsx:87
 #: src/components/nfts/detail/NFTDetailV2.tsx:219
@@ -1655,11 +1648,8 @@ msgid "Not connected"
 msgstr "未接続"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
-msgstr ""
-
 #: src/components/farm/FarmManageFarmingRewards.tsx:176
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:119
@@ -1744,7 +1734,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:68
+#: src/components/dashboard/DashboardSideBar.tsx:67
 msgid "Offers"
 msgstr ""
 
@@ -2113,7 +2103,7 @@ msgstr "プールは target_puzzle_hash を提供しません。"
 msgid "Pool:"
 msgstr "プール:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:107
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2534,8 +2524,8 @@ msgstr ""
 msgid "Synced"
 msgstr "同期完了"
 
-#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Syncing"
 msgstr "同期中"
@@ -2765,7 +2755,7 @@ msgstr ""
 msgid "Token Standard"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:56
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
@@ -3051,6 +3041,10 @@ msgstr ""
 msgid "Would you like to transfer the specified NFT to a new owner?"
 msgstr ""
 
+#: src/components/offers/NFTOfferEditor.tsx:261
+#~ msgid "HCX for NFT"
+#~ msgstr ""
+
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:385
 msgid "Yes"
@@ -3236,15 +3230,6 @@ msgstr ""
 
 #: src/components/nfts/NFTRankings.tsx:51
 msgid "{value} of {max_value}"
-msgstr ""
-
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
-#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
-
-#: src/components/offers/OfferSummaryRow.tsx:49
-#: src/components/offers/OfferViewer.tsx:62
-msgid "{vojos, plural, one {vojo} other {vojos}}"
 msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118

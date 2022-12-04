@@ -104,7 +104,7 @@ export default function WalletsSidebar() {
     );
 
   function handleOpenBlogPost() {
-    openExternal('https://www.chinilla.net/cat2blog');
+    openExternal('https://www.chinilla.com/cat2blog');
   }
 
   function openTokensInfoDialog() {
@@ -134,7 +134,7 @@ export default function WalletsSidebar() {
                 size="large"
                 onClick={() =>
                   openExternal(
-                    'https://cat1.chinilla.net/#publicKey=' +
+                    'https://cat1.chinilla.com/#publicKey=' +
                       privateKey.pk +
                       '&fingerprint=' +
                       fingerprint
@@ -156,7 +156,7 @@ export default function WalletsSidebar() {
           <p>
             <Trans>Want to see your old balance for yourself?</Trans>
           </p>
-          <Link target="_blank" href="https://www.chinilla.net/download/">
+          <Link target="_blank" href="https://www.chinilla.com/download/">
             <Trans>Click here to download an older version of the wallet</Trans>
           </Link>
         </ContentStyled>

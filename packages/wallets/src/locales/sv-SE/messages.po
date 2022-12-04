@@ -59,9 +59,9 @@ msgstr "Lägger till token {0}"
 msgid "Address"
 msgstr "Adress"
 
+#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "Adress/pusselhash"
 
@@ -69,8 +69,6 @@ msgstr "Adress/pusselhash"
 #: src/components/WalletSend.tsx:167
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:226
-#: src/components/WalletSend.tsx:167
 msgid "Amount"
 msgstr "Belopp"
 
@@ -111,8 +109,8 @@ msgstr "Saldo"
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/components/cat/WalletCATSend.tsx:118
 #: src/components/WalletSend.tsx:103
+#: src/components/cat/WalletCATSend.tsx:118
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Det går inte att skicka chinilla till färgad adress. Ange en chinilla-adress."
 
@@ -207,9 +205,9 @@ msgstr "Skapa spenderbegränsad adminplånbok"
 msgid "Create Rate Limited User Wallet"
 msgstr "Skapa spenderbegränsad användarplånbok"
 
+#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "Skapa transaktion"
 
@@ -244,7 +242,6 @@ msgstr "Datum"
 #: src/components/did/WalletDID.tsx:862
 #: src/components/did/WalletDIDCreate.tsx:196
 #: src/components/did/WalletDIDRecovery.tsx:101
-#: src/components/WalletHeader.tsx:38
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -280,7 +277,6 @@ msgstr "Fel den angivna adressen verkar vara för en annan färg."
 
 #: src/components/WalletSend.tsx:191
 #: src/components/cat/WalletCATSend.tsx:244
-#: src/components/WalletSend.tsx:189
 msgid "Farm"
 msgstr "Odling"
 
@@ -290,8 +286,6 @@ msgstr "Odling"
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:238
-#: src/components/WalletSend.tsx:179
 msgid "Fee"
 msgstr "Avgift"
 
@@ -360,7 +354,6 @@ msgstr "Hantera tokenlista"
 
 #: src/components/WalletHistory.tsx:169
 #: src/components/cat/WalletCATSend.tsx:234
-#: src/components/WalletHistory.tsx:170
 msgid "Memo"
 msgstr "Anteckning"
 
@@ -443,8 +436,8 @@ msgstr "OK"
 msgid "Offer Accepted"
 msgstr "Erbjudandet accepterat"
 
-#: src/components/cat/WalletCATSend.tsx:179
 #: src/components/WalletSend.tsx:141
+#: src/components/cat/WalletCATSend.tsx:179
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "I genomsnitt är det en minut mellan varje transaktionsblock. Om det inte är någon form av köbildning kan du räkna med att en transaktion inkluderas i blockkedjan på under en minut."
 
@@ -527,9 +520,9 @@ msgstr "Ange ett giltigt belopp för ursprungligt mynt"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Ange ett giltigt heltal på 0 eller fler för det säkerhetskopierings-ID som behövs för återställning."
 
+#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "Ange ett giltigt numeriskt belopp"
 
@@ -537,10 +530,10 @@ msgstr "Ange ett giltigt numeriskt belopp"
 msgid "Please enter a valid numeric amount."
 msgstr "Ange ett giltigt numeriskt belopp."
 
+#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "Ange en giltig numeriskt avgift"
 
@@ -564,9 +557,9 @@ msgstr "Ange ett giltigt tokennamn"
 msgid "Please enter valid wallet name"
 msgstr "Ange ett giltigt plånboksnamn"
 
+#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "Vänta på synkronisering innan du gör en transaktion"
 
@@ -696,8 +689,6 @@ msgstr "Vald återställningsfil:"
 #: src/components/WalletSend.tsx:202
 #: src/components/cat/WalletCATSend.tsx:255
 #: src/components/rateLimited/WalletRateLimited.jsx:747
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:200
 msgid "Send"
 msgstr "Skicka"
 
@@ -801,12 +792,8 @@ msgid "This is the sum of the incoming and outgoing pending transactions (not ye
 msgstr "Detta är summan av inkommande och utgående väntande transaktioner (som ännu inte inkluderats i blockkedjan). Den innefattar inte odlingsbelöningar."
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr ""
-
-#: src/components/standard/WalletStandardCards.tsx:16
-#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-#~ msgstr "Detta är den sammanlagda mängden chinilla i blockkedjan vid det aktuella topp-blocket som kontrolleras av dina privata nycklar. Det innefattar frusna odlingsbelöningar, men inte väntande inkommande och utgående transaktioner."
+msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "Detta är den sammanlagda mängden chinilla i blockkedjan vid det aktuella topp-blocket som kontrolleras av dina privata nycklar. Det innefattar frusna odlingsbelöningar, men inte väntande inkommande och utgående transaktioner."
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."

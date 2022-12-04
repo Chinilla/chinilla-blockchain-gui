@@ -4,8 +4,25 @@ import useOpenExternal from './useOpenExternal';
 
 /* ========================================================================== */
 
-function getForgeFarmURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://${testnet ? 'testnet.' : ''}forgefarm.io/nfts/${
+function getMintGardenURL(nft: NFTInfo, testnet: boolean) {
+  const url = `https://${testnet ? 'testnet.' : ''}mintgarden.io/nfts/${
+    nft.$nftId
+  }`;
+  return url;
+}
+
+function getSkyNFTURL(nft: NFTInfo, testnet: boolean) {
+  const launcherId = nft.launcherId.startsWith('0x')
+    ? nft.launcherId.substring(2)
+    : nft.launcherId;
+  const url = `https://${
+    testnet ? 'test.' : ''
+  }skynft.org/item.php?launcher_id=${launcherId}`;
+  return url;
+}
+
+function getSpacescanURL(nft: NFTInfo, testnet: boolean) {
+  const url = `https://spacescan.io/${testnet ? 'thcx10' : 'hcx'}/nft/${
     nft.$nftId
   }`;
   return url;
@@ -14,11 +31,15 @@ function getForgeFarmURL(nft: NFTInfo, testnet: boolean) {
 /* ========================================================================== */
 
 export enum NFTExplorer {
-  ForgeFarm = 'forgefarm',
+  MintGarden = 'mintgarden',
+  SkyNFT = 'skynft',
+  Spacescan = 'spacescan',
 }
 
 const UrlBuilderMapping = {
-  [NFTExplorer.ForgeFarm]: getForgeFarmURL,
+  [NFTExplorer.MintGarden]: getMintGardenURL,
+  [NFTExplorer.SkyNFT]: getSkyNFTURL,
+  [NFTExplorer.Spacescan]: getSpacescanURL,
 };
 
 export default function useViewNFTOnExplorer() {

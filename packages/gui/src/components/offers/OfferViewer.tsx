@@ -275,7 +275,7 @@ function OfferDetails(props: OfferDetailsProps) {
               summary={summary}
               makerTitle={
                 <Typography variant="h6">
-                  <Trans>In exchange for</Trans>
+                  <Trans>In ehcxange for</Trans>
                 </Typography>
               }
               takerTitle={

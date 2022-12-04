@@ -82,15 +82,30 @@ const testnetDummyHost = 'offers-api-sim.chinilla.com';
 const OfferSharingProviders: {
   [key in OfferSharingService]: OfferSharingProvider;
 } = {
-  [OfferSharingService.Chinilla]: {
-    service: OfferSharingService.Chinilla,
-    name: 'Chinilla',
+  [OfferSharingService.Dexie]: {
+    service: OfferSharingService.Dexie,
+    name: 'Dexie',
+    capabilities: [OfferSharingCapability.Token, OfferSharingCapability.NFT],
+  },
+  [OfferSharingService.Hashgreen]: {
+    service: OfferSharingService.Hashgreen,
+    name: 'Hashgreen DEX',
     capabilities: [OfferSharingCapability.Token],
   },
-  [OfferSharingService.ForgeFarm]: {
-    service: OfferSharingService.ForgeFarm,
-    name: 'ForgeFarm',
+  [OfferSharingService.MintGarden]: {
+    service: OfferSharingService.MintGarden,
+    name: 'MintGarden',
     capabilities: [OfferSharingCapability.NFT],
+  },
+  [OfferSharingService.OfferBin]: {
+    service: OfferSharingService.OfferBin,
+    name: 'OfferBin',
+    capabilities: [OfferSharingCapability.Token],
+  },
+  [OfferSharingService.Offerpool]: {
+    service: OfferSharingService.Offerpool,
+    name: 'offerpool.io',
+    capabilities: [OfferSharingCapability.Token, OfferSharingCapability.NFT],
   },
   [OfferSharingService.Keybase]: {
     service: OfferSharingService.Keybase,
@@ -122,37 +137,33 @@ async function writeTempOfferFile(
 
 /* ========================================================================== */
 
-async function postToChinilla(
+async function postToDexie(
   offerData: string,
-  sharePrivately: boolean,
   testnet: boolean,
 ): Promise<string> {
   const ipcRenderer = (window as any).ipcRenderer;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
-    hostname: testnet ? testnetDummyHost : 'chinilla.com',
+    hostname: testnet ? 'testnet.dexie.space' : 'dexie.space',
     port: 443,
-    path: testnet
-      ? testnetDummyEndpoint
-      : '/offer/upload',
+    path: '/v1/offers',
   };
   const requestHeaders = {
-    'accept': 'application/json',
-    'Content-Type': 'application/x-www-form-urlencoded'
-  }
-  const requestData = `offer=${offerData}` + (sharePrivately ? '&private=true' : '');
+    'Content-Type': 'application/json',
+  };
+  const requestData = JSON.stringify({ offer: offerData });
   const { err, statusCode, statusMessage, responseBody } =
-    await ipcRenderer?.invoke(
+    await ipcRenderer.invoke(
       'fetchTextResponse',
       requestOptions,
       requestHeaders,
       requestData,
     );
 
-  if (err || statusCode !== 200) {
+  if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `Chinilla.com Offers upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `Dexie upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
     );
     throw error;
   }
@@ -160,10 +171,10 @@ async function postToChinilla(
   log('Dexie upload completed');
   const { id } = JSON.parse(responseBody);
 
-  return `https://chinilla.com/offer/details/${offer}`;
+  return `https://${testnet ? 'testnet.' : ''}dexie.space/offers/${id}`;
 }
 
-async function postToForgeFarm(
+async function postToMintGarden(
   offerData: string,
   testnet: boolean,
 ): Promise<string> {
@@ -171,7 +182,7 @@ async function postToForgeFarm(
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
-    hostname: testnet ? 'testnet.forgefarm.io' : 'forgefarm.io',
+    hostname: testnet ? 'api.testnet.mintgarden.io' : 'api.mintgarden.io',
     port: 443,
     path: '/offer',
   };
@@ -189,7 +200,7 @@ async function postToForgeFarm(
 
   if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `ForgeFarm upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `MintGarden upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
     );
     throw error;
   }
@@ -241,7 +252,7 @@ async function postToOfferBin(
   log('OfferBin upload completed');
 
   if (testnet) {
-    return 'https://www.chinilla.net/offers';
+    return 'https://www.chinilla.com/offers';
   }
 
   const { hash } = JSON.parse(responseBody);
@@ -292,7 +303,7 @@ async function postToHashgreen(
     log('Hashgreen upload completed');
 
     if (testnet) {
-      return 'https://www.chinilla.net/offers';
+      return 'https://www.chinilla.com/offers';
     }
 
     const jsonObj = JSON.parse(responseBody);
@@ -765,7 +776,7 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
         <DialogContent dividers>
           <Flex flexDirection="column" gap={3} sx={{ paddingTop: '1em' }}>
             <TextField
-              label={<Trans>Chinilla.com Offers URL</Trans>}
+              label={<Trans>OfferBin URL</Trans>}
               value={sharedURL}
               variant="filled"
               InputProps={{
@@ -783,7 +794,7 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
                 variant="outlined"
                 onClick={() => openExternal(sharedURL)}
               >
-                <Trans>View on Chinilla.com</Trans>
+                <Trans>View on OfferBin</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -802,7 +813,7 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
       offerRecord={offerRecord}
       offerData={offerData}
       testnet={testnet}
-      title={<Trans>Share on Chinilla.com</Trans>}
+      title={<Trans>Share on OfferBin</Trans>}
       onConfirm={handleConfirm}
       open={open}
       onClose={onClose}
@@ -868,7 +879,7 @@ function OfferShareHashgreenDialog(props: OfferShareServiceDialogProps) {
         <DialogContent dividers>
           <Flex flexDirection="column" gap={3} sx={{ paddingTop: '1em' }}>
             <TextField
-              label={<Trans>ForgeFarm URL</Trans>}
+              label={<Trans>Hashgreen DEX URL</Trans>}
               value={sharedURL}
               variant="filled"
               InputProps={{
@@ -886,7 +897,7 @@ function OfferShareHashgreenDialog(props: OfferShareServiceDialogProps) {
                 variant="outlined"
                 onClick={() => openExternal(sharedURL)}
               >
-                <Trans>View on ForgeFarm</Trans>
+                <Trans>View on Hashgreen DEX</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -905,7 +916,7 @@ function OfferShareHashgreenDialog(props: OfferShareServiceDialogProps) {
       offerRecord={offerRecord}
       offerData={offerData}
       testnet={testnet}
-      title={<Trans>Share on ForgeFarm</Trans>}
+      title={<Trans>Share on Hashgreen DEX</Trans>}
       onConfirm={handleConfirm}
       open={open}
       onClose={onClose}
@@ -1384,7 +1395,7 @@ function OfferShareConfirmationDialog(
             }
             takerTitle={
               <Typography variant="subtitle1">
-                <Trans>In exchange for:</Trans>
+                <Trans>In ehcxange for:</Trans>
               </Typography>
             }
             rowIndentation={3}
@@ -1454,12 +1465,28 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
         props: any;
       };
     } = {
-      [OfferSharingService.Chinilla]: {
-        component: OfferShareChinillaDialog,
+      [OfferSharingService.Dexie]: {
+        component: OfferShareDexieDialog,
         props: {},
       },
-      [OfferSharingService.ForgeFarm]: {
-        component: OfferShareForgeFarmDialog,
+      [OfferSharingService.Hashgreen]: {
+        component: OfferShareHashgreenDialog,
+        props: {},
+      },
+      ...(testnet
+        ? {
+            [OfferSharingService.MintGarden]: {
+              component: OfferShareMintGardenDialog,
+              props: {},
+            },
+          }
+        : {}),
+      [OfferSharingService.OfferBin]: {
+        component: OfferShareOfferBinDialog,
+        props: {},
+      },
+      [OfferSharingService.Offerpool]: {
+        component: OfferShareOfferpoolDialog,
         props: {},
       },
       [OfferSharingService.Spacescan]: {

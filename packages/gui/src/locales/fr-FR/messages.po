@@ -436,6 +436,7 @@ msgstr "Fermeture des services"
 msgid "Coins"
 msgstr "Coins"
 
+#: src/components/nfts/NFTSummary.tsx:59
 #: src/components/nfts/detail/NFTDetail.tsx:83
 #: src/components/nfts/detail/NFTDetailV2.tsx:225
 msgid "Collection"
@@ -578,7 +579,7 @@ msgid "Create an Offer"
 msgstr "Créer une offre"
 
 #: src/components/offers/OfferManager.tsx:559
-msgid "Create an offer to exchange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to ehcxange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
 msgstr "Créez une offre pour échanger des actifs tels que les HCX, jetons et NFT. Visualisez une offre créée par une personne tierce pour l'inspecter et l'accepter."
 
 #: src/components/offers/OfferManager.tsx:152
@@ -842,10 +843,10 @@ msgstr "Saisissez une phrase secrète forte pour sécuriser vos clés :"
 msgid "Enter your passphrase:"
 msgstr "Entrez votre phrase secrète :"
 
-#: src/components/farm/card/FarmCardStatus.tsx:34
-#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:34
+#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -939,9 +940,9 @@ msgstr "Le fermier n'est pas lancé"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Les fermiers gagnent des blocs de récompense et des frais de transaction en engageant de l'espace libre dans le réseau pour aider à sécuriser les transactions. C'est là où se trouvera votre ferme une fois que vous aurez ajouté une parcelle. <0>En savoir plus</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:102
-#: src/components/farm/card/FarmCardStatus.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:101
 #: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Culture"
@@ -1031,7 +1032,7 @@ msgid "Frequently Asked Questions"
 msgstr "Question fréquentes"
 
 #: src/components/app/AppStatusHeader.tsx:49
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:80
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Full Node"
@@ -1051,10 +1052,6 @@ msgstr ""
 #: src/components/settings/Settings.tsx:67
 msgid "General"
 msgstr "Général"
-
-#: src/electron/main.tsx:604
-msgid "Github Discussions"
-msgstr ""
 
 #: src/components/nfts/gallery/NFTGalleryHero.tsx:14
 msgid "Go collect some gems"
@@ -1183,11 +1180,11 @@ msgstr "En cours"
 #: src/components/offers/NFTOfferViewer.tsx:537
 #: src/components/offers/OfferEditorConditionsPanel.tsx:341
 #: src/components/offers/OfferViewer.tsx:278
-msgid "In exchange for"
+msgid "In ehcxange for"
 msgstr "En échange de"
 
 #: src/components/offers/OfferShareDialog.tsx:1398
-msgid "In exchange for:"
+msgid "In ehcxange for:"
 msgstr "En échange de :"
 
 #: src/components/offers/NFTOfferEditor.tsx:102
@@ -1548,17 +1545,17 @@ msgstr "L'identifiant NFT ne référence pas une pièce NFT valide."
 msgid "NFT not specified"
 msgstr "NFT non spécifié"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "NFTs"
 msgstr "NFT"
 
 #: src/components/offers/NFTOfferViewer.tsx:674
 msgid "Net Proceeds"
-msgstr ""
+msgstr "Revenus nets"
 
 #: src/components/offers/NFTOfferViewer.tsx:703
 msgid "Network Fee (Optional)"
-msgstr ""
+msgstr "Frais de réseau (Facultatif)"
 
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:14
 msgid "Network Name"
@@ -1622,9 +1619,9 @@ msgstr "Aucun"
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Encore aucune de vos parcelles n'a passé le filtre."
 
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/nfts/detail/NFTDetail.tsx:77
 #: src/components/nfts/detail/NFTDetail.tsx:87
 #: src/components/nfts/detail/NFTDetailV2.tsx:219
@@ -1652,12 +1649,9 @@ msgid "Not connected"
 msgstr "Non connecté"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:176
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr "Notez que ceci ne change pas vos adresses de paiement de pool. Seules vos anciennes parcelles sont affectées, et la récompense de 0.25HCX pour les parcelles de pool."
-
-#: src/components/farm/FarmManageFarmingRewards.tsx:176
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
-msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:119
 #: src/components/plotNFT/PlotNFTCard.tsx:161
@@ -1702,10 +1696,6 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
-#: src/components/offers/NFTOfferEditor.tsx:69
-#~ msgid "Offer Creation Fee (Optional)"
-#~ msgstr ""
-
 #: src/components/offers/OfferDataDialog.tsx:42
 #: src/components/offers/OfferDataDialog.tsx:50
 msgid "Offer Data"
@@ -1727,7 +1717,7 @@ msgstr "Offre partagée"
 
 #: src/components/offers/NFTOfferViewer.tsx:176
 msgid "Offer cannot be accepted because you don't possess the requested assets"
-msgstr ""
+msgstr "L'offre ne peut pas être acceptée car vous ne possédez pas les actifs demandés"
 
 #: src/hooks/useAcceptOfferHook.tsx:63
 msgid "Offer has been accepted and is awaiting confirmation."
@@ -1745,7 +1735,7 @@ msgstr "Offert"
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "Offre : [{makerString}], Demande : [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:68
+#: src/components/dashboard/DashboardSideBar.tsx:67
 msgid "Offers"
 msgstr "Offres"
 
@@ -2114,7 +2104,7 @@ msgstr "La pool ne fournit pas le targetPuzzleHash."
 msgid "Pool:"
 msgstr "Pool :"
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:107
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2333,7 +2323,7 @@ msgstr "Ouvrir un fichier d'offre"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:348
 msgid "Select Profile"
-msgstr ""
+msgstr "Sélectionner un profil"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:55
 msgid "Select Temporary Directory"
@@ -2535,8 +2525,8 @@ msgstr "Résumé"
 msgid "Synced"
 msgstr "Synchronisé"
 
-#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Syncing"
 msgstr "Synchronisation"
@@ -2766,7 +2756,7 @@ msgstr "Offre de jetons"
 msgid "Token Standard"
 msgstr "Standard du token"
 
-#: src/components/dashboard/DashboardSideBar.tsx:56
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
@@ -2871,12 +2861,12 @@ msgstr "Impossible d'ouvrir le navigateur. Installez Keybase à partir de https:
 #: src/components/nfts/NFTDetails.tsx:111
 #: src/components/nfts/NFTDetails.tsx:135
 msgid "Unassigned"
-msgstr ""
+msgstr "Non attribué"
 
 #: src/components/nfts/NFTProfileDropdown.tsx:99
 #: src/components/nfts/NFTProfileDropdown.tsx:161
 msgid "Unassigned NFTs"
-msgstr ""
+msgstr "NFT non attribué"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:151
 msgid "Unclaimed Rewards"
@@ -3052,6 +3042,10 @@ msgstr "Voulez-vous déplacer le NFT sélectionné vers un profil ?"
 msgid "Would you like to transfer the specified NFT to a new owner?"
 msgstr "Voulez-vous transférer le NFT spécifié à un nouveau propriétaire ?"
 
+#: src/components/offers/NFTOfferEditor.tsx:261
+#~ msgid "HCX for NFT"
+#~ msgstr "HCX contre NFT"
+
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:385
 msgid "Yes"
@@ -3063,7 +3057,7 @@ msgstr "Oui, Accepter l'offre"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:65
 msgid "Yes, move"
-msgstr ""
+msgstr "Oui, déplacer"
 
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:177
 msgid "You already have 50 or more Plot NFTs."
@@ -3238,15 +3232,6 @@ msgstr "{vojos, plural, one {vojo} other {vojos}}"
 #: src/components/nfts/NFTRankings.tsx:51
 msgid "{value} of {max_value}"
 msgstr "{value} sur {max_value}"
-
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
-#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
-
-#: src/components/offers/OfferSummaryRow.tsx:49
-#: src/components/offers/OfferViewer.tsx:62
-msgid "{vojos, plural, one {vojo} other {vojos}}"
-msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"

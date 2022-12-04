@@ -119,7 +119,7 @@ msgstr "Désactiver la protection par phrase secrète"
 msgid "Discard"
 msgstr "Rejeter"
 
-#: src/components/CardSimple/CardSimple.tsx:65
+#: src/components/CardSimple/CardSimple.tsx:63
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Erreur"
@@ -332,8 +332,8 @@ msgstr "Envoyer un commentaire"
 msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
 msgstr "Définir une phrase secrète est fortement recommandé pour la protection de vos clés. Êtes-vous certain de vouloir ignorer la mise en place d'une phrase secrète ?"
 
-#: src/components/Settings/Settings.tsx:57
-#: src/components/Settings/Settings.tsx:67
+#: src/components/Settings/Settings.tsx:48
+#: src/components/Settings/Settings.tsx:58
 msgid "Settings"
 msgstr "Paramètres"
 

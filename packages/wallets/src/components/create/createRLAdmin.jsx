@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog, chinillaToVojo} from '@chinilla/core';
+import { AlertDialog, chinillaToVojo } from '@chinilla/core';
 import {
   Typography,
   Button,

@@ -542,7 +542,7 @@ msgid "Create an Offer"
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:576
-msgid "Create an offer to exchange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to ehcxange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:153
@@ -1049,11 +1049,11 @@ msgstr "Đang xử lý"
 #: src/components/offers/NFTOfferViewer.tsx:530
 #: src/components/offers/OfferEditorConditionsPanel.tsx:341
 #: src/components/offers/OfferViewer.tsx:274
-msgid "In exchange for"
+msgid "In ehcxange for"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:1254
-msgid "In exchange for:"
+msgid "In ehcxange for:"
 msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:93

@@ -54,7 +54,7 @@ export default function ProfileAdd() {
   const openExternal = useOpenExternal();
 
   function handleClick() {
-    openExternal('https://chinilla.com/faucet');
+    openExternal('https://faucet.chinilla.com/');
   }
 
   async function handleSubmit(data: CreateProfileData) {

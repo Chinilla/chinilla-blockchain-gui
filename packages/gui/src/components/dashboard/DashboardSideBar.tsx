@@ -23,7 +23,6 @@ const StyledItemsContainer = styled(Flex)`
 
 const StyledRoot = styled(Flex)`
   height: 100%;
-  overflow-y: auto;
   flex-direction: column;
 `;
 

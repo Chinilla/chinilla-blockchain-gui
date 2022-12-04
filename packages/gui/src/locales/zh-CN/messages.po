@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2022-08-04 12:03\n"
 "Last-Translator: \n"
-"Language-Team: vojoese Simplified\n"
+"Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Crowdin-Project: chinilla-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
@@ -387,10 +387,6 @@ msgstr "奇亚"
 msgid "Chinilla Blockchain Wiki"
 msgstr "奇亚区块链项目维基"
 
-#: src/components/offers/OfferShareDialog.tsx:364
-msgid "Chinilla.com Offers URL"
-msgstr ""
-
 #: src/components/app/AppSelectMode.tsx:155
 msgid "Choose Farming Mode"
 msgstr "选择耕作模式"
@@ -440,6 +436,7 @@ msgstr "关闭服务"
 msgid "Coins"
 msgstr "代币"
 
+#: src/components/nfts/NFTSummary.tsx:59
 #: src/components/nfts/detail/NFTDetail.tsx:83
 #: src/components/nfts/detail/NFTDetailV2.tsx:225
 msgid "Collection"
@@ -582,7 +579,7 @@ msgid "Create an Offer"
 msgstr "创建报价"
 
 #: src/components/offers/OfferManager.tsx:559
-msgid "Create an offer to exchange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
+msgid "Create an offer to ehcxange assets including HCX, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
 msgstr "创建一个交换HCX 或其他代币和NFT的报价。通过查看一个报价来检查和接受另一方的报价。"
 
 #: src/components/offers/OfferManager.tsx:152
@@ -846,10 +843,10 @@ msgstr "输入复杂的密码来保护您的密钥串："
 msgid "Enter your passphrase:"
 msgstr "输入你的密码："
 
-#: src/components/farm/card/FarmCardStatus.tsx:34
-#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/card/FarmCardStatus.tsx:34
+#: src/components/farm/card/FarmCardStatus.tsx:48
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -943,9 +940,9 @@ msgstr "农民节点没有运行"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "农民们通过贡献自己的空余存储空间，可以帮助提高整个网络的安全性，进而获得区块奖励和交易费用的奖励。当你的第一块农田开垦完成后，这里就是你的农场。<0>了解更多</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:102
-#: src/components/farm/card/FarmCardStatus.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:101
 #: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "正在耕种"
@@ -1035,7 +1032,7 @@ msgid "Frequently Asked Questions"
 msgstr "常见问题解答"
 
 #: src/components/app/AppStatusHeader.tsx:49
-#: src/components/dashboard/DashboardSideBar.tsx:81
+#: src/components/dashboard/DashboardSideBar.tsx:80
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "全节点"
@@ -1055,10 +1052,6 @@ msgstr ""
 #: src/components/settings/Settings.tsx:67
 msgid "General"
 msgstr "常规"
-
-#: src/electron/main.tsx:604
-msgid "Github Discussions"
-msgstr ""
 
 #: src/components/nfts/gallery/NFTGalleryHero.tsx:14
 msgid "Go collect some gems"
@@ -1187,11 +1180,11 @@ msgstr "处理中"
 #: src/components/offers/NFTOfferViewer.tsx:537
 #: src/components/offers/OfferEditorConditionsPanel.tsx:341
 #: src/components/offers/OfferViewer.tsx:278
-msgid "In exchange for"
+msgid "In ehcxange for"
 msgstr "以兑换"
 
 #: src/components/offers/OfferShareDialog.tsx:1398
-msgid "In exchange for:"
+msgid "In ehcxange for:"
 msgstr "交换："
 
 #: src/components/offers/NFTOfferEditor.tsx:102
@@ -1552,17 +1545,17 @@ msgstr "NFT 标识符没有引用一个有效的 NFT 硬币。"
 msgid "NFT not specified"
 msgstr "NFT 未指定"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "NFTs"
 msgstr "非同质化代币"
 
 #: src/components/offers/NFTOfferViewer.tsx:674
 msgid "Net Proceeds"
-msgstr ""
+msgstr "净收益"
 
 #: src/components/offers/NFTOfferViewer.tsx:703
 msgid "Network Fee (Optional)"
-msgstr ""
+msgstr "网络费用(可选)"
 
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:14
 msgid "Network Name"
@@ -1626,9 +1619,9 @@ msgstr "无"
 msgid "None of your plots have passed the plot filter yet."
 msgstr "你的农田还没有通过过滤器检查."
 
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/nfts/detail/NFTDetail.tsx:77
 #: src/components/nfts/detail/NFTDetail.tsx:87
 #: src/components/nfts/detail/NFTDetailV2.tsx:219
@@ -1656,12 +1649,9 @@ msgid "Not connected"
 msgstr "未连接"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
+#: src/components/farm/FarmManageFarmingRewards.tsx:176
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCX reward for pooling plots."
 msgstr "请注意，这将不会改变你的合作社耕作支付地址。这只会影响旧农田文件，以及0.25HCX的合作社耕作奖励。"
-
-#: src/components/farm/FarmManageFarmingRewards.tsx:176
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25HCXreward for pooling plots."
-msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:119
 #: src/components/plotNFT/PlotNFTCard.tsx:161
@@ -1727,7 +1717,7 @@ msgstr "已共享报价"
 
 #: src/components/offers/NFTOfferViewer.tsx:176
 msgid "Offer cannot be accepted because you don't possess the requested assets"
-msgstr ""
+msgstr "因为您没有被请求的资产，所以不能接受报价"
 
 #: src/hooks/useAcceptOfferHook.tsx:63
 msgid "Offer has been accepted and is awaiting confirmation."
@@ -1745,7 +1735,7 @@ msgstr "已报价"
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "提供： [{makerString}]，请求： [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:68
+#: src/components/dashboard/DashboardSideBar.tsx:67
 msgid "Offers"
 msgstr "报价"
 
@@ -2114,7 +2104,7 @@ msgstr "耕作池未提供 targetPuzzleHash。"
 msgid "Pool:"
 msgstr "农业合作社："
 
-#: src/components/dashboard/DashboardSideBar.tsx:108
+#: src/components/dashboard/DashboardSideBar.tsx:107
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2333,7 +2323,7 @@ msgstr "选择报价文件"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:348
 msgid "Select Profile"
-msgstr ""
+msgstr "选择档案"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:55
 msgid "Select Temporary Directory"
@@ -2535,8 +2525,8 @@ msgstr "摘要"
 msgid "Synced"
 msgstr "已同步"
 
-#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Syncing"
 msgstr "正在同步"
@@ -2766,7 +2756,7 @@ msgstr "代币报价"
 msgid "Token Standard"
 msgstr "代币标准"
 
-#: src/components/dashboard/DashboardSideBar.tsx:56
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 msgid "Tokens"
@@ -2871,12 +2861,12 @@ msgstr "无法打开浏览器。请从 https://keybase.io 安装 Keybase"
 #: src/components/nfts/NFTDetails.tsx:111
 #: src/components/nfts/NFTDetails.tsx:135
 msgid "Unassigned"
-msgstr ""
+msgstr "未分配的"
 
 #: src/components/nfts/NFTProfileDropdown.tsx:99
 #: src/components/nfts/NFTProfileDropdown.tsx:161
 msgid "Unassigned NFTs"
-msgstr ""
+msgstr "未分配的 NFT"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:151
 msgid "Unclaimed Rewards"
@@ -3052,6 +3042,10 @@ msgstr "您想要将指定的 NFT 移动到一个资料之下吗？"
 msgid "Would you like to transfer the specified NFT to a new owner?"
 msgstr "您想要将指定的 NFT 转移给一个新的所有者吗？"
 
+#: src/components/offers/NFTOfferEditor.tsx:261
+#~ msgid "HCX for NFT"
+#~ msgstr "HCX兑换NFT"
+
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:385
 msgid "Yes"
@@ -3063,7 +3057,7 @@ msgstr "接受报价"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:65
 msgid "Yes, move"
-msgstr ""
+msgstr "是的，移动"
 
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:177
 msgid "You already have 50 or more Plot NFTs."
@@ -3238,15 +3232,6 @@ msgstr "{vojos, plural, one {vojo} other {vojos}}"
 #: src/components/nfts/NFTRankings.tsx:51
 msgid "{value} of {max_value}"
 msgstr "{max_value}中的{value}"
-
-#: src/components/core/components/Amount/Amount.tsx:82
-#~ msgid "{vojo, plural, one {vojo} other {vojos}}"
-#~ msgstr "{vojo, plural, one {vojo} other {vojos}}"
-
-#: src/components/offers/OfferSummaryRow.tsx:49
-#: src/components/offers/OfferViewer.tsx:62
-msgid "{vojos, plural, one {vojo} other {vojos}}"
-msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"

@@ -51,8 +51,8 @@ export default function Amount(props: AmountProps) {
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
   const isChinillaCurrency = ['HCX', 'THCX'].includes(currencyCode);
-  const vojo= isChinillaCurrency 
-    ? chinillaToVojo(correctedValue) 
+  const vojo = isChinillaCurrency
+    ? chinillaToVojo(correctedValue)
     : catToVojo(correctedValue);
 
   return (

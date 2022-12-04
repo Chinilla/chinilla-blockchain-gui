@@ -65,7 +65,7 @@ export default function WalletCATTAILDialog(props: Props) {
                   ),
                 }}
                 fullWidth
-                multilines
+                multiline
               />
             </Box>
             <Link

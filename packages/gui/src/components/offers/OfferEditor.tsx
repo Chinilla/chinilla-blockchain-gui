@@ -227,7 +227,7 @@ function OfferEditor(props: OfferEditorProps) {
 }
 
 OfferEditor.defaultProps = {
-  onOfferCreated: () => { },
+  onOfferCreated: () => {},
 };
 
 type CreateOfferEditorProps = {
@@ -264,5 +264,5 @@ export function CreateOfferEditor(props: CreateOfferEditorProps) {
 }
 
 CreateOfferEditor.defaultProps = {
-  onOfferCreated: () => { },
+  onOfferCreated: () => {},
 };

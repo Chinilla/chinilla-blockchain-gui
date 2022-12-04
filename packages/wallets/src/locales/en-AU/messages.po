@@ -59,9 +59,9 @@ msgstr "Adding {0} token"
 msgid "Address"
 msgstr "Address"
 
+#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "Address / Puzzle hash"
 
@@ -69,8 +69,6 @@ msgstr "Address / Puzzle hash"
 #: src/components/WalletSend.tsx:167
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:226
-#: src/components/WalletSend.tsx:167
 msgid "Amount"
 msgstr "How much beer money"
 
@@ -111,8 +109,8 @@ msgstr "Alcohol Balance"
 msgid "Cancel"
 msgstr "Yeh Nah"
 
-#: src/components/cat/WalletCATSend.tsx:118
 #: src/components/WalletSend.tsx:103
+#: src/components/cat/WalletCATSend.tsx:118
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Cannot send chinilla to coloured address. Please enter a chinilla address."
 
@@ -207,9 +205,9 @@ msgstr "Create Rate Limited Admin Wallet"
 msgid "Create Rate Limited User Wallet"
 msgstr "Create Rate Limited User Wallet"
 
+#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "Create Transaction"
 
@@ -244,7 +242,6 @@ msgstr "Date"
 #: src/components/did/WalletDID.tsx:862
 #: src/components/did/WalletDIDCreate.tsx:196
 #: src/components/did/WalletDIDRecovery.tsx:101
-#: src/components/WalletHeader.tsx:38
 msgid "Delete"
 msgstr "Delete"
 
@@ -280,7 +277,6 @@ msgstr "Error the entered address appears to be for a different colour."
 
 #: src/components/WalletSend.tsx:191
 #: src/components/cat/WalletCATSend.tsx:244
-#: src/components/WalletSend.tsx:189
 msgid "Farm"
 msgstr "Farm"
 
@@ -290,8 +286,6 @@ msgstr "Farm"
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:238
-#: src/components/WalletSend.tsx:179
 msgid "Fee"
 msgstr "Fee"
 
@@ -360,7 +354,6 @@ msgstr "Manage token list"
 
 #: src/components/WalletHistory.tsx:169
 #: src/components/cat/WalletCATSend.tsx:234
-#: src/components/WalletHistory.tsx:170
 msgid "Memo"
 msgstr "Memo"
 
@@ -443,8 +436,8 @@ msgstr "You ripper"
 msgid "Offer Accepted"
 msgstr "Offer Accepted"
 
-#: src/components/cat/WalletCATSend.tsx:179
 #: src/components/WalletSend.tsx:141
+#: src/components/cat/WalletCATSend.tsx:179
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute, so sit back, relax, and have another drink."
 
@@ -527,9 +520,9 @@ msgstr "Please enter a valid initial coin amount"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 
+#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "Please enter a valid numeric amount"
 
@@ -537,10 +530,10 @@ msgstr "Please enter a valid numeric amount"
 msgid "Please enter a valid numeric amount."
 msgstr "Please enter a valid numeric amount."
 
+#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "Please enter a valid numeric fee"
 
@@ -564,9 +557,9 @@ msgstr "Please enter a valid token name"
 msgid "Please enter valid wallet name"
 msgstr "Please enter valid wallet name"
 
+#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "Please finish syncing before making a transaction"
 
@@ -696,8 +689,6 @@ msgstr "Selected recovery file:"
 #: src/components/WalletSend.tsx:202
 #: src/components/cat/WalletCATSend.tsx:255
 #: src/components/rateLimited/WalletRateLimited.jsx:747
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:200
 msgid "Send"
 msgstr "Send"
 
@@ -801,12 +792,8 @@ msgid "This is the sum of the incoming and outgoing pending transactions (not ye
 msgstr "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr ""
-
-#: src/components/standard/WalletStandardCards.tsx:16
-#~ msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-#~ msgstr "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."

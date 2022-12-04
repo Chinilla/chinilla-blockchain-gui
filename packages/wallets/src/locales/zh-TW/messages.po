@@ -59,9 +59,9 @@ msgstr "新增 {0} 代幣"
 msgid "Address"
 msgstr "位址"
 
+#: src/components/WalletSend.tsx:156
 #: src/components/cat/WalletCATSend.tsx:195
 #: src/components/rateLimited/WalletRateLimited.jsx:700
-#: src/components/WalletSend.tsx:156
 msgid "Address / Puzzle hash"
 msgstr "位址 / 拼圖雜湊值"
 
@@ -69,8 +69,6 @@ msgstr "位址 / 拼圖雜湊值"
 #: src/components/WalletSend.tsx:167
 #: src/components/cat/WalletCATSend.tsx:207
 #: src/components/rateLimited/WalletRateLimited.jsx:719
-#: src/components/WalletHistory.tsx:226
-#: src/components/WalletSend.tsx:167
 msgid "Amount"
 msgstr "數量"
 
@@ -111,8 +109,8 @@ msgstr "餘額"
 msgid "Cancel"
 msgstr "取消"
 
-#: src/components/cat/WalletCATSend.tsx:118
 #: src/components/WalletSend.tsx:103
+#: src/components/cat/WalletCATSend.tsx:118
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "不能寄送奇亞到有色地址。請輸入奇亞地址。"
 
@@ -207,9 +205,9 @@ msgstr "建立速率限制管理員錢包"
 msgid "Create Rate Limited User Wallet"
 msgstr "建立速率限制使用者錢包"
 
+#: src/components/WalletSend.tsx:138
 #: src/components/cat/WalletCATSend.tsx:176
 #: src/components/rateLimited/WalletRateLimited.jsx:683
-#: src/components/WalletSend.tsx:138
 msgid "Create Transaction"
 msgstr "建立交易"
 
@@ -244,7 +242,6 @@ msgstr "日期"
 #: src/components/did/WalletDID.tsx:862
 #: src/components/did/WalletDIDCreate.tsx:196
 #: src/components/did/WalletDIDRecovery.tsx:101
-#: src/components/WalletHeader.tsx:38
 msgid "Delete"
 msgstr "刪除"
 
@@ -280,7 +277,6 @@ msgstr ""
 
 #: src/components/WalletSend.tsx:191
 #: src/components/cat/WalletCATSend.tsx:244
-#: src/components/WalletSend.tsx:189
 msgid "Farm"
 msgstr "耕種"
 
@@ -290,8 +286,6 @@ msgstr "耕種"
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
-#: src/components/WalletHistory.tsx:238
-#: src/components/WalletSend.tsx:179
 msgid "Fee"
 msgstr "費用"
 
@@ -362,7 +356,6 @@ msgstr "管理代幣列表"
 
 #: src/components/WalletHistory.tsx:169
 #: src/components/cat/WalletCATSend.tsx:234
-#: src/components/WalletHistory.tsx:170
 msgid "Memo"
 msgstr "備註（Memo）"
 
@@ -445,8 +438,8 @@ msgstr "好"
 msgid "Offer Accepted"
 msgstr ""
 
-#: src/components/cat/WalletCATSend.tsx:179
 #: src/components/WalletSend.tsx:141
+#: src/components/cat/WalletCATSend.tsx:179
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "平均每個交易區塊之間有 1 分鐘的時間。除非出現擁塞，否則你可以在不到 1 分鐘的時間內完成交易。"
 
@@ -529,9 +522,9 @@ msgstr "請輸入有效的初始金額"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr ""
 
+#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
-#: src/components/WalletSend.tsx:93
 msgid "Please enter a valid numeric amount"
 msgstr "請輸入有效的數字值"
 
@@ -539,10 +532,10 @@ msgstr "請輸入有效的數字值"
 msgid "Please enter a valid numeric amount."
 msgstr "請輸入有效的數值。"
 
+#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
-#: src/components/WalletSend.tsx:98
 msgid "Please enter a valid numeric fee"
 msgstr "請輸入有效的數字費用值"
 
@@ -566,9 +559,9 @@ msgstr ""
 msgid "Please enter valid wallet name"
 msgstr ""
 
+#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
-#: src/components/WalletSend.tsx:88
 msgid "Please finish syncing before making a transaction"
 msgstr "請在交易前先完成同步"
 
@@ -698,8 +691,6 @@ msgstr "選擇的還原檔案："
 #: src/components/WalletSend.tsx:202
 #: src/components/cat/WalletCATSend.tsx:255
 #: src/components/rateLimited/WalletRateLimited.jsx:747
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:200
 msgid "Send"
 msgstr "發送"
 
@@ -803,7 +794,7 @@ msgid "This is the sum of the incoming and outgoing pending transactions (not ye
 msgstr "這是匯入和匯出的未結交易的總和（還沒包含在區塊鏈中）。這不包括耕種獎勵。"
 
 #: src/components/standard/WalletStandardCards.tsx:16
-msgid "This is the total amount of Chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgid "This is the total amount of chinilla in the blockchain at the current peak block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
 msgstr ""
 
 #: src/components/standard/WalletStandardCards.tsx:31
