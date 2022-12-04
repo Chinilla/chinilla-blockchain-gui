@@ -1,4 +1,5 @@
 export { default as activateLocale } from './activateLocale';
+export { default as bigNumberToLocaleString } from './bigNumberToLocaleString';
 export { default as blockHeightToTimestamp } from './blockHeightToTimestamp';
 export { calculatePoolReward, calculateBaseFarmerReward } from './blockRewards';
 export { default as catToVojo} from './catToVojo';
@@ -13,5 +14,8 @@ export { default as vojoToCATLocaleString } from './vojoToCATLocaleString';
 export { default as vojoToChinilla } from './vojoToChinilla';
 export { default as vojoToChinillaLocaleString } from './vojoToChinillaLocaleString';
 export { default as sleep } from './sleep';
-export { default as useColorModeValue } from './useColorModeValue';
+export {
+  default as useColorModeValue,
+  getColorModeValue,
+} from './useColorModeValue';
 export { default as validAddress } from './validAddress';

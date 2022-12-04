@@ -8,7 +8,7 @@ import {
 import {
   Amount,
   ButtonLoading,
-  Fee,
+  EstimatedFee,
   Form,
   TextField,
   Flex,
@@ -21,11 +21,7 @@ import {
 } from '@chinilla/core';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
-import {
-  Button,
-  Grid,
-  Typography,
-} from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import useWallet from '../hooks/useWallet';
 import CreateWalletSendTransactionResultDialog from './WalletSendTransactionResultDialog';
 
@@ -41,10 +37,11 @@ type SendTransactionData = {
 
 export default function WalletSend(props: SendCardProps) {
   const { walletId } = props;
-
+  const [submissionCount, setSubmissionCount] = React.useState(0);
   const isSimulator = useIsSimulator();
   const openDialog = useOpenDialog();
-  const [sendTransaction, { isLoading: isSendTransactionLoading }] = useSendTransactionMutation();
+  const [sendTransaction, { isLoading: isSendTransactionLoading }] =
+    useSendTransactionMutation();
   const [farmBlock] = useFarmBlockMutation();
   const methods = useForm<SendTransactionData>({
     defaultValues: {
@@ -59,9 +56,13 @@ export default function WalletSend(props: SendCardProps) {
     name: 'address',
   });
 
-  const { data: walletState, isLoading: isWalletSyncLoading } = useGetSyncStatusQuery({}, {
-    pollingInterval: 10000,
-  });
+  const { data: walletState, isLoading: isWalletSyncLoading } =
+    useGetSyncStatusQuery(
+      {},
+      {
+        pollingInterval: 10000,
+      }
+    );
 
   const { wallet } = useWallet(walletId);
 
@@ -100,7 +101,9 @@ export default function WalletSend(props: SendCardProps) {
 
     let address = data.address;
     if (address.includes('colour')) {
-      throw new Error(t`Cannot send chinilla to coloured address. Please enter a chinilla address.`);
+      throw new Error(
+        t`Cannot send chinilla to coloured address. Please enter a chinilla address.`
+      );
     }
 
     if (address.slice(0, 12) === 'chinilla_addr://') {
@@ -119,29 +122,32 @@ export default function WalletSend(props: SendCardProps) {
     }).unwrap();
 
     const result = getTransactionResult(response.transaction);
-    const resultDialog = CreateWalletSendTransactionResultDialog({success: result.success, message: result.message});
+    const resultDialog = CreateWalletSendTransactionResultDialog({
+      success: result.success,
+      message: result.message,
+    });
 
     if (resultDialog) {
       await openDialog(resultDialog);
-    }
-    else {
+    } else {
       throw new Error(result.message ?? 'Something went wrong');
     }
 
     methods.reset();
+    setSubmissionCount((prev) => prev + 1);
   }
 
   return (
-    <Form methods={methods} onSubmit={handleSubmit}>
+    <Form methods={methods} key={submissionCount} onSubmit={handleSubmit}>
       <Flex gap={2} flexDirection="column">
         <Typography variant="h6">
           <Trans>Create Transaction</Trans>
           &nbsp;
           <TooltipIcon>
             <Trans>
-              On average there is one minute between each transaction block. Unless
-              there is congestion you can expect your transaction to be included in
-              less than a minute.
+              On average there is one minute between each transaction block.
+              Unless there is congestion you can expect your transaction to be
+              included in less than a minute.
             </Trans>
           </TooltipIcon>
         </Typography>
@@ -171,7 +177,7 @@ export default function WalletSend(props: SendCardProps) {
               />
             </Grid>
             <Grid xs={12} md={6} item>
-              <Fee
+              <EstimatedFee
                 id="filled-secondary"
                 variant="filled"
                 name="fee"
@@ -179,13 +185,18 @@ export default function WalletSend(props: SendCardProps) {
                 label={<Trans>Fee</Trans>}
                 data-testid="WalletSend-fee"
                 fullWidth
+                txType="walletSendHCX"
               />
             </Grid>
           </Grid>
         </Card>
         <Flex justifyContent="flex-end" gap={1}>
           {isSimulator && (
-            <Button onClick={farm} variant="outlined" data-testid="WalletSend-farm">
+            <Button
+              onClick={farm}
+              variant="outlined"
+              data-testid="WalletSend-farm"
+            >
               <Trans>Farm</Trans>
             </Button>
           )}

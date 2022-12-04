@@ -1,6 +1,8 @@
 import { useCallback } from 'react';
-import { useLocalStorage } from '@chinilla/core';
-import { useGetLoggedInFingerprintQuery } from '@chinilla/api-react';
+import {
+  useGetLoggedInFingerprintQuery,
+  useLocalStorage,
+} from '@chinilla/api-react';
 
 export default function useHiddenWallet(): {
   hide: (walletId: number) => void;

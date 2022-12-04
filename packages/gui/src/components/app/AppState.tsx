@@ -26,6 +26,7 @@ import AppPassPrompt from './AppPassPrompt';
 import AppSelectMode from './AppSelectMode';
 import ModeServices, { SimulatorServices } from '../../constants/ModeServices';
 import useEnableDataLayerService from '../../hooks/useEnableDataLayerService';
+import { IpcRenderer } from 'electron';
 import useEnableFilePropagationServer from '../../hooks/useEnableFilePropagationServer';
 import AppAutoLogin from './AppAutoLogin';
 
@@ -72,7 +73,7 @@ export default function AppState(props: Props) {
           services.push(ServiceName.DATALAYER);
         }
 
-        // File propagation server is dependent on the data layer
+        // File propagation server is dependent on the datalayer
         if (
           isFilePropagationServerEnabled &&
           !services.includes(ServiceName.DATALAYER_SERVER)
@@ -109,6 +110,16 @@ export default function AppState(props: Props) {
   const isConnected =
     !isClientStateLoading && clientState?.state === ConnectionState.CONNECTED;
 
+  async function handleOpenFile(event, path: string) {
+    console.log('Opening file:');
+    console.log(path);
+  }
+
+  async function handleOpenUrl(event, url: string) {
+    console.log('Opening url:');
+    console.log(url);
+  }
+
   async function handleClose(event) {
     if (closing) {
       return;
@@ -125,11 +136,18 @@ export default function AppState(props: Props) {
 
   useEffect(() => {
     if (isElectron()) {
-      // @ts-ignore
-      window.ipcRenderer.on('exit-daemon', handleClose);
+      const ipcRenderer: IpcRenderer = (window as any).ipcRenderer;
+
+      ipcRenderer.on('open-file', handleOpenFile);
+      ipcRenderer.on('open-url', handleOpenUrl);
+      ipcRenderer.on('exit-daemon', handleClose);
+
+      // Handle files/URLs opened at launch now that the app is ready
+      ipcRenderer.invoke('processLaunchTasks');
+
       return () => {
         // @ts-ignore
-        window.ipcRenderer.off('exit-daemon', handleClose);
+        ipcRenderer.off('exit-daemon', handleClose);
       };
     }
   }, []);
@@ -168,7 +186,9 @@ export default function AppState(props: Props) {
   if (isLoadingKeyringStatus || !keyringStatus) {
     return (
       <LayoutLoading>
-        <Trans>Loading keyring status</Trans>
+        <Typography variant="body1">
+          <Trans>Loading keyring status</Trans>
+        </Typography>
       </LayoutLoading>
     );
   }
@@ -195,7 +215,9 @@ export default function AppState(props: Props) {
     return (
       <LayoutLoading>
         {!attempt ? (
-          <Trans>Connecting to daemon</Trans>
+          <Typography variant="body1" align="center">
+            <Trans>Connecting to daemon</Trans>
+          </Typography>
         ) : (
           <Flex flexDirection="column" gap={1}>
             <Typography variant="body1" align="center">

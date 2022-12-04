@@ -2,14 +2,10 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { CardSimple } from '@chinilla/core';
 import { ServiceName } from '@chinilla/api';
-import { useIsServiceRunningQuery } from '@chinilla/api-react';
+import { useService } from '@chinilla/api-react';
 
 export default function FullNodeCardConnectionStatus() {
-  const { data: isRunning, isLoading, error } = useIsServiceRunningQuery({
-    service: ServiceName.FULL_NODE,
-  }, {
-    pollingInterval: 1000,
-  });
+  const { isRunning, isLoading, error } = useService(ServiceName.FULL_NODE);
 
   return (
     <CardSimple

@@ -10,12 +10,17 @@ import {
   Container,
   IconButton,
   Typography,
+  CircularProgress,
 } from '@mui/material';
 import Flex from '../Flex';
 import Logo from '../Logo';
 import ToolbarSpacing from '../ToolbarSpacing';
 import Loading from '../Loading';
-import { useLogout, useGetLoggedInFingerprintQuery } from '@chinilla/api-react';
+import {
+  useLogout,
+  useGetLoggedInFingerprintQuery,
+  useGetKeyQuery,
+} from '@chinilla/api-react';
 import { ExitToApp as ExitToAppIcon } from '@mui/icons-material';
 import Settings from '../Settings';
 import Tooltip from '../Tooltip';
@@ -31,8 +36,7 @@ const StyledContainer = styled(Container)`
   padding-bottom: ${({ theme }) => `${theme.spacing(2)}px`};
 `;
 
-const StyledAppBar = styled(AppBar)`
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+const StyledAppBar = styled(({ drawer, ...rest }) => <AppBar {...rest} />)`
   border-bottom: 1px solid ${({ theme }) => theme.palette.divider};
   width: ${({ theme, drawer }) =>
     drawer ? `calc(100% - ${theme.drawer.width})` : '100%'};
@@ -77,7 +81,18 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
 
   const navigate = useNavigate();
   const logout = useLogout();
-  const { data: fingerprint } = useGetLoggedInFingerprintQuery();
+  const { data: fingerprint, isLoading: isLoadingFingerprint } =
+    useGetLoggedInFingerprintQuery();
+  const { data: keyData, isLoading: isLoadingKeyData } = useGetKeyQuery(
+    {
+      fingerprint,
+    },
+    {
+      skip: !fingerprint,
+    }
+  );
+
+  const isLoading = isLoadingFingerprint || isLoadingKeyData;
 
   async function handleLogout() {
     await logout();
@@ -97,29 +112,50 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
               drawer
             >
               <StyledToolbar>
-                <Flex width="100%" alignItems="center" justifyContent="space-between" gap={3}>
-                  <Flex alignItems="center" flexGrow={1} justifyContent="space-between" flexWrap="wrap" gap={1}>
-                    <Box>
-                      <Typography variant="h4">
-                        <Trans>Wallet</Trans>
-                        &nbsp;
-                        {fingerprint && (
-                          <StyledInlineTypography
-                            color="textSecondary"
-                            variant="h5"
-                            data-testid="LayoutDashboard-fingerprint"
-                          >
-                            {fingerprint}
-                          </StyledInlineTypography>
-                        )}
-                      </Typography>
-                    </Box>
+                <Flex
+                  width="100%"
+                  alignItems="center"
+                  justifyContent="space-between"
+                  gap={3}
+                >
+                  <Flex
+                    alignItems="center"
+                    flexGrow={1}
+                    justifyContent="space-between"
+                    flexWrap="wrap"
+                    minWidth={0}
+                    gap={1}
+                  >
+                    <Flex flexGrow={1} minWidth={0}>
+                      {isLoading ? (
+                        <Box>
+                          <CircularProgress size={32} color="secondary" />
+                        </Box>
+                      ) : (
+                        <Flex minWidth={0} alignItems="baseline">
+                          <Typography variant="h4" display="flex-inline" noWrap>
+                            {keyData?.label || <Trans>Wallet</Trans>}
+                          </Typography>
+                          {fingerprint && (
+                            <StyledInlineTypography
+                              color="textSecondary"
+                              variant="h5"
+                              component="span"
+                              data-testid="LayoutDashboard-fingerprint"
+                            >
+                              &nbsp;
+                              {fingerprint}
+                            </StyledInlineTypography>
+                          )}
+                        </Flex>
+                      )}
+                    </Flex>
                     <Flex alignItems="center" gap={1}>
                       {actions}
                     </Flex>
                   </Flex>
                   <Box>
-                                        {/*
+                    {/*
                         <DropdownIconButton
                           icon={<Notifications />}
                           title={t`Notifications`}
@@ -132,11 +168,14 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
                         </DropdownIconButton>
                         &nbsp;
                         */}
-                      <Tooltip title={<Trans>Log Out</Trans>}>
-                        <IconButton onClick={handleLogout} data-testid="LayoutDashboard-log-out">
-                          <ExitToAppIcon />
-                        </IconButton>
-                      </Tooltip>
+                    <Tooltip title={<Trans>Log Out</Trans>}>
+                      <IconButton
+                        onClick={handleLogout}
+                        data-testid="LayoutDashboard-log-out"
+                      >
+                        <ExitToAppIcon />
+                      </IconButton>
+                    </Tooltip>
                   </Box>
                 </Flex>
               </StyledToolbar>
