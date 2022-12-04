@@ -44,10 +44,10 @@ msgstr "Ajouter un identifiant de secours"
 #~ msgid "Add Custom Token"
 #~ msgstr "Ajouter un Jeton Personnalisé"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:174
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
+#: src/components/WalletsList.tsx:54
+#: src/components/WalletsManageTokens.tsx:174
 msgid "Add Token"
 msgstr "Ajouter un Type de Jetons"
 
@@ -59,16 +59,16 @@ msgstr "Ajout du jeton {0}"
 msgid "Address"
 msgstr "Adresse"
 
-#: src/components/WalletSend.tsx:156
-#: src/components/cat/WalletCATSend.tsx:195
+#: src/components/cat/WalletCATSend.tsx:204
 #: src/components/rateLimited/WalletRateLimited.jsx:700
+#: src/components/WalletSend.tsx:162
 msgid "Address / Puzzle hash"
 msgstr "Hash de l'adresse / du puzzle"
 
-#: src/components/WalletHistory.tsx:225
-#: src/components/WalletSend.tsx:167
-#: src/components/cat/WalletCATSend.tsx:207
+#: src/components/cat/WalletCATSend.tsx:216
 #: src/components/rateLimited/WalletRateLimited.jsx:719
+#: src/components/WalletHistory.tsx:225
+#: src/components/WalletSend.tsx:173
 msgid "Amount"
 msgstr "Montant"
 
@@ -109,8 +109,8 @@ msgstr "Solde"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/components/WalletSend.tsx:103
-#: src/components/cat/WalletCATSend.tsx:118
+#: src/components/cat/WalletCATSend.tsx:119
+#: src/components/WalletSend.tsx:105
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Impossible d'envoyer des chinillas à une adresse colorée. Merci d'entrer une adresse chinilla valide."
 
@@ -193,7 +193,7 @@ msgid "Create New Wallet"
 msgstr "Créer un nouveau portefeuille"
 
 #: src/components/cat/WalletCAT.tsx:113
-#: src/components/standard/WalletStandard.tsx:48
+#: src/components/standard/WalletStandard.tsx:47
 msgid "Create Offer"
 msgstr "Créer une offre"
 
@@ -205,9 +205,9 @@ msgstr "Créer un Portefeuille Admin à taux limité"
 msgid "Create Rate Limited User Wallet"
 msgstr "Créer un Portefeuille Utilisateur à taux limité"
 
-#: src/components/WalletSend.tsx:138
-#: src/components/cat/WalletCATSend.tsx:176
+#: src/components/cat/WalletCATSend.tsx:185
 #: src/components/rateLimited/WalletRateLimited.jsx:683
+#: src/components/WalletSend.tsx:144
 msgid "Create Transaction"
 msgstr "Créer une transaction"
 
@@ -235,13 +235,13 @@ msgstr ""
 msgid "Date"
 msgstr "Date"
 
-#: src/components/WalletHeader.tsx:32
 #: src/components/cat/WalletDID.tsx:448
 #: src/components/cat/WalletDID.tsx:862
 #: src/components/did/WalletDID.tsx:448
 #: src/components/did/WalletDID.tsx:862
 #: src/components/did/WalletDIDCreate.tsx:196
 #: src/components/did/WalletDIDRecovery.tsx:101
+#: src/components/WalletHeader.tsx:32
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -271,21 +271,21 @@ msgstr "Glisser-déposer votre fichier de sauvegarde de récupération"
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Entrez les 24 mots mnémotechniques que vous avez sauvegardé afin de restaurer votre portefeuille Chinilla."
 
-#: src/components/cat/WalletCATSend.tsx:128
+#: src/components/cat/WalletCATSend.tsx:133
 msgid "Error the entered address appears to be for a different colour."
 msgstr "Erreur : l'adresse saisie semble avoir une couleur différente."
 
-#: src/components/WalletSend.tsx:191
-#: src/components/cat/WalletCATSend.tsx:244
+#: src/components/cat/WalletCATSend.tsx:258
+#: src/components/WalletSend.tsx:200
 msgid "Farm"
 msgstr "Ferme"
 
-#: src/components/WalletHistory.tsx:237
-#: src/components/WalletSend.tsx:179
-#: src/components/cat/WalletCATSend.tsx:221
+#: src/components/cat/WalletCATSend.tsx:230
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
+#: src/components/WalletHistory.tsx:237
+#: src/components/WalletSend.tsx:185
 msgid "Fee"
 msgstr "Frais"
 
@@ -352,8 +352,8 @@ msgstr "Gérer les identités décentralisées de récupération"
 msgid "Manage token list"
 msgstr "Gérer les types de jetons"
 
+#: src/components/cat/WalletCATSend.tsx:244
 #: src/components/WalletHistory.tsx:169
-#: src/components/cat/WalletCATSend.tsx:234
 msgid "Memo"
 msgstr "Note"
 
@@ -436,8 +436,8 @@ msgstr "D'accord"
 msgid "Offer Accepted"
 msgstr "Offre Acceptée"
 
-#: src/components/WalletSend.tsx:141
-#: src/components/cat/WalletCATSend.tsx:179
+#: src/components/cat/WalletCATSend.tsx:188
+#: src/components/WalletSend.tsx:147
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "En moyenne, il y a une minute entre chaque bloc de transaction. À moins qu'il n'y ait de congestion, vous pouvez vous attendre à ce que votre transaction soit incluse dans moins d'une minute."
 
@@ -520,9 +520,9 @@ msgstr "Veuillez entrer un montant initial valide"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Veuillez saisir un nombre entier valide plus grand ou égal à 0 pour le nombre d'identifiants de sauvegarde nécessaires à la récupération."
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
+#: src/components/WalletSend.tsx:94
 msgid "Please enter a valid numeric amount"
 msgstr "Veuillez entrer une valeur numérique valide dans le montant"
 
@@ -530,10 +530,10 @@ msgstr "Veuillez entrer une valeur numérique valide dans le montant"
 msgid "Please enter a valid numeric amount."
 msgstr "Veuillez saisir un montant numérique valide."
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
+#: src/components/WalletSend.tsx:99
 msgid "Please enter a valid numeric fee"
 msgstr "Veuillez entrer une valeur numérique valide dans les frais"
 
@@ -557,9 +557,9 @@ msgstr "Veuillez saisir un nom de jeton valide"
 msgid "Please enter valid wallet name"
 msgstr "Veuillez saisir un nom de portefeuille valide"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
+#: src/components/WalletSend.tsx:89
 msgid "Please finish syncing before making a transaction"
 msgstr "Merci de terminer la synchronisation avant de faire une transaction"
 
@@ -622,7 +622,7 @@ msgstr "Recevoir"
 msgid "Receive Address"
 msgstr "Adresse de réception"
 
-#: src/components/cat/WalletCATSend.tsx:122
+#: src/components/cat/WalletCATSend.tsx:125
 msgid "Recipient address is not a coloured wallet address. Please enter a coloured wallet address"
 msgstr "L'adresse du destinataire n'est pas une adresse de portefeuille colorée. Veuillez entrer une adresse de portefeuille colorée"
 
@@ -655,8 +655,8 @@ msgstr "Portefeuille récupérable"
 msgid "Recovery Wallet"
 msgstr "Portefeuille de récupération"
 
-#: src/components/WalletRenameDialog.tsx:69
 #: src/components/cat/WalletCAT.tsx:96
+#: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
 msgstr "Renommer le portefeuille"
 
@@ -668,8 +668,8 @@ msgstr "Enlever"
 msgid "Save"
 msgstr "Définir"
 
-#: src/components/WalletTokenCard.tsx:185
 #: src/components/cat/WalletCATTAILDialog.tsx:76
+#: src/components/WalletTokenCard.tsx:200
 msgid "Search on Tail Database"
 msgstr "Rechercher sur Tail Database"
 
@@ -685,10 +685,10 @@ msgstr "Sélectionner un type de portefeuille"
 msgid "Selected recovery file:"
 msgstr "Fichier de récupération sélectionné :"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:202
-#: src/components/cat/WalletCATSend.tsx:255
+#: src/components/cat/WalletCATSend.tsx:269
 #: src/components/rateLimited/WalletRateLimited.jsx:747
+#: src/components/WalletHeader.tsx:59
+#: src/components/WalletSend.tsx:211
 msgid "Send"
 msgstr "Envoyer"
 

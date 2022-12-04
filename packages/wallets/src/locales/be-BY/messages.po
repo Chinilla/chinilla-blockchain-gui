@@ -44,10 +44,10 @@ msgstr ""
 #~ msgid "Add Custom Token"
 #~ msgstr ""
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:174
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
+#: src/components/WalletsList.tsx:54
+#: src/components/WalletsManageTokens.tsx:174
 msgid "Add Token"
 msgstr ""
 
@@ -59,16 +59,16 @@ msgstr ""
 msgid "Address"
 msgstr "Адрас"
 
-#: src/components/WalletSend.tsx:156
-#: src/components/cat/WalletCATSend.tsx:195
+#: src/components/cat/WalletCATSend.tsx:204
 #: src/components/rateLimited/WalletRateLimited.jsx:700
+#: src/components/WalletSend.tsx:162
 msgid "Address / Puzzle hash"
 msgstr "Адрас / Хэш-галаваломка"
 
-#: src/components/WalletHistory.tsx:225
-#: src/components/WalletSend.tsx:167
-#: src/components/cat/WalletCATSend.tsx:207
+#: src/components/cat/WalletCATSend.tsx:216
 #: src/components/rateLimited/WalletRateLimited.jsx:719
+#: src/components/WalletHistory.tsx:225
+#: src/components/WalletSend.tsx:173
 msgid "Amount"
 msgstr "Сума"
 
@@ -109,8 +109,8 @@ msgstr "Баланс"
 msgid "Cancel"
 msgstr "Скасаваць"
 
-#: src/components/WalletSend.tsx:103
-#: src/components/cat/WalletCATSend.tsx:118
+#: src/components/cat/WalletCATSend.tsx:119
+#: src/components/WalletSend.tsx:105
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr ""
 
@@ -193,7 +193,7 @@ msgid "Create New Wallet"
 msgstr ""
 
 #: src/components/cat/WalletCAT.tsx:113
-#: src/components/standard/WalletStandard.tsx:48
+#: src/components/standard/WalletStandard.tsx:47
 msgid "Create Offer"
 msgstr ""
 
@@ -205,9 +205,9 @@ msgstr "Стварыць кашалёк адміністратара з абме
 msgid "Create Rate Limited User Wallet"
 msgstr "Стварыць кашалёк карыстальніка з абмежаваннямі вываду"
 
-#: src/components/WalletSend.tsx:138
-#: src/components/cat/WalletCATSend.tsx:176
+#: src/components/cat/WalletCATSend.tsx:185
 #: src/components/rateLimited/WalletRateLimited.jsx:683
+#: src/components/WalletSend.tsx:144
 msgid "Create Transaction"
 msgstr "Стварыць трансакцыю"
 
@@ -235,13 +235,13 @@ msgstr ""
 msgid "Date"
 msgstr "Дата"
 
-#: src/components/WalletHeader.tsx:32
 #: src/components/cat/WalletDID.tsx:448
 #: src/components/cat/WalletDID.tsx:862
 #: src/components/did/WalletDID.tsx:448
 #: src/components/did/WalletDID.tsx:862
 #: src/components/did/WalletDIDCreate.tsx:196
 #: src/components/did/WalletDIDRecovery.tsx:101
+#: src/components/WalletHeader.tsx:32
 msgid "Delete"
 msgstr "Выдаліць"
 
@@ -271,21 +271,21 @@ msgstr ""
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Каб аднавіць свой кашалёк Chinilla, увядзіце раней захаваную вамі мнеманічную фразу з 24 слоў у правільным парадку."
 
-#: src/components/cat/WalletCATSend.tsx:128
+#: src/components/cat/WalletCATSend.tsx:133
 msgid "Error the entered address appears to be for a different colour."
 msgstr ""
 
-#: src/components/WalletSend.tsx:191
-#: src/components/cat/WalletCATSend.tsx:244
+#: src/components/cat/WalletCATSend.tsx:258
+#: src/components/WalletSend.tsx:200
 msgid "Farm"
 msgstr "Ферма"
 
-#: src/components/WalletHistory.tsx:237
-#: src/components/WalletSend.tsx:179
-#: src/components/cat/WalletCATSend.tsx:221
+#: src/components/cat/WalletCATSend.tsx:230
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
+#: src/components/WalletHistory.tsx:237
+#: src/components/WalletSend.tsx:185
 msgid "Fee"
 msgstr "Камісійныя"
 
@@ -352,8 +352,8 @@ msgstr ""
 msgid "Manage token list"
 msgstr ""
 
+#: src/components/cat/WalletCATSend.tsx:244
 #: src/components/WalletHistory.tsx:169
-#: src/components/cat/WalletCATSend.tsx:234
 msgid "Memo"
 msgstr ""
 
@@ -436,8 +436,8 @@ msgstr "ОК"
 msgid "Offer Accepted"
 msgstr ""
 
-#: src/components/WalletSend.tsx:141
-#: src/components/cat/WalletCATSend.tsx:179
+#: src/components/cat/WalletCATSend.tsx:188
+#: src/components/WalletSend.tsx:147
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "У сярэднім паміж кожным блокам трансакцый мінае адна хвіліна. Калі сетка не перагружана, чакаецца, што ваша трансакцыя будзе занесена ў блокчэйн менш чым за хвіліну."
 
@@ -520,9 +520,9 @@ msgstr "Укажыце дапушчальную суму першапачатк�
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr ""
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
+#: src/components/WalletSend.tsx:94
 msgid "Please enter a valid numeric amount"
 msgstr "Укажыце дапушчальнае лічбавае значэнне"
 
@@ -530,10 +530,10 @@ msgstr "Укажыце дапушчальнае лічбавае значэнн�
 msgid "Please enter a valid numeric amount."
 msgstr ""
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
+#: src/components/WalletSend.tsx:99
 msgid "Please enter a valid numeric fee"
 msgstr "Укажыце дапушчальнае лічбавае значэнне камісійных"
 
@@ -557,9 +557,9 @@ msgstr ""
 msgid "Please enter valid wallet name"
 msgstr ""
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
+#: src/components/WalletSend.tsx:89
 msgid "Please finish syncing before making a transaction"
 msgstr "Завяршыце сінхранізацыю перад выкананнем трансакцыі"
 
@@ -622,7 +622,7 @@ msgstr ""
 msgid "Receive Address"
 msgstr "Адрас атрымання"
 
-#: src/components/cat/WalletCATSend.tsx:122
+#: src/components/cat/WalletCATSend.tsx:125
 msgid "Recipient address is not a coloured wallet address. Please enter a coloured wallet address"
 msgstr ""
 
@@ -655,8 +655,8 @@ msgstr ""
 msgid "Recovery Wallet"
 msgstr ""
 
-#: src/components/WalletRenameDialog.tsx:69
 #: src/components/cat/WalletCAT.tsx:96
+#: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
 msgstr ""
 
@@ -668,8 +668,8 @@ msgstr ""
 msgid "Save"
 msgstr "Захаваць"
 
-#: src/components/WalletTokenCard.tsx:185
 #: src/components/cat/WalletCATTAILDialog.tsx:76
+#: src/components/WalletTokenCard.tsx:200
 msgid "Search on Tail Database"
 msgstr ""
 
@@ -685,10 +685,10 @@ msgstr "Выберыце тып кашалька"
 msgid "Selected recovery file:"
 msgstr ""
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:202
-#: src/components/cat/WalletCATSend.tsx:255
+#: src/components/cat/WalletCATSend.tsx:269
 #: src/components/rateLimited/WalletRateLimited.jsx:747
+#: src/components/WalletHeader.tsx:59
+#: src/components/WalletSend.tsx:211
 msgid "Send"
 msgstr "Адправіць"
 

@@ -58,7 +58,7 @@ import {
 import { calculateNFTRoyalties } from './utils';
 import useFetchNFTs from '../../hooks/useFetchNFTs';
 import NFTOfferPreview from './NFTOfferPreview';
-import NFTOfferEhcxangeType from './NFTOfferEhcxangeType';
+import NFTOfferExchangeType from './NFTOfferExchangeType';
 import styled from 'styled-components';
 import NFTOfferTokenSelector from './NFTOfferTokenSelector';
 
@@ -127,7 +127,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
   const [amountFocused, setAmountFocused] = useState<boolean>(false);
   const [makerFeeFocused, setMakerFeeFocused] = useState<boolean>(false);
 
-  const tab = methods.watch('ehcxangeType');
+  const tab = methods.watch('exchangeType');
   const tokenWalletInfo = methods.watch('tokenWalletInfo');
   const amount = methods.watch('tokenAmount');
   const makerFee = methods.watch('fee');
@@ -140,7 +140,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
         walletId: tokenWalletInfo.walletId,
       },
       {
-        skip: tab !== NFTOfferEhcxangeType.TokenForNFT,
+        skip: tab !== NFTOfferExchangeType.TokenForNFT,
       },
     );
 
@@ -150,7 +150,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
 
     if (
       !isLoadingWalletBalance &&
-      tab === NFTOfferEhcxangeType.TokenForNFT &&
+      tab === NFTOfferExchangeType.TokenForNFT &&
       walletBalance &&
       walletBalance.walletId == tokenWalletInfo.walletId
     ) {
@@ -270,7 +270,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
             required
             fullWidth
           />
-          {tab === NFTOfferEhcxangeType.TokenForNFT && (
+          {tab === NFTOfferExchangeType.TokenForNFT && (
             <Flex flexDirection="row" alignItems="center" gap={1}>
               <Typography variant="body2">Spendable balance: </Typography>
               {spendableBalanceString === undefined ? (
@@ -301,9 +301,9 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
     </Flex>
   );
   const offerElem =
-    tab === NFTOfferEhcxangeType.NFTForToken ? nftElem : amountElem;
+    tab === NFTOfferExchangeType.NFTForToken ? nftElem : amountElem;
   const takerElem =
-    tab === NFTOfferEhcxangeType.NFTForToken ? amountElem : nftElem;
+    tab === NFTOfferExchangeType.NFTForToken ? amountElem : nftElem;
   const showRoyaltyWarning = (royaltyPercentage ?? 0) >= 20;
   const royaltyPercentageColor = showRoyaltyWarning
     ? StateColor.WARNING
@@ -352,18 +352,18 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
       <Tabs
         value={tab}
         onChange={(_event, newValue) =>
-          methods.setValue('ehcxangeType', newValue)
+          methods.setValue('exchangeType', newValue)
         }
         textColor="primary"
         indicatorColor="primary"
       >
         <Tab
-          value={NFTOfferEhcxangeType.TokenForNFT}
+          value={NFTOfferExchangeType.TokenForNFT}
           label={<Trans>Buy an NFT</Trans>}
           disabled={disabled}
         />
         <Tab
-          value={NFTOfferEhcxangeType.NFTForToken}
+          value={NFTOfferExchangeType.NFTForToken}
           label={<Trans>Sell an NFT</Trans>}
           disabled={disabled}
         />
@@ -378,7 +378,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
           </Flex>
           <Flex flexDirection="column" gap={1}>
             <Typography variant="subtitle1" color="textSecondary">
-              In ehcxange for
+              In exchange for
             </Typography>
             {takerElem}
           </Flex>
@@ -410,7 +410,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
               </Flex>
             </Flex>
           ) : null}
-          {tab === NFTOfferEhcxangeType.TokenForNFT && (
+          {tab === NFTOfferExchangeType.TokenForNFT && (
             <Flex flexDirection="column" gap={2}>
               {!nft?.royaltyPercentage && <Divider />}
               {makerFeeElem}
@@ -421,7 +421,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
               <>
                 <Flex flexDirection="column" gap={0.5}>
                   <Typography variant="body1" color="textSecondary">
-                    {tab === NFTOfferEhcxangeType.NFTForToken ? (
+                    {tab === NFTOfferExchangeType.NFTForToken ? (
                       <Trans>You will receive</Trans>
                     ) : (
                       <Trans>They will receive</Trans>
@@ -451,7 +451,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
                 <Flex flexDirection="column" gap={0.5}>
                   <Flex flexDirection="row" alignItems="center" gap={1}>
                     <Typography variant="h6" color="textSecondary">
-                      {tab === NFTOfferEhcxangeType.NFTForToken ? (
+                      {tab === NFTOfferExchangeType.NFTForToken ? (
                         <Trans>Total Amount Requested</Trans>
                       ) : (
                         <Trans>Total Amount Offered</Trans>
@@ -459,7 +459,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
                     </Typography>
                     <Flex justifyContent="center">
                       <TooltipIcon>
-                        {tab === NFTOfferEhcxangeType.NFTForToken ? (
+                        {tab === NFTOfferExchangeType.NFTForToken ? (
                           <Trans>
                             The total amount requested includes the asking
                             price, plus the associated creator fees (if the NFT
@@ -492,7 +492,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
                       value={new BigNumber(totalAmountString ?? 0)}
                     />{' '}
                     {tokenWalletInfo.symbol ?? tokenWalletInfo.name ?? ''}
-                    {tab === NFTOfferEhcxangeType.TokenForNFT &&
+                    {tab === NFTOfferExchangeType.TokenForNFT &&
                       tokenWalletInfo.walletType !==
                         WalletType.STANDARD_WALLET &&
                       makerFee > 0 && (
@@ -508,7 +508,7 @@ function NFTOfferConditionalsPanel(props: NFTOfferConditionalsPanelProps) {
               </>
             </Flex>
           ) : null}
-          {tab === NFTOfferEhcxangeType.NFTForToken && (
+          {tab === NFTOfferExchangeType.NFTForToken && (
             <Flex flexDirection="column" gap={2}>
               <Divider />
               {makerFeeElem}
@@ -564,7 +564,7 @@ export type NFTOfferEditorTokenWalletInfo = {
 };
 
 type NFTOfferEditorFormData = {
-  ehcxangeType: NFTOfferEhcxangeType;
+  exchangeType: NFTOfferExchangeType;
   nftId?: string;
   tokenWalletInfo: NFTOfferEditorTokenWalletInfo;
   tokenAmount: string;
@@ -572,7 +572,7 @@ type NFTOfferEditorFormData = {
 };
 
 type NFTOfferEditorValidatedFormData = {
-  ehcxangeType: NFTOfferEhcxangeType;
+  exchangeType: NFTOfferExchangeType;
   launcherId: string;
   tokenWalletInfo: NFTOfferEditorTokenWalletInfo;
   tokenAmount: string;
@@ -582,11 +582,11 @@ type NFTOfferEditorValidatedFormData = {
 type NFTOfferEditorProps = {
   nft?: NFTInfo;
   onOfferCreated: (obj: { offerRecord: any; offerData: any }) => void;
-  ehcxangeType: NFTOfferEhcxangeType;
+  exchangeType: NFTOfferExchangeType;
 };
 
 type NFTBuildOfferRequestParams = {
-  ehcxangeType: NFTOfferEhcxangeType;
+  exchangeType: NFTOfferExchangeType;
   nft: NFTInfo;
   nftLauncherId: string;
   tokenWalletInfo: NFTOfferEditorTokenWalletInfo;
@@ -596,7 +596,7 @@ type NFTBuildOfferRequestParams = {
 
 function buildOfferRequest(params: NFTBuildOfferRequestParams) {
   const {
-    ehcxangeType,
+    exchangeType,
     nft,
     nftLauncherId,
     tokenWalletInfo,
@@ -608,11 +608,11 @@ function buildOfferRequest(params: NFTBuildOfferRequestParams) {
       ? catToVojo(tokenAmount)
       : chinillaToVojo(tokenAmount);
   const vojoAmount =
-    ehcxangeType === NFTOfferEhcxangeType.NFTForToken
+    exchangeType === NFTOfferExchangeType.NFTForToken
       ? baseVojoAmount
       : baseVojoAmount.negated();
   const feeVojoAmount = chinillaToVojo(fee);
-  const nftAmount = ehcxangeType === NFTOfferEhcxangeType.NFTForToken ? -1 : 1;
+  const nftAmount = exchangeType === NFTOfferExchangeType.NFTForToken ? -1 : 1;
   const innerAlsoDict = nft.supportsDid
     ? {
         type: 'ownership',
@@ -645,13 +645,13 @@ function buildOfferRequest(params: NFTBuildOfferRequestParams) {
       [nftLauncherId]: nftAmount,
       [tokenWalletInfo.walletId]: vojoAmount,
     },
-    ehcxangeType === NFTOfferEhcxangeType.TokenForNFT ? driverDict : undefined,
+    exchangeType === NFTOfferExchangeType.TokenForNFT ? driverDict : undefined,
     feeVojoAmount,
   ];
 }
 
 export default function NFTOfferEditor(props: NFTOfferEditorProps) {
-  const { nft, onOfferCreated, ehcxangeType } = props;
+  const { nft, onOfferCreated, exchangeType } = props;
   const [createOfferForIds] = useCreateOfferForIdsMutation();
   const [isProcessing, setIsProcessing] = useState(false);
   const { wallets: nftWallets } = useGetNFTWallets();
@@ -665,7 +665,7 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
     OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE,
   );
   const defaultValues: NFTOfferEditorFormData = {
-    ehcxangeType: ehcxangeType,
+    exchangeType: exchangeType,
     nftId: nft?.$nftId ?? '',
     tokenWalletInfo: {
       walletId: 1,
@@ -688,7 +688,7 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
   function validateFormData(
     unvalidatedFormData: NFTOfferEditorFormData,
   ): NFTOfferEditorValidatedFormData | undefined {
-    const { ehcxangeType, nftId, tokenWalletInfo, tokenAmount, fee } =
+    const { exchangeType, nftId, tokenWalletInfo, tokenAmount, fee } =
       unvalidatedFormData;
     let result: NFTOfferEditorValidatedFormData | undefined = undefined;
 
@@ -703,13 +703,13 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
     } else if (!tokenAmount || tokenAmount === '0') {
       errorDialog(new Error(t`Please enter an amount`));
     } else if (
-      ehcxangeType === NFTOfferEhcxangeType.TokenForNFT &&
+      exchangeType === NFTOfferExchangeType.TokenForNFT &&
       tokenWalletInfo.spendableBalance?.isLessThan(tokenAmount)
     ) {
       errorDialog(new Error(t`Amount exceeds spendable balance`));
     } else {
       result = {
-        ehcxangeType,
+        exchangeType,
         launcherId,
         tokenWalletInfo,
         tokenAmount,
@@ -736,10 +736,10 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
       return;
     }
 
-    const { ehcxangeType, launcherId, tokenWalletInfo, tokenAmount, fee } =
+    const { exchangeType, launcherId, tokenWalletInfo, tokenAmount, fee } =
       formData;
 
-    if (ehcxangeType === NFTOfferEhcxangeType.NFTForToken) {
+    if (exchangeType === NFTOfferExchangeType.NFTForToken) {
       const haveNFT =
         nfts.find((nft: NFTInfo) => nft.$nftId === offerNFT.$nftId) !==
         undefined;
@@ -768,7 +768,7 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
     }
 
     const [offer, driverDict, feeInVojos] = buildOfferRequest({
-      ehcxangeType,
+      exchangeType,
       nft: offerNFT,
       nftLauncherId: launcherId,
       tokenWalletInfo,
@@ -849,7 +849,7 @@ export default function NFTOfferEditor(props: NFTOfferEditorProps) {
 
 type CreateNFTOfferEditorProps = {
   nft?: NFTInfo;
-  ehcxangeType?: NFTOfferEhcxangeType;
+  exchangeType?: NFTOfferExchangeType;
   referrerPath?: string;
   onOfferCreated: (obj: { offerRecord: any; offerData: any }) => void;
 };
@@ -857,7 +857,7 @@ type CreateNFTOfferEditorProps = {
 export function CreateNFTOfferEditor(props: CreateNFTOfferEditorProps) {
   const {
     nft,
-    ehcxangeType = NFTOfferEhcxangeType.TokenForNFT,
+    exchangeType = NFTOfferExchangeType.TokenForNFT,
     referrerPath,
     onOfferCreated,
   } = props;
@@ -878,7 +878,7 @@ export function CreateNFTOfferEditor(props: CreateNFTOfferEditorProps) {
         <NFTOfferEditor
           nft={nft}
           onOfferCreated={onOfferCreated}
-          ehcxangeType={ehcxangeType}
+          exchangeType={exchangeType}
         />
       </Flex>
     </Grid>

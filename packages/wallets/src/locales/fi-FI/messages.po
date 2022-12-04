@@ -44,10 +44,10 @@ msgstr "Lisää Varmuuskopion ID"
 #~ msgid "Add Custom Token"
 #~ msgstr "Lisää Kustomoitu Token"
 
-#: src/components/WalletsList.tsx:54
-#: src/components/WalletsManageTokens.tsx:174
 #: src/components/cat/WalletCATCreateExistingSimple.tsx:61
 #: src/components/cat/WalletCATCreateSimple.tsx:70
+#: src/components/WalletsList.tsx:54
+#: src/components/WalletsManageTokens.tsx:174
 msgid "Add Token"
 msgstr "Lisää Token"
 
@@ -59,16 +59,16 @@ msgstr "Lisätään {0} token"
 msgid "Address"
 msgstr "Osoite"
 
-#: src/components/WalletSend.tsx:156
-#: src/components/cat/WalletCATSend.tsx:195
+#: src/components/cat/WalletCATSend.tsx:204
 #: src/components/rateLimited/WalletRateLimited.jsx:700
+#: src/components/WalletSend.tsx:162
 msgid "Address / Puzzle hash"
 msgstr "Osoite / Puzzle-tiiviste"
 
-#: src/components/WalletHistory.tsx:225
-#: src/components/WalletSend.tsx:167
-#: src/components/cat/WalletCATSend.tsx:207
+#: src/components/cat/WalletCATSend.tsx:216
 #: src/components/rateLimited/WalletRateLimited.jsx:719
+#: src/components/WalletHistory.tsx:225
+#: src/components/WalletSend.tsx:173
 msgid "Amount"
 msgstr "Määrä"
 
@@ -109,8 +109,8 @@ msgstr "Saldo"
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/components/WalletSend.tsx:103
-#: src/components/cat/WalletCATSend.tsx:118
+#: src/components/cat/WalletCATSend.tsx:119
+#: src/components/WalletSend.tsx:105
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Chinillaa (HCX) ei voi lähettää CAT-osoitteeseen. Anna chinilla-osoite."
 
@@ -193,7 +193,7 @@ msgid "Create New Wallet"
 msgstr "Luo uusi lompakko"
 
 #: src/components/cat/WalletCAT.tsx:113
-#: src/components/standard/WalletStandard.tsx:48
+#: src/components/standard/WalletStandard.tsx:47
 msgid "Create Offer"
 msgstr "Luo Tarjous"
 
@@ -205,9 +205,9 @@ msgstr "Luo Siirtorajoitettu Pääkäyttäjälompakko"
 msgid "Create Rate Limited User Wallet"
 msgstr "Luo Siirtorajoitettu Käyttäjälompakko"
 
-#: src/components/WalletSend.tsx:138
-#: src/components/cat/WalletCATSend.tsx:176
+#: src/components/cat/WalletCATSend.tsx:185
 #: src/components/rateLimited/WalletRateLimited.jsx:683
+#: src/components/WalletSend.tsx:144
 msgid "Create Transaction"
 msgstr "Luo Transaktio"
 
@@ -235,13 +235,13 @@ msgstr ""
 msgid "Date"
 msgstr "Päiväys"
 
-#: src/components/WalletHeader.tsx:32
 #: src/components/cat/WalletDID.tsx:448
 #: src/components/cat/WalletDID.tsx:862
 #: src/components/did/WalletDID.tsx:448
 #: src/components/did/WalletDID.tsx:862
 #: src/components/did/WalletDIDCreate.tsx:196
 #: src/components/did/WalletDIDRecovery.tsx:101
+#: src/components/WalletHeader.tsx:32
 msgid "Delete"
 msgstr "Poista"
 
@@ -271,21 +271,21 @@ msgstr "Raahaa ja pudota palautuksen varmuuskopiotiedosto"
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Anna tallentamasi 24 muistisanaa palauttaaksesi Chinilla-lompakon."
 
-#: src/components/cat/WalletCATSend.tsx:128
+#: src/components/cat/WalletCATSend.tsx:133
 msgid "Error the entered address appears to be for a different colour."
 msgstr "Virhe, annettu osoite näyttää olevan eri tokenille."
 
-#: src/components/WalletSend.tsx:191
-#: src/components/cat/WalletCATSend.tsx:244
+#: src/components/cat/WalletCATSend.tsx:258
+#: src/components/WalletSend.tsx:200
 msgid "Farm"
 msgstr "Farmi"
 
-#: src/components/WalletHistory.tsx:237
-#: src/components/WalletSend.tsx:179
-#: src/components/cat/WalletCATSend.tsx:221
+#: src/components/cat/WalletCATSend.tsx:230
 #: src/components/create/createRLAdmin.jsx:243
 #: src/components/create/createRLAdmin.jsx:271
 #: src/components/rateLimited/WalletRateLimited.jsx:732
+#: src/components/WalletHistory.tsx:237
+#: src/components/WalletSend.tsx:185
 msgid "Fee"
 msgstr "Veloitus"
 
@@ -352,8 +352,8 @@ msgstr "Hallitse Palautus-DID:jä"
 msgid "Manage token list"
 msgstr "Hallitse tokenilistaa"
 
+#: src/components/cat/WalletCATSend.tsx:244
 #: src/components/WalletHistory.tsx:169
-#: src/components/cat/WalletCATSend.tsx:234
 msgid "Memo"
 msgstr "Muistio"
 
@@ -436,8 +436,8 @@ msgstr "OK"
 msgid "Offer Accepted"
 msgstr "Tarjous Hyväksytty"
 
-#: src/components/WalletSend.tsx:141
-#: src/components/cat/WalletCATSend.tsx:179
+#: src/components/cat/WalletCATSend.tsx:188
+#: src/components/WalletSend.tsx:147
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Transaktiolohkon väli on keskimäärin minuutti. Ruuhkattomana aikana transaktiosi voidaan lisätä alle minuutissa lohkoketjuun."
 
@@ -520,9 +520,9 @@ msgstr "Anna käypä kolikoiden määrä"
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr "Syötä kelvollinen 0 tai suurempi kokonaisluku varmuuskopion tunnusten lukumäärälle, jota tarvitaan palauttamiseen."
 
-#: src/components/WalletSend.tsx:93
 #: src/components/cat/WalletCATSend.tsx:104
 #: src/components/rateLimited/WalletRateLimited.jsx:638
+#: src/components/WalletSend.tsx:94
 msgid "Please enter a valid numeric amount"
 msgstr "Anna käypä numeerinen arvo"
 
@@ -530,10 +530,10 @@ msgstr "Anna käypä numeerinen arvo"
 msgid "Please enter a valid numeric amount."
 msgstr "Anna kelvollinen numeerinen summa."
 
-#: src/components/WalletSend.tsx:98
 #: src/components/cat/WalletCATSend.tsx:109
 #: src/components/create/createRLAdmin.jsx:149
 #: src/components/rateLimited/WalletRateLimited.jsx:648
+#: src/components/WalletSend.tsx:99
 msgid "Please enter a valid numeric fee"
 msgstr "Anna käypä numeerinen veloitus"
 
@@ -557,9 +557,9 @@ msgstr "Anna kelvollinen tokenin nimi"
 msgid "Please enter valid wallet name"
 msgstr "Anna kelvollinen lompakon nimi"
 
-#: src/components/WalletSend.tsx:88
 #: src/components/cat/WalletCATSend.tsx:95
 #: src/components/rateLimited/WalletRateLimited.jsx:622
+#: src/components/WalletSend.tsx:89
 msgid "Please finish syncing before making a transaction"
 msgstr "Synkronoi loppuun ennen transaktion tekemistä"
 
@@ -622,7 +622,7 @@ msgstr "Vastaanota"
 msgid "Receive Address"
 msgstr "Vastaanottajan Osoite"
 
-#: src/components/cat/WalletCATSend.tsx:122
+#: src/components/cat/WalletCATSend.tsx:125
 msgid "Recipient address is not a coloured wallet address. Please enter a coloured wallet address"
 msgstr "Vastaanottajan osoite ei ole CAT-osoite. Syötä CAT-osoite"
 
@@ -655,8 +655,8 @@ msgstr "Palautettavissa Oleva Lompakko"
 msgid "Recovery Wallet"
 msgstr "Recovery-lompakko"
 
-#: src/components/WalletRenameDialog.tsx:69
 #: src/components/cat/WalletCAT.tsx:96
+#: src/components/WalletRenameDialog.tsx:69
 msgid "Rename Wallet"
 msgstr "Uudelleennimeä Lompakko"
 
@@ -668,8 +668,8 @@ msgstr "Poista vanhentunut"
 msgid "Save"
 msgstr "Tallenna"
 
-#: src/components/WalletTokenCard.tsx:185
 #: src/components/cat/WalletCATTAILDialog.tsx:76
+#: src/components/WalletTokenCard.tsx:200
 msgid "Search on Tail Database"
 msgstr "Etsi Tail-tietokannasta"
 
@@ -685,10 +685,10 @@ msgstr "Valitse Lompakkotyyppi"
 msgid "Selected recovery file:"
 msgstr "Valittu palautustiedosto:"
 
-#: src/components/WalletHeader.tsx:59
-#: src/components/WalletSend.tsx:202
-#: src/components/cat/WalletCATSend.tsx:255
+#: src/components/cat/WalletCATSend.tsx:269
 #: src/components/rateLimited/WalletRateLimited.jsx:747
+#: src/components/WalletHeader.tsx:59
+#: src/components/WalletSend.tsx:211
 msgid "Send"
 msgstr "Lähetä"
 

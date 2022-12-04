@@ -12,7 +12,7 @@ import {
   vojoToCATLocaleString,
   vojoToChinillaLocaleString,
 } from '@chinilla/core';
-import NFTOfferEhcxangeType from './NFTOfferEhcxangeType';
+import NFTOfferExchangeType from './NFTOfferExchangeType';
 import OfferState from './OfferState';
 import OfferAsset from './OfferAsset';
 import { AssetIdMapEntry } from '../../hooks/useAssetIdName';
@@ -293,9 +293,9 @@ export function offerAssetAmountForAssetId(
 
 /* ========================================================================== */
 
-export function determineNFTOfferEhcxangeType(
+export function determineNFTOfferExchangeType(
   summary: OfferSummaryRecord,
-): NFTOfferEhcxangeType | undefined {
+): NFTOfferExchangeType | undefined {
   const nftOffered = Object.keys(summary.offered).find(
     (assetId) => offerAssetTypeForAssetId(assetId, summary) === OfferAsset.NFT,
   );
@@ -309,8 +309,8 @@ export function determineNFTOfferEhcxangeType(
   }
 
   return nftOffered
-    ? NFTOfferEhcxangeType.NFTForToken
-    : NFTOfferEhcxangeType.TokenForNFT;
+    ? NFTOfferExchangeType.NFTForToken
+    : NFTOfferExchangeType.TokenForNFT;
 }
 
 /* ========================================================================== */
@@ -355,7 +355,7 @@ export function calculateNFTRoyalties(
   amount: number,
   makerFee: number,
   royaltyPercentage: number,
-  ehcxangeType: NFTOfferEhcxangeType,
+  exchangeType: NFTOfferExchangeType,
 ): CalculateNFTRoyaltiesResult {
   const royaltyAmount: number = royaltyPercentage
     ? (royaltyPercentage / 100) * amount
@@ -366,7 +366,7 @@ export function calculateNFTRoyalties(
   //     (amount - parseFloat(royaltyAmountString) - makerFee).toFixed(12),
   //   );
   const totalAmount: number =
-    ehcxangeType === NFTOfferEhcxangeType.NFTForToken
+    exchangeType === NFTOfferExchangeType.NFTForToken
       ? amount + royaltyAmount
       : amount + makerFee + royaltyAmount;
   const totalAmountString: string = formatAmount(totalAmount);

@@ -35,7 +35,7 @@ test('Confirm Error message when fields are not completed on Offer Page', async 
   // When I enter an Amount 
   await page.locator('text=Amount *THCX >> input[type="text"]').fill('0.05');
 
-  // And I enter invalid text in Ehcxange field 
+  // And I enter invalid text in Exchange field 
   await page.locator('[placeholder="NFT Identifier"]').fill('hjuyt');
 
   // And I click Create offer 
@@ -60,8 +60,8 @@ test('Confirm Error message when fields are not completed on Offer Page', async 
   await page.locator('text=You will offerAsset Type *​Amount *THCX >> input[type="text"]').fill('0.00000000005');
 
 
-  // And I complete Amount under heading In ehcxange for
-  await page.locator('text=In ehcxange forAsset Type *​Amount *THCX >> input[type="text"]').fill('0.00000000005');
+  // And I complete Amount under heading In exchange for
+  await page.locator('text=In exchange forAsset Type *​Amount *THCX >> input[type="text"]').fill('0.00000000005');
 
   // And I Click text=Create Offer
   await page.locator('text=Create Offer').click();

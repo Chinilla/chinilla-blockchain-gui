@@ -18,7 +18,7 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:162
+#: src/components/EstimatedFee/EstimatedFee.tsx:296
 msgid "<0>{0}</0>"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgstr "Kembali"
 
 #: src/components/ConfirmDialog/ConfirmDialog.tsx:32
 #: src/hooks/useKeyringMigrationPrompt.tsx:17
-#: src/screens/SelectKey/SelectKeyRenameForm.tsx:83
+#: src/screens/SelectKey/SelectKeyRenameForm.tsx:89
 msgid "Cancel"
 msgstr "Batal"
 
@@ -114,12 +114,12 @@ msgstr "Nonaktifkan"
 msgid "Disable Passphrase Protection"
 msgstr "Nonaktifkan proteksi sandi"
 
-#: src/components/Back/Back.tsx:35
+#: src/components/Back/Back.tsx:44
 #: src/components/FormBackButton/FormBackButton.tsx:27
 msgid "Discard"
 msgstr "Buang"
 
-#: src/components/CardSimple/CardSimple.tsx:63
+#: src/components/CardSimple/CardSimple.tsx:66
 #: src/hooks/useShowError.tsx:11
 msgid "Error"
 msgstr "Error"
@@ -128,7 +128,7 @@ msgstr "Error"
 msgid "Error:"
 msgstr ""
 
-#: src/screens/SelectKey/SelectKeyRenameForm.tsx:87
+#: src/screens/SelectKey/SelectKeyRenameForm.tsx:93
 msgid "Esc"
 msgstr ""
 
@@ -148,8 +148,8 @@ msgstr "Kunci Publik Farmer:"
 msgid "Farming"
 msgstr "Farming"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:192
-#: src/components/EstimatedFee/EstimatedFee.tsx:225
+#: src/components/EstimatedFee/EstimatedFee.tsx:332
+#: src/components/EstimatedFee/EstimatedFee.tsx:374
 #: src/components/Fee/Fee.tsx:52
 msgid "Fee"
 msgstr "Biaya"
@@ -296,7 +296,7 @@ msgstr ""
 msgid "Reveal"
 msgstr ""
 
-#: src/screens/SelectKey/SelectKeyRenameForm.tsx:107
+#: src/screens/SelectKey/SelectKeyRenameForm.tsx:113
 msgid "Save"
 msgstr ""
 
@@ -409,7 +409,7 @@ msgstr "Tisak bisa menampilkan daftar kunci dompet"
 msgid "Unknown"
 msgstr "Diketahui"
 
-#: src/components/Back/Back.tsx:34
+#: src/components/Back/Back.tsx:43
 #: src/components/FormBackButton/FormBackButton.tsx:26
 msgid "Unsaved Changes"
 msgstr "Perubahan yang belum disimpan"
@@ -452,7 +452,7 @@ msgstr ""
 msgid "Welcome to Chinilla. Please log in with an existing key, or create a new key."
 msgstr "Selamat datang di Chinilla. Silahkan masuk dengan key eksisting atau dengan membuat key baru."
 
-#: src/components/Back/Back.tsx:38
+#: src/components/Back/Back.tsx:47
 #: src/components/FormBackButton/FormBackButton.tsx:30
 msgid "You have made changes. Do you want to discard them?"
 msgstr "Ada perubahan yang belum disimpan. Apakah kamu ingin membuangnya?"
@@ -466,7 +466,11 @@ msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr "{0, plural,one {vojo} other {vojos}}"
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
-msgid "{0} THCX"
+#~ msgid "{0} THCX"
+#~ msgstr ""
+
+#: src/components/EstimatedFee/EstimatedFee.tsx:291
+msgid "{0} {currencyCode}"
 msgstr ""
 
 #: src/hooks/useValidateChangePassphraseParams.tsx:39

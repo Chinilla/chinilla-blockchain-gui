@@ -13,7 +13,7 @@ import { Box, Divider, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styled from 'styled-components';
 import useAssetIdName from '../../hooks/useAssetIdName';
-import OfferEhcxangeRate from './OfferEhcxangeRate';
+import OfferExchangeRate from './OfferExchangeRate';
 import { OfferSummaryTokenRow } from './OfferSummaryRow';
 
 const StyledWarningText = styled(Typography)`
@@ -63,12 +63,12 @@ export default function OfferSummary(props: Props) {
         ? vojoToChinilla(takerEntries[0][1])
         : vojoToCAT(takerEntries[0][1])
       : undefined;
-  const canSetEhcxangeRate =
+  const canSetExchangeRate =
     makerAssetInfo && takerAssetInfo && makerAmount && takerAmount;
-  const makerEhcxangeRate = canSetEhcxangeRate
+  const makerExchangeRate = canSetExchangeRate
     ? takerAmount / makerAmount
     : undefined;
-  const takerEhcxangeRate = canSetEhcxangeRate
+  const takerExchangeRate = canSetExchangeRate
     ? makerAmount / takerAmount
     : undefined;
 
@@ -167,15 +167,15 @@ export default function OfferSummary(props: Props) {
       ))}
       {!!makerAssetInfo &&
         !!takerAssetInfo &&
-        !!makerEhcxangeRate &&
-        !!takerEhcxangeRate && (
+        !!makerExchangeRate &&
+        !!takerExchangeRate && (
           <Flex flexDirection="column" gap={2}>
             <Divider />
-            <OfferEhcxangeRate
+            <OfferExchangeRate
               makerAssetInfo={makerAssetInfo}
               takerAssetInfo={takerAssetInfo}
-              makerEhcxangeRate={makerEhcxangeRate}
-              takerEhcxangeRate={takerEhcxangeRate}
+              makerExchangeRate={makerExchangeRate}
+              takerExchangeRate={takerExchangeRate}
             />
           </Flex>
         )}

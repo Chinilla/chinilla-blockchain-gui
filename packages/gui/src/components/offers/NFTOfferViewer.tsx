@@ -37,7 +37,7 @@ import { stripHexPrefix } from '../../util/utils';
 import { convertRoyaltyToPercentage, launcherIdToNFTId } from '../../util/nfts';
 import {
   calculateNFTRoyalties,
-  determineNFTOfferEhcxangeType,
+  determineNFTOfferExchangeType,
   getNFTPriceWithoutRoyalties,
   offerAssetTypeForAssetId,
 } from './utils';
@@ -46,7 +46,7 @@ import OfferHeader from './OfferHeader';
 import OfferState from './OfferState';
 import { OfferSummaryNFTRow, OfferSummaryTokenRow } from './OfferSummaryRow';
 import OfferViewerTitle from './OfferViewerTitle';
-import NFTOfferEhcxangeType from './NFTOfferEhcxangeType';
+import NFTOfferExchangeType from './NFTOfferExchangeType';
 import NFTOfferPreview from './NFTOfferPreview';
 import styled from 'styled-components';
 
@@ -380,7 +380,7 @@ type NFTOfferDetailsProps = {
 function NFTOfferDetails(props: NFTOfferDetailsProps) {
   const { tradeRecord, offerData, offerSummary, imported } = props;
   const summary = tradeRecord?.summary || offerSummary;
-  const ehcxangeType = determineNFTOfferEhcxangeType(summary);
+  const exchangeType = determineNFTOfferExchangeType(summary);
   const makerFee: number = summary.fees;
   const isMyOffer = !!tradeRecord?.isMyOffer;
   const showError = useShowError();
@@ -410,7 +410,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
 
   const nftSaleInfo = useMemo(() => {
     if (
-      !ehcxangeType ||
+      !exchangeType ||
       amount === undefined ||
       !nft ||
       nft.royaltyPercentage === undefined
@@ -426,7 +426,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
         amount,
         parseFloat(hcxMakerFee),
         convertRoyaltyToPercentage(nft.royaltyPercentage),
-        ehcxangeType,
+        exchangeType,
       ),
       royaltyPercentage,
     };
@@ -436,7 +436,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
     ? StateColor.WARNING
     : 'textSecondary';
   const overrideNFTSellerAmount =
-    ehcxangeType === NFTOfferEhcxangeType.TokenForNFT
+    exchangeType === NFTOfferExchangeType.TokenForNFT
       ? assetType === OfferAsset.CHINILLA
         ? chinillaToVojo(nftSaleInfo?.nftSellerNetAmount ?? 0)
         : catToVojo(nftSaleInfo?.nftSellerNetAmount ?? 0)
@@ -534,7 +534,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
                 }
                 takerTitle={
                   <Typography variant="body1" color="textSecondary">
-                    <Trans>In ehcxange for</Trans>
+                    <Trans>In exchange for</Trans>
                   </Typography>
                 }
                 setIsMissingRequestedAsset={(isMissing: boolean) =>
@@ -558,8 +558,8 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
                           <FormatLargeNumber
                             value={
                               new BigNumber(
-                                ehcxangeType ===
-                                NFTOfferEhcxangeType.NFTForToken
+                                exchangeType ===
+                                NFTOfferExchangeType.NFTForToken
                                   ? nftSaleInfo?.nftSellerNetAmount ?? 0
                                   : amount ?? 0,
                               )
@@ -609,7 +609,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
                   <Divider />
                   <Flex flexDirection="column" gap={0.5}>
                     <Flex flexDirection="row" alignItems="center" gap={1}>
-                      {ehcxangeType === NFTOfferEhcxangeType.NFTForToken ? (
+                      {exchangeType === NFTOfferExchangeType.NFTForToken ? (
                         <Typography variant="h6" color="textSecondary">
                           <Trans>Total Amount Requested</Trans>
                         </Typography>
@@ -620,7 +620,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
                       )}
                       <Flex justifyContent="center">
                         <TooltipIcon>
-                          {ehcxangeType === NFTOfferEhcxangeType.NFTForToken ? (
+                          {exchangeType === NFTOfferExchangeType.NFTForToken ? (
                             <Trans>
                               The total amount requested includes the asking
                               price, plus the associated creator fees (if the
@@ -649,12 +649,12 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
                     </Flex>
                     <Typography
                       variant={
-                        ehcxangeType === NFTOfferEhcxangeType.NFTForToken
+                        exchangeType === NFTOfferExchangeType.NFTForToken
                           ? 'h5'
                           : 'h6'
                       }
                       fontWeight={
-                        ehcxangeType === NFTOfferEhcxangeType.NFTForToken
+                        exchangeType === NFTOfferExchangeType.NFTForToken
                           ? 'bold'
                           : 'regular'
                       }
@@ -667,7 +667,7 @@ function NFTOfferDetails(props: NFTOfferDetailsProps) {
                       {displayName}
                     </Typography>
                   </Flex>
-                  {ehcxangeType === NFTOfferEhcxangeType.TokenForNFT && (
+                  {exchangeType === NFTOfferExchangeType.TokenForNFT && (
                     <Flex flexDirection="column" gap={0.5}>
                       <Flex flexDirection="row" alignItems="center" gap={1}>
                         <Typography variant="h6" color="textSecondary">

@@ -12,12 +12,12 @@ import { ImportExport } from '@mui/icons-material';
 import { AssetIdMapEntry } from '../../hooks/useAssetIdName';
 import { WalletType } from '@chinilla/api';
 
-interface OfferEhcxangeRateNumberFormatProps {
+interface OfferExchangeRateNumberFormatProps {
   inputRef: (instance: NumberFormat | null) => void;
   name: string;
 };
 
-function OfferEhcxangeRateNumberFormat(props: OfferEhcxangeRateNumberFormatProps) {
+function OfferExchangeRateNumberFormat(props: OfferExchangeRateNumberFormatProps) {
   const { inputRef, ...other } = props;
 
   return (
@@ -34,28 +34,28 @@ type Props = {
   readOnly: boolean;
   makerAssetInfo: AssetIdMapEntry;
   takerAssetInfo: AssetIdMapEntry;
-  makerEhcxangeRate?: number;
-  takerEhcxangeRate?: number;
-  takerEhcxangeRateChanged: (newRate: number) => void;
-  makerEhcxangeRateChanged: (newRate: number) => void;
+  makerExchangeRate?: number;
+  takerExchangeRate?: number;
+  takerExchangeRateChanged: (newRate: number) => void;
+  makerExchangeRateChanged: (newRate: number) => void;
 };
-export default function OfferEhcxangeRate(props: Props) {
+export default function OfferExchangeRate(props: Props) {
   const {
     readOnly,
     makerAssetInfo,
     takerAssetInfo,
-    makerEhcxangeRate,
-    takerEhcxangeRate,
-    takerEhcxangeRateChanged,
-    makerEhcxangeRateChanged,
+    makerExchangeRate,
+    takerExchangeRate,
+    takerExchangeRateChanged,
+    makerExchangeRateChanged,
   } = props;
 
-  const [editingMakerEhcxangeRate, setEditingMakerEhcxangeRate] = useState(false);
-  const [editingTakerEhcxangeRate, setEditingTakerEhcxangeRate] = useState(false);
+  const [editingMakerExchangeRate, setEditingMakerExchangeRate] = useState(false);
+  const [editingTakerExchangeRate, setEditingTakerExchangeRate] = useState(false);
   const [makerDisplayRate, takerDisplayRate] = useMemo(() => {
     return [
-      {rate: makerEhcxangeRate, walletType: makerAssetInfo.walletType, counterCurrencyName: takerAssetInfo.displayName},
-      {rate: takerEhcxangeRate, walletType: takerAssetInfo.walletType, counterCurrencyName: makerAssetInfo.displayName}
+      {rate: makerExchangeRate, walletType: makerAssetInfo.walletType, counterCurrencyName: takerAssetInfo.displayName},
+      {rate: takerExchangeRate, walletType: takerAssetInfo.walletType, counterCurrencyName: makerAssetInfo.displayName}
     ].map(({rate, walletType}) => {
       let displayRate = '';
 
@@ -70,10 +70,10 @@ export default function OfferEhcxangeRate(props: Props) {
       }
       return `${displayRate}`;
     });
-  }, [makerAssetInfo, takerAssetInfo, makerEhcxangeRate, takerEhcxangeRate]);
+  }, [makerAssetInfo, takerAssetInfo, makerExchangeRate, takerExchangeRate]);
 
-  const makerValueProps = editingMakerEhcxangeRate === false ? { value: makerDisplayRate } : {};
-  const takerValueProps = editingTakerEhcxangeRate === false ? { value: takerDisplayRate } : {};
+  const makerValueProps = editingMakerExchangeRate === false ? { value: makerDisplayRate } : {};
+  const takerValueProps = editingTakerExchangeRate === false ? { value: takerDisplayRate } : {};
 
   return (
     <Flex flexDirection="row">
@@ -82,15 +82,15 @@ export default function OfferEhcxangeRate(props: Props) {
           <Typography variant="subtitle1" noWrap>1 {makerAssetInfo.displayName} =</Typography>
           <TextField
             {...makerValueProps}
-            key={`makerEhcxangeRate-${takerAssetInfo.displayName}`}
-            id={`makerEhcxangeRate-${takerAssetInfo.displayName}`}
+            key={`makerExchangeRate-${takerAssetInfo.displayName}`}
+            id={`makerExchangeRate-${takerAssetInfo.displayName}`}
             variant="outlined"
             size="small"
-            onFocus={() => setEditingMakerEhcxangeRate(true)}
-            onBlur={() => setEditingMakerEhcxangeRate(false)}
-            onChange={(event) => takerEhcxangeRateChanged(Number(event.target.value))}
+            onFocus={() => setEditingMakerExchangeRate(true)}
+            onBlur={() => setEditingMakerExchangeRate(false)}
+            onChange={(event) => takerExchangeRateChanged(Number(event.target.value))}
             InputProps={{
-              inputComponent: OfferEhcxangeRateNumberFormat as any,
+              inputComponent: OfferExchangeRateNumberFormat as any,
               inputProps: {
                 decimalScale: takerAssetInfo.walletType === WalletType.STANDARD_WALLET ? 12 : 9,
               },
@@ -108,15 +108,15 @@ export default function OfferEhcxangeRate(props: Props) {
         <Flex alignItems="baseline" gap={1}>
           <TextField
             {...takerValueProps}
-            key={`takerEhcxangeRate-${makerAssetInfo.displayName}`}
-            id={`takerEhcxangeRate-${makerAssetInfo.displayName}`}
+            key={`takerExchangeRate-${makerAssetInfo.displayName}`}
+            id={`takerExchangeRate-${makerAssetInfo.displayName}`}
             variant="outlined"
             size="small"
-            onFocus={() => setEditingTakerEhcxangeRate(true)}
-            onBlur={() => setEditingTakerEhcxangeRate(false)}
-            onChange={(event) => makerEhcxangeRateChanged(Number(event.target.value))}
+            onFocus={() => setEditingTakerExchangeRate(true)}
+            onBlur={() => setEditingTakerExchangeRate(false)}
+            onChange={(event) => makerExchangeRateChanged(Number(event.target.value))}
             InputProps={{
-              inputComponent: OfferEhcxangeRateNumberFormat as any,
+              inputComponent: OfferExchangeRateNumberFormat as any,
               inputProps: {
                 decimalScale: makerAssetInfo.walletType === WalletType.STANDARD_WALLET ? 12 : 9,
               },
@@ -132,6 +132,6 @@ export default function OfferEhcxangeRate(props: Props) {
   );
 }
 
-OfferEhcxangeRate.defaultProps = {
+OfferExchangeRate.defaultProps = {
   readOnly: true,
 };

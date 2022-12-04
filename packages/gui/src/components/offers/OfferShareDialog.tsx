@@ -1395,7 +1395,7 @@ function OfferShareConfirmationDialog(
             }
             takerTitle={
               <Typography variant="subtitle1">
-                <Trans>In ehcxange for:</Trans>
+                <Trans>In exchange for:</Trans>
               </Typography>
             }
             rowIndentation={3}
