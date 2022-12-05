@@ -268,7 +268,7 @@ msgstr ""
 msgid "Base Farmer Reward Amount"
 msgstr "Výše základu odměny farmáře"
 
-#: src/components/offers/OfferShareDialog.tsx:1216
+#: src/components/offers/OfferShareDialog.tsx:1214
 msgid "Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team. Please note that it might take a few moments to join the channel."
 msgstr ""
 
@@ -356,8 +356,8 @@ msgstr ""
 #: src/components/offers/OfferAcceptConfirmationDialog.tsx:26
 #: src/components/offers/OfferDataEntryDialog.tsx:67
 #: src/components/offers/OfferEditorConfirmationDialog.tsx:18
-#: src/components/offers/OfferShareDialog.tsx:1248
-#: src/components/offers/OfferShareDialog.tsx:1415
+#: src/components/offers/OfferShareDialog.tsx:1246
+#: src/components/offers/OfferShareDialog.tsx:1413
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:127
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:86
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:29
@@ -419,23 +419,32 @@ msgid "Changes will take effect the next time Chinilla is started"
 msgstr ""
 
 #: src/electron/main.tsx:934
-msgid "Chat on KeyBase"
-msgstr "Chat na KeyBase"
+msgid "Chat on Discord"
+msgstr ""
+
+#: src/electron/main.tsx:934
+#~ msgid "Chat on KeyBase"
+#~ msgstr "Chat na KeyBase"
 
 #: src/components/offers/NFTOfferPreview.tsx:180
 #: src/components/offers2/OfferBuilderNFTProvenance.tsx:41
-msgid "Check Provenance on MintGarden"
+msgid "Check Provenance on ForgeFarm"
 msgstr ""
+
+#: src/components/offers/NFTOfferPreview.tsx:180
+#: src/components/offers2/OfferBuilderNFTProvenance.tsx:41
+#~ msgid "Check Provenance on MintGarden"
+#~ msgstr ""
 
 #: src/components/offers/NFTOfferPreview.tsx:190
 #: src/components/offers2/OfferBuilderNFTProvenance.tsx:51
-msgid "Check Provenance on SkyNFT"
-msgstr ""
+#~ msgid "Check Provenance on SkyNFT"
+#~ msgstr ""
 
 #: src/components/offers/NFTOfferPreview.tsx:200
 #: src/components/offers2/OfferBuilderNFTProvenance.tsx:61
-msgid "Check Provenance on Spacescan.io"
-msgstr ""
+#~ msgid "Check Provenance on Spacescan.io"
+#~ msgstr ""
 
 #: src/electron/main.tsx:952
 msgid "Chinilla"
@@ -452,6 +461,10 @@ msgstr ""
 #: src/electron/main.tsx:891
 msgid "Chinilla Blockchain Wiki"
 msgstr "Chinilla Blockchain Wiki"
+
+#: src/components/offers/OfferShareDialog.tsx:777
+msgid "Chinilla URL"
+msgstr ""
 
 #: src/components/app/AppSelectMode.tsx:155
 msgid "Choose Farming Mode"
@@ -481,14 +494,14 @@ msgstr "Získat odměnu"
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:450
 #: src/components/nfts/NFTTransferAction.tsx:162
 #: src/components/offers/OfferManager.tsx:192
-#: src/components/offers/OfferShareDialog.tsx:639
-#: src/components/offers/OfferShareDialog.tsx:721
-#: src/components/offers/OfferShareDialog.tsx:804
-#: src/components/offers/OfferShareDialog.tsx:907
-#: src/components/offers/OfferShareDialog.tsx:989
-#: src/components/offers/OfferShareDialog.tsx:1181
-#: src/components/offers/OfferShareDialog.tsx:1314
-#: src/components/offers/OfferShareDialog.tsx:1601
+#: src/components/offers/OfferShareDialog.tsx:637
+#: src/components/offers/OfferShareDialog.tsx:719
+#: src/components/offers/OfferShareDialog.tsx:802
+#: src/components/offers/OfferShareDialog.tsx:905
+#: src/components/offers/OfferShareDialog.tsx:987
+#: src/components/offers/OfferShareDialog.tsx:1179
+#: src/components/offers/OfferShareDialog.tsx:1312
+#: src/components/offers/OfferShareDialog.tsx:1599
 #: src/components/plot/PlotAddDirectoryDialog.tsx:130
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:81
 msgid "Close"
@@ -797,7 +810,7 @@ msgstr "Vývojář"
 msgid "Developer Tools"
 msgstr "Vývojářské nástroje"
 
-#: src/components/offers/OfferShareDialog.tsx:614
+#: src/components/offers/OfferShareDialog.tsx:612
 msgid "Dexie URL"
 msgstr ""
 
@@ -838,7 +851,7 @@ msgstr "Odpojit"
 msgid "Display Offer Data"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1594
+#: src/components/offers/OfferShareDialog.tsx:1592
 #: src/hooks/useOpenUnsafeLink.tsx:77
 msgid "Do not show this dialog again"
 msgstr ""
@@ -980,7 +993,7 @@ msgstr "Chyba"
 msgid "Failed to decode NFT identifier"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:478
+#: src/components/offers/OfferShareDialog.tsx:476
 msgid "Failed to execute Keybase command: {stderr}"
 msgstr ""
 
@@ -1117,8 +1130,12 @@ msgid "Finished"
 msgstr "Dokončeno"
 
 #: src/electron/main.tsx:940
-msgid "Follow on Twitter"
-msgstr "Sledovat na Twitteru"
+#~ msgid "Follow on Twitter"
+#~ msgstr "Sledovat na Twitteru"
+
+#: src/components/offers/OfferShareDialog.tsx:694
+msgid "ForgeFarm URL"
+msgstr ""
 
 #: src/electron/main.tsx:899
 msgid "Frequently Asked Questions"
@@ -1150,12 +1167,12 @@ msgstr "Základní"
 msgid "Go collect some gems"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1178
-#: src/components/offers/OfferShareDialog.tsx:1239
+#: src/components/offers/OfferShareDialog.tsx:1176
+#: src/components/offers/OfferShareDialog.tsx:1237
 msgid "Go to #{channelName}"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1311
+#: src/components/offers/OfferShareDialog.tsx:1309
 msgid "Go to Offerpool"
 msgstr ""
 
@@ -1179,7 +1196,7 @@ msgstr ""
 msgid "Hash mismatch."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:882
+#: src/components/offers/OfferShareDialog.tsx:880
 msgid "Hashgreen DEX URL"
 msgstr ""
 
@@ -1246,7 +1263,7 @@ msgstr "IP adresa / host"
 msgid "If none selected, then it will default to the temporary directory."
 msgstr "Pokud žádnou složku nezvolíte, bude použita výchozí složka s dočasnými soubory výše."
 
-#: src/components/offers/OfferShareDialog.tsx:833
+#: src/components/offers/OfferShareDialog.tsx:831
 msgid "If selected, your offer will be not be shared publicly."
 msgstr ""
 
@@ -1281,7 +1298,7 @@ msgstr "Probíhá"
 msgid "In exchange for"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1398
+#: src/components/offers/OfferShareDialog.tsx:1396
 msgid "In exchange for:"
 msgstr ""
 
@@ -1298,7 +1315,7 @@ msgstr "Index"
 msgid "Initializing..."
 msgstr "Inicializuji..."
 
-#: src/components/offers/OfferShareDialog.tsx:1211
+#: src/components/offers/OfferShareDialog.tsx:1209
 msgid "Install Keybase"
 msgstr ""
 
@@ -1359,7 +1376,7 @@ msgstr "Připojte se k Poolu a získejte konzistentní farmářskou odměnu HCX.
 msgid "Join farming pools"
 msgstr "Připojit se k poolům"
 
-#: src/components/offers/OfferShareDialog.tsx:1228
+#: src/components/offers/OfferShareDialog.tsx:1226
 msgid "Join {teamName}"
 msgstr ""
 
@@ -1368,11 +1385,11 @@ msgstr ""
 msgid "K-Size"
 msgstr "K - velikost"
 
-#: src/components/offers/OfferShareDialog.tsx:1114
+#: src/components/offers/OfferShareDialog.tsx:1112
 msgid "Keybase command failed {e}. If you haven't installed Keybase, you can download from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1203
+#: src/components/offers/OfferShareDialog.tsx:1201
 msgid "Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName} team, you must first have Keybase installed."
 msgstr ""
 
@@ -1541,8 +1558,8 @@ msgid "Minimum Difficulty"
 msgstr "Minimální obtížnost"
 
 #: src/components/offers/OfferShareDialog.tsx:696
-msgid "MintGarden URL"
-msgstr ""
+#~ msgid "MintGarden URL"
+#~ msgstr ""
 
 #: src/components/nfts/NFTDetails.tsx:204
 msgid "Minted at Block Height"
@@ -1859,13 +1876,13 @@ msgstr ""
 msgid "Offer Management"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:609
-#: src/components/offers/OfferShareDialog.tsx:691
-#: src/components/offers/OfferShareDialog.tsx:774
-#: src/components/offers/OfferShareDialog.tsx:877
-#: src/components/offers/OfferShareDialog.tsx:959
-#: src/components/offers/OfferShareDialog.tsx:1169
-#: src/components/offers/OfferShareDialog.tsx:1295
+#: src/components/offers/OfferShareDialog.tsx:607
+#: src/components/offers/OfferShareDialog.tsx:689
+#: src/components/offers/OfferShareDialog.tsx:772
+#: src/components/offers/OfferShareDialog.tsx:875
+#: src/components/offers/OfferShareDialog.tsx:957
+#: src/components/offers/OfferShareDialog.tsx:1167
+#: src/components/offers/OfferShareDialog.tsx:1293
 msgid "Offer Shared"
 msgstr ""
 
@@ -1884,8 +1901,8 @@ msgid "Offer has been accepted and is awaiting confirmation."
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:779
-msgid "OfferBin URL"
-msgstr ""
+#~ msgid "OfferBin URL"
+#~ msgstr ""
 
 #: src/components/offers/OfferManager.tsx:364
 msgid "Offered"
@@ -2614,44 +2631,52 @@ msgid "Settings"
 msgstr "Nastavení"
 
 #: src/components/offers/OfferManager.tsx:423
-#: src/components/offers/OfferShareDialog.tsx:1255
-#: src/components/offers/OfferShareDialog.tsx:1422
+#: src/components/offers/OfferShareDialog.tsx:1253
+#: src/components/offers/OfferShareDialog.tsx:1420
 msgid "Share"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1553
+#: src/components/offers/OfferShareDialog.tsx:1551
 msgid "Share Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:831
+#: src/components/offers/OfferShareDialog.tsx:829
 msgid "Share Privately"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:651
+#: src/components/offers/OfferShareDialog.tsx:814
+msgid "Share on Chinilla"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:649
 msgid "Share on Dexie"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:919
+#: src/components/offers/OfferShareDialog.tsx:731
+msgid "Share on ForgeFarm"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:917
 msgid "Share on Hashgreen DEX"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1198
+#: src/components/offers/OfferShareDialog.tsx:1196
 msgid "Share on Keybase"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:733
-msgid "Share on MintGarden"
-msgstr ""
+#~ msgid "Share on MintGarden"
+#~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:816
-msgid "Share on OfferBin"
-msgstr ""
+#~ msgid "Share on OfferBin"
+#~ msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1001
+#: src/components/offers/OfferShareDialog.tsx:999
 msgid "Share on Spacescan.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1326
+#: src/components/offers/OfferShareDialog.tsx:1324
 msgid "Share on offerpool"
 msgstr ""
 
@@ -2692,7 +2717,7 @@ msgstr "Přeskočí využití cílové složky pro farmaření"
 msgid "Smooth out your HCX farming rewards by joining a pool."
 msgstr "Stabilizujte odměny za vaše farmení HCX přidáním do poolu."
 
-#: src/components/offers/OfferShareDialog.tsx:964
+#: src/components/offers/OfferShareDialog.tsx:962
 msgid "Spacescan.io URL"
 msgstr ""
 
@@ -3106,11 +3131,11 @@ msgstr ""
 msgid "Unable to create an offer where the net amount is negative"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1129
+#: src/components/offers/OfferShareDialog.tsx:1127
 msgid "Unable to open Keybase. Install Keybase from https://keybase.io"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1036
+#: src/components/offers/OfferShareDialog.tsx:1034
 msgid "Unable to open browser. Install Keybase from https://keybase.io"
 msgstr ""
 
@@ -3202,34 +3227,46 @@ msgstr "Zobrazit odkaz pro přihlášení do Poolu"
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:632
+#: src/components/offers/OfferShareDialog.tsx:795
+msgid "View on Chinilla"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:630
 msgid "View on Dexie"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:900
+#: src/components/nfts/NFTContextualActions.tsx:694
+#: src/components/offers/OfferShareDialog.tsx:712
+msgid "View on ForgeFarm"
+msgstr ""
+
+#: src/components/offers/OfferShareDialog.tsx:898
 msgid "View on Hashgreen DEX"
 msgstr ""
 
 #: src/components/nfts/NFTContextualActions.tsx:694
 #: src/components/offers/OfferShareDialog.tsx:714
-msgid "View on MintGarden"
-msgstr ""
+#~ msgid "View on MintGarden"
+#~ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:797
-msgid "View on OfferBin"
-msgstr ""
+#~ msgid "View on OfferBin"
+#~ msgstr ""
 
 #: src/components/nfts/NFTContextualActions.tsx:701
-msgid "View on SkyNFT"
-msgstr ""
+#~ msgid "View on SkyNFT"
+#~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:708
-#: src/components/offers/OfferShareDialog.tsx:982
+#: src/components/offers/OfferShareDialog.tsx:980
 msgid "View on Spacescan.io"
 msgstr ""
 
 #: src/components/offers/OfferViewerTitle.tsx:54
 msgid "Viewing offer"
+msgstr ""
+
+#: src/electron/main.tsx:940
+msgid "Visit Our Website"
 msgstr ""
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:25
@@ -3418,11 +3455,11 @@ msgstr "Vaše klíčenka je zamknuta"
 #~ msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 #~ msgstr "Vaše klíče musí být přesunuty do nové klíčenky, která je zabezpečena hlavním heslem."
 
-#: src/components/offers/OfferShareDialog.tsx:1173
+#: src/components/offers/OfferShareDialog.tsx:1171
 msgid "Your offer has been successfully posted to Keybase."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1393
+#: src/components/offers/OfferShareDialog.tsx:1391
 msgid "Your offer:"
 msgstr ""
 
@@ -3472,7 +3509,7 @@ msgstr "p2SingletonPuzzleHash není definován"
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:1299
+#: src/components/offers/OfferShareDialog.tsx:1297
 msgid "{0}"
 msgstr ""
 
