@@ -4,8 +4,8 @@ import useOpenExternal from './useOpenExternal';
 
 /* ========================================================================== */
 
-function getMintGardenURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://${testnet ? 'testnet.' : ''}mintgarden.io/nfts/${
+function getForgeFarmURL(nft: NFTInfo, testnet: boolean) {
+  const url = `https://${testnet ? 'testnet.' : ''}forgefarm.io/chinilla/${
     nft.$nftId
   }`;
   return url;
@@ -31,13 +31,13 @@ function getSpacescanURL(nft: NFTInfo, testnet: boolean) {
 /* ========================================================================== */
 
 export enum NFTExplorer {
-  MintGarden = 'mintgarden',
+  ForgeFarm = 'forgefarm',
   SkyNFT = 'skynft',
   Spacescan = 'spacescan',
 }
 
 const UrlBuilderMapping = {
-  [NFTExplorer.MintGarden]: getMintGardenURL,
+  [NFTExplorer.ForgeFarm]: getForgeFarmURL,
   [NFTExplorer.SkyNFT]: getSkyNFTURL,
   [NFTExplorer.Spacescan]: getSpacescanURL,
 };

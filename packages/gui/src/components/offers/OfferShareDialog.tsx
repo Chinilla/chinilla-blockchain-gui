@@ -44,13 +44,8 @@ const log = debug('chinilla-gui:offers');
 /* ========================================================================== */
 
 enum OfferSharingService {
-  Dexie = 'Dexie',
-  Hashgreen = 'Hashgreen',
-  MintGarden = 'MintGarden',
-  OfferBin = 'OfferBin',
-  Offerpool = 'Offerpool',
-  Spacescan = 'Spacescan',
-  Keybase = 'Keybase',
+  ForgeFarm = 'ForgeFarm',
+  Chinilla = 'Chinilla',
 }
 
 enum OfferSharingCapability {
@@ -92,14 +87,14 @@ const OfferSharingProviders: {
     name: 'Hashgreen DEX',
     capabilities: [OfferSharingCapability.Token],
   },
-  [OfferSharingService.MintGarden]: {
-    service: OfferSharingService.MintGarden,
-    name: 'MintGarden',
+  [OfferSharingService.ForgeFarm]: {
+    service: OfferSharingService.ForgeFarm,
+    name: 'ForgeFarm',
     capabilities: [OfferSharingCapability.NFT],
   },
-  [OfferSharingService.OfferBin]: {
-    service: OfferSharingService.OfferBin,
-    name: 'OfferBin',
+  [OfferSharingService.Chinilla]: {
+    service: OfferSharingService.Chinilla,
+    name: 'Chinilla',
     capabilities: [OfferSharingCapability.Token],
   },
   [OfferSharingService.Offerpool]: {
@@ -174,7 +169,7 @@ async function postToDexie(
   return `https://${testnet ? 'testnet.' : ''}dexie.space/offers/${id}`;
 }
 
-async function postToMintGarden(
+async function postToForgeFarm(
   offerData: string,
   testnet: boolean,
 ): Promise<string> {
@@ -182,7 +177,7 @@ async function postToMintGarden(
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
-    hostname: testnet ? 'api.testnet.mintgarden.io' : 'api.mintgarden.io',
+    hostname: testnet ? 'testnet.forgefarm.io' : 'forgefarm.io',
     port: 443,
     path: '/offer',
   };
@@ -200,22 +195,22 @@ async function postToMintGarden(
 
   if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `MintGarden upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `ForgeFarm upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
     );
     throw error;
   }
 
-  log('MintGarden upload completed');
+  console.log('ForgeFarm upload completed');
 
   const {
     offer: { id },
   } = JSON.parse(responseBody);
 
-  return `https://${testnet ? 'testnet.' : ''}mintgarden.io/offers/${id}`;
+  return `https://${testnet ? 'testnet.' : ''}forgefarm.io/chinilla/${nftId}`;
 }
 
-// Posts the offer data to OfferBin and returns a URL to the offer.
-async function postToOfferBin(
+// Posts the offer data to Chinilla and returns a URL to the offer.
+async function postToChinilla(
   offerData: string,
   sharePrivately: boolean,
   testnet: boolean,
@@ -224,16 +219,17 @@ async function postToOfferBin(
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
-    hostname: testnet ? testnetDummyHost : 'api.offerbin.io',
+    hostname: testnet ? testnetDummyHost : 'chinilla.com',
     port: 443,
     path: testnet
-      ? '/offerbin' + (sharePrivately ? '?private=true' : '')
-      : '/upload' + (sharePrivately ? '?private=true' : ''),
+      ? testnetDummyEndpoint
+      : '/offer/upload',
   };
   const requestHeaders = {
-    'Content-Type': 'application/text',
-  };
-  const requestData = offerData;
+    'accept': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded'
+  }
+  const requestData = `offer=${offerData}` + (sharePrivately ? '&private=true' : '');
   const { err, statusCode, statusMessage, responseBody } =
     await ipcRenderer?.invoke(
       'fetchTextResponse',
@@ -244,20 +240,22 @@ async function postToOfferBin(
 
   if (err || statusCode !== 200) {
     const error = new Error(
-      `OfferBin upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `Chinilla.com Offers upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
     );
     throw error;
   }
 
-  log('OfferBin upload completed');
-
-  if (testnet) {
-    return 'https://www.chinilla.com/offers';
+  const jsonObj = JSON.parse(responseBody);
+  const { status, message, offer } = jsonObj;
+ 
+  if (status == "error") {
+    const error = new Error(message);
+    throw error;
   }
+  
+  console.log('Chinilla.com Offer upload completed');
 
-  const { hash } = JSON.parse(responseBody);
-
-  return `https://offerbin.io/offer/${hash}`;
+  return `https://chinilla.com/offer/details/${offer}`;
 }
 
 enum HashgreenErrorCodes {
@@ -356,7 +354,7 @@ type PostToSpacescanResponse = {
   };
 };
 
-// Posts the offer data to OfferBin and returns a URL to the offer.
+// Posts the offer data to Chinilla and returns a URL to the offer.
 async function postToSpacescan(
   offerData: string,
   testnet: boolean,
@@ -656,7 +654,7 @@ function OfferShareDexieDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
-function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
+function OfferShareForgeFarmDialog(props: OfferShareServiceDialogProps) {
   const {
     offerRecord,
     offerData,
@@ -672,8 +670,8 @@ function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
   }
 
   async function handleConfirm() {
-    const url = await postToMintGarden(offerData, testnet);
-    log(`MintGarden URL: ${url}`);
+    const url = await postToForgeFarm(offerData, testnet);
+    log(`ForgeFarm URL: ${url}`);
     setSharedURL(url);
   }
 
@@ -693,7 +691,7 @@ function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
         <DialogContent dividers>
           <Flex flexDirection="column" gap={3} sx={{ paddingTop: '1em' }}>
             <TextField
-              label={<Trans>MintGarden URL</Trans>}
+              label={<Trans>ForgeFarm URL</Trans>}
               value={sharedURL}
               variant="filled"
               InputProps={{
@@ -711,7 +709,7 @@ function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
                 variant="outlined"
                 onClick={() => openExternal(sharedURL)}
               >
-                <Trans>View on MintGarden</Trans>
+                <Trans>View on ForgeFarm</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -730,7 +728,7 @@ function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
       offerRecord={offerRecord}
       offerData={offerData}
       testnet={testnet}
-      title={<Trans>Share on MintGarden</Trans>}
+      title={<Trans>Share on ForgeFarm</Trans>}
       onConfirm={handleConfirm}
       open={open}
       onClose={onClose}
@@ -738,7 +736,7 @@ function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
-function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
+function OfferShareChinillaDialog(props: OfferShareServiceDialogProps) {
   const {
     offerRecord,
     offerData,
@@ -755,8 +753,8 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
   }
 
   async function handleConfirm() {
-    const url = await postToOfferBin(offerData, sharePrivately, testnet);
-    log(`OfferBin URL (private=${sharePrivately}): ${url}`);
+    const url = await postToChinilla(offerData, sharePrivately, testnet);
+    log(`Chinilla URL (private=${sharePrivately}): ${url}`);
     setSharedURL(url);
   }
 
@@ -776,7 +774,7 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
         <DialogContent dividers>
           <Flex flexDirection="column" gap={3} sx={{ paddingTop: '1em' }}>
             <TextField
-              label={<Trans>OfferBin URL</Trans>}
+              label={<Trans>Chinilla URL</Trans>}
               value={sharedURL}
               variant="filled"
               InputProps={{
@@ -794,7 +792,7 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
                 variant="outlined"
                 onClick={() => openExternal(sharedURL)}
               >
-                <Trans>View on OfferBin</Trans>
+                <Trans>View on Chinilla</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -813,7 +811,7 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
       offerRecord={offerRecord}
       offerData={offerData}
       testnet={testnet}
-      title={<Trans>Share on OfferBin</Trans>}
+      title={<Trans>Share on Chinilla</Trans>}
       onConfirm={handleConfirm}
       open={open}
       onClose={onClose}
@@ -1475,14 +1473,14 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
       },
       ...(testnet
         ? {
-            [OfferSharingService.MintGarden]: {
-              component: OfferShareMintGardenDialog,
+            [OfferSharingService.ForgeFarm]: {
+              component: OfferShareForgeFarmDialog,
               props: {},
             },
           }
         : {}),
-      [OfferSharingService.OfferBin]: {
-        component: OfferShareOfferBinDialog,
+      [OfferSharingService.Chinilla]: {
+        component: OfferShareChinillaDialog,
         props: {},
       },
       [OfferSharingService.Offerpool]: {
