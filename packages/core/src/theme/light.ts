@@ -7,7 +7,8 @@ export default createTheme({
     ...theme.palette,
     background: {
       ...theme.palette.background,
-      card: '#fff',
+      card: '#f2ecd5',
+      paper: '#f2ecd5',
     },
   },
 });

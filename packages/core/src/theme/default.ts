@@ -8,7 +8,7 @@ declare module '@mui/material' {
 export default {
   palette: {
     background: {
-      default: '#fafafa',
+      default: '#fcf6e0', //'#fafafa',
     },
     primary: {
       main: '#3AAC59', // '#00C853',
@@ -23,14 +23,14 @@ export default {
       contrastText: '#ffffff',
     },
     highlight: {
-      main: '#00C853',
+      main: '#f3e5ab',
     },
     border: {
-      main: '#E0E0E0',
+      main: '#000000',
       dark: '#484747',
     },
     sidebarBackground: {
-      main: '#E8F5E9',
+      main: '#f3e5ab',
       dark: '#505C4E',
     },
     sidebarIconSelected: {

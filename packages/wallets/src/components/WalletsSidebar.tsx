@@ -119,12 +119,7 @@ export default function WalletsSidebar() {
             <Trans>
               We've made an upgrade to the CAT standard which requires all CATs
               to be re-issued. You will be airdropped your new tokens as they
-              are re-issued by the original issuers. The airdropped tokens will
-              be based on the balance as of block height:
-              <br />
-              <FormatLargeNumber value={2311760} />
-              <br />
-              (Approximate time: July 26th, 2022 @ 17:00 UTC)
+              are re-issued by the original issuers.
             </Trans>
           </Typography>
           <ActionsStyled>

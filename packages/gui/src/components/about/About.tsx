@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     user-select: none;
-    background-color: silver;
+    background-color: #fcf6e0;
   }
 
   body { 

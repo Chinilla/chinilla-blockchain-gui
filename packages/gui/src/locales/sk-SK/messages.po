@@ -1042,7 +1042,7 @@ msgstr "Nebeží farmer"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmári získavajú odmeny za bloky a transakčné poplatky tým, že vložia voľný priestor do siete, aby pomohli zabezpečit transakcie. Tu bude vaša farma akonáhle pridáte svoje pole. <0>Viac informácií</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:101
+#: src/components/dashboard/DashboardSideBar.tsx:102
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1142,7 +1142,7 @@ msgid "Frequently Asked Questions"
 msgstr "Často kladené otázky (FAQ)"
 
 #: src/components/app/AppStatusHeader.tsx:49
-#: src/components/dashboard/DashboardSideBar.tsx:80
+#: src/components/dashboard/DashboardSideBar.tsx:81
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Celý uzol"
@@ -1696,7 +1696,7 @@ msgstr "Nie je špecifikované NFT"
 msgid "NFT {nftId} is already used in this offer"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "NFTs"
 msgstr "NFT"
 
@@ -1920,7 +1920,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "Ponúkam: [{makerString}], žiadam: [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:67
+#: src/components/dashboard/DashboardSideBar.tsx:68
 msgid "Offers"
 msgstr "Ponuky"
 
@@ -2217,7 +2217,7 @@ msgstr "Pole je duplikátom {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "NFT poľa prechádza do (cieľového stavu). Môže to chvíľu trvať. Prosím nezatvárajte aplikáciu, kým nebude prechod dokončený."
 
-#: src/components/dashboard/DashboardSideBar.tsx:87
+#: src/components/dashboard/DashboardSideBar.tsx:88
 #: src/components/plot/PlotHarvester.tsx:119
 msgid "Plots"
 msgstr "Polia"
@@ -2336,7 +2336,7 @@ msgstr "Združenie neposkytuje targetPuzzleHash."
 msgid "Pool:"
 msgstr "Združenie:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:107
+#: src/components/dashboard/DashboardSideBar.tsx:108
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2629,7 +2629,7 @@ msgstr "Odoslať na adresu"
 msgid "Set Passphrase"
 msgstr "Nastaviť prístupovú frázu"
 
-#: src/components/dashboard/DashboardSideBar.tsx:117
+#: src/components/dashboard/DashboardSideBar.tsx:118
 #: src/components/settings/Settings.tsx:56
 msgid "Settings"
 msgstr "Nastavenia"
@@ -3028,7 +3028,7 @@ msgstr "Názov nie je k dispozícii"
 msgid "Token Standard"
 msgstr "Tokenový štandard"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 #: src/components/offers2/OfferBuilderTokensSection.tsx:126

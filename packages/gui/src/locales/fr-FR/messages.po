@@ -1042,7 +1042,7 @@ msgstr "Le fermier n'est pas lancé"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Les fermiers gagnent des blocs de récompense et des frais de transaction en engageant de l'espace libre dans le réseau pour aider à sécuriser les transactions. C'est là où se trouvera votre ferme une fois que vous aurez ajouté une parcelle. <0>En savoir plus</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:101
+#: src/components/dashboard/DashboardSideBar.tsx:102
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1142,7 +1142,7 @@ msgid "Frequently Asked Questions"
 msgstr "Question fréquentes"
 
 #: src/components/app/AppStatusHeader.tsx:49
-#: src/components/dashboard/DashboardSideBar.tsx:80
+#: src/components/dashboard/DashboardSideBar.tsx:81
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "Full Node"
@@ -1696,7 +1696,7 @@ msgstr "NFT non spécifié"
 msgid "NFT {nftId} is already used in this offer"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "NFTs"
 msgstr "NFT"
 
@@ -1920,7 +1920,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "Offre : [{makerString}], Demande : [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:67
+#: src/components/dashboard/DashboardSideBar.tsx:68
 msgid "Offers"
 msgstr "Offres"
 
@@ -2217,7 +2217,7 @@ msgstr "La parcelle est un doublon de {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "Le NFT de parcelles est en cours de transition vers (target state). Cela peut prendre un certain temps. Veuillez ne pas fermer l'application avant la finalisation."
 
-#: src/components/dashboard/DashboardSideBar.tsx:87
+#: src/components/dashboard/DashboardSideBar.tsx:88
 #: src/components/plot/PlotHarvester.tsx:119
 msgid "Plots"
 msgstr "Parcelles"
@@ -2336,7 +2336,7 @@ msgstr "La pool ne fournit pas le targetPuzzleHash."
 msgid "Pool:"
 msgstr "Pool :"
 
-#: src/components/dashboard/DashboardSideBar.tsx:107
+#: src/components/dashboard/DashboardSideBar.tsx:108
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2629,7 +2629,7 @@ msgstr "Envoyer à l'adresse"
 msgid "Set Passphrase"
 msgstr "Définir la phrase secrète"
 
-#: src/components/dashboard/DashboardSideBar.tsx:117
+#: src/components/dashboard/DashboardSideBar.tsx:118
 #: src/components/settings/Settings.tsx:56
 msgid "Settings"
 msgstr "Paramètres"
@@ -3028,7 +3028,7 @@ msgstr "Titre non disponible"
 msgid "Token Standard"
 msgstr "Standard du token"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 #: src/components/offers2/OfferBuilderTokensSection.tsx:126

@@ -1042,7 +1042,7 @@ msgstr "农民节点没有运行"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "农民们通过贡献自己的空余存储空间，可以帮助提高整个网络的安全性，进而获得区块奖励和交易费用的奖励。当你的第一块农田开垦完成后，这里就是你的农场。<0>了解更多</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:101
+#: src/components/dashboard/DashboardSideBar.tsx:102
 #: src/components/farm/card/FarmCardStatus.tsx:61
 #: src/components/farm/FarmerStatus.tsx:18
 #: src/components/plot/PlotStatus.tsx:17
@@ -1142,7 +1142,7 @@ msgid "Frequently Asked Questions"
 msgstr "常见问题解答"
 
 #: src/components/app/AppStatusHeader.tsx:49
-#: src/components/dashboard/DashboardSideBar.tsx:80
+#: src/components/dashboard/DashboardSideBar.tsx:81
 #: src/components/fullNode/FullNode.jsx:132
 msgid "Full Node"
 msgstr "全节点"
@@ -1696,7 +1696,7 @@ msgstr "NFT 未指定"
 msgid "NFT {nftId} is already used in this offer"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "NFTs"
 msgstr "非同质化代币"
 
@@ -1920,7 +1920,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "提供： [{makerString}]，请求： [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:67
+#: src/components/dashboard/DashboardSideBar.tsx:68
 msgid "Offers"
 msgstr "报价"
 
@@ -2217,7 +2217,7 @@ msgstr "农田与 {0} 重复"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "农田NFT正在过渡到（目标状态）。这可能需要一段时间。请在完成之前不要关闭应用程序。"
 
-#: src/components/dashboard/DashboardSideBar.tsx:87
+#: src/components/dashboard/DashboardSideBar.tsx:88
 #: src/components/plot/PlotHarvester.tsx:119
 msgid "Plots"
 msgstr "农田"
@@ -2336,7 +2336,7 @@ msgstr "耕作池未提供 targetPuzzleHash。"
 msgid "Pool:"
 msgstr "农业合作社："
 
-#: src/components/dashboard/DashboardSideBar.tsx:107
+#: src/components/dashboard/DashboardSideBar.tsx:108
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
 msgid "Pooling"
@@ -2629,7 +2629,7 @@ msgstr "发送至地址"
 msgid "Set Passphrase"
 msgstr "设置私钥密码"
 
-#: src/components/dashboard/DashboardSideBar.tsx:117
+#: src/components/dashboard/DashboardSideBar.tsx:118
 #: src/components/settings/Settings.tsx:56
 msgid "Settings"
 msgstr "设置"
@@ -3028,7 +3028,7 @@ msgstr "标题不可用"
 msgid "Token Standard"
 msgstr "代币标准"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:56
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:68
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:70
 #: src/components/offers2/OfferBuilderTokensSection.tsx:126
