@@ -114,7 +114,7 @@ msgstr "Yeh Nah"
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Cannot send chinilla to coloured address. Please enter a chinilla address."
 
-#: src/components/WalletsSidebar.tsx:145
+#: src/components/WalletsSidebar.tsx:140
 msgid "Check my snapshot balance"
 msgstr "Check my snapshot balance"
 
@@ -124,7 +124,7 @@ msgstr "Check my snapshot balance"
 msgid "Chinilla Asset Token"
 msgstr "Chinilla Asset Token"
 
-#: src/components/WalletsSidebar.tsx:160
+#: src/components/WalletsSidebar.tsx:155
 msgid "Click here to download an older version of the wallet"
 msgstr "Click here to download an older version of the wallet"
 
@@ -609,7 +609,7 @@ msgstr "Rate Limited Info"
 msgid "Rate Limited User Wallet Setup"
 msgstr "Rate Limited User Wallet Setup"
 
-#: src/components/WalletsSidebar.tsx:152
+#: src/components/WalletsSidebar.tsx:147
 msgid "Read the blog post for details"
 msgstr "Read the blog post for details"
 
@@ -815,7 +815,7 @@ msgstr "Token has empty asset id"
 msgid "Token has empty name"
 msgstr "Token has empty name"
 
-#: src/components/WalletsSidebar.tsx:216
+#: src/components/WalletsSidebar.tsx:211
 msgid "Tokens"
 msgstr "Tokens"
 
@@ -864,13 +864,17 @@ msgstr "Wallet with type {0} not supported"
 msgid "Wallet {walletId} not found"
 msgstr "Wallet {walletId} not found"
 
-#: src/components/WalletsSidebar.tsx:157
+#: src/components/WalletsSidebar.tsx:152
 msgid "Want to see your old balance for yourself?"
 msgstr "Want to see your old balance for yourself?"
 
 #: src/components/WalletsSidebar.tsx:119
-msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
-msgstr "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers."
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:119
+#~ msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+#~ msgstr "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
 
 #: src/components/WalletAdd.tsx:94
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

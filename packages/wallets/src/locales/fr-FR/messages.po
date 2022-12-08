@@ -114,7 +114,7 @@ msgstr "Annuler"
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Impossible d'envoyer des chinillas à une adresse colorée. Merci d'entrer une adresse chinilla valide."
 
-#: src/components/WalletsSidebar.tsx:145
+#: src/components/WalletsSidebar.tsx:140
 msgid "Check my snapshot balance"
 msgstr "Vérifier le solde du snapshot"
 
@@ -124,7 +124,7 @@ msgstr "Vérifier le solde du snapshot"
 msgid "Chinilla Asset Token"
 msgstr "Chinilla Asset Token"
 
-#: src/components/WalletsSidebar.tsx:160
+#: src/components/WalletsSidebar.tsx:155
 msgid "Click here to download an older version of the wallet"
 msgstr "Cliquez ici pour télécharger une ancienne version du portefeuille"
 
@@ -609,7 +609,7 @@ msgstr "Info Taux limité"
 msgid "Rate Limited User Wallet Setup"
 msgstr "Configuration Portefeuille Utilisateur à Taux Limité"
 
-#: src/components/WalletsSidebar.tsx:152
+#: src/components/WalletsSidebar.tsx:147
 msgid "Read the blog post for details"
 msgstr "Lire le billet de blog pour plus de détails"
 
@@ -815,7 +815,7 @@ msgstr "Le jeton n'a pas d'identifiant (Asset ID)"
 msgid "Token has empty name"
 msgstr "Le nom du jeton est vide"
 
-#: src/components/WalletsSidebar.tsx:216
+#: src/components/WalletsSidebar.tsx:211
 msgid "Tokens"
 msgstr "Jetons"
 
@@ -864,13 +864,17 @@ msgstr "Portefeuille de type {0} non pris en charge"
 msgid "Wallet {walletId} not found"
 msgstr "Portefeuille {walletId} introuvable"
 
-#: src/components/WalletsSidebar.tsx:157
+#: src/components/WalletsSidebar.tsx:152
 msgid "Want to see your old balance for yourself?"
 msgstr "Vous voulez voir votre ancien solde par vous-même ?"
 
 #: src/components/WalletsSidebar.tsx:119
-msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
-msgstr "Nous avons fait une mise à jour de la norme CAT qui exige que tous les CAT soient réémis. Vous recevrez vos nouveaux jetons une fois réémis par les créateurs initiaux. Le montant sera basé sur le solde au bloc :<0/><1/><2/>(Date approximative : 26 juillet 2022 @ 17:00 UTC)"
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers."
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:119
+#~ msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+#~ msgstr "Nous avons fait une mise à jour de la norme CAT qui exige que tous les CAT soient réémis. Vous recevrez vos nouveaux jetons une fois réémis par les créateurs initiaux. Le montant sera basé sur le solde au bloc :<0/><1/><2/>(Date approximative : 26 juillet 2022 @ 17:00 UTC)"
 
 #: src/components/WalletAdd.tsx:94
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

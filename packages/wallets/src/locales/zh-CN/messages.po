@@ -114,7 +114,7 @@ msgstr "取消"
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "错误: 无法发送奇亚到上色的地址. 请输入一个奇亚钱包地址."
 
-#: src/components/WalletsSidebar.tsx:145
+#: src/components/WalletsSidebar.tsx:140
 msgid "Check my snapshot balance"
 msgstr "检查我的快照余额"
 
@@ -124,7 +124,7 @@ msgstr "检查我的快照余额"
 msgid "Chinilla Asset Token"
 msgstr "奇亚资产代币"
 
-#: src/components/WalletsSidebar.tsx:160
+#: src/components/WalletsSidebar.tsx:155
 msgid "Click here to download an older version of the wallet"
 msgstr "点击这里下载旧版本的钱包"
 
@@ -609,7 +609,7 @@ msgstr "费用限制信息"
 msgid "Rate Limited User Wallet Setup"
 msgstr "费用限定型用户钱包设置"
 
-#: src/components/WalletsSidebar.tsx:152
+#: src/components/WalletsSidebar.tsx:147
 msgid "Read the blog post for details"
 msgstr "阅读博客文章了解详情"
 
@@ -815,7 +815,7 @@ msgstr "代币有空资产ID"
 msgid "Token has empty name"
 msgstr "代币名称为空"
 
-#: src/components/WalletsSidebar.tsx:216
+#: src/components/WalletsSidebar.tsx:211
 msgid "Tokens"
 msgstr "代币"
 
@@ -864,13 +864,17 @@ msgstr "不支持类型 {0} 的钱包"
 msgid "Wallet {walletId} not found"
 msgstr "未找到钱包 {walletId}"
 
-#: src/components/WalletsSidebar.tsx:157
+#: src/components/WalletsSidebar.tsx:152
 msgid "Want to see your old balance for yourself?"
 msgstr "想看到你自己的旧余额吗？"
 
 #: src/components/WalletsSidebar.tsx:119
-msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
-msgstr "我们已经升级到CAT标准，该标准要求所有CAT代币必须重新发布。 您将被空投您的新代币，因为它们是由原始发行者重新发行的。 空投代币将基于块高度的余额：<0/><1/><2/>(大约时间：7月26日，2022@ 17:00 UTC)"
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers."
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:119
+#~ msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+#~ msgstr "我们已经升级到CAT标准，该标准要求所有CAT代币必须重新发布。 您将被空投您的新代币，因为它们是由原始发行者重新发行的。 空投代币将基于块高度的余额：<0/><1/><2/>(大约时间：7月26日，2022@ 17:00 UTC)"
 
 #: src/components/WalletAdd.tsx:94
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

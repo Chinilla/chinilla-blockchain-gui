@@ -114,7 +114,7 @@ msgstr "Peru"
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Chinillaa (HCX) ei voi lähettää CAT-osoitteeseen. Anna chinilla-osoite."
 
-#: src/components/WalletsSidebar.tsx:145
+#: src/components/WalletsSidebar.tsx:140
 msgid "Check my snapshot balance"
 msgstr "Tarkista snapshot-saldo"
 
@@ -124,7 +124,7 @@ msgstr "Tarkista snapshot-saldo"
 msgid "Chinilla Asset Token"
 msgstr "Chinilla Asset Token"
 
-#: src/components/WalletsSidebar.tsx:160
+#: src/components/WalletsSidebar.tsx:155
 msgid "Click here to download an older version of the wallet"
 msgstr "Napsauta tästä ladataksesi vanhan version lompakosta"
 
@@ -609,7 +609,7 @@ msgstr "Siirtorajoitetetun Tiedot"
 msgid "Rate Limited User Wallet Setup"
 msgstr "Siirtorajoitetun Lompakon Asennus"
 
-#: src/components/WalletsSidebar.tsx:152
+#: src/components/WalletsSidebar.tsx:147
 msgid "Read the blog post for details"
 msgstr "Lue blogikirjoitus lisätietoja varten"
 
@@ -815,7 +815,7 @@ msgstr "Tokenilla on tyhjä assettitunnus"
 msgid "Token has empty name"
 msgstr "Tokenilla on tyhjä nimi"
 
-#: src/components/WalletsSidebar.tsx:216
+#: src/components/WalletsSidebar.tsx:211
 msgid "Tokens"
 msgstr "Tokenit"
 
@@ -864,13 +864,17 @@ msgstr "Lompakkotyyppiä {0} ei tueta"
 msgid "Wallet {walletId} not found"
 msgstr "Lompakkoa {walletId} ei löydy"
 
-#: src/components/WalletsSidebar.tsx:157
+#: src/components/WalletsSidebar.tsx:152
 msgid "Want to see your old balance for yourself?"
 msgstr "Haluatko nähdä vanhan saldosi?"
 
 #: src/components/WalletsSidebar.tsx:119
-msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
-msgstr "Olemme tehneet päivityksen CAT-standardiin, joka edellyttää, että kaikki CAT:t annetaan uudelleen. Sinulle airdropataan uudet tokenit, koska ne ovat uudelleen liikkeeseenlaskettuja. Airdropatut tokenit perustuvat saldoon lohkokorkeudessa:<0/><1/><2/>(likimääräinen aika: 26 heinäkuu, 2022 @ 17:00 UTC)"
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers."
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:119
+#~ msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+#~ msgstr "Olemme tehneet päivityksen CAT-standardiin, joka edellyttää, että kaikki CAT:t annetaan uudelleen. Sinulle airdropataan uudet tokenit, koska ne ovat uudelleen liikkeeseenlaskettuja. Airdropatut tokenit perustuvat saldoon lohkokorkeudessa:<0/><1/><2/>(likimääräinen aika: 26 heinäkuu, 2022 @ 17:00 UTC)"
 
 #: src/components/WalletAdd.tsx:94
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

@@ -114,7 +114,7 @@ msgstr "Zrušiť"
 msgid "Cannot send chinilla to coloured address. Please enter a chinilla address."
 msgstr "Chinilla nie je možné odoslať na farebnú adresu. Zadajte prosím Chinilla adresu."
 
-#: src/components/WalletsSidebar.tsx:145
+#: src/components/WalletsSidebar.tsx:140
 msgid "Check my snapshot balance"
 msgstr "Skontrolovať môj zostatok na snímke"
 
@@ -124,7 +124,7 @@ msgstr "Skontrolovať môj zostatok na snímke"
 msgid "Chinilla Asset Token"
 msgstr "Chinilla Asset Token"
 
-#: src/components/WalletsSidebar.tsx:160
+#: src/components/WalletsSidebar.tsx:155
 msgid "Click here to download an older version of the wallet"
 msgstr "Kliknutím sem stiahnete staršiu verziu peňaženky"
 
@@ -609,7 +609,7 @@ msgstr "Informácie o obmedzenej sadzbe"
 msgid "Rate Limited User Wallet Setup"
 msgstr "Nastavenia používateľskej peňaženky s obmedzenou sadzbou"
 
-#: src/components/WalletsSidebar.tsx:152
+#: src/components/WalletsSidebar.tsx:147
 msgid "Read the blog post for details"
 msgstr "Podrobnosti nájdete v blogovom príspevku"
 
@@ -815,7 +815,7 @@ msgstr "Token má prázdne ID aktíva"
 msgid "Token has empty name"
 msgstr "Token má prázdny názov"
 
-#: src/components/WalletsSidebar.tsx:216
+#: src/components/WalletsSidebar.tsx:211
 msgid "Tokens"
 msgstr "Tokeny"
 
@@ -864,13 +864,17 @@ msgstr "Peňaženka typu {0} nie je podporovaná"
 msgid "Wallet {walletId} not found"
 msgstr "Peňaženka {walletId} nebola nájdená"
 
-#: src/components/WalletsSidebar.tsx:157
+#: src/components/WalletsSidebar.tsx:152
 msgid "Want to see your old balance for yourself?"
 msgstr "Chcete si sami prezrieť svoju starú bilanciu?"
 
 #: src/components/WalletsSidebar.tsx:119
-msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
-msgstr "Vykonali sme upgrade na štandard CAT, ktorý vyžaduje opätovné vydanie všetkých CAT. Vaše nové tokeny vám zhodia zo vzduchu (anglicky: airdrop), keď ich znovu vydajú pôvodní emitenti. Zo vzduchu zhodené tokeny budú založené na zostatku podľa výšky bloku:<0/><1/><2/>(Približný čas: 26. júla 2022 o 17:00 UTC)"
+msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers."
+msgstr ""
+
+#: src/components/WalletsSidebar.tsx:119
+#~ msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"
+#~ msgstr "Vykonali sme upgrade na štandard CAT, ktorý vyžaduje opätovné vydanie všetkých CAT. Vaše nové tokeny vám zhodia zo vzduchu (anglicky: airdrop), keď ich znovu vydajú pôvodní emitenti. Zo vzduchu zhodené tokeny budú založené na zostatku podľa výšky bloku:<0/><1/><2/>(Približný čas: 26. júla 2022 o 17:00 UTC)"
 
 #: src/components/WalletAdd.tsx:94
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
