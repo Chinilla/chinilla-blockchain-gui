@@ -630,13 +630,6 @@ export default function NFTContextualActions(props: NFTContextualActionsProps) {
             explorer: NFTExplorer.ForgeFarm,
           },
         },
-        {
-          action: NFTViewOnExplorerContextualAction,
-          props: {
-            title: <Trans>View on Spacescan.io</Trans>,
-            explorer: NFTExplorer.Spacescan,
-          },
-        },
       ],
       [NFTContextualActionTypes.OpenInBrowser]: {
         action: NFTOpenInBrowserContextualAction,
