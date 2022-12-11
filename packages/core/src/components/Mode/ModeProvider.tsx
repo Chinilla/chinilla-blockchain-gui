@@ -1,11 +1,6 @@
-import React, {
-  createContext,
-  ReactNode,
-  useState,
-  useMemo,
-  useCallback,
-} from 'react';
-import { useLocalStorage } from '@chinilla/api-react';
+import { usePrefs } from '@chinilla/api-react';
+import React, { createContext, ReactNode, useState, useMemo, useCallback } from 'react';
+
 import type Mode from '../../constants/Mode';
 
 export const ModeContext = createContext<
@@ -25,22 +20,20 @@ export type ModeProviderProps = {
 export default function ModeProvider(props: ModeProviderProps) {
   const { mode: defaultMode, children, persist = false } = props;
   const [modeState, setModeState] = useState<Mode | undefined>(defaultMode);
-  const [modeLocalStorage, setModeLocalStorage] = useLocalStorage<
-    Mode | undefined
-  >('mode', defaultMode);
+  const [modePref, setModePref] = usePrefs<Mode | undefined>('mode', defaultMode);
 
   const handleSetMode = useCallback(
     (newMode: Mode) => {
       if (persist) {
-        setModeLocalStorage(newMode);
+        setModePref(newMode);
       } else {
         setModeState(newMode);
       }
     },
-    [persist]
+    [persist, setModePref, setModeState]
   );
 
-  const mode = persist ? modeLocalStorage : modeState;
+  const mode = persist ? modePref : modeState;
 
   const context = useMemo(
     () => ({
@@ -50,7 +43,5 @@ export default function ModeProvider(props: ModeProviderProps) {
     [mode, handleSetMode]
   );
 
-  return (
-    <ModeContext.Provider value={context}>{children}</ModeContext.Provider>
-  );
+  return <ModeContext.Provider value={context}>{children}</ModeContext.Provider>;
 }

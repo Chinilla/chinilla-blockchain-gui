@@ -1,19 +1,20 @@
 import type { Wallet } from '@chinilla/api';
 import { WalletType } from '@chinilla/api';
-import { t } from '@lingui/macro';
 import { chinillaToVojo, catToVojo } from '@chinilla/core';
+import { t } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
+
+import type Driver from '../@types/Driver';
 import type OfferBuilderData from '../@types/OfferBuilderData';
 import findCATWalletByAssetId from './findCATWalletByAssetId';
-import { prepareNFTOfferFromNFTId } from './prepareNFTOffer';
 import hasSpendableBalance from './hasSpendableBalance';
-import type Driver from '../@types/Driver';
+import { prepareNFTOfferFromNFTId } from './prepareNFTOffer';
 
 // Amount exceeds spendable balance
 export default async function offerBuilderDataToOffer(
   data: OfferBuilderData,
   wallets: Wallet[],
-  validateOnly?: boolean,
+  validateOnly?: boolean
 ): Promise<{
   walletIdsAndAmounts?: Record<string, BigNumber>;
   driverDict?: Record<string, any>;
@@ -21,17 +22,8 @@ export default async function offerBuilderDataToOffer(
   validateOnly?: boolean;
 }> {
   const {
-    offered: {
-      hcx: offeredHcx = [],
-      tokens: offeredTokens = [],
-      nfts: offeredNfts = [],
-      fee: [firstFee] = [],
-    },
-    requested: {
-      hcx: requestedHcx = [],
-      tokens: requestedTokens = [],
-      nfts: requestedNfts = [],
-    },
+    offered: { hcx: offeredHcx = [], tokens: offeredTokens = [], nfts: offeredNfts = [], fee: [firstFee] = [] },
+    requested: { hcx: requestedHcx = [], tokens: requestedTokens = [], nfts: requestedNfts = [] },
   } = data;
 
   const usedNFTs: string[] = [];
@@ -41,10 +33,8 @@ export default async function offerBuilderDataToOffer(
   const walletIdsAndAmounts: Record<string, BigNumber> = {};
   const driverDict: Record<string, Driver> = {};
 
-  const hasOffer =
-    !!offeredHcx.length || !!offeredTokens.length || !!offeredNfts.length;
-  const hasRequest =
-    !!requestedHcx.length || !!requestedTokens.length || !!requestedNfts.length;
+  const hasOffer = !!offeredHcx.length || !!offeredTokens.length || !!offeredNfts.length;
+  const hasRequest = !!requestedHcx.length || !!requestedTokens.length || !!requestedNfts.length;
 
   if (!hasRequest) {
     throw new Error(t`Please specify at least one requested asset`);
@@ -73,7 +63,7 @@ export default async function offerBuilderDataToOffer(
       if (!hasEnoughBalance) {
         throw new Error(t`Amount exceeds HCX spendable balance`);
       }
-    }),
+    })
   );
 
   await Promise.all(
@@ -90,9 +80,7 @@ export default async function offerBuilderDataToOffer(
       }
 
       if (!amount || amount === '0') {
-        throw new Error(
-          t`Please enter an amount for ${wallet.meta?.name} token`,
-        );
+        throw new Error(t`Please enter an amount for ${wallet.meta?.name} token`);
       }
 
       const vojoAmount = catToVojo(amount);
@@ -100,11 +88,9 @@ export default async function offerBuilderDataToOffer(
 
       const hasEnoughBalance = await hasSpendableBalance(wallet.id, vojoAmount);
       if (!hasEnoughBalance) {
-        throw new Error(
-          t`Amount exceeds spendable balance for ${wallet.meta?.name} token`,
-        );
+        throw new Error(t`Amount exceeds spendable balance for ${wallet.meta?.name} token`);
       }
-    }),
+    })
   );
 
   await Promise.all(
@@ -114,16 +100,13 @@ export default async function offerBuilderDataToOffer(
       }
       usedNFTs.push(nftId);
 
-      const { id, amount, driver } = await prepareNFTOfferFromNFTId(
-        nftId,
-        true,
-      );
+      const { id, amount, driver } = await prepareNFTOfferFromNFTId(nftId, true);
 
       walletIdsAndAmounts[id] = amount;
       if (driver) {
         driverDict[id] = driver;
       }
-    }),
+    })
   );
 
   // requested
@@ -171,16 +154,13 @@ export default async function offerBuilderDataToOffer(
       }
       usedNFTs.push(nftId);
 
-      const { id, amount, driver } = await prepareNFTOfferFromNFTId(
-        nftId,
-        false,
-      );
+      const { id, amount, driver } = await prepareNFTOfferFromNFTId(nftId, false);
 
       walletIdsAndAmounts[id] = amount;
       if (driver) {
         driverDict[id] = driver;
       }
-    }),
+    })
   );
 
   return {

@@ -1,17 +1,12 @@
-import React, { useMemo } from 'react';
-import { Trans } from '@lingui/macro';
-import { useFieldArray, useWatch } from 'react-hook-form';
+import { Loading, chinillaToVojo, vojoToChinillaLocaleString, useCurrencyCode } from '@chinilla/core';
 import { Farming } from '@chinilla/icons';
-import {
-  Loading,
-  chinillaToVojo,
-  vojoToChinillaLocaleString,
-  useCurrencyCode,
-} from '@chinilla/core';
-import OfferBuilderSection from './OfferBuilderSection';
-import OfferBuilderWalletAmount from './OfferBuilderWalletAmount';
+import { Trans } from '@lingui/macro';
+import React, { useMemo } from 'react';
+import { useFieldArray, useWatch } from 'react-hook-form';
 import useOfferBuilderContext from '../../hooks/useOfferBuilderContext';
 import useStandardWallet from '../../hooks/useStandardWallet';
+import OfferBuilderSection from './OfferBuilderSection';
+import OfferBuilderWalletAmount from './OfferBuilderWalletAmount';
 
 export type OfferBuilderHCXSectionProps = {
   name: string;
@@ -19,9 +14,7 @@ export type OfferBuilderHCXSectionProps = {
   muted?: boolean;
 };
 
-export default function OfferBuilderHCXSection(
-  props: OfferBuilderHCXSectionProps,
-) {
+export default function OfferBuilderHCXSection(props: OfferBuilderHCXSectionProps) {
   const { name, offering, muted = false } = props;
   const { wallet, loading: isLoadingWallet } = useStandardWallet();
   const currencyCode = useCurrencyCode();
@@ -32,12 +25,7 @@ export default function OfferBuilderHCXSection(
     useWatch({
       name,
     })?.[0]?.amount ?? 0; // Assume there's only 1 HCX field per trade side
-  const {
-    readOnly,
-    requestedRoyalties,
-    offeredRoyalties,
-    isCalculatingRoyalties,
-  } = useOfferBuilderContext();
+  const { requestedRoyalties, offeredRoyalties, isCalculatingRoyalties } = useOfferBuilderContext();
 
   // Yes, this is correct. Fungible (HCX) assets used to pay royalties are from the opposite side of the trade.
   const allRoyalties = offering ? requestedRoyalties : offeredRoyalties;
@@ -45,16 +33,14 @@ export default function OfferBuilderHCXSection(
   const loading = isLoadingWallet || isCalculatingRoyalties;
 
   const [amountWithRoyalties, royaltyPayments] = useMemo(() => {
-    if (!readOnly || !allRoyalties) {
+    if (!allRoyalties) {
       return [];
     }
 
     let amountWithRoyalties = chinillaToVojo(amount);
     const rows: Record<string, any>[] = [];
     Object.entries(allRoyalties).forEach(([nftId, royaltyPayments]) => {
-      const matchingPayment = royaltyPayments?.find(
-        (payment) => payment.asset === 'hcx',
-      );
+      const matchingPayment = royaltyPayments?.find((payment) => payment.asset === 'hcx');
       if (matchingPayment) {
         amountWithRoyalties = amountWithRoyalties.plus(matchingPayment.amount);
         rows.push({
@@ -68,7 +54,7 @@ export default function OfferBuilderHCXSection(
     });
 
     return [vojoToChinillaLocaleString(amountWithRoyalties), rows];
-  }, [readOnly, allRoyalties]);
+  }, [allRoyalties]);
 
   function handleAdd() {
     if (!fields.length) {
@@ -86,12 +72,7 @@ export default function OfferBuilderHCXSection(
     <OfferBuilderSection
       icon={<Farming />}
       title={currencyCode}
-      subtitle={
-        <Trans>
-          Chinilla ({currencyCode}) is a digital currency that is secure and
-          sustainable
-        </Trans>
-      }
+      subtitle={<Trans>Chinilla ({currencyCode}) is a digital currency that is secure and sustainable</Trans>}
       onAdd={!fields.length ? handleAdd : undefined}
       expanded={!!fields.length}
       muted={muted}

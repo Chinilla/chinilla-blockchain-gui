@@ -1,5 +1,5 @@
-import { useLocalStorage } from '@chinilla/api-react';
+import { usePrefs } from '@chinilla/api-react';
 
 export default function useEnableAutoLogin() {
-  return useLocalStorage<boolean>('enableAutoLogin', true);
+  return usePrefs<boolean>('enableAutoLogin', true);
 }

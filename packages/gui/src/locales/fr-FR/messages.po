@@ -8,7 +8,7 @@ msgstr ""
 "Language: fr_FR\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-08-04 12:02\n"
+"PO-Revision-Date: 2022-10-24 18:15\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -147,7 +147,7 @@ msgstr "Tous les NFT"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:97
 msgid "All Profiles"
-msgstr "Tous les profils"
+msgstr "Tous les Profils"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:431
 msgid "Alternate bucket writing"
@@ -206,7 +206,7 @@ msgstr "Êtes-vous sûr de vouloir vous déconnecter ?"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:72
 msgid "Are you sure you want to move this NFT to the specified profile?"
-msgstr "Êtes-vous sûr de vouloir déplacer ce NFT vers ce profil ?"
+msgstr "Êtes-vous sûr de vouloir transférer ce NFT vers ce profil ?"
 
 #: src/electron/main.tsx:645
 msgid "Are you sure you want to quit?"
@@ -318,15 +318,15 @@ msgstr "Parcourir"
 #: src/components/nfts/NFTBurnDialog.tsx:173
 #: src/components/nfts/NFTContextualActions.tsx:558
 msgid "Burn"
-msgstr ""
+msgstr "Brûler"
 
 #: src/components/nfts/NFTBurnDialog.tsx:78
 msgid "Burn NFT confirmation"
-msgstr ""
+msgstr "Confirmation de brûlure du NFT"
 
 #: src/components/nfts/NFTBurnDialog.tsx:122
 #~ msgid "Burning a non-fungible token means destroying it. Burned NFTs are sent to a verifiably un-spendable address, eliminating your NFT from the blockchain. However, transactions leading up to the burn will remain on the blockchain ledger."
-#~ msgstr ""
+#~ msgstr "Burning a non-fungible token means destroying it. Burned NFTs are sent to a verifiably un-spendable address, eliminating your NFT from the blockchain. However, transactions leading up to the burn will remain on the blockchain ledger."
 
 #: src/components/nfts/NFTBurnDialog.tsx:125
 msgid "Burning a non-fungible token means removing it from circulation by sending it to a verifiably un-spendable address. However, transactions leading up to the burn will remain on the blockchain ledger."
@@ -334,7 +334,7 @@ msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:362
 msgid "Buy an NFT"
-msgstr ""
+msgstr "Acheter un NFT"
 
 #: src/components/settings/SettingsNFT.tsx:122
 msgid "Cache"
@@ -538,7 +538,7 @@ msgstr "Confirmer la déconnexion"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:64
 msgid "Confirm Move"
-msgstr "Confirmer le déplacement"
+msgstr "Confirmer le transfert"
 
 #: src/components/nfts/NFTTransferConfirmationDialog.tsx:39
 msgid "Confirm NFT Transfer"
@@ -604,7 +604,7 @@ msgstr "Type de connexion"
 
 #: src/components/fullNode/FullNodeConnections.tsx:106
 #~ msgid "Connections"
-#~ msgstr "Réseau"
+#~ msgstr "Connections"
 
 #: src/components/nfts/NFTPreview.tsx:786
 msgid "Content does not match the expected hash value that was specified during NFT minting. The content may have been modified."
@@ -863,7 +863,7 @@ msgstr "Avez-vous des parcelles existantes sur cette machine ? <0>Ajouter un ré
 
 #: src/components/nfts/NFTBurnDialog.tsx:117
 msgid "Do you want to burn this NFT?"
-msgstr ""
+msgstr "Voulez-vous brûler ce NFT ?"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:60
 msgid "Does your machine support parallel plotting?"
@@ -875,7 +875,7 @@ msgstr "Télécharger"
 
 #: src/components/offers/OfferImport.tsx:191
 msgid "Drag & Drop an Offer File"
-msgstr ""
+msgstr "Glisser-déposer un Fichier d'Offre"
 
 #: src/components/offers2/OfferBuilderImport.tsx:189
 msgid "Drag & Drop an Offer File, Paste"
@@ -883,11 +883,11 @@ msgstr ""
 
 #: src/components/offers/OfferImport.tsx:146
 #~ msgid "Drag & drop an offer file below to view its details"
-#~ msgstr "Glissez & déposez un fichier d'offre ci-dessous pour l'afficher"
+#~ msgstr "Drag & drop an offer file below to view its details"
 
 #: src/components/offers/OfferImport.tsx:166
 #~ msgid "Drag and drop offer file"
-#~ msgstr "Glisser/Déposer le fichier offre"
+#~ msgstr "Drag and drop offer file"
 
 #: src/components/backup/BackupRestore.tsx:172
 msgid "Drag and drop your backup file"
@@ -1107,7 +1107,7 @@ msgstr "Fichier"
 
 #: src/components/nfts/NFTPreview.tsx:26
 #~ msgid "File is over 10MB"
-#~ msgstr "Le fichier est supérieur à 10 Mo"
+#~ msgstr "File is over 10MB"
 
 #: src/components/plot/PlotHarvesterPlots.tsx:81
 #: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:13
@@ -1118,7 +1118,7 @@ msgstr "Nom du fichier"
 
 #: src/components/nfts/gallery/NFTGallery.tsx:190
 msgid "Filters"
-msgstr ""
+msgstr "Filtres"
 
 #: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:47
 msgid "Final folder location"
@@ -1149,15 +1149,15 @@ msgstr "Full Node"
 
 #: src/components/fullNode/FullNodeConnections.tsx:76
 msgid "Full Node Connections"
-msgstr ""
+msgstr "Nœuds connectés"
 
 #: src/electron/main.tsx:865
 msgid "Full Screen"
 msgstr "Plein écran"
 
 #: src/components/settings/SettingsNFT.tsx:23
-#~ msgid "Gallery Management"
-#~ msgstr ""
+msgid "Gallery Management"
+msgstr "Gestion de la galerie"
 
 #: src/components/settings/Settings.tsx:67
 msgid "General"
@@ -1224,11 +1224,11 @@ msgstr "Ci-dessous les challenges des blocs actuels. Vous pouvez ou non avoir de
 
 #: src/components/nfts/NFTContextualActions.tsx:517
 msgid "Hide"
-msgstr ""
+msgstr "Masquer"
 
 #: src/components/settings/SettingsNFT.tsx:116
 msgid "Hide objectionable content"
-msgstr ""
+msgstr "Masquer le contenu inapproprié"
 
 #: src/components/app/AppPassPrompt.tsx:160
 #: src/components/settings/RemovePassphrasePrompt.tsx:150
@@ -1277,7 +1277,7 @@ msgstr "Si vous avez déjà partagé votre fichier d'offre, vous devrez soumettr
 
 #: src/components/nfts/NFTBurnDialog.tsx:79
 #~ msgid "If you proceed, this NFT will be permanently deleted. Are you sure you want to continue?"
-#~ msgstr ""
+#~ msgstr "If you proceed, this NFT will be permanently deleted. Are you sure you want to continue?"
 
 #: src/components/nfts/NFTPreview.tsx:827
 msgid "Image Hash Mismatch"
@@ -1320,20 +1320,15 @@ msgid "Install Keybase"
 msgstr "Installer Keybase"
 
 #: src/hooks/useAcceptOfferHook.tsx:78
-msgid ""
-"Insufficient funds available to accept offer. Ensure that your\n"
+msgid "Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr ""
-"Fonds insuffisants pour accepter l'offre. Assurez-vous que votre \n"
+msgstr "Fonds insuffisants pour accepter l'offre. Assurez-vous que votre \n"
 "solde disponible est suffisant pour couvrir le montant de l'offre."
 
 #: src/components/offers/OfferEditor.tsx:182
-#: src/components/offers2/CreateOfferBuilder.tsx:85
-msgid ""
-"Insufficient funds available to create offer. Ensure that your\n"
+msgid "Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
-msgstr ""
-"Fonds insuffisants pour créer l'offre. Assurez-vous que votre \n"
+msgstr "Fonds insuffisants pour créer l'offre. Assurez-vous que votre \n"
 "solde disponible est suffisant pour couvrir le montant de l'offre."
 
 #: src/components/offers/NFTOfferEditor.tsx:698
@@ -1442,11 +1437,11 @@ msgstr "Quitter le pool"
 
 #: src/components/app/AppKeyringMigrator.tsx:100
 msgid "Legacy keyrings are no longer supported. Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
-msgstr ""
+msgstr "L'ancien format de trousseau n'est plus supporté. Vos clés doivent être migrées vers un nouveau trousseau qui peut également être sécurisé par une phrase secrète."
 
 #: src/components/app/AppKeyringMigrator.tsx:107
 msgid "Legacy keyrings are no longer supported. Your keys need to be migrated to a new keyring that is secured by a master passphrase."
-msgstr ""
+msgstr "L'ancien format de trousseau n'est plus supporté. Vos clés doivent être migrées vers un nouveau trousseau sécurisé par une phrase secrète."
 
 #: src/components/nfts/NFTDetails.tsx:286
 msgid "License Hash"
@@ -1462,7 +1457,7 @@ msgstr ""
 
 #: src/components/fullNode/FullNodeConnections.tsx:80
 msgid "List of connections is empty"
-msgstr ""
+msgstr "La liste des connexions est vide"
 
 #: src/components/nfts/NFTSummary.tsx:115
 msgid "Loading NFT"
@@ -1603,15 +1598,15 @@ msgstr "Plus de mémoire augmente légèrement la vitesse"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:459
 msgid "Move"
-msgstr "Déplacer"
+msgstr "Transférer"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:505
 msgid "Move NFT to Profile"
-msgstr "Déplacer le NFT vers un Profil"
+msgstr "Transférer le NFT vers un Profil"
 
 #: src/components/nfts/NFTContextualActions.tsx:263
 msgid "Move to Profile"
-msgstr "Déplacer vers le profil"
+msgstr "Transférer vers le Profil"
 
 #: src/components/settings/ProfileView.tsx:99
 msgid "My DID"
@@ -1634,11 +1629,11 @@ msgstr "Identifiant du NFT"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:317
 msgid "NFT Move Failed"
-msgstr "Échec du déplacement du NFT"
+msgstr "Échec du transfert du NFT"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:307
 msgid "NFT Move Pending"
-msgstr "Déplacement du NFT en attente"
+msgstr "Transfert du NFT en attente"
 
 #: src/components/offers/OfferManager.tsx:575
 #~ msgid "NFT Offer"
@@ -1675,11 +1670,7 @@ msgstr "Détail du NFT non disponible"
 
 #: src/components/offers/NFTOfferEditor.tsx:256
 #~ msgid "NFT for HCX"
-#~ msgstr "NFT contre HCX"
-
-#: src/components/offers2/OfferBuilderNFTRoyalties.tsx:201
-msgid "NFT has no royalties"
-msgstr ""
+#~ msgstr "NFT for HCX"
 
 #: src/components/offers/NFTOfferPreview.tsx:56
 msgid "NFT identifier does not reference a valid NFT coin."
@@ -2044,7 +2035,7 @@ msgstr "Il est nécessaire de migrer vos clés vers un nouveau trousseau avant d
 #: src/components/offers/OfferDataEntryDialog.tsx:40
 #: src/components/offers/OfferImport.tsx:177
 msgid "Paste Offer Data"
-msgstr "Coller les données de l'offre"
+msgstr "Coller les données d'une offre"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:332
 msgid "Payout Address"
@@ -2126,7 +2117,7 @@ msgstr "Veuillez saisir votre phrase secrète pour continuer"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:277
 msgid "Please select a profile to move the NFT to."
-msgstr "Veuillez sélectionner un profil vers lequel déplacer le NFT."
+msgstr "Veuillez sélectionner un profil vers lequel transférer le NFT."
 
 #: src/components/offers/OfferEditor.tsx:134
 msgid "Please select an asset for each row"
@@ -2139,7 +2130,7 @@ msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:702
 msgid "Please select an asset type"
-msgstr ""
+msgstr "Veuillez sélectionner un type d'actif"
 
 #: src/components/settings/SettingsNFT.tsx:85
 msgid "Please select an empty folder"
@@ -2573,7 +2564,7 @@ msgstr "Ouvrir un fichier d'offre"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:348
 msgid "Select Profile"
-msgstr "Sélectionner un profil"
+msgstr "Sélectionner un Profil"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:55
 msgid "Select Temporary Directory"
@@ -2616,7 +2607,7 @@ msgstr "Pool solitaire. Vous gagnerez des récompenses HCX lorsque vous gagnez u
 
 #: src/components/offers/NFTOfferEditor.tsx:367
 msgid "Sell an NFT"
-msgstr ""
+msgstr "Vendre un NFT"
 
 #: src/components/nfts/NFTBurnDialog.tsx:145
 #: src/components/nfts/NFTTransferAction.tsx:142
@@ -2686,7 +2677,7 @@ msgstr "Partager sur OfferPool"
 
 #: src/components/nfts/NFTContextualActions.tsx:517
 msgid "Show"
-msgstr ""
+msgstr "Afficher"
 
 #: src/components/offers/OfferManager.tsx:444
 msgid "Show Details"
@@ -2694,7 +2685,7 @@ msgstr "Voir les détails"
 
 #: src/components/nfts/gallery/NFTGallery.tsx:201
 msgid "Show Hidden"
-msgstr ""
+msgstr "Afficher les éléments masqués"
 
 #: src/components/nfts/NFTPreview.tsx:872
 msgid "Show Preview"
@@ -2707,11 +2698,11 @@ msgstr ""
 #: src/components/app/AppKeyringMigrator.tsx:64
 #: src/components/app/AppKeyringMigrator.tsx:267
 #~ msgid "Skip"
-#~ msgstr "Ignorer"
+#~ msgstr "Skip"
 
 #: src/components/app/AppKeyringMigrator.tsx:63
 #~ msgid "Skip Keyring Migration"
-#~ msgstr "Ignorer la migration du trousseau de clés"
+#~ msgstr "Skip Keyring Migration"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:452
 msgid "Skips adding a final directory to harvester for farming"
@@ -2811,11 +2802,11 @@ msgstr "Emplacement du dossier temporaire"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:318
 msgid "The NFT move failed: {error}"
-msgstr "Le déplacement du NFT a échoué : {error}"
+msgstr "Le transfert du NFT a échoué : {error}"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:308
 msgid "The NFT move transaction has been successfully submitted to the blockchain."
-msgstr "La transaction de déplacement du NFT a été soumise avec succès à la blockchain."
+msgstr "Le transfert du NFT a été soumis avec succès à la blockchain."
 
 #: src/components/nfts/NFTContextualActions.tsx:300
 msgid "The NFT status has been updated. If the transaction was successfully sent to the mempool, it may still complete."
@@ -2833,7 +2824,7 @@ msgstr "Échec du transfert du NFT : {error}"
 #: src/components/nfts/NFTContextualActions.tsx:176
 #: src/components/nfts/NFTContextualActions.tsx:234
 msgid "The NFT transfer transaction has been successfully submitted to the blockchain."
-msgstr "La transaction de déplacement du NFT a été soumise avec succès à la blockchain."
+msgstr "Le transfert du NFT a été soumis avec succès à la blockchain."
 
 #: src/components/settings/SettingsPanel.tsx:183
 msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for HCX, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
@@ -3229,7 +3220,7 @@ msgstr "Afficher le lien de connexion au pool"
 
 #: src/components/offers/OfferImport.tsx:212
 msgid "View an Offer"
-msgstr "Consulter une offre"
+msgstr "Voir une offre"
 
 #: src/components/offers/OfferShareDialog.tsx:795
 msgid "View on Chinilla"
@@ -3285,7 +3276,7 @@ msgstr "En attente de confirmation de la transaction"
 
 #: src/components/app/AppStatusHeader.tsx:75
 msgid "Wallet"
-msgstr ""
+msgstr "Portefeuille"
 
 #: src/components/app/AppSelectMode.tsx:76
 #: src/components/app/AppSelectMode.tsx:130
@@ -3343,14 +3334,18 @@ msgstr "Sans frais"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:512
 msgid "Would you like to move the specified NFT to a profile?"
-msgstr "Voulez-vous déplacer le NFT sélectionné vers un profil ?"
+msgstr "Voulez-vous transférer le NFT sélectionné vers un profil ?"
 
 #: src/components/nfts/NFTTransferAction.tsx:226
 msgid "Would you like to transfer the specified NFT to a new owner?"
 msgstr "Voulez-vous transférer le NFT spécifié à un nouveau propriétaire ?"
 
-#: src/components/plot/add/PlotAddChooseSize.tsx:56
-#: src/electron/main.tsx:641
+#: src/components/offers/NFTOfferEditor.tsx:261
+#~ msgid "HCX for NFT"
+#~ msgstr "HCX for NFT"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:48
+#: src/electron/main.tsx:385
 msgid "Yes"
 msgstr "Oui"
 
@@ -3360,7 +3355,7 @@ msgstr "Oui, Accepter l'offre"
 
 #: src/components/nfts/NFTMoveToProfileDialog.tsx:65
 msgid "Yes, move"
-msgstr "Oui, déplacer"
+msgstr "Oui, transférer"
 
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:177
 msgid "You already have 50 or more Plot NFTs."
@@ -3449,15 +3444,15 @@ msgstr "Votre trousseau de clés est verrouillé"
 
 #: src/components/app/AppKeyringMigrator.tsx:69
 #~ msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
-#~ msgstr "Vos clés n'ont pas été migrées vers le nouveau trousseau. Vous ne pourrez pas créer de nouvelles clés ou supprimer les clés existantes tant que la migration n'est pas terminée. Êtes-vous sûr de vouloir passer la migration de vos clés ?"
+#~ msgstr "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
 
 #: src/components/app/AppKeyringMigrator.tsx:112
 #~ msgid "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
-#~ msgstr "Vos clés doivent être migrées vers un nouveau trousseau qui peut également être sécurisé par une phrase secrète."
+#~ msgstr "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
 
 #: src/components/app/AppKeyringMigrator.tsx:118
 #~ msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
-#~ msgstr "Vos clés doivent être migrées vers un nouveau trousseau de clés sécurisé par une phrase secrète."
+#~ msgstr "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 
 #: src/components/offers/OfferShareDialog.tsx:1171
 msgid "Your offer has been successfully posted to Keybase."
@@ -3499,11 +3494,11 @@ msgstr ""
 
 #: src/components/offers/OfferImport.tsx:197
 msgid "or Paste (Ctrl-V) an Offer blob"
-msgstr ""
+msgstr "ou Collez (Ctrl-V) les Données d'une Offre"
 
 #: src/components/offers/OfferImport.tsx:195
 msgid "or Paste (⌘V) an Offer blob"
-msgstr ""
+msgstr "ou Collez (⌘V) les Données d'une Offre"
 
 #: src/components/plot/add/PlotAddForm.tsx:145
 msgid "p2SingletonPuzzleHash is not defined"
@@ -3552,3 +3547,4 @@ msgstr "{vojos, plural, one {vojo} other {vojos}}"
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr "{warning}"
+

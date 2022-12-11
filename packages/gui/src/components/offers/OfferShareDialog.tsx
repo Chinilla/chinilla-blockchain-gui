@@ -1,7 +1,9 @@
-import React, { useMemo } from 'react';
-import debug from 'debug';
-import { Trans, t } from '@lingui/macro';
-import { useLocalStorage } from '@rehooks/local-storage';
+import child_process from 'child_process';
+import fs from 'fs';
+import path from 'path';
+
+import { OfferTradeRecord } from '@chinilla/api';
+import { usePrefs } from '@chinilla/api-react';
 import {
   ButtonLoading,
   CopyToClipboard,
@@ -12,7 +14,7 @@ import {
   useShowError,
   useOpenExternal,
 } from '@chinilla/core';
-import { OfferTradeRecord } from '@chinilla/api';
+import { Trans, t } from '@lingui/macro';
 import {
   Button,
   Checkbox,
@@ -25,19 +27,14 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import {
-  offerContainsAssetOfType,
-  shortSummaryForOffer,
-  suggestedFilenameForOffer,
-} from './utils';
+import debug from 'debug';
+import React, { useMemo } from 'react';
+
 import useAssetIdName, { AssetIdMapEntry } from '../../hooks/useAssetIdName';
-import { Shell } from 'electron';
 import { NFTOfferSummary } from './NFTOfferViewer';
 import OfferLocalStorageKeys from './OfferLocalStorage';
 import OfferSummary from './OfferSummary';
-import child_process from 'child_process';
-import fs from 'fs';
-import path from 'path';
+import { offerContainsAssetOfType, shortSummaryForOffer, suggestedFilenameForOffer } from './utils';
 
 const log = debug('chinilla-gui:offers');
 
@@ -116,11 +113,8 @@ const OfferSharingProviders: {
 
 /* ========================================================================== */
 
-async function writeTempOfferFile(
-  offerData: string,
-  filename: string,
-): Promise<string> {
-  const ipcRenderer = (window as any).ipcRenderer;
+async function writeTempOfferFile(offerData: string, filename: string): Promise<string> {
+  const { ipcRenderer } = window as any;
   const tempRoot = await ipcRenderer?.invoke('getTempDir');
   const tempPath = fs.mkdtempSync(path.join(tempRoot, 'offer'));
   const filePath = path.join(tempPath, filename);
@@ -132,11 +126,8 @@ async function writeTempOfferFile(
 
 /* ========================================================================== */
 
-async function postToDexie(
-  offerData: string,
-  testnet: boolean,
-): Promise<string> {
-  const ipcRenderer = (window as any).ipcRenderer;
+async function postToDexie(offerData: string, testnet: boolean): Promise<string> {
+  const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
@@ -148,17 +139,16 @@ async function postToDexie(
     'Content-Type': 'application/json',
   };
   const requestData = JSON.stringify({ offer: offerData });
-  const { err, statusCode, statusMessage, responseBody } =
-    await ipcRenderer.invoke(
-      'fetchTextResponse',
-      requestOptions,
-      requestHeaders,
-      requestData,
-    );
+  const { err, statusCode, statusMessage, responseBody } = await ipcRenderer.invoke(
+    'fetchTextResponse',
+    requestOptions,
+    requestHeaders,
+    requestData
+  );
 
   if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `Dexie upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `Dexie upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
     );
     throw error;
   }
@@ -169,11 +159,8 @@ async function postToDexie(
   return `https://${testnet ? 'testnet.' : ''}dexie.space/offers/${id}`;
 }
 
-async function postToForgeFarm(
-  offerData: string,
-  testnet: boolean,
-): Promise<string> {
-  const ipcRenderer = (window as any).ipcRenderer;
+async function postToMintGarden(offerData: string, testnet: boolean): Promise<string> {
+  const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
@@ -185,17 +172,16 @@ async function postToForgeFarm(
     'Content-Type': 'application/json',
   };
   const requestData = JSON.stringify({ offer: offerData });
-  const { err, statusCode, statusMessage, responseBody } =
-    await ipcRenderer.invoke(
-      'fetchTextResponse',
-      requestOptions,
-      requestHeaders,
-      requestData,
-    );
+  const { err, statusCode, statusMessage, responseBody } = await ipcRenderer.invoke(
+    'fetchTextResponse',
+    requestOptions,
+    requestHeaders,
+    requestData
+  );
 
   if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `ForgeFarm upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `MintGarden upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
     );
     throw error;
   }
@@ -209,38 +195,32 @@ async function postToForgeFarm(
   return `https://${testnet ? 'testnet.' : ''}forgefarm.io/chinilla/${nftId}`;
 }
 
-// Posts the offer data to Chinilla and returns a URL to the offer.
-async function postToChinilla(
-  offerData: string,
-  sharePrivately: boolean,
-  testnet: boolean,
-): Promise<string> {
-  const ipcRenderer = (window as any).ipcRenderer;
+// Posts the offer data to OfferBin and returns a URL to the offer.
+async function postToOfferBin(offerData: string, sharePrivately: boolean, testnet: boolean): Promise<string> {
+  const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
     hostname: testnet ? testnetDummyHost : 'chinilla.com',
     port: 443,
     path: testnet
-      ? testnetDummyEndpoint
-      : '/offer/upload',
+      ? `/offerbin${sharePrivately ? '?private=true' : ''}`
+      : `/upload${sharePrivately ? '?private=true' : ''}`,
   };
   const requestHeaders = {
-    'accept': 'application/json',
-    'Content-Type': 'application/x-www-form-urlencoded'
-  }
-  const requestData = `offer=${offerData}` + (sharePrivately ? '&private=true' : '');
-  const { err, statusCode, statusMessage, responseBody } =
-    await ipcRenderer?.invoke(
-      'fetchTextResponse',
-      requestOptions,
-      requestHeaders,
-      requestData,
-    );
+    'Content-Type': 'application/text',
+  };
+  const requestData = offerData;
+  const { err, statusCode, statusMessage, responseBody } = await ipcRenderer?.invoke(
+    'fetchTextResponse',
+    requestOptions,
+    requestHeaders,
+    requestData
+  );
 
   if (err || statusCode !== 200) {
     const error = new Error(
-      `Chinilla.com Offers upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `OfferBin upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
     );
     throw error;
   }
@@ -265,11 +245,8 @@ enum HashgreenErrorCodes {
   COINS_ALREADY_COMMITTED = 50041, // Coins in the offer are already committed in another offer
 }
 
-async function postToHashgreen(
-  offerData: string,
-  testnet: boolean,
-): Promise<string> {
-  const ipcRenderer = (window as any).ipcRenderer;
+async function postToHashgreen(offerData: string, testnet: boolean): Promise<string> {
+  const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
@@ -282,17 +259,16 @@ async function postToHashgreen(
     'Content-Type': 'application/x-www-form-urlencoded',
   };
   const requestData = `offer=${offerData}`;
-  const { err, statusCode, statusMessage, responseBody } =
-    await ipcRenderer?.invoke(
-      'fetchTextResponse',
-      requestOptions,
-      requestHeaders,
-      requestData,
-    );
+  const { err, statusCode, statusMessage, responseBody } = await ipcRenderer?.invoke(
+    'fetchTextResponse',
+    requestOptions,
+    requestHeaders,
+    requestData
+  );
 
   if (err) {
     const error = new Error(
-      `Failed to post offer to hash.green: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}`,
+      `Failed to post offer to hash.green: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}`
     );
     throw error;
   }
@@ -310,38 +286,26 @@ async function postToHashgreen(
 
     if (id) {
       return `https://hash.green/dex?order=${id}`;
-    } else {
-      const error = new Error(
-        `Hashgreen response missing data.id: ${responseBody}`,
-      );
-      throw error;
     }
+    const error = new Error(`Hashgreen response missing data.id: ${responseBody}`);
+    throw error;
   } else {
     const jsonObj = JSON.parse(responseBody);
     const { code, msg, data } = jsonObj;
 
     if (code === HashgreenErrorCodes.OFFER_FILE_EXISTS && data) {
       return `https://hash.green/dex?order=${data}`;
-    } else {
-      log(`Upload failure response: ${responseBody}`);
-      switch (code) {
-        case HashgreenErrorCodes.MARKET_NOT_FOUND:
-          throw new Error(
-            `Hashgreen upload rejected. Pairing is not supported: ${msg}`,
-          );
-        case HashgreenErrorCodes.COINS_ALREADY_COMMITTED:
-          throw new Error(
-            `Hashgreen upload rejected. Offer contains coins that are in use by another offer: ${msg}`,
-          );
-        case HashgreenErrorCodes.OFFERED_AMOUNT_TOO_SMALL:
-          throw new Error(
-            `Hashgreen upload rejected. Offer amount is too small: ${msg}`,
-          );
-        default:
-          throw new Error(
-            `Hashgreen upload rejected: code=${code} msg=${msg} data=${data}`,
-          );
-      }
+    }
+    log(`Upload failure response: ${responseBody}`);
+    switch (code) {
+      case HashgreenErrorCodes.MARKET_NOT_FOUND:
+        throw new Error(`Hashgreen upload rejected. Pairing is not supported: ${msg}`);
+      case HashgreenErrorCodes.COINS_ALREADY_COMMITTED:
+        throw new Error(`Hashgreen upload rejected. Offer contains coins that are in use by another offer: ${msg}`);
+      case HashgreenErrorCodes.OFFERED_AMOUNT_TOO_SMALL:
+        throw new Error(`Hashgreen upload rejected. Offer amount is too small: ${msg}`);
+      default:
+        throw new Error(`Hashgreen upload rejected: code=${code} msg=${msg} data=${data}`);
     }
   }
 }
@@ -354,12 +318,9 @@ type PostToSpacescanResponse = {
   };
 };
 
-// Posts the offer data to Chinilla and returns a URL to the offer.
-async function postToSpacescan(
-  offerData: string,
-  testnet: boolean,
-): Promise<string> {
-  const ipcRenderer = (window as any).ipcRenderer;
+// Posts the offer data to OfferBin and returns a URL to the offer.
+async function postToSpacescan(offerData: string, testnet: boolean): Promise<string> {
+  const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
@@ -371,17 +332,16 @@ async function postToSpacescan(
     'Content-Type': 'application/json',
   };
   const requestData = JSON.stringify({ offer: offerData });
-  const { err, statusCode, statusMessage, responseBody } =
-    await ipcRenderer?.invoke(
-      'fetchTextResponse',
-      requestOptions,
-      requestHeaders,
-      requestData,
-    );
+  const { err, statusCode, statusMessage, responseBody } = await ipcRenderer?.invoke(
+    'fetchTextResponse',
+    requestOptions,
+    requestHeaders,
+    requestData
+  );
 
   if (err || statusCode !== 200) {
     const error = new Error(
-      `Spacescan.io upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `Spacescan.io upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
     );
     throw error;
   }
@@ -423,16 +383,16 @@ async function execKeybaseCLI(request: KeybaseCLIRequest): Promise<boolean> {
       const options: any = {};
 
       if (process.platform === 'darwin') {
-        const env = Object.assign({}, process.env);
+        const env = { ...process.env };
 
         // Add /usr/local/bin and a direct path to the keybase binary on macOS.
         // Without these additions, the keybase binary may not be found.
         env.PATH = `${env.PATH}:/usr/local/bin:/Applications/Keybase.app/Contents/SharedSupport/bin`;
 
-        options['env'] = env;
+        options.env = env;
       }
 
-      let command: string | undefined = undefined;
+      let command: string | undefined;
 
       switch (action) {
         case KeybaseCLIActions.JOIN_TEAM:
@@ -472,9 +432,7 @@ async function execKeybaseCLI(request: KeybaseCLIRequest): Promise<boolean> {
                 if (stderr.indexOf('(code 2623)') !== -1) {
                   resolve(false);
                 } else {
-                  reject(
-                    new Error(t`Failed to execute Keybase command: ${stderr}`),
-                  );
+                  reject(new Error(t`Failed to execute Keybase command: ${stderr}`));
                 }
             }
           }
@@ -496,12 +454,9 @@ async function postToKeybase(
   offerData: string,
   teamName: string,
   channelName: string,
-  lookupByAssetId: (assetId: string) => AssetIdMapEntry | undefined,
+  lookupByAssetId: (assetId: string) => AssetIdMapEntry | undefined
 ): Promise<boolean> {
-  const filename = suggestedFilenameForOffer(
-    offerRecord.summary,
-    lookupByAssetId,
-  );
+  const filename = suggestedFilenameForOffer(offerRecord.summary, lookupByAssetId);
   const summary = shortSummaryForOffer(offerRecord.summary, lookupByAssetId);
 
   let filePath = '';
@@ -530,11 +485,8 @@ type PostToOfferpoolResponse = {
 };
 
 // Posts the offer data to offerpool and returns success and an error_message on failure
-async function postToOfferpool(
-  offerData: string,
-  testnet: boolean,
-): Promise<PostToOfferpoolResponse> {
-  const ipcRenderer = (window as any).ipcRenderer;
+async function postToOfferpool(offerData: string, testnet: boolean): Promise<PostToOfferpoolResponse> {
+  const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
     protocol: 'https:',
@@ -546,17 +498,16 @@ async function postToOfferpool(
     'Content-Type': 'application/json',
   };
   const requestData = JSON.stringify({ offer: offerData });
-  const { err, statusCode, statusMessage, responseBody } =
-    await ipcRenderer.invoke(
-      'fetchTextResponse',
-      requestOptions,
-      requestHeaders,
-      requestData,
-    );
+  const { err, statusCode, statusMessage, responseBody } = await ipcRenderer.invoke(
+    'fetchTextResponse',
+    requestOptions,
+    requestHeaders,
+    requestData
+  );
 
   if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `offerpool upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`,
+      `offerpool upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
     );
     throw error;
   }
@@ -573,13 +524,7 @@ async function postToOfferpool(
 /* ========================================================================== */
 
 function OfferShareDexieDialog(props: OfferShareServiceDialogProps) {
-  const {
-    offerRecord,
-    offerData,
-    testnet = false,
-    onClose = () => {},
-    open = false,
-  } = props;
+  const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
   const [sharedURL, setSharedURL] = React.useState('');
 
@@ -623,10 +568,7 @@ function OfferShareDexieDialog(props: OfferShareServiceDialogProps) {
               fullWidth
             />
             <Flex>
-              <Button
-                variant="outlined"
-                onClick={() => openExternal(sharedURL)}
-              >
+              <Button variant="outlined" onClick={() => openExternal(sharedURL)}>
                 <Trans>View on Dexie</Trans>
               </Button>
             </Flex>
@@ -654,14 +596,8 @@ function OfferShareDexieDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
-function OfferShareForgeFarmDialog(props: OfferShareServiceDialogProps) {
-  const {
-    offerRecord,
-    offerData,
-    testnet = false,
-    onClose = () => {},
-    open = false,
-  } = props;
+function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
+  const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
   const [sharedURL, setSharedURL] = React.useState('');
 
@@ -705,11 +641,8 @@ function OfferShareForgeFarmDialog(props: OfferShareServiceDialogProps) {
               fullWidth
             />
             <Flex>
-              <Button
-                variant="outlined"
-                onClick={() => openExternal(sharedURL)}
-              >
-                <Trans>View on ForgeFarm</Trans>
+              <Button variant="outlined" onClick={() => openExternal(sharedURL)}>
+                <Trans>View on MintGarden</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -736,14 +669,8 @@ function OfferShareForgeFarmDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
-function OfferShareChinillaDialog(props: OfferShareServiceDialogProps) {
-  const {
-    offerRecord,
-    offerData,
-    testnet = false,
-    onClose = () => {},
-    open = false,
-  } = props;
+function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
+  const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
   const [sharePrivately, setSharePrivately] = React.useState(false);
   const [sharedURL, setSharedURL] = React.useState('');
@@ -788,11 +715,8 @@ function OfferShareChinillaDialog(props: OfferShareServiceDialogProps) {
               fullWidth
             />
             <Flex>
-              <Button
-                variant="outlined"
-                onClick={() => openExternal(sharedURL)}
-              >
-                <Trans>View on Chinilla</Trans>
+              <Button variant="outlined" onClick={() => openExternal(sharedURL)}>
+                <Trans>View on OfferBin</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -828,9 +752,7 @@ function OfferShareChinillaDialog(props: OfferShareServiceDialogProps) {
             <>
               <Trans>Share Privately</Trans>{' '}
               <TooltipIcon>
-                <Trans>
-                  If selected, your offer will be not be shared publicly.
-                </Trans>
+                <Trans>If selected, your offer will be not be shared publicly.</Trans>
               </TooltipIcon>
             </>
           }
@@ -841,13 +763,7 @@ function OfferShareChinillaDialog(props: OfferShareServiceDialogProps) {
 }
 
 function OfferShareHashgreenDialog(props: OfferShareServiceDialogProps) {
-  const {
-    offerRecord,
-    offerData,
-    testnet = false,
-    onClose = () => {},
-    open = false,
-  } = props;
+  const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
   const [sharedURL, setSharedURL] = React.useState('');
 
@@ -891,10 +807,7 @@ function OfferShareHashgreenDialog(props: OfferShareServiceDialogProps) {
               fullWidth
             />
             <Flex>
-              <Button
-                variant="outlined"
-                onClick={() => openExternal(sharedURL)}
-              >
+              <Button variant="outlined" onClick={() => openExternal(sharedURL)}>
                 <Trans>View on Hashgreen DEX</Trans>
               </Button>
             </Flex>
@@ -923,13 +836,7 @@ function OfferShareHashgreenDialog(props: OfferShareServiceDialogProps) {
 }
 
 function OfferShareSpacescanDialog(props: OfferShareServiceDialogProps) {
-  const {
-    offerRecord,
-    offerData,
-    testnet = false,
-    onClose = () => {},
-    open = false,
-  } = props;
+  const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
   const [sharedURL, setSharedURL] = React.useState('');
 
@@ -973,10 +880,7 @@ function OfferShareSpacescanDialog(props: OfferShareServiceDialogProps) {
               fullWidth
             />
             <Flex>
-              <Button
-                variant="outlined"
-                onClick={() => openExternal(sharedURL)}
-              >
+              <Button variant="outlined" onClick={() => openExternal(sharedURL)}>
                 <Trans>View on Spacescan.io</Trans>
               </Button>
             </Flex>
@@ -1005,13 +909,7 @@ function OfferShareSpacescanDialog(props: OfferShareServiceDialogProps) {
 }
 
 function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
-  const {
-    offerRecord,
-    offerData,
-    testnet,
-    onClose = () => {},
-    open = false,
-  } = props;
+  const { offerRecord, offerData, testnet, onClose = () => {}, open = false } = props;
   const { lookupByAssetId } = useAssetIdName();
   const showError = useShowError();
   const [isSubmitting, setIsSubmitting] = React.useState(false);
@@ -1026,14 +924,10 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
 
   async function handleKeybaseInstall() {
     try {
-      const shell: Shell = (window as any).shell;
+      const { shell } = window as any;
       await shell.openExternal('https://keybase.io/download');
     } catch (e) {
-      showError(
-        new Error(
-          t`Unable to open browser. Install Keybase from https://keybase.io`,
-        ),
-      );
+      showError(new Error(t`Unable to open browser. Install Keybase from https://keybase.io`));
     }
   }
 
@@ -1041,7 +935,7 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
     setIsJoiningTeam(true);
 
     try {
-      const shell: Shell = (window as any).shell;
+      const { shell } = window as any;
       const joinTeamSucceeded = await execKeybaseCLI({
         action: KeybaseCLIActions.JOIN_TEAM,
         teamName,
@@ -1088,9 +982,7 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
           if (joinChannelSucceeded) {
             log('Joined channel successfully');
             await new Promise((resolve) => setTimeout(resolve, 1000));
-            await shell.openExternal(
-              `keybase://chat/${teamName}#${channelName}`,
-            );
+            await shell.openExternal(`keybase://chat/${teamName}#${channelName}`);
           } else {
             console.error('Failed to join channel');
             shell.openExternal(`keybase://chat/${teamName}#${channelName}`);
@@ -1109,8 +1001,8 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
     } catch (e) {
       showError(
         new Error(
-          t`Keybase command failed ${e}. If you haven't installed Keybase, you can download from https://keybase.io`,
-        ),
+          t`Keybase command failed ${e}. If you haven't installed Keybase, you can download from https://keybase.io`
+        )
       );
     } finally {
       setIsJoiningTeam(false);
@@ -1119,14 +1011,10 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
 
   async function handleKeybaseGoToChannel() {
     try {
-      const shell: Shell = (window as any).shell;
+      const { shell } = window as any;
       await shell.openExternal(`keybase://chat/${teamName}#${channelName}`);
     } catch (e) {
-      showError(
-        new Error(
-          t`Unable to open Keybase. Install Keybase from https://keybase.io`,
-        ),
-      );
+      showError(new Error(t`Unable to open Keybase. Install Keybase from https://keybase.io`));
     }
   }
 
@@ -1135,13 +1023,7 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
 
     try {
       setIsSubmitting(true);
-      success = await postToKeybase(
-        offerRecord,
-        offerData,
-        teamName,
-        channelName,
-        lookupByAssetId,
-      );
+      success = await postToKeybase(offerRecord, offerData, teamName, channelName, lookupByAssetId);
 
       if (success) {
         setShared(true);
@@ -1199,9 +1081,8 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
         <Flex flexDirection="column" gap={2}>
           <Typography variant="body2">
             <Trans>
-              Keybase is a secure messaging and file sharing application. To
-              share an offer in the Keybase {teamName} team, you must first have
-              Keybase installed.
+              Keybase is a secure messaging and file sharing application. To share an offer in the Keybase {teamName}{' '}
+              team, you must first have Keybase installed.
             </Trans>
           </Typography>
           <Flex justifyContent="center" flexGrow={0}>
@@ -1212,44 +1093,26 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
           <Divider />
           <Typography variant="body2">
             <Trans>
-              Before posting an offer in Keybase to the #{channelName} channel,
-              you must first join the {teamName} team. Please note that it might
-              take a few moments to join the channel.
+              Before posting an offer in Keybase to the #{channelName} channel, you must first join the {teamName} team.
+              Please note that it might take a few moments to join the channel.
             </Trans>
           </Typography>
           <Flex justifyContent="center" flexGrow={0}>
-            <ButtonLoading
-              onClick={handleKeybaseJoinTeam}
-              variant="outlined"
-              loading={isJoiningTeam}
-            >
+            <ButtonLoading onClick={handleKeybaseJoinTeam} variant="outlined" loading={isJoiningTeam}>
               <Trans>Join {teamName}</Trans>
             </ButtonLoading>
           </Flex>
         </Flex>
       </DialogContent>
       <DialogActions>
-        <Button
-          onClick={handleKeybaseGoToChannel}
-          color="primary"
-          variant="contained"
-        >
+        <Button onClick={handleKeybaseGoToChannel} color="primary" variant="contained">
           <Trans>Go to #{channelName}</Trans>
         </Button>
-        <Flex flexGrow={1}></Flex>
-        <Button
-          onClick={handleClose}
-          color="primary"
-          variant="contained"
-          disabled={isSubmitting}
-        >
+        <Flex flexGrow={1} />
+        <Button onClick={handleClose} color="primary" variant="contained" disabled={isSubmitting}>
           <Trans>Cancel</Trans>
         </Button>
-        <ButtonLoading
-          onClick={handleKeybaseShare}
-          variant="outlined"
-          loading={isSubmitting}
-        >
+        <ButtonLoading onClick={handleKeybaseShare} variant="outlined" loading={isSubmitting}>
           <Trans>Share</Trans>
         </ButtonLoading>
       </DialogActions>
@@ -1258,16 +1121,9 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
 }
 
 function OfferShareOfferpoolDialog(props: OfferShareServiceDialogProps) {
-  const {
-    offerRecord,
-    offerData,
-    testnet = false,
-    onClose = () => {},
-    open = false,
-  } = props;
+  const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
-  const [offerResponse, setOfferResponse] =
-    React.useState<PostToOfferpoolResponse>();
+  const [offerResponse, setOfferResponse] = React.useState<PostToOfferpoolResponse>();
 
   function handleClose() {
     onClose(false);
@@ -1302,10 +1158,7 @@ function OfferShareOfferpoolDialog(props: OfferShareServiceDialogProps) {
           </Flex>
         </DialogContent>
         <DialogActions>
-          <Button
-            variant="outlined"
-            onClick={() => openExternal('https://offerpool.io/')}
-          >
+          <Button variant="outlined" onClick={() => openExternal('https://offerpool.io/')}>
             <Trans>Go to Offerpool</Trans>
           </Button>
           <Button onClick={handleClose} color="primary" variant="contained">
@@ -1338,17 +1191,8 @@ type OfferShareConfirmationDialogProps = CommonOfferProps &
     actions?: React.ReactElement;
   };
 
-function OfferShareConfirmationDialog(
-  props: OfferShareConfirmationDialogProps,
-) {
-  const {
-    offerRecord,
-    title,
-    onConfirm,
-    actions = null,
-    onClose = () => {},
-    open = false,
-  } = props;
+function OfferShareConfirmationDialog(props: OfferShareConfirmationDialogProps) {
+  const { offerRecord, title, onConfirm, actions = null, onClose = () => {}, open = false } = props;
   const showError = useShowError();
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const isNFTOffer = offerContainsAssetOfType(offerRecord.summary, 'singleton');
@@ -1383,7 +1227,7 @@ function OfferShareConfirmationDialog(
       <DialogContent dividers>
         <Flex flexDirection="column" gap={1} style={{ paddingTop: '1em' }}>
           <OfferSummaryComponent
-            isMyOffer={true}
+            isMyOffer
             imported={false}
             summary={offerRecord.summary}
             makerTitle={
@@ -1397,26 +1241,17 @@ function OfferShareConfirmationDialog(
               </Typography>
             }
             rowIndentation={3}
-            showNFTPreview={true}
+            showNFTPreview
           />
         </Flex>
       </DialogContent>
       <DialogActions>
         {actions}
-        <Flex flexGrow={1}></Flex>
-        <Button
-          onClick={handleClose}
-          color="primary"
-          variant="contained"
-          disabled={isSubmitting}
-        >
+        <Flex flexGrow={1} />
+        <Button onClick={handleClose} color="primary" variant="contained" disabled={isSubmitting}>
           <Trans>Cancel</Trans>
         </Button>
-        <ButtonLoading
-          onClick={handleConfirm}
-          variant="outlined"
-          loading={isSubmitting}
-        >
+        <ButtonLoading onClick={handleConfirm} variant="outlined" loading={isSubmitting}>
           <Trans>Share</Trans>
         </ButtonLoading>
       </DialogActions>
@@ -1448,14 +1283,13 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
     testnet = false,
   } = props;
   const openDialog = useOpenDialog();
-  const [suppressShareOnCreate, setSuppressShareOnCreate] =
-    useLocalStorage<boolean>(OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE);
+  const [suppressShareOnCreate, setSuppressShareOnCreate] = usePrefs<boolean>(
+    OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE
+  );
   const isNFTOffer = offerContainsAssetOfType(offerRecord.summary, 'singleton');
 
   const shareOptions: OfferShareDialogProvider[] = useMemo(() => {
-    const capabilities = isNFTOffer
-      ? [OfferSharingCapability.NFT]
-      : [OfferSharingCapability.Token];
+    const capabilities = isNFTOffer ? [OfferSharingCapability.NFT] : [OfferSharingCapability.Token];
 
     const dialogComponents: {
       [key in OfferSharingService]: {
@@ -1500,13 +1334,10 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
     const options = Object.keys(OfferSharingService)
       .filter((key) => Object.keys(dialogComponents).includes(key))
       .filter((key) =>
-        OfferSharingProviders[key as OfferSharingService].capabilities.some(
-          (cap) => capabilities.includes(cap),
-        ),
+        OfferSharingProviders[key as OfferSharingService].capabilities.some((cap) => capabilities.includes(cap))
       )
       .map((key) => {
-        const { component, props } =
-          dialogComponents[key as OfferSharingService];
+        const { component, props } = dialogComponents[key as OfferSharingService];
         return {
           ...OfferSharingProviders[key as OfferSharingService],
           dialogComponent: component,
@@ -1523,16 +1354,9 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
 
   async function handleShare(dialogProvider: OfferShareDialogProvider) {
     const DialogComponent = dialogProvider.dialogComponent;
-    const props = dialogProvider.props;
+    const { props } = dialogProvider;
 
-    await openDialog(
-      <DialogComponent
-        offerRecord={offerRecord}
-        offerData={offerData}
-        testnet={testnet}
-        {...props}
-      />,
-    );
+    await openDialog(<DialogComponent offerRecord={offerRecord} offerData={offerData} testnet={testnet} {...props} />);
   }
 
   function toggleSuppression(value: boolean) {
@@ -1554,27 +1378,15 @@ export default function OfferShareDialog(props: OfferShareDialogProps) {
       <DialogContent dividers>
         <Flex flexDirection="column" gap={2}>
           <Flex flexDirection="column" gap={2}>
-            <Typography variant="subtitle1">
-              Where would you like to share your offer?
-            </Typography>
+            <Typography variant="subtitle1">Where would you like to share your offer?</Typography>
             <Flex flexDirection="column" gap={3}>
-              {shareOptions.map((dialogProvider, index) => {
-                return (
-                  <Button
-                    variant="outlined"
-                    onClick={() => handleShare(dialogProvider)}
-                    key={index}
-                  >
-                    {dialogProvider.name}
-                  </Button>
-                );
-              })}
+              {shareOptions.map((dialogProvider, index) => (
+                <Button variant="outlined" onClick={() => handleShare(dialogProvider)} key={index}>
+                  {dialogProvider.name}
+                </Button>
+              ))}
               {exportOffer !== undefined && (
-                <Button
-                  variant="outlined"
-                  color="secondary"
-                  onClick={exportOffer}
-                >
+                <Button variant="outlined" color="secondary" onClick={exportOffer}>
                   <Flex flexDirection="column">Save Offer File</Flex>
                 </Button>
               )}

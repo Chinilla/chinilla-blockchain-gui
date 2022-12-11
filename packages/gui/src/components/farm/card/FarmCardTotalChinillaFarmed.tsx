@@ -1,7 +1,7 @@
-import React, { useMemo } from 'react';
-import { Trans } from '@lingui/macro';
-import { useCurrencyCode, vojoToChinillaLocaleString, CardSimple, useLocale } from '@chinilla/core';
 import { useGetFarmedAmountQuery } from '@chinilla/api-react';
+import { useCurrencyCode, vojoToChinillaLocaleString, CardSimple, useLocale } from '@chinilla/core';
+import { Trans } from '@lingui/macro';
+import React, { useMemo } from 'react';
 
 export default function FarmCardTotalChinillaFarmed() {
   const currencyCode = useCurrencyCode();
@@ -23,11 +23,6 @@ export default function FarmCardTotalChinillaFarmed() {
   }, [farmedAmount, locale, currencyCode]);
 
   return (
-    <CardSimple
-      title={<Trans>Total Chinilla Farmed</Trans>}
-      value={totalChinillaFarmed}
-      loading={isLoading}
-      error={error}
-    />
+    <CardSimple title={<Trans>Total Chinilla Farmed</Trans>} value={totalChinillaFarmed} loading={isLoading} error={error} />
   );
 }

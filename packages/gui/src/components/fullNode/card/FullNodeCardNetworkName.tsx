@@ -1,10 +1,10 @@
-import React from 'react';
-import { Trans } from '@lingui/macro';
 import { useGetNetworkInfoQuery } from '@chinilla/api-react';
 import { CardSimple } from '@chinilla/core';
+import { Trans } from '@lingui/macro';
+import React from 'react';
 
 export default function FullNodeCardNetworkName() {
-  const { data: networkInfo, isLoading, error } = useGetNetworkInfoQuery(); 
+  const { data: networkInfo, isLoading, error } = useGetNetworkInfoQuery();
   const value = networkInfo?.networkName;
 
   return (

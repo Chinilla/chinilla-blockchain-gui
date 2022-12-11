@@ -1,19 +1,25 @@
 import { Daemon, optionsForPlotter, defaultsForPlotter } from '@chinilla/api';
 import type { KeyringStatus, ServiceName, KeyData } from '@chinilla/api';
-import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
+
 import api, { baseQuery } from '../api';
+import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 
 const apiWithTag = api.enhanceEndpoints({
-  addTagTypes: [
-    'KeyringStatus',
-    'ServiceRunning',
-    'DaemonKey',
-    'RunningServices',
-  ],
+  addTagTypes: ['KeyringStatus', 'ServiceRunning', 'DaemonKey', 'RunningServices'],
 });
 
 export const daemonApi = apiWithTag.injectEndpoints({
   endpoints: (build) => ({
+    addPrivateKey: build.mutation<number, { mnemonic: string; label?: string }>({
+      query: ({ mnemonic, label }) => ({
+        command: 'addPrivateKey',
+        service: Daemon,
+        args: [mnemonic, label],
+      }),
+      transformResponse: (response: any) => response?.fingerprint,
+      invalidatesTags: [{ type: 'DaemonKey', id: 'LIST' }],
+    }),
+
     getKey: build.query<
       KeyData,
       {
@@ -27,8 +33,7 @@ export const daemonApi = apiWithTag.injectEndpoints({
         args: [fingerprint, includeSecrets],
       }),
       transformResponse: (response: any) => response?.key,
-      providesTags: (key) =>
-        key ? [{ type: 'DaemonKey', id: key.fingerprint }] : [],
+      providesTags: (key) => (key ? [{ type: 'DaemonKey', id: key.fingerprint }] : []),
     }),
 
     getKeys: build.query<
@@ -46,9 +51,7 @@ export const daemonApi = apiWithTag.injectEndpoints({
       providesTags: (keys) =>
         keys
           ? [
-              ...keys.map(
-                (key) => ({ type: 'DaemonKey', id: key.fingerprint } as const)
-              ),
+              ...keys.map((key) => ({ type: 'DaemonKey', id: key.fingerprint } as const)),
               { type: 'DaemonKey', id: 'LIST' },
             ]
           : [{ type: 'DaemonKey', id: 'LIST' }],
@@ -162,9 +165,7 @@ export const daemonApi = apiWithTag.injectEndpoints({
         args: [service],
       }),
       transformResponse: (response: any) => response?.isRunning,
-      providesTags: (_result, _err, { service }) => [
-        { type: 'ServiceRunning', id: service },
-      ],
+      providesTags: (_result, _err, { service }) => [{ type: 'ServiceRunning', id: service }],
     }),
 
     runningServices: build.query<KeyringStatus, {}>({
@@ -185,20 +186,10 @@ export const daemonApi = apiWithTag.injectEndpoints({
         savePassphrase?: boolean;
       }
     >({
-      query: ({
-        currentPassphrase,
-        newPassphrase,
-        passphraseHint,
-        savePassphrase,
-      }) => ({
+      query: ({ currentPassphrase, newPassphrase, passphraseHint, savePassphrase }) => ({
         command: 'setKeyringPassphrase',
         service: Daemon,
-        args: [
-          currentPassphrase,
-          newPassphrase,
-          passphraseHint,
-          savePassphrase,
-        ],
+        args: [currentPassphrase, newPassphrase, passphraseHint, savePassphrase],
       }),
       invalidatesTags: () => ['KeyringStatus'],
       transformResponse: (response: any) => response?.success,
@@ -228,20 +219,10 @@ export const daemonApi = apiWithTag.injectEndpoints({
         cleanupLegacyKeyring: boolean;
       }
     >({
-      query: ({
-        passphrase,
-        passphraseHint,
-        savePassphrase,
-        cleanupLegacyKeyring,
-      }) => ({
+      query: ({ passphrase, passphraseHint, savePassphrase, cleanupLegacyKeyring }) => ({
         command: 'migrateKeyring',
         service: Daemon,
-        args: [
-          passphrase,
-          passphraseHint,
-          savePassphrase,
-          cleanupLegacyKeyring,
-        ],
+        args: [passphrase, passphraseHint, savePassphrase, cleanupLegacyKeyring],
       }),
       invalidatesTags: () => ['KeyringStatus'],
       transformResponse: (response: any) => response?.success,
@@ -281,17 +262,63 @@ export const daemonApi = apiWithTag.injectEndpoints({
             bladebitMemoryWarning,
           } = plotters[plotterName];
 
-          availablePlotters[plotterName] = {
-            displayName,
-            version,
-            options: optionsForPlotter(plotterName),
-            defaults: defaultsForPlotter(plotterName),
-            installInfo: {
-              installed,
-              canInstall,
-              bladebitMemoryWarning,
-            },
-          };
+          if (!plotterName.startsWith('bladebit')) {
+            availablePlotters[plotterName] = {
+              displayName,
+              version,
+              options: optionsForPlotter(plotterName),
+              defaults: defaultsForPlotter(plotterName),
+              installInfo: {
+                installed,
+                canInstall,
+                bladebitMemoryWarning,
+              },
+            };
+            return;
+          }
+
+          // if (plotterName.startsWith('bladebit'))
+          const majorVersion = typeof version === 'string' ? +version.split('.')[0] : 0;
+          if (majorVersion > 1) {
+            const bbDisk = 'bladebit_disk';
+            availablePlotters[bbDisk] = {
+              displayName,
+              version: `${version} (Disk plot)`,
+              options: optionsForPlotter(bbDisk),
+              defaults: defaultsForPlotter(bbDisk),
+              installInfo: {
+                installed,
+                canInstall,
+                bladebitMemoryWarning,
+              },
+            };
+
+            const bbRam = 'bladebit_ram';
+            availablePlotters[bbRam] = {
+              displayName,
+              version: `${version} (RAM plot)`,
+              options: optionsForPlotter(bbRam),
+              defaults: defaultsForPlotter(bbRam),
+              installInfo: {
+                installed,
+                canInstall,
+                bladebitMemoryWarning,
+              },
+            };
+          } else {
+            const bbRam = 'bladebit_ram';
+            availablePlotters[bbRam] = {
+              displayName,
+              version: `${version} (RAM plot)`,
+              options: optionsForPlotter(bbRam),
+              defaults: defaultsForPlotter(bbRam),
+              installInfo: {
+                installed: false,
+                canInstall: false,
+                bladebitMemoryWarning,
+              },
+            };
+          }
         });
 
         return availablePlotters;
@@ -318,15 +345,15 @@ export const daemonApi = apiWithTag.injectEndpoints({
         bladebitDisableNUMA,
         bladebitWarmStart,
         bladebitNoCpuAffinity,
-        bladebit2Cache,
-        bladebit2F1Threads,
-        bladebit2FpThreads,
-        bladebit2CThreads,
-        bladebit2P2Threads,
-        bladebit2P3Threads,
-        bladebit2Alternate,
-        bladebit2NoT1Direct,
-        bladebit2NoT2Direct,
+        bladebitDiskCache,
+        bladebitDiskF1Threads,
+        bladebitDiskFpThreads,
+        bladebitDiskCThreads,
+        bladebitDiskP2Threads,
+        bladebitDiskP3Threads,
+        bladebitDiskAlternate,
+        bladebitDiskNoT1Direct,
+        bladebitDiskNoT2Direct,
         c,
         delay,
         disableBitfieldPlotting,
@@ -345,6 +372,7 @@ export const daemonApi = apiWithTag.injectEndpoints({
         plotCount,
         plotSize,
         plotterName,
+        plotType,
         poolPublicKey,
         queue,
         workspaceLocation,
@@ -372,25 +400,33 @@ export const daemonApi = apiWithTag.injectEndpoints({
           farmerPublicKey,
           poolPublicKey,
           c,
-          bladebitDisableNUMA,
-          bladebitWarmStart,
           madmaxNumBucketsPhase3,
           madmaxTempToggle,
           madmaxThreadMultiplier,
+          plotType,
+          bladebitDisableNUMA,
+          bladebitWarmStart,
           bladebitNoCpuAffinity,
-          bladebit2Cache,
-          bladebit2F1Threads,
-          bladebit2FpThreads,
-          bladebit2CThreads,
-          bladebit2P2Threads,
-          bladebit2P3Threads,
-          bladebit2Alternate,
-          bladebit2NoT1Direct,
-          bladebit2NoT2Direct,
+          bladebitDiskCache,
+          bladebitDiskF1Threads,
+          bladebitDiskFpThreads,
+          bladebitDiskCThreads,
+          bladebitDiskP2Threads,
+          bladebitDiskP3Threads,
+          bladebitDiskAlternate,
+          bladebitDiskNoT1Direct,
+          bladebitDiskNoT2Direct,
         ],
       }),
       transformResponse: (response: any) => response?.success,
       // providesTags: (_result, _err, { service }) => [{ type: 'ServiceRunning', id: service }],
+    }),
+    getVersion: build.query<string, {}>({
+      query: () => ({
+        command: 'getVersion',
+        service: Daemon,
+      }),
+      transformResponse: (response: any) => response?.version,
     }),
   }),
 });
@@ -406,11 +442,13 @@ export const {
   useRemoveKeyringPassphraseMutation,
   useMigrateKeyringMutation,
   useUnlockKeyringMutation,
+  useGetVersionQuery,
 
   useGetPlottersQuery,
   useStopPlottingMutation,
   useStartPlottingMutation,
 
+  useAddPrivateKeyMutation,
   useGetKeyQuery,
   useGetKeysQuery,
   useSetLabelMutation,

@@ -1,24 +1,18 @@
-# chinilla-blockchain
-![Alt text](https://www.chinilla.com/img/chinilla_logo.svg)
+# chinilla-blockchain-gui/gui
 
-![GitHub contributors](https://img.shields.io/github/contributors/Chinilla/chinilla-blockchain?logo=GitHub)
+![Chinilla logo](https://www.chinilla.net/wp-content/uploads/2022/09/chinilla-logo.svg)
 
-Please check out the [wiki](https://github.com/Chinilla/chinilla-blockchain/wiki)
-and [FAQ](https://github.com/Chinilla/chinilla-blockchain/wiki/FAQ) for
-information on this project.
+![GitHub contributors](https://img.shields.io/github/contributors/Chinilla/chinilla-blockchain-gui?logo=GitHub)
 
-## Installing
+Chinilla GUI - written in TypeScript and uses Electron/React.
 
-This is the GUI for chinilla-blockchain. It is built into distribution packages in the chinilla-blockchain repository.
+## Development
 
-Install instructions are available in the
-[INSTALL](https://github.com/Chinilla/chinilla-blockchain/wiki/INSTALL)
-section of the
-[chinilla-blockchain repository wiki](https://github.com/Chinilla/chinilla-blockchain/wiki).
+Please read and follow the main [README.md](https://github.com/Chinilla/chinilla-blockchain-gui) of this monorepo.
 
-## Running
+## Best practices
 
-Once installed, a
-[Quick Start Guide](https://github.com/Chinilla/chinilla-blockchain/wiki/Quick-Start-Guide)
-is available from the repository
-[wiki](https://github.com/Chinilla/chinilla-blockchain/wiki).
+- Only one exported component per file
+- Same file name like exported function / component / class
+- CSS, GraphQL file next to the component file with different extension
+- For material-ui use the sx property or other properties instead of styled

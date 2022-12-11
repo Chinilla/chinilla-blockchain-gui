@@ -1,29 +1,23 @@
-import React, { type ReactNode } from 'react';
 import { Trans, Plural } from '@lingui/macro';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Box, IconButton, InputAdornment, FormControl, FormHelperText } from '@mui/material';
 import BigNumber from 'bignumber.js';
-import {
-  Box,
-  InputAdornment,
-  FormControl,
-  FormHelperText,
-} from '@mui/material';
+import React, { type ReactNode } from 'react';
 import { useWatch, useFormContext } from 'react-hook-form';
-import TextField, { TextFieldProps } from '../TextField';
-import chinillaToVojo from '../../utils/chinillaToVojo';
-import catToVojo from '../../utils/catToVojo';
 import useCurrencyCode from '../../hooks/useCurrencyCode';
-import FormatLargeNumber from '../FormatLargeNumber';
+import catToVojo from '../../utils/catToVojo';
+import chinillaToVojo from '../../utils/chinillaToVojo';
 import Flex from '../Flex';
+import FormatLargeNumber from '../FormatLargeNumber';
+import TextField, { TextFieldProps } from '../TextField';
 import NumberFormatCustom from './NumberFormatCustom';
 
 export type AmountProps = TextFieldProps & {
-  children?: (props: {
-    vojo: BigNumber;
-    value: string | undefined;
-  }) => ReactNode;
+  children?: (props: { vojo: BigNumber; value: string | undefined }) => ReactNode;
   name?: string;
   symbol?: string; // if set, overrides the currencyCode. empty string is allowed
   showAmountInVojos?: boolean; // if true, shows the vojo amount below the input field
+  dropdownAdornment?: func;
   // feeMode?: boolean; // if true, amounts are expressed in vojos used to set a transaction fee
   'data-testid'?: string;
 };
@@ -34,6 +28,7 @@ export default function Amount(props: AmountProps) {
     name,
     symbol,
     showAmountInVojos,
+    dropdownAdornment,
     variant,
     fullWidth,
     'data-testid': dataTestid,
@@ -51,9 +46,7 @@ export default function Amount(props: AmountProps) {
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
   const isChinillaCurrency = ['HCX', 'THCX'].includes(currencyCode);
-  const vojo = isChinillaCurrency
-    ? chinillaToVojo(correctedValue)
-    : catToVojo(correctedValue);
+  const vojo = isChinillaCurrency ? chinillaToVojo(correctedValue) : catToVojo(correctedValue);
 
   return (
     <FormControl variant={variant} fullWidth={fullWidth}>
@@ -68,9 +61,14 @@ export default function Amount(props: AmountProps) {
             decimalScale: isChinillaCurrency ? 12 : 3,
             'data-testid': dataTestid,
           },
-          endAdornment: (
+          endAdornment: dropdownAdornment ? (
+            <IconButton onClick={dropdownAdornment}>
+              <ArrowDropDownIcon />
+            </IconButton>
+          ) : (
             <InputAdornment position="end">{currencyCode}</InputAdornment>
           ),
+          style: dropdownAdornment ? { paddingRight: '0' } : undefined,
         }}
         {...rest}
       />

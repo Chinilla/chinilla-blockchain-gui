@@ -1,5 +1,5 @@
-import { useLocalStorage } from '@chinilla/api-react';
+import { usePrefs } from '@chinilla/api-react';
 
 export default function useHideObjectionableContent() {
-  return useLocalStorage<boolean>('hideObjectionableContent', true);
+  return usePrefs<boolean>('hideObjectionableContent', true);
 }

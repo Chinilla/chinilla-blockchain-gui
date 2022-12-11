@@ -1,5 +1,6 @@
-import getUnknownCATs from './getUnknownCATs';
 import { WalletType } from '@chinilla/api';
+
+import getUnknownCATs from './getUnknownCATs';
 
 describe('getUnknownCATs', () => {
   describe('all assetIds found', () => {

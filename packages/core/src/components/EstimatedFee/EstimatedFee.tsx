@@ -1,28 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { get } from 'lodash';
-import { Controller, useFormContext } from 'react-hook-form';
-import { Trans } from '@lingui/macro';
 import { useGetFeeEstimateQuery } from '@chinilla/api-react';
-import {
-  Fee,
-  Flex,
-  vojoToChinillaLocaleString,
-  useCurrencyCode,
-  useLocale,
-} from '@chinilla/core';
+import { Trans } from '@lingui/macro';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import {
   Box,
   FormControl,
-  IconButton,
   InputLabel,
   MenuItem,
   Select as MaterialSelect,
   SelectProps,
   Typography,
 } from '@mui/material';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import useMode from '../../hooks/useMode';
+import { get } from 'lodash';
+import React, { useState, useEffect } from 'react';
+import { Controller, useFormContext } from 'react-hook-form';
+
 import Mode from '../../constants/Mode';
+import useCurrencyCode from '../../hooks/useCurrencyCode';
+import useLocale from '../../hooks/useLocale';
+import useMode from '../../hooks/useMode';
+import vojoToChinillaLocaleString from '../../utils/vojoToChinillaLocaleString';
+import Fee from '../Fee';
+import Flex from '../Flex';
 
 type Props = SelectProps & {
   hideError?: boolean;
@@ -46,9 +44,7 @@ function Select(props: Props) {
   const errorMessage = get(errors, controllerName);
 
   function getTimeByValue(object, value) {
-    const estIndex = Object.keys(object).find(
-      (index) => object[index].estimate === value
-    );
+    const estIndex = Object.keys(object).find((index) => object[index].estimate === value);
     const estTime = object[estIndex].time;
     return estTime;
   }
@@ -57,7 +53,7 @@ function Select(props: Props) {
     <Controller
       name={controllerName}
       control={control}
-      render={({ field: { onChange, onBlur, value, name, ref } }) => (
+      render={({ field: { onChange, onBlur, name, ref } }) => (
         <MaterialSelect
           onChange={(event, ...args) => {
             onChange(event, ...args);
@@ -78,13 +74,11 @@ function Select(props: Props) {
           name={name}
           ref={ref}
           error={!!errorMessage}
-          renderValue={(value) => {
-            return (
-              <Box sx={{ display: 'flex', gap: 1 }}>
-                {selectedValue} (~{selectedTime} min)
-              </Box>
-            );
-          }}
+          renderValue={() => (
+            <Box sx={{ display: 'flex', gap: 1 }}>
+              {selectedValue} (~{selectedTime} min)
+            </Box>
+          )}
           {...rest}
         >
           {children}
@@ -95,19 +89,19 @@ function Select(props: Props) {
 }
 
 function CountdownBar(props: Props) {
-  const { start, refreshTime, ...rest } = props;
-  var [seconds, setSeconds] = useState(new Date().getSeconds());
+  const { start, refreshTime } = props;
+  const [seconds, setSeconds] = useState(new Date().getSeconds());
   const refreshSec = refreshTime * 10e-4;
 
   useEffect(() => {
-    var timer = setInterval(() => setSeconds(new Date().getSeconds()), 500);
+    const timer = setInterval(() => setSeconds(new Date().getSeconds()), 500);
     return function cleanup() {
       clearInterval(timer);
     };
   });
 
-  var modSec = (((seconds - start) % refreshSec) + refreshSec) % refreshSec;
-  var currentProgress = Math.floor(modSec * (100 / refreshSec));
+  const modSec = (((seconds - start) % refreshSec) + refreshSec) % refreshSec;
+  const currentProgress = Math.floor(modSec * (100 / refreshSec));
 
   const containerStyle = {
     height: 2,
@@ -134,7 +128,7 @@ function CountdownBar(props: Props) {
   return (
     <div style={containerStyle}>
       <div style={fillerStyle}>
-        <span style={labelStyle}></span>
+        <span style={labelStyle} />
       </div>
     </div>
   );
@@ -143,13 +137,9 @@ function CountdownBar(props: Props) {
 export default function EstimatedFee(props: FeeProps) {
   const { name, txType, required, ...rest } = props;
   const { setValue } = useFormContext();
-  const [startTime, setStartTime] = useState(new Date().getSeconds());
+  const [startTime] = useState(new Date().getSeconds());
   const refreshTime = 60000; // in milliseconds
-  const {
-    data: ests,
-    isLoading: isFeeLoading,
-    error,
-  } = useGetFeeEstimateQuery(
+  const { data: ests, error } = useGetFeeEstimateQuery(
     { targetTimes: [60, 120, 300], cost: 1 },
     {
       pollingInterval: refreshTime,
@@ -165,28 +155,30 @@ export default function EstimatedFee(props: FeeProps) {
   const currencyCode = useCurrencyCode();
 
   const maxBlockCostCLVM = 11000000000;
-  const offersAcceptsPerBlock = 500;
 
   const txCostEstimates = {
     walletSendHCX: Math.floor(maxBlockCostCLVM / 1170),
-    createOffer: Math.floor(maxBlockCostCLVM / offersAcceptsPerBlock),
-    spendCATtx: 29303497,
-    sellNFT: Math.floor(maxBlockCostCLVM / 92),
-    createPoolingWallet: Math.floor(maxBlockCostCLVM / 462), // JOIN_POOL in GUI = create pooling wallet
+    spendCATtx: 36382111,
+    acceptOffer: 721393265,
+    cancelOffer: 212443993,
+    burnNFT: 74385541,
+    assignDIDToNFT: 115540006,
+    transferNFT: 74385541,
+    createPlotNFT: 18055407,
+    claimPoolingReward: 82668466,
+    createDID: 57360396,
   };
 
   const multiplier = txCostEstimates[txType];
 
   function formatEst(number, multiplier, locale) {
-    let num = Math.round(number * multiplier * 10 ** -4) * 10 ** 4;
-    let formatNum = vojoToChinillaLocaleString(num, locale);
+    const num = Math.round(number * multiplier * 10 ** -4) * 10 ** 4;
+    const formatNum = vojoToChinillaLocaleString(num, locale);
     return formatNum;
   }
 
   function getValueByTime(object, time) {
-    const estIndex = Object.keys(object).find(
-      (index) => object[index].time === time
-    );
+    const estIndex = Object.keys(object).find((index) => object[index].time === time);
     const estValue = object[estIndex].estimate;
     return estValue;
   }
@@ -194,7 +186,7 @@ export default function EstimatedFee(props: FeeProps) {
   useEffect(() => {
     if (ests) {
       const estimateList = ests.estimates;
-      const targetTimes = ests.targetTimes;
+      const { targetTimes } = ests;
       // if (
       //   estimateList[0] == 0 &&
       //   estimateList[1] == 0 &&
@@ -203,23 +195,16 @@ export default function EstimatedFee(props: FeeProps) {
       //   //setInputType('classic');
       // }
       const est0 =
-        estimateList[0] === 0
-          ? formatEst(6_000_000, 1, locale)
-          : formatEst(estimateList[0], multiplier, locale);
+        estimateList[0] === 0 ? formatEst(6_000_000, 1, locale) : formatEst(estimateList[0], multiplier, locale);
       const est1 =
-        estimateList[1] === 0
-          ? formatEst(5_000_000, 1, locale)
-          : formatEst(estimateList[1], multiplier, locale);
-      const est2 =
-        estimateList[2] === 0
-          ? formatEst(0, 1, locale)
-          : formatEst(estimateList[2], multiplier, locale);
-      setEstList((current) => []);
+        estimateList[1] === 0 ? formatEst(5_000_000, 1, locale) : formatEst(estimateList[1], multiplier, locale);
+      const est2 = estimateList[2] === 0 ? formatEst(0, 1, locale) : formatEst(estimateList[2], multiplier, locale);
+      setEstList(() => []);
       setEstList((current) => [
         ...current,
         {
           time: targetTimes[0] / 60,
-          timeText: 'Likely in ' + targetTimes[0] + ' seconds',
+          timeText: `Likely in ${targetTimes[0]} seconds`,
           estimate: est0,
         },
       ]);
@@ -227,7 +212,7 @@ export default function EstimatedFee(props: FeeProps) {
         ...current,
         {
           time: targetTimes[1] / 60,
-          timeText: 'Likely in ' + targetTimes[1] / 60 + ' minutes',
+          timeText: `Likely in ${targetTimes[1] / 60} minutes`,
           estimate: est1,
         },
       ]);
@@ -235,7 +220,7 @@ export default function EstimatedFee(props: FeeProps) {
         ...current,
         {
           time: targetTimes[2] / 60,
-          timeText: 'Likely over ' + targetTimes[2] / 60 + ' minutes',
+          timeText: `Likely over ${targetTimes[2] / 60} minutes`,
           estimate: est2,
         },
       ]);
@@ -281,12 +266,7 @@ export default function EstimatedFee(props: FeeProps) {
           >
             {estList.map((option) => (
               <MenuItem value={String(option.estimate)} key={option.time}>
-                <Flex
-                  flexDirection="row"
-                  flexGrow={1}
-                  justifyContent="space-between"
-                  alignItems="center"
-                >
+                <Flex flexDirection="row" flexGrow={1} justifyContent="space-between" alignItems="center">
                   <Flex>
                     <Trans>
                       {option.estimate} {currencyCode}
@@ -334,16 +314,7 @@ export default function EstimatedFee(props: FeeProps) {
                 required={required}
                 autoFocus
                 color="secondary"
-                InputProps={{
-                  endAdornment: (
-                    <IconButton onClick={showDropdown}>
-                      <ArrowDropDownIcon />
-                    </IconButton>
-                  ),
-                  style: {
-                    paddingRight: '0',
-                  },
-                }}
+                dropdownAdornment={showDropdown}
               />
             </Flex>
           </Flex>
@@ -363,21 +334,20 @@ export default function EstimatedFee(props: FeeProps) {
         </FormControl>
       </Flex>
     );
-  } else {
-    return (
-      <Flex>
-        <FormControl variant="filled" fullWidth>
-          <Fee
-            name={name}
-            type="text"
-            variant="filled"
-            label={<Trans>Fee</Trans>}
-            fullWidth
-            required={required}
-            color="secondary"
-          />
-        </FormControl>
-      </Flex>
-    );
   }
+  return (
+    <Flex>
+      <FormControl variant="filled" fullWidth>
+        <Fee
+          name={name}
+          type="text"
+          variant="filled"
+          label={<Trans>Fee</Trans>}
+          fullWidth
+          required={required}
+          color="secondary"
+        />
+      </FormControl>
+    </Flex>
+  );
 }

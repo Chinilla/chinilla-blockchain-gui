@@ -1,21 +1,15 @@
-import React from 'react';
-import { Plural, t, Trans } from '@lingui/macro';
-import {
-  CopyToClipboard,
-  Flex,
-  Link,
-  FormatLargeNumber,
-  TooltipIcon,
-  vojoToCATLocaleString,
-} from '@chinilla/core';
-import { Box, Typography } from '@mui/material';
-import useAssetIdName from '../../hooks/useAssetIdName';
 import { WalletType } from '@chinilla/api';
+import { CopyToClipboard, Flex, Link, FormatLargeNumber, TooltipIcon, vojoToCATLocaleString } from '@chinilla/core';
+import { Plural, t, Trans } from '@lingui/macro';
+import { Box, Typography } from '@mui/material';
+import React from 'react';
+import styled from 'styled-components';
+
+import useAssetIdName from '../../hooks/useAssetIdName';
 import useNFTMinterDID from '../../hooks/useNFTMinterDID';
-import { formatAmountForWalletType } from './utils';
 import { launcherIdToNFTId } from '../../util/nfts';
 import NFTSummary from '../nfts/NFTSummary';
-import styled from 'styled-components';
+import { formatAmountForWalletType } from './utils';
 
 /* ========================================================================== */
 
@@ -34,9 +28,7 @@ type OfferVojoAmountProps = {
   vojos: number;
 };
 
-function OfferVojoAmount(
-  props: OfferVojoAmountProps,
-): React.ReactElement | null {
+function OfferVojoAmount(props: OfferVojoAmountProps): React.ReactElement | null {
   const { vojos } = props;
 
   return (
@@ -55,10 +47,7 @@ OfferVojoAmount.defaultProps = {
   vojos: 0,
 };
 
-function shouldShowVojoAmount(
-  vojos: number,
-  vojoThreshold = 1000000000 /* 1 billion */,
-): boolean {
+function shouldShowVojoAmount(vojos: number, vojoThreshold = 1000000000 /* 1 billion */): boolean {
   return vojoThreshold > 0 && vojos < vojoThreshold;
 }
 
@@ -71,17 +60,11 @@ type OfferSummaryNFTRowProps = {
   showNFTPreview: boolean;
 };
 
-export function OfferSummaryNFTRow(
-  props: OfferSummaryNFTRowProps,
-): React.ReactElement {
+export function OfferSummaryNFTRow(props: OfferSummaryNFTRowProps): React.ReactElement {
   const { launcherId, rowNumber, showNFTPreview } = props;
   const nftId = launcherIdToNFTId(launcherId);
 
-  const {
-    didId: minterDID,
-    didName: minterDIDName,
-    isLoading: isLoadingMinterDID,
-  } = useNFTMinterDID(nftId);
+  const { didId: minterDID, didName: minterDIDName, isLoading: isLoadingMinterDID } = useNFTMinterDID(nftId);
 
   return (
     <Flex flexDirection="column" gap={2}>
@@ -152,15 +135,8 @@ type OfferSummaryTokenRowProps = {
   overrideNFTSellerAmount?: number;
 };
 
-export function OfferSummaryTokenRow(
-  props: OfferSummaryTokenRowProps,
-): React.ReactElement {
-  const {
-    assetId,
-    amount: originalAmount,
-    rowNumber,
-    overrideNFTSellerAmount,
-  } = props;
+export function OfferSummaryTokenRow(props: OfferSummaryTokenRowProps): React.ReactElement {
+  const { assetId, amount: originalAmount, rowNumber, overrideNFTSellerAmount } = props;
   const { lookupByAssetId } = useAssetIdName();
   const assetIdInfo = lookupByAssetId(assetId);
   const amount = overrideNFTSellerAmount ?? originalAmount;
@@ -169,20 +145,14 @@ export function OfferSummaryTokenRow(
     : vojoToCATLocaleString(amount);
   const displayName = assetIdInfo?.displayName ?? t`Unknown CAT`;
   const tooltipDisplayName = assetIdInfo?.name ?? t`Unknown CAT`;
-  const showVojoAmount =
-    assetIdInfo?.walletType === WalletType.STANDARD_WALLET &&
-    shouldShowVojoAmount(amount);
+  const showVojoAmount = assetIdInfo?.walletType === WalletType.STANDARD_WALLET && shouldShowVojoAmount(amount);
 
   return (
     <Flex alignItems="center" gap={1}>
       <Typography variant="body1" component="div">
         <Flex flexDirection="row" alignItems="center" gap={1}>
           {rowNumber !== undefined && (
-            <Typography
-              variant="body1"
-              color="secondary"
-              style={{ fontWeight: 'bold' }}
-            >{`${rowNumber})`}</Typography>
+            <Typography variant="body1" color="secondary" style={{ fontWeight: 'bold' }}>{`${rowNumber})`}</Typography>
           )}
           <Typography>
             {displayAmount} {displayName}
@@ -202,10 +172,7 @@ export function OfferSummaryTokenRow(
                 <StyledTitle>Name</StyledTitle>
               </Box>
               {(!assetIdInfo || assetIdInfo?.walletType === WalletType.CAT) && (
-                <Link
-                  href={`https://www.taildatabase.com/tail/${assetId.toLowerCase()}`}
-                  target="_blank"
-                >
+                <Link href={`https://www.taildatabase.com/tail/${assetId.toLowerCase()}`} target="_blank">
                   <Trans>Search on Tail Database</Trans>
                 </Link>
               )}
@@ -218,10 +185,7 @@ export function OfferSummaryTokenRow(
               <StyledTitle>Asset ID</StyledTitle>
               <Flex alignItems="center" gap={1}>
                 <StyledValue>{assetId.toLowerCase()}</StyledValue>
-                <CopyToClipboard
-                  value={assetId.toLowerCase()}
-                  fontSize="small"
-                />
+                <CopyToClipboard value={assetId.toLowerCase()} fontSize="small" />
               </Flex>
             </Flex>
           )}

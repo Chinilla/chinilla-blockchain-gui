@@ -1,8 +1,5 @@
+import { useGetLoggedInFingerprintQuery, usePrefs } from '@chinilla/api-react';
 import { useCallback } from 'react';
-import {
-  useGetLoggedInFingerprintQuery,
-  useLocalStorage,
-} from '@chinilla/api-react';
 
 export default function useHiddenWallet(): {
   hide: (walletId: number) => void;
@@ -12,7 +9,7 @@ export default function useHiddenWallet(): {
   isLoading: boolean;
 } {
   const { data: fingerprint, isLoading } = useGetLoggedInFingerprintQuery();
-  const [hiddenWalletIds, setHiddenWalletIds] = useLocalStorage<{
+  const [hiddenWalletIds, setHiddenWalletIds] = usePrefs<{
     [key: string]: number[];
   }>('hiddenWalletsItems', {});
 

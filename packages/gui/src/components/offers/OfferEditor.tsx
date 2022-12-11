@@ -1,9 +1,5 @@
-import React, { useState } from 'react';
-import BigNumber from 'bignumber.js';
-import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
-import { useLocalStorage } from '@rehooks/local-storage';
-import { Trans, t } from '@lingui/macro';
+import { WalletType } from '@chinilla/api';
+import { useCreateOfferForIdsMutation, usePrefs } from '@chinilla/api-react';
 import {
   Back,
   Button,
@@ -13,15 +9,20 @@ import {
   Form,
   useOpenDialog,
   useShowError,
+  chinillaToVojo,
+  catToVojo,
 } from '@chinilla/core';
-import { useCreateOfferForIdsMutation } from '@chinilla/api-react';
+import { Trans, t } from '@lingui/macro';
 import { Grid } from '@mui/material';
-import type OfferEditorRowData from './OfferEditorRowData';
-import { WalletType } from '@chinilla/api';
+import BigNumber from 'bignumber.js';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferEditorConfirmationDialog from './OfferEditorConfirmationDialog';
+import type OfferEditorRowData from './OfferEditorRowData';
 import OfferLocalStorageKeys from './OfferLocalStorage';
-import { chinillaToVojo, catToVojo } from '@chinilla/core';
 
 /* ========================================================================== */
 /*                                Offer Editor                                */
@@ -40,10 +41,7 @@ type OfferEditorProps = {
   onOfferCreated: (obj: { offerRecord: any; offerData: any }) => void;
 };
 
-function defaultMakerRow(
-  walletId?: number,
-  walletType?: WalletType,
-): OfferEditorRowData {
+function defaultMakerRow(walletId?: number, walletType?: WalletType): OfferEditorRowData {
   return {
     amount: '',
     assetWalletId: walletId ?? 0,
@@ -73,17 +71,11 @@ function OfferEditor(props: OfferEditorProps) {
   });
   const openDialog = useOpenDialog();
   const errorDialog = useShowError();
-  const [suppressShareOnCreate] = useLocalStorage<boolean>(
-    OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE,
-  );
+  const [suppressShareOnCreate] = usePrefs<boolean>(OfferLocalStorageKeys.SUPPRESS_SHARE_ON_CREATE);
   const [createOfferForIds] = useCreateOfferForIdsMutation();
   const [processing, setIsProcessing] = useState<boolean>(false);
 
-  function updateOffer(
-    offer: { [key: string]: BigNumber },
-    row: OfferEditorRowData,
-    debit: boolean,
-  ) {
+  function updateOffer(offer: { [key: string]: BigNumber }, row: OfferEditorRowData, debit: boolean) {
     const { amount, assetWalletId, walletType } = row;
     if (assetWalletId > 0) {
       let vojoAmount = new BigNumber(0);
@@ -95,7 +87,7 @@ function OfferEditor(props: OfferEditorProps) {
 
       offer[assetWalletId] = debit ? vojoAmount.negated() : vojoAmount;
     } else {
-      console.log('missing asset wallet id');
+      console.error('missing asset wallet id');
     }
   }
 
@@ -104,7 +96,7 @@ function OfferEditor(props: OfferEditorProps) {
     let missingAssetSelection = false;
     let missingAmount = false;
     let amountExceedsSpendableBalance = false;
-    let feeInVojos = chinillaToVojo(formData.fee ?? 0);
+    const feeInVojos = chinillaToVojo(formData.fee ?? 0);
 
     formData.makerRows.forEach((row: OfferEditorRowData) => {
       updateOffer(offer, row, true);
@@ -112,9 +104,7 @@ function OfferEditor(props: OfferEditorProps) {
         missingAssetSelection = true;
       } else if (!row.amount) {
         missingAmount = true;
-      } else if (
-        new BigNumber(row.amount).isGreaterThan(row.spendableBalance)
-      ) {
+      } else if (new BigNumber(row.amount).isGreaterThan(row.spendableBalance)) {
         amountExceedsSpendableBalance = true;
       }
     });
@@ -125,11 +115,7 @@ function OfferEditor(props: OfferEditorProps) {
       }
     });
 
-    if (
-      missingAssetSelection ||
-      missingAmount ||
-      amountExceedsSpendableBalance
-    ) {
+    if (missingAssetSelection || missingAmount || amountExceedsSpendableBalance) {
       if (missingAssetSelection) {
         errorDialog(new Error(t`Please select an asset for each row`));
       } else if (missingAmount) {
@@ -141,9 +127,7 @@ function OfferEditor(props: OfferEditorProps) {
       return;
     }
 
-    const confirmedCreation = await openDialog(
-      <OfferEditorConfirmationDialog />,
-    );
+    const confirmedCreation = await openDialog(<OfferEditorConfirmationDialog />);
 
     if (!confirmedCreation) {
       return;
@@ -158,9 +142,7 @@ function OfferEditor(props: OfferEditorProps) {
         validateOnly: false,
       }).unwrap();
       if (response.success === false) {
-        const error =
-          response.error ||
-          new Error('Encountered an unknown error while creating offer');
+        const error = response.error || new Error('Encountered an unknown error while creating offer');
         errorDialog(error);
       } else {
         const { offer: offerData, tradeRecord: offerRecord } = response;
@@ -204,20 +186,10 @@ function OfferEditor(props: OfferEditorProps) {
           <OfferEditorConditionsPanel makerSide="sell" disabled={processing} />
         </Card>
         <Flex justifyContent="flex-end" gap={2}>
-          <Button
-            variant="outlined"
-            type="reset"
-            onClick={handleReset}
-            disabled={processing}
-          >
+          <Button variant="outlined" type="reset" onClick={handleReset} disabled={processing}>
             <Trans>Reset</Trans>
           </Button>
-          <ButtonLoading
-            variant="contained"
-            color="primary"
-            type="submit"
-            loading={processing}
-          >
+          <ButtonLoading variant="contained" color="primary" type="submit" loading={processing}>
             <Trans>Create Offer</Trans>
           </ButtonLoading>
         </Flex>
@@ -253,11 +225,7 @@ export function CreateOfferEditor(props: CreateOfferEditorProps) {
     <Grid container>
       <Flex flexDirection="column" flexGrow={1} gap={3}>
         <Flex>{navElement}</Flex>
-        <OfferEditor
-          walletId={walletId}
-          walletType={walletType}
-          onOfferCreated={onOfferCreated}
-        />
+        <OfferEditor walletId={walletId} walletType={walletType} onOfferCreated={onOfferCreated} />
       </Flex>
     </Grid>
   );

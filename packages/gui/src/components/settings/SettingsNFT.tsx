@@ -1,37 +1,37 @@
-import React from 'react';
+import { usePrefs } from '@chinilla/api-react';
+import { Flex, SettingsLabel, AlertDialog, useOpenDialog, FormatBytes } from '@chinilla/core';
 import { Trans } from '@lingui/macro';
-import { Grid, Box, Button } from '@mui/material';
+import { Grid, Box, Button, Switch, FormGroup, FormControlLabel } from '@mui/material';
+import React from 'react';
 import styled from 'styled-components';
 
-import { Flex, SettingsLabel } from '@chinilla/core';
-import { Switch, FormGroup, FormControlLabel } from '@mui/material';
 import useHideObjectionableContent from '../../hooks/useHideObjectionableContent';
-import { useLocalStorage } from '@chinilla/api-react';
-import { AlertDialog, useOpenDialog } from '@chinilla/core';
-import { FormatBytes } from '@chinilla/core';
+import useNFTImageFittingMode from '../../hooks/useNFTImageFittingMode';
 import LimitCacheSize from './LimitCacheSize';
 
 export default function SettingsGeneral() {
-  const [hideObjectionableContent, setHideObjectionableContent] =
-    useHideObjectionableContent();
+  const [hideObjectionableContent, setHideObjectionableContent] = useHideObjectionableContent();
 
-  function handleChangeHideObjectionableContent(
-    event: React.ChangeEvent<HTMLInputElement>,
-  ) {
+  function handleChangeHideObjectionableContent(event: React.ChangeEvent<HTMLInputElement>) {
     setHideObjectionableContent(event.target.checked);
   }
 
-  const [cacheFolder, setCacheFolder] = useLocalStorage('cacheFolder');
-  const [defaultCacheFolder, setDefaultCacheFolder] = React.useState();
+  const [nftImageFittingMode, setNFTImageFittingMode] = useNFTImageFittingMode();
+  const [cacheFolder, setCacheFolder] = usePrefs('cacheFolder', '');
+  const [defaultCacheFolder, setDefaultCacheFolder] = React.useState('');
   const [cacheSize, setCacheSize] = React.useState(0);
   const openDialog = useOpenDialog();
-  const ipcRenderer = (window as any).ipcRenderer;
+  const { ipcRenderer } = window as any;
+
+  function handleScalePreviewImages(event: React.ChangeEvent<HTMLInputElement>) {
+    setNFTImageFittingMode(event.target.checked ? 'contain' : 'cover');
+  }
 
   React.useEffect(() => {
-    ipcRenderer.invoke('getDefaultCacheFolder').then((folder) => {
+    ipcRenderer.invoke('getDefaultCacheFolder').then((folder: string) => {
       setDefaultCacheFolder(folder);
     });
-    ipcRenderer.invoke('getCacheSize').then((cacheSize) => {
+    ipcRenderer.invoke('getCacheSize').then((cacheSize: number) => {
       setCacheSize(cacheSize);
     });
   }, []);
@@ -74,22 +74,16 @@ export default function SettingsGeneral() {
     const newFolder = await ipcRenderer.invoke('selectCacheFolder');
 
     if (!newFolder.canceled) {
-      const folderFileCount = await ipcRenderer.invoke(
-        'isNewFolderEmtpy',
-        newFolder.filePaths[0],
-      );
+      const folderFileCount = await ipcRenderer.invoke('isNewFolderEmtpy', newFolder.filePaths[0]);
 
       if (folderFileCount > 0) {
         openDialog(
           <AlertDialog title={<Trans>Error</Trans>}>
             <Trans>Please select an empty folder</Trans>
-          </AlertDialog>,
+          </AlertDialog>
         );
       } else {
-        ipcRenderer.invoke('changeCacheFolderFromTo', [
-          cacheFolder,
-          newFolder.filePaths[0],
-        ]);
+        ipcRenderer.invoke('changeCacheFolderFromTo', [cacheFolder, newFolder.filePaths[0]]);
         setCacheFolder(newFolder.filePaths[0]);
       }
     }
@@ -107,13 +101,13 @@ export default function SettingsGeneral() {
 
           <FormGroup>
             <FormControlLabel
-              control={
-                <Switch
-                  checked={hideObjectionableContent}
-                  onChange={handleChangeHideObjectionableContent}
-                />
-              }
+              control={<Switch checked={hideObjectionableContent} onChange={handleChangeHideObjectionableContent} />}
               label={<Trans>Hide objectionable content</Trans>}
+            />
+
+            <FormControlLabel
+              control={<Switch checked={nftImageFittingMode === 'contain'} onChange={handleScalePreviewImages} />}
+              label={<Trans>Scale NFT images to fit</Trans>}
             />
             <Box sx={{ m: 2 }} />
 
@@ -137,12 +131,7 @@ export default function SettingsGeneral() {
                 </div>
                 <div>{renderCacheFolder()}</div>
                 <div>
-                  <Button
-                    onClick={chooseAnotherFolder}
-                    color="primary"
-                    variant="outlined"
-                    size="small"
-                  >
+                  <Button onClick={chooseAnotherFolder} color="primary" variant="outlined" size="small">
                     <Trans>Change</Trans>
                   </Button>
                 </div>
@@ -154,7 +143,7 @@ export default function SettingsGeneral() {
                 <div>
                   <LimitCacheSize forceUpdateCacheSize={forceUpdateCacheSize} />
                 </div>
-                <div></div>
+                <div />
               </div>
             </CacheTable>
           </FormGroup>

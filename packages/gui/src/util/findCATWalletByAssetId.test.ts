@@ -1,4 +1,5 @@
 import { WalletType } from '@chinilla/api';
+
 import findCATWalletByAssetId from './findCATWalletByAssetId';
 
 describe('findCATWalletByAssetId', () => {

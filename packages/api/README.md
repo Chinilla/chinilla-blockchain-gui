@@ -1,8 +1,10 @@
-# @chinilla/api
+# chinilla-blockchain-gui/api
 
-![Alt text](https://www.chinilla.com/img/chinilla_logo.svg)
+![Chinilla logo](https://www.chinilla.net/wp-content/uploads/2022/09/chinilla-logo.svg)
 
-This library provides support for TypeScript/JavaScript [Chinilla](https://www.chinilla.com) apps to access the [Chinilla Blockchain RPC](https://github.com/Chinilla/chinilla-blockchain/wiki/RPC-Interfaces), by making it easier to perform the following actions:
+![GitHub contributors](https://img.shields.io/github/contributors/Chinilla/chinilla-blockchain-gui?logo=GitHub)
+
+This library provides support for TypeScript/JavaScript [Chinilla](https://www.chinilla.net) apps to access the [Chinilla Blockchain RPC](https://docs.chinilla.net/rpc/), by making it easier to perform the following actions:
 
 - Making requests to the Chinilla Blockchain RPC.
 - Catch responses and errors with standard try/catch and async/await syntax.
@@ -30,18 +32,18 @@ import sleep from 'sleep-promise';
   const wallet = new Wallet(client);
 
   try {
-    // get list of available publick keys
+    // get list of available public keys
     const publicKeys = await wallet.getPublicKeys();
 
     // bind to sync changes
     const unsubscribeSyncChanges = wallet.onSyncChanged((syncData) => {
-      console.log('do something with synchronisation data');
+      console.log('do something with synchronization data');
     });
 
     // wait 5 minutes
     await sleep(1000 * 60 * 5);
 
-    // unubscribe from synchronisation changes
+    // unsubscribe from synchronization changes
     await unsubscribeSyncChanges();
 
     // wait 5 minutes
@@ -55,3 +57,7 @@ import sleep from 'sleep-promise';
   }
 })();
 ```
+
+## Development
+
+Please read and follow the main [README.md](https://github.com/Chinilla/chinilla-blockchain-gui) of this monorepo.

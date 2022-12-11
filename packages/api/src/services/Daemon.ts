@@ -1,7 +1,7 @@
 import type Client from '../Client';
+import ServiceName from '../constants/ServiceName';
 import Service from './Service';
 import type { Options } from './Service';
-import ServiceName from '../constants/ServiceName';
 
 export default class Daemon extends Service {
   constructor(client: Client, options?: Options) {
@@ -38,6 +38,13 @@ export default class Daemon extends Service {
 
   runningServices() {
     return this.command('running_services');
+  }
+
+  addPrivateKey(mnemonic: string, label?: string) {
+    return this.command('add_private_key', {
+      mnemonic,
+      label,
+    });
   }
 
   getKey(fingerprint: string, includeSecrets?: boolean) {
@@ -90,12 +97,7 @@ export default class Daemon extends Service {
     });
   }
 
-  migrateKeyring(
-    passphrase: string,
-    passphraseHint: string,
-    savePassphrase: boolean,
-    cleanupLegacyKeyring: boolean
-  ) {
+  migrateKeyring(passphrase: string, passphraseHint: string, savePassphrase: boolean, cleanupLegacyKeyring: boolean) {
     return this.command('migrate_keyring', {
       passphrase,
       passphraseHint,
@@ -137,29 +139,30 @@ export default class Daemon extends Service {
     delay: number, // delay
     e?: boolean, // disableBitfieldPlotting
     x?: boolean, // excludeFinalDir
-    overrideK?: boolean, //overrideK
+    overrideK?: boolean, // overrideK
     f?: string, // farmerPublicKey
     p?: string, // poolPublicKey
     c?: string, // poolContractAddress
-    bb_disable_numa?: boolean, // bladebitDisableNUMA,
-    bb_warm_start?: boolean, // bladebitWarmStart,
     mm_v?: number, // madmaxNumBucketsPhase3,
     mm_G?: boolean, // madmaxTempToggle,
     mm_K?: number, // madmaxThreadMultiplier,
+    plot_type?: string, // 'diskplot' or 'ramplot'
+    bb_disable_numa?: boolean, // bladebitDisableNUMA,
+    bb_warm_start?: boolean, // bladebitWarmStart,
     bb_no_cpu_affinity?: boolean, // bladebitNoCpuAffinity
-    bb2_cache?: number, // bladebit2Cache
-    bb2_f1_threads?: number, // bladebit2F1Threads
-    bb2_fp_threads?: number, // bladebit2FpThreads
-    bb2_c_threads?: number, // bladebit2CThreads
-    bb2_p2_threads?: number, // bladebit2P2Threads
-    bb2_p3_threads?: number, // bladebit2P3Threads
-    bb2_alternate?: boolean, // bladebit2Alternate
-    bb2_no_t1_direct?: boolean, // bladebit2NoT1Direct
-    bb2_no_t2_direct?: boolean // bladebit2NoT2Direct
+    bbdisk_cache?: number, // bladebitDiskCache
+    bbdisk_f1_threads?: number, // bladebitDiskF1Threads
+    bbdisk_fp_threads?: number, // bladebitDiskFpThreads
+    bbdisk_c_threads?: number, // bladebitDiskCThreads
+    bbdisk_p2_threads?: number, // bladebitDiskP2Threads
+    bbdisk_p3_threads?: number, // bladebitDiskP3Threads
+    bbdisk_alternate?: boolean, // bladebitDiskAlternate
+    bbdisk_no_t1_direct?: boolean, // bladebitDiskNoT1Direct
+    bbdisk_no_t2_direct?: boolean // bladebitDiskNoT2Direct
   ) {
     const args: Record<string, unknown> = {
       service: ServiceName.PLOTTER,
-      plotter: plotterName,
+      plotter: plotterName.startsWith('bladebit') ? 'bladebit' : plotterName,
       k,
       n,
       t,
@@ -180,36 +183,38 @@ export default class Daemon extends Service {
     if (f) args.f = f;
     if (p) args.p = p;
     if (c) args.c = c;
-    // bladebitDisableNUMA
-    if (bb_disable_numa) args.m = bb_disable_numa;
-    // bladebitWarmStart
-    if (bb_warm_start) args.w = bb_warm_start;
     // madmaxNumBucketsPhase3
     if (mm_v) args.v = mm_v;
     // madmaxTempToggle
     if (mm_G) args.G = mm_G;
     // madmaxThreadMultiplier
     if (mm_K) args.K = mm_K;
+    // 'ramplot' or 'diskplot'
+    if (plot_type) args.plot_type = plot_type;
+    // bladebitDisableNUMA
+    if (bb_disable_numa) args.m = bb_disable_numa;
+    // bladebitWarmStart
+    if (bb_warm_start) args.w = bb_warm_start;
     // bladebitNoCpuAffinity
     if (bb_no_cpu_affinity) args.no_cpu_affinity = bb_no_cpu_affinity;
-    // bladebit2Cache
-    if (bb2_cache) args.cache = `${bb2_cache}G`;
-    // bladebit2F1Threads
-    if (bb2_f1_threads) args.f1_threads = bb2_f1_threads;
-    // bladebit2FpThreads
-    if (bb2_fp_threads) args.fp_threads = bb2_fp_threads;
-    // bladebit2CThreads
-    if (bb2_c_threads) args.c_threads = bb2_c_threads;
-    // bladebit2P2Threads
-    if (bb2_p2_threads) args.p2_threads = bb2_p2_threads;
-    // bladebit2P3Threads
-    if (bb2_p3_threads) args.p3_threads = bb2_p3_threads;
-    // bladebit2Alternate
-    if (bb2_alternate) args.alternate = bb2_alternate;
-    // bladebit2NoT1Direct
-    if (bb2_no_t1_direct) args.no_t1_direct = bb2_no_t1_direct;
-    // bladebit2NoT2Direct
-    if (bb2_no_t2_direct) args.no_t2_direct = bb2_no_t2_direct;
+    // bladebitDiskCache
+    if (bbdisk_cache) args.cache = `${bbdisk_cache}G`;
+    // bladebitDiskF1Threads
+    if (bbdisk_f1_threads) args.f1_threads = bbdisk_f1_threads;
+    // bladebitDiskFpThreads
+    if (bbdisk_fp_threads) args.fp_threads = bbdisk_fp_threads;
+    // bladebitDiskCThreads
+    if (bbdisk_c_threads) args.c_threads = bbdisk_c_threads;
+    // bladebitDiskP2Threads
+    if (bbdisk_p2_threads) args.p2_threads = bbdisk_p2_threads;
+    // bladebitDiskP3Threads
+    if (bbdisk_p3_threads) args.p3_threads = bbdisk_p3_threads;
+    // bladebitDiskAlternate
+    if (bbdisk_alternate) args.alternate = bbdisk_alternate;
+    // bladebitDiskNoT1Direct
+    if (bbdisk_no_t1_direct) args.no_t1_direct = bbdisk_no_t1_direct;
+    // bladebitDiskNoT2Direct
+    if (bbdisk_no_t2_direct) args.no_t2_direct = bbdisk_no_t2_direct;
 
     return this.command('start_plotting', args, undefined, undefined, true);
   }
@@ -218,10 +223,11 @@ export default class Daemon extends Service {
     return this.command('exit');
   }
 
-  onKeyringStatusChanged(
-    callback: (data: any, message: Message) => void,
-    processData?: (data: any) => any
-  ) {
+  onKeyringStatusChanged(callback: (data: any, message: Message) => void, processData?: (data: any) => any) {
     return this.onStateChanged('keyring_status_changed', callback, processData);
+  }
+
+  getVersion() {
+    return this.command('get_version');
   }
 }

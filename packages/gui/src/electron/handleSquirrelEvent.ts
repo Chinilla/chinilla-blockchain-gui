@@ -1,5 +1,5 @@
-import { app } from 'electron';
 import ChildProcess from 'child_process';
+import { app } from 'electron';
 import path from 'path';
 
 export default function handleSquirrelEvent() {

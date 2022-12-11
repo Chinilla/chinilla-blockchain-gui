@@ -8,7 +8,7 @@ msgstr ""
 "Language: sq_AL\n"
 "Project-Id-Version: chinilla-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-07-27 18:39\n"
+"PO-Revision-Date: 2022-10-24 18:15\n"
 "Last-Translator: \n"
 "Language-Team: Albanian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -326,7 +326,7 @@ msgstr ""
 
 #: src/components/nfts/NFTBurnDialog.tsx:122
 #~ msgid "Burning a non-fungible token means destroying it. Burned NFTs are sent to a verifiably un-spendable address, eliminating your NFT from the blockchain. However, transactions leading up to the burn will remain on the blockchain ledger."
-#~ msgstr ""
+#~ msgstr "Burning a non-fungible token means destroying it. Burned NFTs are sent to a verifiably un-spendable address, eliminating your NFT from the blockchain. However, transactions leading up to the burn will remain on the blockchain ledger."
 
 #: src/components/nfts/NFTBurnDialog.tsx:125
 msgid "Burning a non-fungible token means removing it from circulation by sending it to a verifiably un-spendable address. However, transactions leading up to the burn will remain on the blockchain ledger."
@@ -604,7 +604,7 @@ msgstr "Tipi i Lidhjes"
 
 #: src/components/fullNode/FullNodeConnections.tsx:106
 #~ msgid "Connections"
-#~ msgstr "Lidhjet"
+#~ msgstr "Connections"
 
 #: src/components/nfts/NFTPreview.tsx:786
 msgid "Content does not match the expected hash value that was specified during NFT minting. The content may have been modified."
@@ -883,11 +883,11 @@ msgstr ""
 
 #: src/components/offers/OfferImport.tsx:146
 #~ msgid "Drag & drop an offer file below to view its details"
-#~ msgstr ""
+#~ msgstr "Drag & drop an offer file below to view its details"
 
 #: src/components/offers/OfferImport.tsx:166
 #~ msgid "Drag and drop offer file"
-#~ msgstr ""
+#~ msgstr "Drag and drop offer file"
 
 #: src/components/backup/BackupRestore.tsx:172
 msgid "Drag and drop your backup file"
@@ -1107,7 +1107,7 @@ msgstr "Skedari"
 
 #: src/components/nfts/NFTPreview.tsx:26
 #~ msgid "File is over 10MB"
-#~ msgstr ""
+#~ msgstr "File is over 10MB"
 
 #: src/components/plot/PlotHarvesterPlots.tsx:81
 #: src/components/plot/PlotHarvesterPlotsDuplicate.tsx:13
@@ -1277,7 +1277,7 @@ msgstr ""
 
 #: src/components/nfts/NFTBurnDialog.tsx:79
 #~ msgid "If you proceed, this NFT will be permanently deleted. Are you sure you want to continue?"
-#~ msgstr ""
+#~ msgstr "If you proceed, this NFT will be permanently deleted. Are you sure you want to continue?"
 
 #: src/components/nfts/NFTPreview.tsx:827
 msgid "Image Hash Mismatch"
@@ -1320,15 +1320,12 @@ msgid "Install Keybase"
 msgstr ""
 
 #: src/hooks/useAcceptOfferHook.tsx:78
-msgid ""
-"Insufficient funds available to accept offer. Ensure that your\n"
+msgid "Insufficient funds available to accept offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
 msgstr ""
 
 #: src/components/offers/OfferEditor.tsx:182
-#: src/components/offers2/CreateOfferBuilder.tsx:85
-msgid ""
-"Insufficient funds available to create offer. Ensure that your\n"
+msgid "Insufficient funds available to create offer. Ensure that your\n"
 "spendable balance is sufficient to cover the offer amount."
 msgstr ""
 
@@ -1671,7 +1668,7 @@ msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:256
 #~ msgid "NFT for HCX"
-#~ msgstr ""
+#~ msgstr "NFT for HCX"
 
 #: src/components/offers2/OfferBuilderNFTRoyalties.tsx:201
 msgid "NFT has no royalties"
@@ -2703,11 +2700,11 @@ msgstr ""
 #: src/components/app/AppKeyringMigrator.tsx:64
 #: src/components/app/AppKeyringMigrator.tsx:267
 #~ msgid "Skip"
-#~ msgstr ""
+#~ msgstr "Skip"
 
 #: src/components/app/AppKeyringMigrator.tsx:63
 #~ msgid "Skip Keyring Migration"
-#~ msgstr ""
+#~ msgstr "Skip Keyring Migration"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:452
 msgid "Skips adding a final directory to harvester for farming"
@@ -3345,8 +3342,12 @@ msgstr ""
 msgid "Would you like to transfer the specified NFT to a new owner?"
 msgstr ""
 
-#: src/components/plot/add/PlotAddChooseSize.tsx:56
-#: src/electron/main.tsx:641
+#: src/components/offers/NFTOfferEditor.tsx:261
+#~ msgid "HCX for NFT"
+#~ msgstr "HCX for NFT"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:48
+#: src/electron/main.tsx:385
 msgid "Yes"
 msgstr "Po"
 
@@ -3445,15 +3446,15 @@ msgstr ""
 
 #: src/components/app/AppKeyringMigrator.tsx:69
 #~ msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
-#~ msgstr ""
+#~ msgstr "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Are you sure you want to skip migrating your keys?"
 
 #: src/components/app/AppKeyringMigrator.tsx:112
 #~ msgid "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
-#~ msgstr ""
+#~ msgstr "Your keys need to be migrated to a new keyring that is optionally secured by a master passphrase."
 
 #: src/components/app/AppKeyringMigrator.tsx:118
 #~ msgid "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
-#~ msgstr ""
+#~ msgstr "Your keys need to be migrated to a new keyring that is secured by a master passphrase."
 
 #: src/components/offers/OfferShareDialog.tsx:1171
 msgid "Your offer has been successfully posted to Keybase."
@@ -3548,3 +3549,4 @@ msgstr ""
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:118
 msgid "{warning}"
 msgstr ""
+

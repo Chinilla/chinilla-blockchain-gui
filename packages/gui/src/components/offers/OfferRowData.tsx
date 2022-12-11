@@ -1,4 +1,3 @@
-import type BigNumber from 'bignumber.js';
 import { type WalletType } from '@chinilla/api';
 
 type OfferRowData = {
