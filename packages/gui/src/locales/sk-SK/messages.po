@@ -3581,7 +3581,6 @@ msgstr "Zobraziť na Hashgreen DEX"
 #~ msgid "View on SkyNFT"
 #~ msgstr "Zobraziť na SkyNFT"
 
-#: src/components/nfts/NFTContextualActions.tsx:636
 #: src/components/offers/OfferShareDialog.tsx:884
 msgid "View on Spacescan.io"
 msgstr "Zobraziť na Spacescan.io"

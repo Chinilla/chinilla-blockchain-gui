@@ -3580,7 +3580,6 @@ msgstr ""
 #~ msgid "View on SkyNFT"
 #~ msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:636
 #: src/components/offers/OfferShareDialog.tsx:884
 msgid "View on Spacescan.io"
 msgstr ""

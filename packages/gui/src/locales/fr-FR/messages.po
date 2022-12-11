@@ -3581,7 +3581,6 @@ msgstr "Voir sur le DEX Hashgreen"
 #~ msgid "View on SkyNFT"
 #~ msgstr "Voir sur SkyNFT"
 
-#: src/components/nfts/NFTContextualActions.tsx:636
 #: src/components/offers/OfferShareDialog.tsx:884
 msgid "View on Spacescan.io"
 msgstr "Voir sur Spacescan.io"
