@@ -22,7 +22,7 @@ msgstr ""
 msgid "<0>{0}</0>"
 msgstr "<0>{0}</0>"
 
-#: src/components/Amount/Amount.tsx:101
+#: src/components/Amount/Amount.tsx:102
 msgid "Amount"
 msgstr "Määrä"
 
@@ -30,13 +30,13 @@ msgstr "Määrä"
 msgid "Appearance"
 msgstr "Ulkoasu"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:142
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:143
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr "Oletko varma, että haluat jatkaa? Kirjoita tämän lompakon sormenjälki vahvistaaksesi poistamisen."
 
 #: src/components/FormBackButton/FormBackButton.tsx:48
 #: src/screens/SelectKey/SelectKey.tsx:76
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:154
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
 msgstr "Palaa"
 
@@ -81,7 +81,7 @@ msgstr "Tumma"
 
 #: src/screens/SelectKey/SelectKey.tsx:75
 #: src/screens/SelectKey/SelectKeyItem.tsx:100
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:164
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:165
 msgid "Delete"
 msgstr "Poista"
 
@@ -90,7 +90,7 @@ msgstr "Poista"
 msgid "Delete all keys"
 msgstr "Poista kaikki avaimet"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:94
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:95
 msgid "Delete key {fingerprint}"
 msgstr "Poista avain {fingerprint}"
 
@@ -154,7 +154,7 @@ msgstr "Farmaroidaan"
 msgid "Fee"
 msgstr "Maksu"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:78
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:79
 msgid "Fingerprint does not match"
 msgstr "Sormenjälki ei täsmää"
 
@@ -369,19 +369,19 @@ msgstr "Synkronoi"
 msgid "The provided passphrase and confirmation do not match"
 msgstr "Annettu salasana ja vahvistus eivät täsmää"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:124
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:125
 msgid "This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
 msgstr "Varoitus: Tätä avainta käytetään lompakossa, jossa voi olla saldoa. Poistamalla tämän avaimen voit menettää pääsyn tähän lompakkoon"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:106
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:107
 msgid "This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
 msgstr "Varoitus: tätä avainta käytetään farmarin palkinto-osoitteeseen. Poistamalla tämän avaimen voit menettää pääsyn tuleviin farmaripalkkioihin"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:115
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:116
 msgid "This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 msgstr "Varoitus: tätä avainta käytetään poolin palkinto-osoitteeseen. Poistamalla tämän avaimen voit menettää pääsyn tuleviin poolipalkkioihin"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:136
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:137
 msgid "This will permanently remove the key from your computer, make sure you have your mnemonic phrase backed up."
 msgstr "Tämä poistaa avaimen pysyvästi tietokoneeltasi, varmista, että sinulla on mnemoninen lause varmuuskopioitu."
 
@@ -427,7 +427,7 @@ msgstr "Arvo vaikuttaa suurelta"
 msgid "Wallet"
 msgstr "Lompakko"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:147
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:148
 msgid "Wallet Fingerprint"
 msgstr "Lompakon Sormenjälki"
 
@@ -461,7 +461,7 @@ msgstr "Olet tehnyt muutoksia. Haluatko hylätä ne?"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Avaimiasi ei ole siirretty uuteen avainrenkaaseen. Et voi luoda uusia avaimia tai poistaa olemassa olevia avaimia ennen kuin siirto on tehty. Haluatko siirtää avaimesi nyt?"
 
-#: src/components/Amount/Amount.tsx:83
+#: src/components/Amount/Amount.tsx:84
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr "{0, plural, one {vojo} other {vojoa}}"
 

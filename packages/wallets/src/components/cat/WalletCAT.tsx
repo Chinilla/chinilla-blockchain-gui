@@ -7,6 +7,7 @@ import { Edit as RenameIcon, Fingerprint as FingerprintIcon } from '@mui/icons-m
 import { Box, ListItemIcon, Alert, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import useWallet from '../../hooks/useWallet';
 import WalletCards from '../WalletCards';
 import WalletHeader from '../WalletHeader';

@@ -4,6 +4,7 @@ import { Trans } from '@lingui/macro';
 import { ChevronRight as ChevronRightIcon } from '@mui/icons-material';
 import React, { ReactNode } from 'react';
 import { useNavigate } from 'react-router';
+
 import PlotNFTState from '../../constants/PlotNFTState';
 import useUnconfirmedPlotNFTs from '../../hooks/useUnconfirmedPlotNFTs';
 import PlotNFTSelectPool, { SubmitData } from './select/PlotNFTSelectPool';

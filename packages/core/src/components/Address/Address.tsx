@@ -2,6 +2,7 @@ import { toBech32m } from '@chinilla/api';
 import { Box } from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
+
 import useCurrencyCode from '../../hooks/useCurrencyCode';
 import CopyToClipboard from '../CopyToClipboard';
 import Flex from '../Flex';

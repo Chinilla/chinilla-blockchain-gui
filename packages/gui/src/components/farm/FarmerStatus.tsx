@@ -3,6 +3,7 @@ import { Trans } from '@lingui/macro';
 import { FiberManualRecord as FiberManualRecordIcon } from '@mui/icons-material';
 import React from 'react';
 import styled from 'styled-components';
+
 import FarmerStatus from '../../constants/FarmerStatus';
 import useFarmerStatus from '../../hooks/useFarmerStatus';
 

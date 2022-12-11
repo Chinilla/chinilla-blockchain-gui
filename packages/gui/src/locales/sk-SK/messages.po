@@ -127,7 +127,7 @@ msgstr "Pridať pole do fronty"
 msgid "Add a Plot"
 msgstr "Pridať pole"
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:52
+#: src/components/plotNFT/PlotNFTAdd.tsx:53
 msgid "Add a Plot NFT"
 msgstr "Pridať NFT poľa"
 
@@ -458,29 +458,19 @@ msgid "Changes will take effect the next time Chinilla is started"
 msgstr "Zmeny sa prejavia pri ďalšom spustení Chinilla aplikácie"
 
 #: src/electron/main.tsx:862
-msgid "Chat on Discord"
-msgstr ""
-
-#: src/electron/main.tsx:934
-#~ msgid "Chat on KeyBase"
-#~ msgstr "Chatovať na KeyBase"
+msgid "Chat on KeyBase"
+msgstr "Chatovať na KeyBase"
 
 #: src/constants/WalletConnectCommands.tsx:276
 msgid "Check Offer Validity"
 msgstr ""
 
-#: src/components/offers/NFTOfferPreview.tsx:180
-#: src/components/offers2/OfferBuilderNFTProvenance.tsx:41
-#~ msgid "Check Provenance on ForgeFarm"
-#~ msgstr ""
-
 #: src/components/offers/NFTOfferPreview.tsx:151
 #: src/components/offers2/OfferBuilderNFTProvenance.tsx:37
-msgid "Check Provenance on MintGarden"
-msgstr "Skontrovať pôvod na MintGarden"
+msgid "Check Provenance on ForgeFarm"
+msgstr "Skontrovať pôvod na ForgeFarm"
 
 #: src/components/offers/NFTOfferPreview.tsx:190
-#: src/components/offers2/OfferBuilderNFTProvenance.tsx:51
 #~ msgid "Check Provenance on SkyNFT"
 #~ msgstr "Skontrolovať pôvod na SkyNFT"
 
@@ -493,7 +483,7 @@ msgstr "Skontrolovať pôvod na Spacescan.io"
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/components/offers2/OfferBuilderHCXSection.tsx:75
+#: src/components/offers2/OfferBuilderHCXSection.tsx:76
 msgid "Chinilla ({currencyCode}) is a digital currency that is secure and sustainable"
 msgstr ""
 
@@ -507,7 +497,7 @@ msgstr "Chinilla Blockchain Wiki"
 
 #: src/components/offers/OfferShareDialog.tsx:704
 msgid "Chinilla URL"
-msgstr ""
+msgstr "Chinilla URL"
 
 #: src/components/app/AppSelectMode.tsx:145
 msgid "Choose Farming Mode"
@@ -696,7 +686,7 @@ msgid "Could not parse offer data"
 msgstr ""
 
 #: src/components/plot/add/PlotAddForm.tsx:191
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:184
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:185
 #: src/components/settings/ProfileAdd.tsx:119
 msgid "Create"
 msgstr "Vytvoriť"
@@ -755,11 +745,11 @@ msgstr ""
 msgid "Creates and submits a transaction on the blockchain that cancels the offer"
 msgstr "Vytvorí a odošle transakciu, ktorá zruší ponuku, do blockchainu"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:62
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:63
 msgid "Creating Plot NFT and Joining the Pool"
 msgstr "Vytváranie NFT poľa a pripájanie k združeniu"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:60
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:61
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Vytváranie NFT poľa osobného združenia"
 
@@ -1049,8 +1039,8 @@ msgstr "Zadajte svoju prístupovú frázu:"
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
-#: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/FarmerStatus.tsx:23
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/PlotStatus.tsx:22
 #: src/components/plot/queue/PlotQueueIndicator.tsx:23
@@ -1145,9 +1135,9 @@ msgstr "Nebeží farmer"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmári získavajú odmeny za bloky a transakčné poplatky tým, že vložia voľný priestor do siete, aby pomohli zabezpečit transakcie. Tu bude vaša farma akonáhle pridáte svoje pole. <0>Viac informácií</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:98
+#: src/components/dashboard/DashboardSideBar.tsx:97
 #: src/components/farm/card/FarmCardStatus.tsx:62
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Farming"
 msgstr "Ťažba"
@@ -1226,7 +1216,7 @@ msgstr "Súbor"
 msgid "Filename"
 msgstr "Meno súboru"
 
-#: src/components/nfts/gallery/NFTGallery.tsx:148
+#: src/components/nfts/gallery/NFTGallery.tsx:149
 msgid "Filters"
 msgstr "Filtre"
 
@@ -1243,20 +1233,20 @@ msgstr ""
 msgid "Finished"
 msgstr "Dokončené"
 
-#: src/electron/main.tsx:940
-#~ msgid "Follow on Twitter"
-#~ msgstr "Sledovať na Twitteri"
+#: src/electron/main.tsx:868
+msgid "Follow on Twitter"
+msgstr "Sledovať na Twitteri"
 
 #: src/components/offers/OfferShareDialog.tsx:630
 msgid "ForgeFarm URL"
-msgstr ""
+msgstr "ForgeFarm URL"
 
 #: src/electron/main.tsx:835
 msgid "Frequently Asked Questions"
 msgstr "Často kladené otázky (FAQ)"
 
 #: src/components/app/AppStatusHeader.tsx:42
-#: src/components/dashboard/DashboardSideBar.tsx:77
+#: src/components/dashboard/DashboardSideBar.tsx:76
 #: src/components/fullNode/FullNode.jsx:116
 msgid "Full Node"
 msgstr "Celý uzol"
@@ -1544,8 +1534,8 @@ msgstr "Pripojiť sa k združeniu"
 
 #: src/components/plot/add/PlotAddNFT.tsx:58
 #: src/components/plot/add/PlotAddNFT.tsx:132
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:128
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:142
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:129
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:143
 #: src/components/pool/PoolHero.tsx:24
 msgid "Join a Pool"
 msgstr "Pripojiť sa k združeniu"
@@ -1554,7 +1544,7 @@ msgstr "Pripojiť sa k združeniu"
 msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile."
 msgstr "Pripojte sa k združeniu a získajte konzistentné farmárske HCX odmeny. Priemerný výnos je rovnaký, je však oveľa menej volatilný."
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:60
+#: src/components/plotNFT/PlotNFTAdd.tsx:61
 msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 msgstr "Pripojte sa k združeniu a získajte konzistentné farmárske HCX odmeny. Priemerný výnos je rovnaký, je však oveľa menej volatilný. Priraďte polia k NFT poľa. Môžete ľahko prepínať združenia bez nutnosti opakovaného vytvárania polí."
 
@@ -1765,10 +1755,6 @@ msgstr "Ochrana prístupovou frázou vyžaduje migráciu"
 msgid "Minimum Difficulty"
 msgstr "Minimálna zložitosť"
 
-#: src/components/offers/OfferShareDialog.tsx:696
-#~ msgid "MintGarden URL"
-#~ msgstr "MintGarden URL"
-
 #: src/components/nfts/NFTDetails.tsx:213
 msgid "Minted at Block Height"
 msgstr "Vyrazené v bloku s výškou"
@@ -1912,7 +1898,7 @@ msgstr "Nie je špecifikované NFT"
 msgid "NFT {nftId} is already used in this offer"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:58
+#: src/components/dashboard/DashboardSideBar.tsx:57
 msgid "NFTs"
 msgstr "NFT"
 
@@ -2010,7 +1996,7 @@ msgstr "Žiadne z vašich polí zatiaľ neprešlo filtrom polí."
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
-#: src/components/farm/FarmerStatus.tsx:20
+#: src/components/farm/FarmerStatus.tsx:21
 #: src/components/nfts/detail/NFTDetail.tsx:73
 #: src/components/nfts/detail/NFTDetail.tsx:82
 #: src/components/nfts/detail/NFTDetailV2.tsx:188
@@ -2144,10 +2130,6 @@ msgstr ""
 msgid "Offer has been accepted and is awaiting confirmation."
 msgstr "Ponuka bola prijatá a čaká na potvrdenie."
 
-#: src/components/offers/OfferShareDialog.tsx:779
-#~ msgid "OfferBin URL"
-#~ msgstr "OfferBin URL"
-
 #: src/components/offers/OfferManager.tsx:299
 msgid "Offered"
 msgstr "Ponúknuté"
@@ -2160,7 +2142,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "Ponúkam: [{makerString}], žiadam: [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:64
+#: src/components/dashboard/DashboardSideBar.tsx:63
 msgid "Offers"
 msgstr "Ponuky"
 
@@ -2489,7 +2471,7 @@ msgstr "Pole je duplikátom {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "NFT poľa prechádza do (cieľového stavu). Môže to chvíľu trvať. Prosím nezatvárajte aplikáciu, kým nebude prechod dokončený."
 
-#: src/components/dashboard/DashboardSideBar.tsx:84
+#: src/components/dashboard/DashboardSideBar.tsx:83
 #: src/components/plot/PlotHarvester.tsx:97
 msgid "Plots"
 msgstr "Polia"
@@ -2598,21 +2580,21 @@ msgstr "Adresa odmeny združenia nesmie byť prázdna."
 msgid "Pool Reward Amount"
 msgstr "Čiastka odmeny združenia"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:32
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:33
 msgid "Pool does not provide relativeLockHeight."
 msgstr "Združenie neposkytuje relativeLockHeight."
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:29
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:30
 msgid "Pool does not provide targetPuzzleHash."
 msgstr "Združenie neposkytuje targetPuzzleHash."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:233
 #: src/components/plotNFT/PlotNFTCard.tsx:269
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:68
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:69
 msgid "Pool:"
 msgstr "Združenie:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:104
+#: src/components/dashboard/DashboardSideBar.tsx:103
 #: src/components/plotNFT/PlotNFTExternalState.tsx:25
 #: src/components/plotNFT/PlotNFTState.tsx:57
 msgid "Pooling"
@@ -2930,7 +2912,7 @@ msgstr "Odoslať na adresu"
 msgid "Set Passphrase"
 msgstr "Nastaviť prístupovú frázu"
 
-#: src/components/dashboard/DashboardSideBar.tsx:114
+#: src/components/dashboard/DashboardSideBar.tsx:113
 #: src/components/settings/Settings.tsx:50
 msgid "Settings"
 msgstr "Nastavenia"
@@ -2951,7 +2933,7 @@ msgstr "Zdieľať súkromne"
 
 #: src/components/offers/OfferShareDialog.tsx:738
 msgid "Share on Chinilla"
-msgstr ""
+msgstr "Zdieľať na Chinilla"
 
 #: src/components/offers/OfferShareDialog.tsx:591
 msgid "Share on Dexie"
@@ -2959,7 +2941,7 @@ msgstr "Zdieľať na Dexie"
 
 #: src/components/offers/OfferShareDialog.tsx:664
 msgid "Share on ForgeFarm"
-msgstr ""
+msgstr "Zdieľať na ForgeFarm"
 
 #: src/components/offers/OfferShareDialog.tsx:830
 msgid "Share on Hashgreen DEX"
@@ -2968,14 +2950,6 @@ msgstr "Zdieľať na Hashgreen DEX"
 #: src/components/offers/OfferShareDialog.tsx:1078
 msgid "Share on Keybase"
 msgstr "Zdieľať na Keybase"
-
-#: src/components/offers/OfferShareDialog.tsx:733
-#~ msgid "Share on MintGarden"
-#~ msgstr "Zdieľať na MintGarden"
-
-#: src/components/offers/OfferShareDialog.tsx:816
-#~ msgid "Share on OfferBin"
-#~ msgstr "Zdieľať na OfferBin"
 
 #: src/components/offers/OfferShareDialog.tsx:903
 msgid "Share on Spacescan.io"
@@ -2993,7 +2967,7 @@ msgstr "Zobraziť"
 msgid "Show Details"
 msgstr "Zobraziť podrobnosti"
 
-#: src/components/nfts/gallery/NFTGallery.tsx:157
+#: src/components/nfts/gallery/NFTGallery.tsx:158
 msgid "Show Hidden"
 msgstr "Zobraziť skryté"
 
@@ -3113,7 +3087,7 @@ msgid "Synced"
 msgstr "Synchronizované"
 
 #: src/components/farm/card/FarmCardStatus.tsx:18
-#: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 msgid "Syncing"
 msgstr "Synchronizácia"
@@ -3348,7 +3322,7 @@ msgstr "Časová značka"
 
 #: src/components/nfts/detail/NFTDetail.tsx:39
 #: src/components/nfts/detail/NFTDetailV2.tsx:166
-#: src/components/nfts/NFTCard.tsx:70
+#: src/components/nfts/NFTCard.tsx:71
 #: src/components/nfts/NFTSummary.tsx:171
 msgid "Title Not Available"
 msgstr "Názov nie je k dispozícii"
@@ -3361,14 +3335,14 @@ msgstr "Názov nie je k dispozícii"
 msgid "Token Standard"
 msgstr "Tokenový štandard"
 
-#: src/components/dashboard/DashboardSideBar.tsx:52
+#: src/components/dashboard/DashboardSideBar.tsx:51
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:64
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:66
 #: src/components/offers2/OfferBuilderTokensSection.tsx:113
 msgid "Tokens"
 msgstr "Tokeny"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:100
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:101
 msgid "Too Many Plot NFTs"
 msgstr "Príliš veľa NFT tokenov"
 
@@ -3586,33 +3560,24 @@ msgstr "Zobraziť odkaz na prihlásenie do združenia"
 msgid "View an Offer"
 msgstr "Zobraziť ponuku"
 
-#: src/components/offers/OfferShareDialog.tsx:795
-#~ msgid "View on Chinilla"
-#~ msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:719
+msgid "View on Chinilla"
+msgstr "Zobraziť na Chinilla"
 
 #: src/components/offers/OfferShareDialog.tsx:572
 msgid "View on Dexie"
 msgstr "Zobraziť na Dexie"
 
-#: src/components/nfts/NFTContextualActions.tsx:694
-#: src/components/offers/OfferShareDialog.tsx:712
-#~ msgid "View on ForgeFarm"
-#~ msgstr ""
+#: src/components/nfts/NFTContextualActions.tsx:629
+#: src/components/offers/OfferShareDialog.tsx:645
+msgid "View on ForgeFarm"
+msgstr "Zobraziť na ForgeFarm"
 
 #: src/components/offers/OfferShareDialog.tsx:811
 msgid "View on Hashgreen DEX"
 msgstr "Zobraziť na Hashgreen DEX"
 
-#: src/components/nfts/NFTContextualActions.tsx:629
-#: src/components/offers/OfferShareDialog.tsx:645
-msgid "View on MintGarden"
-msgstr "Zobraziť na MintGarden"
-
-#: src/components/offers/OfferShareDialog.tsx:719
-msgid "View on OfferBin"
-msgstr "Zobraziť na OfferBin"
-
-#: src/components/nfts/NFTContextualActions.tsx:701
+#: src/components/nfts/NFTContextualActions.tsx:624
 #~ msgid "View on SkyNFT"
 #~ msgstr "Zobraziť na SkyNFT"
 
@@ -3625,10 +3590,6 @@ msgstr "Zobraziť na Spacescan.io"
 msgid "Viewing offer"
 msgstr "Zobrazenie ponuky"
 
-#: src/electron/main.tsx:868
-msgid "Visit Our Website"
-msgstr ""
-
 #: src/constants/WalletConnectCommands.tsx:103
 #: src/constants/WalletConnectCommands.tsx:408
 msgid "Wait for Confirmation"
@@ -3640,7 +3601,7 @@ msgstr ""
 msgid "Wait for synchronization"
 msgstr "Čakanie na synchronizáciu"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:79
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:80
 msgid "Waiting for the transaction to be confirmed"
 msgstr "Čaká sa na potvrdenie transakcie"
 
@@ -3697,7 +3658,7 @@ msgstr ""
 msgid "WalletConnect is an open protocol to communicate securely between wallets and decentralized applications (dApps)."
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:58
+#: src/components/plotNFT/PlotNFTAdd.tsx:59
 msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Chcete sa pripojiť k združeniu? Vytvorte NFT poľa"
 
@@ -3767,11 +3728,11 @@ msgstr "Áno, prijať ponuku"
 msgid "Yes, move"
 msgstr "Áno, presunúť"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:156
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:157
 msgid "You already have 50 or more Plot NFTs."
 msgstr "Už máte 50 alebo viac NFT tokenov."
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:101
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:102
 msgid "You already have more than 10 Plot NFTs. Click OK if you're sure you want to create a new one."
 msgstr "Už máte viac ako 10 NFT tokenov. Ak ste si istí, že chcete vytvoriť ďalší, kliknite na tlačidlo OK."
 
@@ -3808,7 +3769,7 @@ msgstr "Na vykreslenie poľa nemusí byť počítač synchronizovaný ani pripoj
 msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3 to 4 times longer than this estimate."
 msgstr "Máte {0}% miesta v sieti, takže vyfarmárčenie jedného bloku zaberie odhadom {expectedTimeToWin}. Skutočné výsledky môžu trvať 3 až 4 krát dlhšie, ako je tento odhad."
 
-#: src/components/pool/PoolJoin.tsx:33
+#: src/components/pool/PoolJoin.tsx:34
 msgid "You need to claim your rewards first"
 msgstr "Najprv musíte získať svoje odmeny"
 

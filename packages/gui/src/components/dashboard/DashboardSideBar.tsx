@@ -24,7 +24,6 @@ const StyledItemsContainer = styled(Flex)`
 const StyledRoot = styled(Flex)`
   height: 100%;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.palette.background.default};
 `;
 
 const StyledSideBarDivider = styled(Box)`
@@ -33,7 +32,7 @@ const StyledSideBarDivider = styled(Box)`
 `;
 
 const StyledSettingsContainer = styled(Box)`
-  background-color: ${({ theme }) => theme.palette.background.default};
+  background-color: ${({ theme }) => theme.palette.background.paper};
 `;
 
 export type DashboardSideBarProps = {

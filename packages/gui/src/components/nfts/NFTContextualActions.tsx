@@ -626,8 +626,8 @@ export default function NFTContextualActions(props: NFTContextualActionsProps) {
         {
           action: NFTViewOnExplorerContextualAction,
           props: {
-            title: <Trans>View on MintGarden</Trans>,
-            explorer: NFTExplorer.MintGarden,
+            title: <Trans>View on ForgeFarm</Trans>,
+            explorer: NFTExplorer.ForgeFarm,
           },
         },
         {

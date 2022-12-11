@@ -115,8 +115,8 @@ msgstr ""
 msgid "Check my snapshot balance"
 msgstr ""
 
-#: src/components/cat/WalletCATSelect.tsx:24
-#: src/components/create/WalletCreateList.tsx:31
+#: src/components/cat/WalletCATSelect.tsx:25
+#: src/components/create/WalletCreateList.tsx:32
 #: src/constants/WalletName.ts:23
 msgid "Chinilla Asset Token"
 msgstr ""
@@ -184,11 +184,11 @@ msgstr "نوع اتصال"
 #~ msgid "Create New Chinilla Asset Token Wallet"
 #~ msgstr ""
 
-#: src/components/cat/WalletCATSelect.tsx:31
+#: src/components/cat/WalletCATSelect.tsx:32
 msgid "Create New Wallet"
 msgstr ""
 
-#: src/components/cat/WalletCAT.tsx:103
+#: src/components/cat/WalletCAT.tsx:104
 #: src/components/standard/WalletStandard.tsx:46
 msgid "Create Offer"
 msgstr ""
@@ -242,7 +242,7 @@ msgstr ""
 msgid "Derivation Index: {0}"
 msgstr ""
 
-#: src/components/create/WalletCreateList.tsx:38
+#: src/components/create/WalletCreateList.tsx:39
 msgid "Distributed Identity"
 msgstr ""
 
@@ -574,7 +574,7 @@ msgstr ""
 msgid "RL Wallet"
 msgstr ""
 
-#: src/components/create/WalletCreateList.tsx:44
+#: src/components/create/WalletCreateList.tsx:45
 msgid "Rate Limited"
 msgstr "نرخ محدود شده است"
 
@@ -629,11 +629,11 @@ msgstr ""
 msgid "Recoverable Wallet"
 msgstr ""
 
-#: src/components/cat/WalletCATSelect.tsx:38
+#: src/components/cat/WalletCATSelect.tsx:39
 msgid "Recovery Wallet"
 msgstr ""
 
-#: src/components/cat/WalletCAT.tsx:86
+#: src/components/cat/WalletCAT.tsx:87
 #: src/components/WalletRenameDialog.tsx:61
 msgid "Rename Wallet"
 msgstr ""
@@ -655,7 +655,7 @@ msgstr ""
 #~ msgid "Select Wallet"
 #~ msgstr ""
 
-#: src/components/create/WalletCreateList.tsx:24
+#: src/components/create/WalletCreateList.tsx:25
 msgid "Select Wallet Type"
 msgstr ""
 
@@ -677,7 +677,7 @@ msgstr ""
 #~ msgid "Send your pubkey to your Rate Limited Wallet admin:"
 #~ msgstr ""
 
-#: src/components/cat/WalletCAT.tsx:95
+#: src/components/cat/WalletCAT.tsx:96
 msgid "Show Asset Id"
 msgstr ""
 
@@ -825,7 +825,7 @@ msgstr ""
 msgid "Wallet Name"
 msgstr ""
 
-#: src/components/cat/WalletCAT.tsx:65
+#: src/components/cat/WalletCAT.tsx:66
 msgid "Wallet does not exists"
 msgstr ""
 
@@ -840,10 +840,6 @@ msgstr ""
 #: src/components/WalletsSidebar.tsx:138
 msgid "Want to see your old balance for yourself?"
 msgstr ""
-
-#: src/components/WalletsSidebar.tsx:119
-#~ msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers."
-#~ msgstr ""
 
 #: src/components/WalletsSidebar.tsx:110
 msgid "We've made an upgrade to the CAT standard which requires all CATs to be re-issued. You will be airdropped your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the balance as of block height:<0/><1/><2/>(Approximate time: July 26th, 2022 @ 17:00 UTC)"

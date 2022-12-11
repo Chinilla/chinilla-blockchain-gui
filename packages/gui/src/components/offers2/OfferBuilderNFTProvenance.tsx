@@ -34,7 +34,7 @@ export default function OfferBuilderNFTProvenance(props: OfferBuilderNFTProvenan
         style={{ width: '100%' }}
       >
         <Typography variant="caption" color="secondary">
-          <Trans>Check Provenance on MintGarden</Trans>
+          <Trans>Check Provenance on ForgeFarm</Trans>
         </Typography>
       </Button>
       <Button

@@ -123,7 +123,7 @@ export default function WalletsSidebar() {
                 variant="outlined"
                 size="large"
                 onClick={() =>
-                  openExternal(`https://cat1.chinilla.net/#publicKey=${privateKey.pk}&fingerprint=${fingerprint}`)
+                  openExternal(`https://cat1.chinilla.com/#publicKey=${privateKey.pk}&fingerprint=${fingerprint}`)
                 }
                 disabled={isLoadingFingerprint || isLoadingPrivateKey}
               >

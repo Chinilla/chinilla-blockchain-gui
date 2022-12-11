@@ -6,6 +6,7 @@ import { Card, CardActionArea, CardContent, Typography } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+
 import useNFTMetadata from '../../hooks/useNFTMetadata';
 import NFTContextualActions, { NFTContextualActionTypes } from './NFTContextualActions';
 import NFTPreview from './NFTPreview';

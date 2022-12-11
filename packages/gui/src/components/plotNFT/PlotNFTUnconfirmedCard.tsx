@@ -5,6 +5,7 @@ import { Trans } from '@lingui/macro';
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+
 import PlotNFTState from '../../constants/PlotNFTState';
 import useUnconfirmedPlotNFTs from '../../hooks/useUnconfirmedPlotNFTs';
 

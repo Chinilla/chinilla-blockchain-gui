@@ -159,7 +159,7 @@ async function postToDexie(offerData: string, testnet: boolean): Promise<string>
   return `https://${testnet ? 'testnet.' : ''}dexie.space/offers/${id}`;
 }
 
-async function postToMintGarden(offerData: string, testnet: boolean): Promise<string> {
+async function postToForgeFarm(offerData: string, testnet: boolean): Promise<string> {
   const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
@@ -181,7 +181,7 @@ async function postToMintGarden(offerData: string, testnet: boolean): Promise<st
 
   if (err || (statusCode !== 200 && statusCode !== 400)) {
     const error = new Error(
-      `MintGarden upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
+      `ForgeFarm upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
     );
     throw error;
   }
@@ -195,8 +195,8 @@ async function postToMintGarden(offerData: string, testnet: boolean): Promise<st
   return `https://${testnet ? 'testnet.' : ''}forgefarm.io/chinilla/${nftId}`;
 }
 
-// Posts the offer data to OfferBin and returns a URL to the offer.
-async function postToOfferBin(offerData: string, sharePrivately: boolean, testnet: boolean): Promise<string> {
+// Posts the offer data to Chinilla and returns a URL to the offer.
+async function postToChinilla(offerData: string, sharePrivately: boolean, testnet: boolean): Promise<string> {
   const { ipcRenderer } = window as any;
   const requestOptions = {
     method: 'POST',
@@ -204,7 +204,7 @@ async function postToOfferBin(offerData: string, sharePrivately: boolean, testne
     hostname: testnet ? testnetDummyHost : 'chinilla.com',
     port: 443,
     path: testnet
-      ? `/offerbin${sharePrivately ? '?private=true' : ''}`
+      ? `/chinilla${sharePrivately ? '?private=true' : ''}`
       : `/upload${sharePrivately ? '?private=true' : ''}`,
   };
   const requestHeaders = {
@@ -220,7 +220,7 @@ async function postToOfferBin(offerData: string, sharePrivately: boolean, testne
 
   if (err || statusCode !== 200) {
     const error = new Error(
-      `OfferBin upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
+      `Chinilla upload failed: ${err}, statusCode=${statusCode}, statusMessage=${statusMessage}, response=${responseBody}`
     );
     throw error;
   }
@@ -318,7 +318,7 @@ type PostToSpacescanResponse = {
   };
 };
 
-// Posts the offer data to OfferBin and returns a URL to the offer.
+// Posts the offer data to Chinilla and returns a URL to the offer.
 async function postToSpacescan(offerData: string, testnet: boolean): Promise<string> {
   const { ipcRenderer } = window as any;
   const requestOptions = {
@@ -596,7 +596,7 @@ function OfferShareDexieDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
-function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
+function OfferShareForgeFarmDialog(props: OfferShareServiceDialogProps) {
   const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
   const [sharedURL, setSharedURL] = React.useState('');
@@ -642,7 +642,7 @@ function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
             />
             <Flex>
               <Button variant="outlined" onClick={() => openExternal(sharedURL)}>
-                <Trans>View on MintGarden</Trans>
+                <Trans>View on ForgeFarm</Trans>
               </Button>
             </Flex>
           </Flex>
@@ -669,7 +669,7 @@ function OfferShareMintGardenDialog(props: OfferShareServiceDialogProps) {
   );
 }
 
-function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
+function OfferShareChinillaDialog(props: OfferShareServiceDialogProps) {
   const { offerRecord, offerData, testnet = false, onClose = () => {}, open = false } = props;
   const openExternal = useOpenExternal();
   const [sharePrivately, setSharePrivately] = React.useState(false);
@@ -716,7 +716,7 @@ function OfferShareOfferBinDialog(props: OfferShareServiceDialogProps) {
             />
             <Flex>
               <Button variant="outlined" onClick={() => openExternal(sharedURL)}>
-                <Trans>View on OfferBin</Trans>
+                <Trans>View on Chinilla</Trans>
               </Button>
             </Flex>
           </Flex>

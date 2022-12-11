@@ -36,6 +36,7 @@ import {
   vi,
   zh,
 } from 'make-plural/plurals';
+
 import * as guiLocales from '../locales';
 
 export const defaultLocale = 'en-US';

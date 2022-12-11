@@ -4,6 +4,7 @@ import { Box, IconButton, InputAdornment, FormControl, FormHelperText } from '@m
 import BigNumber from 'bignumber.js';
 import React, { type ReactNode } from 'react';
 import { useWatch, useFormContext } from 'react-hook-form';
+
 import useCurrencyCode from '../../hooks/useCurrencyCode';
 import catToVojo from '../../utils/catToVojo';
 import chinillaToVojo from '../../utils/chinillaToVojo';

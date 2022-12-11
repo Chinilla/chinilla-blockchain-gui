@@ -14,6 +14,7 @@ import { FilterList as FilterListIcon } from '@mui/icons-material';
 import { Switch, FormGroup, FormControlLabel, Box, Grid } from '@mui/material';
 import React, { useState, useMemo } from 'react';
 // import { defineMessage } from '@lingui/macro';
+
 // import NFTGallerySidebar from './NFTGallerySidebar';
 import useFetchNFTs from '../../../hooks/useFetchNFTs';
 import useHiddenNFTs from '../../../hooks/useHiddenNFTs';

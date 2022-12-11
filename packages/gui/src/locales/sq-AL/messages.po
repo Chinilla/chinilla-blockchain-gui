@@ -127,7 +127,7 @@ msgstr "Shto Plote ne radhë"
 msgid "Add a Plot"
 msgstr "Shto nje Plot"
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:52
+#: src/components/plotNFT/PlotNFTAdd.tsx:53
 msgid "Add a Plot NFT"
 msgstr "Shto nje Plot NFT"
 
@@ -458,29 +458,19 @@ msgid "Changes will take effect the next time Chinilla is started"
 msgstr ""
 
 #: src/electron/main.tsx:862
-msgid "Chat on Discord"
-msgstr ""
-
-#: src/electron/main.tsx:934
-#~ msgid "Chat on KeyBase"
-#~ msgstr "Shkruaj në KeyBase"
+msgid "Chat on KeyBase"
+msgstr "Shkruaj në KeyBase"
 
 #: src/constants/WalletConnectCommands.tsx:276
 msgid "Check Offer Validity"
 msgstr ""
 
-#: src/components/offers/NFTOfferPreview.tsx:180
-#: src/components/offers2/OfferBuilderNFTProvenance.tsx:41
-#~ msgid "Check Provenance on ForgeFarm"
-#~ msgstr ""
-
 #: src/components/offers/NFTOfferPreview.tsx:151
 #: src/components/offers2/OfferBuilderNFTProvenance.tsx:37
-msgid "Check Provenance on MintGarden"
+msgid "Check Provenance on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/NFTOfferPreview.tsx:190
-#: src/components/offers2/OfferBuilderNFTProvenance.tsx:51
 #~ msgid "Check Provenance on SkyNFT"
 #~ msgstr ""
 
@@ -493,7 +483,7 @@ msgstr ""
 msgid "Chinilla"
 msgstr ""
 
-#: src/components/offers2/OfferBuilderHCXSection.tsx:75
+#: src/components/offers2/OfferBuilderHCXSection.tsx:76
 msgid "Chinilla ({currencyCode}) is a digital currency that is secure and sustainable"
 msgstr ""
 
@@ -696,7 +686,7 @@ msgid "Could not parse offer data"
 msgstr ""
 
 #: src/components/plot/add/PlotAddForm.tsx:191
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:184
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:185
 #: src/components/settings/ProfileAdd.tsx:119
 msgid "Create"
 msgstr "Krijo"
@@ -755,11 +745,11 @@ msgstr ""
 msgid "Creates and submits a transaction on the blockchain that cancels the offer"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:62
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:63
 msgid "Creating Plot NFT and Joining the Pool"
 msgstr "Krijimi i Plotit NFT dhe Lidhja me Pollet"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:60
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:61
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Krijimi i plotit NFT për Vetë-Grumbullim"
 
@@ -1049,8 +1039,8 @@ msgstr ""
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
-#: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/FarmerStatus.tsx:23
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/PlotStatus.tsx:22
 #: src/components/plot/queue/PlotQueueIndicator.tsx:23
@@ -1145,9 +1135,9 @@ msgstr "Ferma nuk është në gjendje pune"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Fermerët fitojnë shpërblime blloku dhe tarifa transaksionesh duke ofruar hapësirën ​​e lirë në rrjet dhe për të ndihmuar transaksionet e sigurta. Kjo do të jetë ferma juaj sapo ju të shtoni një Plot. <0> Mësoni më shumë </0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:98
+#: src/components/dashboard/DashboardSideBar.tsx:97
 #: src/components/farm/card/FarmCardStatus.tsx:62
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Farming"
 msgstr ""
@@ -1226,7 +1216,7 @@ msgstr "Skedari"
 msgid "Filename"
 msgstr "Emri i skedarit"
 
-#: src/components/nfts/gallery/NFTGallery.tsx:148
+#: src/components/nfts/gallery/NFTGallery.tsx:149
 msgid "Filters"
 msgstr ""
 
@@ -1243,9 +1233,9 @@ msgstr ""
 msgid "Finished"
 msgstr "Përfundoi"
 
-#: src/electron/main.tsx:940
-#~ msgid "Follow on Twitter"
-#~ msgstr "Na ndiqni në Twitter"
+#: src/electron/main.tsx:868
+msgid "Follow on Twitter"
+msgstr "Na ndiqni në Twitter"
 
 #: src/components/offers/OfferShareDialog.tsx:630
 msgid "ForgeFarm URL"
@@ -1256,7 +1246,7 @@ msgid "Frequently Asked Questions"
 msgstr "Pyetjet më të shpeshta"
 
 #: src/components/app/AppStatusHeader.tsx:42
-#: src/components/dashboard/DashboardSideBar.tsx:77
+#: src/components/dashboard/DashboardSideBar.tsx:76
 #: src/components/fullNode/FullNode.jsx:116
 msgid "Full Node"
 msgstr "Nyja e plotë"
@@ -1540,8 +1530,8 @@ msgstr "Bashkohu me Pollin"
 
 #: src/components/plot/add/PlotAddNFT.tsx:58
 #: src/components/plot/add/PlotAddNFT.tsx:132
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:128
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:142
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:129
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:143
 #: src/components/pool/PoolHero.tsx:24
 msgid "Join a Pool"
 msgstr "Bashkohu me një poll"
@@ -1550,7 +1540,7 @@ msgstr "Bashkohu me një poll"
 msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile."
 msgstr "Anëtarësohuni në një pishinë dhe merrni shpërblime të qëndrueshme HCX. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm."
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:60
+#: src/components/plotNFT/PlotNFTAdd.tsx:61
 msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 msgstr "Anëtarësohuni në një poll dhe merrni shpërblime të qëndrueshme në HCX. Kthimi mesatar është i njëjtë, por është shumë më pak i paqëndrueshëm. Caktoni një komplot NFT. Ju lehtë mund të ndërroni pollet pa pasur nevojë të ri-plotoni."
 
@@ -1761,10 +1751,6 @@ msgstr ""
 msgid "Minimum Difficulty"
 msgstr "Vështirësia minimale"
 
-#: src/components/offers/OfferShareDialog.tsx:696
-#~ msgid "MintGarden URL"
-#~ msgstr ""
-
 #: src/components/nfts/NFTDetails.tsx:213
 msgid "Minted at Block Height"
 msgstr ""
@@ -1908,7 +1894,7 @@ msgstr ""
 msgid "NFT {nftId} is already used in this offer"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:58
+#: src/components/dashboard/DashboardSideBar.tsx:57
 msgid "NFTs"
 msgstr ""
 
@@ -2006,7 +1992,7 @@ msgstr "Asnjë nga plotet tuaja nuk e ka kaluar filtrin akoma."
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
-#: src/components/farm/FarmerStatus.tsx:20
+#: src/components/farm/FarmerStatus.tsx:21
 #: src/components/nfts/detail/NFTDetail.tsx:73
 #: src/components/nfts/detail/NFTDetail.tsx:82
 #: src/components/nfts/detail/NFTDetailV2.tsx:188
@@ -2140,10 +2126,6 @@ msgstr ""
 msgid "Offer has been accepted and is awaiting confirmation."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:779
-#~ msgid "OfferBin URL"
-#~ msgstr ""
-
 #: src/components/offers/OfferManager.tsx:299
 msgid "Offered"
 msgstr ""
@@ -2156,7 +2138,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:64
+#: src/components/dashboard/DashboardSideBar.tsx:63
 msgid "Offers"
 msgstr ""
 
@@ -2485,7 +2467,7 @@ msgstr "Ploti është dublikatë e {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "Ploti Nft po kalon në (gjendjen e synuar). Kjo mund të zgjasë pak. Ju lutemi mos e mbyllni aplikacionin derisa të finalizohet kjo."
 
-#: src/components/dashboard/DashboardSideBar.tsx:84
+#: src/components/dashboard/DashboardSideBar.tsx:83
 #: src/components/plot/PlotHarvester.tsx:97
 msgid "Plots"
 msgstr "Plotet"
@@ -2594,21 +2576,21 @@ msgstr "Adresa e Shpërblimit të Pollit nuk duhet të jetë bosh."
 msgid "Pool Reward Amount"
 msgstr "Shuma e Shpërblimit të Pollit"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:32
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:33
 msgid "Pool does not provide relativeLockHeight."
 msgstr ""
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:29
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:30
 msgid "Pool does not provide targetPuzzleHash."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:233
 #: src/components/plotNFT/PlotNFTCard.tsx:269
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:68
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:69
 msgid "Pool:"
 msgstr "Polli:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:104
+#: src/components/dashboard/DashboardSideBar.tsx:103
 #: src/components/plotNFT/PlotNFTExternalState.tsx:25
 #: src/components/plotNFT/PlotNFTState.tsx:57
 msgid "Pooling"
@@ -2926,7 +2908,7 @@ msgstr ""
 msgid "Set Passphrase"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:114
+#: src/components/dashboard/DashboardSideBar.tsx:113
 #: src/components/settings/Settings.tsx:50
 msgid "Settings"
 msgstr ""
@@ -2965,14 +2947,6 @@ msgstr ""
 msgid "Share on Keybase"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:733
-#~ msgid "Share on MintGarden"
-#~ msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:816
-#~ msgid "Share on OfferBin"
-#~ msgstr ""
-
 #: src/components/offers/OfferShareDialog.tsx:903
 msgid "Share on Spacescan.io"
 msgstr ""
@@ -2989,7 +2963,7 @@ msgstr ""
 msgid "Show Details"
 msgstr ""
 
-#: src/components/nfts/gallery/NFTGallery.tsx:157
+#: src/components/nfts/gallery/NFTGallery.tsx:158
 msgid "Show Hidden"
 msgstr ""
 
@@ -3109,7 +3083,7 @@ msgid "Synced"
 msgstr "Sinkronizuar"
 
 #: src/components/farm/card/FarmCardStatus.tsx:18
-#: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 msgid "Syncing"
 msgstr "Sinkronizimi"
@@ -3344,7 +3318,7 @@ msgstr "Vula kohore"
 
 #: src/components/nfts/detail/NFTDetail.tsx:39
 #: src/components/nfts/detail/NFTDetailV2.tsx:166
-#: src/components/nfts/NFTCard.tsx:70
+#: src/components/nfts/NFTCard.tsx:71
 #: src/components/nfts/NFTSummary.tsx:171
 msgid "Title Not Available"
 msgstr ""
@@ -3357,14 +3331,14 @@ msgstr ""
 msgid "Token Standard"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:52
+#: src/components/dashboard/DashboardSideBar.tsx:51
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:64
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:66
 #: src/components/offers2/OfferBuilderTokensSection.tsx:113
 msgid "Tokens"
 msgstr ""
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:100
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:101
 msgid "Too Many Plot NFTs"
 msgstr ""
 
@@ -3582,33 +3556,24 @@ msgstr "Shikoni lidhjen e hyrjes në poll"
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:795
-#~ msgid "View on Chinilla"
-#~ msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:719
+msgid "View on Chinilla"
+msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:572
 msgid "View on Dexie"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:694
-#: src/components/offers/OfferShareDialog.tsx:712
-#~ msgid "View on ForgeFarm"
-#~ msgstr ""
+#: src/components/nfts/NFTContextualActions.tsx:629
+#: src/components/offers/OfferShareDialog.tsx:645
+msgid "View on ForgeFarm"
+msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:811
 msgid "View on Hashgreen DEX"
 msgstr ""
 
-#: src/components/nfts/NFTContextualActions.tsx:629
-#: src/components/offers/OfferShareDialog.tsx:645
-msgid "View on MintGarden"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:719
-msgid "View on OfferBin"
-msgstr ""
-
-#: src/components/nfts/NFTContextualActions.tsx:701
+#: src/components/nfts/NFTContextualActions.tsx:624
 #~ msgid "View on SkyNFT"
 #~ msgstr ""
 
@@ -3619,10 +3584,6 @@ msgstr ""
 
 #: src/components/offers/OfferViewerTitle.tsx:48
 msgid "Viewing offer"
-msgstr ""
-
-#: src/electron/main.tsx:868
-msgid "Visit Our Website"
 msgstr ""
 
 #: src/constants/WalletConnectCommands.tsx:103
@@ -3636,7 +3597,7 @@ msgstr ""
 msgid "Wait for synchronization"
 msgstr "Prisni për sinkronizim"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:79
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:80
 msgid "Waiting for the transaction to be confirmed"
 msgstr "Në pritje të konfirmimit të transaksionit"
 
@@ -3693,7 +3654,7 @@ msgstr ""
 msgid "WalletConnect is an open protocol to communicate securely between wallets and decentralized applications (dApps)."
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:58
+#: src/components/plotNFT/PlotNFTAdd.tsx:59
 msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Dëshironi të bashkoheni në një poll? Krijoni një plot NFT"
 
@@ -3763,11 +3724,11 @@ msgstr ""
 msgid "Yes, move"
 msgstr ""
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:156
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:157
 msgid "You already have 50 or more Plot NFTs."
 msgstr ""
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:101
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:102
 msgid "You already have more than 10 Plot NFTs. Click OK if you're sure you want to create a new one."
 msgstr ""
 
@@ -3804,7 +3765,7 @@ msgstr ""
 msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3 to 4 times longer than this estimate."
 msgstr "Ju keni {0}% të hapësirës në rrjet, kështu që prodhimi i një blloku do të marrë {expectedTimeToWin}. Rezultatet aktuale mund të zgjasin 3 deri në 4 herë më shumë se sa ky vlerësim."
 
-#: src/components/pool/PoolJoin.tsx:33
+#: src/components/pool/PoolJoin.tsx:34
 msgid "You need to claim your rewards first"
 msgstr "Së pari duhet të kërkoni shpërblimet tuaja"
 

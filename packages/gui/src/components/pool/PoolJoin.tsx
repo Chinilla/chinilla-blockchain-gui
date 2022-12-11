@@ -2,6 +2,7 @@ import { AlertDialog, useOpenDialog } from '@chinilla/core';
 import { Trans } from '@lingui/macro';
 import React from 'react';
 import { useNavigate } from 'react-router';
+
 import usePlotNFTDetails from '../../hooks/usePlotNFTDetails';
 import type PlotNFT from '../../types/PlotNFT';
 

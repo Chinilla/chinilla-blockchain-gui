@@ -22,7 +22,7 @@ msgstr ""
 msgid "<0>{0}</0>"
 msgstr "<0>{0}</0>"
 
-#: src/components/Amount/Amount.tsx:101
+#: src/components/Amount/Amount.tsx:102
 msgid "Amount"
 msgstr "Количество"
 
@@ -30,13 +30,13 @@ msgstr "Количество"
 msgid "Appearance"
 msgstr "Внешний вид"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:142
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:143
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr ""
 
 #: src/components/FormBackButton/FormBackButton.tsx:48
 #: src/screens/SelectKey/SelectKey.tsx:76
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:154
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
 msgstr "Назад"
 
@@ -81,7 +81,7 @@ msgstr "Тёмный"
 
 #: src/screens/SelectKey/SelectKey.tsx:75
 #: src/screens/SelectKey/SelectKeyItem.tsx:100
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:164
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:165
 msgid "Delete"
 msgstr "Удалить"
 
@@ -90,7 +90,7 @@ msgstr "Удалить"
 msgid "Delete all keys"
 msgstr "Удалить все ключи"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:94
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:95
 msgid "Delete key {fingerprint}"
 msgstr "Удалить ключ {fingerprint}"
 
@@ -154,7 +154,7 @@ msgstr "Фарминг"
 msgid "Fee"
 msgstr "Комиссия"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:78
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:79
 msgid "Fingerprint does not match"
 msgstr ""
 
@@ -369,19 +369,19 @@ msgstr "Синхронизация"
 msgid "The provided passphrase and confirmation do not match"
 msgstr "Пароли не совпадают"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:124
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:125
 msgid "This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
 msgstr "Этот ключ используется для кошелька, который может иметь ненулевой баланс. Удаляя этот ключ, вы можете потерять доступ к этому кошельку"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:106
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:107
 msgid "This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
 msgstr "Этот ключ используется для вашего адреса фермерских вознаграждений. Удаляя этот ключ, вы можете потерять доступ к будущим фермерским вознаграждениям"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:115
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:116
 msgid "This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 msgstr "Этот ключ используется для вашего адреса фермерских вознаграждений. Удаляя этот ключ, вы можете потерять доступ к будущим фермерским вознаграждениям"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:136
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:137
 msgid "This will permanently remove the key from your computer, make sure you have your mnemonic phrase backed up."
 msgstr "Это безвозвратно удалит ключ с вашего компьютера, убедитесь, что ваша мнемоническая фраза сохранена."
 
@@ -427,7 +427,7 @@ msgstr "Значение вероятно завышено"
 msgid "Wallet"
 msgstr "Кошелёк"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:147
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:148
 msgid "Wallet Fingerprint"
 msgstr "Отпечаток кошелька"
 
@@ -461,7 +461,7 @@ msgstr "У вас есть несохраненные изменения. Хот
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Ваши ключи не были перенесены в новую систему ключей. Вы не сможете создавать новые ключи или удалять существующие ключи до тех пор, пока не завершится миграция. Хотите перенести ваши ключи сейчас?"
 
-#: src/components/Amount/Amount.tsx:83
+#: src/components/Amount/Amount.tsx:84
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr "{0, plural, one {vojo} other {vojos}}"
 

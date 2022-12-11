@@ -22,7 +22,7 @@ msgstr ""
 msgid "<0>{0}</0>"
 msgstr ""
 
-#: src/components/Amount/Amount.tsx:101
+#: src/components/Amount/Amount.tsx:102
 msgid "Amount"
 msgstr "Částka"
 
@@ -30,13 +30,13 @@ msgstr "Částka"
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:142
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:143
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr "Jste si jisti, že chcete pokračovat? Pro potvrzení smazání zadejte otisk této peněženky."
 
 #: src/components/FormBackButton/FormBackButton.tsx:48
 #: src/screens/SelectKey/SelectKey.tsx:76
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:154
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
 msgstr "Zpět"
 
@@ -81,7 +81,7 @@ msgstr "Tmavý"
 
 #: src/screens/SelectKey/SelectKey.tsx:75
 #: src/screens/SelectKey/SelectKeyItem.tsx:100
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:164
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:165
 msgid "Delete"
 msgstr "Odstranit"
 
@@ -90,7 +90,7 @@ msgstr "Odstranit"
 msgid "Delete all keys"
 msgstr "Smazat všechny klíče"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:94
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:95
 msgid "Delete key {fingerprint}"
 msgstr "Smazat klíč {fingerprint}"
 
@@ -154,7 +154,7 @@ msgstr "Farmaření"
 msgid "Fee"
 msgstr "Poplatek"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:78
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:79
 msgid "Fingerprint does not match"
 msgstr "Otisk se neshoduje"
 
@@ -369,19 +369,19 @@ msgstr "Synchronizuji"
 msgid "The provided passphrase and confirmation do not match"
 msgstr "Zadané heslo a potvrzení hesla se neshodují"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:124
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:125
 msgid "This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
 msgstr "Tento klíč je používán pro peněženku, která může mít nenulový zůstatek. Smazáním tohoto klíče můžete ztratit přístup k této peněžence"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:106
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:107
 msgid "This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
 msgstr "Tento klíč se používá pro vaši farmářskou adresu odměny. Odstraněním tohoto klíče můžete ztratit přístup k jakýmkoli budoucím odměnám z farmaření"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:115
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:116
 msgid "This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 msgstr "Tento klíč se používá pro vaši poolovou adresu odměny. Odstraněním tohoto klíče můžete ztratit přístup k jakýmkoli budoucím odměnám z poolu"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:136
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:137
 msgid "This will permanently remove the key from your computer, make sure you have your mnemonic phrase backed up."
 msgstr "Toto trvale odstraní klíč z vašeho počítače, ujistěte se, že máte svou mnemotickou frázi zazálohovánu."
 
@@ -427,7 +427,7 @@ msgstr "Hodnota se zdá vysoká"
 msgid "Wallet"
 msgstr "Peněženka"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:147
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:148
 msgid "Wallet Fingerprint"
 msgstr "Otisk peněženky"
 
@@ -461,7 +461,7 @@ msgstr "Provedli jste změny. Chcete je zahodit?"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Vaše klíče nebyly migrovány do nové klíčenky. Nebudete schopni vytvářet nové klíče nebo odstraňovat staré, dokud nedokončíte migraci. Přejete si migrovat klíče nyní?"
 
-#: src/components/Amount/Amount.tsx:83
+#: src/components/Amount/Amount.tsx:84
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr ""
 

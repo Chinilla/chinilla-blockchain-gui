@@ -22,7 +22,7 @@ msgstr ""
 msgid "<0>{0}</0>"
 msgstr "<0>{0}</0>"
 
-#: src/components/Amount/Amount.tsx:101
+#: src/components/Amount/Amount.tsx:102
 msgid "Amount"
 msgstr "Montant"
 
@@ -30,13 +30,13 @@ msgstr "Montant"
 msgid "Appearance"
 msgstr "Apparence"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:142
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:143
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr "Êtes-vous sûr de vouloir continuer ? Tapez l'empreinte de cette clé de porte-monnaie pour confirmer la suppression."
 
 #: src/components/FormBackButton/FormBackButton.tsx:48
 #: src/screens/SelectKey/SelectKey.tsx:76
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:154
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
 msgstr "Retour"
 
@@ -81,7 +81,7 @@ msgstr "Sombre"
 
 #: src/screens/SelectKey/SelectKey.tsx:75
 #: src/screens/SelectKey/SelectKeyItem.tsx:100
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:164
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:165
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -90,7 +90,7 @@ msgstr "Supprimer"
 msgid "Delete all keys"
 msgstr "Supprimer toutes les clés"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:94
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:95
 msgid "Delete key {fingerprint}"
 msgstr "Supprimer la clé {fingerprint}"
 
@@ -154,7 +154,7 @@ msgstr "Culture"
 msgid "Fee"
 msgstr "Frais"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:78
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:79
 msgid "Fingerprint does not match"
 msgstr "L'empreinte ne correspond pas"
 
@@ -369,19 +369,19 @@ msgstr "Synchronisation"
 msgid "The provided passphrase and confirmation do not match"
 msgstr "La phrase secrète fournie et la confirmation ne correspondent pas"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:124
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:125
 msgid "This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
 msgstr "Attention : Cette clé est utilisée pour un portefeuille qui pourrait avoir un solde non nul. En supprimant cette clé, vous risquez de perdre accès à ce portefeuille"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:106
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:107
 msgid "This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
 msgstr "Attention : Cette clé est utilisée pour votre adresse de récompenses de culture. En supprimant cette clé, vous risquez de perdre accès à toute future récompense de culture"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:115
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:116
 msgid "This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 msgstr "Attention : Cette clé est utilisée pour votre adresse de récompenses de pool. En supprimant cette clé, vous risquez de perdre accès à toute future récompense de pool"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:136
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:137
 msgid "This will permanently remove the key from your computer, make sure you have your mnemonic phrase backed up."
 msgstr "Cela supprimera définitivement la clé de votre ordinateur, assurez-vous d'avoir une copie de votre phrase mnémonique."
 
@@ -427,7 +427,7 @@ msgstr "La valeur semble élevée"
 msgid "Wallet"
 msgstr "Portefeuille"
 
-#: src/screens/SelectKey/WalletDeleteDialog.tsx:147
+#: src/screens/SelectKey/WalletDeleteDialog.tsx:148
 msgid "Wallet Fingerprint"
 msgstr "Empreinte du porte-monnaie"
 
@@ -461,7 +461,7 @@ msgstr "Vous avez apporté des modifications. Voulez-vous les ignorer ?"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Vos clés n'ont pas été migrées vers un nouveau trousseau de clés. Vous ne pourrez pas créer de nouvelles clés ou supprimer les clés existantes tant que la migration n'est pas terminée. Voulez-vous migrer vos clés maintenant ?"
 
-#: src/components/Amount/Amount.tsx:83
+#: src/components/Amount/Amount.tsx:84
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr "{0, plural, one {vojo} other {vojos}}"
 

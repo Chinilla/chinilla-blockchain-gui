@@ -127,7 +127,7 @@ msgstr "Lisää Plottausprosessi Jonoon"
 msgid "Add a Plot"
 msgstr "Plottaa tiedosto"
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:52
+#: src/components/plotNFT/PlotNFTAdd.tsx:53
 msgid "Add a Plot NFT"
 msgstr "Lisää Plot NFT"
 
@@ -458,29 +458,19 @@ msgid "Changes will take effect the next time Chinilla is started"
 msgstr "Muutokset tulevat voimaan kun Chinilla-sovellus käynnistetään seuraavan kerran"
 
 #: src/electron/main.tsx:862
-msgid "Chat on Discord"
-msgstr ""
-
-#: src/electron/main.tsx:934
-#~ msgid "Chat on KeyBase"
-#~ msgstr "Keskustele KeyBasessa"
+msgid "Chat on KeyBase"
+msgstr "Keskustele KeyBasessa"
 
 #: src/constants/WalletConnectCommands.tsx:276
 msgid "Check Offer Validity"
 msgstr ""
 
-#: src/components/offers/NFTOfferPreview.tsx:180
-#: src/components/offers2/OfferBuilderNFTProvenance.tsx:41
-#~ msgid "Check Provenance on ForgeFarm"
-#~ msgstr ""
-
 #: src/components/offers/NFTOfferPreview.tsx:151
 #: src/components/offers2/OfferBuilderNFTProvenance.tsx:37
-msgid "Check Provenance on MintGarden"
-msgstr "Tarkastele alkuperää MintGardenissa"
+msgid "Check Provenance on ForgeFarm"
+msgstr "Tarkastele alkuperää ForgeFarmissa"
 
 #: src/components/offers/NFTOfferPreview.tsx:190
-#: src/components/offers2/OfferBuilderNFTProvenance.tsx:51
 #~ msgid "Check Provenance on SkyNFT"
 #~ msgstr "Tarkastele Alkuperää SkyNFT:ssä"
 
@@ -493,7 +483,7 @@ msgstr "Tarkastele alkuperää Spacescan.io:ssa"
 msgid "Chinilla"
 msgstr "Chinilla"
 
-#: src/components/offers2/OfferBuilderHCXSection.tsx:75
+#: src/components/offers2/OfferBuilderHCXSection.tsx:76
 msgid "Chinilla ({currencyCode}) is a digital currency that is secure and sustainable"
 msgstr ""
 
@@ -507,7 +497,7 @@ msgstr "Chinilla Wiki"
 
 #: src/components/offers/OfferShareDialog.tsx:704
 msgid "Chinilla URL"
-msgstr ""
+msgstr "Chinilla URL"
 
 #: src/components/app/AppSelectMode.tsx:145
 msgid "Choose Farming Mode"
@@ -696,7 +686,7 @@ msgid "Could not parse offer data"
 msgstr ""
 
 #: src/components/plot/add/PlotAddForm.tsx:191
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:184
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:185
 #: src/components/settings/ProfileAdd.tsx:119
 msgid "Create"
 msgstr "Luo"
@@ -755,11 +745,11 @@ msgstr ""
 msgid "Creates and submits a transaction on the blockchain that cancels the offer"
 msgstr "Luo ja lähettää transaktion lohkoketjuun, joka peruuttaa tarjouksen"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:62
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:63
 msgid "Creating Plot NFT and Joining the Pool"
 msgstr "Luodaan NFT ja liitytään pooliin"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:60
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:61
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Luodaan Plot-NFT omaa poolausta varten"
 
@@ -1049,8 +1039,8 @@ msgstr "Syötä salasana:"
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
-#: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
+#: src/components/farm/FarmerStatus.tsx:23
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/PlotStatus.tsx:22
 #: src/components/plot/queue/PlotQueueIndicator.tsx:23
@@ -1145,9 +1135,9 @@ msgstr "Farmari ei ole käynnissä"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmarit ansaitsevat lohkopalkkioita ja transaktioveloituksia varaamalla levytilaa vertaisverkolle ja vahvistamalla transaktioita. Farmisi näkyy täällä luotuasi plot-tiedoston. <0>Katso lisää</0>"
 
-#: src/components/dashboard/DashboardSideBar.tsx:98
+#: src/components/dashboard/DashboardSideBar.tsx:97
 #: src/components/farm/card/FarmCardStatus.tsx:62
-#: src/components/farm/FarmerStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 msgid "Farming"
 msgstr "Farmataan"
@@ -1226,7 +1216,7 @@ msgstr "Tiedosto"
 msgid "Filename"
 msgstr "Tiedoston nimi"
 
-#: src/components/nfts/gallery/NFTGallery.tsx:148
+#: src/components/nfts/gallery/NFTGallery.tsx:149
 msgid "Filters"
 msgstr "Suodattimet"
 
@@ -1243,20 +1233,20 @@ msgstr ""
 msgid "Finished"
 msgstr "Valmis"
 
-#: src/electron/main.tsx:940
-#~ msgid "Follow on Twitter"
-#~ msgstr "Seuraa Twitterissä"
+#: src/electron/main.tsx:868
+msgid "Follow on Twitter"
+msgstr "Seuraa Twitterissä"
 
 #: src/components/offers/OfferShareDialog.tsx:630
 msgid "ForgeFarm URL"
-msgstr ""
+msgstr "ForgeFarm URL"
 
 #: src/electron/main.tsx:835
 msgid "Frequently Asked Questions"
 msgstr "Usein Kysytyt Kysymykset"
 
 #: src/components/app/AppStatusHeader.tsx:42
-#: src/components/dashboard/DashboardSideBar.tsx:77
+#: src/components/dashboard/DashboardSideBar.tsx:76
 #: src/components/fullNode/FullNode.jsx:116
 msgid "Full Node"
 msgstr "Verkkonoodi"
@@ -1544,8 +1534,8 @@ msgstr "Liity Pooliin"
 
 #: src/components/plot/add/PlotAddNFT.tsx:58
 #: src/components/plot/add/PlotAddNFT.tsx:132
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:128
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:142
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:129
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:143
 #: src/components/pool/PoolHero.tsx:24
 msgid "Join a Pool"
 msgstr "Liity Pooliin"
@@ -1554,7 +1544,7 @@ msgstr "Liity Pooliin"
 msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile."
 msgstr "Liity pooliin ja saat tasaisen HCX-tuoton. Keskimääräinen tuotto on sama, mutta hajonta on pienempi kuin itse poolaamalla."
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:60
+#: src/components/plotNFT/PlotNFTAdd.tsx:61
 msgid "Join a pool and get consistent HCX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 msgstr "Liity pooliin ja saat tasaisen HCX-tuoton. Keskimääräinen tuotto on sama, mutta hajonta on pienempi kuin itse poolaamalla. Aseta plotit osoittamaan Plot-NFT:hen. Voit vaihtaa helposti poolia ilman uudelleenplottausta."
 
@@ -1765,10 +1755,6 @@ msgstr "Siirto vaaditaan salasanasuojaukseen"
 msgid "Minimum Difficulty"
 msgstr "Pienin Vaikeustaso"
 
-#: src/components/offers/OfferShareDialog.tsx:696
-#~ msgid "MintGarden URL"
-#~ msgstr "MintGarden URL"
-
 #: src/components/nfts/NFTDetails.tsx:213
 msgid "Minted at Block Height"
 msgstr "Lyöty lohkokorkeudessa"
@@ -1912,7 +1898,7 @@ msgstr "NFT:tä ei määritetty"
 msgid "NFT {nftId} is already used in this offer"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:58
+#: src/components/dashboard/DashboardSideBar.tsx:57
 msgid "NFTs"
 msgstr "NFT:t"
 
@@ -2010,7 +1996,7 @@ msgstr "Yksikään ploteistasi ei ole vielä päässyt suodatuksesta läpi."
 
 #: src/components/farm/card/FarmCardNotAvailable.tsx:19
 #: src/components/farm/card/FarmCardNotAvailable.tsx:22
-#: src/components/farm/FarmerStatus.tsx:20
+#: src/components/farm/FarmerStatus.tsx:21
 #: src/components/nfts/detail/NFTDetail.tsx:73
 #: src/components/nfts/detail/NFTDetail.tsx:82
 #: src/components/nfts/detail/NFTDetailV2.tsx:188
@@ -2144,10 +2130,6 @@ msgstr ""
 msgid "Offer has been accepted and is awaiting confirmation."
 msgstr "Tarjous on hyväksytty ja odottaa vahvistusta."
 
-#: src/components/offers/OfferShareDialog.tsx:779
-#~ msgid "OfferBin URL"
-#~ msgstr "OfferBin URL"
-
 #: src/components/offers/OfferManager.tsx:299
 msgid "Offered"
 msgstr "Tarjottu"
@@ -2160,7 +2142,7 @@ msgstr ""
 msgid "Offering: [{makerString}], Requesting: [{takerString}]"
 msgstr "Tarjous: [{makerString}], Pyynti: [{takerString}]"
 
-#: src/components/dashboard/DashboardSideBar.tsx:64
+#: src/components/dashboard/DashboardSideBar.tsx:63
 msgid "Offers"
 msgstr "Tarjoukset"
 
@@ -2489,7 +2471,7 @@ msgstr "Plotti on {0}:n duplikaatti"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "Plot-NFT on siirtymässä (kohdetilaan). Tämä voi kestää jonkin aikaa. Älä sulje sovellusta ennen kuin tämä on valmis."
 
-#: src/components/dashboard/DashboardSideBar.tsx:84
+#: src/components/dashboard/DashboardSideBar.tsx:83
 #: src/components/plot/PlotHarvester.tsx:97
 msgid "Plots"
 msgstr "Plotit"
@@ -2598,21 +2580,21 @@ msgstr "Poolin Palkkio-osoite on pakollinen."
 msgid "Pool Reward Amount"
 msgstr "Poolin Palkkiosumma"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:32
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:33
 msgid "Pool does not provide relativeLockHeight."
 msgstr "Pooli ei tarjoa relativeLockHeightia."
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:29
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:30
 msgid "Pool does not provide targetPuzzleHash."
 msgstr "Allas ei tarjoa targetPuzzleHashia."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:233
 #: src/components/plotNFT/PlotNFTCard.tsx:269
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:68
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:69
 msgid "Pool:"
 msgstr "Pooli:"
 
-#: src/components/dashboard/DashboardSideBar.tsx:104
+#: src/components/dashboard/DashboardSideBar.tsx:103
 #: src/components/plotNFT/PlotNFTExternalState.tsx:25
 #: src/components/plotNFT/PlotNFTState.tsx:57
 msgid "Pooling"
@@ -2930,7 +2912,7 @@ msgstr "Lähetä osoitteeseen"
 msgid "Set Passphrase"
 msgstr "Aseta Salasana"
 
-#: src/components/dashboard/DashboardSideBar.tsx:114
+#: src/components/dashboard/DashboardSideBar.tsx:113
 #: src/components/settings/Settings.tsx:50
 msgid "Settings"
 msgstr "Asetukset"
@@ -2951,7 +2933,7 @@ msgstr "Jaa Yksityisesti"
 
 #: src/components/offers/OfferShareDialog.tsx:738
 msgid "Share on Chinilla"
-msgstr ""
+msgstr "Jaa Chinillaissä"
 
 #: src/components/offers/OfferShareDialog.tsx:591
 msgid "Share on Dexie"
@@ -2959,7 +2941,7 @@ msgstr "Jaa Dexiessä"
 
 #: src/components/offers/OfferShareDialog.tsx:664
 msgid "Share on ForgeFarm"
-msgstr ""
+msgstr "Jaa ForgeFarmissa"
 
 #: src/components/offers/OfferShareDialog.tsx:830
 msgid "Share on Hashgreen DEX"
@@ -2968,14 +2950,6 @@ msgstr "Jaa Hashgreen DEX:ssä"
 #: src/components/offers/OfferShareDialog.tsx:1078
 msgid "Share on Keybase"
 msgstr "Jaa KeyBasessa"
-
-#: src/components/offers/OfferShareDialog.tsx:733
-#~ msgid "Share on MintGarden"
-#~ msgstr "Jaa MintGardenissa"
-
-#: src/components/offers/OfferShareDialog.tsx:816
-#~ msgid "Share on OfferBin"
-#~ msgstr "Jaa OfferBinissä"
 
 #: src/components/offers/OfferShareDialog.tsx:903
 msgid "Share on Spacescan.io"
@@ -2993,7 +2967,7 @@ msgstr "Näytä"
 msgid "Show Details"
 msgstr "Näytä Tiedot"
 
-#: src/components/nfts/gallery/NFTGallery.tsx:157
+#: src/components/nfts/gallery/NFTGallery.tsx:158
 msgid "Show Hidden"
 msgstr "Näytä Piilotetut"
 
@@ -3113,7 +3087,7 @@ msgid "Synced"
 msgstr "Synkronissa"
 
 #: src/components/farm/card/FarmCardStatus.tsx:18
-#: src/components/farm/FarmerStatus.tsx:19
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 msgid "Syncing"
 msgstr "Synkronoi"
@@ -3348,7 +3322,7 @@ msgstr "Aikaleima"
 
 #: src/components/nfts/detail/NFTDetail.tsx:39
 #: src/components/nfts/detail/NFTDetailV2.tsx:166
-#: src/components/nfts/NFTCard.tsx:70
+#: src/components/nfts/NFTCard.tsx:71
 #: src/components/nfts/NFTSummary.tsx:171
 msgid "Title Not Available"
 msgstr "Otsikko ei saatavilla"
@@ -3361,14 +3335,14 @@ msgstr "Otsikko ei saatavilla"
 msgid "Token Standard"
 msgstr "Token-Standardi"
 
-#: src/components/dashboard/DashboardSideBar.tsx:52
+#: src/components/dashboard/DashboardSideBar.tsx:51
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:64
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:66
 #: src/components/offers2/OfferBuilderTokensSection.tsx:113
 msgid "Tokens"
 msgstr "Tokenit"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:100
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:101
 msgid "Too Many Plot NFTs"
 msgstr "Liian monta Plot-NFT:tä"
 
@@ -3586,33 +3560,24 @@ msgstr "Näytä Poolin Kirjautumislinkki"
 msgid "View an Offer"
 msgstr "Näytä Tarjous"
 
-#: src/components/offers/OfferShareDialog.tsx:795
-#~ msgid "View on Chinilla"
-#~ msgstr ""
+#: src/components/offers/OfferShareDialog.tsx:719
+msgid "View on Chinilla"
+msgstr "Näytä Chinillaissä"
 
 #: src/components/offers/OfferShareDialog.tsx:572
 msgid "View on Dexie"
 msgstr "Näytä Dexiessä"
 
-#: src/components/nfts/NFTContextualActions.tsx:694
-#: src/components/offers/OfferShareDialog.tsx:712
-#~ msgid "View on ForgeFarm"
-#~ msgstr ""
+#: src/components/nfts/NFTContextualActions.tsx:629
+#: src/components/offers/OfferShareDialog.tsx:645
+msgid "View on ForgeFarm"
+msgstr "Näytä ForgeFarmissa"
 
 #: src/components/offers/OfferShareDialog.tsx:811
 msgid "View on Hashgreen DEX"
 msgstr "Näytä Hashgreen DEX:ssä"
 
-#: src/components/nfts/NFTContextualActions.tsx:629
-#: src/components/offers/OfferShareDialog.tsx:645
-msgid "View on MintGarden"
-msgstr "Näytä MintGardenissa"
-
-#: src/components/offers/OfferShareDialog.tsx:719
-msgid "View on OfferBin"
-msgstr "Näytä OfferBinissä"
-
-#: src/components/nfts/NFTContextualActions.tsx:701
+#: src/components/nfts/NFTContextualActions.tsx:624
 #~ msgid "View on SkyNFT"
 #~ msgstr "Näytä SkyNFT:ssä"
 
@@ -3625,10 +3590,6 @@ msgstr "Näytä Spacescan.io:ssa"
 msgid "Viewing offer"
 msgstr "Näytä tarjous"
 
-#: src/electron/main.tsx:868
-msgid "Visit Our Website"
-msgstr ""
-
 #: src/constants/WalletConnectCommands.tsx:103
 #: src/constants/WalletConnectCommands.tsx:408
 msgid "Wait for Confirmation"
@@ -3640,7 +3601,7 @@ msgstr ""
 msgid "Wait for synchronization"
 msgstr "Odota synkronointia"
 
-#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:79
+#: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:80
 msgid "Waiting for the transaction to be confirmed"
 msgstr "Odotetaan, että tapahtuma on vahvistettu"
 
@@ -3697,7 +3658,7 @@ msgstr ""
 msgid "WalletConnect is an open protocol to communicate securely between wallets and decentralized applications (dApps)."
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTAdd.tsx:58
+#: src/components/plotNFT/PlotNFTAdd.tsx:59
 msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Haluatko liittyä pooliin? Luo Plot-NFT"
 
@@ -3767,11 +3728,11 @@ msgstr "Kyllä, Hyväksy Tarjous"
 msgid "Yes, move"
 msgstr "Kyllä, siirrä"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:156
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:157
 msgid "You already have 50 or more Plot NFTs."
 msgstr "Sinulla on jo 50 tai enemmän Plot-NFT:tä."
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:101
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:102
 msgid "You already have more than 10 Plot NFTs. Click OK if you're sure you want to create a new one."
 msgstr "Sinulla on jo yli kymmenen Plot-NFT:tä. Napsauta OK jos olet varma, että haluat luoda uuden."
 
@@ -3808,7 +3769,7 @@ msgstr "Noodin ei tarvitse olla synkronissa tai yhteydessä plotataksesi. Plotta
 msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3 to 4 times longer than this estimate."
 msgstr "Sinulla on {0}% verkossa olevasta tilasta, joten lohkon farmarointi vie keskimäärin {expectedTimeToWin}. Todellinen aika voi olla 3–4 kertaa pidempi kuin tämä arvio."
 
-#: src/components/pool/PoolJoin.tsx:33
+#: src/components/pool/PoolJoin.tsx:34
 msgid "You need to claim your rewards first"
 msgstr "Sinun täytyy lunastaa ensin palkkiosi"
 

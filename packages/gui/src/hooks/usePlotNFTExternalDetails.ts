@@ -1,6 +1,7 @@
 import type { Plot, PlotNFTExternal } from '@chinilla/api';
 import { useIsWalletSynced } from '@chinilla/wallets';
 import { useMemo } from 'react';
+
 import usePlotNFTName from './usePlotNFTName';
 
 export default function usePlotNFTExternalDetails(nft: PlotNFTExternal): {

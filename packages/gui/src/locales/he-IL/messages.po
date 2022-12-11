@@ -368,7 +368,7 @@ msgid "Chat on KeyBase"
 msgstr "צ'אט ב-KeyBase"
 
 #: src/components/offers/NFTOfferPreview.tsx:180
-msgid "Check Provenance on MintGarden"
+msgid "Check Provenance on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/NFTOfferPreview.tsx:190
@@ -1427,7 +1427,7 @@ msgid "Minimum Difficulty"
 msgstr "רמת קושי מינימלית"
 
 #: src/components/offers/OfferShareDialog.tsx:696
-msgid "MintGarden URL"
+msgid "ForgeFarm URL"
 msgstr ""
 
 #: src/components/nfts/NFTDetails.tsx:144
@@ -1718,7 +1718,7 @@ msgid "Offer has been accepted and is awaiting confirmation."
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:779
-msgid "OfferBin URL"
+msgid "Chinilla URL"
 msgstr ""
 
 #: src/components/offers/OfferManager.tsx:366
@@ -2406,11 +2406,11 @@ msgid "Share on Keybase"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:733
-msgid "Share on MintGarden"
+msgid "Share on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:816
-msgid "Share on OfferBin"
+msgid "Share on Chinilla"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:1001
@@ -2942,11 +2942,11 @@ msgstr ""
 
 #: src/components/nfts/NFTContextualActions.tsx:617
 #: src/components/offers/OfferShareDialog.tsx:714
-msgid "View on MintGarden"
+msgid "View on ForgeFarm"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:797
-msgid "View on OfferBin"
+msgid "View on Chinilla"
 msgstr ""
 
 #: src/components/nfts/NFTContextualActions.tsx:624

@@ -6,8 +6,8 @@ import useWalletConnectPreferences from './useWalletConnectPreferences';
 const defaultMetadata = {
   name: 'Chinilla Blockchain',
   description: 'GUI for Chinilla Blockchain',
-  url: 'https://www.chinilla.net',
-  icons: ['https://www.chinilla.net/wp-content/uploads/2022/09/chinilla-logo.svg'],
+  url: 'https://www.chinilla.com',
+  icons: ['https://www.chinilla.com/wp-content/uploads/2022/09/chinilla-logo.svg'],
 };
 
 export type UseWalletConnectConfig = {

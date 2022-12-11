@@ -1,6 +1,6 @@
 # chinilla-blockchain-gui/api-react
 
-![Chinilla logo](https://www.chinilla.net/wp-content/uploads/2022/09/chinilla-logo.svg)
+![Chinilla logo](https://www.chinilla.com/wp-content/uploads/2022/09/chinilla-logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Chinilla/chinilla-blockchain-gui?logo=GitHub)
 

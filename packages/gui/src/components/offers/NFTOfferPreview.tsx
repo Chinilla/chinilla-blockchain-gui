@@ -148,7 +148,7 @@ export default function NFTOfferPreview(props: NFTOfferPreviewProps) {
             style={{ width: '100%' }}
           >
             <Typography variant="caption" color="secondary">
-              <Trans>Check Provenance on MintGarden</Trans>
+              <Trans>Check Provenance on ForgeFarm</Trans>
             </Typography>
           </Button>
           <Button

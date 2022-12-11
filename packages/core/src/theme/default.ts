@@ -8,7 +8,7 @@ declare module '@mui/material' {
 export default {
   palette: {
     background: {
-      default: '#fcf6e0', //'#fafafa',
+      default: '#fcf6e0',
     },
     primary: {
       main: '#3AAC59', // '#00C853',

@@ -1,5 +1,6 @@
 import type { CalculateRoyaltiesResponse } from '@chinilla/api';
 import { createContext } from 'react';
+
 import OfferState from '../offers/OfferState';
 
 export interface OfferBuilderContextData {
