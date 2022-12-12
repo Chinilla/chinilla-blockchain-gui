@@ -859,15 +859,15 @@ if (!handleSquirrelEvent()) {
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
+            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
             click: () => {
-              openExternal('https://keybase.io/team/chinilla_network.public');
+              openExternal('https://discord.gg/HKGNjrBknN');
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
+            label: i18n._(/* i18n */ { id: 'Visit Chinilla.com' }),
             click: () => {
-              openExternal('https://twitter.com/chinilla_project');
+              openExternal('https://chinilla.com');
             },
           },
         ],

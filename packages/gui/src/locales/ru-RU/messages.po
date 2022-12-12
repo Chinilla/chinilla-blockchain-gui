@@ -458,8 +458,12 @@ msgid "Changes will take effect the next time Chinilla is started"
 msgstr ""
 
 #: src/electron/main.tsx:862
-msgid "Chat on KeyBase"
-msgstr "Чат в KeyBase"
+msgid "Chat on Discord"
+msgstr ""
+
+#: src/electron/main.tsx:862
+#~ msgid "Chat on KeyBase"
+#~ msgstr "Чат в KeyBase"
 
 #: src/constants/WalletConnectCommands.tsx:276
 msgid "Check Offer Validity"
@@ -1406,8 +1410,8 @@ msgid "Finished"
 msgstr "Завершен"
 
 #: src/electron/main.tsx:868
-msgid "Follow on Twitter"
-msgstr "Следить в Twitter"
+#~ msgid "Follow on Twitter"
+#~ msgstr "Следить в Twitter"
 
 #: src/components/offers/OfferShareDialog.tsx:630
 msgid "ForgeFarm URL"
@@ -3755,6 +3759,10 @@ msgstr ""
 
 #: src/components/offers/OfferViewerTitle.tsx:48
 msgid "Viewing offer"
+msgstr ""
+
+#: src/electron/main.tsx:868
+msgid "Visit Chinilla.com"
 msgstr ""
 
 #: src/constants/WalletConnectCommands.tsx:103

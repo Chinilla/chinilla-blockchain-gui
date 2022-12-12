@@ -458,8 +458,12 @@ msgid "Changes will take effect the next time Chinilla is started"
 msgstr "Muutokset tulevat voimaan kun Chinilla-sovellus käynnistetään seuraavan kerran"
 
 #: src/electron/main.tsx:862
-msgid "Chat on KeyBase"
-msgstr "Keskustele KeyBasessa"
+msgid "Chat on Discord"
+msgstr ""
+
+#: src/electron/main.tsx:862
+#~ msgid "Chat on KeyBase"
+#~ msgstr "Keskustele KeyBasessa"
 
 #: src/constants/WalletConnectCommands.tsx:276
 msgid "Check Offer Validity"
@@ -1234,8 +1238,8 @@ msgid "Finished"
 msgstr "Valmis"
 
 #: src/electron/main.tsx:868
-msgid "Follow on Twitter"
-msgstr "Seuraa Twitterissä"
+#~ msgid "Follow on Twitter"
+#~ msgstr "Seuraa Twitterissä"
 
 #: src/components/offers/OfferShareDialog.tsx:630
 msgid "ForgeFarm URL"
@@ -3588,6 +3592,10 @@ msgstr "Näytä Spacescan.io:ssa"
 #: src/components/offers/OfferViewerTitle.tsx:48
 msgid "Viewing offer"
 msgstr "Näytä tarjous"
+
+#: src/electron/main.tsx:868
+msgid "Visit Chinilla.com"
+msgstr ""
 
 #: src/constants/WalletConnectCommands.tsx:103
 #: src/constants/WalletConnectCommands.tsx:408
