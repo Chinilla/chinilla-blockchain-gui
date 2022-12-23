@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react';
+import { useGetFarmedAmountQuery } from '@chinilla/api-react';
+import { useCurrencyCode, vojoToChinillaLocaleString, CardSimple, useLocale } from '@chinilla/core';
 import { Trans } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
-import { useCurrencyCode, vojoToChinillaLocaleString, CardSimple, useLocale } from '@chinilla/core';
-import { useGetFarmedAmountQuery } from '@chinilla/api-react';
+import React, { useMemo } from 'react';
 
 export default function FarmCardBlockRewards() {
   const currencyCode = useCurrencyCode();

@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "git.inputValidationSubjectLength": 70,
+  "search.exclude": {
+    "**/dist": true,
+    "**/build": true,
+    "**/package-lock.json": true
+  },
+  "files.associations": {
+    ".eslintrc.json": "jsonc",
+    "tsconfig.json": "jsonc"
+  }
+}

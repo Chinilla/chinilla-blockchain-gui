@@ -1,41 +1,43 @@
-import React, { ChangeEvent, ReactNode } from 'react';
+import { Checkbox as MaterialCheckbox, type CheckboxProps as BaseCheckboxProps } from '@mui/material';
+import React, { ChangeEvent, type ReactNode, forwardRef } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
-import { Checkbox as MaterialCheckbox, CheckboxProps } from '@mui/material';
 
-const ParseBoolean = (props: CheckboxProps) => {
-  const { onChange, ...rest } = props;
+function ParseBoolean(props: CheckboxProps) {
+  const { onChange, value, ...rest } = props;
   const { name } = rest;
   const { setValue } = useFormContext();
 
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
-    const value = !!e.target.checked;
+    const checked = Boolean(e.target.checked);
     // @ts-ignore
-    onChange(e, value);
+    onChange(e, checked);
 
     if (name) {
-      setValue(name, value);
+      setValue(name, checked);
     }
   }
 
-  return <MaterialCheckbox onChange={handleChange} {...rest} />;
-};
+  return <MaterialCheckbox onChange={handleChange} checked={value} {...rest} />;
+}
 
-type Props = {
+export type CheckboxProps = BaseCheckboxProps & {
   name: string;
   label?: ReactNode;
-  value?: any;
+  value: boolean;
 };
 
-export default function Checkbox(props: Props): JSX.Element {
+function Checkbox(props: CheckboxProps, ref: any) {
   const { name, ...rest } = props;
-  const { control } = useFormContext();
+  const { control, getValues } = useFormContext();
 
   return (
     // @ts-ignore
-    <Controller name={name} control={control} render={({ field }) => (<ParseBoolean {...field} {...rest} /> )} />
+    <Controller
+      name={name}
+      control={control}
+      render={({ field }) => <ParseBoolean {...field} {...rest} value={Boolean(getValues(name))} ref={ref} />}
+    />
   );
 }
 
-Checkbox.defaultProps = {
-  value: true,
-};
+export default forwardRef(Checkbox);

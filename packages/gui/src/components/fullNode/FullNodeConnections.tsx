@@ -1,22 +1,15 @@
-import React from 'react';
+import { Connection } from '@chinilla/api';
+import { useGetFullNodeConnectionsQuery } from '@chinilla/api-react';
+import { Card, FormatBytes, FormatLargeNumber, IconButton, Loading, Table, useOpenDialog } from '@chinilla/core';
 import { Trans } from '@lingui/macro';
 import { Delete as DeleteIcon } from '@mui/icons-material';
+import { Button, Tooltip } from '@mui/material';
+import React from 'react';
 import styled from 'styled-components';
-import {
-  Button,
-  Card,
-  FormatBytes,
-  FormatLargeNumber,
-  Table,
-  IconButton,
-  useOpenDialog,
-} from '@chinilla/core';
-import { useGetFullNodeConnectionsQuery } from '@chinilla/api-react';
-import { Tooltip } from '@mui/material';
+
 import { service_connection_types } from '../../util/service_names';
-import Connection from '../../types/Connection';
-import FullNodeCloseConnection from './FullNodeCloseConnection';
 import FullNodeAddConnection from './FullNodeAddConnection';
+import FullNodeCloseConnection from './FullNodeCloseConnection';
 
 const StyledIconButton = styled(IconButton)`
   padding: 0.2rem;
@@ -48,19 +41,9 @@ const cols = [
     field(row: Connection) {
       return (
         <>
-          <FormatBytes
-            value={row.bytesWritten}
-            unit="MiB"
-            removeUnit
-            fixedDecimals
-          />
+          <FormatBytes value={row.bytesWritten} unit="MiB" removeUnit fixedDecimals />
           /
-          <FormatBytes
-            value={row.bytesRead}
-            unit="MiB"
-            removeUnit
-            fixedDecimals
-          />
+          <FormatBytes value={row.bytesRead} unit="MiB" removeUnit fixedDecimals />
         </>
       );
     },
@@ -103,16 +86,20 @@ export default function Connections() {
 
   return (
     <Card
-      title={<Trans>Connections</Trans>}
-      titleVariant="h6"
+      title={<Trans>Full Node Connections</Trans>}
       action={
         <Button onClick={handleAddPeer} variant="outlined">
           <Trans>Connect to other peers</Trans>
         </Button>
       }
-      transparent
     >
-      <Table cols={cols} rows={connections} isLoading={isLoading} />
+      {isLoading ? (
+        <Loading center />
+      ) : !connections?.length ? (
+        <Trans>List of connections is empty</Trans>
+      ) : (
+        <Table cols={cols} rows={connections} />
+      )}
     </Card>
   );
 }

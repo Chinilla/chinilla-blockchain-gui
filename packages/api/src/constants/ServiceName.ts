@@ -9,6 +9,8 @@ enum ServiceName {
   TIMELORD = 'chinilla_timelord',
   INTRODUCER = 'chinilla_introducer',
   EVENTS = 'wallet_ui',
-};
+  DATALAYER = 'chinilla_data_layer',
+  DATALAYER_SERVER = 'chinilla_data_layer_http',
+}
 
 export default ServiceName;

@@ -23,14 +23,22 @@ export const {
   useStartServiceMutation,
   useStopServiceMutation,
   useIsServiceRunningQuery,
+  useRunningServicesQuery,
   useSetKeyringPassphraseMutation,
   useRemoveKeyringPassphraseMutation,
   useMigrateKeyringMutation,
   useUnlockKeyringMutation,
+  useGetVersionQuery,
 
   useGetPlottersQuery,
   useStopPlottingMutation,
   useStartPlottingMutation,
+
+  useAddPrivateKeyMutation,
+  useGetKeyQuery,
+  useGetKeysQuery,
+  useSetLabelMutation,
+  useDeleteLabelMutation,
 } = daemon;
 
 // farmer hooks
@@ -69,6 +77,7 @@ export const {
   useCloseFullNodeConnectionMutation,
   useGetBlockQuery,
   useGetBlockRecordQuery,
+  useGetFeeEstimateQuery,
 } = fullNode;
 
 // wallet hooks
@@ -90,7 +99,6 @@ export const {
   useSendTransactionMutation,
   useGenerateMnemonicMutation,
   useGetPublicKeysQuery,
-  useAddKeyMutation,
   useDeleteKeyMutation,
   useCheckDeleteKeyMutation,
   useDeleteAllKeysMutation,
@@ -155,6 +163,8 @@ export const {
   useGetDIDCurrentCoinInfoQuery,
 
   // NFTs
+  useCalculateRoyaltiesForNFTsQuery,
+  useGetNFTsByNFTIDsQuery,
   useGetNFTsQuery,
   useGetNFTWalletsWithDIDsQuery,
   useGetNFTInfoQuery,
@@ -162,6 +172,10 @@ export const {
   useSetNFTDIDMutation,
   useSetNFTStatusMutation,
   useReceiveNFTMutation,
+
+  // sign
+  useSignMessageByAddressMutation,
+  useSignMessageByIdMutation,
 } = wallet;
 
 // harvester hooks

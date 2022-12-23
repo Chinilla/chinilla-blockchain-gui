@@ -1,9 +1,7 @@
-
-
-import React from 'react';
-import { Trans } from '@lingui/macro';
-import { FormatLargeNumber, CardSimple } from '@chinilla/core';
 import { useGetTotalHarvestersSummaryQuery } from '@chinilla/api-react';
+import { FormatLargeNumber, CardSimple } from '@chinilla/core';
+import { Trans } from '@lingui/macro';
+import React from 'react';
 
 export default function PlotCardPlotsFailedToOpen() {
   const { failedToOpenFilenames, initializedHarvesters, isLoading } = useGetTotalHarvestersSummaryQuery();

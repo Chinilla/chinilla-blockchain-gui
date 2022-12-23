@@ -1,4 +1,5 @@
 import { SyncingStatus } from '@chinilla/api';
+
 import useWalletState from './useWalletState';
 
 export default function useIsWalletSynced(): boolean {

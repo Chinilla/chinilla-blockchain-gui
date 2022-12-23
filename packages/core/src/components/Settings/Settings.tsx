@@ -1,31 +1,23 @@
-import React, { type ReactNode, useState } from 'react';
 import { Trans } from '@lingui/macro';
-import styled from 'styled-components';
-import { Box, Drawer, Typography, IconButton, Divider } from '@mui/material';
 import { Settings as SettingsIcon, Close as CloseIcon } from '@mui/icons-material';
+import { Box, Drawer, Typography, IconButton, Divider } from '@mui/material';
+import React, { type ReactNode, useState } from 'react';
+import styled from 'styled-components';
+
 import Flex from '../Flex';
 import Tooltip from '../Tooltip';
 import SettingsApp from './SettingsApp';
 import SettingsFooter from './SettingsFooter';
 
 const StyledHeader = styled(Box)`
-  background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
   padding: 0.5rem 1rem;
   width: 360px;
 `;
 
 const StyledBody = styled(Box)`
-  background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
   padding: 1rem 1rem;
   flex-grow: 1;
   overflow-y: overlay;
-`;
-
-const StyledDrawer = styled(Drawer)`
-  background-color: ${({ theme }) =>
-    theme.palette.mode === 'dark' ? '#333333' : '#FCF6E0'};
 `;
 
 export type SettingsProps = {
@@ -55,18 +47,16 @@ export default function Settings(props: SettingsProps) {
   return (
     <>
       <Tooltip title={<Trans>Settings</Trans>}>
-      <IconButton color="inherit" onClick={handleOpen} disableFocusRipple>
-        <SettingsIcon />
-      </IconButton>
+        <IconButton color="inherit" onClick={handleOpen} disableFocusRipple>
+          <SettingsIcon />
+        </IconButton>
       </Tooltip>
-      <StyledDrawer anchor="right" open={open} onClose={handleClose}>
+      <Drawer anchor="right" open={open} onClose={handleClose}>
         <Flex flexDirection="column" height="100%">
           <StyledHeader>
             <Flex gap={1} justifyContent="space-between" alignItems="center">
               <Typography variant="h6">
-                <Trans>
-                  Settings
-                </Trans>
+                <Trans>Settings</Trans>
               </Typography>
               <IconButton color="inherit" onClick={handleClose}>
                 <CloseIcon />
@@ -74,12 +64,10 @@ export default function Settings(props: SettingsProps) {
             </Flex>
           </StyledHeader>
           <Divider />
-          <StyledBody>
-            {children}
-          </StyledBody>
+          <StyledBody>{children}</StyledBody>
           <SettingsFooter />
         </Flex>
-      </StyledDrawer>
+      </Drawer>
     </>
   );
 }

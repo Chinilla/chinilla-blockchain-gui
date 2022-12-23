@@ -1,14 +1,31 @@
+import { store, api } from '@chinilla/api-react';
+import {
+  useDarkMode,
+  sleep,
+  ThemeProvider,
+  ModalDialogsProvider,
+  ModalDialogs,
+  LocaleProvider,
+  LayoutLoading,
+  dark,
+  light,
+  ErrorBoundary,
+} from '@chinilla/core';
+import { nativeTheme } from '@electron/remote';
+import { Trans } from '@lingui/macro';
+import { Typography } from '@mui/material';
+import isElectron from 'is-electron';
 import React, { ReactNode, useEffect, useState, Suspense } from 'react';
 import { Provider } from 'react-redux';
 import { Outlet } from 'react-router-dom';
-import { useDarkMode, sleep, ThemeProvider, ModalDialogsProvider, ModalDialogs, LocaleProvider, LayoutLoading, dark, light, ErrorBoundary } from '@chinilla/core';
-import { store, api } from '@chinilla/api-react';
-import { Trans } from '@lingui/macro';
+import WebSocket from 'ws';
+
 import { i18n, defaultLocale, locales } from '../../config/locales';
+import WalletConnectProvider, { WalletConnectChinillaProjectId } from '../walletConnect/WalletConnectProvider';
 import AppState from './AppState';
 
 async function waitForConfig() {
-  while(true) {
+  while (true) {
     const config = await window.ipcRenderer.invoke('getConfig');
     if (config) {
       return config;
@@ -29,18 +46,22 @@ export default function App(props: AppProps) {
   const { isDarkMode } = useDarkMode();
 
   const theme = isDarkMode ? dark : light;
+  if (isElectron()) {
+    nativeTheme.themeSource = isDarkMode ? 'dark' : 'light';
+  }
 
   async function init() {
     const config = await waitForConfig();
     const { cert, key, url } = config;
-    const WS = window.require('ws');
 
-    store.dispatch(api.initializeConfig({
-      url,
-      cert,
-      key,
-      webSocket: WS,
-    }));
+    store.dispatch(
+      api.initializeConfig({
+        url,
+        cert,
+        key,
+        webSocket: WebSocket,
+      })
+    );
 
     setIsReady(true);
   }
@@ -55,23 +76,24 @@ export default function App(props: AppProps) {
         <ThemeProvider theme={theme} fonts global>
           <ErrorBoundary>
             <ModalDialogsProvider>
-              {isReady ? (
-                <Suspense fallback={<LayoutLoading />}>
-                  <AppState>
-                    {outlet ? <Outlet /> : children}
-                  </AppState>
-                </Suspense>
-              ) : (
-                <LayoutLoading>
-                  <Trans>Loading configuration</Trans>
-                </LayoutLoading>
-              )}
-              <ModalDialogs />
+              <WalletConnectProvider projectId={WalletConnectChinillaProjectId}>
+                {isReady ? (
+                  <Suspense fallback={<LayoutLoading />}>
+                    <AppState>{outlet ? <Outlet /> : children}</AppState>
+                  </Suspense>
+                ) : (
+                  <LayoutLoading>
+                    <Typography variant="body1">
+                      <Trans>Loading configuration</Trans>
+                    </Typography>
+                  </LayoutLoading>
+                )}
+                <ModalDialogs />
+              </WalletConnectProvider>
             </ModalDialogsProvider>
           </ErrorBoundary>
         </ThemeProvider>
       </LocaleProvider>
     </Provider>
-
   );
 }

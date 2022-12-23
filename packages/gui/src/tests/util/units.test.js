@@ -27,7 +27,7 @@ describe('units', () => {
 
       expect(result).toBe(1);
     });
-    it('gets unit of vojousing alias', () => {
+    it('gets unit of vojo using alias', () => {
       const result = units.getUnit('mj');
 
       expect(result).toBe(1e-12);

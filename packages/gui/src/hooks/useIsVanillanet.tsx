@@ -1,7 +1,7 @@
 import { useGetNetworkInfoQuery } from '@chinilla/api-react';
 
 export default function useIsVanillanet(): boolean | undefined {
-  const { data: networkInfo, isLoading } = useGetNetworkInfoQuery(); 
+  const { data: networkInfo } = useGetNetworkInfoQuery();
   const networkPrefix = networkInfo?.networkPrefix;
 
   if (!networkPrefix) {

@@ -1,9 +1,10 @@
-import React, { type ReactNode } from 'react';
-import { AppBar, Toolbar, Box } from '@mui/material';
-import styled from 'styled-components';
-import { Outlet, Link } from 'react-router-dom';
-import Flex from '../Flex';
 import { ArrowBackIos as ArrowBackIosIcon } from '@mui/icons-material';
+import { AppBar, Toolbar, Box } from '@mui/material';
+import React, { type ReactNode } from 'react';
+import { Outlet, Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+import Flex from '../Flex';
 
 const StyledWrapper = styled(Box)`
   padding-top: ${({ theme }) => `${theme.spacing(3)}`};
@@ -13,7 +14,7 @@ const StyledWrapper = styled(Box)`
   background: ${({ theme }) =>
     theme.palette.mode === 'dark'
       ? `linear-gradient(45deg, #222222 30%, #333333 90%)`
-      : `linear-gradient(45deg, #F3E5AB 30%, #FCF6E0 90%)`};
+      : `linear-gradient(45deg, #f3e5ab 30%, #fcf6e0 90%)`};
 `;
 
 const StyledBody = styled(Box)`
@@ -33,12 +34,7 @@ export type LayoutHeroProps = {
 };
 
 export default function LayoutHero(props: LayoutHeroProps) {
-  const {
-    children,
-    header,
-    back = false,
-    outlet = false,
-  } = props;
+  const { children, header, back = false, outlet = false } = props;
 
   return (
     <StyledWrapper>
@@ -51,11 +47,11 @@ export default function LayoutHero(props: LayoutHeroProps) {
             </Link>
           )}
           <Flex flexGrow={1} />
-          {/*!hideSettings && (
+          {/*! hideSettings && (
             <Settings>
               {settings}
             </Settings>
-          )*/}
+          ) */}
         </Toolbar>
       </AppBar>
       <StyledBody>

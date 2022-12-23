@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
 import type { PlotNFT } from '@chinilla/api';
 import { useGetPlotNFTsQuery } from '@chinilla/api-react';
-import useUnconfirmedPlotNFTs from './useUnconfirmedPlotNFTs';
 import PlotNFTExternal from 'types/PlotNFTExternal';
+
+import useUnconfirmedPlotNFTs from './useUnconfirmedPlotNFTs';
 
 export default function usePlotNFTs(): {
   loading: boolean;
@@ -10,11 +10,15 @@ export default function usePlotNFTs(): {
   external?: PlotNFTExternal[];
   error?: Error;
 } {
-  const { data, isLoading: isLoadingGetPlotNFTs, error } = useGetPlotNFTsQuery(undefined, {
+  const {
+    data,
+    isLoading: isLoadingGetPlotNFTs,
+    error,
+  } = useGetPlotNFTsQuery(undefined, {
     pollingInterval: 10000,
   });
 
-  const { unconfirmed, isLoading: isLoadingUnconfirmedPlotNFTs } = useUnconfirmedPlotNFTs();
+  const { isLoading: isLoadingUnconfirmedPlotNFTs } = useUnconfirmedPlotNFTs();
   const isLoading = isLoadingGetPlotNFTs || isLoadingUnconfirmedPlotNFTs;
 
   /*

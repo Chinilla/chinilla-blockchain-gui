@@ -1,21 +1,15 @@
 import { createTheme } from '@mui/material/styles';
-import { deepmerge } from '@mui/utils';
+
 import theme from './default';
 
-export default createTheme(deepmerge(theme, {
+export default createTheme({
+  ...theme,
   palette: {
+    ...theme.palette,
     background: {
-      default: '#F3E5AB',
-      paper: '#FCF6E0',
+      ...theme.palette.background,
+      card: '#f2ecd5',
+      paper: '#f2ecd5',
     },
-    secondary: {
-      main: '#000000',
-      contrastText: '#FFFFFF',
-    },
-    warning: {
-      main: '#FCF6E0',
-      contrastText: '#000000',
-    },
-    mode: 'light',
   },
-}));
+});
