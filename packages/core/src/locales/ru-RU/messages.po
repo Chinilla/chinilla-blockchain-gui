@@ -18,11 +18,11 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:276
+#: src/components/EstimatedFee/EstimatedFee.tsx:275
 msgid "<0>{0}</0>"
 msgstr "<0>{0}</0>"
 
-#: src/components/Amount/Amount.tsx:102
+#: src/components/Amount/Amount.tsx:36
 msgid "Amount"
 msgstr "Количество"
 
@@ -34,7 +34,7 @@ msgstr "Внешний вид"
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr ""
 
-#: src/components/FormBackButton/FormBackButton.tsx:48
+#: src/components/FormBackButton/FormBackButton.tsx:15
 #: src/screens/SelectKey/SelectKey.tsx:76
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
@@ -55,7 +55,7 @@ msgstr "Отмена"
 msgid "Close"
 msgstr "Закрыть"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:49
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:37
 msgid "Connected"
 msgstr "Подключен"
 
@@ -148,8 +148,8 @@ msgstr "Открытый ключ фермера:"
 msgid "Farming"
 msgstr "Фарминг"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:312
-#: src/components/EstimatedFee/EstimatedFee.tsx:345
+#: src/components/EstimatedFee/EstimatedFee.tsx:311
+#: src/components/EstimatedFee/EstimatedFee.tsx:344
 #: src/components/Fee/Fee.tsx:53
 msgid "Fee"
 msgstr "Комиссия"
@@ -175,7 +175,7 @@ msgstr "Помогите с переводом"
 msgid "Hide"
 msgstr "Скрыть"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:64
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:32
 msgid "Hide Advanced Options"
 msgstr "Скрыть дополнительные опции"
 
@@ -203,12 +203,12 @@ msgstr "Загрузка сведений"
 msgid "Loading list of the keys"
 msgstr "Загрузка списка ключей"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:161
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:163
 msgid "Log Out"
 msgstr "Выйти"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:160
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:162
 msgid "Logout"
 msgstr "Выйти"
 
@@ -241,7 +241,7 @@ msgstr "Нет 24 слов семя, так как этот ключ импор�
 msgid "Not Synced"
 msgstr "Не синхронизирован"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:50
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:38
 msgid "Not connected"
 msgstr "Нет подключения"
 
@@ -320,7 +320,7 @@ msgstr "Семя:"
 msgid "Select Key"
 msgstr "Выбор ключа"
 
-#: src/components/Dropdown/Dropdown.tsx:78
+#: src/components/Dropdown/Dropdown.tsx:28
 msgid "Select..."
 msgstr "Выбрать..."
 
@@ -337,7 +337,7 @@ msgstr "Установка пароля для защиты ваших ключ�
 msgid "Settings"
 msgstr "Настройки"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:63
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:31
 msgid "Show Advanced Options"
 msgstr "Показать дополнительные опции"
 
@@ -422,7 +422,7 @@ msgstr "Настоятельно рекомендуется использова
 msgid "Value seems high"
 msgstr "Значение вероятно завышено"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:108
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
 #: src/components/Settings/SettingsApp.tsx:81
 msgid "Wallet"
 msgstr "Кошелёк"
@@ -461,15 +461,19 @@ msgstr "У вас есть несохраненные изменения. Хот
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Ваши ключи не были перенесены в новую систему ключей. Вы не сможете создавать новые ключи или удалять существующие ключи до тех пор, пока не завершится миграция. Хотите перенести ваши ключи сейчас?"
 
-#: src/components/Amount/Amount.tsx:84
+#: src/components/Amount/Amount.tsx:85
+#~ msgid "{0, plural, one {mojo} other {mojos}}"
+#~ msgstr "{0, plural, one {mojo} other {mojos}}"
+
+#: src/components/Amount/Amount.tsx:86
 msgid "{0, plural, one {vojo} other {vojos}}"
-msgstr "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
 #~ msgid "{0} THCX"
 #~ msgstr "{0} THCX"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:271
+#: src/components/EstimatedFee/EstimatedFee.tsx:270
 msgid "{0} {currencyCode}"
 msgstr ""
 

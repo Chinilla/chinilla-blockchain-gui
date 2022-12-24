@@ -18,11 +18,11 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:276
+#: src/components/EstimatedFee/EstimatedFee.tsx:275
 msgid "<0>{0}</0>"
 msgstr "<0>{0}</0>"
 
-#: src/components/Amount/Amount.tsx:102
+#: src/components/Amount/Amount.tsx:36
 msgid "Amount"
 msgstr "Кількість"
 
@@ -34,7 +34,7 @@ msgstr "Зовнішній вигляд"
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr "Ви впевнені, що хочете продовжити? Введіть fingerprint цього гаманця для підтвердження видалення."
 
-#: src/components/FormBackButton/FormBackButton.tsx:48
+#: src/components/FormBackButton/FormBackButton.tsx:15
 #: src/screens/SelectKey/SelectKey.tsx:76
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
@@ -55,7 +55,7 @@ msgstr "Відміна"
 msgid "Close"
 msgstr "Закрити"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:49
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:37
 msgid "Connected"
 msgstr "Підключено"
 
@@ -148,8 +148,8 @@ msgstr "Публічний ключ фермера:"
 msgid "Farming"
 msgstr "Фермерство"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:312
-#: src/components/EstimatedFee/EstimatedFee.tsx:345
+#: src/components/EstimatedFee/EstimatedFee.tsx:311
+#: src/components/EstimatedFee/EstimatedFee.tsx:344
 #: src/components/Fee/Fee.tsx:53
 msgid "Fee"
 msgstr "Комісія"
@@ -175,7 +175,7 @@ msgstr "Допомогти з перекладом"
 msgid "Hide"
 msgstr "Приховати"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:64
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:32
 msgid "Hide Advanced Options"
 msgstr "Приховати додаткові параметри"
 
@@ -203,12 +203,12 @@ msgstr "Завантаження подробиць"
 msgid "Loading list of the keys"
 msgstr "Завантаження списку ключів"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:161
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:163
 msgid "Log Out"
 msgstr "Вийти"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:160
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:162
 msgid "Logout"
 msgstr "Вийти"
 
@@ -241,7 +241,7 @@ msgstr "Відсутні 24 ключових слова, оскільки клю
 msgid "Not Synced"
 msgstr "Не синхронізовано"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:50
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:38
 msgid "Not connected"
 msgstr "Немає з'єднання"
 
@@ -320,7 +320,7 @@ msgstr "Фраза:"
 msgid "Select Key"
 msgstr "Вибрати ключ"
 
-#: src/components/Dropdown/Dropdown.tsx:78
+#: src/components/Dropdown/Dropdown.tsx:28
 msgid "Select..."
 msgstr "Обрати..."
 
@@ -337,7 +337,7 @@ msgstr "Встановлення пароля рекомендується дл�
 msgid "Settings"
 msgstr "Налаштування"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:63
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:31
 msgid "Show Advanced Options"
 msgstr "Показати розширені параметри"
 
@@ -422,7 +422,7 @@ msgstr "Рекомендовано використовувати пароль �
 msgid "Value seems high"
 msgstr "Значення здається високим"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:108
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
 #: src/components/Settings/SettingsApp.tsx:81
 msgid "Wallet"
 msgstr "Гаманець"
@@ -461,15 +461,19 @@ msgstr "У вас є незбережені зміни. Скасувати їх?
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Ваші ключі не були перенесені до нової системи ключів. Ви не зможете створювати нові ключі або видаляти існуючі ключі, доки не завершиться міграція. Бажаєте перенести ваші ключі зараз?"
 
-#: src/components/Amount/Amount.tsx:84
+#: src/components/Amount/Amount.tsx:85
+#~ msgid "{0, plural, one {mojo} other {mojos}}"
+#~ msgstr "{0, plural, one {mojo} other {mojos}}"
+
+#: src/components/Amount/Amount.tsx:86
 msgid "{0, plural, one {vojo} other {vojos}}"
-msgstr "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
 #~ msgid "{0} THCX"
 #~ msgstr "{0} THCX"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:271
+#: src/components/EstimatedFee/EstimatedFee.tsx:270
 msgid "{0} {currencyCode}"
 msgstr ""
 

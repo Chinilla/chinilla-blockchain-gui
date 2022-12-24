@@ -18,11 +18,11 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:276
+#: src/components/EstimatedFee/EstimatedFee.tsx:275
 msgid "<0>{0}</0>"
 msgstr ""
 
-#: src/components/Amount/Amount.tsx:102
+#: src/components/Amount/Amount.tsx:36
 msgid "Amount"
 msgstr "数量"
 
@@ -34,7 +34,7 @@ msgstr "界面"
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr ""
 
-#: src/components/FormBackButton/FormBackButton.tsx:48
+#: src/components/FormBackButton/FormBackButton.tsx:15
 #: src/screens/SelectKey/SelectKey.tsx:76
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
@@ -55,7 +55,7 @@ msgstr "取消"
 msgid "Close"
 msgstr ""
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:49
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:37
 msgid "Connected"
 msgstr "已连接"
 
@@ -148,8 +148,8 @@ msgstr "农民公钥："
 msgid "Farming"
 msgstr "正在耕种"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:312
-#: src/components/EstimatedFee/EstimatedFee.tsx:345
+#: src/components/EstimatedFee/EstimatedFee.tsx:311
+#: src/components/EstimatedFee/EstimatedFee.tsx:344
 #: src/components/Fee/Fee.tsx:53
 msgid "Fee"
 msgstr "费用"
@@ -175,7 +175,7 @@ msgstr "改进翻译"
 msgid "Hide"
 msgstr ""
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:64
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:32
 msgid "Hide Advanced Options"
 msgstr "隐藏高级选项"
 
@@ -203,12 +203,12 @@ msgstr ""
 msgid "Loading list of the keys"
 msgstr "加载密钥列表"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:161
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:163
 msgid "Log Out"
 msgstr "登出"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:160
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:162
 msgid "Logout"
 msgstr "登出"
 
@@ -241,7 +241,7 @@ msgstr "没有24个助记词种子，因为此密钥已导入。"
 msgid "Not Synced"
 msgstr ""
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:50
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:38
 msgid "Not connected"
 msgstr "未连接"
 
@@ -320,7 +320,7 @@ msgstr "种子："
 msgid "Select Key"
 msgstr "选择密钥"
 
-#: src/components/Dropdown/Dropdown.tsx:78
+#: src/components/Dropdown/Dropdown.tsx:28
 msgid "Select..."
 msgstr "请选择..."
 
@@ -337,7 +337,7 @@ msgstr "强烈建议设置私钥密码以保护您的密钥。是否要跳过设
 msgid "Settings"
 msgstr "设置"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:63
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:31
 msgid "Show Advanced Options"
 msgstr "显示高级选项"
 
@@ -422,7 +422,7 @@ msgstr "强烈建议设置私钥密码以保护您的密钥。是否要跳过禁
 msgid "Value seems high"
 msgstr "值似乎过高"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:108
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
 #: src/components/Settings/SettingsApp.tsx:81
 msgid "Wallet"
 msgstr "钱包"
@@ -461,15 +461,19 @@ msgstr "你已经做了一些更改。你确定要放弃这些修改吗？"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "您的密钥尚未迁移到新的密钥串。在迁移完成之前，您将无法创建新密钥或删除现有密钥。您想要现在迁移密钥吗？"
 
-#: src/components/Amount/Amount.tsx:84
+#: src/components/Amount/Amount.tsx:85
+#~ msgid "{0, plural, one {mojo} other {mojos}}"
+#~ msgstr "{0, plural, one {mojo} other {mojos}}"
+
+#: src/components/Amount/Amount.tsx:86
 msgid "{0, plural, one {vojo} other {vojos}}"
-msgstr "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
 #~ msgid "{0} THCX"
 #~ msgstr ""
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:271
+#: src/components/EstimatedFee/EstimatedFee.tsx:270
 msgid "{0} {currencyCode}"
 msgstr ""
 

@@ -21,16 +21,19 @@ import { Outlet } from 'react-router-dom';
 import WebSocket from 'ws';
 
 import { i18n, defaultLocale, locales } from '../../config/locales';
+import LRUsProvider from '../lrus/LRUsProvider';
 import WalletConnectProvider, { WalletConnectChinillaProjectId } from '../walletConnect/WalletConnectProvider';
 import AppState from './AppState';
 
 async function waitForConfig() {
+  // eslint-disable-next-line no-constant-condition -- We want this
   while (true) {
+    // eslint-disable-next-line no-await-in-loop -- We want to run promises in series
     const config = await window.ipcRenderer.invoke('getConfig');
     if (config) {
       return config;
     }
-
+    // eslint-disable-next-line no-await-in-loop -- We want to run promises in series
     await sleep(50);
   }
 }
@@ -75,22 +78,24 @@ export default function App(props: AppProps) {
       <LocaleProvider i18n={i18n} defaultLocale={defaultLocale} locales={locales}>
         <ThemeProvider theme={theme} fonts global>
           <ErrorBoundary>
-            <ModalDialogsProvider>
-              <WalletConnectProvider projectId={WalletConnectChinillaProjectId}>
-                {isReady ? (
-                  <Suspense fallback={<LayoutLoading />}>
-                    <AppState>{outlet ? <Outlet /> : children}</AppState>
-                  </Suspense>
-                ) : (
-                  <LayoutLoading>
-                    <Typography variant="body1">
-                      <Trans>Loading configuration</Trans>
-                    </Typography>
-                  </LayoutLoading>
-                )}
-                <ModalDialogs />
-              </WalletConnectProvider>
-            </ModalDialogsProvider>
+            <LRUsProvider>
+              <ModalDialogsProvider>
+                <WalletConnectProvider projectId={WalletConnectChinillaProjectId}>
+                  {isReady ? (
+                    <Suspense fallback={<LayoutLoading />}>
+                      <AppState>{outlet ? <Outlet /> : children}</AppState>
+                    </Suspense>
+                  ) : (
+                    <LayoutLoading>
+                      <Typography variant="body1">
+                        <Trans>Loading configuration</Trans>
+                      </Typography>
+                    </LayoutLoading>
+                  )}
+                  <ModalDialogs />
+                </WalletConnectProvider>
+              </ModalDialogsProvider>
+            </LRUsProvider>
           </ErrorBoundary>
         </ThemeProvider>
       </LocaleProvider>

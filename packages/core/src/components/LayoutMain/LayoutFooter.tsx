@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
 
-import { default as walletPackageJson } from '../../../package.json';
+import walletPackageJson from '../../../package.json';
 import useAppVersion from '../../hooks/useAppVersion';
 import Flex from '../Flex';
 
@@ -29,7 +29,7 @@ async function openFAQURL(): Promise<void> {
 async function openSendFeedbackURL(): Promise<void> {
   try {
     const { shell } = window as any;
-    await shell.openExternal('https://feedback.chinilla.com/lightwallet');
+    await shell.openExternal('https://feedback.chinilla.net/lightwallet');
   } catch (e) {
     console.error(e);
   }

@@ -18,11 +18,11 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:276
+#: src/components/EstimatedFee/EstimatedFee.tsx:275
 msgid "<0>{0}</0>"
 msgstr ""
 
-#: src/components/Amount/Amount.tsx:102
+#: src/components/Amount/Amount.tsx:36
 msgid "Amount"
 msgstr "Összeg"
 
@@ -34,7 +34,7 @@ msgstr "Megjelenés"
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr ""
 
-#: src/components/FormBackButton/FormBackButton.tsx:48
+#: src/components/FormBackButton/FormBackButton.tsx:15
 #: src/screens/SelectKey/SelectKey.tsx:76
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
@@ -55,7 +55,7 @@ msgstr "Mégsem"
 msgid "Close"
 msgstr ""
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:49
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:37
 msgid "Connected"
 msgstr "Csatlakozva"
 
@@ -148,8 +148,8 @@ msgstr "Farmer nyilvános kulcsa:"
 msgid "Farming"
 msgstr "Farmolás"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:312
-#: src/components/EstimatedFee/EstimatedFee.tsx:345
+#: src/components/EstimatedFee/EstimatedFee.tsx:311
+#: src/components/EstimatedFee/EstimatedFee.tsx:344
 #: src/components/Fee/Fee.tsx:53
 msgid "Fee"
 msgstr "Díj"
@@ -175,7 +175,7 @@ msgstr "Segíts a fordításban"
 msgid "Hide"
 msgstr ""
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:64
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:32
 msgid "Hide Advanced Options"
 msgstr "Speciális beállítások elrejtése"
 
@@ -203,12 +203,12 @@ msgstr ""
 msgid "Loading list of the keys"
 msgstr "A kulcsok listájának betöltése"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:161
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:163
 msgid "Log Out"
 msgstr "Kijelentkezés"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:160
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:162
 msgid "Logout"
 msgstr "Kijelentkezés"
 
@@ -241,7 +241,7 @@ msgstr "Nincs 24 szó mag, mivel ezt a kulcsot importálják."
 msgid "Not Synced"
 msgstr ""
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:50
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:38
 msgid "Not connected"
 msgstr "Nincs csatlakozva"
 
@@ -320,7 +320,7 @@ msgstr "Seed:"
 msgid "Select Key"
 msgstr "Válasszon kulcsot"
 
-#: src/components/Dropdown/Dropdown.tsx:78
+#: src/components/Dropdown/Dropdown.tsx:28
 msgid "Select..."
 msgstr "Kiválasztás..."
 
@@ -337,7 +337,7 @@ msgstr "Erősen javasolt a jelszó beállítása, hogy a kulcsok védve legyenek
 msgid "Settings"
 msgstr "Beállítások"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:63
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:31
 msgid "Show Advanced Options"
 msgstr "Speciális beállítások megjelenítése"
 
@@ -422,7 +422,7 @@ msgstr "Erősen javasolt a jelszó beállítása, hogy a kulcsok védve legyenek
 msgid "Value seems high"
 msgstr "Az érték túl magasnak tűnik"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:108
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
 #: src/components/Settings/SettingsApp.tsx:81
 msgid "Wallet"
 msgstr "Tárca"
@@ -461,15 +461,19 @@ msgstr "Változtatásokat hajtott végre. El akarja vetni őket?"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Kulcsai nem kerültek át egy új kulcstartóra. A migráció befejezéséig nem tud új kulcsokat létrehozni vagy meglévő kulcsokat törölni. Szeretné most áttelepíteni a kulcsait?"
 
-#: src/components/Amount/Amount.tsx:84
+#: src/components/Amount/Amount.tsx:85
+#~ msgid "{0, plural, one {mojo} other {mojos}}"
+#~ msgstr "{0, plural, one {mojo} other {mojok}}"
+
+#: src/components/Amount/Amount.tsx:86
 msgid "{0, plural, one {vojo} other {vojos}}"
-msgstr "{0, plural, one {vojo} other {vojok}}"
+msgstr ""
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
 #~ msgid "{0} THCX"
 #~ msgstr ""
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:271
+#: src/components/EstimatedFee/EstimatedFee.tsx:270
 msgid "{0} {currencyCode}"
 msgstr ""
 

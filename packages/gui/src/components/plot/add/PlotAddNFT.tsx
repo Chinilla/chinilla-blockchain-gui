@@ -11,7 +11,6 @@ import PlotNFTSelectPool from '../../plotNFT/select/PlotNFTSelectPool';
 
 type Props = {
   step: number;
-  plotter: Plotter;
 };
 
 const PlotAddNFT = forwardRef((props: Props, ref) => {

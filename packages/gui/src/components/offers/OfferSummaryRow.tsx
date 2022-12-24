@@ -43,11 +43,7 @@ function OfferVojoAmount(props: OfferVojoAmountProps): React.ReactElement | null
   );
 }
 
-OfferVojoAmount.defaultProps = {
-  vojos: 0,
-};
-
-function shouldShowVojoAmount(vojos: number, vojoThreshold = 1000000000 /* 1 billion */): boolean {
+function shouldShowVojoAmount(vojos: number, vojoThreshold = 1_000_000_000): boolean {
   return vojoThreshold > 0 && vojos < vojoThreshold;
 }
 
@@ -55,7 +51,6 @@ function shouldShowVojoAmount(vojos: number, vojoThreshold = 1000000000 /* 1 bil
 
 type OfferSummaryNFTRowProps = {
   launcherId: string;
-  amount: number;
   rowNumber?: number;
   showNFTPreview: boolean;
 };

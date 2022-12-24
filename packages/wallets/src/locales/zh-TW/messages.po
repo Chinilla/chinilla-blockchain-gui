@@ -138,7 +138,7 @@ msgstr "確認"
 msgid "Confirmed"
 msgstr "確認"
 
-#: src/components/WalletHistory.tsx:287
+#: src/components/WalletHistory.tsx:289
 msgid "Confirmed at Height"
 msgstr "已確認於高度"
 
@@ -255,7 +255,7 @@ msgstr "分散式識別"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr "拖放您的備份檔案"
 
-#: src/components/WalletImport.tsx:129
+#: src/components/WalletImport.tsx:121
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "輸入你已存的 24 字助記符號以復原您的 Chinilla 錢包。"
 
@@ -297,7 +297,7 @@ msgstr "如果您想加快交易速度，請刪除未確認的交易並以更高
 msgid "Import"
 msgstr "匯入"
 
-#: src/components/WalletImport.tsx:126
+#: src/components/WalletImport.tsx:118
 msgid "Import Wallet from Mnemonics"
 msgstr "以助記符號匯入錢包"
 
@@ -326,7 +326,7 @@ msgstr "轉入"
 msgid "List of connections is empty"
 msgstr "連接列表是空的"
 
-#: src/components/WalletReceiveAddressField.tsx:36
+#: src/components/WalletReceiveAddressField.tsx:70
 msgid "Loading..."
 msgstr "讀取中..."
 
@@ -345,7 +345,7 @@ msgstr "管理代幣列表"
 msgid "Memo"
 msgstr "備註（Memo）"
 
-#: src/components/WalletHistory.tsx:292
+#: src/components/WalletHistory.tsx:294
 msgid "Memos"
 msgstr "備註（Memos）"
 
@@ -386,8 +386,8 @@ msgstr "新位址"
 msgid "New Wallet"
 msgstr "新錢包"
 
-#: src/components/WalletAdd.tsx:123
-#: src/components/WalletImport.tsx:159
+#: src/components/WalletAdd.tsx:124
+#: src/components/WalletImport.tsx:151
 msgid "Next"
 msgstr "下一步"
 
@@ -395,7 +395,7 @@ msgstr "下一步"
 msgid "Nickname"
 msgstr "暱稱"
 
-#: src/components/WalletHistory.tsx:323
+#: src/components/WalletHistory.tsx:325
 msgid "No previous transactions"
 msgstr "沒有上一個交易"
 
@@ -403,8 +403,8 @@ msgstr "沒有上一個交易"
 msgid "Node ID"
 msgstr "節點 ID"
 
-#: src/components/WalletHistory.tsx:281
-#: src/components/WalletHistory.tsx:288
+#: src/components/WalletHistory.tsx:283
+#: src/components/WalletHistory.tsx:290
 msgid "Not Available"
 msgstr "尚無"
 
@@ -437,7 +437,7 @@ msgstr "平均每個交易區塊之間有 1 分鐘的時間。除非出現擁塞
 msgid "Outgoing"
 msgstr "匯出"
 
-#: src/components/WalletImport.tsx:91
+#: src/components/WalletImport.tsx:167
 msgid "Paste Mnemonic"
 msgstr ""
 
@@ -598,7 +598,6 @@ msgid "Receive"
 msgstr ""
 
 #: src/components/WalletReceiveAddress.tsx:29
-#: src/components/WalletReceiveAddressField.tsx:34
 msgid "Receive Address"
 msgstr "接收位址"
 
@@ -822,8 +821,8 @@ msgstr "交易"
 msgid "Wallet Connections"
 msgstr ""
 
-#: src/components/WalletAdd.tsx:100
-#: src/components/WalletImport.tsx:152
+#: src/components/WalletAdd.tsx:101
+#: src/components/WalletImport.tsx:144
 msgid "Wallet Name"
 msgstr ""
 
@@ -831,7 +830,7 @@ msgstr ""
 msgid "Wallet does not exists"
 msgstr "錢包不存在"
 
-#: src/components/Wallet.tsx:49
+#: src/components/Wallet.tsx:37
 msgid "Wallet with type {0} not supported"
 msgstr ""
 

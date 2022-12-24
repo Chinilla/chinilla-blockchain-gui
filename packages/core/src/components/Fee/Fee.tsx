@@ -24,7 +24,7 @@ export default function Fee(props: FeeProps) {
         const isLow = vojo.gt('0') && vojo.lt('1');
 
         if (!value) {
-          return;
+          return null;
         }
 
         if (isHigh) {

@@ -1,6 +1,6 @@
 import { useGetNetworkInfoQuery } from '@chinilla/api-react';
 
-export default function useIsVanillanet(): boolean | undefined {
+export default function useIVanillanet(): boolean | undefined {
   const { data: networkInfo } = useGetNetworkInfoQuery();
   const networkPrefix = networkInfo?.networkPrefix;
 

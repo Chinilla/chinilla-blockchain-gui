@@ -112,7 +112,7 @@ export default function WalletsSidebar() {
               your new tokens as they are re-issued by the original issuers. The airdropped tokens will be based on the
               balance as of block height:
               <br />
-              <FormatLargeNumber value={2311760} />
+              <FormatLargeNumber value={2_311_760} />
               <br />
               (Approximate time: July 26th, 2022 @ 17:00 UTC)
             </Trans>
@@ -123,7 +123,7 @@ export default function WalletsSidebar() {
                 variant="outlined"
                 size="large"
                 onClick={() =>
-                  openExternal(`https://cat1.chinilla.com/#publicKey=${privateKey.pk}&fingerprint=${fingerprint}`)
+                  openExternal(`https://cat1.chinilla.net/#publicKey=${privateKey.pk}&fingerprint=${fingerprint}`)
                 }
                 disabled={isLoadingFingerprint || isLoadingPrivateKey}
               >
@@ -145,8 +145,8 @@ export default function WalletsSidebar() {
     );
   }
 
-  function handleSelectWallet(walletId: number) {
-    navigate(`/dashboard/wallets/${walletId}`);
+  function handleSelectWallet(id: number) {
+    navigate(`/dashboard/wallets/${id}`);
   }
 
   const items = useMemo(() => {

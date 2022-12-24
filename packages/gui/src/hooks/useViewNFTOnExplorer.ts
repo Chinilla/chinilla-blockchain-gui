@@ -10,21 +10,14 @@ function getForgeFarmURL(nft: NFTInfo, testnet: boolean) {
   return url;
 }
 
-function getSpacescanURL(nft: NFTInfo, testnet: boolean) {
-  const url = `https://spacescan.io/${testnet ? 'thcx10' : 'hcx'}/nft/${nft.$nftId}`;
-  return url;
-}
-
 /* ========================================================================== */
 
 export enum NFTExplorer {
   ForgeFarm = 'forgefarm',
-  Spacescan = 'spacescan',
 }
 
 const UrlBuilderMapping = {
   [NFTExplorer.ForgeFarm]: getForgeFarmURL,
-  [NFTExplorer.Spacescan]: getSpacescanURL,
 };
 
 export default function useViewNFTOnExplorer() {

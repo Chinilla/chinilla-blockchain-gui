@@ -1,8 +1,10 @@
 # chinilla-blockchain-gui/api
 
-![Chinilla logo](https://www.chinilla.com/wp-content/uploads/2022/09/chinilla-logo.svg)
+![Chinilla logo](https://www.chinilla.net/wp-content/uploads/2022/09/chinilla-logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Chinilla/chinilla-blockchain-gui?logo=GitHub)
+
+This library provides support for TypeScript/JavaScript [Chinilla](https://www.chinilla.net) apps to access the [Chinilla Blockchain RPC](https://docs.chinilla.net/rpc/), by making it easier to perform the following actions:
 
 This library provides support for TypeScript/JavaScript [Chinilla](https://www.chinilla.com) apps to access the [Chinilla Blockchain RPC](https://docs.chinilla.com/rpc/), by making it easier to perform the following actions:
 

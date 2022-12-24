@@ -138,7 +138,7 @@ msgstr ""
 msgid "Confirmed"
 msgstr ""
 
-#: src/components/WalletHistory.tsx:287
+#: src/components/WalletHistory.tsx:289
 msgid "Confirmed at Height"
 msgstr ""
 
@@ -255,7 +255,7 @@ msgstr ""
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr ""
 
-#: src/components/WalletImport.tsx:129
+#: src/components/WalletImport.tsx:121
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Каб аднавіць свой кашалёк Chinilla, увядзіце раней захаваную вамі мнеманічную фразу з 24 слоў у правільным парадку."
 
@@ -295,7 +295,7 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: src/components/WalletImport.tsx:126
+#: src/components/WalletImport.tsx:118
 msgid "Import Wallet from Mnemonics"
 msgstr "Імпартаваць кашалёк з мнеманічнай фразы"
 
@@ -324,7 +324,7 @@ msgstr "Уваходныя"
 msgid "List of connections is empty"
 msgstr ""
 
-#: src/components/WalletReceiveAddressField.tsx:36
+#: src/components/WalletReceiveAddressField.tsx:70
 msgid "Loading..."
 msgstr ""
 
@@ -343,7 +343,7 @@ msgstr ""
 msgid "Memo"
 msgstr ""
 
-#: src/components/WalletHistory.tsx:292
+#: src/components/WalletHistory.tsx:294
 msgid "Memos"
 msgstr ""
 
@@ -384,8 +384,8 @@ msgstr "Новы адрас"
 msgid "New Wallet"
 msgstr "Новы кашалёк"
 
-#: src/components/WalletAdd.tsx:123
-#: src/components/WalletImport.tsx:159
+#: src/components/WalletAdd.tsx:124
+#: src/components/WalletImport.tsx:151
 msgid "Next"
 msgstr "Наступны"
 
@@ -393,7 +393,7 @@ msgstr "Наступны"
 msgid "Nickname"
 msgstr "Псеўданім"
 
-#: src/components/WalletHistory.tsx:323
+#: src/components/WalletHistory.tsx:325
 msgid "No previous transactions"
 msgstr "Папярэдніх трансакцый няма"
 
@@ -401,8 +401,8 @@ msgstr "Папярэдніх трансакцый няма"
 msgid "Node ID"
 msgstr "Ідэнтыфікатар вузла"
 
-#: src/components/WalletHistory.tsx:281
-#: src/components/WalletHistory.tsx:288
+#: src/components/WalletHistory.tsx:283
+#: src/components/WalletHistory.tsx:290
 msgid "Not Available"
 msgstr "Недаступны"
 
@@ -435,7 +435,7 @@ msgstr "У сярэднім паміж кожным блокам трансак�
 msgid "Outgoing"
 msgstr "Выходныя"
 
-#: src/components/WalletImport.tsx:91
+#: src/components/WalletImport.tsx:167
 msgid "Paste Mnemonic"
 msgstr ""
 
@@ -596,7 +596,6 @@ msgid "Receive"
 msgstr ""
 
 #: src/components/WalletReceiveAddress.tsx:29
-#: src/components/WalletReceiveAddressField.tsx:34
 msgid "Receive Address"
 msgstr "Адрас атрымання"
 
@@ -820,8 +819,8 @@ msgstr ""
 msgid "Wallet Connections"
 msgstr ""
 
-#: src/components/WalletAdd.tsx:100
-#: src/components/WalletImport.tsx:152
+#: src/components/WalletAdd.tsx:101
+#: src/components/WalletImport.tsx:144
 msgid "Wallet Name"
 msgstr ""
 
@@ -829,7 +828,7 @@ msgstr ""
 msgid "Wallet does not exists"
 msgstr ""
 
-#: src/components/Wallet.tsx:49
+#: src/components/Wallet.tsx:37
 msgid "Wallet with type {0} not supported"
 msgstr ""
 

@@ -462,7 +462,7 @@ msgid "Your keys have not been migrated to a new keyring. You will be unable to 
 msgstr ""
 
 #: src/components/Amount/Amount.tsx:85
-msgid "{0, plural, one {vojo} other {vojos}}"
+msgid "{0, plural, one {mojo} other {mojos}}"
 msgstr ""
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159

@@ -20,6 +20,7 @@ export default function FarmCardTotalChinillaFarmed() {
         </>
       );
     }
+    return undefined;
   }, [farmedAmount, locale, currencyCode]);
 
   return (

@@ -1,9 +1,9 @@
-import Client, { Service } from '@chinilla/api';
+import Client, { Service as ServiceType } from '@chinilla/api';
 import { BaseQueryFn } from '@reduxjs/toolkit/query/react';
 
 type Options = {
   client: Client;
-  service: Service;
+  service: ServiceType;
 };
 
 export default function chinillaBaseQuery(options: Options): BaseQueryFn<

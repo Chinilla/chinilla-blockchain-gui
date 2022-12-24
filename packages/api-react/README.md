@@ -1,8 +1,11 @@
 # chinilla-blockchain-gui/api-react
 
-![Chinilla logo](https://www.chinilla.com/wp-content/uploads/2022/09/chinilla-logo.svg)
+![Chinilla logo](https://www.chinilla.net/wp-content/uploads/2022/09/chinilla-logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Chinilla/chinilla-blockchain-gui?logo=GitHub)
+
+This library provides react hooks on the top of @chinilla/api and uses [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) under the hood.
+It is designed to simplify common cases for loading data in a web application, eliminating the need to hand-write data fetching & caching logic yourself. Benefits include:
 
 This library provides react hooks on the top of @chinilla/api and uses [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) under the hood.
 It is designed to simplify common cases for loading data in a web application, eliminating the need to hand-write data fetching & caching logic yourself. Benefits include:

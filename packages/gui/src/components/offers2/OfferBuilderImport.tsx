@@ -1,20 +1,10 @@
 import fs, { Stats } from 'fs';
 
 import { useGetOfferSummaryMutation } from '@chinilla/api-react';
-import {
-  Dropzone,
-  Flex,
-  // useOpenDialog,
-  useSerializedNavigationState,
-  useShowError,
-} from '@chinilla/core';
+import { Dropzone, Flex, useSerializedNavigationState, useShowError } from '@chinilla/core';
 import { Trans, t } from '@lingui/macro';
 import { Box, Card, Typography } from '@mui/material';
 import React from 'react';
-
-// import OfferDataEntryDialog from '../offers/OfferDataEntryDialog';
-
-// import { IpcRenderer } from 'electron';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 import ImportOfferBackground from './images/importOfferBackground.svg';

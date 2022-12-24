@@ -18,11 +18,11 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:276
+#: src/components/EstimatedFee/EstimatedFee.tsx:275
 msgid "<0>{0}</0>"
 msgstr ""
 
-#: src/components/Amount/Amount.tsx:102
+#: src/components/Amount/Amount.tsx:36
 msgid "Amount"
 msgstr "Částka"
 
@@ -34,7 +34,7 @@ msgstr "Vzhled"
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr "Jste si jisti, že chcete pokračovat? Pro potvrzení smazání zadejte otisk této peněženky."
 
-#: src/components/FormBackButton/FormBackButton.tsx:48
+#: src/components/FormBackButton/FormBackButton.tsx:15
 #: src/screens/SelectKey/SelectKey.tsx:76
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
@@ -55,7 +55,7 @@ msgstr "Zrušit"
 msgid "Close"
 msgstr "Zavřít"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:49
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:37
 msgid "Connected"
 msgstr "Připojeno"
 
@@ -148,8 +148,8 @@ msgstr "Farmářuv veřejný klíč:"
 msgid "Farming"
 msgstr "Farmaření"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:312
-#: src/components/EstimatedFee/EstimatedFee.tsx:345
+#: src/components/EstimatedFee/EstimatedFee.tsx:311
+#: src/components/EstimatedFee/EstimatedFee.tsx:344
 #: src/components/Fee/Fee.tsx:53
 msgid "Fee"
 msgstr "Poplatek"
@@ -175,7 +175,7 @@ msgstr "Pomozte s překladem"
 msgid "Hide"
 msgstr "Skrýt"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:64
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:32
 msgid "Hide Advanced Options"
 msgstr "Skrýt Rozšířené Možnosti"
 
@@ -203,12 +203,12 @@ msgstr "Načítám podrobnosti"
 msgid "Loading list of the keys"
 msgstr "Načítání seznamu klíčů"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:161
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:163
 msgid "Log Out"
 msgstr "Odhlásit"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:160
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:162
 msgid "Logout"
 msgstr "Odhlásit"
 
@@ -241,7 +241,7 @@ msgstr "Žádný 24 slov, protože tento klíč je importován."
 msgid "Not Synced"
 msgstr "Není synchronizováno"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:50
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:38
 msgid "Not connected"
 msgstr "Nepřipojeno"
 
@@ -320,7 +320,7 @@ msgstr "Slova pro zálohu:"
 msgid "Select Key"
 msgstr "Vyberte klíč"
 
-#: src/components/Dropdown/Dropdown.tsx:78
+#: src/components/Dropdown/Dropdown.tsx:28
 msgid "Select..."
 msgstr "Zvolit..."
 
@@ -337,7 +337,7 @@ msgstr "Nastavení hesla je výrazně doporučeno pro ochranu vašich klíčů. 
 msgid "Settings"
 msgstr "Nastavení"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:63
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:31
 msgid "Show Advanced Options"
 msgstr "Zobrazit pokročilé možnosti"
 
@@ -422,7 +422,7 @@ msgstr "Nastavení hesla je výrazně doporučeno pro ochranu vašich klíčů. 
 msgid "Value seems high"
 msgstr "Hodnota se zdá vysoká"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:108
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
 #: src/components/Settings/SettingsApp.tsx:81
 msgid "Wallet"
 msgstr "Peněženka"
@@ -461,7 +461,11 @@ msgstr "Provedli jste změny. Chcete je zahodit?"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Vaše klíče nebyly migrovány do nové klíčenky. Nebudete schopni vytvářet nové klíče nebo odstraňovat staré, dokud nedokončíte migraci. Přejete si migrovat klíče nyní?"
 
-#: src/components/Amount/Amount.tsx:84
+#: src/components/Amount/Amount.tsx:85
+#~ msgid "{0, plural, one {mojo} other {mojos}}"
+#~ msgstr ""
+
+#: src/components/Amount/Amount.tsx:86
 msgid "{0, plural, one {vojo} other {vojos}}"
 msgstr ""
 
@@ -469,7 +473,7 @@ msgstr ""
 #~ msgid "{0} THCX"
 #~ msgstr ""
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:271
+#: src/components/EstimatedFee/EstimatedFee.tsx:270
 msgid "{0} {currencyCode}"
 msgstr ""
 

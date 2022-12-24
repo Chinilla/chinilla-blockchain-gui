@@ -138,7 +138,7 @@ msgstr "Bekräfta"
 msgid "Confirmed"
 msgstr "Bekräftad"
 
-#: src/components/WalletHistory.tsx:287
+#: src/components/WalletHistory.tsx:289
 msgid "Confirmed at Height"
 msgstr "Bekräftad vid höjd"
 
@@ -255,7 +255,7 @@ msgstr "Distribuerad identitet"
 #~ msgid "Drag and drop your recovery backup file"
 #~ msgstr "Drag och släpp din säkerhetskopierade fil"
 
-#: src/components/WalletImport.tsx:129
+#: src/components/WalletImport.tsx:121
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chinilla wallet."
 msgstr "Skriv in din sparade minnesfras på 24 ord för att återställa din Chinilla-plånbok."
 
@@ -295,7 +295,7 @@ msgstr "Om du vill påskynda transaktionen, ta bort obekräftade transaktioner o
 msgid "Import"
 msgstr "Importera"
 
-#: src/components/WalletImport.tsx:126
+#: src/components/WalletImport.tsx:118
 msgid "Import Wallet from Mnemonics"
 msgstr "Importera plånbok från minnesfras"
 
@@ -324,7 +324,7 @@ msgstr "Inkommande"
 msgid "List of connections is empty"
 msgstr "Lista över anslutningar är tom"
 
-#: src/components/WalletReceiveAddressField.tsx:36
+#: src/components/WalletReceiveAddressField.tsx:70
 msgid "Loading..."
 msgstr "Läser in …"
 
@@ -343,7 +343,7 @@ msgstr "Hantera tokenlista"
 msgid "Memo"
 msgstr "Anteckning"
 
-#: src/components/WalletHistory.tsx:292
+#: src/components/WalletHistory.tsx:294
 msgid "Memos"
 msgstr "Anteckningar"
 
@@ -384,8 +384,8 @@ msgstr "Ny adress"
 msgid "New Wallet"
 msgstr "Ny plånbok"
 
-#: src/components/WalletAdd.tsx:123
-#: src/components/WalletImport.tsx:159
+#: src/components/WalletAdd.tsx:124
+#: src/components/WalletImport.tsx:151
 msgid "Next"
 msgstr "Nästa"
 
@@ -393,7 +393,7 @@ msgstr "Nästa"
 msgid "Nickname"
 msgstr "Smeknamn"
 
-#: src/components/WalletHistory.tsx:323
+#: src/components/WalletHistory.tsx:325
 msgid "No previous transactions"
 msgstr "Inga tidigare transaktioner"
 
@@ -401,8 +401,8 @@ msgstr "Inga tidigare transaktioner"
 msgid "Node ID"
 msgstr "Node-ID"
 
-#: src/components/WalletHistory.tsx:281
-#: src/components/WalletHistory.tsx:288
+#: src/components/WalletHistory.tsx:283
+#: src/components/WalletHistory.tsx:290
 msgid "Not Available"
 msgstr "Inte tillgänglig"
 
@@ -435,7 +435,7 @@ msgstr "I genomsnitt är det en minut mellan varje transaktionsblock. Om det int
 msgid "Outgoing"
 msgstr "Utgående"
 
-#: src/components/WalletImport.tsx:91
+#: src/components/WalletImport.tsx:167
 msgid "Paste Mnemonic"
 msgstr "Klistra in minnesfras"
 
@@ -596,7 +596,6 @@ msgid "Receive"
 msgstr "Ta emot"
 
 #: src/components/WalletReceiveAddress.tsx:29
-#: src/components/WalletReceiveAddressField.tsx:34
 msgid "Receive Address"
 msgstr "Mottagaradress"
 
@@ -820,8 +819,8 @@ msgstr "Transaktioner"
 msgid "Wallet Connections"
 msgstr "Plånbokens anslutningar"
 
-#: src/components/WalletAdd.tsx:100
-#: src/components/WalletImport.tsx:152
+#: src/components/WalletAdd.tsx:101
+#: src/components/WalletImport.tsx:144
 msgid "Wallet Name"
 msgstr "Plånboksnamn"
 
@@ -829,7 +828,7 @@ msgstr "Plånboksnamn"
 msgid "Wallet does not exists"
 msgstr "Plånboken finns inte"
 
-#: src/components/Wallet.tsx:49
+#: src/components/Wallet.tsx:37
 msgid "Wallet with type {0} not supported"
 msgstr "Plånbok av typ {0} stöds inte"
 

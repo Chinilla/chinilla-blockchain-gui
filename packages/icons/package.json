@@ -1,6 +1,6 @@
 {
   "name": "@chinilla/icons",
-  "author": "Chinilla Network <hello@chinilla.com> (https://chinilla.com/)",
+  "author": "Chinilla Network <hello@chinilla.net> (https://chinilla.net/)",
   "description": "Chinilla Icons Library",
   "productName": "Chinilla Blockchain",
   "version": "1.0.0",
@@ -14,6 +14,7 @@
     "build:js": "rollup -c",
     "build:watch": "rollup -c -w",
     "build:types": "tsc --emitDeclarationOnly",
+    "check:types": "tsc --noEmit",
     "test": "jest"
   },
   "dependencies": {

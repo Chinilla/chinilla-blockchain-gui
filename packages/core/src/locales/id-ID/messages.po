@@ -18,11 +18,11 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:276
+#: src/components/EstimatedFee/EstimatedFee.tsx:275
 msgid "<0>{0}</0>"
 msgstr ""
 
-#: src/components/Amount/Amount.tsx:102
+#: src/components/Amount/Amount.tsx:36
 msgid "Amount"
 msgstr "Jumlah"
 
@@ -34,7 +34,7 @@ msgstr "Tampilan"
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr ""
 
-#: src/components/FormBackButton/FormBackButton.tsx:48
+#: src/components/FormBackButton/FormBackButton.tsx:15
 #: src/screens/SelectKey/SelectKey.tsx:76
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
@@ -55,7 +55,7 @@ msgstr "Batal"
 msgid "Close"
 msgstr ""
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:49
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:37
 msgid "Connected"
 msgstr "Tersambung"
 
@@ -148,8 +148,8 @@ msgstr "Kunci Publik Farmer:"
 msgid "Farming"
 msgstr "Farming"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:312
-#: src/components/EstimatedFee/EstimatedFee.tsx:345
+#: src/components/EstimatedFee/EstimatedFee.tsx:311
+#: src/components/EstimatedFee/EstimatedFee.tsx:344
 #: src/components/Fee/Fee.tsx:53
 msgid "Fee"
 msgstr "Biaya"
@@ -175,7 +175,7 @@ msgstr "Bantu menterjemahkan"
 msgid "Hide"
 msgstr ""
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:64
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:32
 msgid "Hide Advanced Options"
 msgstr "Sembunyikan Opsi Tingkat Lanjut"
 
@@ -203,12 +203,12 @@ msgstr ""
 msgid "Loading list of the keys"
 msgstr "Memuat Daftar dompet"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:161
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:163
 msgid "Log Out"
 msgstr "Keluar"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:160
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:162
 msgid "Logout"
 msgstr "Keluar"
 
@@ -241,7 +241,7 @@ msgstr "Tidak ada benih 24 kata, sejak kunci ini di impor."
 msgid "Not Synced"
 msgstr ""
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:50
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:38
 msgid "Not connected"
 msgstr "Tidak terhubung"
 
@@ -320,7 +320,7 @@ msgstr "Benih:"
 msgid "Select Key"
 msgstr "Pilih kunci"
 
-#: src/components/Dropdown/Dropdown.tsx:78
+#: src/components/Dropdown/Dropdown.tsx:28
 msgid "Select..."
 msgstr "Pilih..."
 
@@ -337,7 +337,7 @@ msgstr "Mengaktifkan opsi kata kunci sangat di ajurkan untuk melindungi kunci do
 msgid "Settings"
 msgstr "Pengaturan"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:63
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:31
 msgid "Show Advanced Options"
 msgstr "Lihat opsi lanjutan"
 
@@ -422,7 +422,7 @@ msgstr "Mengaktifkan opsi kalimat kunci sangat di ajurkan untuk melindungi kunci
 msgid "Value seems high"
 msgstr "Nilai Kelihatan terlalu tinggi"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:108
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
 #: src/components/Settings/SettingsApp.tsx:81
 msgid "Wallet"
 msgstr "Dompet"
@@ -461,15 +461,19 @@ msgstr "Ada perubahan yang belum disimpan. Apakah kamu ingin membuangnya?"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Kunci anda belum migrasi ke penyimpanan kunci baru. Anda tidak akan bisa membuat kunci baru atau menghapus kunci yang ada sampai dengan migrasi selesai. Apa anda mau migrasi kunci anda sekarang?"
 
-#: src/components/Amount/Amount.tsx:84
+#: src/components/Amount/Amount.tsx:85
+#~ msgid "{0, plural, one {mojo} other {mojos}}"
+#~ msgstr "{0, plural,one {mojo} other {mojos}}"
+
+#: src/components/Amount/Amount.tsx:86
 msgid "{0, plural, one {vojo} other {vojos}}"
-msgstr "{0, plural,one {vojo} other {vojos}}"
+msgstr ""
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
 #~ msgid "{0} THCX"
 #~ msgstr ""
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:271
+#: src/components/EstimatedFee/EstimatedFee.tsx:270
 msgid "{0} {currencyCode}"
 msgstr ""
 

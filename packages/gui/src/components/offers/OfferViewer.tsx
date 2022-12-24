@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unstable-nested-components -- This component is deep in the component tree, so no performance issues */
 import { OfferSummaryRecord, OfferTradeRecord, OfferCoinOfInterest } from '@chinilla/api';
 import { useCheckOfferValidityMutation } from '@chinilla/api-react';
 import {
@@ -8,13 +9,12 @@ import {
   Fee,
   Flex,
   Form,
-  FormatLargeNumber,
   TableControlled,
   TooltipIcon,
   useShowError,
   vojoToChinillaLocaleString,
 } from '@chinilla/core';
-import { Trans, Plural } from '@lingui/macro';
+import { Trans } from '@lingui/macro';
 import {
   Box,
   Button,
@@ -40,35 +40,6 @@ import OfferState from './OfferState';
 import OfferSummary from './OfferSummary';
 import OfferViewerTitle from './OfferViewerTitle';
 import { colorForOfferState, displayStringForOfferState } from './utils';
-
-type OfferVojoAmountProps = {
-  vojos: number;
-  vojoThreshold?: number;
-};
-
-function OfferVojoAmount(props: OfferVojoAmountProps): React.ReactElement {
-  const { vojos, vojoThreshold } = props;
-
-  return (
-    <>
-      {vojoThreshold && vojos < vojoThreshold && (
-        <Flex flexDirection="row" flexGrow={1} gap={1}>
-          (
-          <FormatLargeNumber value={vojos} />
-          <Box>
-            <Plural value={vojos} one="vojo" other="vojos" />
-          </Box>
-          )
-        </Flex>
-      )}
-    </>
-  );
-}
-
-OfferVojoAmount.defaultProps = {
-  vojos: 0,
-  vojoThreshold: 1000000000, // 1 billion
-};
 
 type OfferDetailsProps = {
   tradeRecord?: OfferTradeRecord;
@@ -100,7 +71,7 @@ function OfferDetails(props: OfferDetailsProps) {
 
   useMemo(async () => {
     if (!offerData) {
-      return false;
+      return;
     }
 
     let valid = false;
@@ -295,8 +266,8 @@ function OfferDetails(props: OfferDetailsProps) {
           <TableContainer component={Paper}>
             <Table>
               <TableBody>
-                {detailRows.map((row, index) => (
-                  <TableRow key={index}>
+                {detailRows.map((row) => (
+                  <TableRow key={JSON.stringify(row.name)}>
                     <TableCell component="th" scope="row">
                       {row.name} {row.tooltip && <TooltipIcon>{row.tooltip}</TooltipIcon>}
                     </TableCell>

@@ -43,7 +43,7 @@ msgid "<0>Need some HCX?</0>"
 msgstr ""
 
 #: src/components/settings/ProfileAdd.tsx:99
-msgid "<0>Use one (1) vojo to create a Profile.</0>"
+msgid "<0>Use one (1) mojo to create a Profile.</0>"
 msgstr ""
 
 #: src/components/farm/FarmYourHarvesterNetwork.tsx:86
@@ -369,14 +369,6 @@ msgstr "Susirašykite ant Keybase platformos"
 
 #: src/components/offers/NFTOfferPreview.tsx:180
 msgid "Check Provenance on ForgeFarm"
-msgstr ""
-
-#: src/components/offers/NFTOfferPreview.tsx:190
-msgid "Check Provenance on SkyNFT"
-msgstr ""
-
-#: src/components/offers/NFTOfferPreview.tsx:200
-msgid "Check Provenance on Spacescan.io"
 msgstr ""
 
 #: src/electron/main.tsx:678
@@ -711,10 +703,6 @@ msgstr ""
 
 #: src/electron/main.tsx:560
 msgid "Developer Tools"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:614
-msgid "Dexie URL"
 msgstr ""
 
 #: src/components/block/Block.jsx:204
@@ -1082,10 +1070,6 @@ msgstr ""
 msgid "Hash mismatch."
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:882
-msgid "Hashgreen DEX URL"
-msgstr ""
-
 #: src/components/fullNode/FullNode.jsx:57
 msgid "Header Hash"
 msgstr ""
@@ -1189,7 +1173,7 @@ msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:102
 #: src/components/offers/OfferEditorConditionsPanel.tsx:463
-msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 HCX (5,000,000 vojos)"
+msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 HCX (5,000,000 mojos)"
 msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:19
@@ -2392,14 +2376,6 @@ msgstr ""
 msgid "Share Privately"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:651
-msgid "Share on Dexie"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:919
-msgid "Share on Hashgreen DEX"
-msgstr ""
-
 #: src/components/offers/OfferShareDialog.tsx:1198
 msgid "Share on Keybase"
 msgstr ""
@@ -2410,10 +2386,6 @@ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:816
 msgid "Share on Chinilla"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:1001
-msgid "Share on Spacescan.io"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:1326
@@ -2455,10 +2427,6 @@ msgstr ""
 
 #: src/components/pool/PoolHero.tsx:21
 msgid "Smooth out your HCX farming rewards by joining a pool."
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:964
-msgid "Spacescan.io URL"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:143
@@ -2770,6 +2738,16 @@ msgstr ""
 msgid "Total Amount Requested"
 msgstr ""
 
+#: src/components/offers/NFTOfferEditor.tsx:457
+#: src/components/offers/NFTOfferViewer.tsx:618
+msgid "Total Amount Offered"
+msgstr ""
+
+#: src/components/offers/NFTOfferEditor.tsx:455
+#: src/components/offers/NFTOfferViewer.tsx:614
+msgid "Total Amount Requested"
+msgstr ""
+
 #: src/components/farm/card/FarmCardTotalChinillaFarmed.tsx:27
 msgid "Total Chinilla Farmed"
 msgstr ""
@@ -2931,14 +2909,6 @@ msgstr ""
 msgid "View an Offer"
 msgstr ""
 
-#: src/components/offers/OfferShareDialog.tsx:632
-msgid "View on Dexie"
-msgstr ""
-
-#: src/components/offers/OfferShareDialog.tsx:900
-msgid "View on Hashgreen DEX"
-msgstr ""
-
 #: src/components/nfts/NFTContextualActions.tsx:617
 #: src/components/offers/OfferShareDialog.tsx:714
 msgid "View on ForgeFarm"
@@ -2946,15 +2916,6 @@ msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:797
 msgid "View on Chinilla"
-msgstr ""
-
-#: src/components/nfts/NFTContextualActions.tsx:624
-msgid "View on SkyNFT"
-msgstr ""
-
-#: src/components/nfts/NFTContextualActions.tsx:631
-#: src/components/offers/OfferShareDialog.tsx:982
-msgid "View on Spacescan.io"
 msgstr ""
 
 #: src/components/offers/OfferViewerTitle.tsx:54
@@ -3192,7 +3153,7 @@ msgid "p2SingletonPuzzleHash is not defined"
 msgstr ""
 
 #: src/components/nfts/NFTTransferConfirmationDialog.tsx:101
-msgid "{0, plural, one {vojo} other {vojos}}"
+msgid "{0, plural, one {mojo} other {mojos}}"
 msgstr ""
 
 #: src/components/offers/OfferShareDialog.tsx:1299
@@ -3215,12 +3176,12 @@ msgstr ""
 
 #: src/components/offers/NFTOfferViewer.tsx:216
 #: src/components/offers/OfferSummary.tsx:197
-msgid "{makerFee, plural, one {vojo} other {vojos}}"
+msgid "{makerFee, plural, one {mojo} other {mojos}}"
 msgstr ""
 
 #: src/components/offers/OfferSummaryRow.tsx:49
 #: src/components/offers/OfferViewer.tsx:62
-msgid "{vojos, plural, one {vojo} other {vojos}}"
+msgid "{mojos, plural, one {mojo} other {mojos}}"
 msgstr ""
 
 #: src/components/nfts/NFTRankings.tsx:51

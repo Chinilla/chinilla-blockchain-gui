@@ -18,11 +18,11 @@ msgstr ""
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 1886\n"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:276
+#: src/components/EstimatedFee/EstimatedFee.tsx:275
 msgid "<0>{0}</0>"
 msgstr "<0>{0}</0>"
 
-#: src/components/Amount/Amount.tsx:102
+#: src/components/Amount/Amount.tsx:36
 msgid "Amount"
 msgstr "Montant"
 
@@ -34,7 +34,7 @@ msgstr "Apparence"
 msgid "Are you sure you want to continue? Type in the fingerprint of this wallet key to confirm deletion."
 msgstr "Êtes-vous sûr de vouloir continuer ? Tapez l'empreinte de cette clé de porte-monnaie pour confirmer la suppression."
 
-#: src/components/FormBackButton/FormBackButton.tsx:48
+#: src/components/FormBackButton/FormBackButton.tsx:15
 #: src/screens/SelectKey/SelectKey.tsx:76
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:155
 msgid "Back"
@@ -55,7 +55,7 @@ msgstr "Annuler"
 msgid "Close"
 msgstr "Fermer"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:49
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:37
 msgid "Connected"
 msgstr "Connecté"
 
@@ -148,8 +148,8 @@ msgstr "Clé publique du fermier :"
 msgid "Farming"
 msgstr "Culture"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:312
-#: src/components/EstimatedFee/EstimatedFee.tsx:345
+#: src/components/EstimatedFee/EstimatedFee.tsx:311
+#: src/components/EstimatedFee/EstimatedFee.tsx:344
 #: src/components/Fee/Fee.tsx:53
 msgid "Fee"
 msgstr "Frais"
@@ -175,7 +175,7 @@ msgstr "Aider à traduire"
 msgid "Hide"
 msgstr "Masquer"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:64
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:32
 msgid "Hide Advanced Options"
 msgstr "Masquer les options avancées"
 
@@ -203,12 +203,12 @@ msgstr "Chargement des détails"
 msgid "Loading list of the keys"
 msgstr "Chargement de la liste des clés"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:142
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:161
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:144
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:163
 msgid "Log Out"
 msgstr "Se déconnecter"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:160
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:162
 msgid "Logout"
 msgstr "Déconnexion"
 
@@ -241,7 +241,7 @@ msgstr "Pas de phrase mnémonique (24 mots), car cette clé est importée."
 msgid "Not Synced"
 msgstr "Non Synchronisé"
 
-#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:50
+#: src/components/FormatConnectionStatus/FormatConnectionStatus.tsx:38
 msgid "Not connected"
 msgstr "Non connecté"
 
@@ -320,7 +320,7 @@ msgstr "Graine :"
 msgid "Select Key"
 msgstr "Selectionnez la Clé"
 
-#: src/components/Dropdown/Dropdown.tsx:78
+#: src/components/Dropdown/Dropdown.tsx:28
 msgid "Select..."
 msgstr "Sélectionner..."
 
@@ -337,7 +337,7 @@ msgstr "Définir une phrase secrète est fortement recommandé pour la protectio
 msgid "Settings"
 msgstr "Paramètres"
 
-#: src/components/AdvancedOptions/AdvancedOptions.tsx:63
+#: src/components/AdvancedOptions/AdvancedOptions.tsx:31
 msgid "Show Advanced Options"
 msgstr "Afficher les options avancées"
 
@@ -422,7 +422,7 @@ msgstr "Utiliser une phrase secrète est fortement recommandé pour la protectio
 msgid "Value seems high"
 msgstr "La valeur semble élevée"
 
-#: src/components/LayoutDashboard/LayoutDashboard.tsx:108
+#: src/components/LayoutDashboard/LayoutDashboard.tsx:110
 #: src/components/Settings/SettingsApp.tsx:81
 msgid "Wallet"
 msgstr "Portefeuille"
@@ -461,15 +461,19 @@ msgstr "Vous avez apporté des modifications. Voulez-vous les ignorer ?"
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
 msgstr "Vos clés n'ont pas été migrées vers un nouveau trousseau de clés. Vous ne pourrez pas créer de nouvelles clés ou supprimer les clés existantes tant que la migration n'est pas terminée. Voulez-vous migrer vos clés maintenant ?"
 
-#: src/components/Amount/Amount.tsx:84
+#: src/components/Amount/Amount.tsx:85
+#~ msgid "{0, plural, one {mojo} other {mojos}}"
+#~ msgstr "{0, plural, one {mojo} other {mojos}}"
+
+#: src/components/Amount/Amount.tsx:86
 msgid "{0, plural, one {vojo} other {vojos}}"
-msgstr "{0, plural, one {vojo} other {vojos}}"
+msgstr ""
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
 #~ msgid "{0} THCX"
 #~ msgstr "{0} THCX"
 
-#: src/components/EstimatedFee/EstimatedFee.tsx:271
+#: src/components/EstimatedFee/EstimatedFee.tsx:270
 msgid "{0} {currencyCode}"
 msgstr ""
 
