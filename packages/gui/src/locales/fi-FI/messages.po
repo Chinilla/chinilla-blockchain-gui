@@ -2823,7 +2823,7 @@ msgstr "Etsi lohko otsikon tiivisteellä"
 
 #: src/components/offers/OfferSummaryRow.tsx:176
 #: src/components/offers2/OfferBuilderValue.tsx:97
-msgid "Search on Tail Database"
+msgid "Search on ForgeFarm"
 msgstr "Etsi Tail-tietokannasta"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:109

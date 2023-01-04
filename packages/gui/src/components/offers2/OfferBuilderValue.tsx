@@ -93,8 +93,8 @@ export default function OfferBuilderValue(props: OfferBuilderValueProps) {
                     <Flex flexDirection="column" gap={1} maxWidth={200}>
                       {displayValue}
                       {type === 'token' ? (
-                        <Link href={`https://www.taildatabase.com/tail/${value.toLowerCase()}`} target="_blank">
-                          <Trans>Search on Tail Database</Trans>
+                        <Link href={`https://forgefarm.io/tail/${value.toLowerCase()}`} target="_blank">
+                          <Trans>Search on ForgeFarm</Trans>
                         </Link>
                       ) : null}
                     </Flex>

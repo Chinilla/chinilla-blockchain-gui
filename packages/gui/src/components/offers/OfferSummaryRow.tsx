@@ -172,8 +172,8 @@ export function OfferSummaryTokenRow(props: OfferSummaryTokenRowProps): React.Re
                 <StyledTitle>Name</StyledTitle>
               </Box>
               {(!assetIdInfo || assetIdInfo?.walletType === WalletType.CAT) && (
-                <Link href={`https://www.taildatabase.com/tail/${assetId.toLowerCase()}`} target="_blank">
-                  <Trans>Search on Tail Database</Trans>
+                <Link href={`https://forgefarm.io/tail/${assetId.toLowerCase()}`} target="_blank">
+                  <Trans>Search on ForgeFarm</Trans>
                 </Link>
               )}
             </Flex>

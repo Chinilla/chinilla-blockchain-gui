@@ -2292,7 +2292,7 @@ msgid "Search block by header hash"
 msgstr ""
 
 #: src/components/offers/OfferSummaryRow.tsx:228
-msgid "Search on Tail Database"
+msgid "Search on ForgeFarm"
 msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:127

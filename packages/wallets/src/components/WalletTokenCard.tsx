@@ -173,8 +173,8 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
                 </Tooltip>
               )}
               {assetId && (
-                <Link href={`https://www.taildatabase.com/tail/${assetId}`} target="_blank" variant="caption">
-                  <Trans>Search on Tail Database</Trans>
+                <Link href={`https://forgefarm.io/tail/${assetId}`} target="_blank" variant="caption">
+                  <Trans>Search on ForgeFarm</Trans>
                 </Link>
               )}
             </Flex>

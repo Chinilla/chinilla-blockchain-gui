@@ -2819,7 +2819,7 @@ msgstr "Blok Başlığına Göre Ara"
 
 #: src/components/offers/OfferSummaryRow.tsx:176
 #: src/components/offers2/OfferBuilderValue.tsx:97
-msgid "Search on Tail Database"
+msgid "Search on ForgeFarm"
 msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:109

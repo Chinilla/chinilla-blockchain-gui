@@ -648,8 +648,8 @@ msgstr "Save"
 
 #: src/components/cat/WalletCATTAILDialog.tsx:59
 #: src/components/WalletTokenCard.tsx:177
-msgid "Search on Tail Database"
-msgstr "Search on Tail Database"
+msgid "Search on ForgeFarm"
+msgstr "Search on ForgeFarm"
 
 #: src/components/WalletsList.tsx:32
 #~ msgid "Select Wallet"
