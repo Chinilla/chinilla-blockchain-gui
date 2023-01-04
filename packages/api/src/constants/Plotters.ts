@@ -105,7 +105,7 @@ export const bladebitDiskDefaults: PlotterDefaults = {
   delay: 0,
 };
 
-export const chinillaposOptions: PlotterOptions = {
+export const chiaposOptions: PlotterOptions = {
   kSizes: [25, 32, 33, 34, 35],
   haveNumBuckets: true,
   haveMadmaxNumBucketsPhase3: false,
@@ -130,8 +130,8 @@ export const chinillaposOptions: PlotterOptions = {
   canSetBufferSize: true,
 };
 
-export const chinillaposDefaults: PlotterDefaults = {
-  plotterName: PlotterName.CHINILLAPOS,
+export const chiaposDefaults: PlotterDefaults = {
+  plotterName: PlotterName.CHIAPOS,
   plotSize: 32,
   numThreads: 2,
   numBuckets: 128,

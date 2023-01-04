@@ -20,7 +20,7 @@ export function getPlotSize(kSize: 25 | 32 | 33 | 34 | 35) {
 }
 
 export const plottingInfo: Record<PlotterName, PlotSize[]> = {
-  [PlotterName.CHINILLAPOS]: [
+  [PlotterName.CHIAPOS]: [
     { value: 25, label: getPlotSize(25), workspace: '1.8GiB', defaultRam: 512 },
     { value: 32, label: getPlotSize(32), workspace: '239GiB', defaultRam: 3390 },
     { value: 33, label: getPlotSize(33), workspace: '521GiB', defaultRam: 7400 },
